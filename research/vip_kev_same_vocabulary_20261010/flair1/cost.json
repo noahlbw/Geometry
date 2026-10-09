@@ -1,0 +1,477 @@
+{
+  "status": "complete",
+  "dataset": "flair1",
+  "method": "VIP_SameText",
+  "images": [
+    {
+      "key": "D012_2019/Z10_UU/img/IMG_062613.tif",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        111.83787300251424,
+        111.224798951298,
+        111.58167198300362,
+        111.19597405195236,
+        110.49366998486221,
+        111.16368602961302,
+        110.62815296463668
+      ],
+      "peak_allocated_mib": 1868.396484375
+    },
+    {
+      "key": "D026_2020/Z13_UU/img/IMG_065054.tif",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        110.85122800432146,
+        111.51575110852718,
+        110.80901208333671,
+        112.1231138240546,
+        110.2858348749578,
+        111.08098295517266,
+        111.51813389733434
+      ],
+      "peak_allocated_mib": 1868.396484375
+    },
+    {
+      "key": "D064_2021/Z30_NU/img/IMG_067471.tif",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        111.60536808893085,
+        111.09096207655966,
+        110.45249598100781,
+        111.66751012206078,
+        110.73567904531956,
+        111.61193391308188,
+        110.94384407624602
+      ],
+      "peak_allocated_mib": 1868.396484375
+    },
+    {
+      "key": "D071_2020/Z12_UA/img/IMG_070462.tif",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        110.34421785734594,
+        111.79030709899962,
+        111.58351716585457,
+        111.14496015943587,
+        111.71611188910902,
+        111.44142202101648,
+        110.88396096602082
+      ],
+      "peak_allocated_mib": 1868.396484375
+    },
+    {
+      "key": "D076_2019/Z15_UU/img/IMG_072654.tif",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        112.02051094733179,
+        111.72000295482576,
+        112.10207990370691,
+        111.67726595886052,
+        111.94776906631887,
+        111.2332649063319,
+        110.62428704462945
+      ],
+      "peak_allocated_mib": 1868.396484375
+    },
+    {
+      "key": "D083_2020/Z5_AU/img/IMG_074795.tif",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        109.99380308203399,
+        110.89554615318775,
+        110.04036595113575,
+        110.09438312612474,
+        110.90420000255108,
+        110.15448486432433,
+        110.34213611856103
+      ],
+      "peak_allocated_mib": 1868.396484375
+    },
+    {
+      "key": "D085_2019/Z9_NF/img/IMG_076387.tif",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        110.1982390973717,
+        111.21213180013001,
+        110.84942100569606,
+        112.58326307870448,
+        110.63418700359762,
+        111.2332718912512,
+        110.43026903644204
+      ],
+      "peak_allocated_mib": 1868.396484375
+    }
+  ],
+  "median_ms": 111.14496015943587,
+  "p95_ms": 112.06945232115686,
+  "peak_allocated_mib": 1868.396484375,
+  "settings": {
+    "tau": 4.0,
+    "tem": 1.0,
+    "prob_thd": 0.0,
+    "background": false,
+    "bg_idx": 0,
+    "resize_long_edge": 448,
+    "slide_crop": 336,
+    "slide_stride": 112,
+    "logit_scale": 40.0
+  },
+  "text_identity": {
+    "classes": [
+      {
+        "name": "building",
+        "synonyms": [
+          "building",
+          "buildings",
+          "house",
+          "houses",
+          "residential building",
+          "commercial building",
+          "industrial building",
+          "warehouse",
+          "apartment building",
+          "roofed structure",
+          "building roof",
+          "house roof",
+          "rooftop",
+          "construction",
+          "man made structure",
+          "urban building",
+          "rural building",
+          "farm building",
+          "agricultural silo",
+          "water tower"
+        ]
+      },
+      {
+        "name": "pervious surface",
+        "synonyms": [
+          "pervious surface",
+          "permeable surface",
+          "gravel surface",
+          "gravel ground",
+          "gravel pathway",
+          "unpaved pathway",
+          "loose stone surface",
+          "railway ballast",
+          "railway track",
+          "quarry",
+          "building site",
+          "construction site",
+          "mineral ground",
+          "artificial bare soil",
+          "gravel road",
+          "unpaved road",
+          "riprap",
+          "loose stones",
+          "gravel yard",
+          "landfill"
+        ]
+      },
+      {
+        "name": "impervious surface",
+        "synonyms": [
+          "impervious surface",
+          "paved surface",
+          "asphalt",
+          "concrete surface",
+          "road",
+          "paved road",
+          "roadway",
+          "street",
+          "parking lot",
+          "pavement",
+          "cobblestone surface",
+          "sealed ground",
+          "tarmac",
+          "paved courtyard",
+          "hard surface",
+          "urban pavement",
+          "asphalt road",
+          "concrete ground",
+          "paved sports court",
+          "paved path"
+        ]
+      },
+      {
+        "name": "bare soil",
+        "synonyms": [
+          "bare soil",
+          "bare ground",
+          "natural bare soil",
+          "exposed soil",
+          "unvegetated ground",
+          "sand",
+          "sandy ground",
+          "rocky ground",
+          "pebbles",
+          "stones",
+          "rock surface",
+          "natural mineral surface",
+          "bare terrain",
+          "coastal sand",
+          "sandy beach",
+          "bare rock",
+          "stony ground",
+          "dry soil",
+          "exposed earth",
+          "natural bare land"
+        ]
+      },
+      {
+        "name": "water",
+        "synonyms": [
+          "water",
+          "water body",
+          "river",
+          "lake",
+          "pond",
+          "sea",
+          "ocean",
+          "stream",
+          "canal",
+          "reservoir",
+          "open water",
+          "surface water",
+          "fresh water",
+          "flowing water",
+          "standing water",
+          "river water",
+          "lake water",
+          "water surface",
+          "inland water",
+          "coastal water"
+        ]
+      },
+      {
+        "name": "coniferous",
+        "synonyms": [
+          "coniferous",
+          "coniferous trees",
+          "coniferous forest",
+          "evergreen forest",
+          "pine forest",
+          "fir forest",
+          "pine trees",
+          "fir trees",
+          "cedar trees",
+          "cypress trees",
+          "needleleaf trees",
+          "needleleaf forest",
+          "conifer canopy",
+          "evergreen canopy",
+          "pine canopy",
+          "conifer woodland",
+          "tall conifers",
+          "evergreen trees",
+          "dense conifer forest",
+          "coniferous woodland"
+        ]
+      },
+      {
+        "name": "deciduous",
+        "synonyms": [
+          "deciduous",
+          "deciduous trees",
+          "deciduous forest",
+          "broadleaf forest",
+          "broadleaf trees",
+          "oak trees",
+          "beech trees",
+          "birch trees",
+          "poplar trees",
+          "chestnut trees",
+          "deciduous canopy",
+          "broadleaf canopy",
+          "leafy trees",
+          "deciduous woodland",
+          "tall broadleaf trees",
+          "oak forest",
+          "beech forest",
+          "temperate deciduous forest",
+          "dense deciduous forest",
+          "broadleaved woodland"
+        ]
+      },
+      {
+        "name": "brushwood",
+        "synonyms": [
+          "brushwood",
+          "shrubland",
+          "shrubs",
+          "bushes",
+          "scrubland",
+          "low woody vegetation",
+          "young trees",
+          "short trees",
+          "brush",
+          "thicket",
+          "natural scrub",
+          "scrub vegetation",
+          "dense shrubs",
+          "bushy ground",
+          "mountain moor",
+          "woody undergrowth",
+          "abandoned field shrubs",
+          "shrub cover",
+          "low woodland",
+          "small woody plants"
+        ]
+      },
+      {
+        "name": "vineyard",
+        "synonyms": [
+          "vineyard",
+          "vineyards",
+          "grape vines",
+          "grape field",
+          "vine rows",
+          "grape cultivation",
+          "vine plantation",
+          "grape plantation",
+          "wine grape field",
+          "rows of vines",
+          "cultivated vines",
+          "grape growing land",
+          "vineyard rows",
+          "grape growing field",
+          "vine farming",
+          "vine crop",
+          "grape farm",
+          "vineyard parcel",
+          "vineyard landscape",
+          "grape vines in rows"
+        ]
+      },
+      {
+        "name": "herbaceous vegetation",
+        "synonyms": [
+          "herbaceous vegetation",
+          "grass",
+          "grassland",
+          "natural grass",
+          "lawn",
+          "ornamental lawn",
+          "public park grass",
+          "garden grass",
+          "recreational field",
+          "grassy ground",
+          "herbaceous cover",
+          "wild grass",
+          "uncultivated grass",
+          "roadside grass",
+          "natural meadow",
+          "non agricultural grassland",
+          "mountain grassland",
+          "grass in woodland",
+          "herbaceous plants",
+          "green grass cover"
+        ]
+      },
+      {
+        "name": "agricultural land",
+        "synonyms": [
+          "agricultural land",
+          "farmland",
+          "cropland",
+          "crop field",
+          "cultivated field",
+          "cultivated land",
+          "farm field",
+          "agricultural field",
+          "growing crops",
+          "arable land",
+          "cereal field",
+          "wheat field",
+          "corn field",
+          "crop rows",
+          "agricultural grassland",
+          "managed pasture",
+          "temporary pasture",
+          "permanent agricultural grassland",
+          "farming land",
+          "crop cultivation"
+        ]
+      },
+      {
+        "name": "plowed land",
+        "synonyms": [
+          "plowed land",
+          "ploughed land",
+          "plowed field",
+          "ploughed field",
+          "tilled field",
+          "tilled soil",
+          "bare agricultural field",
+          "harvested field",
+          "freshly harvested field",
+          "recently plowed land",
+          "bare farmland",
+          "fallow agricultural field",
+          "soil furrows",
+          "plough furrows",
+          "cultivated bare soil",
+          "brown agricultural field",
+          "unvegetated cropland",
+          "prepared agricultural soil",
+          "earth field",
+          "bare arable land"
+        ]
+      }
+    ],
+    "source_bank": "original",
+    "source_template": "openai_imagenet_template",
+    "residual_identity": null,
+    "checkpoints": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "upstream_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+    "official_template": "openai_imagenet_template"
+  },
+  "initialization_and_text_seconds": 14.295508231036365,
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "boundary": "Seven full inputs x seven warmed synchronized repeats. Native VIP resizing/encoding/readout/restoration/CPU output; decode/init/offline selection excluded.",
+  "weights_frozen": true,
+  "head_weights_unchanged": true
+}

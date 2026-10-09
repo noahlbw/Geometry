@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "runner": "python DINOtool/tests/test_compact_deployment.py",
+  "environment": "A800 host, Python3.12, PyTorch2.6.0; tests execute on CPU",
+  "tests": [
+    "test_requested_heads_preserve_exact_frozen_outputs",
+    "test_text_release_preserves_visual_weights",
+    "test_deferred_prediction_keeps_probability"
+  ],
+  "count": 3,
+  "exit_code": 0
+}

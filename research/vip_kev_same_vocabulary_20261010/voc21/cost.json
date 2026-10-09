@@ -1,0 +1,445 @@
+{
+  "status": "complete",
+  "dataset": "voc21",
+  "method": "VIP_SameText",
+  "images": [
+    {
+      "key": "2007_000033",
+      "shape": [
+        366,
+        500
+      ],
+      "milliseconds": [
+        88.79153896123171,
+        88.22608506307006,
+        88.20713101886213,
+        87.75263116694987,
+        88.12442515045404,
+        87.63164607807994,
+        88.87967793270946
+      ],
+      "peak_allocated_mib": 1745.568359375
+    },
+    {
+      "key": "2007_007498",
+      "shape": [
+        376,
+        500
+      ],
+      "milliseconds": [
+        59.57188201136887,
+        59.48408902622759,
+        63.05191898718476,
+        59.905843110755086,
+        59.49572380632162,
+        59.40231308341026,
+        59.928893111646175
+      ],
+      "peak_allocated_mib": 1745.22998046875
+    },
+    {
+      "key": "2008_003856",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        59.377331053838134,
+        59.58344996906817,
+        59.21539315022528,
+        59.33923786506057,
+        59.5180441159755,
+        59.73780294880271,
+        59.01320884004235
+      ],
+      "peak_allocated_mib": 1745.2578125
+    },
+    {
+      "key": "2009_001644",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        59.82494098134339,
+        60.75108703225851,
+        59.1279361397028,
+        59.263030998408794,
+        59.35706803575158,
+        59.840279864147305,
+        59.598495019599795
+      ],
+      "peak_allocated_mib": 1745.2578125
+    },
+    {
+      "key": "2010_000552",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        59.60404500365257,
+        59.48346992954612,
+        59.57407504320145,
+        59.09952288493514,
+        59.78824803605676,
+        59.23902592621744,
+        59.5206250436604
+      ],
+      "peak_allocated_mib": 1745.2578125
+    },
+    {
+      "key": "2010_005180",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        58.654018910601735,
+        59.26767806522548,
+        59.59511594846845,
+        59.584216913208365,
+        59.07004792243242,
+        59.0482410043478,
+        59.25933597609401
+      ],
+      "peak_allocated_mib": 1745.2578125
+    },
+    {
+      "key": "2011_003271",
+      "shape": [
+        500,
+        500
+      ],
+      "milliseconds": [
+        31.60854591988027,
+        31.262938166037202,
+        31.451825983822346,
+        31.291483901441097,
+        31.418276950716972,
+        31.419578939676285,
+        31.385016161948442
+      ],
+      "peak_allocated_mib": 1741.5830078125
+    }
+  ],
+  "median_ms": 59.49572380632162,
+  "p95_ms": 88.21850344538689,
+  "peak_allocated_mib": 1745.568359375,
+  "settings": {
+    "tau": 3.0,
+    "tem": 0.3,
+    "prob_thd": 0.28,
+    "background": true,
+    "bg_idx": 0,
+    "resize_long_edge": 448,
+    "slide_crop": 336,
+    "slide_stride": 112,
+    "logit_scale": 40.0
+  },
+  "text_identity": {
+    "classes": [
+      {
+        "name": "background",
+        "synonyms": [
+          "background",
+          "sky",
+          "cloudy sky",
+          "blue sky",
+          "the sky above",
+          "clear sky",
+          "sky above the horizon",
+          "open sky",
+          "wall",
+          "brick wall",
+          "stone wall",
+          "trees",
+          "tree",
+          "forest",
+          "wood",
+          "wooden surface",
+          "lumber",
+          "timber",
+          "wooden plank",
+          "grass",
+          "field",
+          "soil",
+          "meadow",
+          "lawn",
+          "road",
+          "roadway",
+          "water",
+          "body of water",
+          "river",
+          "lake",
+          "pond",
+          "ocean",
+          "sea",
+          "green water",
+          "blue water",
+          "mountain",
+          "sand",
+          "bed",
+          "building",
+          "buildings",
+          "facade",
+          "building frontage",
+          "cloud",
+          "lamp",
+          "door",
+          "window",
+          "wardrobe",
+          "ceiling",
+          "shelf",
+          "shelves",
+          "curtain",
+          "stair",
+          "floor",
+          "hill",
+          "railway rail",
+          "fence"
+        ]
+      },
+      {
+        "name": "aeroplane",
+        "synonyms": [
+          "aeroplane",
+          "plane",
+          "airplane",
+          "aircraft"
+        ]
+      },
+      {
+        "name": "bicycle",
+        "synonyms": [
+          "bicycle",
+          "pedal bike",
+          "pedal bicycle"
+        ]
+      },
+      {
+        "name": "bird",
+        "synonyms": [
+          "bird",
+          "avian animal",
+          "feathered bird"
+        ]
+      },
+      {
+        "name": "boat",
+        "synonyms": [
+          "boat",
+          "watercraft",
+          "small boat",
+          "sailing boat"
+        ]
+      },
+      {
+        "name": "bottle",
+        "synonyms": [
+          "bottle",
+          "wine bottle",
+          "water bottle",
+          "drink bottle",
+          "glass bottle",
+          "plastic bottle"
+        ]
+      },
+      {
+        "name": "bus",
+        "synonyms": [
+          "bus",
+          "red bus",
+          "double-decker bus",
+          "passenger bus",
+          "public transit bus",
+          "city bus"
+        ]
+      },
+      {
+        "name": "car",
+        "synonyms": [
+          "car",
+          "automobile",
+          "passenger car",
+          "motorcar"
+        ]
+      },
+      {
+        "name": "cat",
+        "synonyms": [
+          "cat",
+          "feline",
+          "domestic cat",
+          "house cat"
+        ]
+      },
+      {
+        "name": "chair",
+        "synonyms": [
+          "chair",
+          "armchair",
+          "desk chair",
+          "wooden chair",
+          "dining chair",
+          "kitchen chair",
+          "seat chair",
+          "seating chair",
+          "individual chair"
+        ]
+      },
+      {
+        "name": "cow",
+        "synonyms": [
+          "cow",
+          "cattle",
+          "bull",
+          "calf",
+          "cattle animal",
+          "bovine",
+          "domestic cow"
+        ]
+      },
+      {
+        "name": "diningtable",
+        "synonyms": [
+          "dining table",
+          "table",
+          "meal table",
+          "dinner table"
+        ]
+      },
+      {
+        "name": "dog",
+        "synonyms": [
+          "dog",
+          "canine",
+          "domestic dog",
+          "pet dog"
+        ]
+      },
+      {
+        "name": "horse",
+        "synonyms": [
+          "horse",
+          "wild horse",
+          "equine animal",
+          "domestic horse"
+        ]
+      },
+      {
+        "name": "motorbike",
+        "synonyms": [
+          "motorbike",
+          "motorcycle",
+          "motorized bike"
+        ]
+      },
+      {
+        "name": "person",
+        "synonyms": [
+          "person",
+          "people",
+          "person wearing a shirt",
+          "person wearing jeans",
+          "person wearing a dress",
+          "person wearing a sweater",
+          "person wearing a skirt",
+          "person wearing a jacket",
+          "person wearing a hat",
+          "human",
+          "crowd",
+          "child",
+          "boy",
+          "girl",
+          "man",
+          "women",
+          "human being",
+          "individual person"
+        ]
+      },
+      {
+        "name": "pottedplant",
+        "synonyms": [
+          "potted plant",
+          "plant in a pot",
+          "houseplant",
+          "flowerpot",
+          "pot plant"
+        ]
+      },
+      {
+        "name": "sheep",
+        "synonyms": [
+          "sheep",
+          "lamb",
+          "ovine animal",
+          "domestic sheep"
+        ]
+      },
+      {
+        "name": "sofa",
+        "synonyms": [
+          "sofa",
+          "fabric sofa",
+          "settee",
+          "couch",
+          "upholstered sofa"
+        ]
+      },
+      {
+        "name": "train",
+        "synonyms": [
+          "train",
+          "railway train",
+          "railroad train",
+          "rail vehicle"
+        ]
+      },
+      {
+        "name": "tvmonitor",
+        "synonyms": [
+          "television monitor",
+          "tv monitor",
+          "monitor",
+          "computer monitor",
+          "television",
+          "TV screen"
+        ]
+      }
+    ],
+    "source_bank": "semantic_segmentation",
+    "source_template": "seg_template",
+    "residual_identity": null,
+    "checkpoints": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "upstream_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+    "official_template": "seg_template"
+  },
+  "initialization_and_text_seconds": 14.56945105199702,
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "boundary": "Seven full inputs x seven warmed synchronized repeats. Native VIP resizing/encoding/readout/restoration/CPU output; decode/init/offline selection excluded.",
+  "weights_frozen": true,
+  "head_weights_unchanged": true
+}

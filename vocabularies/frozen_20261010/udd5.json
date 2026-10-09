@@ -1,0 +1,67 @@
+{
+  "dataset": "udd5",
+  "banks": {
+    "kev60_segmentation": {
+      "classes": [
+        {
+          "name": "vegetation",
+          "synonyms": [
+            "vegetation",
+            "grass",
+            "grassland",
+            "bushes",
+            "tree canopy",
+            "trees",
+            "park vegetation"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road",
+            "asphalt road"
+          ]
+        },
+        {
+          "name": "vehicle",
+          "synonyms": [
+            "vehicle"
+          ]
+        },
+        {
+          "name": "other",
+          "synonyms": [
+            "other",
+            "background",
+            "miscellaneous ground",
+            "unclassified area",
+            "unknown terrain",
+            "other land cover",
+            "non target area",
+            "open ground",
+            "bare ground",
+            "pavement",
+            "parking area",
+            "courtyard",
+            "shadow",
+            "construction area",
+            "water surface",
+            "agricultural field",
+            "sports field",
+            "mixed terrain",
+            "unused land",
+            "cluttered area"
+          ]
+        }
+      ],
+      "template": "seg_template"
+    }
+  },
+  "residual": null
+}

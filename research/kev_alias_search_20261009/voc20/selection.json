@@ -1,0 +1,5582 @@
+{
+  "profile": {
+    "bank": "official_segmentation",
+    "strength": 1.0,
+    "coupling": 1.0,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "natural_short336_cap672",
+    "background_rule": "retained"
+  },
+  "background_bias": 0.0,
+  "background_threshold": 0.0,
+  "development_miou": 93.23725357320478,
+  "profile_index": 6,
+  "bias_index": 0,
+  "confusion_matrix": [
+    [
+      72644,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      226,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      22661,
+      0,
+      0,
+      0,
+      14,
+      7,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      115,
+      74,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      82668,
+      0,
+      0,
+      58,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      3595,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      724,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      126403,
+      0,
+      0,
+      202,
+      0,
+      0,
+      455,
+      0,
+      0,
+      0,
+      14396,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      660,
+      0,
+      0,
+      127,
+      0,
+      497667,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10927,
+      0,
+      0,
+      0,
+      46,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      909,
+      74533,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      799,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      342996,
+      263,
+      0,
+      0,
+      0,
+      0,
+      0,
+      6459,
+      0,
+      0,
+      268,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      27065,
+      0,
+      363,
+      0,
+      0,
+      0,
+      1328,
+      0,
+      0,
+      12621,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      51470,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      114432,
+      0,
+      0,
+      0,
+      14591,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      303415,
+      0,
+      0,
+      1554,
+      0,
+      0,
+      954,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      107521,
+      0,
+      3905,
+      0,
+      0,
+      0,
+      624,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      114013,
+      69,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      206,
+      0,
+      23,
+      983,
+      310,
+      1,
+      306,
+      0,
+      0,
+      22,
+      5,
+      182,
+      28331,
+      753247,
+      0,
+      0,
+      32,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      825,
+      65129,
+      0,
+      13,
+      0,
+      377
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      70,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      101284,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      659,
+      581,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4662,
+      0,
+      0,
+      285708,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      85639,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      28491
+    ]
+  ],
+  "development_confusions": {
+    "voc20": [
+      [
+        72644,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        226,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        22661,
+        0,
+        0,
+        0,
+        14,
+        7,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        115,
+        74,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        82668,
+        0,
+        0,
+        58,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        3595,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        724,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        126403,
+        0,
+        0,
+        202,
+        0,
+        0,
+        455,
+        0,
+        0,
+        0,
+        14396,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        660,
+        0,
+        0,
+        127,
+        0,
+        497667,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10927,
+        0,
+        0,
+        0,
+        46,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        909,
+        74533,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        799,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        342996,
+        263,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6459,
+        0,
+        0,
+        268,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        27065,
+        0,
+        363,
+        0,
+        0,
+        0,
+        1328,
+        0,
+        0,
+        12621,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        51470,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        114432,
+        0,
+        0,
+        0,
+        14591,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        303415,
+        0,
+        0,
+        1554,
+        0,
+        0,
+        954,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        107521,
+        0,
+        3905,
+        0,
+        0,
+        0,
+        624,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        114013,
+        69,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        206,
+        0,
+        23,
+        983,
+        310,
+        1,
+        306,
+        0,
+        0,
+        22,
+        5,
+        182,
+        28331,
+        753247,
+        0,
+        0,
+        32,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        825,
+        65129,
+        0,
+        13,
+        0,
+        377
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        70,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        101284,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        659,
+        581,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4662,
+        0,
+        0,
+        285708,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        85639,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        28491
+      ]
+    ]
+  },
+  "implementation": "geometry-kev-variable-alias-static-search-v1-20261009",
+  "status": "complete",
+  "development_keys": [
+    "2007_000033",
+    "2007_001774",
+    "2007_001955",
+    "2007_002268",
+    "2007_002284",
+    "2007_002539",
+    "2007_002618",
+    "2007_002648",
+    "2007_003373",
+    "2007_004380",
+    "2007_004392",
+    "2007_005173",
+    "2007_005304",
+    "2007_006028",
+    "2007_006086",
+    "2007_006277",
+    "2007_009015",
+    "2008_000359",
+    "2008_000765",
+    "2008_001070",
+    "2008_001531",
+    "2008_002929",
+    "2008_003777",
+    "2008_004339",
+    "2008_004477",
+    "2008_004562",
+    "2008_006275",
+    "2008_007031",
+    "2008_007219",
+    "2008_007392",
+    "2008_008127",
+    "2009_000022",
+    "2009_000335",
+    "2009_000421",
+    "2009_000879",
+    "2009_001818",
+    "2009_002122",
+    "2009_002366",
+    "2009_003343",
+    "2009_003904",
+    "2009_004789",
+    "2009_005038",
+    "2009_005156",
+    "2009_005220",
+    "2010_000929",
+    "2010_001124",
+    "2010_002251",
+    "2010_002531",
+    "2010_003781",
+    "2010_004056",
+    "2010_004348",
+    "2010_004520",
+    "2010_004856",
+    "2010_005606",
+    "2010_005706",
+    "2010_005992",
+    "2011_000479",
+    "2011_000482",
+    "2011_001313",
+    "2011_001880",
+    "2011_002121",
+    "2011_002150",
+    "2011_002685",
+    "2011_003011"
+  ],
+  "development_source": "fixed_labeled_validation_development_subset",
+  "vocabulary": {
+    "original": {
+      "classes": [
+        {
+          "name": "aeroplane",
+          "synonyms": [
+            "aeroplane",
+            "airplane",
+            "plane",
+            "aircraft",
+            "a aeroplane",
+            "a airplane",
+            "a plane",
+            "a aircraft",
+            "the aeroplane",
+            "the airplane",
+            "the plane",
+            "the aircraft",
+            "visible aeroplane",
+            "visible airplane",
+            "visible plane",
+            "visible aircraft",
+            "aeroplane in a scene",
+            "airplane in a scene",
+            "plane in a scene",
+            "aircraft in a scene"
+          ]
+        },
+        {
+          "name": "bicycle",
+          "synonyms": [
+            "bicycle",
+            "bike",
+            "pedal bicycle",
+            "pedal bike",
+            "a bicycle",
+            "a bike",
+            "a pedal bicycle",
+            "a pedal bike",
+            "the bicycle",
+            "the bike",
+            "the pedal bicycle",
+            "the pedal bike",
+            "visible bicycle",
+            "visible bike",
+            "visible pedal bicycle",
+            "visible pedal bike",
+            "bicycle in a scene",
+            "bike in a scene",
+            "pedal bicycle in a scene",
+            "pedal bike in a scene"
+          ]
+        },
+        {
+          "name": "bird",
+          "synonyms": [
+            "bird",
+            "avian animal",
+            "feathered bird",
+            "a bird",
+            "a avian animal",
+            "a feathered bird",
+            "the bird",
+            "the avian animal",
+            "the feathered bird",
+            "visible bird",
+            "visible avian animal",
+            "visible feathered bird",
+            "bird in a scene",
+            "avian animal in a scene",
+            "feathered bird in a scene",
+            "bird in the scene",
+            "avian animal in the scene",
+            "feathered bird in the scene",
+            "bird in view",
+            "avian animal in view"
+          ]
+        },
+        {
+          "name": "boat",
+          "synonyms": [
+            "boat",
+            "watercraft",
+            "small boat",
+            "sailing boat",
+            "a boat",
+            "a watercraft",
+            "a small boat",
+            "a sailing boat",
+            "the boat",
+            "the watercraft",
+            "the small boat",
+            "the sailing boat",
+            "visible boat",
+            "visible watercraft",
+            "visible small boat",
+            "visible sailing boat",
+            "boat in a scene",
+            "watercraft in a scene",
+            "small boat in a scene",
+            "sailing boat in a scene"
+          ]
+        },
+        {
+          "name": "bottle",
+          "synonyms": [
+            "bottle",
+            "drink bottle",
+            "glass bottle",
+            "plastic bottle",
+            "a bottle",
+            "a drink bottle",
+            "a glass bottle",
+            "a plastic bottle",
+            "the bottle",
+            "the drink bottle",
+            "the glass bottle",
+            "the plastic bottle",
+            "visible bottle",
+            "visible drink bottle",
+            "visible glass bottle",
+            "visible plastic bottle",
+            "bottle in a scene",
+            "drink bottle in a scene",
+            "glass bottle in a scene",
+            "plastic bottle in a scene"
+          ]
+        },
+        {
+          "name": "bus",
+          "synonyms": [
+            "bus",
+            "passenger bus",
+            "public transit bus",
+            "city bus",
+            "a bus",
+            "a passenger bus",
+            "a public transit bus",
+            "a city bus",
+            "the bus",
+            "the passenger bus",
+            "the public transit bus",
+            "the city bus",
+            "visible bus",
+            "visible passenger bus",
+            "visible public transit bus",
+            "visible city bus",
+            "bus in a scene",
+            "passenger bus in a scene",
+            "public transit bus in a scene",
+            "city bus in a scene"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car",
+            "automobile",
+            "passenger car",
+            "motorcar",
+            "a car",
+            "a automobile",
+            "a passenger car",
+            "a motorcar",
+            "the car",
+            "the automobile",
+            "the passenger car",
+            "the motorcar",
+            "visible car",
+            "visible automobile",
+            "visible passenger car",
+            "visible motorcar",
+            "car in a scene",
+            "automobile in a scene",
+            "passenger car in a scene",
+            "motorcar in a scene"
+          ]
+        },
+        {
+          "name": "cat",
+          "synonyms": [
+            "cat",
+            "feline",
+            "domestic cat",
+            "house cat",
+            "a cat",
+            "a feline",
+            "a domestic cat",
+            "a house cat",
+            "the cat",
+            "the feline",
+            "the domestic cat",
+            "the house cat",
+            "visible cat",
+            "visible feline",
+            "visible domestic cat",
+            "visible house cat",
+            "cat in a scene",
+            "feline in a scene",
+            "domestic cat in a scene",
+            "house cat in a scene"
+          ]
+        },
+        {
+          "name": "chair",
+          "synonyms": [
+            "chair",
+            "seat chair",
+            "seating chair",
+            "individual chair",
+            "a chair",
+            "a seat chair",
+            "a seating chair",
+            "a individual chair",
+            "the chair",
+            "the seat chair",
+            "the seating chair",
+            "the individual chair",
+            "visible chair",
+            "visible seat chair",
+            "visible seating chair",
+            "visible individual chair",
+            "chair in a scene",
+            "seat chair in a scene",
+            "seating chair in a scene",
+            "individual chair in a scene"
+          ]
+        },
+        {
+          "name": "cow",
+          "synonyms": [
+            "cow",
+            "cattle animal",
+            "bovine",
+            "domestic cow",
+            "a cow",
+            "a cattle animal",
+            "a bovine",
+            "a domestic cow",
+            "the cow",
+            "the cattle animal",
+            "the bovine",
+            "the domestic cow",
+            "visible cow",
+            "visible cattle animal",
+            "visible bovine",
+            "visible domestic cow",
+            "cow in a scene",
+            "cattle animal in a scene",
+            "bovine in a scene",
+            "domestic cow in a scene"
+          ]
+        },
+        {
+          "name": "diningtable",
+          "synonyms": [
+            "diningtable",
+            "dining table",
+            "meal table",
+            "dinner table",
+            "a diningtable",
+            "a dining table",
+            "a meal table",
+            "a dinner table",
+            "the diningtable",
+            "the dining table",
+            "the meal table",
+            "the dinner table",
+            "visible diningtable",
+            "visible dining table",
+            "visible meal table",
+            "visible dinner table",
+            "diningtable in a scene",
+            "dining table in a scene",
+            "meal table in a scene",
+            "dinner table in a scene"
+          ]
+        },
+        {
+          "name": "dog",
+          "synonyms": [
+            "dog",
+            "canine",
+            "domestic dog",
+            "pet dog",
+            "a dog",
+            "a canine",
+            "a domestic dog",
+            "a pet dog",
+            "the dog",
+            "the canine",
+            "the domestic dog",
+            "the pet dog",
+            "visible dog",
+            "visible canine",
+            "visible domestic dog",
+            "visible pet dog",
+            "dog in a scene",
+            "canine in a scene",
+            "domestic dog in a scene",
+            "pet dog in a scene"
+          ]
+        },
+        {
+          "name": "horse",
+          "synonyms": [
+            "horse",
+            "equine animal",
+            "domestic horse",
+            "a horse",
+            "a equine animal",
+            "a domestic horse",
+            "the horse",
+            "the equine animal",
+            "the domestic horse",
+            "visible horse",
+            "visible equine animal",
+            "visible domestic horse",
+            "horse in a scene",
+            "equine animal in a scene",
+            "domestic horse in a scene",
+            "horse in the scene",
+            "equine animal in the scene",
+            "domestic horse in the scene",
+            "horse in view",
+            "equine animal in view"
+          ]
+        },
+        {
+          "name": "motorbike",
+          "synonyms": [
+            "motorbike",
+            "motorcycle",
+            "motorized bike",
+            "a motorbike",
+            "a motorcycle",
+            "a motorized bike",
+            "the motorbike",
+            "the motorcycle",
+            "the motorized bike",
+            "visible motorbike",
+            "visible motorcycle",
+            "visible motorized bike",
+            "motorbike in a scene",
+            "motorcycle in a scene",
+            "motorized bike in a scene",
+            "motorbike in the scene",
+            "motorcycle in the scene",
+            "motorized bike in the scene",
+            "motorbike in view",
+            "motorcycle in view"
+          ]
+        },
+        {
+          "name": "person",
+          "synonyms": [
+            "person",
+            "human",
+            "human being",
+            "individual person",
+            "people",
+            "a person",
+            "a human",
+            "a human being",
+            "a individual person",
+            "a people",
+            "the person",
+            "the human",
+            "the human being",
+            "the individual person",
+            "the people",
+            "visible person",
+            "visible human",
+            "visible human being",
+            "visible individual person",
+            "visible people"
+          ]
+        },
+        {
+          "name": "pottedplant",
+          "synonyms": [
+            "pottedplant",
+            "potted plant",
+            "plant in a pot",
+            "pot plant",
+            "a pottedplant",
+            "a potted plant",
+            "a plant in a pot",
+            "a pot plant",
+            "the pottedplant",
+            "the potted plant",
+            "the plant in a pot",
+            "the pot plant",
+            "visible pottedplant",
+            "visible potted plant",
+            "visible plant in a pot",
+            "visible pot plant",
+            "pottedplant in a scene",
+            "potted plant in a scene",
+            "plant in a pot in a scene",
+            "pot plant in a scene"
+          ]
+        },
+        {
+          "name": "sheep",
+          "synonyms": [
+            "sheep",
+            "ovine animal",
+            "domestic sheep",
+            "a sheep",
+            "a ovine animal",
+            "a domestic sheep",
+            "the sheep",
+            "the ovine animal",
+            "the domestic sheep",
+            "visible sheep",
+            "visible ovine animal",
+            "visible domestic sheep",
+            "sheep in a scene",
+            "ovine animal in a scene",
+            "domestic sheep in a scene",
+            "sheep in the scene",
+            "ovine animal in the scene",
+            "domestic sheep in the scene",
+            "sheep in view",
+            "ovine animal in view"
+          ]
+        },
+        {
+          "name": "sofa",
+          "synonyms": [
+            "sofa",
+            "couch",
+            "settee",
+            "upholstered sofa",
+            "a sofa",
+            "a couch",
+            "a settee",
+            "a upholstered sofa",
+            "the sofa",
+            "the couch",
+            "the settee",
+            "the upholstered sofa",
+            "visible sofa",
+            "visible couch",
+            "visible settee",
+            "visible upholstered sofa",
+            "sofa in a scene",
+            "couch in a scene",
+            "settee in a scene",
+            "upholstered sofa in a scene"
+          ]
+        },
+        {
+          "name": "train",
+          "synonyms": [
+            "train",
+            "railway train",
+            "railroad train",
+            "rail vehicle",
+            "a train",
+            "a railway train",
+            "a railroad train",
+            "a rail vehicle",
+            "the train",
+            "the railway train",
+            "the railroad train",
+            "the rail vehicle",
+            "visible train",
+            "visible railway train",
+            "visible railroad train",
+            "visible rail vehicle",
+            "train in a scene",
+            "railway train in a scene",
+            "railroad train in a scene",
+            "rail vehicle in a scene"
+          ]
+        },
+        {
+          "name": "tvmonitor",
+          "synonyms": [
+            "tvmonitor",
+            "television",
+            "TV screen",
+            "television monitor",
+            "a tvmonitor",
+            "a television",
+            "a TV screen",
+            "a television monitor",
+            "the tvmonitor",
+            "the television",
+            "the TV screen",
+            "the television monitor",
+            "visible tvmonitor",
+            "visible television",
+            "visible TV screen",
+            "visible television monitor",
+            "tvmonitor in a scene",
+            "television in a scene",
+            "TV screen in a scene",
+            "television monitor in a scene"
+          ]
+        }
+      ],
+      "template": "ImageNet80"
+    },
+    "original_segmentation": {
+      "classes": [
+        {
+          "name": "aeroplane",
+          "synonyms": [
+            "aeroplane",
+            "airplane",
+            "plane",
+            "aircraft",
+            "a aeroplane",
+            "a airplane",
+            "a plane",
+            "a aircraft",
+            "the aeroplane",
+            "the airplane",
+            "the plane",
+            "the aircraft",
+            "visible aeroplane",
+            "visible airplane",
+            "visible plane",
+            "visible aircraft",
+            "aeroplane in a scene",
+            "airplane in a scene",
+            "plane in a scene",
+            "aircraft in a scene"
+          ]
+        },
+        {
+          "name": "bicycle",
+          "synonyms": [
+            "bicycle",
+            "bike",
+            "pedal bicycle",
+            "pedal bike",
+            "a bicycle",
+            "a bike",
+            "a pedal bicycle",
+            "a pedal bike",
+            "the bicycle",
+            "the bike",
+            "the pedal bicycle",
+            "the pedal bike",
+            "visible bicycle",
+            "visible bike",
+            "visible pedal bicycle",
+            "visible pedal bike",
+            "bicycle in a scene",
+            "bike in a scene",
+            "pedal bicycle in a scene",
+            "pedal bike in a scene"
+          ]
+        },
+        {
+          "name": "bird",
+          "synonyms": [
+            "bird",
+            "avian animal",
+            "feathered bird",
+            "a bird",
+            "a avian animal",
+            "a feathered bird",
+            "the bird",
+            "the avian animal",
+            "the feathered bird",
+            "visible bird",
+            "visible avian animal",
+            "visible feathered bird",
+            "bird in a scene",
+            "avian animal in a scene",
+            "feathered bird in a scene",
+            "bird in the scene",
+            "avian animal in the scene",
+            "feathered bird in the scene",
+            "bird in view",
+            "avian animal in view"
+          ]
+        },
+        {
+          "name": "boat",
+          "synonyms": [
+            "boat",
+            "watercraft",
+            "small boat",
+            "sailing boat",
+            "a boat",
+            "a watercraft",
+            "a small boat",
+            "a sailing boat",
+            "the boat",
+            "the watercraft",
+            "the small boat",
+            "the sailing boat",
+            "visible boat",
+            "visible watercraft",
+            "visible small boat",
+            "visible sailing boat",
+            "boat in a scene",
+            "watercraft in a scene",
+            "small boat in a scene",
+            "sailing boat in a scene"
+          ]
+        },
+        {
+          "name": "bottle",
+          "synonyms": [
+            "bottle",
+            "drink bottle",
+            "glass bottle",
+            "plastic bottle",
+            "a bottle",
+            "a drink bottle",
+            "a glass bottle",
+            "a plastic bottle",
+            "the bottle",
+            "the drink bottle",
+            "the glass bottle",
+            "the plastic bottle",
+            "visible bottle",
+            "visible drink bottle",
+            "visible glass bottle",
+            "visible plastic bottle",
+            "bottle in a scene",
+            "drink bottle in a scene",
+            "glass bottle in a scene",
+            "plastic bottle in a scene"
+          ]
+        },
+        {
+          "name": "bus",
+          "synonyms": [
+            "bus",
+            "passenger bus",
+            "public transit bus",
+            "city bus",
+            "a bus",
+            "a passenger bus",
+            "a public transit bus",
+            "a city bus",
+            "the bus",
+            "the passenger bus",
+            "the public transit bus",
+            "the city bus",
+            "visible bus",
+            "visible passenger bus",
+            "visible public transit bus",
+            "visible city bus",
+            "bus in a scene",
+            "passenger bus in a scene",
+            "public transit bus in a scene",
+            "city bus in a scene"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car",
+            "automobile",
+            "passenger car",
+            "motorcar",
+            "a car",
+            "a automobile",
+            "a passenger car",
+            "a motorcar",
+            "the car",
+            "the automobile",
+            "the passenger car",
+            "the motorcar",
+            "visible car",
+            "visible automobile",
+            "visible passenger car",
+            "visible motorcar",
+            "car in a scene",
+            "automobile in a scene",
+            "passenger car in a scene",
+            "motorcar in a scene"
+          ]
+        },
+        {
+          "name": "cat",
+          "synonyms": [
+            "cat",
+            "feline",
+            "domestic cat",
+            "house cat",
+            "a cat",
+            "a feline",
+            "a domestic cat",
+            "a house cat",
+            "the cat",
+            "the feline",
+            "the domestic cat",
+            "the house cat",
+            "visible cat",
+            "visible feline",
+            "visible domestic cat",
+            "visible house cat",
+            "cat in a scene",
+            "feline in a scene",
+            "domestic cat in a scene",
+            "house cat in a scene"
+          ]
+        },
+        {
+          "name": "chair",
+          "synonyms": [
+            "chair",
+            "seat chair",
+            "seating chair",
+            "individual chair",
+            "a chair",
+            "a seat chair",
+            "a seating chair",
+            "a individual chair",
+            "the chair",
+            "the seat chair",
+            "the seating chair",
+            "the individual chair",
+            "visible chair",
+            "visible seat chair",
+            "visible seating chair",
+            "visible individual chair",
+            "chair in a scene",
+            "seat chair in a scene",
+            "seating chair in a scene",
+            "individual chair in a scene"
+          ]
+        },
+        {
+          "name": "cow",
+          "synonyms": [
+            "cow",
+            "cattle animal",
+            "bovine",
+            "domestic cow",
+            "a cow",
+            "a cattle animal",
+            "a bovine",
+            "a domestic cow",
+            "the cow",
+            "the cattle animal",
+            "the bovine",
+            "the domestic cow",
+            "visible cow",
+            "visible cattle animal",
+            "visible bovine",
+            "visible domestic cow",
+            "cow in a scene",
+            "cattle animal in a scene",
+            "bovine in a scene",
+            "domestic cow in a scene"
+          ]
+        },
+        {
+          "name": "diningtable",
+          "synonyms": [
+            "diningtable",
+            "dining table",
+            "meal table",
+            "dinner table",
+            "a diningtable",
+            "a dining table",
+            "a meal table",
+            "a dinner table",
+            "the diningtable",
+            "the dining table",
+            "the meal table",
+            "the dinner table",
+            "visible diningtable",
+            "visible dining table",
+            "visible meal table",
+            "visible dinner table",
+            "diningtable in a scene",
+            "dining table in a scene",
+            "meal table in a scene",
+            "dinner table in a scene"
+          ]
+        },
+        {
+          "name": "dog",
+          "synonyms": [
+            "dog",
+            "canine",
+            "domestic dog",
+            "pet dog",
+            "a dog",
+            "a canine",
+            "a domestic dog",
+            "a pet dog",
+            "the dog",
+            "the canine",
+            "the domestic dog",
+            "the pet dog",
+            "visible dog",
+            "visible canine",
+            "visible domestic dog",
+            "visible pet dog",
+            "dog in a scene",
+            "canine in a scene",
+            "domestic dog in a scene",
+            "pet dog in a scene"
+          ]
+        },
+        {
+          "name": "horse",
+          "synonyms": [
+            "horse",
+            "equine animal",
+            "domestic horse",
+            "a horse",
+            "a equine animal",
+            "a domestic horse",
+            "the horse",
+            "the equine animal",
+            "the domestic horse",
+            "visible horse",
+            "visible equine animal",
+            "visible domestic horse",
+            "horse in a scene",
+            "equine animal in a scene",
+            "domestic horse in a scene",
+            "horse in the scene",
+            "equine animal in the scene",
+            "domestic horse in the scene",
+            "horse in view",
+            "equine animal in view"
+          ]
+        },
+        {
+          "name": "motorbike",
+          "synonyms": [
+            "motorbike",
+            "motorcycle",
+            "motorized bike",
+            "a motorbike",
+            "a motorcycle",
+            "a motorized bike",
+            "the motorbike",
+            "the motorcycle",
+            "the motorized bike",
+            "visible motorbike",
+            "visible motorcycle",
+            "visible motorized bike",
+            "motorbike in a scene",
+            "motorcycle in a scene",
+            "motorized bike in a scene",
+            "motorbike in the scene",
+            "motorcycle in the scene",
+            "motorized bike in the scene",
+            "motorbike in view",
+            "motorcycle in view"
+          ]
+        },
+        {
+          "name": "person",
+          "synonyms": [
+            "person",
+            "human",
+            "human being",
+            "individual person",
+            "people",
+            "a person",
+            "a human",
+            "a human being",
+            "a individual person",
+            "a people",
+            "the person",
+            "the human",
+            "the human being",
+            "the individual person",
+            "the people",
+            "visible person",
+            "visible human",
+            "visible human being",
+            "visible individual person",
+            "visible people"
+          ]
+        },
+        {
+          "name": "pottedplant",
+          "synonyms": [
+            "pottedplant",
+            "potted plant",
+            "plant in a pot",
+            "pot plant",
+            "a pottedplant",
+            "a potted plant",
+            "a plant in a pot",
+            "a pot plant",
+            "the pottedplant",
+            "the potted plant",
+            "the plant in a pot",
+            "the pot plant",
+            "visible pottedplant",
+            "visible potted plant",
+            "visible plant in a pot",
+            "visible pot plant",
+            "pottedplant in a scene",
+            "potted plant in a scene",
+            "plant in a pot in a scene",
+            "pot plant in a scene"
+          ]
+        },
+        {
+          "name": "sheep",
+          "synonyms": [
+            "sheep",
+            "ovine animal",
+            "domestic sheep",
+            "a sheep",
+            "a ovine animal",
+            "a domestic sheep",
+            "the sheep",
+            "the ovine animal",
+            "the domestic sheep",
+            "visible sheep",
+            "visible ovine animal",
+            "visible domestic sheep",
+            "sheep in a scene",
+            "ovine animal in a scene",
+            "domestic sheep in a scene",
+            "sheep in the scene",
+            "ovine animal in the scene",
+            "domestic sheep in the scene",
+            "sheep in view",
+            "ovine animal in view"
+          ]
+        },
+        {
+          "name": "sofa",
+          "synonyms": [
+            "sofa",
+            "couch",
+            "settee",
+            "upholstered sofa",
+            "a sofa",
+            "a couch",
+            "a settee",
+            "a upholstered sofa",
+            "the sofa",
+            "the couch",
+            "the settee",
+            "the upholstered sofa",
+            "visible sofa",
+            "visible couch",
+            "visible settee",
+            "visible upholstered sofa",
+            "sofa in a scene",
+            "couch in a scene",
+            "settee in a scene",
+            "upholstered sofa in a scene"
+          ]
+        },
+        {
+          "name": "train",
+          "synonyms": [
+            "train",
+            "railway train",
+            "railroad train",
+            "rail vehicle",
+            "a train",
+            "a railway train",
+            "a railroad train",
+            "a rail vehicle",
+            "the train",
+            "the railway train",
+            "the railroad train",
+            "the rail vehicle",
+            "visible train",
+            "visible railway train",
+            "visible railroad train",
+            "visible rail vehicle",
+            "train in a scene",
+            "railway train in a scene",
+            "railroad train in a scene",
+            "rail vehicle in a scene"
+          ]
+        },
+        {
+          "name": "tvmonitor",
+          "synonyms": [
+            "tvmonitor",
+            "television",
+            "TV screen",
+            "television monitor",
+            "a tvmonitor",
+            "a television",
+            "a TV screen",
+            "a television monitor",
+            "the tvmonitor",
+            "the television",
+            "the TV screen",
+            "the television monitor",
+            "visible tvmonitor",
+            "visible television",
+            "visible TV screen",
+            "visible television monitor",
+            "tvmonitor in a scene",
+            "television in a scene",
+            "TV screen in a scene",
+            "television monitor in a scene"
+          ]
+        }
+      ],
+      "template": "seg_template"
+    },
+    "semantic_segmentation": {
+      "classes": [
+        {
+          "name": "aeroplane",
+          "synonyms": [
+            "aeroplane",
+            "plane",
+            "airplane",
+            "aircraft"
+          ]
+        },
+        {
+          "name": "bicycle",
+          "synonyms": [
+            "bicycle",
+            "pedal bike",
+            "pedal bicycle"
+          ]
+        },
+        {
+          "name": "bird",
+          "synonyms": [
+            "bird",
+            "avian animal",
+            "feathered bird"
+          ]
+        },
+        {
+          "name": "boat",
+          "synonyms": [
+            "boat",
+            "watercraft",
+            "small boat",
+            "sailing boat"
+          ]
+        },
+        {
+          "name": "bottle",
+          "synonyms": [
+            "bottle",
+            "wine bottle",
+            "drink bottle",
+            "glass bottle",
+            "plastic bottle"
+          ]
+        },
+        {
+          "name": "bus",
+          "synonyms": [
+            "bus",
+            "red bus",
+            "double-decker bus",
+            "passenger bus",
+            "public transit bus",
+            "city bus"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car",
+            "automobile",
+            "passenger car",
+            "motorcar"
+          ]
+        },
+        {
+          "name": "cat",
+          "synonyms": [
+            "cat",
+            "feline",
+            "domestic cat",
+            "house cat"
+          ]
+        },
+        {
+          "name": "chair",
+          "synonyms": [
+            "chair",
+            "armchair",
+            "desk chair",
+            "wooden chair",
+            "dining chair",
+            "kitchen chair",
+            "office chair",
+            "seat chair",
+            "seating chair",
+            "individual chair"
+          ]
+        },
+        {
+          "name": "cow",
+          "synonyms": [
+            "cow",
+            "cattle",
+            "bull",
+            "calf",
+            "cattle animal",
+            "bovine",
+            "domestic cow"
+          ]
+        },
+        {
+          "name": "diningtable",
+          "synonyms": [
+            "dining table",
+            "table",
+            "desk",
+            "meal table",
+            "dinner table"
+          ]
+        },
+        {
+          "name": "dog",
+          "synonyms": [
+            "dog",
+            "canine",
+            "domestic dog",
+            "pet dog"
+          ]
+        },
+        {
+          "name": "horse",
+          "synonyms": [
+            "horse",
+            "wild horse",
+            "equine animal",
+            "domestic horse"
+          ]
+        },
+        {
+          "name": "motorbike",
+          "synonyms": [
+            "motorbike",
+            "motorcycle",
+            "motorized bike"
+          ]
+        },
+        {
+          "name": "person",
+          "synonyms": [
+            "person",
+            "people",
+            "person wearing a shirt",
+            "person wearing jeans",
+            "person wearing a dress",
+            "person wearing a sweater",
+            "person wearing a skirt",
+            "person wearing a jacket",
+            "person wearing a hat",
+            "human",
+            "crowd",
+            "child",
+            "boy",
+            "girl",
+            "man",
+            "women",
+            "human being",
+            "individual person"
+          ]
+        },
+        {
+          "name": "pottedplant",
+          "synonyms": [
+            "potted plant",
+            "plant in a pot",
+            "houseplant",
+            "flowerpot",
+            "pot plant"
+          ]
+        },
+        {
+          "name": "sheep",
+          "synonyms": [
+            "sheep",
+            "ovine animal",
+            "domestic sheep"
+          ]
+        },
+        {
+          "name": "sofa",
+          "synonyms": [
+            "sofa",
+            "fabric sofa",
+            "couch",
+            "settee",
+            "upholstered sofa"
+          ]
+        },
+        {
+          "name": "train",
+          "synonyms": [
+            "train",
+            "railway train",
+            "railroad train",
+            "rail vehicle"
+          ]
+        },
+        {
+          "name": "tvmonitor",
+          "synonyms": [
+            "television monitor",
+            "tv monitor",
+            "monitor",
+            "computer monitor",
+            "television",
+            "TV screen"
+          ]
+        }
+      ],
+      "template": "seg_template"
+    },
+    "semantic_imagenet": {
+      "classes": [
+        {
+          "name": "aeroplane",
+          "synonyms": [
+            "aeroplane",
+            "plane",
+            "airplane",
+            "aircraft"
+          ]
+        },
+        {
+          "name": "bicycle",
+          "synonyms": [
+            "bicycle",
+            "pedal bike",
+            "pedal bicycle"
+          ]
+        },
+        {
+          "name": "bird",
+          "synonyms": [
+            "bird",
+            "avian animal",
+            "feathered bird"
+          ]
+        },
+        {
+          "name": "boat",
+          "synonyms": [
+            "boat",
+            "watercraft",
+            "small boat",
+            "sailing boat"
+          ]
+        },
+        {
+          "name": "bottle",
+          "synonyms": [
+            "bottle",
+            "wine bottle",
+            "drink bottle",
+            "glass bottle",
+            "plastic bottle"
+          ]
+        },
+        {
+          "name": "bus",
+          "synonyms": [
+            "bus",
+            "red bus",
+            "double-decker bus",
+            "passenger bus",
+            "public transit bus",
+            "city bus"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car",
+            "automobile",
+            "passenger car",
+            "motorcar"
+          ]
+        },
+        {
+          "name": "cat",
+          "synonyms": [
+            "cat",
+            "feline",
+            "domestic cat",
+            "house cat"
+          ]
+        },
+        {
+          "name": "chair",
+          "synonyms": [
+            "chair",
+            "armchair",
+            "desk chair",
+            "wooden chair",
+            "dining chair",
+            "kitchen chair",
+            "office chair",
+            "seat chair",
+            "seating chair",
+            "individual chair"
+          ]
+        },
+        {
+          "name": "cow",
+          "synonyms": [
+            "cow",
+            "cattle",
+            "bull",
+            "calf",
+            "cattle animal",
+            "bovine",
+            "domestic cow"
+          ]
+        },
+        {
+          "name": "diningtable",
+          "synonyms": [
+            "dining table",
+            "table",
+            "desk",
+            "meal table",
+            "dinner table"
+          ]
+        },
+        {
+          "name": "dog",
+          "synonyms": [
+            "dog",
+            "canine",
+            "domestic dog",
+            "pet dog"
+          ]
+        },
+        {
+          "name": "horse",
+          "synonyms": [
+            "horse",
+            "wild horse",
+            "equine animal",
+            "domestic horse"
+          ]
+        },
+        {
+          "name": "motorbike",
+          "synonyms": [
+            "motorbike",
+            "motorcycle",
+            "motorized bike"
+          ]
+        },
+        {
+          "name": "person",
+          "synonyms": [
+            "person",
+            "people",
+            "person wearing a shirt",
+            "person wearing jeans",
+            "person wearing a dress",
+            "person wearing a sweater",
+            "person wearing a skirt",
+            "person wearing a jacket",
+            "person wearing a hat",
+            "human",
+            "crowd",
+            "child",
+            "boy",
+            "girl",
+            "man",
+            "women",
+            "human being",
+            "individual person"
+          ]
+        },
+        {
+          "name": "pottedplant",
+          "synonyms": [
+            "potted plant",
+            "plant in a pot",
+            "houseplant",
+            "flowerpot",
+            "pot plant"
+          ]
+        },
+        {
+          "name": "sheep",
+          "synonyms": [
+            "sheep",
+            "ovine animal",
+            "domestic sheep"
+          ]
+        },
+        {
+          "name": "sofa",
+          "synonyms": [
+            "sofa",
+            "fabric sofa",
+            "couch",
+            "settee",
+            "upholstered sofa"
+          ]
+        },
+        {
+          "name": "train",
+          "synonyms": [
+            "train",
+            "railway train",
+            "railroad train",
+            "rail vehicle"
+          ]
+        },
+        {
+          "name": "tvmonitor",
+          "synonyms": [
+            "television monitor",
+            "tv monitor",
+            "monitor",
+            "computer monitor",
+            "television",
+            "TV screen"
+          ]
+        }
+      ],
+      "template": "ImageNet80"
+    },
+    "official_imagenet": {
+      "classes": [
+        {
+          "name": "aeroplane",
+          "synonyms": [
+            "aeroplane",
+            "plane"
+          ]
+        },
+        {
+          "name": "bicycle",
+          "synonyms": [
+            "bicycle"
+          ]
+        },
+        {
+          "name": "bird",
+          "synonyms": [
+            "bird"
+          ]
+        },
+        {
+          "name": "boat",
+          "synonyms": [
+            "boat"
+          ]
+        },
+        {
+          "name": "bottle",
+          "synonyms": [
+            "bottle",
+            "wine bottle"
+          ]
+        },
+        {
+          "name": "bus",
+          "synonyms": [
+            "bus",
+            "red bus",
+            "double-decker bus"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car"
+          ]
+        },
+        {
+          "name": "cat",
+          "synonyms": [
+            "cat"
+          ]
+        },
+        {
+          "name": "chair",
+          "synonyms": [
+            "chair",
+            "armchair",
+            "desk chair",
+            "wooden chair",
+            "dining chair",
+            "kitchen chair",
+            "office chair"
+          ]
+        },
+        {
+          "name": "cow",
+          "synonyms": [
+            "cow",
+            "cattle",
+            "bull",
+            "calf"
+          ]
+        },
+        {
+          "name": "diningtable",
+          "synonyms": [
+            "table",
+            "desk"
+          ]
+        },
+        {
+          "name": "dog",
+          "synonyms": [
+            "dog"
+          ]
+        },
+        {
+          "name": "horse",
+          "synonyms": [
+            "horse",
+            "wild horse"
+          ]
+        },
+        {
+          "name": "motorbike",
+          "synonyms": [
+            "motorcycle",
+            "motorbike"
+          ]
+        },
+        {
+          "name": "person",
+          "synonyms": [
+            "person",
+            "people",
+            "people in shirt",
+            "people in jeans",
+            "people in dress",
+            "people in sweater",
+            "people in skirt",
+            "people in jacket",
+            "people in hat",
+            "human in hat",
+            "human in jeans",
+            "human in sweater",
+            "human in skirt",
+            "human in jacket",
+            "human",
+            "crowd",
+            "child",
+            "boy",
+            "girl",
+            "man",
+            "women"
+          ]
+        },
+        {
+          "name": "pottedplant",
+          "synonyms": [
+            "potted plant",
+            "plant in a pot",
+            "houseplant",
+            "flowerpot"
+          ]
+        },
+        {
+          "name": "sheep",
+          "synonyms": [
+            "sheep"
+          ]
+        },
+        {
+          "name": "sofa",
+          "synonyms": [
+            "sofa",
+            "fabric sofa"
+          ]
+        },
+        {
+          "name": "train",
+          "synonyms": [
+            "train"
+          ]
+        },
+        {
+          "name": "tvmonitor",
+          "synonyms": [
+            "tv monitor",
+            "monitor",
+            "computer monitor",
+            "television monitor"
+          ]
+        }
+      ],
+      "template": "ImageNet80"
+    },
+    "official_segmentation": {
+      "classes": [
+        {
+          "name": "aeroplane",
+          "synonyms": [
+            "aeroplane",
+            "plane"
+          ]
+        },
+        {
+          "name": "bicycle",
+          "synonyms": [
+            "bicycle"
+          ]
+        },
+        {
+          "name": "bird",
+          "synonyms": [
+            "bird"
+          ]
+        },
+        {
+          "name": "boat",
+          "synonyms": [
+            "boat"
+          ]
+        },
+        {
+          "name": "bottle",
+          "synonyms": [
+            "bottle",
+            "wine bottle"
+          ]
+        },
+        {
+          "name": "bus",
+          "synonyms": [
+            "bus",
+            "red bus",
+            "double-decker bus"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car"
+          ]
+        },
+        {
+          "name": "cat",
+          "synonyms": [
+            "cat"
+          ]
+        },
+        {
+          "name": "chair",
+          "synonyms": [
+            "chair",
+            "armchair",
+            "desk chair",
+            "wooden chair",
+            "dining chair",
+            "kitchen chair",
+            "office chair"
+          ]
+        },
+        {
+          "name": "cow",
+          "synonyms": [
+            "cow",
+            "cattle",
+            "bull",
+            "calf"
+          ]
+        },
+        {
+          "name": "diningtable",
+          "synonyms": [
+            "table",
+            "desk"
+          ]
+        },
+        {
+          "name": "dog",
+          "synonyms": [
+            "dog"
+          ]
+        },
+        {
+          "name": "horse",
+          "synonyms": [
+            "horse",
+            "wild horse"
+          ]
+        },
+        {
+          "name": "motorbike",
+          "synonyms": [
+            "motorcycle",
+            "motorbike"
+          ]
+        },
+        {
+          "name": "person",
+          "synonyms": [
+            "person",
+            "people",
+            "people in shirt",
+            "people in jeans",
+            "people in dress",
+            "people in sweater",
+            "people in skirt",
+            "people in jacket",
+            "people in hat",
+            "human in hat",
+            "human in jeans",
+            "human in sweater",
+            "human in skirt",
+            "human in jacket",
+            "human",
+            "crowd",
+            "child",
+            "boy",
+            "girl",
+            "man",
+            "women"
+          ]
+        },
+        {
+          "name": "pottedplant",
+          "synonyms": [
+            "potted plant",
+            "plant in a pot",
+            "houseplant",
+            "flowerpot"
+          ]
+        },
+        {
+          "name": "sheep",
+          "synonyms": [
+            "sheep"
+          ]
+        },
+        {
+          "name": "sofa",
+          "synonyms": [
+            "sofa",
+            "fabric sofa"
+          ]
+        },
+        {
+          "name": "train",
+          "synonyms": [
+            "train"
+          ]
+        },
+        {
+          "name": "tvmonitor",
+          "synonyms": [
+            "tv monitor",
+            "monitor",
+            "computer monitor",
+            "television monitor"
+          ]
+        }
+      ],
+      "template": "seg_template"
+    },
+    "kev40_imagenet": {
+      "classes": [
+        {
+          "name": "aeroplane",
+          "synonyms": [
+            "aeroplane",
+            "airplane",
+            "plane",
+            "aircraft",
+            "a aeroplane",
+            "a airplane",
+            "a plane",
+            "a aircraft",
+            "the aeroplane",
+            "the airplane",
+            "the plane",
+            "the aircraft",
+            "visible aeroplane",
+            "visible airplane",
+            "visible plane",
+            "visible aircraft",
+            "aeroplane in a scene",
+            "airplane in a scene",
+            "plane in a scene",
+            "aircraft in a scene"
+          ]
+        },
+        {
+          "name": "bicycle",
+          "synonyms": [
+            "bicycle",
+            "bike",
+            "pedal bicycle",
+            "pedal bike",
+            "a bicycle",
+            "a bike",
+            "a pedal bicycle",
+            "a pedal bike",
+            "the bicycle",
+            "the bike",
+            "the pedal bicycle",
+            "the pedal bike",
+            "visible bicycle",
+            "visible bike",
+            "visible pedal bicycle",
+            "visible pedal bike",
+            "bicycle in a scene",
+            "bike in a scene",
+            "pedal bicycle in a scene",
+            "pedal bike in a scene"
+          ]
+        },
+        {
+          "name": "bird",
+          "synonyms": [
+            "bird",
+            "avian animal",
+            "feathered bird",
+            "a bird",
+            "a avian animal",
+            "a feathered bird",
+            "the bird",
+            "the avian animal",
+            "the feathered bird",
+            "visible bird",
+            "visible avian animal",
+            "visible feathered bird",
+            "bird in a scene",
+            "avian animal in a scene",
+            "feathered bird in a scene",
+            "bird in the scene",
+            "avian animal in the scene",
+            "feathered bird in the scene",
+            "bird in view",
+            "avian animal in view"
+          ]
+        },
+        {
+          "name": "boat",
+          "synonyms": [
+            "boat",
+            "watercraft",
+            "small boat",
+            "sailing boat",
+            "a boat",
+            "a watercraft",
+            "a small boat",
+            "a sailing boat",
+            "the boat",
+            "the watercraft",
+            "the small boat",
+            "the sailing boat",
+            "visible boat",
+            "visible watercraft",
+            "visible small boat",
+            "visible sailing boat",
+            "boat in a scene",
+            "watercraft in a scene",
+            "small boat in a scene",
+            "sailing boat in a scene"
+          ]
+        },
+        {
+          "name": "bottle",
+          "synonyms": [
+            "bottle",
+            "drink bottle",
+            "glass bottle",
+            "plastic bottle",
+            "a bottle",
+            "a drink bottle",
+            "a glass bottle",
+            "a plastic bottle",
+            "the bottle",
+            "the drink bottle",
+            "the glass bottle",
+            "the plastic bottle",
+            "visible bottle",
+            "visible drink bottle",
+            "visible glass bottle",
+            "visible plastic bottle",
+            "bottle in a scene",
+            "drink bottle in a scene",
+            "glass bottle in a scene",
+            "plastic bottle in a scene",
+            "wine bottle"
+          ]
+        },
+        {
+          "name": "bus",
+          "synonyms": [
+            "bus",
+            "passenger bus",
+            "public transit bus",
+            "city bus",
+            "a bus",
+            "a passenger bus",
+            "a public transit bus",
+            "a city bus",
+            "the bus",
+            "the passenger bus",
+            "the public transit bus",
+            "the city bus",
+            "visible bus",
+            "visible passenger bus",
+            "visible public transit bus",
+            "visible city bus",
+            "bus in a scene",
+            "passenger bus in a scene",
+            "public transit bus in a scene",
+            "city bus in a scene",
+            "red bus",
+            "double-decker bus"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car",
+            "automobile",
+            "passenger car",
+            "motorcar",
+            "a car",
+            "a automobile",
+            "a passenger car",
+            "a motorcar",
+            "the car",
+            "the automobile",
+            "the passenger car",
+            "the motorcar",
+            "visible car",
+            "visible automobile",
+            "visible passenger car",
+            "visible motorcar",
+            "car in a scene",
+            "automobile in a scene",
+            "passenger car in a scene",
+            "motorcar in a scene"
+          ]
+        },
+        {
+          "name": "cat",
+          "synonyms": [
+            "cat",
+            "feline",
+            "domestic cat",
+            "house cat",
+            "a cat",
+            "a feline",
+            "a domestic cat",
+            "a house cat",
+            "the cat",
+            "the feline",
+            "the domestic cat",
+            "the house cat",
+            "visible cat",
+            "visible feline",
+            "visible domestic cat",
+            "visible house cat",
+            "cat in a scene",
+            "feline in a scene",
+            "domestic cat in a scene",
+            "house cat in a scene"
+          ]
+        },
+        {
+          "name": "chair",
+          "synonyms": [
+            "chair",
+            "seat chair",
+            "seating chair",
+            "individual chair",
+            "a chair",
+            "a seat chair",
+            "a seating chair",
+            "a individual chair",
+            "the chair",
+            "the seat chair",
+            "the seating chair",
+            "the individual chair",
+            "visible chair",
+            "visible seat chair",
+            "visible seating chair",
+            "visible individual chair",
+            "chair in a scene",
+            "seat chair in a scene",
+            "seating chair in a scene",
+            "individual chair in a scene",
+            "armchair",
+            "desk chair",
+            "wooden chair",
+            "dining chair",
+            "kitchen chair",
+            "office chair"
+          ]
+        },
+        {
+          "name": "cow",
+          "synonyms": [
+            "cow",
+            "cattle animal",
+            "bovine",
+            "domestic cow",
+            "a cow",
+            "a cattle animal",
+            "a bovine",
+            "a domestic cow",
+            "the cow",
+            "the cattle animal",
+            "the bovine",
+            "the domestic cow",
+            "visible cow",
+            "visible cattle animal",
+            "visible bovine",
+            "visible domestic cow",
+            "cow in a scene",
+            "cattle animal in a scene",
+            "bovine in a scene",
+            "domestic cow in a scene",
+            "cattle",
+            "calf"
+          ]
+        },
+        {
+          "name": "diningtable",
+          "synonyms": [
+            "diningtable",
+            "dining table",
+            "meal table",
+            "dinner table",
+            "a diningtable",
+            "a dining table",
+            "a meal table",
+            "a dinner table",
+            "the diningtable",
+            "the dining table",
+            "the meal table",
+            "the dinner table",
+            "visible diningtable",
+            "visible dining table",
+            "visible meal table",
+            "visible dinner table",
+            "diningtable in a scene",
+            "dining table in a scene",
+            "meal table in a scene",
+            "dinner table in a scene",
+            "table",
+            "desk"
+          ]
+        },
+        {
+          "name": "dog",
+          "synonyms": [
+            "dog",
+            "canine",
+            "domestic dog",
+            "pet dog",
+            "a dog",
+            "a canine",
+            "a domestic dog",
+            "a pet dog",
+            "the dog",
+            "the canine",
+            "the domestic dog",
+            "the pet dog",
+            "visible dog",
+            "visible canine",
+            "visible domestic dog",
+            "visible pet dog",
+            "dog in a scene",
+            "canine in a scene",
+            "domestic dog in a scene",
+            "pet dog in a scene"
+          ]
+        },
+        {
+          "name": "horse",
+          "synonyms": [
+            "horse",
+            "equine animal",
+            "domestic horse",
+            "a horse",
+            "a equine animal",
+            "a domestic horse",
+            "the horse",
+            "the equine animal",
+            "the domestic horse",
+            "visible horse",
+            "visible equine animal",
+            "visible domestic horse",
+            "horse in a scene",
+            "equine animal in a scene",
+            "domestic horse in a scene",
+            "horse in the scene",
+            "equine animal in the scene",
+            "domestic horse in the scene",
+            "horse in view",
+            "equine animal in view",
+            "wild horse"
+          ]
+        },
+        {
+          "name": "motorbike",
+          "synonyms": [
+            "motorbike",
+            "motorcycle",
+            "motorized bike",
+            "a motorbike",
+            "a motorcycle",
+            "a motorized bike",
+            "the motorbike",
+            "the motorcycle",
+            "the motorized bike",
+            "visible motorbike",
+            "visible motorcycle",
+            "visible motorized bike",
+            "motorbike in a scene",
+            "motorcycle in a scene",
+            "motorized bike in a scene",
+            "motorbike in the scene",
+            "motorcycle in the scene",
+            "motorized bike in the scene",
+            "motorbike in view",
+            "motorcycle in view"
+          ]
+        },
+        {
+          "name": "person",
+          "synonyms": [
+            "person",
+            "human",
+            "human being",
+            "individual person",
+            "people",
+            "a person",
+            "a human",
+            "a human being",
+            "a individual person",
+            "a people",
+            "the person",
+            "the human",
+            "the human being",
+            "the individual person",
+            "the people",
+            "visible person",
+            "visible human",
+            "visible human being",
+            "visible individual person",
+            "visible people",
+            "person wearing a shirt",
+            "person wearing jeans",
+            "person wearing a dress",
+            "person wearing a sweater",
+            "person wearing a skirt",
+            "person wearing a jacket",
+            "person wearing a hat",
+            "child",
+            "boy",
+            "girl",
+            "man",
+            "women",
+            "people in shirt",
+            "people in jeans",
+            "people in dress",
+            "people in sweater",
+            "people in skirt",
+            "people in jacket",
+            "people in hat",
+            "human in hat",
+            "human in jeans",
+            "human in sweater",
+            "human in skirt",
+            "human in jacket"
+          ]
+        },
+        {
+          "name": "pottedplant",
+          "synonyms": [
+            "pottedplant",
+            "potted plant",
+            "plant in a pot",
+            "pot plant",
+            "a pottedplant",
+            "a potted plant",
+            "a plant in a pot",
+            "a pot plant",
+            "the pottedplant",
+            "the potted plant",
+            "the plant in a pot",
+            "the pot plant",
+            "visible pottedplant",
+            "visible potted plant",
+            "visible plant in a pot",
+            "visible pot plant",
+            "pottedplant in a scene",
+            "potted plant in a scene",
+            "plant in a pot in a scene",
+            "pot plant in a scene",
+            "houseplant"
+          ]
+        },
+        {
+          "name": "sheep",
+          "synonyms": [
+            "sheep",
+            "ovine animal",
+            "domestic sheep",
+            "a sheep",
+            "a ovine animal",
+            "a domestic sheep",
+            "the sheep",
+            "the ovine animal",
+            "the domestic sheep",
+            "visible sheep",
+            "visible ovine animal",
+            "visible domestic sheep",
+            "sheep in a scene",
+            "ovine animal in a scene",
+            "domestic sheep in a scene",
+            "sheep in the scene",
+            "ovine animal in the scene",
+            "domestic sheep in the scene",
+            "sheep in view",
+            "ovine animal in view"
+          ]
+        },
+        {
+          "name": "sofa",
+          "synonyms": [
+            "sofa",
+            "couch",
+            "settee",
+            "upholstered sofa",
+            "a sofa",
+            "a couch",
+            "a settee",
+            "a upholstered sofa",
+            "the sofa",
+            "the couch",
+            "the settee",
+            "the upholstered sofa",
+            "visible sofa",
+            "visible couch",
+            "visible settee",
+            "visible upholstered sofa",
+            "sofa in a scene",
+            "couch in a scene",
+            "settee in a scene",
+            "upholstered sofa in a scene",
+            "fabric sofa"
+          ]
+        },
+        {
+          "name": "train",
+          "synonyms": [
+            "train",
+            "railway train",
+            "railroad train",
+            "rail vehicle",
+            "a train",
+            "a railway train",
+            "a railroad train",
+            "a rail vehicle",
+            "the train",
+            "the railway train",
+            "the railroad train",
+            "the rail vehicle",
+            "visible train",
+            "visible railway train",
+            "visible railroad train",
+            "visible rail vehicle",
+            "train in a scene",
+            "railway train in a scene",
+            "railroad train in a scene",
+            "rail vehicle in a scene"
+          ]
+        },
+        {
+          "name": "tvmonitor",
+          "synonyms": [
+            "tvmonitor",
+            "television",
+            "TV screen",
+            "television monitor",
+            "a tvmonitor",
+            "a television",
+            "a TV screen",
+            "a television monitor",
+            "the tvmonitor",
+            "the television",
+            "the TV screen",
+            "the television monitor",
+            "visible tvmonitor",
+            "visible television",
+            "visible TV screen",
+            "visible television monitor",
+            "tvmonitor in a scene",
+            "television in a scene",
+            "TV screen in a scene",
+            "television monitor in a scene",
+            "tv monitor",
+            "monitor",
+            "computer monitor"
+          ]
+        }
+      ],
+      "template": "ImageNet80"
+    },
+    "kev60_imagenet": {
+      "classes": [
+        {
+          "name": "aeroplane",
+          "synonyms": [
+            "aeroplane",
+            "airplane",
+            "a plane",
+            "the aeroplane",
+            "the airplane",
+            "visible aeroplane",
+            "aeroplane in a scene",
+            "airplane in a scene"
+          ]
+        },
+        {
+          "name": "bicycle",
+          "synonyms": [
+            "bicycle",
+            "a bicycle",
+            "a pedal bicycle",
+            "the pedal bicycle",
+            "the pedal bike",
+            "visible pedal bicycle",
+            "visible pedal bike"
+          ]
+        },
+        {
+          "name": "bird",
+          "synonyms": [
+            "bird",
+            "a bird",
+            "feathered bird in a scene"
+          ]
+        },
+        {
+          "name": "boat",
+          "synonyms": [
+            "boat",
+            "a boat",
+            "the boat",
+            "visible sailing boat",
+            "sailing boat in a scene"
+          ]
+        },
+        {
+          "name": "bottle",
+          "synonyms": [
+            "bottle",
+            "a bottle",
+            "the bottle",
+            "visible plastic bottle",
+            "bottle in a scene"
+          ]
+        },
+        {
+          "name": "bus",
+          "synonyms": [
+            "bus",
+            "a bus",
+            "the bus",
+            "visible passenger bus",
+            "visible public transit bus",
+            "bus in a scene",
+            "passenger bus in a scene",
+            "public transit bus in a scene"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car",
+            "a car",
+            "the motorcar"
+          ]
+        },
+        {
+          "name": "cat",
+          "synonyms": [
+            "cat",
+            "a cat",
+            "a house cat",
+            "the house cat",
+            "visible house cat"
+          ]
+        },
+        {
+          "name": "chair",
+          "synonyms": [
+            "chair",
+            "a chair",
+            "individual chair in a scene",
+            "wooden chair",
+            "dining chair"
+          ]
+        },
+        {
+          "name": "cow",
+          "synonyms": [
+            "cow",
+            "a cow"
+          ]
+        },
+        {
+          "name": "diningtable",
+          "synonyms": [
+            "diningtable",
+            "a diningtable"
+          ]
+        },
+        {
+          "name": "dog",
+          "synonyms": [
+            "dog"
+          ]
+        },
+        {
+          "name": "horse",
+          "synonyms": [
+            "horse",
+            "a horse"
+          ]
+        },
+        {
+          "name": "motorbike",
+          "synonyms": [
+            "motorbike",
+            "a motorbike",
+            "the motorbike",
+            "motorbike in the scene"
+          ]
+        },
+        {
+          "name": "person",
+          "synonyms": [
+            "person",
+            "a person"
+          ]
+        },
+        {
+          "name": "pottedplant",
+          "synonyms": [
+            "pottedplant",
+            "potted plant",
+            "plant in a pot",
+            "a pottedplant",
+            "a plant in a pot",
+            "the pottedplant",
+            "the plant in a pot",
+            "visible plant in a pot",
+            "plant in a pot in a scene"
+          ]
+        },
+        {
+          "name": "sheep",
+          "synonyms": [
+            "sheep",
+            "a domestic sheep",
+            "visible ovine animal"
+          ]
+        },
+        {
+          "name": "sofa",
+          "synonyms": [
+            "sofa",
+            "a sofa",
+            "the upholstered sofa",
+            "sofa in a scene"
+          ]
+        },
+        {
+          "name": "train",
+          "synonyms": [
+            "train",
+            "a train"
+          ]
+        },
+        {
+          "name": "tvmonitor",
+          "synonyms": [
+            "tvmonitor",
+            "a tvmonitor",
+            "the tvmonitor"
+          ]
+        }
+      ],
+      "template": "ImageNet80"
+    },
+    "kev80_imagenet": {
+      "classes": [
+        {
+          "name": "aeroplane",
+          "synonyms": [
+            "aeroplane",
+            "airplane"
+          ]
+        },
+        {
+          "name": "bicycle",
+          "synonyms": [
+            "bicycle",
+            "a bicycle"
+          ]
+        },
+        {
+          "name": "bird",
+          "synonyms": [
+            "bird"
+          ]
+        },
+        {
+          "name": "boat",
+          "synonyms": [
+            "boat",
+            "a boat"
+          ]
+        },
+        {
+          "name": "bottle",
+          "synonyms": [
+            "bottle",
+            "a bottle"
+          ]
+        },
+        {
+          "name": "bus",
+          "synonyms": [
+            "bus"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car"
+          ]
+        },
+        {
+          "name": "cat",
+          "synonyms": [
+            "cat"
+          ]
+        },
+        {
+          "name": "chair",
+          "synonyms": [
+            "chair"
+          ]
+        },
+        {
+          "name": "cow",
+          "synonyms": [
+            "cow"
+          ]
+        },
+        {
+          "name": "diningtable",
+          "synonyms": [
+            "diningtable"
+          ]
+        },
+        {
+          "name": "dog",
+          "synonyms": [
+            "dog"
+          ]
+        },
+        {
+          "name": "horse",
+          "synonyms": [
+            "horse"
+          ]
+        },
+        {
+          "name": "motorbike",
+          "synonyms": [
+            "motorbike"
+          ]
+        },
+        {
+          "name": "person",
+          "synonyms": [
+            "person"
+          ]
+        },
+        {
+          "name": "pottedplant",
+          "synonyms": [
+            "pottedplant",
+            "a pottedplant"
+          ]
+        },
+        {
+          "name": "sheep",
+          "synonyms": [
+            "sheep"
+          ]
+        },
+        {
+          "name": "sofa",
+          "synonyms": [
+            "sofa"
+          ]
+        },
+        {
+          "name": "train",
+          "synonyms": [
+            "train"
+          ]
+        },
+        {
+          "name": "tvmonitor",
+          "synonyms": [
+            "tvmonitor"
+          ]
+        }
+      ],
+      "template": "ImageNet80"
+    },
+    "pool_imagenet": {
+      "classes": [
+        {
+          "name": "aeroplane",
+          "synonyms": [
+            "aeroplane",
+            "airplane",
+            "plane",
+            "aircraft",
+            "a aeroplane",
+            "a airplane",
+            "a plane",
+            "a aircraft",
+            "the aeroplane",
+            "the airplane",
+            "the plane",
+            "the aircraft",
+            "visible aeroplane",
+            "visible airplane",
+            "visible plane",
+            "visible aircraft",
+            "aeroplane in a scene",
+            "airplane in a scene",
+            "plane in a scene",
+            "aircraft in a scene"
+          ]
+        },
+        {
+          "name": "bicycle",
+          "synonyms": [
+            "bicycle",
+            "bike",
+            "pedal bicycle",
+            "pedal bike",
+            "a bicycle",
+            "a bike",
+            "a pedal bicycle",
+            "a pedal bike",
+            "the bicycle",
+            "the bike",
+            "the pedal bicycle",
+            "the pedal bike",
+            "visible bicycle",
+            "visible bike",
+            "visible pedal bicycle",
+            "visible pedal bike",
+            "bicycle in a scene",
+            "bike in a scene",
+            "pedal bicycle in a scene",
+            "pedal bike in a scene"
+          ]
+        },
+        {
+          "name": "bird",
+          "synonyms": [
+            "bird",
+            "avian animal",
+            "feathered bird",
+            "a bird",
+            "a avian animal",
+            "a feathered bird",
+            "the bird",
+            "the avian animal",
+            "the feathered bird",
+            "visible bird",
+            "visible avian animal",
+            "visible feathered bird",
+            "bird in a scene",
+            "avian animal in a scene",
+            "feathered bird in a scene",
+            "bird in the scene",
+            "avian animal in the scene",
+            "feathered bird in the scene",
+            "bird in view",
+            "avian animal in view"
+          ]
+        },
+        {
+          "name": "boat",
+          "synonyms": [
+            "boat",
+            "watercraft",
+            "small boat",
+            "sailing boat",
+            "a boat",
+            "a watercraft",
+            "a small boat",
+            "a sailing boat",
+            "the boat",
+            "the watercraft",
+            "the small boat",
+            "the sailing boat",
+            "visible boat",
+            "visible watercraft",
+            "visible small boat",
+            "visible sailing boat",
+            "boat in a scene",
+            "watercraft in a scene",
+            "small boat in a scene",
+            "sailing boat in a scene"
+          ]
+        },
+        {
+          "name": "bottle",
+          "synonyms": [
+            "bottle",
+            "drink bottle",
+            "glass bottle",
+            "plastic bottle",
+            "a bottle",
+            "a drink bottle",
+            "a glass bottle",
+            "a plastic bottle",
+            "the bottle",
+            "the drink bottle",
+            "the glass bottle",
+            "the plastic bottle",
+            "visible bottle",
+            "visible drink bottle",
+            "visible glass bottle",
+            "visible plastic bottle",
+            "bottle in a scene",
+            "drink bottle in a scene",
+            "glass bottle in a scene",
+            "plastic bottle in a scene",
+            "wine bottle"
+          ]
+        },
+        {
+          "name": "bus",
+          "synonyms": [
+            "bus",
+            "passenger bus",
+            "public transit bus",
+            "city bus",
+            "a bus",
+            "a passenger bus",
+            "a public transit bus",
+            "a city bus",
+            "the bus",
+            "the passenger bus",
+            "the public transit bus",
+            "the city bus",
+            "visible bus",
+            "visible passenger bus",
+            "visible public transit bus",
+            "visible city bus",
+            "bus in a scene",
+            "passenger bus in a scene",
+            "public transit bus in a scene",
+            "city bus in a scene",
+            "red bus",
+            "double-decker bus"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car",
+            "automobile",
+            "passenger car",
+            "motorcar",
+            "a car",
+            "a automobile",
+            "a passenger car",
+            "a motorcar",
+            "the car",
+            "the automobile",
+            "the passenger car",
+            "the motorcar",
+            "visible car",
+            "visible automobile",
+            "visible passenger car",
+            "visible motorcar",
+            "car in a scene",
+            "automobile in a scene",
+            "passenger car in a scene",
+            "motorcar in a scene"
+          ]
+        },
+        {
+          "name": "cat",
+          "synonyms": [
+            "cat",
+            "feline",
+            "domestic cat",
+            "house cat",
+            "a cat",
+            "a feline",
+            "a domestic cat",
+            "a house cat",
+            "the cat",
+            "the feline",
+            "the domestic cat",
+            "the house cat",
+            "visible cat",
+            "visible feline",
+            "visible domestic cat",
+            "visible house cat",
+            "cat in a scene",
+            "feline in a scene",
+            "domestic cat in a scene",
+            "house cat in a scene"
+          ]
+        },
+        {
+          "name": "chair",
+          "synonyms": [
+            "chair",
+            "seat chair",
+            "seating chair",
+            "individual chair",
+            "a chair",
+            "a seat chair",
+            "a seating chair",
+            "a individual chair",
+            "the chair",
+            "the seat chair",
+            "the seating chair",
+            "the individual chair",
+            "visible chair",
+            "visible seat chair",
+            "visible seating chair",
+            "visible individual chair",
+            "chair in a scene",
+            "seat chair in a scene",
+            "seating chair in a scene",
+            "individual chair in a scene",
+            "armchair",
+            "desk chair",
+            "wooden chair",
+            "dining chair",
+            "kitchen chair",
+            "office chair"
+          ]
+        },
+        {
+          "name": "cow",
+          "synonyms": [
+            "cow",
+            "cattle animal",
+            "bovine",
+            "domestic cow",
+            "a cow",
+            "a cattle animal",
+            "a bovine",
+            "a domestic cow",
+            "the cow",
+            "the cattle animal",
+            "the bovine",
+            "the domestic cow",
+            "visible cow",
+            "visible cattle animal",
+            "visible bovine",
+            "visible domestic cow",
+            "cow in a scene",
+            "cattle animal in a scene",
+            "bovine in a scene",
+            "domestic cow in a scene",
+            "cattle",
+            "bull",
+            "calf"
+          ]
+        },
+        {
+          "name": "diningtable",
+          "synonyms": [
+            "diningtable",
+            "dining table",
+            "meal table",
+            "dinner table",
+            "a diningtable",
+            "a dining table",
+            "a meal table",
+            "a dinner table",
+            "the diningtable",
+            "the dining table",
+            "the meal table",
+            "the dinner table",
+            "visible diningtable",
+            "visible dining table",
+            "visible meal table",
+            "visible dinner table",
+            "diningtable in a scene",
+            "dining table in a scene",
+            "meal table in a scene",
+            "dinner table in a scene",
+            "table",
+            "desk"
+          ]
+        },
+        {
+          "name": "dog",
+          "synonyms": [
+            "dog",
+            "canine",
+            "domestic dog",
+            "pet dog",
+            "a dog",
+            "a canine",
+            "a domestic dog",
+            "a pet dog",
+            "the dog",
+            "the canine",
+            "the domestic dog",
+            "the pet dog",
+            "visible dog",
+            "visible canine",
+            "visible domestic dog",
+            "visible pet dog",
+            "dog in a scene",
+            "canine in a scene",
+            "domestic dog in a scene",
+            "pet dog in a scene"
+          ]
+        },
+        {
+          "name": "horse",
+          "synonyms": [
+            "horse",
+            "equine animal",
+            "domestic horse",
+            "a horse",
+            "a equine animal",
+            "a domestic horse",
+            "the horse",
+            "the equine animal",
+            "the domestic horse",
+            "visible horse",
+            "visible equine animal",
+            "visible domestic horse",
+            "horse in a scene",
+            "equine animal in a scene",
+            "domestic horse in a scene",
+            "horse in the scene",
+            "equine animal in the scene",
+            "domestic horse in the scene",
+            "horse in view",
+            "equine animal in view",
+            "wild horse"
+          ]
+        },
+        {
+          "name": "motorbike",
+          "synonyms": [
+            "motorbike",
+            "motorcycle",
+            "motorized bike",
+            "a motorbike",
+            "a motorcycle",
+            "a motorized bike",
+            "the motorbike",
+            "the motorcycle",
+            "the motorized bike",
+            "visible motorbike",
+            "visible motorcycle",
+            "visible motorized bike",
+            "motorbike in a scene",
+            "motorcycle in a scene",
+            "motorized bike in a scene",
+            "motorbike in the scene",
+            "motorcycle in the scene",
+            "motorized bike in the scene",
+            "motorbike in view",
+            "motorcycle in view"
+          ]
+        },
+        {
+          "name": "person",
+          "synonyms": [
+            "person",
+            "human",
+            "human being",
+            "individual person",
+            "people",
+            "a person",
+            "a human",
+            "a human being",
+            "a individual person",
+            "a people",
+            "the person",
+            "the human",
+            "the human being",
+            "the individual person",
+            "the people",
+            "visible person",
+            "visible human",
+            "visible human being",
+            "visible individual person",
+            "visible people",
+            "person wearing a shirt",
+            "person wearing jeans",
+            "person wearing a dress",
+            "person wearing a sweater",
+            "person wearing a skirt",
+            "person wearing a jacket",
+            "person wearing a hat",
+            "crowd",
+            "child",
+            "boy",
+            "girl",
+            "man",
+            "women",
+            "people in shirt",
+            "people in jeans",
+            "people in dress",
+            "people in sweater",
+            "people in skirt",
+            "people in jacket",
+            "people in hat",
+            "human in hat",
+            "human in jeans",
+            "human in sweater",
+            "human in skirt",
+            "human in jacket"
+          ]
+        },
+        {
+          "name": "pottedplant",
+          "synonyms": [
+            "pottedplant",
+            "potted plant",
+            "plant in a pot",
+            "pot plant",
+            "a pottedplant",
+            "a potted plant",
+            "a plant in a pot",
+            "a pot plant",
+            "the pottedplant",
+            "the potted plant",
+            "the plant in a pot",
+            "the pot plant",
+            "visible pottedplant",
+            "visible potted plant",
+            "visible plant in a pot",
+            "visible pot plant",
+            "pottedplant in a scene",
+            "potted plant in a scene",
+            "plant in a pot in a scene",
+            "pot plant in a scene",
+            "houseplant",
+            "flowerpot"
+          ]
+        },
+        {
+          "name": "sheep",
+          "synonyms": [
+            "sheep",
+            "ovine animal",
+            "domestic sheep",
+            "a sheep",
+            "a ovine animal",
+            "a domestic sheep",
+            "the sheep",
+            "the ovine animal",
+            "the domestic sheep",
+            "visible sheep",
+            "visible ovine animal",
+            "visible domestic sheep",
+            "sheep in a scene",
+            "ovine animal in a scene",
+            "domestic sheep in a scene",
+            "sheep in the scene",
+            "ovine animal in the scene",
+            "domestic sheep in the scene",
+            "sheep in view",
+            "ovine animal in view"
+          ]
+        },
+        {
+          "name": "sofa",
+          "synonyms": [
+            "sofa",
+            "couch",
+            "settee",
+            "upholstered sofa",
+            "a sofa",
+            "a couch",
+            "a settee",
+            "a upholstered sofa",
+            "the sofa",
+            "the couch",
+            "the settee",
+            "the upholstered sofa",
+            "visible sofa",
+            "visible couch",
+            "visible settee",
+            "visible upholstered sofa",
+            "sofa in a scene",
+            "couch in a scene",
+            "settee in a scene",
+            "upholstered sofa in a scene",
+            "fabric sofa"
+          ]
+        },
+        {
+          "name": "train",
+          "synonyms": [
+            "train",
+            "railway train",
+            "railroad train",
+            "rail vehicle",
+            "a train",
+            "a railway train",
+            "a railroad train",
+            "a rail vehicle",
+            "the train",
+            "the railway train",
+            "the railroad train",
+            "the rail vehicle",
+            "visible train",
+            "visible railway train",
+            "visible railroad train",
+            "visible rail vehicle",
+            "train in a scene",
+            "railway train in a scene",
+            "railroad train in a scene",
+            "rail vehicle in a scene"
+          ]
+        },
+        {
+          "name": "tvmonitor",
+          "synonyms": [
+            "tvmonitor",
+            "television",
+            "TV screen",
+            "television monitor",
+            "a tvmonitor",
+            "a television",
+            "a TV screen",
+            "a television monitor",
+            "the tvmonitor",
+            "the television",
+            "the TV screen",
+            "the television monitor",
+            "visible tvmonitor",
+            "visible television",
+            "visible TV screen",
+            "visible television monitor",
+            "tvmonitor in a scene",
+            "television in a scene",
+            "TV screen in a scene",
+            "television monitor in a scene",
+            "tv monitor",
+            "monitor",
+            "computer monitor"
+          ]
+        }
+      ],
+      "template": "ImageNet80"
+    },
+    "kev40_segmentation": {
+      "classes": [
+        {
+          "name": "aeroplane",
+          "synonyms": [
+            "aeroplane",
+            "airplane",
+            "plane",
+            "aircraft",
+            "a aeroplane",
+            "a airplane",
+            "a plane",
+            "a aircraft",
+            "the aeroplane",
+            "the airplane",
+            "the plane",
+            "the aircraft",
+            "visible aeroplane",
+            "visible airplane",
+            "visible plane",
+            "visible aircraft",
+            "aeroplane in a scene",
+            "airplane in a scene",
+            "plane in a scene",
+            "aircraft in a scene"
+          ]
+        },
+        {
+          "name": "bicycle",
+          "synonyms": [
+            "bicycle",
+            "bike",
+            "pedal bicycle",
+            "pedal bike",
+            "a bicycle",
+            "a bike",
+            "a pedal bicycle",
+            "a pedal bike",
+            "the bicycle",
+            "the bike",
+            "the pedal bicycle",
+            "the pedal bike",
+            "visible bicycle",
+            "visible bike",
+            "visible pedal bicycle",
+            "visible pedal bike",
+            "bicycle in a scene",
+            "bike in a scene",
+            "pedal bicycle in a scene",
+            "pedal bike in a scene"
+          ]
+        },
+        {
+          "name": "bird",
+          "synonyms": [
+            "bird",
+            "avian animal",
+            "feathered bird",
+            "a bird",
+            "a avian animal",
+            "a feathered bird",
+            "the bird",
+            "the avian animal",
+            "the feathered bird",
+            "visible bird",
+            "visible avian animal",
+            "visible feathered bird",
+            "bird in a scene",
+            "avian animal in a scene",
+            "feathered bird in a scene",
+            "bird in the scene",
+            "avian animal in the scene",
+            "feathered bird in the scene",
+            "bird in view",
+            "avian animal in view"
+          ]
+        },
+        {
+          "name": "boat",
+          "synonyms": [
+            "boat",
+            "watercraft",
+            "small boat",
+            "sailing boat",
+            "a boat",
+            "a watercraft",
+            "a small boat",
+            "a sailing boat",
+            "the boat",
+            "the watercraft",
+            "the small boat",
+            "the sailing boat",
+            "visible boat",
+            "visible watercraft",
+            "visible small boat",
+            "visible sailing boat",
+            "boat in a scene",
+            "watercraft in a scene",
+            "small boat in a scene",
+            "sailing boat in a scene"
+          ]
+        },
+        {
+          "name": "bottle",
+          "synonyms": [
+            "bottle",
+            "drink bottle",
+            "glass bottle",
+            "plastic bottle",
+            "a bottle",
+            "a drink bottle",
+            "a glass bottle",
+            "a plastic bottle",
+            "the bottle",
+            "the drink bottle",
+            "the glass bottle",
+            "the plastic bottle",
+            "visible bottle",
+            "visible drink bottle",
+            "visible glass bottle",
+            "visible plastic bottle",
+            "bottle in a scene",
+            "drink bottle in a scene",
+            "glass bottle in a scene",
+            "plastic bottle in a scene",
+            "wine bottle"
+          ]
+        },
+        {
+          "name": "bus",
+          "synonyms": [
+            "bus",
+            "passenger bus",
+            "public transit bus",
+            "city bus",
+            "a bus",
+            "a passenger bus",
+            "a public transit bus",
+            "a city bus",
+            "the bus",
+            "the passenger bus",
+            "the public transit bus",
+            "the city bus",
+            "visible bus",
+            "visible passenger bus",
+            "visible public transit bus",
+            "visible city bus",
+            "bus in a scene",
+            "passenger bus in a scene",
+            "public transit bus in a scene",
+            "city bus in a scene",
+            "red bus",
+            "double-decker bus"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car",
+            "automobile",
+            "passenger car",
+            "motorcar",
+            "a car",
+            "a automobile",
+            "a passenger car",
+            "a motorcar",
+            "the car",
+            "the automobile",
+            "the passenger car",
+            "the motorcar",
+            "visible car",
+            "visible automobile",
+            "visible passenger car",
+            "visible motorcar",
+            "car in a scene",
+            "automobile in a scene",
+            "passenger car in a scene",
+            "motorcar in a scene"
+          ]
+        },
+        {
+          "name": "cat",
+          "synonyms": [
+            "cat",
+            "feline",
+            "domestic cat",
+            "house cat",
+            "a cat",
+            "a feline",
+            "a domestic cat",
+            "a house cat",
+            "the cat",
+            "the feline",
+            "the domestic cat",
+            "the house cat",
+            "visible cat",
+            "visible feline",
+            "visible domestic cat",
+            "visible house cat",
+            "cat in a scene",
+            "feline in a scene",
+            "domestic cat in a scene",
+            "house cat in a scene"
+          ]
+        },
+        {
+          "name": "chair",
+          "synonyms": [
+            "chair",
+            "seat chair",
+            "seating chair",
+            "individual chair",
+            "a chair",
+            "a seat chair",
+            "a seating chair",
+            "a individual chair",
+            "the chair",
+            "the seat chair",
+            "the seating chair",
+            "the individual chair",
+            "visible chair",
+            "visible seat chair",
+            "visible seating chair",
+            "visible individual chair",
+            "chair in a scene",
+            "seat chair in a scene",
+            "seating chair in a scene",
+            "individual chair in a scene",
+            "armchair",
+            "desk chair",
+            "wooden chair",
+            "dining chair",
+            "kitchen chair",
+            "office chair"
+          ]
+        },
+        {
+          "name": "cow",
+          "synonyms": [
+            "cow",
+            "cattle animal",
+            "bovine",
+            "domestic cow",
+            "a cow",
+            "a cattle animal",
+            "a bovine",
+            "a domestic cow",
+            "the cow",
+            "the cattle animal",
+            "the bovine",
+            "the domestic cow",
+            "visible cow",
+            "visible cattle animal",
+            "visible bovine",
+            "visible domestic cow",
+            "cow in a scene",
+            "cattle animal in a scene",
+            "bovine in a scene",
+            "domestic cow in a scene",
+            "cattle",
+            "calf"
+          ]
+        },
+        {
+          "name": "diningtable",
+          "synonyms": [
+            "diningtable",
+            "dining table",
+            "meal table",
+            "dinner table",
+            "a diningtable",
+            "a dining table",
+            "a meal table",
+            "a dinner table",
+            "the diningtable",
+            "the dining table",
+            "the meal table",
+            "the dinner table",
+            "visible diningtable",
+            "visible dining table",
+            "visible meal table",
+            "visible dinner table",
+            "diningtable in a scene",
+            "dining table in a scene",
+            "meal table in a scene",
+            "dinner table in a scene",
+            "table",
+            "desk"
+          ]
+        },
+        {
+          "name": "dog",
+          "synonyms": [
+            "dog",
+            "canine",
+            "domestic dog",
+            "pet dog",
+            "a dog",
+            "a canine",
+            "a domestic dog",
+            "a pet dog",
+            "the dog",
+            "the canine",
+            "the domestic dog",
+            "the pet dog",
+            "visible dog",
+            "visible canine",
+            "visible domestic dog",
+            "visible pet dog",
+            "dog in a scene",
+            "canine in a scene",
+            "domestic dog in a scene",
+            "pet dog in a scene"
+          ]
+        },
+        {
+          "name": "horse",
+          "synonyms": [
+            "horse",
+            "equine animal",
+            "domestic horse",
+            "a horse",
+            "a equine animal",
+            "a domestic horse",
+            "the horse",
+            "the equine animal",
+            "the domestic horse",
+            "visible horse",
+            "visible equine animal",
+            "visible domestic horse",
+            "horse in a scene",
+            "equine animal in a scene",
+            "domestic horse in a scene",
+            "horse in the scene",
+            "equine animal in the scene",
+            "domestic horse in the scene",
+            "horse in view",
+            "equine animal in view",
+            "wild horse"
+          ]
+        },
+        {
+          "name": "motorbike",
+          "synonyms": [
+            "motorbike",
+            "motorcycle",
+            "motorized bike",
+            "a motorbike",
+            "a motorcycle",
+            "a motorized bike",
+            "the motorbike",
+            "the motorcycle",
+            "the motorized bike",
+            "visible motorbike",
+            "visible motorcycle",
+            "visible motorized bike",
+            "motorbike in a scene",
+            "motorcycle in a scene",
+            "motorized bike in a scene",
+            "motorbike in the scene",
+            "motorcycle in the scene",
+            "motorized bike in the scene",
+            "motorbike in view",
+            "motorcycle in view"
+          ]
+        },
+        {
+          "name": "person",
+          "synonyms": [
+            "person",
+            "human",
+            "human being",
+            "individual person",
+            "people",
+            "a person",
+            "a human",
+            "a human being",
+            "a individual person",
+            "a people",
+            "the person",
+            "the human",
+            "the human being",
+            "the individual person",
+            "the people",
+            "visible person",
+            "visible human",
+            "visible human being",
+            "visible individual person",
+            "visible people",
+            "person wearing a shirt",
+            "person wearing jeans",
+            "person wearing a dress",
+            "person wearing a sweater",
+            "person wearing a skirt",
+            "person wearing a jacket",
+            "person wearing a hat",
+            "child",
+            "boy",
+            "girl",
+            "man",
+            "women",
+            "people in shirt",
+            "people in jeans",
+            "people in dress",
+            "people in sweater",
+            "people in skirt",
+            "people in jacket",
+            "people in hat",
+            "human in hat",
+            "human in jeans",
+            "human in sweater",
+            "human in skirt",
+            "human in jacket"
+          ]
+        },
+        {
+          "name": "pottedplant",
+          "synonyms": [
+            "pottedplant",
+            "potted plant",
+            "plant in a pot",
+            "pot plant",
+            "a pottedplant",
+            "a potted plant",
+            "a plant in a pot",
+            "a pot plant",
+            "the pottedplant",
+            "the potted plant",
+            "the plant in a pot",
+            "the pot plant",
+            "visible pottedplant",
+            "visible potted plant",
+            "visible plant in a pot",
+            "visible pot plant",
+            "pottedplant in a scene",
+            "potted plant in a scene",
+            "plant in a pot in a scene",
+            "pot plant in a scene",
+            "houseplant"
+          ]
+        },
+        {
+          "name": "sheep",
+          "synonyms": [
+            "sheep",
+            "ovine animal",
+            "domestic sheep",
+            "a sheep",
+            "a ovine animal",
+            "a domestic sheep",
+            "the sheep",
+            "the ovine animal",
+            "the domestic sheep",
+            "visible sheep",
+            "visible ovine animal",
+            "visible domestic sheep",
+            "sheep in a scene",
+            "ovine animal in a scene",
+            "domestic sheep in a scene",
+            "sheep in the scene",
+            "ovine animal in the scene",
+            "domestic sheep in the scene",
+            "sheep in view",
+            "ovine animal in view"
+          ]
+        },
+        {
+          "name": "sofa",
+          "synonyms": [
+            "sofa",
+            "couch",
+            "settee",
+            "upholstered sofa",
+            "a sofa",
+            "a couch",
+            "a settee",
+            "a upholstered sofa",
+            "the sofa",
+            "the couch",
+            "the settee",
+            "the upholstered sofa",
+            "visible sofa",
+            "visible couch",
+            "visible settee",
+            "visible upholstered sofa",
+            "sofa in a scene",
+            "couch in a scene",
+            "settee in a scene",
+            "upholstered sofa in a scene",
+            "fabric sofa"
+          ]
+        },
+        {
+          "name": "train",
+          "synonyms": [
+            "train",
+            "railway train",
+            "railroad train",
+            "rail vehicle",
+            "a train",
+            "a railway train",
+            "a railroad train",
+            "a rail vehicle",
+            "the train",
+            "the railway train",
+            "the railroad train",
+            "the rail vehicle",
+            "visible train",
+            "visible railway train",
+            "visible railroad train",
+            "visible rail vehicle",
+            "train in a scene",
+            "railway train in a scene",
+            "railroad train in a scene",
+            "rail vehicle in a scene"
+          ]
+        },
+        {
+          "name": "tvmonitor",
+          "synonyms": [
+            "tvmonitor",
+            "television",
+            "TV screen",
+            "television monitor",
+            "a tvmonitor",
+            "a television",
+            "a TV screen",
+            "a television monitor",
+            "the tvmonitor",
+            "the television",
+            "the TV screen",
+            "the television monitor",
+            "visible tvmonitor",
+            "visible television",
+            "visible TV screen",
+            "visible television monitor",
+            "tvmonitor in a scene",
+            "television in a scene",
+            "TV screen in a scene",
+            "television monitor in a scene",
+            "tv monitor",
+            "monitor",
+            "computer monitor"
+          ]
+        }
+      ],
+      "template": "seg_template"
+    },
+    "kev60_segmentation": {
+      "classes": [
+        {
+          "name": "aeroplane",
+          "synonyms": [
+            "aeroplane",
+            "airplane",
+            "a plane",
+            "the aeroplane",
+            "the airplane",
+            "visible aeroplane",
+            "aeroplane in a scene",
+            "airplane in a scene"
+          ]
+        },
+        {
+          "name": "bicycle",
+          "synonyms": [
+            "bicycle",
+            "a bicycle",
+            "a pedal bicycle",
+            "the pedal bicycle",
+            "the pedal bike",
+            "visible pedal bicycle",
+            "visible pedal bike"
+          ]
+        },
+        {
+          "name": "bird",
+          "synonyms": [
+            "bird",
+            "a bird",
+            "feathered bird in a scene"
+          ]
+        },
+        {
+          "name": "boat",
+          "synonyms": [
+            "boat",
+            "a boat",
+            "the boat",
+            "visible sailing boat",
+            "sailing boat in a scene"
+          ]
+        },
+        {
+          "name": "bottle",
+          "synonyms": [
+            "bottle",
+            "a bottle",
+            "the bottle",
+            "visible plastic bottle",
+            "bottle in a scene"
+          ]
+        },
+        {
+          "name": "bus",
+          "synonyms": [
+            "bus",
+            "a bus",
+            "the bus",
+            "visible passenger bus",
+            "visible public transit bus",
+            "bus in a scene",
+            "passenger bus in a scene",
+            "public transit bus in a scene"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car",
+            "a car",
+            "the motorcar"
+          ]
+        },
+        {
+          "name": "cat",
+          "synonyms": [
+            "cat",
+            "a cat",
+            "a house cat",
+            "the house cat",
+            "visible house cat"
+          ]
+        },
+        {
+          "name": "chair",
+          "synonyms": [
+            "chair",
+            "a chair",
+            "individual chair in a scene",
+            "wooden chair",
+            "dining chair"
+          ]
+        },
+        {
+          "name": "cow",
+          "synonyms": [
+            "cow",
+            "a cow"
+          ]
+        },
+        {
+          "name": "diningtable",
+          "synonyms": [
+            "diningtable",
+            "a diningtable"
+          ]
+        },
+        {
+          "name": "dog",
+          "synonyms": [
+            "dog"
+          ]
+        },
+        {
+          "name": "horse",
+          "synonyms": [
+            "horse",
+            "a horse"
+          ]
+        },
+        {
+          "name": "motorbike",
+          "synonyms": [
+            "motorbike",
+            "a motorbike",
+            "the motorbike",
+            "motorbike in the scene"
+          ]
+        },
+        {
+          "name": "person",
+          "synonyms": [
+            "person",
+            "a person"
+          ]
+        },
+        {
+          "name": "pottedplant",
+          "synonyms": [
+            "pottedplant",
+            "potted plant",
+            "plant in a pot",
+            "a pottedplant",
+            "a plant in a pot",
+            "the pottedplant",
+            "the plant in a pot",
+            "visible plant in a pot",
+            "plant in a pot in a scene"
+          ]
+        },
+        {
+          "name": "sheep",
+          "synonyms": [
+            "sheep",
+            "a domestic sheep",
+            "visible ovine animal"
+          ]
+        },
+        {
+          "name": "sofa",
+          "synonyms": [
+            "sofa",
+            "a sofa",
+            "the upholstered sofa",
+            "sofa in a scene"
+          ]
+        },
+        {
+          "name": "train",
+          "synonyms": [
+            "train",
+            "a train"
+          ]
+        },
+        {
+          "name": "tvmonitor",
+          "synonyms": [
+            "tvmonitor",
+            "a tvmonitor",
+            "the tvmonitor"
+          ]
+        }
+      ],
+      "template": "seg_template"
+    },
+    "kev80_segmentation": {
+      "classes": [
+        {
+          "name": "aeroplane",
+          "synonyms": [
+            "aeroplane",
+            "airplane"
+          ]
+        },
+        {
+          "name": "bicycle",
+          "synonyms": [
+            "bicycle",
+            "a bicycle"
+          ]
+        },
+        {
+          "name": "bird",
+          "synonyms": [
+            "bird"
+          ]
+        },
+        {
+          "name": "boat",
+          "synonyms": [
+            "boat",
+            "a boat"
+          ]
+        },
+        {
+          "name": "bottle",
+          "synonyms": [
+            "bottle",
+            "a bottle"
+          ]
+        },
+        {
+          "name": "bus",
+          "synonyms": [
+            "bus"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car"
+          ]
+        },
+        {
+          "name": "cat",
+          "synonyms": [
+            "cat"
+          ]
+        },
+        {
+          "name": "chair",
+          "synonyms": [
+            "chair"
+          ]
+        },
+        {
+          "name": "cow",
+          "synonyms": [
+            "cow"
+          ]
+        },
+        {
+          "name": "diningtable",
+          "synonyms": [
+            "diningtable"
+          ]
+        },
+        {
+          "name": "dog",
+          "synonyms": [
+            "dog"
+          ]
+        },
+        {
+          "name": "horse",
+          "synonyms": [
+            "horse"
+          ]
+        },
+        {
+          "name": "motorbike",
+          "synonyms": [
+            "motorbike"
+          ]
+        },
+        {
+          "name": "person",
+          "synonyms": [
+            "person"
+          ]
+        },
+        {
+          "name": "pottedplant",
+          "synonyms": [
+            "pottedplant",
+            "a pottedplant"
+          ]
+        },
+        {
+          "name": "sheep",
+          "synonyms": [
+            "sheep"
+          ]
+        },
+        {
+          "name": "sofa",
+          "synonyms": [
+            "sofa"
+          ]
+        },
+        {
+          "name": "train",
+          "synonyms": [
+            "train"
+          ]
+        },
+        {
+          "name": "tvmonitor",
+          "synonyms": [
+            "tvmonitor"
+          ]
+        }
+      ],
+      "template": "seg_template"
+    },
+    "pool_segmentation": {
+      "classes": [
+        {
+          "name": "aeroplane",
+          "synonyms": [
+            "aeroplane",
+            "airplane",
+            "plane",
+            "aircraft",
+            "a aeroplane",
+            "a airplane",
+            "a plane",
+            "a aircraft",
+            "the aeroplane",
+            "the airplane",
+            "the plane",
+            "the aircraft",
+            "visible aeroplane",
+            "visible airplane",
+            "visible plane",
+            "visible aircraft",
+            "aeroplane in a scene",
+            "airplane in a scene",
+            "plane in a scene",
+            "aircraft in a scene"
+          ]
+        },
+        {
+          "name": "bicycle",
+          "synonyms": [
+            "bicycle",
+            "bike",
+            "pedal bicycle",
+            "pedal bike",
+            "a bicycle",
+            "a bike",
+            "a pedal bicycle",
+            "a pedal bike",
+            "the bicycle",
+            "the bike",
+            "the pedal bicycle",
+            "the pedal bike",
+            "visible bicycle",
+            "visible bike",
+            "visible pedal bicycle",
+            "visible pedal bike",
+            "bicycle in a scene",
+            "bike in a scene",
+            "pedal bicycle in a scene",
+            "pedal bike in a scene"
+          ]
+        },
+        {
+          "name": "bird",
+          "synonyms": [
+            "bird",
+            "avian animal",
+            "feathered bird",
+            "a bird",
+            "a avian animal",
+            "a feathered bird",
+            "the bird",
+            "the avian animal",
+            "the feathered bird",
+            "visible bird",
+            "visible avian animal",
+            "visible feathered bird",
+            "bird in a scene",
+            "avian animal in a scene",
+            "feathered bird in a scene",
+            "bird in the scene",
+            "avian animal in the scene",
+            "feathered bird in the scene",
+            "bird in view",
+            "avian animal in view"
+          ]
+        },
+        {
+          "name": "boat",
+          "synonyms": [
+            "boat",
+            "watercraft",
+            "small boat",
+            "sailing boat",
+            "a boat",
+            "a watercraft",
+            "a small boat",
+            "a sailing boat",
+            "the boat",
+            "the watercraft",
+            "the small boat",
+            "the sailing boat",
+            "visible boat",
+            "visible watercraft",
+            "visible small boat",
+            "visible sailing boat",
+            "boat in a scene",
+            "watercraft in a scene",
+            "small boat in a scene",
+            "sailing boat in a scene"
+          ]
+        },
+        {
+          "name": "bottle",
+          "synonyms": [
+            "bottle",
+            "drink bottle",
+            "glass bottle",
+            "plastic bottle",
+            "a bottle",
+            "a drink bottle",
+            "a glass bottle",
+            "a plastic bottle",
+            "the bottle",
+            "the drink bottle",
+            "the glass bottle",
+            "the plastic bottle",
+            "visible bottle",
+            "visible drink bottle",
+            "visible glass bottle",
+            "visible plastic bottle",
+            "bottle in a scene",
+            "drink bottle in a scene",
+            "glass bottle in a scene",
+            "plastic bottle in a scene",
+            "wine bottle"
+          ]
+        },
+        {
+          "name": "bus",
+          "synonyms": [
+            "bus",
+            "passenger bus",
+            "public transit bus",
+            "city bus",
+            "a bus",
+            "a passenger bus",
+            "a public transit bus",
+            "a city bus",
+            "the bus",
+            "the passenger bus",
+            "the public transit bus",
+            "the city bus",
+            "visible bus",
+            "visible passenger bus",
+            "visible public transit bus",
+            "visible city bus",
+            "bus in a scene",
+            "passenger bus in a scene",
+            "public transit bus in a scene",
+            "city bus in a scene",
+            "red bus",
+            "double-decker bus"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car",
+            "automobile",
+            "passenger car",
+            "motorcar",
+            "a car",
+            "a automobile",
+            "a passenger car",
+            "a motorcar",
+            "the car",
+            "the automobile",
+            "the passenger car",
+            "the motorcar",
+            "visible car",
+            "visible automobile",
+            "visible passenger car",
+            "visible motorcar",
+            "car in a scene",
+            "automobile in a scene",
+            "passenger car in a scene",
+            "motorcar in a scene"
+          ]
+        },
+        {
+          "name": "cat",
+          "synonyms": [
+            "cat",
+            "feline",
+            "domestic cat",
+            "house cat",
+            "a cat",
+            "a feline",
+            "a domestic cat",
+            "a house cat",
+            "the cat",
+            "the feline",
+            "the domestic cat",
+            "the house cat",
+            "visible cat",
+            "visible feline",
+            "visible domestic cat",
+            "visible house cat",
+            "cat in a scene",
+            "feline in a scene",
+            "domestic cat in a scene",
+            "house cat in a scene"
+          ]
+        },
+        {
+          "name": "chair",
+          "synonyms": [
+            "chair",
+            "seat chair",
+            "seating chair",
+            "individual chair",
+            "a chair",
+            "a seat chair",
+            "a seating chair",
+            "a individual chair",
+            "the chair",
+            "the seat chair",
+            "the seating chair",
+            "the individual chair",
+            "visible chair",
+            "visible seat chair",
+            "visible seating chair",
+            "visible individual chair",
+            "chair in a scene",
+            "seat chair in a scene",
+            "seating chair in a scene",
+            "individual chair in a scene",
+            "armchair",
+            "desk chair",
+            "wooden chair",
+            "dining chair",
+            "kitchen chair",
+            "office chair"
+          ]
+        },
+        {
+          "name": "cow",
+          "synonyms": [
+            "cow",
+            "cattle animal",
+            "bovine",
+            "domestic cow",
+            "a cow",
+            "a cattle animal",
+            "a bovine",
+            "a domestic cow",
+            "the cow",
+            "the cattle animal",
+            "the bovine",
+            "the domestic cow",
+            "visible cow",
+            "visible cattle animal",
+            "visible bovine",
+            "visible domestic cow",
+            "cow in a scene",
+            "cattle animal in a scene",
+            "bovine in a scene",
+            "domestic cow in a scene",
+            "cattle",
+            "bull",
+            "calf"
+          ]
+        },
+        {
+          "name": "diningtable",
+          "synonyms": [
+            "diningtable",
+            "dining table",
+            "meal table",
+            "dinner table",
+            "a diningtable",
+            "a dining table",
+            "a meal table",
+            "a dinner table",
+            "the diningtable",
+            "the dining table",
+            "the meal table",
+            "the dinner table",
+            "visible diningtable",
+            "visible dining table",
+            "visible meal table",
+            "visible dinner table",
+            "diningtable in a scene",
+            "dining table in a scene",
+            "meal table in a scene",
+            "dinner table in a scene",
+            "table",
+            "desk"
+          ]
+        },
+        {
+          "name": "dog",
+          "synonyms": [
+            "dog",
+            "canine",
+            "domestic dog",
+            "pet dog",
+            "a dog",
+            "a canine",
+            "a domestic dog",
+            "a pet dog",
+            "the dog",
+            "the canine",
+            "the domestic dog",
+            "the pet dog",
+            "visible dog",
+            "visible canine",
+            "visible domestic dog",
+            "visible pet dog",
+            "dog in a scene",
+            "canine in a scene",
+            "domestic dog in a scene",
+            "pet dog in a scene"
+          ]
+        },
+        {
+          "name": "horse",
+          "synonyms": [
+            "horse",
+            "equine animal",
+            "domestic horse",
+            "a horse",
+            "a equine animal",
+            "a domestic horse",
+            "the horse",
+            "the equine animal",
+            "the domestic horse",
+            "visible horse",
+            "visible equine animal",
+            "visible domestic horse",
+            "horse in a scene",
+            "equine animal in a scene",
+            "domestic horse in a scene",
+            "horse in the scene",
+            "equine animal in the scene",
+            "domestic horse in the scene",
+            "horse in view",
+            "equine animal in view",
+            "wild horse"
+          ]
+        },
+        {
+          "name": "motorbike",
+          "synonyms": [
+            "motorbike",
+            "motorcycle",
+            "motorized bike",
+            "a motorbike",
+            "a motorcycle",
+            "a motorized bike",
+            "the motorbike",
+            "the motorcycle",
+            "the motorized bike",
+            "visible motorbike",
+            "visible motorcycle",
+            "visible motorized bike",
+            "motorbike in a scene",
+            "motorcycle in a scene",
+            "motorized bike in a scene",
+            "motorbike in the scene",
+            "motorcycle in the scene",
+            "motorized bike in the scene",
+            "motorbike in view",
+            "motorcycle in view"
+          ]
+        },
+        {
+          "name": "person",
+          "synonyms": [
+            "person",
+            "human",
+            "human being",
+            "individual person",
+            "people",
+            "a person",
+            "a human",
+            "a human being",
+            "a individual person",
+            "a people",
+            "the person",
+            "the human",
+            "the human being",
+            "the individual person",
+            "the people",
+            "visible person",
+            "visible human",
+            "visible human being",
+            "visible individual person",
+            "visible people",
+            "person wearing a shirt",
+            "person wearing jeans",
+            "person wearing a dress",
+            "person wearing a sweater",
+            "person wearing a skirt",
+            "person wearing a jacket",
+            "person wearing a hat",
+            "crowd",
+            "child",
+            "boy",
+            "girl",
+            "man",
+            "women",
+            "people in shirt",
+            "people in jeans",
+            "people in dress",
+            "people in sweater",
+            "people in skirt",
+            "people in jacket",
+            "people in hat",
+            "human in hat",
+            "human in jeans",
+            "human in sweater",
+            "human in skirt",
+            "human in jacket"
+          ]
+        },
+        {
+          "name": "pottedplant",
+          "synonyms": [
+            "pottedplant",
+            "potted plant",
+            "plant in a pot",
+            "pot plant",
+            "a pottedplant",
+            "a potted plant",
+            "a plant in a pot",
+            "a pot plant",
+            "the pottedplant",
+            "the potted plant",
+            "the plant in a pot",
+            "the pot plant",
+            "visible pottedplant",
+            "visible potted plant",
+            "visible plant in a pot",
+            "visible pot plant",
+            "pottedplant in a scene",
+            "potted plant in a scene",
+            "plant in a pot in a scene",
+            "pot plant in a scene",
+            "houseplant",
+            "flowerpot"
+          ]
+        },
+        {
+          "name": "sheep",
+          "synonyms": [
+            "sheep",
+            "ovine animal",
+            "domestic sheep",
+            "a sheep",
+            "a ovine animal",
+            "a domestic sheep",
+            "the sheep",
+            "the ovine animal",
+            "the domestic sheep",
+            "visible sheep",
+            "visible ovine animal",
+            "visible domestic sheep",
+            "sheep in a scene",
+            "ovine animal in a scene",
+            "domestic sheep in a scene",
+            "sheep in the scene",
+            "ovine animal in the scene",
+            "domestic sheep in the scene",
+            "sheep in view",
+            "ovine animal in view"
+          ]
+        },
+        {
+          "name": "sofa",
+          "synonyms": [
+            "sofa",
+            "couch",
+            "settee",
+            "upholstered sofa",
+            "a sofa",
+            "a couch",
+            "a settee",
+            "a upholstered sofa",
+            "the sofa",
+            "the couch",
+            "the settee",
+            "the upholstered sofa",
+            "visible sofa",
+            "visible couch",
+            "visible settee",
+            "visible upholstered sofa",
+            "sofa in a scene",
+            "couch in a scene",
+            "settee in a scene",
+            "upholstered sofa in a scene",
+            "fabric sofa"
+          ]
+        },
+        {
+          "name": "train",
+          "synonyms": [
+            "train",
+            "railway train",
+            "railroad train",
+            "rail vehicle",
+            "a train",
+            "a railway train",
+            "a railroad train",
+            "a rail vehicle",
+            "the train",
+            "the railway train",
+            "the railroad train",
+            "the rail vehicle",
+            "visible train",
+            "visible railway train",
+            "visible railroad train",
+            "visible rail vehicle",
+            "train in a scene",
+            "railway train in a scene",
+            "railroad train in a scene",
+            "rail vehicle in a scene"
+          ]
+        },
+        {
+          "name": "tvmonitor",
+          "synonyms": [
+            "tvmonitor",
+            "television",
+            "TV screen",
+            "television monitor",
+            "a tvmonitor",
+            "a television",
+            "a TV screen",
+            "a television monitor",
+            "the tvmonitor",
+            "the television",
+            "the TV screen",
+            "the television monitor",
+            "visible tvmonitor",
+            "visible television",
+            "visible TV screen",
+            "visible television monitor",
+            "tvmonitor in a scene",
+            "television in a scene",
+            "TV screen in a scene",
+            "television monitor in a scene",
+            "tv monitor",
+            "monitor",
+            "computer monitor"
+          ]
+        }
+      ],
+      "template": "seg_template"
+    }
+  },
+  "judgment": "jaredpalmer/kev-4b@6cfce5c2fa4b4bd64026336ab649c5ca78857d52",
+  "inference_uses_target_labels": false,
+  "target_label_development": true,
+  "source_protocol": "Labeled development-selected configuration, not a label-free selector or untouched independent test. Full scores and non-development complement; ADE uses training development. Kev is an additional frozen pretrained language prior."
+}

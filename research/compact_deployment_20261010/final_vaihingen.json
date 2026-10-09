@@ -1,0 +1,1547 @@
+{
+  "status": "complete",
+  "dataset": "vaihingen",
+  "choice": {
+    "profile": {
+      "bank": "kev40_imagenet",
+      "strength": "original",
+      "coupling": 0.25,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.0,
+    "development_miou": 58.78400537786106,
+    "profile_index": 5,
+    "bias_index": 0,
+    "confusion_matrix": [
+      [
+        16149183,
+        1885405,
+        76611,
+        567043,
+        662099
+      ],
+      [
+        550295,
+        15887913,
+        218645,
+        97614,
+        8527
+      ],
+      [
+        3177060,
+        2425962,
+        5097755,
+        1908369,
+        86175
+      ],
+      [
+        761275,
+        584491,
+        778418,
+        11490721,
+        37558
+      ],
+      [
+        97696,
+        43242,
+        316,
+        6003,
+        782989
+      ]
+    ],
+    "development_confusions": {
+      "vaihingen": [
+        [
+          16149183,
+          1885405,
+          76611,
+          567043,
+          662099
+        ],
+        [
+          550295,
+          15887913,
+          218645,
+          97614,
+          8527
+        ],
+        [
+          3177060,
+          2425962,
+          5097755,
+          1908369,
+          86175
+        ],
+        [
+          761275,
+          584491,
+          778418,
+          11490721,
+          37558
+        ],
+        [
+          97696,
+          43242,
+          316,
+          6003,
+          782989
+        ]
+      ]
+    },
+    "implementation": "geometry-kev-variable-alias-static-search-v1-20261009",
+    "status": "complete",
+    "development_keys": [
+      "top_mosaic_09cm_area10_y00_x01.tif",
+      "top_mosaic_09cm_area10_y02_x00.tif",
+      "top_mosaic_09cm_area12_y00_x01.tif",
+      "top_mosaic_09cm_area12_y01_x00.tif",
+      "top_mosaic_09cm_area12_y01_x01.tif",
+      "top_mosaic_09cm_area12_y02_x00.tif",
+      "top_mosaic_09cm_area12_y02_x01.tif",
+      "top_mosaic_09cm_area14_y01_x00.tif",
+      "top_mosaic_09cm_area14_y01_x01.tif",
+      "top_mosaic_09cm_area14_y02_x01.tif",
+      "top_mosaic_09cm_area16_y00_x01.tif",
+      "top_mosaic_09cm_area16_y01_x01.tif",
+      "top_mosaic_09cm_area16_y02_x01.tif",
+      "top_mosaic_09cm_area20_y00_x00.tif",
+      "top_mosaic_09cm_area20_y01_x01.tif",
+      "top_mosaic_09cm_area20_y02_x00.tif",
+      "top_mosaic_09cm_area20_y02_x01.tif",
+      "top_mosaic_09cm_area22_y00_x00.tif",
+      "top_mosaic_09cm_area22_y00_x01.tif",
+      "top_mosaic_09cm_area22_y01_x00.tif",
+      "top_mosaic_09cm_area22_y01_x01.tif",
+      "top_mosaic_09cm_area22_y02_x00.tif",
+      "top_mosaic_09cm_area24_y01_x00.tif",
+      "top_mosaic_09cm_area24_y02_x00.tif",
+      "top_mosaic_09cm_area27_y00_x00.tif",
+      "top_mosaic_09cm_area27_y01_x01.tif",
+      "top_mosaic_09cm_area27_y02_x00.tif",
+      "top_mosaic_09cm_area27_y02_x01.tif",
+      "top_mosaic_09cm_area27_y03_x00.tif",
+      "top_mosaic_09cm_area29_y00_x00.tif",
+      "top_mosaic_09cm_area29_y00_x01.tif",
+      "top_mosaic_09cm_area29_y01_x00.tif",
+      "top_mosaic_09cm_area29_y01_x01.tif",
+      "top_mosaic_09cm_area29_y02_x00.tif",
+      "top_mosaic_09cm_area2_y00_x00.tif",
+      "top_mosaic_09cm_area2_y00_x02.tif",
+      "top_mosaic_09cm_area2_y01_x01.tif",
+      "top_mosaic_09cm_area2_y01_x02.tif",
+      "top_mosaic_09cm_area2_y02_x00.tif",
+      "top_mosaic_09cm_area31_y01_x00.tif",
+      "top_mosaic_09cm_area31_y01_x01.tif",
+      "top_mosaic_09cm_area31_y02_x00.tif",
+      "top_mosaic_09cm_area33_y00_x00.tif",
+      "top_mosaic_09cm_area33_y01_x00.tif",
+      "top_mosaic_09cm_area33_y01_x01.tif",
+      "top_mosaic_09cm_area33_y02_x00.tif",
+      "top_mosaic_09cm_area35_y01_x02.tif",
+      "top_mosaic_09cm_area38_y00_x01.tif",
+      "top_mosaic_09cm_area38_y00_x02.tif",
+      "top_mosaic_09cm_area38_y01_x01.tif",
+      "top_mosaic_09cm_area38_y01_x03.tif",
+      "top_mosaic_09cm_area38_y02_x02.tif",
+      "top_mosaic_09cm_area38_y02_x03.tif",
+      "top_mosaic_09cm_area4_y00_x00.tif",
+      "top_mosaic_09cm_area4_y00_x01.tif",
+      "top_mosaic_09cm_area4_y02_x00.tif",
+      "top_mosaic_09cm_area4_y02_x01.tif",
+      "top_mosaic_09cm_area6_y00_x00.tif",
+      "top_mosaic_09cm_area6_y00_x01.tif",
+      "top_mosaic_09cm_area6_y02_x00.tif",
+      "top_mosaic_09cm_area6_y02_x01.tif",
+      "top_mosaic_09cm_area8_y01_x00.tif",
+      "top_mosaic_09cm_area8_y02_x00.tif",
+      "top_mosaic_09cm_area8_y02_x01.tif"
+    ],
+    "development_source": "fixed_labeled_validation_development_subset",
+    "vocabulary": {
+      "original": {
+        "classes": [
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "paved surface",
+              "pavement",
+              "asphalt surface",
+              "concrete surface",
+              "hard surface",
+              "road pavement",
+              "parking pavement",
+              "sealed ground",
+              "built ground",
+              "urban pavement",
+              "sidewalk",
+              "paved area",
+              "hardscape",
+              "gray pavement",
+              "street surface",
+              "concrete ground",
+              "impermeable ground",
+              "man made surface",
+              "solid surface"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "rooftop",
+              "roof",
+              "residential building",
+              "industrial building",
+              "urban structure",
+              "constructed structure",
+              "apartment block",
+              "warehouse",
+              "large building",
+              "small building",
+              "building roof",
+              "built structure",
+              "dense buildings",
+              "commercial building",
+              "concrete building",
+              "urban building"
+            ]
+          },
+          {
+            "name": "low vegetation",
+            "synonyms": [
+              "low vegetation",
+              "grass",
+              "grassland",
+              "short grass",
+              "ground vegetation",
+              "green ground cover",
+              "meadow",
+              "herbaceous cover",
+              "low plants",
+              "lawn",
+              "pasture",
+              "small plants",
+              "ground cover",
+              "sparse grass",
+              "green field",
+              "low greenery",
+              "vegetated ground",
+              "grass cover",
+              "short vegetation",
+              "herbal vegetation"
+            ]
+          },
+          {
+            "name": "tree",
+            "synonyms": [
+              "tree",
+              "trees",
+              "tree canopy",
+              "forest",
+              "woodland",
+              "wooded area",
+              "tree cluster",
+              "grove",
+              "dense trees",
+              "sparse trees",
+              "green canopy",
+              "tall vegetation",
+              "deciduous trees",
+              "evergreen trees",
+              "tree crown",
+              "wooded vegetation",
+              "tree cover",
+              "plantation",
+              "forest patch",
+              "large tree"
+            ]
+          },
+          {
+            "name": "car",
+            "synonyms": [
+              "car",
+              "cars",
+              "vehicle",
+              "vehicles",
+              "automobile",
+              "parked car",
+              "road vehicle",
+              "small vehicle",
+              "large vehicle",
+              "traffic vehicle",
+              "moving car",
+              "sedan",
+              "van",
+              "truck",
+              "bus",
+              "motor vehicle",
+              "vehicle cluster",
+              "transport vehicle",
+              "visible car",
+              "automotive object"
+            ]
+          }
+        ],
+        "template": "RS6"
+      },
+      "original_imagenet": {
+        "classes": [
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "paved surface",
+              "pavement",
+              "asphalt surface",
+              "concrete surface",
+              "hard surface",
+              "road pavement",
+              "parking pavement",
+              "sealed ground",
+              "built ground",
+              "urban pavement",
+              "sidewalk",
+              "paved area",
+              "hardscape",
+              "gray pavement",
+              "street surface",
+              "concrete ground",
+              "impermeable ground",
+              "man made surface",
+              "solid surface"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "rooftop",
+              "roof",
+              "residential building",
+              "industrial building",
+              "urban structure",
+              "constructed structure",
+              "apartment block",
+              "warehouse",
+              "large building",
+              "small building",
+              "building roof",
+              "built structure",
+              "dense buildings",
+              "commercial building",
+              "concrete building",
+              "urban building"
+            ]
+          },
+          {
+            "name": "low vegetation",
+            "synonyms": [
+              "low vegetation",
+              "grass",
+              "grassland",
+              "short grass",
+              "ground vegetation",
+              "green ground cover",
+              "meadow",
+              "herbaceous cover",
+              "low plants",
+              "lawn",
+              "pasture",
+              "small plants",
+              "ground cover",
+              "sparse grass",
+              "green field",
+              "low greenery",
+              "vegetated ground",
+              "grass cover",
+              "short vegetation",
+              "herbal vegetation"
+            ]
+          },
+          {
+            "name": "tree",
+            "synonyms": [
+              "tree",
+              "trees",
+              "tree canopy",
+              "forest",
+              "woodland",
+              "wooded area",
+              "tree cluster",
+              "grove",
+              "dense trees",
+              "sparse trees",
+              "green canopy",
+              "tall vegetation",
+              "deciduous trees",
+              "evergreen trees",
+              "tree crown",
+              "wooded vegetation",
+              "tree cover",
+              "plantation",
+              "forest patch",
+              "large tree"
+            ]
+          },
+          {
+            "name": "car",
+            "synonyms": [
+              "car",
+              "cars",
+              "vehicle",
+              "vehicles",
+              "automobile",
+              "parked car",
+              "road vehicle",
+              "small vehicle",
+              "large vehicle",
+              "traffic vehicle",
+              "moving car",
+              "sedan",
+              "van",
+              "truck",
+              "bus",
+              "motor vehicle",
+              "vehicle cluster",
+              "transport vehicle",
+              "visible car",
+              "automotive object"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "focused20": {
+        "classes": [
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "paved surface",
+              "pavement",
+              "asphalt surface",
+              "concrete surface",
+              "hard surface",
+              "road pavement",
+              "parking pavement",
+              "sealed ground",
+              "built ground",
+              "urban pavement",
+              "sidewalk",
+              "paved area",
+              "hardscape",
+              "gray pavement",
+              "street surface",
+              "concrete ground",
+              "impermeable ground",
+              "man made surface",
+              "solid surface"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "rooftop",
+              "roof",
+              "residential building",
+              "industrial building",
+              "urban structure",
+              "constructed structure",
+              "apartment block",
+              "warehouse",
+              "large building",
+              "small building",
+              "building roof",
+              "built structure",
+              "dense buildings",
+              "commercial building",
+              "concrete building",
+              "urban building"
+            ]
+          },
+          {
+            "name": "low vegetation",
+            "synonyms": [
+              "low vegetation",
+              "grass",
+              "grassland",
+              "short grass",
+              "ground vegetation",
+              "green ground cover",
+              "meadow",
+              "herbaceous cover",
+              "low plants",
+              "lawn",
+              "pasture",
+              "small plants",
+              "ground cover",
+              "sparse grass",
+              "green field",
+              "low greenery",
+              "vegetated ground",
+              "grass cover",
+              "short vegetation",
+              "herbal vegetation"
+            ]
+          },
+          {
+            "name": "tree",
+            "synonyms": [
+              "tree",
+              "trees",
+              "tree canopy",
+              "forest",
+              "woodland",
+              "wooded area",
+              "tree cluster",
+              "grove",
+              "dense trees",
+              "sparse trees",
+              "green canopy",
+              "tall vegetation",
+              "deciduous trees",
+              "evergreen trees",
+              "tree crown",
+              "wooded vegetation",
+              "tree cover",
+              "plantation",
+              "forest patch",
+              "large tree"
+            ]
+          },
+          {
+            "name": "car",
+            "synonyms": [
+              "car",
+              "cars",
+              "vehicle",
+              "vehicles",
+              "automobile",
+              "parked car",
+              "road vehicle",
+              "small vehicle",
+              "large vehicle",
+              "traffic vehicle",
+              "moving car",
+              "sedan",
+              "van",
+              "truck",
+              "bus",
+              "motor vehicle",
+              "vehicle cluster",
+              "transport vehicle",
+              "visible car",
+              "automotive object"
+            ]
+          }
+        ],
+        "template": "RS6"
+      },
+      "official_imagenet": {
+        "classes": [
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "road"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "facade"
+            ]
+          },
+          {
+            "name": "low vegetation",
+            "synonyms": [
+              "grassland",
+              "farmland",
+              "grass"
+            ]
+          },
+          {
+            "name": "tree",
+            "synonyms": [
+              "tree",
+              "trees"
+            ]
+          },
+          {
+            "name": "car",
+            "synonyms": [
+              "car"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "official_segmentation": {
+        "classes": [
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "road"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "facade"
+            ]
+          },
+          {
+            "name": "low vegetation",
+            "synonyms": [
+              "grassland",
+              "farmland",
+              "grass"
+            ]
+          },
+          {
+            "name": "tree",
+            "synonyms": [
+              "tree",
+              "trees"
+            ]
+          },
+          {
+            "name": "car",
+            "synonyms": [
+              "car"
+            ]
+          }
+        ],
+        "template": "seg_template"
+      },
+      "kev40_imagenet": {
+        "classes": [
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "paved surface",
+              "pavement",
+              "asphalt surface",
+              "concrete surface",
+              "road pavement",
+              "parking pavement",
+              "sealed ground",
+              "urban pavement",
+              "sidewalk",
+              "paved area",
+              "gray pavement",
+              "street surface",
+              "concrete ground",
+              "impermeable ground",
+              "road"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "rooftop",
+              "residential building",
+              "industrial building",
+              "apartment block",
+              "warehouse",
+              "large building",
+              "small building",
+              "built structure",
+              "dense buildings",
+              "commercial building",
+              "concrete building",
+              "urban building"
+            ]
+          },
+          {
+            "name": "low vegetation",
+            "synonyms": [
+              "low vegetation",
+              "grass",
+              "grassland",
+              "short grass",
+              "ground vegetation",
+              "green ground cover",
+              "meadow",
+              "herbaceous cover",
+              "low plants",
+              "lawn",
+              "small plants",
+              "sparse grass",
+              "green field",
+              "low greenery",
+              "grass cover",
+              "short vegetation",
+              "herbal vegetation"
+            ]
+          },
+          {
+            "name": "tree",
+            "synonyms": [
+              "tree",
+              "trees",
+              "tree canopy",
+              "dense trees",
+              "sparse trees",
+              "green canopy",
+              "tall vegetation",
+              "deciduous trees",
+              "evergreen trees",
+              "tree crown",
+              "tree cover",
+              "large tree"
+            ]
+          },
+          {
+            "name": "car",
+            "synonyms": [
+              "car",
+              "cars",
+              "automobile",
+              "parked car",
+              "moving car",
+              "sedan",
+              "van",
+              "visible car"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "kev60_imagenet": {
+        "classes": [
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "sidewalk"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building"
+            ]
+          },
+          {
+            "name": "low vegetation",
+            "synonyms": [
+              "low vegetation"
+            ]
+          },
+          {
+            "name": "tree",
+            "synonyms": [
+              "tree",
+              "tree crown"
+            ]
+          },
+          {
+            "name": "car",
+            "synonyms": [
+              "car"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "kev80_imagenet": {
+        "classes": [
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building"
+            ]
+          },
+          {
+            "name": "low vegetation",
+            "synonyms": [
+              "low vegetation"
+            ]
+          },
+          {
+            "name": "tree",
+            "synonyms": [
+              "tree"
+            ]
+          },
+          {
+            "name": "car",
+            "synonyms": [
+              "car"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "pool_imagenet": {
+        "classes": [
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "paved surface",
+              "pavement",
+              "asphalt surface",
+              "concrete surface",
+              "hard surface",
+              "road pavement",
+              "parking pavement",
+              "sealed ground",
+              "built ground",
+              "urban pavement",
+              "sidewalk",
+              "paved area",
+              "hardscape",
+              "gray pavement",
+              "street surface",
+              "concrete ground",
+              "impermeable ground",
+              "man made surface",
+              "solid surface",
+              "road"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "rooftop",
+              "roof",
+              "residential building",
+              "industrial building",
+              "urban structure",
+              "constructed structure",
+              "apartment block",
+              "warehouse",
+              "large building",
+              "small building",
+              "building roof",
+              "built structure",
+              "dense buildings",
+              "commercial building",
+              "concrete building",
+              "urban building",
+              "facade"
+            ]
+          },
+          {
+            "name": "low vegetation",
+            "synonyms": [
+              "low vegetation",
+              "grass",
+              "grassland",
+              "short grass",
+              "ground vegetation",
+              "green ground cover",
+              "meadow",
+              "herbaceous cover",
+              "low plants",
+              "lawn",
+              "pasture",
+              "small plants",
+              "ground cover",
+              "sparse grass",
+              "green field",
+              "low greenery",
+              "vegetated ground",
+              "grass cover",
+              "short vegetation",
+              "herbal vegetation",
+              "farmland"
+            ]
+          },
+          {
+            "name": "tree",
+            "synonyms": [
+              "tree",
+              "trees",
+              "tree canopy",
+              "forest",
+              "woodland",
+              "wooded area",
+              "tree cluster",
+              "grove",
+              "dense trees",
+              "sparse trees",
+              "green canopy",
+              "tall vegetation",
+              "deciduous trees",
+              "evergreen trees",
+              "tree crown",
+              "wooded vegetation",
+              "tree cover",
+              "plantation",
+              "forest patch",
+              "large tree"
+            ]
+          },
+          {
+            "name": "car",
+            "synonyms": [
+              "car",
+              "cars",
+              "vehicle",
+              "vehicles",
+              "automobile",
+              "parked car",
+              "road vehicle",
+              "small vehicle",
+              "large vehicle",
+              "traffic vehicle",
+              "moving car",
+              "sedan",
+              "van",
+              "truck",
+              "bus",
+              "motor vehicle",
+              "vehicle cluster",
+              "transport vehicle",
+              "visible car",
+              "automotive object"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "kev40_segmentation": {
+        "classes": [
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "paved surface",
+              "pavement",
+              "asphalt surface",
+              "concrete surface",
+              "road pavement",
+              "parking pavement",
+              "sealed ground",
+              "urban pavement",
+              "sidewalk",
+              "paved area",
+              "gray pavement",
+              "street surface",
+              "concrete ground",
+              "impermeable ground",
+              "road"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "rooftop",
+              "residential building",
+              "industrial building",
+              "apartment block",
+              "warehouse",
+              "large building",
+              "small building",
+              "built structure",
+              "dense buildings",
+              "commercial building",
+              "concrete building",
+              "urban building"
+            ]
+          },
+          {
+            "name": "low vegetation",
+            "synonyms": [
+              "low vegetation",
+              "grass",
+              "grassland",
+              "short grass",
+              "ground vegetation",
+              "green ground cover",
+              "meadow",
+              "herbaceous cover",
+              "low plants",
+              "lawn",
+              "small plants",
+              "sparse grass",
+              "green field",
+              "low greenery",
+              "grass cover",
+              "short vegetation",
+              "herbal vegetation"
+            ]
+          },
+          {
+            "name": "tree",
+            "synonyms": [
+              "tree",
+              "trees",
+              "tree canopy",
+              "dense trees",
+              "sparse trees",
+              "green canopy",
+              "tall vegetation",
+              "deciduous trees",
+              "evergreen trees",
+              "tree crown",
+              "tree cover",
+              "large tree"
+            ]
+          },
+          {
+            "name": "car",
+            "synonyms": [
+              "car",
+              "cars",
+              "automobile",
+              "parked car",
+              "moving car",
+              "sedan",
+              "van",
+              "visible car"
+            ]
+          }
+        ],
+        "template": "seg_template"
+      },
+      "kev60_segmentation": {
+        "classes": [
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "sidewalk"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building"
+            ]
+          },
+          {
+            "name": "low vegetation",
+            "synonyms": [
+              "low vegetation"
+            ]
+          },
+          {
+            "name": "tree",
+            "synonyms": [
+              "tree",
+              "tree crown"
+            ]
+          },
+          {
+            "name": "car",
+            "synonyms": [
+              "car"
+            ]
+          }
+        ],
+        "template": "seg_template"
+      },
+      "kev80_segmentation": {
+        "classes": [
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building"
+            ]
+          },
+          {
+            "name": "low vegetation",
+            "synonyms": [
+              "low vegetation"
+            ]
+          },
+          {
+            "name": "tree",
+            "synonyms": [
+              "tree"
+            ]
+          },
+          {
+            "name": "car",
+            "synonyms": [
+              "car"
+            ]
+          }
+        ],
+        "template": "seg_template"
+      },
+      "pool_segmentation": {
+        "classes": [
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "paved surface",
+              "pavement",
+              "asphalt surface",
+              "concrete surface",
+              "hard surface",
+              "road pavement",
+              "parking pavement",
+              "sealed ground",
+              "built ground",
+              "urban pavement",
+              "sidewalk",
+              "paved area",
+              "hardscape",
+              "gray pavement",
+              "street surface",
+              "concrete ground",
+              "impermeable ground",
+              "man made surface",
+              "solid surface",
+              "road"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "rooftop",
+              "roof",
+              "residential building",
+              "industrial building",
+              "urban structure",
+              "constructed structure",
+              "apartment block",
+              "warehouse",
+              "large building",
+              "small building",
+              "building roof",
+              "built structure",
+              "dense buildings",
+              "commercial building",
+              "concrete building",
+              "urban building",
+              "facade"
+            ]
+          },
+          {
+            "name": "low vegetation",
+            "synonyms": [
+              "low vegetation",
+              "grass",
+              "grassland",
+              "short grass",
+              "ground vegetation",
+              "green ground cover",
+              "meadow",
+              "herbaceous cover",
+              "low plants",
+              "lawn",
+              "pasture",
+              "small plants",
+              "ground cover",
+              "sparse grass",
+              "green field",
+              "low greenery",
+              "vegetated ground",
+              "grass cover",
+              "short vegetation",
+              "herbal vegetation",
+              "farmland"
+            ]
+          },
+          {
+            "name": "tree",
+            "synonyms": [
+              "tree",
+              "trees",
+              "tree canopy",
+              "forest",
+              "woodland",
+              "wooded area",
+              "tree cluster",
+              "grove",
+              "dense trees",
+              "sparse trees",
+              "green canopy",
+              "tall vegetation",
+              "deciduous trees",
+              "evergreen trees",
+              "tree crown",
+              "wooded vegetation",
+              "tree cover",
+              "plantation",
+              "forest patch",
+              "large tree"
+            ]
+          },
+          {
+            "name": "car",
+            "synonyms": [
+              "car",
+              "cars",
+              "vehicle",
+              "vehicles",
+              "automobile",
+              "parked car",
+              "road vehicle",
+              "small vehicle",
+              "large vehicle",
+              "traffic vehicle",
+              "moving car",
+              "sedan",
+              "van",
+              "truck",
+              "bus",
+              "motor vehicle",
+              "vehicle cluster",
+              "transport vehicle",
+              "visible car",
+              "automotive object"
+            ]
+          }
+        ],
+        "template": "seg_template"
+      }
+    },
+    "judgment": "jaredpalmer/kev-4b@6cfce5c2fa4b4bd64026336ab649c5ca78857d52",
+    "inference_uses_target_labels": false,
+    "target_label_development": true,
+    "source_protocol": "Labeled development-selected configuration, not a label-free selector or untouched independent test. Full scores and non-development complement; ADE uses training development. Kev is an additional frozen pretrained language prior."
+  },
+  "exact_sample_predictions": true,
+  "images": 7,
+  "text_offload": [
+    {
+      "branch": "geometry",
+      "text_weight_bytes": 2152524800,
+      "released": true
+    },
+    {
+      "branch": "wide",
+      "text_weight_bytes": 1076262400,
+      "released": true
+    }
+  ],
+  "results": {
+    "reference": {
+      "images": [
+        {
+          "key": "top_mosaic_09cm_area10_y00_x00.tif",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            242.32407310046256,
+            242.5432289019227,
+            242.3243939410895,
+            243.9982620999217,
+            244.7628069203347,
+            243.84878389537334,
+            243.43633116222918
+          ],
+          "peak_allocated_mib": 5519.7568359375,
+          "peak_reserved_mib": 7154.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "top_mosaic_09cm_area16_y00_x00.tif",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            247.0859200693667,
+            245.5112759489566,
+            246.58406781964004,
+            246.34378612972796,
+            247.34007311053574,
+            242.3149780370295,
+            243.1247450876981
+          ],
+          "peak_allocated_mib": 5519.7568359375,
+          "peak_reserved_mib": 7154.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "top_mosaic_09cm_area24_y00_x01.tif",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            240.7805051188916,
+            241.56259302981198,
+            241.10452411696315,
+            239.57275412976742,
+            239.22983882948756,
+            239.35943795368075,
+            239.26141392439604
+          ],
+          "peak_allocated_mib": 5519.7568359375,
+          "peak_reserved_mib": 7154.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "top_mosaic_09cm_area2_y00_x00.tif",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            238.17611299455166,
+            240.55724986828864,
+            238.6702559888363,
+            238.0201960913837,
+            238.03264903835952,
+            237.76530101895332,
+            239.0792251098901
+          ],
+          "peak_allocated_mib": 5519.7568359375,
+          "peak_reserved_mib": 7154.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "top_mosaic_09cm_area33_y01_x01.tif",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            240.21900887601078,
+            239.05291710980237,
+            238.54860803112388,
+            237.8768001217395,
+            239.72132918424904,
+            239.10326091572642,
+            241.10814300365746
+          ],
+          "peak_allocated_mib": 5519.7568359375,
+          "peak_reserved_mib": 7154.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "top_mosaic_09cm_area38_y02_x02.tif",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            240.82457018084824,
+            242.3105409834534,
+            241.58811895176768,
+            239.7958291694522,
+            238.7483990751207,
+            236.58635700121522,
+            240.1185359340161
+          ],
+          "peak_allocated_mib": 5519.7568359375,
+          "peak_reserved_mib": 7154.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "top_mosaic_09cm_area8_y02_x01.tif",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            238.5515000205487,
+            239.82901009730995,
+            241.99685594066978,
+            239.38289494253695,
+            239.7014838643372,
+            239.29239413700998,
+            240.35838898271322
+          ],
+          "peak_allocated_mib": 5519.7568359375,
+          "peak_reserved_mib": 7154.0,
+          "changed_pixels": 0
+        }
+      ],
+      "median_ms": 240.21900887601078,
+      "peak_allocated_mib": 5519.7568359375,
+      "peak_reserved_mib": 7154.0
+    },
+    "compact": {
+      "images": [
+        {
+          "key": "top_mosaic_09cm_area10_y00_x00.tif",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            230.28907203115523,
+            230.63589818775654,
+            229.86891702748835,
+            234.29467901587486,
+            232.91758401319385,
+            231.3596720341593,
+            231.96691181510687
+          ],
+          "peak_allocated_mib": 2183.005859375,
+          "peak_reserved_mib": 2428.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "top_mosaic_09cm_area16_y00_x00.tif",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            228.6637199576944,
+            230.5664720479399,
+            229.47079711593688,
+            227.51596197485924,
+            229.4426029548049,
+            230.04616401158273,
+            231.52088304050267
+          ],
+          "peak_allocated_mib": 2183.005859375,
+          "peak_reserved_mib": 2428.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "top_mosaic_09cm_area24_y00_x01.tif",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            228.3975670579821,
+            229.1520331054926,
+            228.48181589506567,
+            229.33717910200357,
+            228.7130719050765,
+            228.39985298924148,
+            225.58537614531815
+          ],
+          "peak_allocated_mib": 2183.005859375,
+          "peak_reserved_mib": 2428.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "top_mosaic_09cm_area2_y00_x00.tif",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            229.08277716487646,
+            228.47258392721415,
+            228.91964204609394,
+            229.41458295099437,
+            231.07014503329992,
+            229.29302998818457,
+            228.49551285617054
+          ],
+          "peak_allocated_mib": 2183.005859375,
+          "peak_reserved_mib": 2428.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "top_mosaic_09cm_area33_y01_x01.tif",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            228.60924480482936,
+            229.98286504298449,
+            228.61584601923823,
+            229.47269398719072,
+            228.51446201093495,
+            228.59060391783714,
+            229.54730596393347
+          ],
+          "peak_allocated_mib": 2183.005859375,
+          "peak_reserved_mib": 2428.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "top_mosaic_09cm_area38_y02_x02.tif",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            226.90788307227194,
+            227.21334802918136,
+            226.6509218607098,
+            227.25786012597382,
+            226.0657970327884,
+            225.77363695017993,
+            226.1578121688217
+          ],
+          "peak_allocated_mib": 2183.005859375,
+          "peak_reserved_mib": 2428.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "top_mosaic_09cm_area8_y02_x01.tif",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            227.79408586211503,
+            226.9018378574401,
+            227.4232329800725,
+            229.149938095361,
+            228.74416108243167,
+            233.49115485325456,
+            232.29695996269584
+          ],
+          "peak_allocated_mib": 2183.005859375,
+          "peak_reserved_mib": 2428.0,
+          "changed_pixels": 0
+        }
+      ],
+      "median_ms": 228.91964204609394,
+      "peak_allocated_mib": 2183.005859375,
+      "peak_reserved_mib": 2428.0
+    }
+  },
+  "boundary": "Same frozen language, parameters, visual views and dtypes; whole RGB input to CPU prediction. Decode/init/text encoding excluded. Two warmups, seven fixed images, seven synchronized repeats."
+}

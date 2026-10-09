@@ -1,0 +1,81 @@
+background	sky | cloudy sky | blue sky | the sky above | clear sky | skyline | atmosphere | wall | tree | wood | grass | road | sea | river | mountain | sands | desk | bed | building | cloud | lamp | door | window | wardrobe | ceiling | shelf | curtain | stair | floor | hill | rail | fence
+person	people | people in shirt | people in jeans | people in dress | people in sweater | people in skirt | people in jacket | human | crowd | child | boy | girl | man | women
+bicycle	bike
+car	car
+motorcycle	motorcycle
+airplane	airplane
+bus	bus
+train	train | locomotive
+truck	truck
+boat	boat
+traffic light	traffic light
+fire hydrant	fire hydrant
+stop sign	stop sign
+parking meter	parking meter
+bench	bench
+bird	bird
+cat	cat
+dog	dog
+horse	horse
+sheep	sheep
+cow	cow | cattle | dairy cow
+elephant	elephant
+bear	bear
+zebra	zebra
+giraffe	giraffe
+backpack	backpack
+umbrella	umbrella
+handbag	handbag
+tie	tie
+suitcase	suitcase
+frisbee	frisbee
+skis	skis
+snowboard	snowboard
+sports ball	sports ball
+kite	kite | toy kite | flying kite
+baseball bat	baseball bat
+baseball glove	baseball glove
+skateboard	skateboard
+surfboard	surfboard
+tennis racket	tennis racket
+bottle	bottle
+wine glass	wine glass
+cup	cup
+fork	fork
+knife	knife
+spoon	spoon
+bowl	bowl
+banana	banana | yellow banana
+apple	apple | apples | red apple
+sandwich	sandwich
+orange	orange
+broccoli	broccoli
+carrot	carrot
+hot dog	hot dog
+pizza	pizza
+donut	donut
+cake	cake
+chair	chair
+couch	sofa
+potted plant	potted plant | potted flower | pot plant | plant in a pot
+bed	bed
+dining table	dining table | dinner table | eating table | kitchen table
+toilet	toilet | toilet bowl
+tv	tv | television screen | screen | television | television monitor | tv monitor
+laptop	laptop
+mouse	mouse
+remote	remote | remote control
+keyboard	keyboard
+cell phone	cell phone
+microwave	microwave
+oven	oven | kitchen oven | baking oven
+toaster	toaster
+sink	sink
+refrigerator	refrigerator | fridge
+book	book | a book | the book | open book | closed book | hardcover book
+clock	clock
+vase	vase
+scissors	scissors | a pair of scissors | shears
+teddy bear	teddy bear
+hair drier	hair drier
+toothbrush	toothbrush

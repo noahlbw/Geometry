@@ -1,0 +1,1465 @@
+{
+  "status": "complete",
+  "coverage_verified": true,
+  "processed_images": 504,
+  "total_images": 504,
+  "signature": {
+    "implementation": "vip-kev-selected-same-language-v1-20261010",
+    "dataset": "potsdam",
+    "methods": [
+      "VIP_SameText",
+      "VIP_SameWordsOfficialTemplate"
+    ],
+    "classes": {
+      "potsdam": [
+        "impervious surface",
+        "building",
+        "low vegetation",
+        "tree",
+        "car",
+        "clutter"
+      ]
+    },
+    "selected_profile": {
+      "bank": "official_imagenet",
+      "strength": 3.0,
+      "coupling": 0.5,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "text_identity": {
+      "classes": [
+        {
+          "name": "impervious surface",
+          "synonyms": [
+            "road",
+            "parking lots"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "buildings"
+          ]
+        },
+        {
+          "name": "low vegetation",
+          "synonyms": [
+            "grass",
+            "grassland",
+            "farmland",
+            "forest area"
+          ]
+        },
+        {
+          "name": "tree",
+          "synonyms": [
+            "tree",
+            "trees"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "cars"
+          ]
+        },
+        {
+          "name": "clutter",
+          "synonyms": [
+            "background"
+          ]
+        }
+      ],
+      "source_bank": "official_imagenet",
+      "source_template": "openai_imagenet_template",
+      "residual_identity": null,
+      "checkpoints": {
+        "dinotxt": {
+          "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+          "bytes": 2253936683,
+          "mtime_ns": 1789834446340889779
+        },
+        "lvd1689m": {
+          "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+          "bytes": 1213050671,
+          "mtime_ns": 1789833314101759062
+        },
+        "sat493m": {
+          "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+          "bytes": 1213059235,
+          "mtime_ns": 1789833891171431405
+        },
+        "bpe": {
+          "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+          "bytes": 1356917,
+          "mtime_ns": 1787032172000000000
+        }
+      },
+      "upstream_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "official_template": "openai_imagenet_template"
+    },
+    "template_counts": {
+      "VIP_SameText": 80,
+      "VIP_SameWordsOfficialTemplate": 80
+    },
+    "settings": {
+      "tau": 1.0,
+      "tem": 2.0,
+      "prob_thd": 0.25,
+      "background": true,
+      "bg_idx": 5,
+      "resize_long_edge": 448,
+      "slide_crop": 336,
+      "slide_stride": 112,
+      "logit_scale": 40.0
+    },
+    "checkpoints": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "upstream_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+    "view_policy": "long448",
+    "global_sample_count": 504,
+    "global_sample_keys_sha256": "dfcdc24a21caf68f02ddf611038a9ceb0eec3dbd6322709aa7e77216821af57e",
+    "sample_keys": [
+      "top_potsdam_2_13_RGB_y00_x00.tif",
+      "top_potsdam_2_13_RGB_y00_x01.tif",
+      "top_potsdam_2_13_RGB_y00_x02.tif",
+      "top_potsdam_2_13_RGB_y00_x03.tif",
+      "top_potsdam_2_13_RGB_y00_x04.tif",
+      "top_potsdam_2_13_RGB_y00_x05.tif",
+      "top_potsdam_2_13_RGB_y01_x00.tif",
+      "top_potsdam_2_13_RGB_y01_x01.tif",
+      "top_potsdam_2_13_RGB_y01_x02.tif",
+      "top_potsdam_2_13_RGB_y01_x03.tif",
+      "top_potsdam_2_13_RGB_y01_x04.tif",
+      "top_potsdam_2_13_RGB_y01_x05.tif",
+      "top_potsdam_2_13_RGB_y02_x00.tif",
+      "top_potsdam_2_13_RGB_y02_x01.tif",
+      "top_potsdam_2_13_RGB_y02_x02.tif",
+      "top_potsdam_2_13_RGB_y02_x03.tif",
+      "top_potsdam_2_13_RGB_y02_x04.tif",
+      "top_potsdam_2_13_RGB_y02_x05.tif",
+      "top_potsdam_2_13_RGB_y03_x00.tif",
+      "top_potsdam_2_13_RGB_y03_x01.tif",
+      "top_potsdam_2_13_RGB_y03_x02.tif",
+      "top_potsdam_2_13_RGB_y03_x03.tif",
+      "top_potsdam_2_13_RGB_y03_x04.tif",
+      "top_potsdam_2_13_RGB_y03_x05.tif",
+      "top_potsdam_2_13_RGB_y04_x00.tif",
+      "top_potsdam_2_13_RGB_y04_x01.tif",
+      "top_potsdam_2_13_RGB_y04_x02.tif",
+      "top_potsdam_2_13_RGB_y04_x03.tif",
+      "top_potsdam_2_13_RGB_y04_x04.tif",
+      "top_potsdam_2_13_RGB_y04_x05.tif",
+      "top_potsdam_2_13_RGB_y05_x00.tif",
+      "top_potsdam_2_13_RGB_y05_x01.tif",
+      "top_potsdam_2_13_RGB_y05_x02.tif",
+      "top_potsdam_2_13_RGB_y05_x03.tif",
+      "top_potsdam_2_13_RGB_y05_x04.tif",
+      "top_potsdam_2_13_RGB_y05_x05.tif",
+      "top_potsdam_2_14_RGB_y00_x00.tif",
+      "top_potsdam_2_14_RGB_y00_x01.tif",
+      "top_potsdam_2_14_RGB_y00_x02.tif",
+      "top_potsdam_2_14_RGB_y00_x03.tif",
+      "top_potsdam_2_14_RGB_y00_x04.tif",
+      "top_potsdam_2_14_RGB_y00_x05.tif",
+      "top_potsdam_2_14_RGB_y01_x00.tif",
+      "top_potsdam_2_14_RGB_y01_x01.tif",
+      "top_potsdam_2_14_RGB_y01_x02.tif",
+      "top_potsdam_2_14_RGB_y01_x03.tif",
+      "top_potsdam_2_14_RGB_y01_x04.tif",
+      "top_potsdam_2_14_RGB_y01_x05.tif",
+      "top_potsdam_2_14_RGB_y02_x00.tif",
+      "top_potsdam_2_14_RGB_y02_x01.tif",
+      "top_potsdam_2_14_RGB_y02_x02.tif",
+      "top_potsdam_2_14_RGB_y02_x03.tif",
+      "top_potsdam_2_14_RGB_y02_x04.tif",
+      "top_potsdam_2_14_RGB_y02_x05.tif",
+      "top_potsdam_2_14_RGB_y03_x00.tif",
+      "top_potsdam_2_14_RGB_y03_x01.tif",
+      "top_potsdam_2_14_RGB_y03_x02.tif",
+      "top_potsdam_2_14_RGB_y03_x03.tif",
+      "top_potsdam_2_14_RGB_y03_x04.tif",
+      "top_potsdam_2_14_RGB_y03_x05.tif",
+      "top_potsdam_2_14_RGB_y04_x00.tif",
+      "top_potsdam_2_14_RGB_y04_x01.tif",
+      "top_potsdam_2_14_RGB_y04_x02.tif",
+      "top_potsdam_2_14_RGB_y04_x03.tif",
+      "top_potsdam_2_14_RGB_y04_x04.tif",
+      "top_potsdam_2_14_RGB_y04_x05.tif",
+      "top_potsdam_2_14_RGB_y05_x00.tif",
+      "top_potsdam_2_14_RGB_y05_x01.tif",
+      "top_potsdam_2_14_RGB_y05_x02.tif",
+      "top_potsdam_2_14_RGB_y05_x03.tif",
+      "top_potsdam_2_14_RGB_y05_x04.tif",
+      "top_potsdam_2_14_RGB_y05_x05.tif",
+      "top_potsdam_3_13_RGB_y00_x00.tif",
+      "top_potsdam_3_13_RGB_y00_x01.tif",
+      "top_potsdam_3_13_RGB_y00_x02.tif",
+      "top_potsdam_3_13_RGB_y00_x03.tif",
+      "top_potsdam_3_13_RGB_y00_x04.tif",
+      "top_potsdam_3_13_RGB_y00_x05.tif",
+      "top_potsdam_3_13_RGB_y01_x00.tif",
+      "top_potsdam_3_13_RGB_y01_x01.tif",
+      "top_potsdam_3_13_RGB_y01_x02.tif",
+      "top_potsdam_3_13_RGB_y01_x03.tif",
+      "top_potsdam_3_13_RGB_y01_x04.tif",
+      "top_potsdam_3_13_RGB_y01_x05.tif",
+      "top_potsdam_3_13_RGB_y02_x00.tif",
+      "top_potsdam_3_13_RGB_y02_x01.tif",
+      "top_potsdam_3_13_RGB_y02_x02.tif",
+      "top_potsdam_3_13_RGB_y02_x03.tif",
+      "top_potsdam_3_13_RGB_y02_x04.tif",
+      "top_potsdam_3_13_RGB_y02_x05.tif",
+      "top_potsdam_3_13_RGB_y03_x00.tif",
+      "top_potsdam_3_13_RGB_y03_x01.tif",
+      "top_potsdam_3_13_RGB_y03_x02.tif",
+      "top_potsdam_3_13_RGB_y03_x03.tif",
+      "top_potsdam_3_13_RGB_y03_x04.tif",
+      "top_potsdam_3_13_RGB_y03_x05.tif",
+      "top_potsdam_3_13_RGB_y04_x00.tif",
+      "top_potsdam_3_13_RGB_y04_x01.tif",
+      "top_potsdam_3_13_RGB_y04_x02.tif",
+      "top_potsdam_3_13_RGB_y04_x03.tif",
+      "top_potsdam_3_13_RGB_y04_x04.tif",
+      "top_potsdam_3_13_RGB_y04_x05.tif",
+      "top_potsdam_3_13_RGB_y05_x00.tif",
+      "top_potsdam_3_13_RGB_y05_x01.tif",
+      "top_potsdam_3_13_RGB_y05_x02.tif",
+      "top_potsdam_3_13_RGB_y05_x03.tif",
+      "top_potsdam_3_13_RGB_y05_x04.tif",
+      "top_potsdam_3_13_RGB_y05_x05.tif",
+      "top_potsdam_3_14_RGB_y00_x00.tif",
+      "top_potsdam_3_14_RGB_y00_x01.tif",
+      "top_potsdam_3_14_RGB_y00_x02.tif",
+      "top_potsdam_3_14_RGB_y00_x03.tif",
+      "top_potsdam_3_14_RGB_y00_x04.tif",
+      "top_potsdam_3_14_RGB_y00_x05.tif",
+      "top_potsdam_3_14_RGB_y01_x00.tif",
+      "top_potsdam_3_14_RGB_y01_x01.tif",
+      "top_potsdam_3_14_RGB_y01_x02.tif",
+      "top_potsdam_3_14_RGB_y01_x03.tif",
+      "top_potsdam_3_14_RGB_y01_x04.tif",
+      "top_potsdam_3_14_RGB_y01_x05.tif",
+      "top_potsdam_3_14_RGB_y02_x00.tif",
+      "top_potsdam_3_14_RGB_y02_x01.tif",
+      "top_potsdam_3_14_RGB_y02_x02.tif",
+      "top_potsdam_3_14_RGB_y02_x03.tif",
+      "top_potsdam_3_14_RGB_y02_x04.tif",
+      "top_potsdam_3_14_RGB_y02_x05.tif",
+      "top_potsdam_3_14_RGB_y03_x00.tif",
+      "top_potsdam_3_14_RGB_y03_x01.tif",
+      "top_potsdam_3_14_RGB_y03_x02.tif",
+      "top_potsdam_3_14_RGB_y03_x03.tif",
+      "top_potsdam_3_14_RGB_y03_x04.tif",
+      "top_potsdam_3_14_RGB_y03_x05.tif",
+      "top_potsdam_3_14_RGB_y04_x00.tif",
+      "top_potsdam_3_14_RGB_y04_x01.tif",
+      "top_potsdam_3_14_RGB_y04_x02.tif",
+      "top_potsdam_3_14_RGB_y04_x03.tif",
+      "top_potsdam_3_14_RGB_y04_x04.tif",
+      "top_potsdam_3_14_RGB_y04_x05.tif",
+      "top_potsdam_3_14_RGB_y05_x00.tif",
+      "top_potsdam_3_14_RGB_y05_x01.tif",
+      "top_potsdam_3_14_RGB_y05_x02.tif",
+      "top_potsdam_3_14_RGB_y05_x03.tif",
+      "top_potsdam_3_14_RGB_y05_x04.tif",
+      "top_potsdam_3_14_RGB_y05_x05.tif",
+      "top_potsdam_4_13_RGB_y00_x00.tif",
+      "top_potsdam_4_13_RGB_y00_x01.tif",
+      "top_potsdam_4_13_RGB_y00_x02.tif",
+      "top_potsdam_4_13_RGB_y00_x03.tif",
+      "top_potsdam_4_13_RGB_y00_x04.tif",
+      "top_potsdam_4_13_RGB_y00_x05.tif",
+      "top_potsdam_4_13_RGB_y01_x00.tif",
+      "top_potsdam_4_13_RGB_y01_x01.tif",
+      "top_potsdam_4_13_RGB_y01_x02.tif",
+      "top_potsdam_4_13_RGB_y01_x03.tif",
+      "top_potsdam_4_13_RGB_y01_x04.tif",
+      "top_potsdam_4_13_RGB_y01_x05.tif",
+      "top_potsdam_4_13_RGB_y02_x00.tif",
+      "top_potsdam_4_13_RGB_y02_x01.tif",
+      "top_potsdam_4_13_RGB_y02_x02.tif",
+      "top_potsdam_4_13_RGB_y02_x03.tif",
+      "top_potsdam_4_13_RGB_y02_x04.tif",
+      "top_potsdam_4_13_RGB_y02_x05.tif",
+      "top_potsdam_4_13_RGB_y03_x00.tif",
+      "top_potsdam_4_13_RGB_y03_x01.tif",
+      "top_potsdam_4_13_RGB_y03_x02.tif",
+      "top_potsdam_4_13_RGB_y03_x03.tif",
+      "top_potsdam_4_13_RGB_y03_x04.tif",
+      "top_potsdam_4_13_RGB_y03_x05.tif",
+      "top_potsdam_4_13_RGB_y04_x00.tif",
+      "top_potsdam_4_13_RGB_y04_x01.tif",
+      "top_potsdam_4_13_RGB_y04_x02.tif",
+      "top_potsdam_4_13_RGB_y04_x03.tif",
+      "top_potsdam_4_13_RGB_y04_x04.tif",
+      "top_potsdam_4_13_RGB_y04_x05.tif",
+      "top_potsdam_4_13_RGB_y05_x00.tif",
+      "top_potsdam_4_13_RGB_y05_x01.tif",
+      "top_potsdam_4_13_RGB_y05_x02.tif",
+      "top_potsdam_4_13_RGB_y05_x03.tif",
+      "top_potsdam_4_13_RGB_y05_x04.tif",
+      "top_potsdam_4_13_RGB_y05_x05.tif",
+      "top_potsdam_4_14_RGB_y00_x00.tif",
+      "top_potsdam_4_14_RGB_y00_x01.tif",
+      "top_potsdam_4_14_RGB_y00_x02.tif",
+      "top_potsdam_4_14_RGB_y00_x03.tif",
+      "top_potsdam_4_14_RGB_y00_x04.tif",
+      "top_potsdam_4_14_RGB_y00_x05.tif",
+      "top_potsdam_4_14_RGB_y01_x00.tif",
+      "top_potsdam_4_14_RGB_y01_x01.tif",
+      "top_potsdam_4_14_RGB_y01_x02.tif",
+      "top_potsdam_4_14_RGB_y01_x03.tif",
+      "top_potsdam_4_14_RGB_y01_x04.tif",
+      "top_potsdam_4_14_RGB_y01_x05.tif",
+      "top_potsdam_4_14_RGB_y02_x00.tif",
+      "top_potsdam_4_14_RGB_y02_x01.tif",
+      "top_potsdam_4_14_RGB_y02_x02.tif",
+      "top_potsdam_4_14_RGB_y02_x03.tif",
+      "top_potsdam_4_14_RGB_y02_x04.tif",
+      "top_potsdam_4_14_RGB_y02_x05.tif",
+      "top_potsdam_4_14_RGB_y03_x00.tif",
+      "top_potsdam_4_14_RGB_y03_x01.tif",
+      "top_potsdam_4_14_RGB_y03_x02.tif",
+      "top_potsdam_4_14_RGB_y03_x03.tif",
+      "top_potsdam_4_14_RGB_y03_x04.tif",
+      "top_potsdam_4_14_RGB_y03_x05.tif",
+      "top_potsdam_4_14_RGB_y04_x00.tif",
+      "top_potsdam_4_14_RGB_y04_x01.tif",
+      "top_potsdam_4_14_RGB_y04_x02.tif",
+      "top_potsdam_4_14_RGB_y04_x03.tif",
+      "top_potsdam_4_14_RGB_y04_x04.tif",
+      "top_potsdam_4_14_RGB_y04_x05.tif",
+      "top_potsdam_4_14_RGB_y05_x00.tif",
+      "top_potsdam_4_14_RGB_y05_x01.tif",
+      "top_potsdam_4_14_RGB_y05_x02.tif",
+      "top_potsdam_4_14_RGB_y05_x03.tif",
+      "top_potsdam_4_14_RGB_y05_x04.tif",
+      "top_potsdam_4_14_RGB_y05_x05.tif",
+      "top_potsdam_4_15_RGB_y00_x00.tif",
+      "top_potsdam_4_15_RGB_y00_x01.tif",
+      "top_potsdam_4_15_RGB_y00_x02.tif",
+      "top_potsdam_4_15_RGB_y00_x03.tif",
+      "top_potsdam_4_15_RGB_y00_x04.tif",
+      "top_potsdam_4_15_RGB_y00_x05.tif",
+      "top_potsdam_4_15_RGB_y01_x00.tif",
+      "top_potsdam_4_15_RGB_y01_x01.tif",
+      "top_potsdam_4_15_RGB_y01_x02.tif",
+      "top_potsdam_4_15_RGB_y01_x03.tif",
+      "top_potsdam_4_15_RGB_y01_x04.tif",
+      "top_potsdam_4_15_RGB_y01_x05.tif",
+      "top_potsdam_4_15_RGB_y02_x00.tif",
+      "top_potsdam_4_15_RGB_y02_x01.tif",
+      "top_potsdam_4_15_RGB_y02_x02.tif",
+      "top_potsdam_4_15_RGB_y02_x03.tif",
+      "top_potsdam_4_15_RGB_y02_x04.tif",
+      "top_potsdam_4_15_RGB_y02_x05.tif",
+      "top_potsdam_4_15_RGB_y03_x00.tif",
+      "top_potsdam_4_15_RGB_y03_x01.tif",
+      "top_potsdam_4_15_RGB_y03_x02.tif",
+      "top_potsdam_4_15_RGB_y03_x03.tif",
+      "top_potsdam_4_15_RGB_y03_x04.tif",
+      "top_potsdam_4_15_RGB_y03_x05.tif",
+      "top_potsdam_4_15_RGB_y04_x00.tif",
+      "top_potsdam_4_15_RGB_y04_x01.tif",
+      "top_potsdam_4_15_RGB_y04_x02.tif",
+      "top_potsdam_4_15_RGB_y04_x03.tif",
+      "top_potsdam_4_15_RGB_y04_x04.tif",
+      "top_potsdam_4_15_RGB_y04_x05.tif",
+      "top_potsdam_4_15_RGB_y05_x00.tif",
+      "top_potsdam_4_15_RGB_y05_x01.tif",
+      "top_potsdam_4_15_RGB_y05_x02.tif",
+      "top_potsdam_4_15_RGB_y05_x03.tif",
+      "top_potsdam_4_15_RGB_y05_x04.tif",
+      "top_potsdam_4_15_RGB_y05_x05.tif",
+      "top_potsdam_5_13_RGB_y00_x00.tif",
+      "top_potsdam_5_13_RGB_y00_x01.tif",
+      "top_potsdam_5_13_RGB_y00_x02.tif",
+      "top_potsdam_5_13_RGB_y00_x03.tif",
+      "top_potsdam_5_13_RGB_y00_x04.tif",
+      "top_potsdam_5_13_RGB_y00_x05.tif",
+      "top_potsdam_5_13_RGB_y01_x00.tif",
+      "top_potsdam_5_13_RGB_y01_x01.tif",
+      "top_potsdam_5_13_RGB_y01_x02.tif",
+      "top_potsdam_5_13_RGB_y01_x03.tif",
+      "top_potsdam_5_13_RGB_y01_x04.tif",
+      "top_potsdam_5_13_RGB_y01_x05.tif",
+      "top_potsdam_5_13_RGB_y02_x00.tif",
+      "top_potsdam_5_13_RGB_y02_x01.tif",
+      "top_potsdam_5_13_RGB_y02_x02.tif",
+      "top_potsdam_5_13_RGB_y02_x03.tif",
+      "top_potsdam_5_13_RGB_y02_x04.tif",
+      "top_potsdam_5_13_RGB_y02_x05.tif",
+      "top_potsdam_5_13_RGB_y03_x00.tif",
+      "top_potsdam_5_13_RGB_y03_x01.tif",
+      "top_potsdam_5_13_RGB_y03_x02.tif",
+      "top_potsdam_5_13_RGB_y03_x03.tif",
+      "top_potsdam_5_13_RGB_y03_x04.tif",
+      "top_potsdam_5_13_RGB_y03_x05.tif",
+      "top_potsdam_5_13_RGB_y04_x00.tif",
+      "top_potsdam_5_13_RGB_y04_x01.tif",
+      "top_potsdam_5_13_RGB_y04_x02.tif",
+      "top_potsdam_5_13_RGB_y04_x03.tif",
+      "top_potsdam_5_13_RGB_y04_x04.tif",
+      "top_potsdam_5_13_RGB_y04_x05.tif",
+      "top_potsdam_5_13_RGB_y05_x00.tif",
+      "top_potsdam_5_13_RGB_y05_x01.tif",
+      "top_potsdam_5_13_RGB_y05_x02.tif",
+      "top_potsdam_5_13_RGB_y05_x03.tif",
+      "top_potsdam_5_13_RGB_y05_x04.tif",
+      "top_potsdam_5_13_RGB_y05_x05.tif",
+      "top_potsdam_5_14_RGB_y00_x00.tif",
+      "top_potsdam_5_14_RGB_y00_x01.tif",
+      "top_potsdam_5_14_RGB_y00_x02.tif",
+      "top_potsdam_5_14_RGB_y00_x03.tif",
+      "top_potsdam_5_14_RGB_y00_x04.tif",
+      "top_potsdam_5_14_RGB_y00_x05.tif",
+      "top_potsdam_5_14_RGB_y01_x00.tif",
+      "top_potsdam_5_14_RGB_y01_x01.tif",
+      "top_potsdam_5_14_RGB_y01_x02.tif",
+      "top_potsdam_5_14_RGB_y01_x03.tif",
+      "top_potsdam_5_14_RGB_y01_x04.tif",
+      "top_potsdam_5_14_RGB_y01_x05.tif",
+      "top_potsdam_5_14_RGB_y02_x00.tif",
+      "top_potsdam_5_14_RGB_y02_x01.tif",
+      "top_potsdam_5_14_RGB_y02_x02.tif",
+      "top_potsdam_5_14_RGB_y02_x03.tif",
+      "top_potsdam_5_14_RGB_y02_x04.tif",
+      "top_potsdam_5_14_RGB_y02_x05.tif",
+      "top_potsdam_5_14_RGB_y03_x00.tif",
+      "top_potsdam_5_14_RGB_y03_x01.tif",
+      "top_potsdam_5_14_RGB_y03_x02.tif",
+      "top_potsdam_5_14_RGB_y03_x03.tif",
+      "top_potsdam_5_14_RGB_y03_x04.tif",
+      "top_potsdam_5_14_RGB_y03_x05.tif",
+      "top_potsdam_5_14_RGB_y04_x00.tif",
+      "top_potsdam_5_14_RGB_y04_x01.tif",
+      "top_potsdam_5_14_RGB_y04_x02.tif",
+      "top_potsdam_5_14_RGB_y04_x03.tif",
+      "top_potsdam_5_14_RGB_y04_x04.tif",
+      "top_potsdam_5_14_RGB_y04_x05.tif",
+      "top_potsdam_5_14_RGB_y05_x00.tif",
+      "top_potsdam_5_14_RGB_y05_x01.tif",
+      "top_potsdam_5_14_RGB_y05_x02.tif",
+      "top_potsdam_5_14_RGB_y05_x03.tif",
+      "top_potsdam_5_14_RGB_y05_x04.tif",
+      "top_potsdam_5_14_RGB_y05_x05.tif",
+      "top_potsdam_5_15_RGB_y00_x00.tif",
+      "top_potsdam_5_15_RGB_y00_x01.tif",
+      "top_potsdam_5_15_RGB_y00_x02.tif",
+      "top_potsdam_5_15_RGB_y00_x03.tif",
+      "top_potsdam_5_15_RGB_y00_x04.tif",
+      "top_potsdam_5_15_RGB_y00_x05.tif",
+      "top_potsdam_5_15_RGB_y01_x00.tif",
+      "top_potsdam_5_15_RGB_y01_x01.tif",
+      "top_potsdam_5_15_RGB_y01_x02.tif",
+      "top_potsdam_5_15_RGB_y01_x03.tif",
+      "top_potsdam_5_15_RGB_y01_x04.tif",
+      "top_potsdam_5_15_RGB_y01_x05.tif",
+      "top_potsdam_5_15_RGB_y02_x00.tif",
+      "top_potsdam_5_15_RGB_y02_x01.tif",
+      "top_potsdam_5_15_RGB_y02_x02.tif",
+      "top_potsdam_5_15_RGB_y02_x03.tif",
+      "top_potsdam_5_15_RGB_y02_x04.tif",
+      "top_potsdam_5_15_RGB_y02_x05.tif",
+      "top_potsdam_5_15_RGB_y03_x00.tif",
+      "top_potsdam_5_15_RGB_y03_x01.tif",
+      "top_potsdam_5_15_RGB_y03_x02.tif",
+      "top_potsdam_5_15_RGB_y03_x03.tif",
+      "top_potsdam_5_15_RGB_y03_x04.tif",
+      "top_potsdam_5_15_RGB_y03_x05.tif",
+      "top_potsdam_5_15_RGB_y04_x00.tif",
+      "top_potsdam_5_15_RGB_y04_x01.tif",
+      "top_potsdam_5_15_RGB_y04_x02.tif",
+      "top_potsdam_5_15_RGB_y04_x03.tif",
+      "top_potsdam_5_15_RGB_y04_x04.tif",
+      "top_potsdam_5_15_RGB_y04_x05.tif",
+      "top_potsdam_5_15_RGB_y05_x00.tif",
+      "top_potsdam_5_15_RGB_y05_x01.tif",
+      "top_potsdam_5_15_RGB_y05_x02.tif",
+      "top_potsdam_5_15_RGB_y05_x03.tif",
+      "top_potsdam_5_15_RGB_y05_x04.tif",
+      "top_potsdam_5_15_RGB_y05_x05.tif",
+      "top_potsdam_6_13_RGB_y00_x00.tif",
+      "top_potsdam_6_13_RGB_y00_x01.tif",
+      "top_potsdam_6_13_RGB_y00_x02.tif",
+      "top_potsdam_6_13_RGB_y00_x03.tif",
+      "top_potsdam_6_13_RGB_y00_x04.tif",
+      "top_potsdam_6_13_RGB_y00_x05.tif",
+      "top_potsdam_6_13_RGB_y01_x00.tif",
+      "top_potsdam_6_13_RGB_y01_x01.tif",
+      "top_potsdam_6_13_RGB_y01_x02.tif",
+      "top_potsdam_6_13_RGB_y01_x03.tif",
+      "top_potsdam_6_13_RGB_y01_x04.tif",
+      "top_potsdam_6_13_RGB_y01_x05.tif",
+      "top_potsdam_6_13_RGB_y02_x00.tif",
+      "top_potsdam_6_13_RGB_y02_x01.tif",
+      "top_potsdam_6_13_RGB_y02_x02.tif",
+      "top_potsdam_6_13_RGB_y02_x03.tif",
+      "top_potsdam_6_13_RGB_y02_x04.tif",
+      "top_potsdam_6_13_RGB_y02_x05.tif",
+      "top_potsdam_6_13_RGB_y03_x00.tif",
+      "top_potsdam_6_13_RGB_y03_x01.tif",
+      "top_potsdam_6_13_RGB_y03_x02.tif",
+      "top_potsdam_6_13_RGB_y03_x03.tif",
+      "top_potsdam_6_13_RGB_y03_x04.tif",
+      "top_potsdam_6_13_RGB_y03_x05.tif",
+      "top_potsdam_6_13_RGB_y04_x00.tif",
+      "top_potsdam_6_13_RGB_y04_x01.tif",
+      "top_potsdam_6_13_RGB_y04_x02.tif",
+      "top_potsdam_6_13_RGB_y04_x03.tif",
+      "top_potsdam_6_13_RGB_y04_x04.tif",
+      "top_potsdam_6_13_RGB_y04_x05.tif",
+      "top_potsdam_6_13_RGB_y05_x00.tif",
+      "top_potsdam_6_13_RGB_y05_x01.tif",
+      "top_potsdam_6_13_RGB_y05_x02.tif",
+      "top_potsdam_6_13_RGB_y05_x03.tif",
+      "top_potsdam_6_13_RGB_y05_x04.tif",
+      "top_potsdam_6_13_RGB_y05_x05.tif",
+      "top_potsdam_6_14_RGB_y00_x00.tif",
+      "top_potsdam_6_14_RGB_y00_x01.tif",
+      "top_potsdam_6_14_RGB_y00_x02.tif",
+      "top_potsdam_6_14_RGB_y00_x03.tif",
+      "top_potsdam_6_14_RGB_y00_x04.tif",
+      "top_potsdam_6_14_RGB_y00_x05.tif",
+      "top_potsdam_6_14_RGB_y01_x00.tif",
+      "top_potsdam_6_14_RGB_y01_x01.tif",
+      "top_potsdam_6_14_RGB_y01_x02.tif",
+      "top_potsdam_6_14_RGB_y01_x03.tif",
+      "top_potsdam_6_14_RGB_y01_x04.tif",
+      "top_potsdam_6_14_RGB_y01_x05.tif",
+      "top_potsdam_6_14_RGB_y02_x00.tif",
+      "top_potsdam_6_14_RGB_y02_x01.tif",
+      "top_potsdam_6_14_RGB_y02_x02.tif",
+      "top_potsdam_6_14_RGB_y02_x03.tif",
+      "top_potsdam_6_14_RGB_y02_x04.tif",
+      "top_potsdam_6_14_RGB_y02_x05.tif",
+      "top_potsdam_6_14_RGB_y03_x00.tif",
+      "top_potsdam_6_14_RGB_y03_x01.tif",
+      "top_potsdam_6_14_RGB_y03_x02.tif",
+      "top_potsdam_6_14_RGB_y03_x03.tif",
+      "top_potsdam_6_14_RGB_y03_x04.tif",
+      "top_potsdam_6_14_RGB_y03_x05.tif",
+      "top_potsdam_6_14_RGB_y04_x00.tif",
+      "top_potsdam_6_14_RGB_y04_x01.tif",
+      "top_potsdam_6_14_RGB_y04_x02.tif",
+      "top_potsdam_6_14_RGB_y04_x03.tif",
+      "top_potsdam_6_14_RGB_y04_x04.tif",
+      "top_potsdam_6_14_RGB_y04_x05.tif",
+      "top_potsdam_6_14_RGB_y05_x00.tif",
+      "top_potsdam_6_14_RGB_y05_x01.tif",
+      "top_potsdam_6_14_RGB_y05_x02.tif",
+      "top_potsdam_6_14_RGB_y05_x03.tif",
+      "top_potsdam_6_14_RGB_y05_x04.tif",
+      "top_potsdam_6_14_RGB_y05_x05.tif",
+      "top_potsdam_6_15_RGB_y00_x00.tif",
+      "top_potsdam_6_15_RGB_y00_x01.tif",
+      "top_potsdam_6_15_RGB_y00_x02.tif",
+      "top_potsdam_6_15_RGB_y00_x03.tif",
+      "top_potsdam_6_15_RGB_y00_x04.tif",
+      "top_potsdam_6_15_RGB_y00_x05.tif",
+      "top_potsdam_6_15_RGB_y01_x00.tif",
+      "top_potsdam_6_15_RGB_y01_x01.tif",
+      "top_potsdam_6_15_RGB_y01_x02.tif",
+      "top_potsdam_6_15_RGB_y01_x03.tif",
+      "top_potsdam_6_15_RGB_y01_x04.tif",
+      "top_potsdam_6_15_RGB_y01_x05.tif",
+      "top_potsdam_6_15_RGB_y02_x00.tif",
+      "top_potsdam_6_15_RGB_y02_x01.tif",
+      "top_potsdam_6_15_RGB_y02_x02.tif",
+      "top_potsdam_6_15_RGB_y02_x03.tif",
+      "top_potsdam_6_15_RGB_y02_x04.tif",
+      "top_potsdam_6_15_RGB_y02_x05.tif",
+      "top_potsdam_6_15_RGB_y03_x00.tif",
+      "top_potsdam_6_15_RGB_y03_x01.tif",
+      "top_potsdam_6_15_RGB_y03_x02.tif",
+      "top_potsdam_6_15_RGB_y03_x03.tif",
+      "top_potsdam_6_15_RGB_y03_x04.tif",
+      "top_potsdam_6_15_RGB_y03_x05.tif",
+      "top_potsdam_6_15_RGB_y04_x00.tif",
+      "top_potsdam_6_15_RGB_y04_x01.tif",
+      "top_potsdam_6_15_RGB_y04_x02.tif",
+      "top_potsdam_6_15_RGB_y04_x03.tif",
+      "top_potsdam_6_15_RGB_y04_x04.tif",
+      "top_potsdam_6_15_RGB_y04_x05.tif",
+      "top_potsdam_6_15_RGB_y05_x00.tif",
+      "top_potsdam_6_15_RGB_y05_x01.tif",
+      "top_potsdam_6_15_RGB_y05_x02.tif",
+      "top_potsdam_6_15_RGB_y05_x03.tif",
+      "top_potsdam_6_15_RGB_y05_x04.tif",
+      "top_potsdam_6_15_RGB_y05_x05.tif",
+      "top_potsdam_7_13_RGB_y00_x00.tif",
+      "top_potsdam_7_13_RGB_y00_x01.tif",
+      "top_potsdam_7_13_RGB_y00_x02.tif",
+      "top_potsdam_7_13_RGB_y00_x03.tif",
+      "top_potsdam_7_13_RGB_y00_x04.tif",
+      "top_potsdam_7_13_RGB_y00_x05.tif",
+      "top_potsdam_7_13_RGB_y01_x00.tif",
+      "top_potsdam_7_13_RGB_y01_x01.tif",
+      "top_potsdam_7_13_RGB_y01_x02.tif",
+      "top_potsdam_7_13_RGB_y01_x03.tif",
+      "top_potsdam_7_13_RGB_y01_x04.tif",
+      "top_potsdam_7_13_RGB_y01_x05.tif",
+      "top_potsdam_7_13_RGB_y02_x00.tif",
+      "top_potsdam_7_13_RGB_y02_x01.tif",
+      "top_potsdam_7_13_RGB_y02_x02.tif",
+      "top_potsdam_7_13_RGB_y02_x03.tif",
+      "top_potsdam_7_13_RGB_y02_x04.tif",
+      "top_potsdam_7_13_RGB_y02_x05.tif",
+      "top_potsdam_7_13_RGB_y03_x00.tif",
+      "top_potsdam_7_13_RGB_y03_x01.tif",
+      "top_potsdam_7_13_RGB_y03_x02.tif",
+      "top_potsdam_7_13_RGB_y03_x03.tif",
+      "top_potsdam_7_13_RGB_y03_x04.tif",
+      "top_potsdam_7_13_RGB_y03_x05.tif",
+      "top_potsdam_7_13_RGB_y04_x00.tif",
+      "top_potsdam_7_13_RGB_y04_x01.tif",
+      "top_potsdam_7_13_RGB_y04_x02.tif",
+      "top_potsdam_7_13_RGB_y04_x03.tif",
+      "top_potsdam_7_13_RGB_y04_x04.tif",
+      "top_potsdam_7_13_RGB_y04_x05.tif",
+      "top_potsdam_7_13_RGB_y05_x00.tif",
+      "top_potsdam_7_13_RGB_y05_x01.tif",
+      "top_potsdam_7_13_RGB_y05_x02.tif",
+      "top_potsdam_7_13_RGB_y05_x03.tif",
+      "top_potsdam_7_13_RGB_y05_x04.tif",
+      "top_potsdam_7_13_RGB_y05_x05.tif"
+    ],
+    "num_shards": 1,
+    "shard_index": null,
+    "residual_rule": "PC60 uses the same explicit residual concepts as background aliases with standard VIP aggregation; no Geometry residual gate.",
+    "numeric_repair": "Self-Value only on completely masked proxy rows; same repaired VIP as prior references."
+  },
+  "metrics": {
+    "potsdam": {
+      "VIP_SameText": {
+        "mean_iou_percent": 42.8721,
+        "pixel_accuracy_percent": 72.1973,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 62.3405,
+            "target_pixels": 158614521,
+            "predicted_pixels": 200649157,
+            "precision_percent": 68.7574,
+            "recall_percent": 86.9789,
+            "predicted_area_percent": 39.8113
+          },
+          {
+            "name": "building",
+            "iou_percent": 71.0669,
+            "target_pixels": 120553967,
+            "predicted_pixels": 112177596,
+            "precision_percent": 86.1887,
+            "recall_percent": 80.2001,
+            "predicted_area_percent": 22.2575
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 53.0014,
+            "target_pixels": 105884497,
+            "predicted_pixels": 131625942,
+            "precision_percent": 62.5076,
+            "recall_percent": 77.7038,
+            "predicted_area_percent": 26.1163
+          },
+          {
+            "name": "tree",
+            "iou_percent": 46.3191,
+            "target_pixels": 85888156,
+            "predicted_pixels": 49814741,
+            "precision_percent": 86.2364,
+            "recall_percent": 50.0167,
+            "predicted_area_percent": 9.8839
+          },
+          {
+            "name": "car",
+            "iou_percent": 16.8687,
+            "target_pixels": 9903123,
+            "predicted_pixels": 3157558,
+            "precision_percent": 59.7033,
+            "recall_percent": 19.0361,
+            "predicted_area_percent": 0.6265
+          },
+          {
+            "name": "clutter",
+            "iou_percent": 7.6361,
+            "target_pixels": 23155736,
+            "predicted_pixels": 6575006,
+            "precision_percent": 32.0793,
+            "recall_percent": 9.1088,
+            "predicted_area_percent": 1.3046
+          }
+        ],
+        "confusion_matrix": [
+          [
+            137961108,
+            7291470,
+            8617741,
+            1547246,
+            814900,
+            2382056
+          ],
+          [
+            17084446,
+            96684454,
+            5006483,
+            542366,
+            6882,
+            1229336
+          ],
+          [
+            14861126,
+            4052879,
+            82276234,
+            4262852,
+            69245,
+            362161
+          ],
+          [
+            13901821,
+            708625,
+            27621830,
+            42958430,
+            227518,
+            469932
+          ],
+          [
+            7969244,
+            10725,
+            14198,
+            1487,
+            1885167,
+            22302
+          ],
+          [
+            8871412,
+            3429443,
+            8089456,
+            502360,
+            153846,
+            2109219
+          ]
+        ],
+        "ignored_pixels": 0,
+        "unscored_prediction_classes": 0
+      },
+      "VIP_SameWordsOfficialTemplate": {
+        "mean_iou_percent": 42.8721,
+        "pixel_accuracy_percent": 72.1973,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 62.3405,
+            "target_pixels": 158614521,
+            "predicted_pixels": 200649157,
+            "precision_percent": 68.7574,
+            "recall_percent": 86.9789,
+            "predicted_area_percent": 39.8113
+          },
+          {
+            "name": "building",
+            "iou_percent": 71.0669,
+            "target_pixels": 120553967,
+            "predicted_pixels": 112177596,
+            "precision_percent": 86.1887,
+            "recall_percent": 80.2001,
+            "predicted_area_percent": 22.2575
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 53.0014,
+            "target_pixels": 105884497,
+            "predicted_pixels": 131625942,
+            "precision_percent": 62.5076,
+            "recall_percent": 77.7038,
+            "predicted_area_percent": 26.1163
+          },
+          {
+            "name": "tree",
+            "iou_percent": 46.3191,
+            "target_pixels": 85888156,
+            "predicted_pixels": 49814741,
+            "precision_percent": 86.2364,
+            "recall_percent": 50.0167,
+            "predicted_area_percent": 9.8839
+          },
+          {
+            "name": "car",
+            "iou_percent": 16.8687,
+            "target_pixels": 9903123,
+            "predicted_pixels": 3157558,
+            "precision_percent": 59.7033,
+            "recall_percent": 19.0361,
+            "predicted_area_percent": 0.6265
+          },
+          {
+            "name": "clutter",
+            "iou_percent": 7.6361,
+            "target_pixels": 23155736,
+            "predicted_pixels": 6575006,
+            "precision_percent": 32.0793,
+            "recall_percent": 9.1088,
+            "predicted_area_percent": 1.3046
+          }
+        ],
+        "confusion_matrix": [
+          [
+            137961108,
+            7291470,
+            8617741,
+            1547246,
+            814900,
+            2382056
+          ],
+          [
+            17084446,
+            96684454,
+            5006483,
+            542366,
+            6882,
+            1229336
+          ],
+          [
+            14861126,
+            4052879,
+            82276234,
+            4262852,
+            69245,
+            362161
+          ],
+          [
+            13901821,
+            708625,
+            27621830,
+            42958430,
+            227518,
+            469932
+          ],
+          [
+            7969244,
+            10725,
+            14198,
+            1487,
+            1885167,
+            22302
+          ],
+          [
+            8871412,
+            3429443,
+            8089456,
+            502360,
+            153846,
+            2109219
+          ]
+        ],
+        "ignored_pixels": 0,
+        "unscored_prediction_classes": 0
+      }
+    }
+  },
+  "split_metrics": {
+    "development": {
+      "potsdam": {
+        "VIP_SameText": {
+          "mean_iou_percent": 43.2254,
+          "pixel_accuracy_percent": 71.7013,
+          "per_class": [
+            {
+              "name": "impervious surface",
+              "iou_percent": 61.4244,
+              "target_pixels": 18257070,
+              "predicted_pixels": 23347798,
+              "precision_percent": 67.8063,
+              "recall_percent": 86.7132,
+              "predicted_area_percent": 36.4809
+            },
+            {
+              "name": "building",
+              "iou_percent": 72.3379,
+              "target_pixels": 14959263,
+              "predicted_pixels": 14114122,
+              "precision_percent": 86.4623,
+              "recall_percent": 81.5775,
+              "predicted_area_percent": 22.0533
+            },
+            {
+              "name": "low vegetation",
+              "iou_percent": 53.8435,
+              "target_pixels": 14115201,
+              "predicted_pixels": 18241064,
+              "precision_percent": 62.0815,
+              "recall_percent": 80.2279,
+              "predicted_area_percent": 28.5017
+            },
+            {
+              "name": "tree",
+              "iou_percent": 48.8157,
+              "target_pixels": 11479229,
+              "predicted_pixels": 6858690,
+              "precision_percent": 87.704,
+              "recall_percent": 52.402,
+              "predicted_area_percent": 10.7167
+            },
+            {
+              "name": "car",
+              "iou_percent": 17.5517,
+              "target_pixels": 1357312,
+              "predicted_pixels": 435410,
+              "precision_percent": 61.4759,
+              "recall_percent": 19.7207,
+              "predicted_area_percent": 0.6803
+            },
+            {
+              "name": "clutter",
+              "iou_percent": 5.3791,
+              "target_pixels": 3831925,
+              "predicted_pixels": 1002916,
+              "precision_percent": 24.6078,
+              "recall_percent": 6.4405,
+              "predicted_area_percent": 1.5671
+            }
+          ],
+          "confusion_matrix": [
+            [
+              15831281,
+              984149,
+              1018482,
+              174710,
+              99933,
+              148515
+            ],
+            [
+              1519789,
+              12203393,
+              612027,
+              106387,
+              419,
+              517248
+            ],
+            [
+              1762201,
+              474706,
+              11324324,
+              509460,
+              6869,
+              37641
+            ],
+            [
+              1950726,
+              70233,
+              3334764,
+              6015345,
+              58777,
+              49384
+            ],
+            [
+              1083578,
+              1182,
+              1548,
+              0,
+              267672,
+              3332
+            ],
+            [
+              1200223,
+              380459,
+              1949919,
+              52788,
+              1740,
+              246796
+            ]
+          ],
+          "ignored_pixels": 0,
+          "unscored_prediction_classes": 0
+        },
+        "VIP_SameWordsOfficialTemplate": {
+          "mean_iou_percent": 43.2254,
+          "pixel_accuracy_percent": 71.7013,
+          "per_class": [
+            {
+              "name": "impervious surface",
+              "iou_percent": 61.4244,
+              "target_pixels": 18257070,
+              "predicted_pixels": 23347798,
+              "precision_percent": 67.8063,
+              "recall_percent": 86.7132,
+              "predicted_area_percent": 36.4809
+            },
+            {
+              "name": "building",
+              "iou_percent": 72.3379,
+              "target_pixels": 14959263,
+              "predicted_pixels": 14114122,
+              "precision_percent": 86.4623,
+              "recall_percent": 81.5775,
+              "predicted_area_percent": 22.0533
+            },
+            {
+              "name": "low vegetation",
+              "iou_percent": 53.8435,
+              "target_pixels": 14115201,
+              "predicted_pixels": 18241064,
+              "precision_percent": 62.0815,
+              "recall_percent": 80.2279,
+              "predicted_area_percent": 28.5017
+            },
+            {
+              "name": "tree",
+              "iou_percent": 48.8157,
+              "target_pixels": 11479229,
+              "predicted_pixels": 6858690,
+              "precision_percent": 87.704,
+              "recall_percent": 52.402,
+              "predicted_area_percent": 10.7167
+            },
+            {
+              "name": "car",
+              "iou_percent": 17.5517,
+              "target_pixels": 1357312,
+              "predicted_pixels": 435410,
+              "precision_percent": 61.4759,
+              "recall_percent": 19.7207,
+              "predicted_area_percent": 0.6803
+            },
+            {
+              "name": "clutter",
+              "iou_percent": 5.3791,
+              "target_pixels": 3831925,
+              "predicted_pixels": 1002916,
+              "precision_percent": 24.6078,
+              "recall_percent": 6.4405,
+              "predicted_area_percent": 1.5671
+            }
+          ],
+          "confusion_matrix": [
+            [
+              15831281,
+              984149,
+              1018482,
+              174710,
+              99933,
+              148515
+            ],
+            [
+              1519789,
+              12203393,
+              612027,
+              106387,
+              419,
+              517248
+            ],
+            [
+              1762201,
+              474706,
+              11324324,
+              509460,
+              6869,
+              37641
+            ],
+            [
+              1950726,
+              70233,
+              3334764,
+              6015345,
+              58777,
+              49384
+            ],
+            [
+              1083578,
+              1182,
+              1548,
+              0,
+              267672,
+              3332
+            ],
+            [
+              1200223,
+              380459,
+              1949919,
+              52788,
+              1740,
+              246796
+            ]
+          ],
+          "ignored_pixels": 0,
+          "unscored_prediction_classes": 0
+        }
+      }
+    },
+    "complement": {
+      "potsdam": {
+        "VIP_SameText": {
+          "mean_iou_percent": 42.8335,
+          "pixel_accuracy_percent": 72.2695,
+          "per_class": [
+            {
+              "name": "impervious surface",
+              "iou_percent": 62.4612,
+              "target_pixels": 140357451,
+              "predicted_pixels": 177301359,
+              "precision_percent": 68.8826,
+              "recall_percent": 87.0134,
+              "predicted_area_percent": 40.2958
+            },
+            {
+              "name": "building",
+              "iou_percent": 70.887,
+              "target_pixels": 105594704,
+              "predicted_pixels": 98063474,
+              "precision_percent": 86.1494,
+              "recall_percent": 80.005,
+              "predicted_area_percent": 22.2872
+            },
+            {
+              "name": "low vegetation",
+              "iou_percent": 52.8694,
+              "target_pixels": 91769296,
+              "predicted_pixels": 113384878,
+              "precision_percent": 62.5762,
+              "recall_percent": 77.3155,
+              "predicted_area_percent": 25.7693
+            },
+            {
+              "name": "tree",
+              "iou_percent": 45.9366,
+              "target_pixels": 74408927,
+              "predicted_pixels": 42956051,
+              "precision_percent": 86.0021,
+              "recall_percent": 49.6487,
+              "predicted_area_percent": 9.7627
+            },
+            {
+              "name": "car",
+              "iou_percent": 16.7608,
+              "target_pixels": 8545811,
+              "predicted_pixels": 2722148,
+              "precision_percent": 59.4198,
+              "recall_percent": 18.9273,
+              "predicted_area_percent": 0.6187
+            },
+            {
+              "name": "clutter",
+              "iou_percent": 8.0857,
+              "target_pixels": 19323811,
+              "predicted_pixels": 5572090,
+              "precision_percent": 33.4241,
+              "recall_percent": 9.638,
+              "predicted_area_percent": 1.2664
+            }
+          ],
+          "confusion_matrix": [
+            [
+              122129827,
+              6307321,
+              7599259,
+              1372536,
+              714967,
+              2233541
+            ],
+            [
+              15564657,
+              84481061,
+              4394456,
+              435979,
+              6463,
+              712088
+            ],
+            [
+              13098925,
+              3578173,
+              70951910,
+              3753392,
+              62376,
+              324520
+            ],
+            [
+              11951095,
+              638392,
+              24287066,
+              36943085,
+              168741,
+              420548
+            ],
+            [
+              6885666,
+              9543,
+              12650,
+              1487,
+              1617495,
+              18970
+            ],
+            [
+              7671189,
+              3048984,
+              6139537,
+              449572,
+              152106,
+              1862423
+            ]
+          ],
+          "ignored_pixels": 0,
+          "unscored_prediction_classes": 0
+        },
+        "VIP_SameWordsOfficialTemplate": {
+          "mean_iou_percent": 42.8335,
+          "pixel_accuracy_percent": 72.2695,
+          "per_class": [
+            {
+              "name": "impervious surface",
+              "iou_percent": 62.4612,
+              "target_pixels": 140357451,
+              "predicted_pixels": 177301359,
+              "precision_percent": 68.8826,
+              "recall_percent": 87.0134,
+              "predicted_area_percent": 40.2958
+            },
+            {
+              "name": "building",
+              "iou_percent": 70.887,
+              "target_pixels": 105594704,
+              "predicted_pixels": 98063474,
+              "precision_percent": 86.1494,
+              "recall_percent": 80.005,
+              "predicted_area_percent": 22.2872
+            },
+            {
+              "name": "low vegetation",
+              "iou_percent": 52.8694,
+              "target_pixels": 91769296,
+              "predicted_pixels": 113384878,
+              "precision_percent": 62.5762,
+              "recall_percent": 77.3155,
+              "predicted_area_percent": 25.7693
+            },
+            {
+              "name": "tree",
+              "iou_percent": 45.9366,
+              "target_pixels": 74408927,
+              "predicted_pixels": 42956051,
+              "precision_percent": 86.0021,
+              "recall_percent": 49.6487,
+              "predicted_area_percent": 9.7627
+            },
+            {
+              "name": "car",
+              "iou_percent": 16.7608,
+              "target_pixels": 8545811,
+              "predicted_pixels": 2722148,
+              "precision_percent": 59.4198,
+              "recall_percent": 18.9273,
+              "predicted_area_percent": 0.6187
+            },
+            {
+              "name": "clutter",
+              "iou_percent": 8.0857,
+              "target_pixels": 19323811,
+              "predicted_pixels": 5572090,
+              "precision_percent": 33.4241,
+              "recall_percent": 9.638,
+              "predicted_area_percent": 1.2664
+            }
+          ],
+          "confusion_matrix": [
+            [
+              122129827,
+              6307321,
+              7599259,
+              1372536,
+              714967,
+              2233541
+            ],
+            [
+              15564657,
+              84481061,
+              4394456,
+              435979,
+              6463,
+              712088
+            ],
+            [
+              13098925,
+              3578173,
+              70951910,
+              3753392,
+              62376,
+              324520
+            ],
+            [
+              11951095,
+              638392,
+              24287066,
+              36943085,
+              168741,
+              420548
+            ],
+            [
+              6885666,
+              9543,
+              12650,
+              1487,
+              1617495,
+              18970
+            ],
+            [
+              7671189,
+              3048984,
+              6139537,
+              449572,
+              152106,
+              1862423
+            ]
+          ],
+          "ignored_pixels": 0,
+          "unscored_prediction_classes": 0
+        }
+      }
+    }
+  },
+  "scored_target_counts_match": true,
+  "source_checkpoints_verified": true,
+  "per_image_confusions_verified": true,
+  "unchanged_official_short_replay": {
+    "VIP_SameText": {
+      "exact": false,
+      "required": false,
+      "word_groups_equal": false,
+      "confusion_l1": 91130532,
+      "historical_groups": [
+        [
+          "road",
+          "parking lots"
+        ],
+        [
+          "buildings"
+        ],
+        [
+          "grass",
+          "grassland",
+          "farmland,forest area"
+        ],
+        [
+          "tree",
+          "trees"
+        ],
+        [
+          "cars"
+        ],
+        [
+          "background"
+        ]
+      ],
+      "selected_groups": [
+        [
+          "road",
+          "parking lots"
+        ],
+        [
+          "buildings"
+        ],
+        [
+          "grass",
+          "grassland",
+          "farmland",
+          "forest area"
+        ],
+        [
+          "tree",
+          "trees"
+        ],
+        [
+          "cars"
+        ],
+        [
+          "background"
+        ]
+      ],
+      "note": "Pinned VIP splits only comma-space; the completed Kev source split all commas. Only identical actual query groups require exact historical confusion replay."
+    },
+    "VIP_SameWordsOfficialTemplate": {
+      "exact": false,
+      "required": false,
+      "word_groups_equal": false,
+      "confusion_l1": 91130532,
+      "historical_groups": [
+        [
+          "road",
+          "parking lots"
+        ],
+        [
+          "buildings"
+        ],
+        [
+          "grass",
+          "grassland",
+          "farmland,forest area"
+        ],
+        [
+          "tree",
+          "trees"
+        ],
+        [
+          "cars"
+        ],
+        [
+          "background"
+        ]
+      ],
+      "selected_groups": [
+        [
+          "road",
+          "parking lots"
+        ],
+        [
+          "buildings"
+        ],
+        [
+          "grass",
+          "grassland",
+          "farmland",
+          "forest area"
+        ],
+        [
+          "tree",
+          "trees"
+        ],
+        [
+          "cars"
+        ],
+        [
+          "background"
+        ]
+      ],
+      "note": "Pinned VIP splits only comma-space; the completed Kev source split all commas. Only identical actual query groups require exact historical confusion replay."
+    }
+  },
+  "weights_frozen": true,
+  "head_weights_unchanged": true,
+  "parallel_wall_seconds": 98.3179621619638,
+  "aggregate_gpu_seconds": 98.3179621619638,
+  "peak_cuda_memory_mb": 3360.390625
+}

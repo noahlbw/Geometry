@@ -18,9 +18,10 @@ dependencies = [
   "scikit-learn>=1.4",
   "submitit>=1.5",
   "termcolor>=2.0",
-  "torch>=2.7",
+  "torch>=2.6",
   "torchmetrics>=1.4",
-  "torchvision>=0.22",
+  "torchvision>=0.21",
+  "PyYAML>=6.0",
 ]
 
 [project.optional-dependencies]

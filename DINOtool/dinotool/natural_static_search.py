@@ -80,13 +80,13 @@ class StaticReader:
         self.blend = torch.from_numpy(hann_blend_window(512)).to(next(iter(banks.values())).features.device)
 
     @torch.inference_mode()
-    def probabilities(self, source, profile, cache):
+    def probabilities(self, source, profile, cache, *, wide_scorer=None):
         import eval_development_readout as base
         from eval_geometry_vip_reliability import sample_broad
         bank = self.banks[profile.bank]
         wkey = ('wide', profile.bank, profile.tau, profile.tem)
         if wkey not in cache:
-            cache[wkey] = base.wide_scores(source, self.queries[profile.bank], profile.tau, profile.tem)
+            cache[wkey] = (base.wide_scores if wide_scorer is None else wide_scorer)(source, self.queries[profile.bank], profile.tau, profile.tem)
         original_broad = cache[wkey]
         broad = original_broad
         if profile.background_rule.startswith('residual_'):

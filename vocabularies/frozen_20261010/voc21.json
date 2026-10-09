@@ -1,0 +1,279 @@
+{
+  "dataset": "voc21",
+  "banks": {
+    "semantic_segmentation": {
+      "classes": [
+        {
+          "name": "background",
+          "synonyms": [
+            "background",
+            "sky",
+            "cloudy sky",
+            "blue sky",
+            "the sky above",
+            "clear sky",
+            "sky above the horizon",
+            "open sky",
+            "wall",
+            "brick wall",
+            "stone wall",
+            "trees",
+            "tree",
+            "forest",
+            "wood",
+            "wooden surface",
+            "lumber",
+            "timber",
+            "wooden plank",
+            "grass",
+            "field",
+            "soil",
+            "meadow",
+            "lawn",
+            "road",
+            "roadway",
+            "water",
+            "body of water",
+            "river",
+            "lake",
+            "pond",
+            "ocean",
+            "sea",
+            "green water",
+            "blue water",
+            "mountain",
+            "sand",
+            "bed",
+            "building",
+            "buildings",
+            "facade",
+            "building frontage",
+            "cloud",
+            "lamp",
+            "door",
+            "window",
+            "wardrobe",
+            "ceiling",
+            "shelf",
+            "shelves",
+            "curtain",
+            "stair",
+            "floor",
+            "hill",
+            "railway rail",
+            "fence"
+          ]
+        },
+        {
+          "name": "aeroplane",
+          "synonyms": [
+            "aeroplane",
+            "plane",
+            "airplane",
+            "aircraft"
+          ]
+        },
+        {
+          "name": "bicycle",
+          "synonyms": [
+            "bicycle",
+            "pedal bike",
+            "pedal bicycle"
+          ]
+        },
+        {
+          "name": "bird",
+          "synonyms": [
+            "bird",
+            "avian animal",
+            "feathered bird"
+          ]
+        },
+        {
+          "name": "boat",
+          "synonyms": [
+            "boat",
+            "watercraft",
+            "small boat",
+            "sailing boat"
+          ]
+        },
+        {
+          "name": "bottle",
+          "synonyms": [
+            "bottle",
+            "wine bottle",
+            "water bottle",
+            "drink bottle",
+            "glass bottle",
+            "plastic bottle"
+          ]
+        },
+        {
+          "name": "bus",
+          "synonyms": [
+            "bus",
+            "red bus",
+            "double-decker bus",
+            "passenger bus",
+            "public transit bus",
+            "city bus"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car",
+            "automobile",
+            "passenger car",
+            "motorcar"
+          ]
+        },
+        {
+          "name": "cat",
+          "synonyms": [
+            "cat",
+            "feline",
+            "domestic cat",
+            "house cat"
+          ]
+        },
+        {
+          "name": "chair",
+          "synonyms": [
+            "chair",
+            "armchair",
+            "desk chair",
+            "wooden chair",
+            "dining chair",
+            "kitchen chair",
+            "seat chair",
+            "seating chair",
+            "individual chair"
+          ]
+        },
+        {
+          "name": "cow",
+          "synonyms": [
+            "cow",
+            "cattle",
+            "bull",
+            "calf",
+            "cattle animal",
+            "bovine",
+            "domestic cow"
+          ]
+        },
+        {
+          "name": "diningtable",
+          "synonyms": [
+            "dining table",
+            "table",
+            "meal table",
+            "dinner table"
+          ]
+        },
+        {
+          "name": "dog",
+          "synonyms": [
+            "dog",
+            "canine",
+            "domestic dog",
+            "pet dog"
+          ]
+        },
+        {
+          "name": "horse",
+          "synonyms": [
+            "horse",
+            "wild horse",
+            "equine animal",
+            "domestic horse"
+          ]
+        },
+        {
+          "name": "motorbike",
+          "synonyms": [
+            "motorbike",
+            "motorcycle",
+            "motorized bike"
+          ]
+        },
+        {
+          "name": "person",
+          "synonyms": [
+            "person",
+            "people",
+            "person wearing a shirt",
+            "person wearing jeans",
+            "person wearing a dress",
+            "person wearing a sweater",
+            "person wearing a skirt",
+            "person wearing a jacket",
+            "person wearing a hat",
+            "human",
+            "crowd",
+            "child",
+            "boy",
+            "girl",
+            "man",
+            "women",
+            "human being",
+            "individual person"
+          ]
+        },
+        {
+          "name": "pottedplant",
+          "synonyms": [
+            "potted plant",
+            "plant in a pot",
+            "houseplant",
+            "flowerpot",
+            "pot plant"
+          ]
+        },
+        {
+          "name": "sheep",
+          "synonyms": [
+            "sheep",
+            "lamb",
+            "ovine animal",
+            "domestic sheep"
+          ]
+        },
+        {
+          "name": "sofa",
+          "synonyms": [
+            "sofa",
+            "fabric sofa",
+            "settee",
+            "couch",
+            "upholstered sofa"
+          ]
+        },
+        {
+          "name": "train",
+          "synonyms": [
+            "train",
+            "railway train",
+            "railroad train",
+            "rail vehicle"
+          ]
+        },
+        {
+          "name": "tvmonitor",
+          "synonyms": [
+            "television monitor",
+            "tv monitor",
+            "monitor",
+            "computer monitor",
+            "television",
+            "TV screen"
+          ]
+        }
+      ],
+      "template": "seg_template"
+    }
+  },
+  "residual": null
+}

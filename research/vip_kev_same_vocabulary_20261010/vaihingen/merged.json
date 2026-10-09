@@ -1,0 +1,881 @@
+{
+  "status": "complete",
+  "coverage_verified": true,
+  "processed_images": 113,
+  "total_images": 113,
+  "signature": {
+    "implementation": "vip-kev-selected-same-language-v1-20261010",
+    "dataset": "vaihingen",
+    "methods": [
+      "VIP_SameText",
+      "VIP_SameWordsOfficialTemplate"
+    ],
+    "classes": {
+      "vaihingen": [
+        "impervious surface",
+        "building",
+        "low vegetation",
+        "tree",
+        "car"
+      ]
+    },
+    "selected_profile": {
+      "bank": "kev40_imagenet",
+      "strength": "original",
+      "coupling": 0.25,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "text_identity": {
+      "classes": [
+        {
+          "name": "impervious surface",
+          "synonyms": [
+            "impervious surface",
+            "paved surface",
+            "pavement",
+            "asphalt surface",
+            "concrete surface",
+            "road pavement",
+            "parking pavement",
+            "sealed ground",
+            "urban pavement",
+            "sidewalk",
+            "paved area",
+            "gray pavement",
+            "street surface",
+            "concrete ground",
+            "impermeable ground",
+            "road"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building",
+            "buildings",
+            "house",
+            "houses",
+            "rooftop",
+            "residential building",
+            "industrial building",
+            "apartment block",
+            "warehouse",
+            "large building",
+            "small building",
+            "built structure",
+            "dense buildings",
+            "commercial building",
+            "concrete building",
+            "urban building"
+          ]
+        },
+        {
+          "name": "low vegetation",
+          "synonyms": [
+            "low vegetation",
+            "grass",
+            "grassland",
+            "short grass",
+            "ground vegetation",
+            "green ground cover",
+            "meadow",
+            "herbaceous cover",
+            "low plants",
+            "lawn",
+            "small plants",
+            "sparse grass",
+            "green field",
+            "low greenery",
+            "grass cover",
+            "short vegetation",
+            "herbal vegetation"
+          ]
+        },
+        {
+          "name": "tree",
+          "synonyms": [
+            "tree",
+            "trees",
+            "tree canopy",
+            "dense trees",
+            "sparse trees",
+            "green canopy",
+            "tall vegetation",
+            "deciduous trees",
+            "evergreen trees",
+            "tree crown",
+            "tree cover",
+            "large tree"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car",
+            "cars",
+            "automobile",
+            "parked car",
+            "moving car",
+            "sedan",
+            "van",
+            "visible car"
+          ]
+        }
+      ],
+      "source_bank": "kev40_imagenet",
+      "source_template": "openai_imagenet_template",
+      "residual_identity": null,
+      "checkpoints": {
+        "dinotxt": {
+          "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+          "bytes": 2253936683,
+          "mtime_ns": 1789834446340889779
+        },
+        "lvd1689m": {
+          "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+          "bytes": 1213050671,
+          "mtime_ns": 1789833314101759062
+        },
+        "sat493m": {
+          "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+          "bytes": 1213059235,
+          "mtime_ns": 1789833891171431405
+        },
+        "bpe": {
+          "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+          "bytes": 1356917,
+          "mtime_ns": 1787032172000000000
+        }
+      },
+      "upstream_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "official_template": "openai_imagenet_template"
+    },
+    "template_counts": {
+      "VIP_SameText": 80,
+      "VIP_SameWordsOfficialTemplate": 80
+    },
+    "settings": {
+      "tau": 1.0,
+      "tem": 10.0,
+      "prob_thd": 0.1,
+      "background": true,
+      "bg_idx": 5,
+      "resize_long_edge": 448,
+      "slide_crop": 336,
+      "slide_stride": 112,
+      "logit_scale": 40.0
+    },
+    "checkpoints": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "upstream_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+    "view_policy": "long448",
+    "global_sample_count": 113,
+    "global_sample_keys_sha256": "25720ac369c583d1c9d96c3da1b151770645ae61a858b41fc8f5847ffd6cc883",
+    "sample_keys": [
+      "top_mosaic_09cm_area10_y00_x00.tif",
+      "top_mosaic_09cm_area10_y00_x01.tif",
+      "top_mosaic_09cm_area10_y01_x00.tif",
+      "top_mosaic_09cm_area10_y01_x01.tif",
+      "top_mosaic_09cm_area10_y02_x00.tif",
+      "top_mosaic_09cm_area10_y02_x01.tif",
+      "top_mosaic_09cm_area12_y00_x00.tif",
+      "top_mosaic_09cm_area12_y00_x01.tif",
+      "top_mosaic_09cm_area12_y01_x00.tif",
+      "top_mosaic_09cm_area12_y01_x01.tif",
+      "top_mosaic_09cm_area12_y02_x00.tif",
+      "top_mosaic_09cm_area12_y02_x01.tif",
+      "top_mosaic_09cm_area14_y00_x00.tif",
+      "top_mosaic_09cm_area14_y00_x01.tif",
+      "top_mosaic_09cm_area14_y01_x00.tif",
+      "top_mosaic_09cm_area14_y01_x01.tif",
+      "top_mosaic_09cm_area14_y02_x00.tif",
+      "top_mosaic_09cm_area14_y02_x01.tif",
+      "top_mosaic_09cm_area16_y00_x00.tif",
+      "top_mosaic_09cm_area16_y00_x01.tif",
+      "top_mosaic_09cm_area16_y01_x00.tif",
+      "top_mosaic_09cm_area16_y01_x01.tif",
+      "top_mosaic_09cm_area16_y02_x00.tif",
+      "top_mosaic_09cm_area16_y02_x01.tif",
+      "top_mosaic_09cm_area20_y00_x00.tif",
+      "top_mosaic_09cm_area20_y00_x01.tif",
+      "top_mosaic_09cm_area20_y01_x00.tif",
+      "top_mosaic_09cm_area20_y01_x01.tif",
+      "top_mosaic_09cm_area20_y02_x00.tif",
+      "top_mosaic_09cm_area20_y02_x01.tif",
+      "top_mosaic_09cm_area22_y00_x00.tif",
+      "top_mosaic_09cm_area22_y00_x01.tif",
+      "top_mosaic_09cm_area22_y01_x00.tif",
+      "top_mosaic_09cm_area22_y01_x01.tif",
+      "top_mosaic_09cm_area22_y02_x00.tif",
+      "top_mosaic_09cm_area22_y02_x01.tif",
+      "top_mosaic_09cm_area24_y00_x00.tif",
+      "top_mosaic_09cm_area24_y00_x01.tif",
+      "top_mosaic_09cm_area24_y01_x00.tif",
+      "top_mosaic_09cm_area24_y01_x01.tif",
+      "top_mosaic_09cm_area24_y02_x00.tif",
+      "top_mosaic_09cm_area24_y02_x01.tif",
+      "top_mosaic_09cm_area27_y00_x00.tif",
+      "top_mosaic_09cm_area27_y00_x01.tif",
+      "top_mosaic_09cm_area27_y01_x00.tif",
+      "top_mosaic_09cm_area27_y01_x01.tif",
+      "top_mosaic_09cm_area27_y02_x00.tif",
+      "top_mosaic_09cm_area27_y02_x01.tif",
+      "top_mosaic_09cm_area27_y03_x00.tif",
+      "top_mosaic_09cm_area27_y03_x01.tif",
+      "top_mosaic_09cm_area29_y00_x00.tif",
+      "top_mosaic_09cm_area29_y00_x01.tif",
+      "top_mosaic_09cm_area29_y01_x00.tif",
+      "top_mosaic_09cm_area29_y01_x01.tif",
+      "top_mosaic_09cm_area29_y02_x00.tif",
+      "top_mosaic_09cm_area29_y02_x01.tif",
+      "top_mosaic_09cm_area2_y00_x00.tif",
+      "top_mosaic_09cm_area2_y00_x01.tif",
+      "top_mosaic_09cm_area2_y00_x02.tif",
+      "top_mosaic_09cm_area2_y01_x00.tif",
+      "top_mosaic_09cm_area2_y01_x01.tif",
+      "top_mosaic_09cm_area2_y01_x02.tif",
+      "top_mosaic_09cm_area2_y02_x00.tif",
+      "top_mosaic_09cm_area2_y02_x01.tif",
+      "top_mosaic_09cm_area2_y02_x02.tif",
+      "top_mosaic_09cm_area31_y00_x00.tif",
+      "top_mosaic_09cm_area31_y00_x01.tif",
+      "top_mosaic_09cm_area31_y01_x00.tif",
+      "top_mosaic_09cm_area31_y01_x01.tif",
+      "top_mosaic_09cm_area31_y02_x00.tif",
+      "top_mosaic_09cm_area31_y02_x01.tif",
+      "top_mosaic_09cm_area33_y00_x00.tif",
+      "top_mosaic_09cm_area33_y00_x01.tif",
+      "top_mosaic_09cm_area33_y01_x00.tif",
+      "top_mosaic_09cm_area33_y01_x01.tif",
+      "top_mosaic_09cm_area33_y02_x00.tif",
+      "top_mosaic_09cm_area33_y02_x01.tif",
+      "top_mosaic_09cm_area35_y00_x00.tif",
+      "top_mosaic_09cm_area35_y00_x01.tif",
+      "top_mosaic_09cm_area35_y00_x02.tif",
+      "top_mosaic_09cm_area35_y01_x00.tif",
+      "top_mosaic_09cm_area35_y01_x01.tif",
+      "top_mosaic_09cm_area35_y01_x02.tif",
+      "top_mosaic_09cm_area38_y00_x00.tif",
+      "top_mosaic_09cm_area38_y00_x01.tif",
+      "top_mosaic_09cm_area38_y00_x02.tif",
+      "top_mosaic_09cm_area38_y00_x03.tif",
+      "top_mosaic_09cm_area38_y01_x00.tif",
+      "top_mosaic_09cm_area38_y01_x01.tif",
+      "top_mosaic_09cm_area38_y01_x02.tif",
+      "top_mosaic_09cm_area38_y01_x03.tif",
+      "top_mosaic_09cm_area38_y02_x00.tif",
+      "top_mosaic_09cm_area38_y02_x01.tif",
+      "top_mosaic_09cm_area38_y02_x02.tif",
+      "top_mosaic_09cm_area38_y02_x03.tif",
+      "top_mosaic_09cm_area4_y00_x00.tif",
+      "top_mosaic_09cm_area4_y00_x01.tif",
+      "top_mosaic_09cm_area4_y01_x00.tif",
+      "top_mosaic_09cm_area4_y01_x01.tif",
+      "top_mosaic_09cm_area4_y02_x00.tif",
+      "top_mosaic_09cm_area4_y02_x01.tif",
+      "top_mosaic_09cm_area6_y00_x00.tif",
+      "top_mosaic_09cm_area6_y00_x01.tif",
+      "top_mosaic_09cm_area6_y01_x00.tif",
+      "top_mosaic_09cm_area6_y01_x01.tif",
+      "top_mosaic_09cm_area6_y02_x00.tif",
+      "top_mosaic_09cm_area6_y02_x01.tif",
+      "top_mosaic_09cm_area8_y00_x00.tif",
+      "top_mosaic_09cm_area8_y00_x01.tif",
+      "top_mosaic_09cm_area8_y01_x00.tif",
+      "top_mosaic_09cm_area8_y01_x01.tif",
+      "top_mosaic_09cm_area8_y02_x00.tif",
+      "top_mosaic_09cm_area8_y02_x01.tif"
+    ],
+    "num_shards": 1,
+    "shard_index": null,
+    "residual_rule": "PC60 uses the same explicit residual concepts as background aliases with standard VIP aggregation; no Geometry residual gate.",
+    "numeric_repair": "Self-Value only on completely masked proxy rows; same repaired VIP as prior references."
+  },
+  "metrics": {
+    "vaihingen": {
+      "VIP_SameText": {
+        "mean_iou_percent": 49.1039,
+        "pixel_accuracy_percent": 71.2433,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 60.4679,
+            "target_pixels": 31877366,
+            "predicted_pixels": 33956770,
+            "precision_percent": 73.057,
+            "recall_percent": 77.8226,
+            "predicted_area_percent": 30.31
+          },
+          {
+            "name": "building",
+            "iou_percent": 62.8241,
+            "target_pixels": 29513079,
+            "predicted_pixels": 45615362,
+            "precision_percent": 63.5478,
+            "recall_percent": 98.2194,
+            "predicted_area_percent": 40.7165
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 35.6116,
+            "target_pixels": 24006993,
+            "predicted_pixels": 13110863,
+            "precision_percent": 74.3441,
+            "recall_percent": 40.6013,
+            "predicted_area_percent": 11.7028
+          },
+          {
+            "name": "tree",
+            "iou_percent": 56.8126,
+            "target_pixels": 25171696,
+            "predicted_pixels": 17895608,
+            "precision_percent": 87.1897,
+            "recall_percent": 61.9868,
+            "predicted_area_percent": 15.9737
+          },
+          {
+            "name": "car",
+            "iou_percent": 29.8032,
+            "target_pixels": 1462487,
+            "predicted_pixels": 1453018,
+            "precision_percent": 46.0702,
+            "recall_percent": 45.7719,
+            "predicted_area_percent": 1.297
+          }
+        ],
+        "confusion_matrix": [
+          [
+            24807787,
+            5708367,
+            192886,
+            541437,
+            626889
+          ],
+          [
+            417233,
+            28987580,
+            39302,
+            58898,
+            10066
+          ],
+          [
+            5353691,
+            7112615,
+            9747157,
+            1686936,
+            106594
+          ],
+          [
+            2785792,
+            3611366,
+            3131356,
+            15603121,
+            40061
+          ],
+          [
+            592267,
+            195434,
+            162,
+            5216,
+            669408
+          ]
+        ],
+        "ignored_pixels": 968379,
+        "unscored_prediction_classes": 0
+      },
+      "VIP_SameWordsOfficialTemplate": {
+        "mean_iou_percent": 49.1039,
+        "pixel_accuracy_percent": 71.2433,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 60.4679,
+            "target_pixels": 31877366,
+            "predicted_pixels": 33956770,
+            "precision_percent": 73.057,
+            "recall_percent": 77.8226,
+            "predicted_area_percent": 30.31
+          },
+          {
+            "name": "building",
+            "iou_percent": 62.8241,
+            "target_pixels": 29513079,
+            "predicted_pixels": 45615362,
+            "precision_percent": 63.5478,
+            "recall_percent": 98.2194,
+            "predicted_area_percent": 40.7165
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 35.6116,
+            "target_pixels": 24006993,
+            "predicted_pixels": 13110863,
+            "precision_percent": 74.3441,
+            "recall_percent": 40.6013,
+            "predicted_area_percent": 11.7028
+          },
+          {
+            "name": "tree",
+            "iou_percent": 56.8126,
+            "target_pixels": 25171696,
+            "predicted_pixels": 17895608,
+            "precision_percent": 87.1897,
+            "recall_percent": 61.9868,
+            "predicted_area_percent": 15.9737
+          },
+          {
+            "name": "car",
+            "iou_percent": 29.8032,
+            "target_pixels": 1462487,
+            "predicted_pixels": 1453018,
+            "precision_percent": 46.0702,
+            "recall_percent": 45.7719,
+            "predicted_area_percent": 1.297
+          }
+        ],
+        "confusion_matrix": [
+          [
+            24807787,
+            5708367,
+            192886,
+            541437,
+            626889
+          ],
+          [
+            417233,
+            28987580,
+            39302,
+            58898,
+            10066
+          ],
+          [
+            5353691,
+            7112615,
+            9747157,
+            1686936,
+            106594
+          ],
+          [
+            2785792,
+            3611366,
+            3131356,
+            15603121,
+            40061
+          ],
+          [
+            592267,
+            195434,
+            162,
+            5216,
+            669408
+          ]
+        ],
+        "ignored_pixels": 968379,
+        "unscored_prediction_classes": 0
+      }
+    }
+  },
+  "split_metrics": {
+    "development": {
+      "vaihingen": {
+        "VIP_SameText": {
+          "mean_iou_percent": 49.4179,
+          "pixel_accuracy_percent": 71.9593,
+          "per_class": [
+            {
+              "name": "impervious surface",
+              "iou_percent": 61.7475,
+              "target_pixels": 19340341,
+              "predicted_pixels": 20651490,
+              "precision_percent": 73.9268,
+              "recall_percent": 78.9385,
+              "predicted_area_percent": 32.5829
+            },
+            {
+              "name": "building",
+              "iou_percent": 63.7007,
+              "target_pixels": 16762994,
+              "predicted_pixels": 25489989,
+              "precision_percent": 64.5032,
+              "recall_percent": 98.0843,
+              "predicted_area_percent": 40.2169
+            },
+            {
+              "name": "low vegetation",
+              "iou_percent": 32.0626,
+              "target_pixels": 12695321,
+              "predicted_pixels": 6121296,
+              "precision_percent": 74.6306,
+              "recall_percent": 35.9846,
+              "predicted_area_percent": 9.6579
+            },
+            {
+              "name": "tree",
+              "iou_percent": 59.5638,
+              "target_pixels": 13652463,
+              "predicted_pixels": 10205829,
+              "precision_percent": 87.2648,
+              "recall_percent": 65.2344,
+              "predicted_area_percent": 16.1023
+            },
+            {
+              "name": "car",
+              "iou_percent": 30.0147,
+              "target_pixels": 930246,
+              "predicted_pixels": 912761,
+              "precision_percent": 46.6135,
+              "recall_percent": 45.7374,
+              "predicted_area_percent": 1.4401
+            }
+          ],
+          "confusion_matrix": [
+            [
+              15266983,
+              3250240,
+              78409,
+              343691,
+              401018
+            ],
+            [
+              251778,
+              16441860,
+              25977,
+              38252,
+              5127
+            ],
+            [
+              3249630,
+              3905528,
+              4568361,
+              914404,
+              57398
+            ],
+            [
+              1506406,
+              1767706,
+              1448504,
+              8906099,
+              23748
+            ],
+            [
+              376693,
+              124655,
+              45,
+              3383,
+              425470
+            ]
+          ],
+          "ignored_pixels": 968379,
+          "unscored_prediction_classes": 0
+        },
+        "VIP_SameWordsOfficialTemplate": {
+          "mean_iou_percent": 49.4179,
+          "pixel_accuracy_percent": 71.9593,
+          "per_class": [
+            {
+              "name": "impervious surface",
+              "iou_percent": 61.7475,
+              "target_pixels": 19340341,
+              "predicted_pixels": 20651490,
+              "precision_percent": 73.9268,
+              "recall_percent": 78.9385,
+              "predicted_area_percent": 32.5829
+            },
+            {
+              "name": "building",
+              "iou_percent": 63.7007,
+              "target_pixels": 16762994,
+              "predicted_pixels": 25489989,
+              "precision_percent": 64.5032,
+              "recall_percent": 98.0843,
+              "predicted_area_percent": 40.2169
+            },
+            {
+              "name": "low vegetation",
+              "iou_percent": 32.0626,
+              "target_pixels": 12695321,
+              "predicted_pixels": 6121296,
+              "precision_percent": 74.6306,
+              "recall_percent": 35.9846,
+              "predicted_area_percent": 9.6579
+            },
+            {
+              "name": "tree",
+              "iou_percent": 59.5638,
+              "target_pixels": 13652463,
+              "predicted_pixels": 10205829,
+              "precision_percent": 87.2648,
+              "recall_percent": 65.2344,
+              "predicted_area_percent": 16.1023
+            },
+            {
+              "name": "car",
+              "iou_percent": 30.0147,
+              "target_pixels": 930246,
+              "predicted_pixels": 912761,
+              "precision_percent": 46.6135,
+              "recall_percent": 45.7374,
+              "predicted_area_percent": 1.4401
+            }
+          ],
+          "confusion_matrix": [
+            [
+              15266983,
+              3250240,
+              78409,
+              343691,
+              401018
+            ],
+            [
+              251778,
+              16441860,
+              25977,
+              38252,
+              5127
+            ],
+            [
+              3249630,
+              3905528,
+              4568361,
+              914404,
+              57398
+            ],
+            [
+              1506406,
+              1767706,
+              1448504,
+              8906099,
+              23748
+            ],
+            [
+              376693,
+              124655,
+              45,
+              3383,
+              425470
+            ]
+          ],
+          "ignored_pixels": 968379,
+          "unscored_prediction_classes": 0
+        }
+      }
+    },
+    "complement": {
+      "vaihingen": {
+        "VIP_SameText": {
+          "mean_iou_percent": 48.5339,
+          "pixel_accuracy_percent": 70.3106,
+          "per_class": [
+            {
+              "name": "impervious surface",
+              "iou_percent": 58.5272,
+              "target_pixels": 12537025,
+              "predicted_pixels": 13305280,
+              "precision_percent": 71.7069,
+              "recall_percent": 76.101,
+              "predicted_area_percent": 27.3488
+            },
+            {
+              "name": "building",
+              "iou_percent": 61.7112,
+              "target_pixels": 12750085,
+              "predicted_pixels": 20125373,
+              "precision_percent": 62.3378,
+              "recall_percent": 98.3971,
+              "predicted_area_percent": 41.3675
+            },
+            {
+              "name": "low vegetation",
+              "iou_percent": 39.4652,
+              "target_pixels": 11311672,
+              "predicted_pixels": 6989567,
+              "precision_percent": 74.0932,
+              "recall_percent": 45.7828,
+              "predicted_area_percent": 14.367
+            },
+            {
+              "name": "tree",
+              "iou_percent": 53.5248,
+              "target_pixels": 11519233,
+              "predicted_pixels": 7689779,
+              "precision_percent": 87.0899,
+              "recall_percent": 58.1377,
+              "predicted_area_percent": 15.8062
+            },
+            {
+              "name": "car",
+              "iou_percent": 29.4412,
+              "target_pixels": 532241,
+              "predicted_pixels": 540257,
+              "precision_percent": 45.1522,
+              "recall_percent": 45.8322,
+              "predicted_area_percent": 1.1105
+            }
+          ],
+          "confusion_matrix": [
+            [
+              9540804,
+              2458127,
+              114477,
+              197746,
+              225871
+            ],
+            [
+              165455,
+              12545720,
+              13325,
+              20646,
+              4939
+            ],
+            [
+              2104061,
+              3207087,
+              5178796,
+              772532,
+              49196
+            ],
+            [
+              1279386,
+              1843660,
+              1682852,
+              6697022,
+              16313
+            ],
+            [
+              215574,
+              70779,
+              117,
+              1833,
+              243938
+            ]
+          ],
+          "ignored_pixels": 968379,
+          "unscored_prediction_classes": 0
+        },
+        "VIP_SameWordsOfficialTemplate": {
+          "mean_iou_percent": 48.5339,
+          "pixel_accuracy_percent": 70.3106,
+          "per_class": [
+            {
+              "name": "impervious surface",
+              "iou_percent": 58.5272,
+              "target_pixels": 12537025,
+              "predicted_pixels": 13305280,
+              "precision_percent": 71.7069,
+              "recall_percent": 76.101,
+              "predicted_area_percent": 27.3488
+            },
+            {
+              "name": "building",
+              "iou_percent": 61.7112,
+              "target_pixels": 12750085,
+              "predicted_pixels": 20125373,
+              "precision_percent": 62.3378,
+              "recall_percent": 98.3971,
+              "predicted_area_percent": 41.3675
+            },
+            {
+              "name": "low vegetation",
+              "iou_percent": 39.4652,
+              "target_pixels": 11311672,
+              "predicted_pixels": 6989567,
+              "precision_percent": 74.0932,
+              "recall_percent": 45.7828,
+              "predicted_area_percent": 14.367
+            },
+            {
+              "name": "tree",
+              "iou_percent": 53.5248,
+              "target_pixels": 11519233,
+              "predicted_pixels": 7689779,
+              "precision_percent": 87.0899,
+              "recall_percent": 58.1377,
+              "predicted_area_percent": 15.8062
+            },
+            {
+              "name": "car",
+              "iou_percent": 29.4412,
+              "target_pixels": 532241,
+              "predicted_pixels": 540257,
+              "precision_percent": 45.1522,
+              "recall_percent": 45.8322,
+              "predicted_area_percent": 1.1105
+            }
+          ],
+          "confusion_matrix": [
+            [
+              9540804,
+              2458127,
+              114477,
+              197746,
+              225871
+            ],
+            [
+              165455,
+              12545720,
+              13325,
+              20646,
+              4939
+            ],
+            [
+              2104061,
+              3207087,
+              5178796,
+              772532,
+              49196
+            ],
+            [
+              1279386,
+              1843660,
+              1682852,
+              6697022,
+              16313
+            ],
+            [
+              215574,
+              70779,
+              117,
+              1833,
+              243938
+            ]
+          ],
+          "ignored_pixels": 968379,
+          "unscored_prediction_classes": 0
+        }
+      }
+    }
+  },
+  "scored_target_counts_match": true,
+  "source_checkpoints_verified": true,
+  "per_image_confusions_verified": true,
+  "unchanged_official_short_replay": {},
+  "weights_frozen": true,
+  "head_weights_unchanged": true,
+  "parallel_wall_seconds": 17.380466158036143,
+  "aggregate_gpu_seconds": 17.380466158036143,
+  "peak_cuda_memory_mb": 3360.390625
+}

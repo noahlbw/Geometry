@@ -1,0 +1,6 @@
+impervious surface	road | parking lots
+building	buildings
+low vegetation	grass | grassland | farmland | forest area
+tree	tree | trees
+car	cars
+clutter	background

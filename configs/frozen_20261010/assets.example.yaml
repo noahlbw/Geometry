@@ -1,0 +1,20 @@
+dinov3_repo: DINOtool/dinov3_hub
+checkpoint_dir: /path/to/checkpoints
+upstream_root: /path/to/VIP
+text_cache_dir: /path/to/generated-text-cache
+datasets:
+  vdd: /path/to/datasets/vdd
+  potsdam: /path/to/datasets/potsdam
+  voc20: /path/to/datasets/voc20
+  voc21: /path/to/datasets/voc21
+  ade150: /path/to/datasets/ade150
+  context60: /path/to/datasets/context60
+  udd5: /path/to/datasets/udd5
+  oem: /path/to/datasets/oem
+  vaihingen: /path/to/datasets/vaihingen
+  landcoverai: /path/to/datasets/landcoverai
+  loveda: /path/to/datasets/loveda
+  context59: /path/to/datasets/context59
+  coco_object81: /path/to/datasets/coco_object81
+  coco_stuff171: /path/to/datasets/coco_stuff171
+  flair1: /path/to/datasets/flair1

@@ -1,0 +1,36 @@
+schema: 1
+dataset: potsdam
+family: remote_sensing
+total_images: 504
+background_index: 5
+vocabulary: ../../vocabularies/frozen_20261010/potsdam.json
+profile:
+  bank: official_imagenet
+  strength: 3.0
+  coupling: 0.5
+  temperature: 0.07
+  tau: 1.0
+  tem: 1.0
+  wide_policy: long448
+  background_rule: retained
+background_bias: 0.0
+background_threshold: 0.2
+geometry:
+  geometry_depth: 2
+  geometry_temperature: 0.1
+  spatial_sigma: 0.25
+  maximum_aliases_per_class: 20
+visual_budget:
+  geometry_max: 4
+  wide_max: 4
+  fine: 0
+upstream:
+  vip_commit: 5bd25ee03ec25c1538622cf7da661e8c0461e769
+  dinov3_commit: f6704c1b76137543328567c8f8b49a2dc318824c
+provenance:
+  labeled_development: true
+  prior_developed_data: true
+  selection_frozen: true
+  source: research/kev_alias_search_20261009/potsdam/selection.json
+  caveat: This is a frozen task-specific exploratory configuration, not label-free
+    adaptation.

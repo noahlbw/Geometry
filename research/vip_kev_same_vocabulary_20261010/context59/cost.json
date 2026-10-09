@@ -1,0 +1,616 @@
+{
+  "status": "complete",
+  "dataset": "context59",
+  "method": "VIP_SameText",
+  "images": [
+    {
+      "key": "2008_000002",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        77.33757584355772,
+        76.59904705360532,
+        75.69210487417877,
+        75.64208679832518,
+        75.77103609219193,
+        75.11974195949733,
+        75.57904697023332
+      ],
+      "peak_allocated_mib": 1804.3046875
+    },
+    {
+      "key": "2008_003295",
+      "shape": [
+        374,
+        500
+      ],
+      "milliseconds": [
+        114.43526484072208,
+        111.83553701266646,
+        111.13001802004874,
+        111.0020549967885,
+        112.15223907493055,
+        110.9351678751409,
+        115.13749998994172
+      ],
+      "peak_allocated_mib": 1804.1572265625
+    },
+    {
+      "key": "2008_006665",
+      "shape": [
+        333,
+        500
+      ],
+      "milliseconds": [
+        112.79451590962708,
+        111.49869882501662,
+        116.01777817122638,
+        111.98261519894004,
+        112.2498360928148,
+        112.13056300766766,
+        111.87524697743356
+      ],
+      "peak_allocated_mib": 1799.95166015625
+    },
+    {
+      "key": "2009_001279",
+      "shape": [
+        334,
+        500
+      ],
+      "milliseconds": [
+        115.72322808206081,
+        111.74622690305114,
+        111.82455089874566,
+        111.83209693990648,
+        111.42627405934036,
+        111.66793992742896,
+        112.22789390012622
+      ],
+      "peak_allocated_mib": 1799.759765625
+    },
+    {
+      "key": "2009_004601",
+      "shape": [
+        333,
+        500
+      ],
+      "milliseconds": [
+        112.8762059379369,
+        112.2808251529932,
+        112.25433298386633,
+        112.14897711761296,
+        111.88174085691571,
+        111.788519192487,
+        113.57250390574336
+      ],
+      "peak_allocated_mib": 1799.95166015625
+    },
+    {
+      "key": "2010_002691",
+      "shape": [
+        367,
+        500
+      ],
+      "milliseconds": [
+        113.22114896029234,
+        112.38129204139113,
+        112.79047280550003,
+        112.69318498671055,
+        112.32465994544327,
+        111.97933019138873,
+        112.79992293566465
+      ],
+      "peak_allocated_mib": 1803.2744140625
+    },
+    {
+      "key": "2010_006086",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        80.16013400629163,
+        76.29015808925033,
+        77.56071491166949,
+        76.39689813368022,
+        77.92873703874648,
+        76.16679207421839,
+        76.01324701681733
+      ],
+      "peak_allocated_mib": 1804.3046875
+    }
+  ],
+  "median_ms": 111.83553701266646,
+  "p95_ms": 114.85660593025386,
+  "peak_allocated_mib": 1804.3046875,
+  "settings": {
+    "tau": 2.0,
+    "tem": 1.0,
+    "prob_thd": 0.1,
+    "background": false,
+    "bg_idx": 0,
+    "resize_long_edge": 448,
+    "slide_crop": 336,
+    "slide_stride": 112,
+    "logit_scale": 40.0
+  },
+  "text_identity": {
+    "classes": [
+      {
+        "name": "aeroplane",
+        "synonyms": [
+          "plane"
+        ]
+      },
+      {
+        "name": "bag",
+        "synonyms": [
+          "backpack",
+          "handbag",
+          "bag"
+        ]
+      },
+      {
+        "name": "bed",
+        "synonyms": [
+          "bed"
+        ]
+      },
+      {
+        "name": "bedclothes",
+        "synonyms": [
+          "bedding",
+          "bed sheets",
+          "comforter"
+        ]
+      },
+      {
+        "name": "bench",
+        "synonyms": [
+          "bench",
+          "wooden bench"
+        ]
+      },
+      {
+        "name": "bicycle",
+        "synonyms": [
+          "bicycle"
+        ]
+      },
+      {
+        "name": "bird",
+        "synonyms": [
+          "bird"
+        ]
+      },
+      {
+        "name": "boat",
+        "synonyms": [
+          "boat"
+        ]
+      },
+      {
+        "name": "book",
+        "synonyms": [
+          "book"
+        ]
+      },
+      {
+        "name": "bottle",
+        "synonyms": [
+          "bottle",
+          "wine bottle",
+          "plastic bottle"
+        ]
+      },
+      {
+        "name": "building",
+        "synonyms": [
+          "building",
+          "buildings",
+          "facade",
+          "frontage"
+        ]
+      },
+      {
+        "name": "bus",
+        "synonyms": [
+          "bus"
+        ]
+      },
+      {
+        "name": "cabinet",
+        "synonyms": [
+          "cabinet",
+          "cupboard"
+        ]
+      },
+      {
+        "name": "car",
+        "synonyms": [
+          "car",
+          "automobile"
+        ]
+      },
+      {
+        "name": "cat",
+        "synonyms": [
+          "cat"
+        ]
+      },
+      {
+        "name": "ceiling",
+        "synonyms": [
+          "ceiling"
+        ]
+      },
+      {
+        "name": "chair",
+        "synonyms": [
+          "chair",
+          "armchair",
+          "desk chair",
+          "wooden chair",
+          "dining chair",
+          "kitchen chair"
+        ]
+      },
+      {
+        "name": "cloth",
+        "synonyms": [
+          "cloth",
+          "fabric",
+          "piece of fabric",
+          "textile",
+          "rag",
+          "towel",
+          "blanket",
+          "sheet"
+        ]
+      },
+      {
+        "name": "computer",
+        "synonyms": [
+          "computer"
+        ]
+      },
+      {
+        "name": "cow",
+        "synonyms": [
+          "cow",
+          "cattle",
+          "dairy cow"
+        ]
+      },
+      {
+        "name": "cup",
+        "synonyms": [
+          "cup"
+        ]
+      },
+      {
+        "name": "curtain",
+        "synonyms": [
+          "curtain"
+        ]
+      },
+      {
+        "name": "dog",
+        "synonyms": [
+          "dog"
+        ]
+      },
+      {
+        "name": "door",
+        "synonyms": [
+          "door"
+        ]
+      },
+      {
+        "name": "fence",
+        "synonyms": [
+          "fence",
+          "wire fence"
+        ]
+      },
+      {
+        "name": "floor",
+        "synonyms": [
+          "floor"
+        ]
+      },
+      {
+        "name": "flower",
+        "synonyms": [
+          "flower"
+        ]
+      },
+      {
+        "name": "food",
+        "synonyms": [
+          "food"
+        ]
+      },
+      {
+        "name": "grass",
+        "synonyms": [
+          "grass",
+          "field",
+          "meadow",
+          "lawn"
+        ]
+      },
+      {
+        "name": "ground",
+        "synonyms": [
+          "ground",
+          "soil"
+        ]
+      },
+      {
+        "name": "horse",
+        "synonyms": [
+          "horse",
+          "wild horse"
+        ]
+      },
+      {
+        "name": "keyboard",
+        "synonyms": [
+          "keyboard",
+          "computer keyboard",
+          "keypad",
+          "external keyboard"
+        ]
+      },
+      {
+        "name": "light",
+        "synonyms": [
+          "light"
+        ]
+      },
+      {
+        "name": "motorbike",
+        "synonyms": [
+          "motorcycle",
+          "motorbike"
+        ]
+      },
+      {
+        "name": "mountain",
+        "synonyms": [
+          "mountain"
+        ]
+      },
+      {
+        "name": "mouse",
+        "synonyms": [
+          "computer mouse"
+        ]
+      },
+      {
+        "name": "person",
+        "synonyms": [
+          "person",
+          "people",
+          "people in shirt",
+          "people in jeans",
+          "people in dress",
+          "people in sweater",
+          "people in skirt",
+          "people in jacket",
+          "human",
+          "crowd",
+          "child",
+          "boy",
+          "girl",
+          "man",
+          "women",
+          "baby"
+        ]
+      },
+      {
+        "name": "plate",
+        "synonyms": [
+          "plate",
+          "dinner plate",
+          "ceramic plate",
+          "serving plate",
+          "dish"
+        ]
+      },
+      {
+        "name": "platform",
+        "synonyms": [
+          "platform"
+        ]
+      },
+      {
+        "name": "pottedplant",
+        "synonyms": [
+          "potted plant",
+          "pot plant",
+          "plant in a pot"
+        ]
+      },
+      {
+        "name": "road",
+        "synonyms": [
+          "road",
+          "roadway"
+        ]
+      },
+      {
+        "name": "rock",
+        "synonyms": [
+          "rock"
+        ]
+      },
+      {
+        "name": "sheep",
+        "synonyms": [
+          "sheep"
+        ]
+      },
+      {
+        "name": "shelves",
+        "synonyms": [
+          "shelf",
+          "shelves"
+        ]
+      },
+      {
+        "name": "sidewalk",
+        "synonyms": [
+          "sidewalk"
+        ]
+      },
+      {
+        "name": "sign",
+        "synonyms": [
+          "sign"
+        ]
+      },
+      {
+        "name": "sky",
+        "synonyms": [
+          "sky",
+          "cloudy sky",
+          "blue sky",
+          "the sky above",
+          "clear sky",
+          "skyline",
+          "atmosphere"
+        ]
+      },
+      {
+        "name": "snow",
+        "synonyms": [
+          "snow"
+        ]
+      },
+      {
+        "name": "sofa",
+        "synonyms": [
+          "sofa"
+        ]
+      },
+      {
+        "name": "table",
+        "synonyms": [
+          "table"
+        ]
+      },
+      {
+        "name": "track",
+        "synonyms": [
+          "track"
+        ]
+      },
+      {
+        "name": "train",
+        "synonyms": [
+          "train",
+          "locomotive"
+        ]
+      },
+      {
+        "name": "tree",
+        "synonyms": [
+          "tree",
+          "trees",
+          "forest"
+        ]
+      },
+      {
+        "name": "truck",
+        "synonyms": [
+          "truck"
+        ]
+      },
+      {
+        "name": "tvmonitor",
+        "synonyms": [
+          "television monitor",
+          "monitor",
+          "computer monitor"
+        ]
+      },
+      {
+        "name": "wall",
+        "synonyms": [
+          "wall",
+          "brick wall",
+          "stone wall"
+        ]
+      },
+      {
+        "name": "water",
+        "synonyms": [
+          "water",
+          "body of water",
+          "river",
+          "lake",
+          "pond",
+          "ocean",
+          "sea",
+          "green water",
+          "blue water"
+        ]
+      },
+      {
+        "name": "window",
+        "synonyms": [
+          "window",
+          "building window"
+        ]
+      },
+      {
+        "name": "wood",
+        "synonyms": [
+          "wood",
+          "wooden",
+          "lumber",
+          "timber",
+          "wooden plank"
+        ]
+      }
+    ],
+    "source_bank": "official_segmentation",
+    "source_template": "seg_template",
+    "residual_identity": null,
+    "checkpoints": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "upstream_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+    "official_template": "city_template"
+  },
+  "initialization_and_text_seconds": 14.690313382074237,
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "boundary": "Seven full inputs x seven warmed synchronized repeats. Native VIP resizing/encoding/readout/restoration/CPU output; decode/init/offline selection excluded.",
+  "weights_frozen": true,
+  "head_weights_unchanged": true
+}

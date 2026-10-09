@@ -1,0 +1,150 @@
+wall	wall | stone wall | wall surface | vertical wall | interior wall
+building	building | building facade | building frontage | building front | building structure | constructed building | building exterior | edifice
+sky	sky | cloudy sky | blue sky | the sky above | clear sky | sky above the horizon | open sky | sky above | overhead sky
+floor	floor | floor surface | indoor floor | room floor | flooring
+tree	tree | trees | forest tree | woody tree | tree canopy | branching tree
+ceiling	ceiling | indoor ceiling | plain ceiling | smooth ceiling | room ceiling | overhead ceiling
+road	road | roadway | street road | paved road
+bed	bed
+windowpane	windowpane | window pane | window glass | glass window
+grass	grass | grassy ground | grass cover | grass surface
+cabinet	cabinet | storage cabinet | cupboard | cabinet furniture
+sidewalk	sidewalk | pavement | footpath | pedestrian walkway | street sidewalk
+person	person | people | person wearing a shirt | person wearing jeans | person wearing a dress | person wearing a sweater | person wearing a skirt | person wearing a jacket | person wearing a hat | human | crowd | child | boy | girl | man | women | human being | individual person
+earth	earth | ground | bare earth | soil surface | exposed soil
+door	door | interior door | door panel | doorway door | entry door
+table	table | table furniture | tabletop furniture
+mountain	mountain | mountain terrain | mountain peak | mountain slope
+plant	plant | bush | growing plant | leafy plant | green plant
+curtain	curtain | window curtain | hanging curtain | drapery
+chair	chair | seat chair | seating chair | individual chair
+car	car | automobile | passenger car | motorcar
+water	water | water surface | puddle of water | body of water | open water
+painting	painting | painted artwork | wall painting
+sofa	sofa | couch | lounge sofa | settee | upholstered sofa
+shelf	shelf | shelving | storage shelf
+house	house
+sea	sea | ocean | seawater | ocean water
+mirror	mirror
+rug	rug | floor rug | area rug | floor carpet
+field	field
+armchair	armchair | arm chair | chair with armrests
+seat	seat
+fence	fence | fencing | fence structure | boundary fence
+desk	desk | work desk | writing desk | desk furniture
+rock	rock | stone | natural rock | rock surface
+wardrobe	wardrobe | clothes wardrobe | clothing cabinet | clothes closet | clothing wardrobe
+lamp	lamp | lighting lamp | light fixture | illuminating lamp
+bathtub	bathtub | bath tub | bathing tub
+railing	railing | guard railing | safety railing
+cushion	cushion
+base	pedestal | pedestal base | pedestal stand
+box	box
+column	column | pillar | support column
+signboard	signboard | sign board | display sign
+chest of drawers	chest of drawers | drawer chest | dresser
+counter	counter | reception desk
+sand	sand | sandy ground | sand surface | sandy area
+sink	sink | wash basin | sink basin
+skyscraper	skyscraper
+fireplace	fireplace | hearth | open fireplace
+refrigerator	refrigerator | fridge | kitchen refrigerator
+grandstand	grandstand | covered spectator stand
+path	path
+stairs	stairs | stair steps
+runway	runway
+case	display case | showcase | vitrine
+pool table	pool table | billiard table | snooker table
+pillow	pillow | pillow sham
+screen door	screen door | mesh screen door
+stairway	stairway | staircase
+river	river | river water | flowing river | river channel
+bridge	bridge
+bookcase	bookcase
+blind	window blind
+coffee table	coffee table | cocktail table
+toilet	toilet | toilet fixture | toilet bowl
+flower	flower
+book	book | printed book | bound book
+hill	hill | hillside
+bench	bench | seating bench | long bench
+countertop	countertop
+stove	stove | kitchen stove | range | kitchen range | cooking stove
+palm	palm tree | cabbage palm | cabbage palm tree | Livistona australis
+kitchen island	kitchen island
+computer	computer | desktop computer | computing device | electronic computer
+swivel chair	swivel chair
+boat	boat | watercraft | small boat | sailing boat
+bar	bar
+arcade machine	arcade machine
+hovel	hovel | hut | shack | shanty
+bus	bus | passenger bus | public transit bus | city bus
+towel	towel
+light	light source | lighting fixture
+truck	truck | lorry | cargo truck | motor truck
+tower	tower
+chandelier	chandelier | hanging chandelier
+awning	awning | sunshade awning | window awning
+streetlight	streetlight | street lamp
+booth	booth | newsstand | cubicle | kiosk | stall
+television receiver	television receiver | television | television set | TV set
+airplane	airplane | aeroplane | aircraft | plane
+dirt track	dirt track
+apparel	clothing | apparel | wearing apparel | dress | clothes
+pole	pole
+land	land
+bannister	bannister | banister | balustrade | balusters | handrail
+escalator	escalator | moving staircase
+ottoman	ottoman | footstool | footrest | tuffet | pouf | hassock
+bottle	bottle | drink bottle | glass bottle | plastic bottle
+buffet	sideboard | china cabinet | sideboard furniture
+poster	poster | wall poster | placard
+stage	stage
+van	van
+ship	ship
+fountain	fountain
+conveyer belt	conveyor belt | conveyer belt | conveyor
+canopy	canopy | baldachin
+washer	washing machine | automatic washer
+plaything	toy | plaything
+swimming pool	swimming pool
+stool	stool
+barrel	barrel | cask
+basket	basket | handbasket
+waterfall	waterfall
+tent	tent | camping tent
+bag	bag | carry bag | carrying bag
+minibike	minibike | motorcycle | motorbike
+cradle	cradle | baby bed | baby’s bed
+oven	oven | cooking oven | kitchen oven
+ball	ball
+food	food
+step	stair step | stair tread
+tank	storage tank | water storage tank
+trade name	brand name | brand logo
+microwave	microwave | microwave oven | kitchen microwave
+pot	flowerpot | plant pot
+animal	animal | dog | cat | horse
+bicycle	bicycle | pedal bike | pedal bicycle
+lake	lake
+dishwasher	dishwasher | dish washer | dishwashing machine
+screen	projection screen
+blanket	blanket | bed blanket
+sculpture	sculpture
+hood	exhaust hood | range hood | kitchen exhaust hood
+sconce	sconce
+vase	vase | flower vase | decorative vase
+traffic light	traffic light | traffic signal | road traffic light
+tray	tray
+ashcan	trash can | ashcan | garbage can | wastebin | ash bin | ashbin | dustbin | trash barrel | trash bin
+fan	fan
+pier	pier | wharf | dock
+crt screen	CRT screen | crtscreen | cathode ray tube screen
+plate	plate | collection plate
+monitor	computer monitor | monitor | computer screen | computer display
+bulletin board	bulletin board | notice board
+shower	shower
+radiator	radiator
+glass	drinking glass
+clock	clock | timepiece | time clock
+flag	flag

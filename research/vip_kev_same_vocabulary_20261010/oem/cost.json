@@ -1,0 +1,377 @@
+{
+  "status": "complete",
+  "dataset": "oem",
+  "method": "VIP_SameText",
+  "images": [
+    {
+      "key": "aachen/images/aachen_11.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        104.38780090771616,
+        104.41220179200172,
+        104.49741897173226,
+        103.65611920133233,
+        104.8149149864912,
+        105.51622090861201,
+        104.34917616657913
+      ],
+      "peak_allocated_mib": 1810.0244140625
+    },
+    {
+      "key": "chiclayo/images/chiclayo_49.tif",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        104.60984008386731,
+        104.64398097246885,
+        105.55553995072842,
+        105.31183495186269,
+        105.02161597833037,
+        104.80505204759538,
+        104.88305287435651
+      ],
+      "peak_allocated_mib": 1810.0244140625
+    },
+    {
+      "key": "duesseldorf/images/duesseldorf_35.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        104.04882091097534,
+        103.67598291486502,
+        103.75562612898648,
+        104.07508793286979,
+        104.47750892490149,
+        105.06938397884369,
+        105.55891506373882
+      ],
+      "peak_allocated_mib": 1810.0244140625
+    },
+    {
+      "key": "lubuskie/images/lubuskie_8.tif",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        105.55626102723181,
+        105.6627391371876,
+        106.25329706817865,
+        106.09797108918428,
+        105.92118185013533,
+        107.82589903101325,
+        106.51011508889496
+      ],
+      "peak_allocated_mib": 1810.0244140625
+    },
+    {
+      "key": "piura/images/piura_48.tif",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        106.57971212640405,
+        105.84836499765515,
+        105.36629799753428,
+        106.46853013895452,
+        105.33715109340847,
+        107.11929015815258,
+        107.42478398606181
+      ],
+      "peak_allocated_mib": 1810.0244140625
+    },
+    {
+      "key": "tokyo/images/tokyo_12.tif",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        106.06602905318141,
+        105.71014205925167,
+        107.14184702374041,
+        106.7063279915601,
+        105.38480500690639,
+        105.6447490118444,
+        106.54735611751676
+      ],
+      "peak_allocated_mib": 1810.0244140625
+    },
+    {
+      "key": "zanzibar/images/zanzibar_99.tif",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        105.60887889005244,
+        104.79845898225904,
+        104.44980300962925,
+        105.23186600767076,
+        108.45368495211005,
+        104.60019414313138,
+        107.82883502542973
+      ],
+      "peak_allocated_mib": 1810.0244140625
+    }
+  ],
+  "median_ms": 105.38480500690639,
+  "p95_ms": 107.66545301303267,
+  "peak_allocated_mib": 1810.0244140625,
+  "settings": {
+    "tau": 4.0,
+    "tem": 1.0,
+    "prob_thd": 0.0,
+    "background": false,
+    "bg_idx": 0,
+    "resize_long_edge": 448,
+    "slide_crop": 336,
+    "slide_stride": 112,
+    "logit_scale": 40.0
+  },
+  "text_identity": {
+    "classes": [
+      {
+        "name": "bareland",
+        "synonyms": [
+          "bareland",
+          "bare land",
+          "bare soil",
+          "barren land",
+          "exposed earth",
+          "exposed ground",
+          "unvegetated ground",
+          "dry soil",
+          "sandy ground",
+          "rocky ground",
+          "cleared land",
+          "dirt field",
+          "soil patch",
+          "construction ground",
+          "excavation site",
+          "brown earth",
+          "gravel ground",
+          "sparse bareland",
+          "wasteland",
+          "open bare ground"
+        ]
+      },
+      {
+        "name": "rangeland",
+        "synonyms": [
+          "rangeland",
+          "range land",
+          "grassland",
+          "open grass",
+          "grazing land",
+          "pasture",
+          "pastureland",
+          "meadow",
+          "open meadow",
+          "short grass",
+          "natural grassland",
+          "dry grassland",
+          "green grassland",
+          "scrub grassland",
+          "sparse vegetation",
+          "low vegetation",
+          "herbaceous cover",
+          "grazing field",
+          "open vegetated land",
+          "uncultivated grassland"
+        ]
+      },
+      {
+        "name": "developed space",
+        "synonyms": [
+          "developed space",
+          "developed land",
+          "built-up land",
+          "urban surface",
+          "impervious surface",
+          "paved surface",
+          "hardscape",
+          "urban area",
+          "developed area",
+          "settlement surface",
+          "industrial ground",
+          "commercial ground",
+          "parking lot",
+          "parking area",
+          "courtyard",
+          "concrete surface",
+          "asphalt surface",
+          "urban open space",
+          "built environment",
+          "man-made surface"
+        ]
+      },
+      {
+        "name": "road",
+        "synonyms": [
+          "road",
+          "roads",
+          "street",
+          "streets",
+          "roadway",
+          "paved road",
+          "paved roadway",
+          "asphalt road",
+          "highway",
+          "urban road",
+          "rural road",
+          "narrow road",
+          "wide road",
+          "road network",
+          "transportation corridor",
+          "traffic lane",
+          "road intersection",
+          "road junction",
+          "linear pavement",
+          "winding road"
+        ]
+      },
+      {
+        "name": "tree",
+        "synonyms": [
+          "tree",
+          "trees",
+          "forest",
+          "woodland",
+          "wooded area",
+          "tree canopy",
+          "dense tree canopy",
+          "sparse trees",
+          "tree cluster",
+          "grove",
+          "urban trees",
+          "roadside trees",
+          "evergreen forest",
+          "deciduous forest",
+          "green canopy",
+          "forest patch",
+          "tall vegetation",
+          "tree covered land",
+          "plantation forest",
+          "dense woodland"
+        ]
+      },
+      {
+        "name": "water",
+        "synonyms": [
+          "water",
+          "water body",
+          "river",
+          "rivers",
+          "lake",
+          "lakes",
+          "pond",
+          "ponds",
+          "reservoir",
+          "canal",
+          "stream",
+          "blue water",
+          "dark water",
+          "inland water",
+          "open water",
+          "narrow waterway",
+          "river channel",
+          "shoreline water",
+          "artificial pond",
+          "surface water"
+        ]
+      },
+      {
+        "name": "agriculture land",
+        "synonyms": [
+          "agriculture land",
+          "agricultural land",
+          "farmland",
+          "cropland",
+          "cultivated field",
+          "crop field",
+          "agricultural field",
+          "farm field",
+          "paddy field",
+          "rice field",
+          "plantation",
+          "orchard",
+          "rectangular farmland",
+          "striped cropland",
+          "cultivated parcel",
+          "agricultural parcel",
+          "harvested field",
+          "irrigated field",
+          "large crop field",
+          "row crops"
+        ]
+      },
+      {
+        "name": "building",
+        "synonyms": [
+          "building",
+          "buildings",
+          "rooftop",
+          "rooftops",
+          "roof",
+          "house",
+          "houses",
+          "residential building",
+          "industrial building",
+          "apartment block",
+          "warehouse roof",
+          "urban structure",
+          "constructed structure",
+          "bright roof",
+          "dark roof",
+          "rectangular rooftop",
+          "dense building cluster",
+          "detached house",
+          "large building",
+          "small building"
+        ]
+      }
+    ],
+    "source_bank": "original",
+    "source_template": "openai_imagenet_template",
+    "residual_identity": null,
+    "checkpoints": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "upstream_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+    "official_template": "openai_imagenet_template"
+  },
+  "initialization_and_text_seconds": 14.649808261077851,
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "boundary": "Seven full inputs x seven warmed synchronized repeats. Native VIP resizing/encoding/readout/restoration/CPU output; decode/init/offline selection excluded.",
+  "weights_frozen": true,
+  "head_weights_unchanged": true
+}

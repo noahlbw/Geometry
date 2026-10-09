@@ -1,0 +1,1244 @@
+{
+  "profile": {
+    "bank": "kev60_segmentation",
+    "strength": "original",
+    "coupling": 0.5,
+    "temperature": 0.05,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "background_bias": -1.0,
+  "background_threshold": 0.3,
+  "development_miou": 55.579878564749194,
+  "profile_index": 7,
+  "bias_index": 1,
+  "confusion_matrix": [
+    [
+      50227369,
+      2018007,
+      540961,
+      20382,
+      3878425
+    ],
+    [
+      249614,
+      63222476,
+      1371,
+      8381,
+      2673349
+    ],
+    [
+      871522,
+      1608904,
+      11169234,
+      342333,
+      12243432
+    ],
+    [
+      46123,
+      27762,
+      161461,
+      1079828,
+      434534
+    ],
+    [
+      3890056,
+      4432657,
+      1553950,
+      657465,
+      14877204
+    ]
+  ],
+  "development_confusions": {
+    "udd5": [
+      [
+        50227369,
+        2018007,
+        540961,
+        20382,
+        3878425
+      ],
+      [
+        249614,
+        63222476,
+        1371,
+        8381,
+        2673349
+      ],
+      [
+        871522,
+        1608904,
+        11169234,
+        342333,
+        12243432
+      ],
+      [
+        46123,
+        27762,
+        161461,
+        1079828,
+        434534
+      ],
+      [
+        3890056,
+        4432657,
+        1553950,
+        657465,
+        14877204
+      ]
+    ]
+  },
+  "implementation": "geometry-kev-variable-alias-static-search-v1-20261009",
+  "status": "complete",
+  "development_keys": [
+    "000261.JPG",
+    "000361.JPG",
+    "001261.JPG",
+    "001361.JPG",
+    "001461.JPG",
+    "DJI_00581.JPG",
+    "DJI_0303.JPG",
+    "DJI_0316.JPG",
+    "DJI_0373_heda.JPG",
+    "DJI_0388.JPG",
+    "DJI_0442.JPG",
+    "DJI_0460.JPG",
+    "DJI_0499_heda.JPG",
+    "DJI_0511.JPG",
+    "DJI_0563_heda.JPG",
+    "DJI_0627.JPG"
+  ],
+  "development_source": "fixed_labeled_validation_development_subset",
+  "vocabulary": {
+    "original": {
+      "classes": [
+        {
+          "name": "vegetation",
+          "synonyms": [
+            "vegetation",
+            "green vegetation",
+            "plant cover",
+            "vegetated land",
+            "dense vegetation",
+            "low vegetation",
+            "grass",
+            "grassland",
+            "shrub",
+            "shrubs",
+            "bushes",
+            "green ground cover",
+            "tree canopy",
+            "trees",
+            "wooded vegetation",
+            "natural vegetation",
+            "roadside vegetation",
+            "park vegetation",
+            "crop vegetation",
+            "mixed vegetation"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building",
+            "buildings",
+            "rooftop",
+            "rooftops",
+            "roof",
+            "roofs",
+            "house",
+            "houses",
+            "residential building",
+            "industrial building",
+            "warehouse",
+            "apartment block",
+            "urban structure",
+            "constructed structure",
+            "rectangular rooftop",
+            "bright roof",
+            "dark roof",
+            "detached house",
+            "dense building cluster",
+            "small building"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road",
+            "roads",
+            "street",
+            "streets",
+            "roadway",
+            "paved road",
+            "paved roadway",
+            "asphalt road",
+            "highway",
+            "urban road",
+            "rural road",
+            "narrow road",
+            "wide road",
+            "road network",
+            "transportation corridor",
+            "traffic lane",
+            "road intersection",
+            "road junction",
+            "linear pavement",
+            "winding road"
+          ]
+        },
+        {
+          "name": "vehicle",
+          "synonyms": [
+            "vehicle",
+            "vehicles",
+            "car",
+            "cars",
+            "automobile",
+            "automobiles",
+            "truck",
+            "trucks",
+            "bus",
+            "buses",
+            "van",
+            "vans",
+            "parked car",
+            "moving vehicle",
+            "road vehicle",
+            "small vehicle",
+            "large vehicle",
+            "traffic vehicle",
+            "vehicle cluster",
+            "cars seen from above"
+          ]
+        },
+        {
+          "name": "other",
+          "synonyms": [
+            "other",
+            "background",
+            "miscellaneous ground",
+            "unclassified area",
+            "unknown terrain",
+            "other land cover",
+            "non target area",
+            "open ground",
+            "bare ground",
+            "pavement",
+            "parking area",
+            "courtyard",
+            "shadow",
+            "construction area",
+            "water surface",
+            "agricultural field",
+            "sports field",
+            "mixed terrain",
+            "unused land",
+            "cluttered area"
+          ]
+        }
+      ],
+      "template": "RS6"
+    },
+    "original_imagenet": {
+      "classes": [
+        {
+          "name": "vegetation",
+          "synonyms": [
+            "vegetation",
+            "green vegetation",
+            "plant cover",
+            "vegetated land",
+            "dense vegetation",
+            "low vegetation",
+            "grass",
+            "grassland",
+            "shrub",
+            "shrubs",
+            "bushes",
+            "green ground cover",
+            "tree canopy",
+            "trees",
+            "wooded vegetation",
+            "natural vegetation",
+            "roadside vegetation",
+            "park vegetation",
+            "crop vegetation",
+            "mixed vegetation"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building",
+            "buildings",
+            "rooftop",
+            "rooftops",
+            "roof",
+            "roofs",
+            "house",
+            "houses",
+            "residential building",
+            "industrial building",
+            "warehouse",
+            "apartment block",
+            "urban structure",
+            "constructed structure",
+            "rectangular rooftop",
+            "bright roof",
+            "dark roof",
+            "detached house",
+            "dense building cluster",
+            "small building"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road",
+            "roads",
+            "street",
+            "streets",
+            "roadway",
+            "paved road",
+            "paved roadway",
+            "asphalt road",
+            "highway",
+            "urban road",
+            "rural road",
+            "narrow road",
+            "wide road",
+            "road network",
+            "transportation corridor",
+            "traffic lane",
+            "road intersection",
+            "road junction",
+            "linear pavement",
+            "winding road"
+          ]
+        },
+        {
+          "name": "vehicle",
+          "synonyms": [
+            "vehicle",
+            "vehicles",
+            "car",
+            "cars",
+            "automobile",
+            "automobiles",
+            "truck",
+            "trucks",
+            "bus",
+            "buses",
+            "van",
+            "vans",
+            "parked car",
+            "moving vehicle",
+            "road vehicle",
+            "small vehicle",
+            "large vehicle",
+            "traffic vehicle",
+            "vehicle cluster",
+            "cars seen from above"
+          ]
+        },
+        {
+          "name": "other",
+          "synonyms": [
+            "other",
+            "background",
+            "miscellaneous ground",
+            "unclassified area",
+            "unknown terrain",
+            "other land cover",
+            "non target area",
+            "open ground",
+            "bare ground",
+            "pavement",
+            "parking area",
+            "courtyard",
+            "shadow",
+            "construction area",
+            "water surface",
+            "agricultural field",
+            "sports field",
+            "mixed terrain",
+            "unused land",
+            "cluttered area"
+          ]
+        }
+      ],
+      "template": "ImageNet80"
+    },
+    "focused20": {
+      "classes": [
+        {
+          "name": "vegetation",
+          "synonyms": [
+            "vegetation",
+            "green vegetation",
+            "plant cover",
+            "vegetated land",
+            "dense vegetation",
+            "low vegetation",
+            "grass",
+            "grassland",
+            "shrub",
+            "shrubs",
+            "bushes",
+            "green ground cover",
+            "tree canopy",
+            "trees",
+            "wooded vegetation",
+            "natural vegetation",
+            "roadside vegetation",
+            "park vegetation",
+            "crop vegetation",
+            "mixed vegetation"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building",
+            "buildings",
+            "rooftop",
+            "rooftops",
+            "roof",
+            "roofs",
+            "house",
+            "houses",
+            "residential building",
+            "industrial building",
+            "warehouse",
+            "apartment block",
+            "urban structure",
+            "constructed structure",
+            "rectangular rooftop",
+            "bright roof",
+            "dark roof",
+            "detached house",
+            "dense building cluster",
+            "small building"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road",
+            "roads",
+            "street",
+            "streets",
+            "roadway",
+            "paved road",
+            "paved roadway",
+            "asphalt road",
+            "highway",
+            "urban road",
+            "rural road",
+            "narrow road",
+            "wide road",
+            "road network",
+            "transportation corridor",
+            "traffic lane",
+            "road intersection",
+            "road junction",
+            "linear pavement",
+            "winding road"
+          ]
+        },
+        {
+          "name": "vehicle",
+          "synonyms": [
+            "vehicle",
+            "vehicles",
+            "car",
+            "cars",
+            "automobile",
+            "automobiles",
+            "truck",
+            "trucks",
+            "bus",
+            "buses",
+            "van",
+            "vans",
+            "parked car",
+            "moving vehicle",
+            "road vehicle",
+            "small vehicle",
+            "large vehicle",
+            "traffic vehicle",
+            "vehicle cluster",
+            "cars seen from above"
+          ]
+        },
+        {
+          "name": "other",
+          "synonyms": [
+            "other",
+            "background",
+            "miscellaneous ground",
+            "unclassified area",
+            "unknown terrain",
+            "other land cover",
+            "non target area",
+            "open ground",
+            "bare ground",
+            "pavement",
+            "parking area",
+            "courtyard",
+            "shadow",
+            "construction area",
+            "water surface",
+            "agricultural field",
+            "sports field",
+            "mixed terrain",
+            "unused land",
+            "cluttered area"
+          ]
+        }
+      ],
+      "template": "RS6"
+    },
+    "kev40_imagenet": {
+      "classes": [
+        {
+          "name": "vegetation",
+          "synonyms": [
+            "vegetation",
+            "green vegetation",
+            "plant cover",
+            "vegetated land",
+            "dense vegetation",
+            "low vegetation",
+            "grass",
+            "grassland",
+            "shrub",
+            "shrubs",
+            "bushes",
+            "green ground cover",
+            "tree canopy",
+            "trees",
+            "wooded vegetation",
+            "natural vegetation",
+            "roadside vegetation",
+            "park vegetation",
+            "crop vegetation",
+            "mixed vegetation"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building",
+            "buildings",
+            "rooftop",
+            "rooftops",
+            "roofs",
+            "house",
+            "houses",
+            "residential building",
+            "industrial building",
+            "warehouse",
+            "apartment block",
+            "rectangular rooftop",
+            "bright roof",
+            "dark roof",
+            "detached house",
+            "dense building cluster"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road",
+            "roads",
+            "street",
+            "streets",
+            "roadway",
+            "paved road",
+            "paved roadway",
+            "asphalt road",
+            "highway",
+            "urban road",
+            "rural road",
+            "narrow road",
+            "wide road",
+            "road network",
+            "traffic lane",
+            "road intersection",
+            "road junction",
+            "linear pavement",
+            "winding road"
+          ]
+        },
+        {
+          "name": "vehicle",
+          "synonyms": [
+            "vehicle",
+            "vehicles",
+            "car",
+            "cars",
+            "automobile",
+            "automobiles",
+            "truck",
+            "trucks",
+            "bus",
+            "buses",
+            "van",
+            "vans",
+            "parked car",
+            "road vehicle",
+            "small vehicle",
+            "traffic vehicle",
+            "cars seen from above"
+          ]
+        },
+        {
+          "name": "other",
+          "synonyms": [
+            "other",
+            "background",
+            "miscellaneous ground",
+            "unclassified area",
+            "unknown terrain",
+            "other land cover",
+            "non target area",
+            "open ground",
+            "bare ground",
+            "pavement",
+            "parking area",
+            "courtyard",
+            "shadow",
+            "construction area",
+            "water surface",
+            "agricultural field",
+            "sports field",
+            "mixed terrain",
+            "unused land",
+            "cluttered area"
+          ]
+        }
+      ],
+      "template": "ImageNet80"
+    },
+    "kev60_imagenet": {
+      "classes": [
+        {
+          "name": "vegetation",
+          "synonyms": [
+            "vegetation",
+            "grass",
+            "grassland",
+            "bushes",
+            "tree canopy",
+            "trees",
+            "park vegetation"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road",
+            "asphalt road"
+          ]
+        },
+        {
+          "name": "vehicle",
+          "synonyms": [
+            "vehicle"
+          ]
+        },
+        {
+          "name": "other",
+          "synonyms": [
+            "other",
+            "background",
+            "miscellaneous ground",
+            "unclassified area",
+            "unknown terrain",
+            "other land cover",
+            "non target area",
+            "open ground",
+            "bare ground",
+            "pavement",
+            "parking area",
+            "courtyard",
+            "shadow",
+            "construction area",
+            "water surface",
+            "agricultural field",
+            "sports field",
+            "mixed terrain",
+            "unused land",
+            "cluttered area"
+          ]
+        }
+      ],
+      "template": "ImageNet80"
+    },
+    "kev80_imagenet": {
+      "classes": [
+        {
+          "name": "vegetation",
+          "synonyms": [
+            "vegetation"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road"
+          ]
+        },
+        {
+          "name": "vehicle",
+          "synonyms": [
+            "vehicle"
+          ]
+        },
+        {
+          "name": "other",
+          "synonyms": [
+            "other",
+            "background",
+            "miscellaneous ground",
+            "unclassified area",
+            "unknown terrain",
+            "other land cover",
+            "non target area",
+            "open ground",
+            "bare ground",
+            "pavement",
+            "parking area",
+            "courtyard",
+            "shadow",
+            "construction area",
+            "water surface",
+            "agricultural field",
+            "sports field",
+            "mixed terrain",
+            "unused land",
+            "cluttered area"
+          ]
+        }
+      ],
+      "template": "ImageNet80"
+    },
+    "pool_imagenet": {
+      "classes": [
+        {
+          "name": "vegetation",
+          "synonyms": [
+            "vegetation",
+            "green vegetation",
+            "plant cover",
+            "vegetated land",
+            "dense vegetation",
+            "low vegetation",
+            "grass",
+            "grassland",
+            "shrub",
+            "shrubs",
+            "bushes",
+            "green ground cover",
+            "tree canopy",
+            "trees",
+            "wooded vegetation",
+            "natural vegetation",
+            "roadside vegetation",
+            "park vegetation",
+            "crop vegetation",
+            "mixed vegetation"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building",
+            "buildings",
+            "rooftop",
+            "rooftops",
+            "roof",
+            "roofs",
+            "house",
+            "houses",
+            "residential building",
+            "industrial building",
+            "warehouse",
+            "apartment block",
+            "urban structure",
+            "constructed structure",
+            "rectangular rooftop",
+            "bright roof",
+            "dark roof",
+            "detached house",
+            "dense building cluster",
+            "small building"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road",
+            "roads",
+            "street",
+            "streets",
+            "roadway",
+            "paved road",
+            "paved roadway",
+            "asphalt road",
+            "highway",
+            "urban road",
+            "rural road",
+            "narrow road",
+            "wide road",
+            "road network",
+            "transportation corridor",
+            "traffic lane",
+            "road intersection",
+            "road junction",
+            "linear pavement",
+            "winding road"
+          ]
+        },
+        {
+          "name": "vehicle",
+          "synonyms": [
+            "vehicle",
+            "vehicles",
+            "car",
+            "cars",
+            "automobile",
+            "automobiles",
+            "truck",
+            "trucks",
+            "bus",
+            "buses",
+            "van",
+            "vans",
+            "parked car",
+            "moving vehicle",
+            "road vehicle",
+            "small vehicle",
+            "large vehicle",
+            "traffic vehicle",
+            "vehicle cluster",
+            "cars seen from above"
+          ]
+        },
+        {
+          "name": "other",
+          "synonyms": [
+            "other",
+            "background",
+            "miscellaneous ground",
+            "unclassified area",
+            "unknown terrain",
+            "other land cover",
+            "non target area",
+            "open ground",
+            "bare ground",
+            "pavement",
+            "parking area",
+            "courtyard",
+            "shadow",
+            "construction area",
+            "water surface",
+            "agricultural field",
+            "sports field",
+            "mixed terrain",
+            "unused land",
+            "cluttered area"
+          ]
+        }
+      ],
+      "template": "ImageNet80"
+    },
+    "kev40_segmentation": {
+      "classes": [
+        {
+          "name": "vegetation",
+          "synonyms": [
+            "vegetation",
+            "green vegetation",
+            "plant cover",
+            "vegetated land",
+            "dense vegetation",
+            "low vegetation",
+            "grass",
+            "grassland",
+            "shrub",
+            "shrubs",
+            "bushes",
+            "green ground cover",
+            "tree canopy",
+            "trees",
+            "wooded vegetation",
+            "natural vegetation",
+            "roadside vegetation",
+            "park vegetation",
+            "crop vegetation",
+            "mixed vegetation"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building",
+            "buildings",
+            "rooftop",
+            "rooftops",
+            "roofs",
+            "house",
+            "houses",
+            "residential building",
+            "industrial building",
+            "warehouse",
+            "apartment block",
+            "rectangular rooftop",
+            "bright roof",
+            "dark roof",
+            "detached house",
+            "dense building cluster"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road",
+            "roads",
+            "street",
+            "streets",
+            "roadway",
+            "paved road",
+            "paved roadway",
+            "asphalt road",
+            "highway",
+            "urban road",
+            "rural road",
+            "narrow road",
+            "wide road",
+            "road network",
+            "traffic lane",
+            "road intersection",
+            "road junction",
+            "linear pavement",
+            "winding road"
+          ]
+        },
+        {
+          "name": "vehicle",
+          "synonyms": [
+            "vehicle",
+            "vehicles",
+            "car",
+            "cars",
+            "automobile",
+            "automobiles",
+            "truck",
+            "trucks",
+            "bus",
+            "buses",
+            "van",
+            "vans",
+            "parked car",
+            "road vehicle",
+            "small vehicle",
+            "traffic vehicle",
+            "cars seen from above"
+          ]
+        },
+        {
+          "name": "other",
+          "synonyms": [
+            "other",
+            "background",
+            "miscellaneous ground",
+            "unclassified area",
+            "unknown terrain",
+            "other land cover",
+            "non target area",
+            "open ground",
+            "bare ground",
+            "pavement",
+            "parking area",
+            "courtyard",
+            "shadow",
+            "construction area",
+            "water surface",
+            "agricultural field",
+            "sports field",
+            "mixed terrain",
+            "unused land",
+            "cluttered area"
+          ]
+        }
+      ],
+      "template": "seg_template"
+    },
+    "kev60_segmentation": {
+      "classes": [
+        {
+          "name": "vegetation",
+          "synonyms": [
+            "vegetation",
+            "grass",
+            "grassland",
+            "bushes",
+            "tree canopy",
+            "trees",
+            "park vegetation"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road",
+            "asphalt road"
+          ]
+        },
+        {
+          "name": "vehicle",
+          "synonyms": [
+            "vehicle"
+          ]
+        },
+        {
+          "name": "other",
+          "synonyms": [
+            "other",
+            "background",
+            "miscellaneous ground",
+            "unclassified area",
+            "unknown terrain",
+            "other land cover",
+            "non target area",
+            "open ground",
+            "bare ground",
+            "pavement",
+            "parking area",
+            "courtyard",
+            "shadow",
+            "construction area",
+            "water surface",
+            "agricultural field",
+            "sports field",
+            "mixed terrain",
+            "unused land",
+            "cluttered area"
+          ]
+        }
+      ],
+      "template": "seg_template"
+    },
+    "kev80_segmentation": {
+      "classes": [
+        {
+          "name": "vegetation",
+          "synonyms": [
+            "vegetation"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road"
+          ]
+        },
+        {
+          "name": "vehicle",
+          "synonyms": [
+            "vehicle"
+          ]
+        },
+        {
+          "name": "other",
+          "synonyms": [
+            "other",
+            "background",
+            "miscellaneous ground",
+            "unclassified area",
+            "unknown terrain",
+            "other land cover",
+            "non target area",
+            "open ground",
+            "bare ground",
+            "pavement",
+            "parking area",
+            "courtyard",
+            "shadow",
+            "construction area",
+            "water surface",
+            "agricultural field",
+            "sports field",
+            "mixed terrain",
+            "unused land",
+            "cluttered area"
+          ]
+        }
+      ],
+      "template": "seg_template"
+    },
+    "pool_segmentation": {
+      "classes": [
+        {
+          "name": "vegetation",
+          "synonyms": [
+            "vegetation",
+            "green vegetation",
+            "plant cover",
+            "vegetated land",
+            "dense vegetation",
+            "low vegetation",
+            "grass",
+            "grassland",
+            "shrub",
+            "shrubs",
+            "bushes",
+            "green ground cover",
+            "tree canopy",
+            "trees",
+            "wooded vegetation",
+            "natural vegetation",
+            "roadside vegetation",
+            "park vegetation",
+            "crop vegetation",
+            "mixed vegetation"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building",
+            "buildings",
+            "rooftop",
+            "rooftops",
+            "roof",
+            "roofs",
+            "house",
+            "houses",
+            "residential building",
+            "industrial building",
+            "warehouse",
+            "apartment block",
+            "urban structure",
+            "constructed structure",
+            "rectangular rooftop",
+            "bright roof",
+            "dark roof",
+            "detached house",
+            "dense building cluster",
+            "small building"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road",
+            "roads",
+            "street",
+            "streets",
+            "roadway",
+            "paved road",
+            "paved roadway",
+            "asphalt road",
+            "highway",
+            "urban road",
+            "rural road",
+            "narrow road",
+            "wide road",
+            "road network",
+            "transportation corridor",
+            "traffic lane",
+            "road intersection",
+            "road junction",
+            "linear pavement",
+            "winding road"
+          ]
+        },
+        {
+          "name": "vehicle",
+          "synonyms": [
+            "vehicle",
+            "vehicles",
+            "car",
+            "cars",
+            "automobile",
+            "automobiles",
+            "truck",
+            "trucks",
+            "bus",
+            "buses",
+            "van",
+            "vans",
+            "parked car",
+            "moving vehicle",
+            "road vehicle",
+            "small vehicle",
+            "large vehicle",
+            "traffic vehicle",
+            "vehicle cluster",
+            "cars seen from above"
+          ]
+        },
+        {
+          "name": "other",
+          "synonyms": [
+            "other",
+            "background",
+            "miscellaneous ground",
+            "unclassified area",
+            "unknown terrain",
+            "other land cover",
+            "non target area",
+            "open ground",
+            "bare ground",
+            "pavement",
+            "parking area",
+            "courtyard",
+            "shadow",
+            "construction area",
+            "water surface",
+            "agricultural field",
+            "sports field",
+            "mixed terrain",
+            "unused land",
+            "cluttered area"
+          ]
+        }
+      ],
+      "template": "seg_template"
+    }
+  },
+  "judgment": "jaredpalmer/kev-4b@6cfce5c2fa4b4bd64026336ab649c5ca78857d52",
+  "inference_uses_target_labels": false,
+  "target_label_development": true,
+  "source_protocol": "Labeled development-selected configuration, not a label-free selector or untouched independent test. Full scores and non-development complement; ADE uses training development. Kev is an additional frozen pretrained language prior."
+}

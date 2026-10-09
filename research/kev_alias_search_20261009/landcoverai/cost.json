@@ -1,0 +1,1671 @@
+{
+  "status": "complete",
+  "dataset": "landcoverai",
+  "images": [
+    {
+      "key": "M-33-20-D-c-4-2_101",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        233.2314548548311,
+        234.29101007059216,
+        233.840020140633,
+        233.38684299960732,
+        235.3117240127176,
+        232.1924138814211,
+        236.02167307399213
+      ],
+      "median_ms": 233.840020140633,
+      "peak_allocated_mib": 5529.21875,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.0460013821721077
+    },
+    {
+      "key": "M-33-7-A-d-3-2_259",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        232.2730738669634,
+        231.48759501054883,
+        233.55355695821345,
+        236.73182912170887,
+        232.6122629456222,
+        231.83395597152412,
+        236.98089993558824
+      ],
+      "median_ms": 232.6122629456222,
+      "peak_allocated_mib": 5529.21875,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.0028985701501369476
+    },
+    {
+      "key": "M-34-56-A-b-1-4_14",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        240.00220303423703,
+        234.26499613560736,
+        233.16468903794885,
+        233.1908051855862,
+        233.5046138614416,
+        232.53169981762767,
+        233.29137498512864
+      ],
+      "median_ms": 233.29137498512864,
+      "peak_allocated_mib": 5529.21875,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.002640919992700219
+    },
+    {
+      "key": "M-34-68-B-a-1-3_239",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        235.10127584449947,
+        234.10974512808025,
+        232.8037368133664,
+        232.87583887577057,
+        235.72584497742355,
+        232.41734807379544,
+        231.13847407512367
+      ],
+      "median_ms": 232.87583887577057,
+      "peak_allocated_mib": 5529.21875,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.003109724959358573
+    },
+    {
+      "key": "N-33-139-C-d-2-2_185",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        232.89999412372708,
+        235.17433693632483,
+        235.8820152003318,
+        233.81952312774956,
+        239.99247001484036,
+        235.10025604628026,
+        234.80043886229396
+      ],
+      "median_ms": 235.10025604628026,
+      "peak_allocated_mib": 5529.21875,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.0027656739111989737
+    },
+    {
+      "key": "N-34-140-A-b-4-2_1",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        238.35195507854223,
+        234.66500686481595,
+        233.751849969849,
+        234.47853000834584,
+        233.09720307588577,
+        231.10214504413307,
+        236.21645593084395
+      ],
+      "median_ms": 234.47853000834584,
+      "peak_allocated_mib": 5529.21875,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.0026557568926364183
+    },
+    {
+      "key": "N-34-97-D-c-2-4_75",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        228.11301215551794,
+        232.46520292013884,
+        228.04678999818861,
+        231.7164761479944,
+        229.4055111706257,
+        230.69144412875175,
+        228.48211787641048
+      ],
+      "median_ms": 229.4055111706257,
+      "peak_allocated_mib": 5529.21875,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.0030955271795392036
+    }
+  ],
+  "choice": {
+    "profile": {
+      "bank": "original_imagenet",
+      "strength": 2.0,
+      "coupling": 0.5,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.3,
+    "development_miou": 67.36222538287089,
+    "profile_index": 5,
+    "bias_index": 0,
+    "confusion_matrix": [
+      [
+        8820691,
+        49922,
+        236465,
+        26535,
+        247258
+      ],
+      [
+        4180,
+        105211,
+        558,
+        0,
+        0
+      ],
+      [
+        1073594,
+        3,
+        4674515,
+        7439,
+        17068
+      ],
+      [
+        405171,
+        0,
+        29,
+        715386,
+        0
+      ],
+      [
+        40721,
+        696,
+        17260,
+        0,
+        334514
+      ]
+    ],
+    "development_confusions": {
+      "landcoverai": [
+        [
+          8820691,
+          49922,
+          236465,
+          26535,
+          247258
+        ],
+        [
+          4180,
+          105211,
+          558,
+          0,
+          0
+        ],
+        [
+          1073594,
+          3,
+          4674515,
+          7439,
+          17068
+        ],
+        [
+          405171,
+          0,
+          29,
+          715386,
+          0
+        ],
+        [
+          40721,
+          696,
+          17260,
+          0,
+          334514
+        ]
+      ]
+    },
+    "implementation": "geometry-kev-variable-alias-static-search-v1-20261009",
+    "status": "complete",
+    "development_keys": [
+      "M-33-20-D-d-3-3_165",
+      "M-33-32-B-b-4-4_155",
+      "M-33-32-B-b-4-4_5",
+      "M-33-48-A-c-4-4_312",
+      "M-33-7-A-d-2-3_112",
+      "M-33-7-A-d-2-3_223",
+      "M-33-7-A-d-2-3_236",
+      "M-33-7-A-d-2-3_33",
+      "M-33-7-A-d-3-2_37",
+      "M-34-32-B-b-1-3_183",
+      "M-34-32-B-b-1-3_265",
+      "M-34-32-B-b-1-3_295",
+      "M-34-51-C-b-2-1_16",
+      "M-34-51-C-d-4-1_136",
+      "M-34-51-C-d-4-1_140",
+      "M-34-55-B-b-4-1_178",
+      "M-34-55-B-b-4-1_207",
+      "M-34-56-A-b-1-4_116",
+      "M-34-56-A-b-1-4_199",
+      "M-34-56-A-b-1-4_213",
+      "M-34-5-D-d-4-2_222",
+      "M-34-65-D-a-4-4_105",
+      "M-34-65-D-a-4-4_121",
+      "M-34-65-D-a-4-4_124",
+      "M-34-65-D-a-4-4_249",
+      "M-34-65-D-a-4-4_49",
+      "M-34-65-D-c-4-2_13",
+      "M-34-65-D-d-4-1_105",
+      "M-34-65-D-d-4-1_139",
+      "M-34-65-D-d-4-1_286",
+      "M-34-68-B-a-1-3_239",
+      "M-34-68-B-a-1-3_250",
+      "M-34-6-A-d-2-2_207",
+      "M-34-6-A-d-2-2_50",
+      "M-34-77-B-c-2-3_216",
+      "N-33-104-A-c-1-1_277",
+      "N-33-104-A-c-1-1_307",
+      "N-33-104-A-c-1-1_65",
+      "N-33-139-C-d-2-2_105",
+      "N-33-139-C-d-2-4_134",
+      "N-33-139-C-d-2-4_19",
+      "N-33-139-C-d-2-4_259",
+      "N-33-139-C-d-2-4_286",
+      "N-33-139-D-c-1-3_184",
+      "N-33-139-D-c-1-3_217",
+      "N-33-139-D-c-1-3_65",
+      "N-33-60-D-c-4-2_6",
+      "N-34-106-A-c-1-3_236",
+      "N-34-106-A-c-1-3_3",
+      "N-34-140-A-b-3-2_26",
+      "N-34-140-A-b-3-2_317",
+      "N-34-140-A-b-4-2_278",
+      "N-34-140-A-d-3-4_120",
+      "N-34-140-A-d-3-4_58",
+      "N-34-140-A-d-3-4_9",
+      "N-34-140-A-d-4-2_80",
+      "N-34-140-A-d-4-2_83",
+      "N-34-77-A-b-1-4_208",
+      "N-34-77-A-b-1-4_279",
+      "N-34-77-A-b-1-4_42",
+      "N-34-77-A-b-1-4_85",
+      "N-34-94-A-b-2-4_146",
+      "N-34-94-A-b-2-4_299",
+      "N-34-97-D-c-2-4_43"
+    ],
+    "development_source": "fixed_labeled_validation_development_subset",
+    "vocabulary": {
+      "original": {
+        "classes": [
+          {
+            "name": "background",
+            "synonyms": [
+              "background",
+              "other land cover",
+              "unclassified land",
+              "other surface",
+              "open ground",
+              "grass",
+              "grassland",
+              "farmland",
+              "crop field",
+              "agricultural land",
+              "bare ground",
+              "bare soil",
+              "meadow",
+              "lawn",
+              "open field",
+              "uncultivated land",
+              "shrubland",
+              "sandy ground",
+              "rural open space",
+              "mixed terrain"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "residential building",
+              "commercial building",
+              "industrial building",
+              "warehouse",
+              "apartment building",
+              "roofed structure",
+              "building roof",
+              "house roof",
+              "rooftop",
+              "construction",
+              "man made structure",
+              "urban building",
+              "rural building",
+              "farm building",
+              "building wall",
+              "roof"
+            ]
+          },
+          {
+            "name": "woodland",
+            "synonyms": [
+              "woodland",
+              "forest",
+              "dense forest",
+              "tree cover",
+              "tree canopy",
+              "wooded area",
+              "trees",
+              "forest canopy",
+              "broadleaf forest",
+              "coniferous forest",
+              "deciduous forest",
+              "evergreen forest",
+              "mixed forest",
+              "dense tree canopy",
+              "forest trees",
+              "wooded land",
+              "tree crowns",
+              "timberland",
+              "continuous forest",
+              "woodland vegetation"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "stream",
+              "canal",
+              "reservoir",
+              "open water",
+              "surface water",
+              "fresh water",
+              "flowing water",
+              "standing water",
+              "river water",
+              "lake water",
+              "water surface",
+              "inland water",
+              "aquatic area",
+              "natural water body",
+              "watercourse"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road",
+              "roads",
+              "street",
+              "roadway",
+              "asphalt road",
+              "paved road",
+              "highway",
+              "rural road",
+              "urban road",
+              "road surface",
+              "transportation road",
+              "vehicle road",
+              "traffic lane",
+              "road network",
+              "country road",
+              "unpaved road",
+              "gravel road",
+              "tarmac road",
+              "pavement road",
+              "driving road"
+            ]
+          }
+        ],
+        "template": "RS6"
+      },
+      "original_imagenet": {
+        "classes": [
+          {
+            "name": "background",
+            "synonyms": [
+              "background",
+              "other land cover",
+              "unclassified land",
+              "other surface",
+              "open ground",
+              "grass",
+              "grassland",
+              "farmland",
+              "crop field",
+              "agricultural land",
+              "bare ground",
+              "bare soil",
+              "meadow",
+              "lawn",
+              "open field",
+              "uncultivated land",
+              "shrubland",
+              "sandy ground",
+              "rural open space",
+              "mixed terrain"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "residential building",
+              "commercial building",
+              "industrial building",
+              "warehouse",
+              "apartment building",
+              "roofed structure",
+              "building roof",
+              "house roof",
+              "rooftop",
+              "construction",
+              "man made structure",
+              "urban building",
+              "rural building",
+              "farm building",
+              "building wall",
+              "roof"
+            ]
+          },
+          {
+            "name": "woodland",
+            "synonyms": [
+              "woodland",
+              "forest",
+              "dense forest",
+              "tree cover",
+              "tree canopy",
+              "wooded area",
+              "trees",
+              "forest canopy",
+              "broadleaf forest",
+              "coniferous forest",
+              "deciduous forest",
+              "evergreen forest",
+              "mixed forest",
+              "dense tree canopy",
+              "forest trees",
+              "wooded land",
+              "tree crowns",
+              "timberland",
+              "continuous forest",
+              "woodland vegetation"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "stream",
+              "canal",
+              "reservoir",
+              "open water",
+              "surface water",
+              "fresh water",
+              "flowing water",
+              "standing water",
+              "river water",
+              "lake water",
+              "water surface",
+              "inland water",
+              "aquatic area",
+              "natural water body",
+              "watercourse"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road",
+              "roads",
+              "street",
+              "roadway",
+              "asphalt road",
+              "paved road",
+              "highway",
+              "rural road",
+              "urban road",
+              "road surface",
+              "transportation road",
+              "vehicle road",
+              "traffic lane",
+              "road network",
+              "country road",
+              "unpaved road",
+              "gravel road",
+              "tarmac road",
+              "pavement road",
+              "driving road"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "focused20": {
+        "classes": [
+          {
+            "name": "background",
+            "synonyms": [
+              "background",
+              "other land cover",
+              "unclassified land",
+              "other surface",
+              "open ground",
+              "grass",
+              "grassland",
+              "farmland",
+              "crop field",
+              "agricultural land",
+              "bare ground",
+              "bare soil",
+              "meadow",
+              "lawn",
+              "open field",
+              "uncultivated land",
+              "shrubland",
+              "sandy ground",
+              "rural open space",
+              "mixed terrain"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "residential building",
+              "commercial building",
+              "industrial building",
+              "warehouse",
+              "apartment building",
+              "roofed structure",
+              "building roof",
+              "house roof",
+              "rooftop",
+              "construction",
+              "man made structure",
+              "urban building",
+              "rural building",
+              "farm building",
+              "building wall",
+              "roof"
+            ]
+          },
+          {
+            "name": "woodland",
+            "synonyms": [
+              "woodland",
+              "forest",
+              "dense forest",
+              "tree cover",
+              "tree canopy",
+              "wooded area",
+              "trees",
+              "forest canopy",
+              "broadleaf forest",
+              "coniferous forest",
+              "deciduous forest",
+              "evergreen forest",
+              "mixed forest",
+              "dense tree canopy",
+              "forest trees",
+              "wooded land",
+              "tree crowns",
+              "timberland",
+              "continuous forest",
+              "woodland vegetation"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "stream",
+              "canal",
+              "reservoir",
+              "open water",
+              "surface water",
+              "fresh water",
+              "flowing water",
+              "standing water",
+              "river water",
+              "lake water",
+              "water surface",
+              "inland water",
+              "aquatic area",
+              "natural water body",
+              "watercourse"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road",
+              "roads",
+              "street",
+              "roadway",
+              "asphalt road",
+              "paved road",
+              "highway",
+              "rural road",
+              "urban road",
+              "road surface",
+              "transportation road",
+              "vehicle road",
+              "traffic lane",
+              "road network",
+              "country road",
+              "unpaved road",
+              "gravel road",
+              "tarmac road",
+              "pavement road",
+              "driving road"
+            ]
+          }
+        ],
+        "template": "RS6"
+      },
+      "kev40_imagenet": {
+        "classes": [
+          {
+            "name": "background",
+            "synonyms": [
+              "background",
+              "other land cover",
+              "unclassified land",
+              "other surface",
+              "open ground",
+              "grass",
+              "grassland",
+              "farmland",
+              "crop field",
+              "agricultural land",
+              "bare ground",
+              "bare soil",
+              "meadow",
+              "lawn",
+              "open field",
+              "uncultivated land",
+              "shrubland",
+              "sandy ground",
+              "rural open space",
+              "mixed terrain"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "residential building",
+              "commercial building",
+              "industrial building",
+              "warehouse",
+              "apartment building",
+              "roofed structure",
+              "house roof",
+              "rooftop",
+              "man made structure",
+              "urban building",
+              "rural building",
+              "farm building",
+              "building wall",
+              "roof"
+            ]
+          },
+          {
+            "name": "woodland",
+            "synonyms": [
+              "woodland",
+              "forest",
+              "dense forest",
+              "tree cover",
+              "tree canopy",
+              "wooded area",
+              "trees",
+              "forest canopy",
+              "broadleaf forest",
+              "coniferous forest",
+              "deciduous forest",
+              "evergreen forest",
+              "mixed forest",
+              "dense tree canopy",
+              "forest trees",
+              "wooded land",
+              "tree crowns",
+              "timberland",
+              "continuous forest",
+              "woodland vegetation"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "stream",
+              "canal",
+              "reservoir",
+              "open water",
+              "surface water",
+              "fresh water",
+              "flowing water",
+              "standing water",
+              "river water",
+              "lake water",
+              "water surface",
+              "inland water",
+              "aquatic area",
+              "natural water body",
+              "watercourse"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road",
+              "roads",
+              "street",
+              "roadway",
+              "asphalt road",
+              "paved road",
+              "highway",
+              "rural road",
+              "urban road",
+              "road surface",
+              "transportation road",
+              "traffic lane",
+              "road network",
+              "country road",
+              "unpaved road",
+              "gravel road",
+              "tarmac road",
+              "pavement road",
+              "driving road"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "kev60_imagenet": {
+        "classes": [
+          {
+            "name": "background",
+            "synonyms": [
+              "background",
+              "other land cover",
+              "unclassified land",
+              "other surface",
+              "open ground",
+              "grass",
+              "grassland",
+              "farmland",
+              "crop field",
+              "agricultural land",
+              "bare ground",
+              "bare soil",
+              "meadow",
+              "lawn",
+              "open field",
+              "uncultivated land",
+              "shrubland",
+              "sandy ground",
+              "rural open space",
+              "mixed terrain"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "apartment building"
+            ]
+          },
+          {
+            "name": "woodland",
+            "synonyms": [
+              "woodland",
+              "dense forest",
+              "tree canopy",
+              "forest canopy",
+              "coniferous forest",
+              "deciduous forest",
+              "dense tree canopy",
+              "forest trees",
+              "tree crowns"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "pond"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road",
+              "asphalt road",
+              "road surface",
+              "tarmac road"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "kev80_imagenet": {
+        "classes": [
+          {
+            "name": "background",
+            "synonyms": [
+              "background",
+              "other land cover",
+              "unclassified land",
+              "other surface",
+              "open ground",
+              "grass",
+              "grassland",
+              "farmland",
+              "crop field",
+              "agricultural land",
+              "bare ground",
+              "bare soil",
+              "meadow",
+              "lawn",
+              "open field",
+              "uncultivated land",
+              "shrubland",
+              "sandy ground",
+              "rural open space",
+              "mixed terrain"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building"
+            ]
+          },
+          {
+            "name": "woodland",
+            "synonyms": [
+              "woodland"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "pool_imagenet": {
+        "classes": [
+          {
+            "name": "background",
+            "synonyms": [
+              "background",
+              "other land cover",
+              "unclassified land",
+              "other surface",
+              "open ground",
+              "grass",
+              "grassland",
+              "farmland",
+              "crop field",
+              "agricultural land",
+              "bare ground",
+              "bare soil",
+              "meadow",
+              "lawn",
+              "open field",
+              "uncultivated land",
+              "shrubland",
+              "sandy ground",
+              "rural open space",
+              "mixed terrain"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "residential building",
+              "commercial building",
+              "industrial building",
+              "warehouse",
+              "apartment building",
+              "roofed structure",
+              "building roof",
+              "house roof",
+              "rooftop",
+              "construction",
+              "man made structure",
+              "urban building",
+              "rural building",
+              "farm building",
+              "building wall",
+              "roof"
+            ]
+          },
+          {
+            "name": "woodland",
+            "synonyms": [
+              "woodland",
+              "forest",
+              "dense forest",
+              "tree cover",
+              "tree canopy",
+              "wooded area",
+              "trees",
+              "forest canopy",
+              "broadleaf forest",
+              "coniferous forest",
+              "deciduous forest",
+              "evergreen forest",
+              "mixed forest",
+              "dense tree canopy",
+              "forest trees",
+              "wooded land",
+              "tree crowns",
+              "timberland",
+              "continuous forest",
+              "woodland vegetation"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "stream",
+              "canal",
+              "reservoir",
+              "open water",
+              "surface water",
+              "fresh water",
+              "flowing water",
+              "standing water",
+              "river water",
+              "lake water",
+              "water surface",
+              "inland water",
+              "aquatic area",
+              "natural water body",
+              "watercourse"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road",
+              "roads",
+              "street",
+              "roadway",
+              "asphalt road",
+              "paved road",
+              "highway",
+              "rural road",
+              "urban road",
+              "road surface",
+              "transportation road",
+              "vehicle road",
+              "traffic lane",
+              "road network",
+              "country road",
+              "unpaved road",
+              "gravel road",
+              "tarmac road",
+              "pavement road",
+              "driving road"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "kev40_segmentation": {
+        "classes": [
+          {
+            "name": "background",
+            "synonyms": [
+              "background",
+              "other land cover",
+              "unclassified land",
+              "other surface",
+              "open ground",
+              "grass",
+              "grassland",
+              "farmland",
+              "crop field",
+              "agricultural land",
+              "bare ground",
+              "bare soil",
+              "meadow",
+              "lawn",
+              "open field",
+              "uncultivated land",
+              "shrubland",
+              "sandy ground",
+              "rural open space",
+              "mixed terrain"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "residential building",
+              "commercial building",
+              "industrial building",
+              "warehouse",
+              "apartment building",
+              "roofed structure",
+              "house roof",
+              "rooftop",
+              "man made structure",
+              "urban building",
+              "rural building",
+              "farm building",
+              "building wall",
+              "roof"
+            ]
+          },
+          {
+            "name": "woodland",
+            "synonyms": [
+              "woodland",
+              "forest",
+              "dense forest",
+              "tree cover",
+              "tree canopy",
+              "wooded area",
+              "trees",
+              "forest canopy",
+              "broadleaf forest",
+              "coniferous forest",
+              "deciduous forest",
+              "evergreen forest",
+              "mixed forest",
+              "dense tree canopy",
+              "forest trees",
+              "wooded land",
+              "tree crowns",
+              "timberland",
+              "continuous forest",
+              "woodland vegetation"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "stream",
+              "canal",
+              "reservoir",
+              "open water",
+              "surface water",
+              "fresh water",
+              "flowing water",
+              "standing water",
+              "river water",
+              "lake water",
+              "water surface",
+              "inland water",
+              "aquatic area",
+              "natural water body",
+              "watercourse"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road",
+              "roads",
+              "street",
+              "roadway",
+              "asphalt road",
+              "paved road",
+              "highway",
+              "rural road",
+              "urban road",
+              "road surface",
+              "transportation road",
+              "traffic lane",
+              "road network",
+              "country road",
+              "unpaved road",
+              "gravel road",
+              "tarmac road",
+              "pavement road",
+              "driving road"
+            ]
+          }
+        ],
+        "template": "seg_template"
+      },
+      "kev60_segmentation": {
+        "classes": [
+          {
+            "name": "background",
+            "synonyms": [
+              "background",
+              "other land cover",
+              "unclassified land",
+              "other surface",
+              "open ground",
+              "grass",
+              "grassland",
+              "farmland",
+              "crop field",
+              "agricultural land",
+              "bare ground",
+              "bare soil",
+              "meadow",
+              "lawn",
+              "open field",
+              "uncultivated land",
+              "shrubland",
+              "sandy ground",
+              "rural open space",
+              "mixed terrain"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "apartment building"
+            ]
+          },
+          {
+            "name": "woodland",
+            "synonyms": [
+              "woodland",
+              "dense forest",
+              "tree canopy",
+              "forest canopy",
+              "coniferous forest",
+              "deciduous forest",
+              "dense tree canopy",
+              "forest trees",
+              "tree crowns"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "pond"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road",
+              "asphalt road",
+              "road surface",
+              "tarmac road"
+            ]
+          }
+        ],
+        "template": "seg_template"
+      },
+      "kev80_segmentation": {
+        "classes": [
+          {
+            "name": "background",
+            "synonyms": [
+              "background",
+              "other land cover",
+              "unclassified land",
+              "other surface",
+              "open ground",
+              "grass",
+              "grassland",
+              "farmland",
+              "crop field",
+              "agricultural land",
+              "bare ground",
+              "bare soil",
+              "meadow",
+              "lawn",
+              "open field",
+              "uncultivated land",
+              "shrubland",
+              "sandy ground",
+              "rural open space",
+              "mixed terrain"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building"
+            ]
+          },
+          {
+            "name": "woodland",
+            "synonyms": [
+              "woodland"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road"
+            ]
+          }
+        ],
+        "template": "seg_template"
+      },
+      "pool_segmentation": {
+        "classes": [
+          {
+            "name": "background",
+            "synonyms": [
+              "background",
+              "other land cover",
+              "unclassified land",
+              "other surface",
+              "open ground",
+              "grass",
+              "grassland",
+              "farmland",
+              "crop field",
+              "agricultural land",
+              "bare ground",
+              "bare soil",
+              "meadow",
+              "lawn",
+              "open field",
+              "uncultivated land",
+              "shrubland",
+              "sandy ground",
+              "rural open space",
+              "mixed terrain"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "residential building",
+              "commercial building",
+              "industrial building",
+              "warehouse",
+              "apartment building",
+              "roofed structure",
+              "building roof",
+              "house roof",
+              "rooftop",
+              "construction",
+              "man made structure",
+              "urban building",
+              "rural building",
+              "farm building",
+              "building wall",
+              "roof"
+            ]
+          },
+          {
+            "name": "woodland",
+            "synonyms": [
+              "woodland",
+              "forest",
+              "dense forest",
+              "tree cover",
+              "tree canopy",
+              "wooded area",
+              "trees",
+              "forest canopy",
+              "broadleaf forest",
+              "coniferous forest",
+              "deciduous forest",
+              "evergreen forest",
+              "mixed forest",
+              "dense tree canopy",
+              "forest trees",
+              "wooded land",
+              "tree crowns",
+              "timberland",
+              "continuous forest",
+              "woodland vegetation"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "stream",
+              "canal",
+              "reservoir",
+              "open water",
+              "surface water",
+              "fresh water",
+              "flowing water",
+              "standing water",
+              "river water",
+              "lake water",
+              "water surface",
+              "inland water",
+              "aquatic area",
+              "natural water body",
+              "watercourse"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road",
+              "roads",
+              "street",
+              "roadway",
+              "asphalt road",
+              "paved road",
+              "highway",
+              "rural road",
+              "urban road",
+              "road surface",
+              "transportation road",
+              "vehicle road",
+              "traffic lane",
+              "road network",
+              "country road",
+              "unpaved road",
+              "gravel road",
+              "tarmac road",
+              "pavement road",
+              "driving road"
+            ]
+          }
+        ],
+        "template": "seg_template"
+      }
+    },
+    "judgment": "jaredpalmer/kev-4b@6cfce5c2fa4b4bd64026336ab649c5ca78857d52",
+    "inference_uses_target_labels": false,
+    "target_label_development": true,
+    "source_protocol": "Labeled development-selected configuration, not a label-free selector or untouched independent test. Full scores and non-development complement; ADE uses training development. Kev is an additional frozen pretrained language prior."
+  },
+  "median_ms": 233.38684299960732,
+  "p95_ms": 237.80353302136064,
+  "peak_allocated_mib": 5529.21875,
+  "initialization_and_text_seconds": 27.95339513896033,
+  "target_masks_loaded": false,
+  "standalone_process": true,
+  "offline_language_cost_excluded_and_reported_separately": true,
+  "boundary": "RGB resize, all encodings, alias aggregation, coupled writeback, original-size restoration and CPU prediction. Decode/init/offline language and development search excluded. Seven deterministic images and seven repeats; not full-dataset mean."
+}

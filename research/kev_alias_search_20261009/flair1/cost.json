@@ -1,0 +1,3150 @@
+{
+  "status": "complete",
+  "dataset": "flair1",
+  "images": [
+    {
+      "key": "D012_2019/Z10_UU/img/IMG_062613.tif",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        243.2569027878344,
+        247.5873650982976,
+        243.9496039878577,
+        249.0353409666568,
+        240.02693709917367,
+        250.0835508108139,
+        240.2208868879825
+      ],
+      "median_ms": 243.9496039878577,
+      "peak_allocated_mib": 5548.4521484375,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.10519300797022879
+    },
+    {
+      "key": "D026_2020/Z13_UU/img/IMG_065054.tif",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        250.2623568288982,
+        242.52758896909654,
+        247.78623296879232,
+        249.94495208375156,
+        239.4859348423779,
+        248.37066303007305,
+        237.23028996028006
+      ],
+      "median_ms": 247.78623296879232,
+      "peak_allocated_mib": 5548.4521484375,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.005056709982454777
+    },
+    {
+      "key": "D064_2021/Z30_NU/img/IMG_067471.tif",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        252.51672603189945,
+        238.44160791486502,
+        251.72483711503446,
+        245.70867978036404,
+        245.7954369019717,
+        249.8212791979313,
+        241.56976700760424
+      ],
+      "median_ms": 245.7954369019717,
+      "peak_allocated_mib": 5548.4521484375,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.005063226912170649
+    },
+    {
+      "key": "D071_2020/Z12_UA/img/IMG_070462.tif",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        240.02567492425442,
+        249.9363322276622,
+        250.17656106501818,
+        238.0827770102769,
+        249.33906109072268,
+        237.8285159356892,
+        253.8349840324372
+      ],
+      "median_ms": 249.33906109072268,
+      "peak_allocated_mib": 5548.4521484375,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.005954012041911483
+    },
+    {
+      "key": "D076_2019/Z15_UU/img/IMG_072654.tif",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        253.21641890332103,
+        252.92704300954938,
+        251.9727200269699,
+        245.5349511001259,
+        258.62299208529294,
+        242.58454493246973,
+        252.50741001218557
+      ],
+      "median_ms": 252.50741001218557,
+      "peak_allocated_mib": 5548.4521484375,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.004994044080376625
+    },
+    {
+      "key": "D083_2020/Z5_AU/img/IMG_074795.tif",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        244.15324302390218,
+        247.46453994885087,
+        246.1828722152859,
+        244.35221194289625,
+        239.45989296771586,
+        249.40966977737844,
+        239.50047395192087
+      ],
+      "median_ms": 244.35221194289625,
+      "peak_allocated_mib": 5548.4521484375,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.0058685909025371075
+    },
+    {
+      "key": "D085_2019/Z9_NF/img/IMG_076387.tif",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        240.74751697480679,
+        246.99523602612317,
+        246.43671698868275,
+        247.67109798267484,
+        238.92507003620267,
+        250.1297821290791,
+        249.73542895168066
+      ],
+      "median_ms": 246.99523602612317,
+      "peak_allocated_mib": 5548.4521484375,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.008122113067656755
+    }
+  ],
+  "choice": {
+    "profile": {
+      "bank": "original",
+      "strength": "original",
+      "coupling": 0.25,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.0,
+    "development_miou": 43.03643737379028,
+    "profile_index": 4,
+    "bias_index": 0,
+    "confusion_matrix": [
+      [
+        1813916,
+        906,
+        48773,
+        4,
+        14,
+        14,
+        3331,
+        2131,
+        0,
+        1040,
+        221,
+        600
+      ],
+      [
+        89512,
+        73541,
+        134265,
+        79127,
+        687,
+        113,
+        1603,
+        6804,
+        16470,
+        28525,
+        171,
+        2362
+      ],
+      [
+        524528,
+        44946,
+        2697088,
+        5665,
+        7245,
+        2722,
+        53808,
+        25930,
+        262,
+        65463,
+        49,
+        33
+      ],
+      [
+        765,
+        393,
+        113530,
+        793231,
+        46903,
+        10632,
+        107,
+        34984,
+        0,
+        355,
+        0,
+        104
+      ],
+      [
+        3894,
+        0,
+        4421,
+        111848,
+        655241,
+        0,
+        3647,
+        4011,
+        0,
+        66,
+        0,
+        0
+      ],
+      [
+        7132,
+        1395,
+        15165,
+        928,
+        0,
+        59055,
+        158496,
+        101001,
+        26,
+        1686,
+        25,
+        191
+      ],
+      [
+        121903,
+        8239,
+        138780,
+        4614,
+        17031,
+        29651,
+        1603569,
+        523144,
+        1020,
+        63316,
+        3266,
+        1551
+      ],
+      [
+        54878,
+        7724,
+        44403,
+        35315,
+        2699,
+        12602,
+        153810,
+        297718,
+        25,
+        118399,
+        2558,
+        1709
+      ],
+      [
+        0,
+        1293,
+        0,
+        920,
+        0,
+        0,
+        1885,
+        758,
+        485918,
+        36,
+        17249,
+        14753
+      ],
+      [
+        326228,
+        82626,
+        282456,
+        313816,
+        1258,
+        27526,
+        178558,
+        369748,
+        40883,
+        2033680,
+        84728,
+        126124
+      ],
+      [
+        2967,
+        739,
+        2815,
+        1875,
+        0,
+        0,
+        2744,
+        1870,
+        24,
+        138420,
+        436754,
+        431348
+      ],
+      [
+        0,
+        995,
+        0,
+        805,
+        0,
+        0,
+        71,
+        497,
+        97597,
+        1,
+        30830,
+        105452
+      ]
+    ],
+    "development_confusions": {
+      "flair1": [
+        [
+          1813916,
+          906,
+          48773,
+          4,
+          14,
+          14,
+          3331,
+          2131,
+          0,
+          1040,
+          221,
+          600
+        ],
+        [
+          89512,
+          73541,
+          134265,
+          79127,
+          687,
+          113,
+          1603,
+          6804,
+          16470,
+          28525,
+          171,
+          2362
+        ],
+        [
+          524528,
+          44946,
+          2697088,
+          5665,
+          7245,
+          2722,
+          53808,
+          25930,
+          262,
+          65463,
+          49,
+          33
+        ],
+        [
+          765,
+          393,
+          113530,
+          793231,
+          46903,
+          10632,
+          107,
+          34984,
+          0,
+          355,
+          0,
+          104
+        ],
+        [
+          3894,
+          0,
+          4421,
+          111848,
+          655241,
+          0,
+          3647,
+          4011,
+          0,
+          66,
+          0,
+          0
+        ],
+        [
+          7132,
+          1395,
+          15165,
+          928,
+          0,
+          59055,
+          158496,
+          101001,
+          26,
+          1686,
+          25,
+          191
+        ],
+        [
+          121903,
+          8239,
+          138780,
+          4614,
+          17031,
+          29651,
+          1603569,
+          523144,
+          1020,
+          63316,
+          3266,
+          1551
+        ],
+        [
+          54878,
+          7724,
+          44403,
+          35315,
+          2699,
+          12602,
+          153810,
+          297718,
+          25,
+          118399,
+          2558,
+          1709
+        ],
+        [
+          0,
+          1293,
+          0,
+          920,
+          0,
+          0,
+          1885,
+          758,
+          485918,
+          36,
+          17249,
+          14753
+        ],
+        [
+          326228,
+          82626,
+          282456,
+          313816,
+          1258,
+          27526,
+          178558,
+          369748,
+          40883,
+          2033680,
+          84728,
+          126124
+        ],
+        [
+          2967,
+          739,
+          2815,
+          1875,
+          0,
+          0,
+          2744,
+          1870,
+          24,
+          138420,
+          436754,
+          431348
+        ],
+        [
+          0,
+          995,
+          0,
+          805,
+          0,
+          0,
+          71,
+          497,
+          97597,
+          1,
+          30830,
+          105452
+        ]
+      ]
+    },
+    "implementation": "geometry-kev-variable-alias-static-search-v1-20261009",
+    "status": "complete",
+    "development_keys": [
+      "D012_2019/Z15_NF/img/IMG_063098.tif",
+      "D012_2019/Z15_NF/img/IMG_063109.tif",
+      "D012_2019/Z20_FF/img/IMG_063396.tif",
+      "D012_2019/Z4_UF/img/IMG_062108.tif",
+      "D012_2019/Z5_UA/img/IMG_062261.tif",
+      "D012_2019/Z7_AF/img/IMG_062481.tif",
+      "D022_2021/Z2_UN/img/IMG_063688.tif",
+      "D026_2020/Z10_UA/img/IMG_064759.tif",
+      "D026_2020/Z11_NN/img/IMG_064773.tif",
+      "D026_2020/Z12_UU/img/IMG_064891.tif",
+      "D026_2020/Z13_UU/img/IMG_064979.tif",
+      "D026_2020/Z16_AU/img/IMG_065299.tif",
+      "D026_2020/Z16_AU/img/IMG_065302.tif",
+      "D026_2020/Z9_AU/img/IMG_064623.tif",
+      "D026_2020/Z9_AU/img/IMG_064627.tif",
+      "D064_2021/Z15_NF/img/IMG_066729.tif",
+      "D064_2021/Z17_UU/img/IMG_066810.tif",
+      "D064_2021/Z18_UA/img/IMG_066918.tif",
+      "D064_2021/Z18_UA/img/IMG_066937.tif",
+      "D064_2021/Z19_UU/img/IMG_066954.tif",
+      "D064_2021/Z21_UN/img/IMG_067063.tif",
+      "D064_2021/Z28_UN/img/IMG_067398.tif",
+      "D064_2021/Z28_UN/img/IMG_067412.tif",
+      "D064_2021/Z6_NN/img/IMG_066185.tif",
+      "D068_2021/Z12_UU/img/IMG_068504.tif",
+      "D068_2021/Z13_UF/img/IMG_068626.tif",
+      "D068_2021/Z15_UN/img/IMG_068820.tif",
+      "D068_2021/Z17_UA/img/IMG_069019.tif",
+      "D068_2021/Z18_UF/img/IMG_069127.tif",
+      "D068_2021/Z1_AF/img/IMG_067630.tif",
+      "D068_2021/Z2_UU/img/IMG_067698.tif",
+      "D068_2021/Z2_UU/img/IMG_067752.tif",
+      "D068_2021/Z4_AF/img/IMG_067841.tif",
+      "D071_2020/Z12_UA/img/IMG_070507.tif",
+      "D071_2020/Z13_UA/img/IMG_070593.tif",
+      "D071_2020/Z16_UA/img/IMG_070839.tif",
+      "D071_2020/Z4_UU/img/IMG_069704.tif",
+      "D075_2021/Z17_UU/img/IMG_071616.tif",
+      "D075_2021/Z9_UU/img/IMG_071428.tif",
+      "D076_2019/Z11_UU/img/IMG_072439.tif",
+      "D076_2019/Z16_UU/img/IMG_072766.tif",
+      "D076_2019/Z19_UN/img/IMG_072955.tif",
+      "D076_2019/Z19_UN/img/IMG_073127.tif",
+      "D076_2019/Z19_UN/img/IMG_073147.tif",
+      "D076_2019/Z1_NN/img/IMG_071918.tif",
+      "D076_2019/Z20_UU/img/IMG_073175.tif",
+      "D076_2019/Z20_UU/img/IMG_073230.tif",
+      "D076_2019/Z22_UU/img/IMG_073319.tif",
+      "D076_2019/Z3_NU/img/IMG_072041.tif",
+      "D083_2020/Z2_FU/img/IMG_074418.tif",
+      "D083_2020/Z3_UU/img/IMG_074511.tif",
+      "D083_2020/Z3_UU/img/IMG_074526.tif",
+      "D083_2020/Z3_UU/img/IMG_074556.tif",
+      "D083_2020/Z5_AU/img/IMG_075026.tif",
+      "D083_2020/Z5_AU/img/IMG_075077.tif",
+      "D083_2020/Z7_UU/img/IMG_075401.tif",
+      "D083_2020/Z7_UU/img/IMG_075424.tif",
+      "D083_2020/Z7_UU/img/IMG_075521.tif",
+      "D083_2020/Z7_UU/img/IMG_075530.tif",
+      "D083_2020/Z7_UU/img/IMG_075640.tif",
+      "D085_2019/Z10_UN/img/IMG_076444.tif",
+      "D085_2019/Z14_UA/img/IMG_076773.tif",
+      "D085_2019/Z16_NU/img/IMG_077021.tif",
+      "D085_2019/Z6_UF/img/IMG_076083.tif"
+    ],
+    "development_source": "fixed_labeled_validation_development_subset",
+    "vocabulary": {
+      "original": {
+        "classes": [
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "residential building",
+              "commercial building",
+              "industrial building",
+              "warehouse",
+              "apartment building",
+              "roofed structure",
+              "building roof",
+              "house roof",
+              "rooftop",
+              "construction",
+              "man made structure",
+              "urban building",
+              "rural building",
+              "farm building",
+              "agricultural silo",
+              "water tower"
+            ]
+          },
+          {
+            "name": "pervious surface",
+            "synonyms": [
+              "pervious surface",
+              "permeable surface",
+              "gravel surface",
+              "gravel ground",
+              "gravel pathway",
+              "unpaved pathway",
+              "loose stone surface",
+              "railway ballast",
+              "railway track",
+              "quarry",
+              "building site",
+              "construction site",
+              "mineral ground",
+              "artificial bare soil",
+              "gravel road",
+              "unpaved road",
+              "riprap",
+              "loose stones",
+              "gravel yard",
+              "landfill"
+            ]
+          },
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "paved surface",
+              "asphalt",
+              "concrete surface",
+              "road",
+              "paved road",
+              "roadway",
+              "street",
+              "parking lot",
+              "pavement",
+              "cobblestone surface",
+              "sealed ground",
+              "tarmac",
+              "paved courtyard",
+              "hard surface",
+              "urban pavement",
+              "asphalt road",
+              "concrete ground",
+              "paved sports court",
+              "paved path"
+            ]
+          },
+          {
+            "name": "bare soil",
+            "synonyms": [
+              "bare soil",
+              "bare ground",
+              "natural bare soil",
+              "exposed soil",
+              "unvegetated ground",
+              "sand",
+              "sandy ground",
+              "rocky ground",
+              "pebbles",
+              "stones",
+              "rock surface",
+              "natural mineral surface",
+              "bare terrain",
+              "coastal sand",
+              "sandy beach",
+              "bare rock",
+              "stony ground",
+              "dry soil",
+              "exposed earth",
+              "natural bare land"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "sea",
+              "ocean",
+              "stream",
+              "canal",
+              "reservoir",
+              "open water",
+              "surface water",
+              "fresh water",
+              "flowing water",
+              "standing water",
+              "river water",
+              "lake water",
+              "water surface",
+              "inland water",
+              "coastal water"
+            ]
+          },
+          {
+            "name": "coniferous",
+            "synonyms": [
+              "coniferous",
+              "coniferous trees",
+              "coniferous forest",
+              "evergreen forest",
+              "pine forest",
+              "fir forest",
+              "pine trees",
+              "fir trees",
+              "cedar trees",
+              "cypress trees",
+              "needleleaf trees",
+              "needleleaf forest",
+              "conifer canopy",
+              "evergreen canopy",
+              "pine canopy",
+              "conifer woodland",
+              "tall conifers",
+              "evergreen trees",
+              "dense conifer forest",
+              "coniferous woodland"
+            ]
+          },
+          {
+            "name": "deciduous",
+            "synonyms": [
+              "deciduous",
+              "deciduous trees",
+              "deciduous forest",
+              "broadleaf forest",
+              "broadleaf trees",
+              "oak trees",
+              "beech trees",
+              "birch trees",
+              "poplar trees",
+              "chestnut trees",
+              "deciduous canopy",
+              "broadleaf canopy",
+              "leafy trees",
+              "deciduous woodland",
+              "tall broadleaf trees",
+              "oak forest",
+              "beech forest",
+              "temperate deciduous forest",
+              "dense deciduous forest",
+              "broadleaved woodland"
+            ]
+          },
+          {
+            "name": "brushwood",
+            "synonyms": [
+              "brushwood",
+              "shrubland",
+              "shrubs",
+              "bushes",
+              "scrubland",
+              "low woody vegetation",
+              "young trees",
+              "short trees",
+              "brush",
+              "thicket",
+              "natural scrub",
+              "scrub vegetation",
+              "dense shrubs",
+              "bushy ground",
+              "mountain moor",
+              "woody undergrowth",
+              "abandoned field shrubs",
+              "shrub cover",
+              "low woodland",
+              "small woody plants"
+            ]
+          },
+          {
+            "name": "vineyard",
+            "synonyms": [
+              "vineyard",
+              "vineyards",
+              "grape vines",
+              "grape field",
+              "vine rows",
+              "grape cultivation",
+              "vine plantation",
+              "grape plantation",
+              "wine grape field",
+              "rows of vines",
+              "cultivated vines",
+              "grape growing land",
+              "vineyard rows",
+              "grape growing field",
+              "vine farming",
+              "vine crop",
+              "grape farm",
+              "vineyard parcel",
+              "vineyard landscape",
+              "grape vines in rows"
+            ]
+          },
+          {
+            "name": "herbaceous vegetation",
+            "synonyms": [
+              "herbaceous vegetation",
+              "grass",
+              "grassland",
+              "natural grass",
+              "lawn",
+              "ornamental lawn",
+              "public park grass",
+              "garden grass",
+              "recreational field",
+              "grassy ground",
+              "herbaceous cover",
+              "wild grass",
+              "uncultivated grass",
+              "roadside grass",
+              "natural meadow",
+              "non agricultural grassland",
+              "mountain grassland",
+              "grass in woodland",
+              "herbaceous plants",
+              "green grass cover"
+            ]
+          },
+          {
+            "name": "agricultural land",
+            "synonyms": [
+              "agricultural land",
+              "farmland",
+              "cropland",
+              "crop field",
+              "cultivated field",
+              "cultivated land",
+              "farm field",
+              "agricultural field",
+              "growing crops",
+              "arable land",
+              "cereal field",
+              "wheat field",
+              "corn field",
+              "crop rows",
+              "agricultural grassland",
+              "managed pasture",
+              "temporary pasture",
+              "permanent agricultural grassland",
+              "farming land",
+              "crop cultivation"
+            ]
+          },
+          {
+            "name": "plowed land",
+            "synonyms": [
+              "plowed land",
+              "ploughed land",
+              "plowed field",
+              "ploughed field",
+              "tilled field",
+              "tilled soil",
+              "bare agricultural field",
+              "harvested field",
+              "freshly harvested field",
+              "recently plowed land",
+              "bare farmland",
+              "fallow agricultural field",
+              "soil furrows",
+              "plough furrows",
+              "cultivated bare soil",
+              "brown agricultural field",
+              "unvegetated cropland",
+              "prepared agricultural soil",
+              "earth field",
+              "bare arable land"
+            ]
+          }
+        ],
+        "template": "RS6"
+      },
+      "original_imagenet": {
+        "classes": [
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "residential building",
+              "commercial building",
+              "industrial building",
+              "warehouse",
+              "apartment building",
+              "roofed structure",
+              "building roof",
+              "house roof",
+              "rooftop",
+              "construction",
+              "man made structure",
+              "urban building",
+              "rural building",
+              "farm building",
+              "agricultural silo",
+              "water tower"
+            ]
+          },
+          {
+            "name": "pervious surface",
+            "synonyms": [
+              "pervious surface",
+              "permeable surface",
+              "gravel surface",
+              "gravel ground",
+              "gravel pathway",
+              "unpaved pathway",
+              "loose stone surface",
+              "railway ballast",
+              "railway track",
+              "quarry",
+              "building site",
+              "construction site",
+              "mineral ground",
+              "artificial bare soil",
+              "gravel road",
+              "unpaved road",
+              "riprap",
+              "loose stones",
+              "gravel yard",
+              "landfill"
+            ]
+          },
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "paved surface",
+              "asphalt",
+              "concrete surface",
+              "road",
+              "paved road",
+              "roadway",
+              "street",
+              "parking lot",
+              "pavement",
+              "cobblestone surface",
+              "sealed ground",
+              "tarmac",
+              "paved courtyard",
+              "hard surface",
+              "urban pavement",
+              "asphalt road",
+              "concrete ground",
+              "paved sports court",
+              "paved path"
+            ]
+          },
+          {
+            "name": "bare soil",
+            "synonyms": [
+              "bare soil",
+              "bare ground",
+              "natural bare soil",
+              "exposed soil",
+              "unvegetated ground",
+              "sand",
+              "sandy ground",
+              "rocky ground",
+              "pebbles",
+              "stones",
+              "rock surface",
+              "natural mineral surface",
+              "bare terrain",
+              "coastal sand",
+              "sandy beach",
+              "bare rock",
+              "stony ground",
+              "dry soil",
+              "exposed earth",
+              "natural bare land"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "sea",
+              "ocean",
+              "stream",
+              "canal",
+              "reservoir",
+              "open water",
+              "surface water",
+              "fresh water",
+              "flowing water",
+              "standing water",
+              "river water",
+              "lake water",
+              "water surface",
+              "inland water",
+              "coastal water"
+            ]
+          },
+          {
+            "name": "coniferous",
+            "synonyms": [
+              "coniferous",
+              "coniferous trees",
+              "coniferous forest",
+              "evergreen forest",
+              "pine forest",
+              "fir forest",
+              "pine trees",
+              "fir trees",
+              "cedar trees",
+              "cypress trees",
+              "needleleaf trees",
+              "needleleaf forest",
+              "conifer canopy",
+              "evergreen canopy",
+              "pine canopy",
+              "conifer woodland",
+              "tall conifers",
+              "evergreen trees",
+              "dense conifer forest",
+              "coniferous woodland"
+            ]
+          },
+          {
+            "name": "deciduous",
+            "synonyms": [
+              "deciduous",
+              "deciduous trees",
+              "deciduous forest",
+              "broadleaf forest",
+              "broadleaf trees",
+              "oak trees",
+              "beech trees",
+              "birch trees",
+              "poplar trees",
+              "chestnut trees",
+              "deciduous canopy",
+              "broadleaf canopy",
+              "leafy trees",
+              "deciduous woodland",
+              "tall broadleaf trees",
+              "oak forest",
+              "beech forest",
+              "temperate deciduous forest",
+              "dense deciduous forest",
+              "broadleaved woodland"
+            ]
+          },
+          {
+            "name": "brushwood",
+            "synonyms": [
+              "brushwood",
+              "shrubland",
+              "shrubs",
+              "bushes",
+              "scrubland",
+              "low woody vegetation",
+              "young trees",
+              "short trees",
+              "brush",
+              "thicket",
+              "natural scrub",
+              "scrub vegetation",
+              "dense shrubs",
+              "bushy ground",
+              "mountain moor",
+              "woody undergrowth",
+              "abandoned field shrubs",
+              "shrub cover",
+              "low woodland",
+              "small woody plants"
+            ]
+          },
+          {
+            "name": "vineyard",
+            "synonyms": [
+              "vineyard",
+              "vineyards",
+              "grape vines",
+              "grape field",
+              "vine rows",
+              "grape cultivation",
+              "vine plantation",
+              "grape plantation",
+              "wine grape field",
+              "rows of vines",
+              "cultivated vines",
+              "grape growing land",
+              "vineyard rows",
+              "grape growing field",
+              "vine farming",
+              "vine crop",
+              "grape farm",
+              "vineyard parcel",
+              "vineyard landscape",
+              "grape vines in rows"
+            ]
+          },
+          {
+            "name": "herbaceous vegetation",
+            "synonyms": [
+              "herbaceous vegetation",
+              "grass",
+              "grassland",
+              "natural grass",
+              "lawn",
+              "ornamental lawn",
+              "public park grass",
+              "garden grass",
+              "recreational field",
+              "grassy ground",
+              "herbaceous cover",
+              "wild grass",
+              "uncultivated grass",
+              "roadside grass",
+              "natural meadow",
+              "non agricultural grassland",
+              "mountain grassland",
+              "grass in woodland",
+              "herbaceous plants",
+              "green grass cover"
+            ]
+          },
+          {
+            "name": "agricultural land",
+            "synonyms": [
+              "agricultural land",
+              "farmland",
+              "cropland",
+              "crop field",
+              "cultivated field",
+              "cultivated land",
+              "farm field",
+              "agricultural field",
+              "growing crops",
+              "arable land",
+              "cereal field",
+              "wheat field",
+              "corn field",
+              "crop rows",
+              "agricultural grassland",
+              "managed pasture",
+              "temporary pasture",
+              "permanent agricultural grassland",
+              "farming land",
+              "crop cultivation"
+            ]
+          },
+          {
+            "name": "plowed land",
+            "synonyms": [
+              "plowed land",
+              "ploughed land",
+              "plowed field",
+              "ploughed field",
+              "tilled field",
+              "tilled soil",
+              "bare agricultural field",
+              "harvested field",
+              "freshly harvested field",
+              "recently plowed land",
+              "bare farmland",
+              "fallow agricultural field",
+              "soil furrows",
+              "plough furrows",
+              "cultivated bare soil",
+              "brown agricultural field",
+              "unvegetated cropland",
+              "prepared agricultural soil",
+              "earth field",
+              "bare arable land"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "focused20": {
+        "classes": [
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "residential building",
+              "commercial building",
+              "industrial building",
+              "warehouse",
+              "apartment building",
+              "roofed structure",
+              "building roof",
+              "house roof",
+              "rooftop",
+              "construction",
+              "man made structure",
+              "urban building",
+              "rural building",
+              "farm building",
+              "agricultural silo",
+              "water tower"
+            ]
+          },
+          {
+            "name": "pervious surface",
+            "synonyms": [
+              "pervious surface",
+              "permeable surface",
+              "gravel surface",
+              "gravel ground",
+              "gravel pathway",
+              "unpaved pathway",
+              "loose stone surface",
+              "railway ballast",
+              "railway track",
+              "quarry",
+              "building site",
+              "construction site",
+              "mineral ground",
+              "artificial bare soil",
+              "gravel road",
+              "unpaved road",
+              "riprap",
+              "loose stones",
+              "gravel yard",
+              "landfill"
+            ]
+          },
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "paved surface",
+              "asphalt",
+              "concrete surface",
+              "road",
+              "paved road",
+              "roadway",
+              "street",
+              "parking lot",
+              "pavement",
+              "cobblestone surface",
+              "sealed ground",
+              "tarmac",
+              "paved courtyard",
+              "hard surface",
+              "urban pavement",
+              "asphalt road",
+              "concrete ground",
+              "paved sports court",
+              "paved path"
+            ]
+          },
+          {
+            "name": "bare soil",
+            "synonyms": [
+              "bare soil",
+              "bare ground",
+              "natural bare soil",
+              "exposed soil",
+              "unvegetated ground",
+              "sand",
+              "sandy ground",
+              "rocky ground",
+              "pebbles",
+              "stones",
+              "rock surface",
+              "natural mineral surface",
+              "bare terrain",
+              "coastal sand",
+              "sandy beach",
+              "bare rock",
+              "stony ground",
+              "dry soil",
+              "exposed earth",
+              "natural bare land"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "sea",
+              "ocean",
+              "stream",
+              "canal",
+              "reservoir",
+              "open water",
+              "surface water",
+              "fresh water",
+              "flowing water",
+              "standing water",
+              "river water",
+              "lake water",
+              "water surface",
+              "inland water",
+              "coastal water"
+            ]
+          },
+          {
+            "name": "coniferous",
+            "synonyms": [
+              "coniferous",
+              "coniferous trees",
+              "coniferous forest",
+              "evergreen forest",
+              "pine forest",
+              "fir forest",
+              "pine trees",
+              "fir trees",
+              "cedar trees",
+              "cypress trees",
+              "needleleaf trees",
+              "needleleaf forest",
+              "conifer canopy",
+              "evergreen canopy",
+              "pine canopy",
+              "conifer woodland",
+              "tall conifers",
+              "evergreen trees",
+              "dense conifer forest",
+              "coniferous woodland"
+            ]
+          },
+          {
+            "name": "deciduous",
+            "synonyms": [
+              "deciduous",
+              "deciduous trees",
+              "deciduous forest",
+              "broadleaf forest",
+              "broadleaf trees",
+              "oak trees",
+              "beech trees",
+              "birch trees",
+              "poplar trees",
+              "chestnut trees",
+              "deciduous canopy",
+              "broadleaf canopy",
+              "leafy trees",
+              "deciduous woodland",
+              "tall broadleaf trees",
+              "oak forest",
+              "beech forest",
+              "temperate deciduous forest",
+              "dense deciduous forest",
+              "broadleaved woodland"
+            ]
+          },
+          {
+            "name": "brushwood",
+            "synonyms": [
+              "brushwood",
+              "shrubland",
+              "shrubs",
+              "bushes",
+              "scrubland",
+              "low woody vegetation",
+              "young trees",
+              "short trees",
+              "brush",
+              "thicket",
+              "natural scrub",
+              "scrub vegetation",
+              "dense shrubs",
+              "bushy ground",
+              "mountain moor",
+              "woody undergrowth",
+              "abandoned field shrubs",
+              "shrub cover",
+              "low woodland",
+              "small woody plants"
+            ]
+          },
+          {
+            "name": "vineyard",
+            "synonyms": [
+              "vineyard",
+              "vineyards",
+              "grape vines",
+              "grape field",
+              "vine rows",
+              "grape cultivation",
+              "vine plantation",
+              "grape plantation",
+              "wine grape field",
+              "rows of vines",
+              "cultivated vines",
+              "grape growing land",
+              "vineyard rows",
+              "grape growing field",
+              "vine farming",
+              "vine crop",
+              "grape farm",
+              "vineyard parcel",
+              "vineyard landscape",
+              "grape vines in rows"
+            ]
+          },
+          {
+            "name": "herbaceous vegetation",
+            "synonyms": [
+              "herbaceous vegetation",
+              "grass",
+              "grassland",
+              "natural grass",
+              "lawn",
+              "ornamental lawn",
+              "public park grass",
+              "garden grass",
+              "recreational field",
+              "grassy ground",
+              "herbaceous cover",
+              "wild grass",
+              "uncultivated grass",
+              "roadside grass",
+              "natural meadow",
+              "non agricultural grassland",
+              "mountain grassland",
+              "grass in woodland",
+              "herbaceous plants",
+              "green grass cover"
+            ]
+          },
+          {
+            "name": "agricultural land",
+            "synonyms": [
+              "agricultural land",
+              "farmland",
+              "cropland",
+              "crop field",
+              "cultivated field",
+              "cultivated land",
+              "farm field",
+              "agricultural field",
+              "growing crops",
+              "arable land",
+              "cereal field",
+              "wheat field",
+              "corn field",
+              "crop rows",
+              "agricultural grassland",
+              "managed pasture",
+              "temporary pasture",
+              "permanent agricultural grassland",
+              "farming land",
+              "crop cultivation"
+            ]
+          },
+          {
+            "name": "plowed land",
+            "synonyms": [
+              "plowed land",
+              "ploughed land",
+              "plowed field",
+              "ploughed field",
+              "tilled field",
+              "tilled soil",
+              "bare agricultural field",
+              "harvested field",
+              "freshly harvested field",
+              "recently plowed land",
+              "bare farmland",
+              "fallow agricultural field",
+              "soil furrows",
+              "plough furrows",
+              "cultivated bare soil",
+              "brown agricultural field",
+              "unvegetated cropland",
+              "prepared agricultural soil",
+              "earth field",
+              "bare arable land"
+            ]
+          }
+        ],
+        "template": "RS6"
+      },
+      "kev40_imagenet": {
+        "classes": [
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "residential building",
+              "commercial building",
+              "industrial building",
+              "warehouse",
+              "apartment building",
+              "roofed structure",
+              "house roof",
+              "rooftop",
+              "urban building",
+              "rural building",
+              "farm building",
+              "water tower"
+            ]
+          },
+          {
+            "name": "pervious surface",
+            "synonyms": [
+              "pervious surface",
+              "gravel surface",
+              "gravel ground",
+              "gravel pathway",
+              "unpaved pathway",
+              "gravel road",
+              "unpaved road",
+              "gravel yard"
+            ]
+          },
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "asphalt",
+              "concrete surface",
+              "road",
+              "paved road",
+              "roadway",
+              "street",
+              "parking lot",
+              "pavement",
+              "cobblestone surface",
+              "tarmac",
+              "paved courtyard",
+              "urban pavement",
+              "asphalt road",
+              "concrete ground",
+              "paved sports court",
+              "paved path"
+            ]
+          },
+          {
+            "name": "bare soil",
+            "synonyms": [
+              "bare soil",
+              "bare ground",
+              "natural bare soil",
+              "exposed soil",
+              "sandy ground",
+              "bare terrain",
+              "bare rock",
+              "dry soil",
+              "exposed earth",
+              "natural bare land"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "stream",
+              "canal",
+              "reservoir",
+              "open water",
+              "surface water",
+              "fresh water",
+              "flowing water",
+              "standing water",
+              "river water",
+              "lake water",
+              "water surface",
+              "inland water",
+              "coastal water"
+            ]
+          },
+          {
+            "name": "coniferous",
+            "synonyms": [
+              "coniferous",
+              "coniferous trees",
+              "coniferous forest",
+              "evergreen forest",
+              "pine forest",
+              "fir forest",
+              "pine trees",
+              "fir trees",
+              "cedar trees",
+              "cypress trees",
+              "needleleaf trees",
+              "needleleaf forest",
+              "conifer canopy",
+              "evergreen canopy",
+              "pine canopy",
+              "conifer woodland",
+              "tall conifers",
+              "evergreen trees",
+              "dense conifer forest",
+              "coniferous woodland"
+            ]
+          },
+          {
+            "name": "deciduous",
+            "synonyms": [
+              "deciduous",
+              "deciduous trees",
+              "deciduous forest",
+              "broadleaf forest",
+              "broadleaf trees",
+              "oak trees",
+              "beech trees",
+              "birch trees",
+              "poplar trees",
+              "chestnut trees",
+              "deciduous canopy",
+              "broadleaf canopy",
+              "leafy trees",
+              "deciduous woodland",
+              "tall broadleaf trees",
+              "oak forest",
+              "beech forest",
+              "temperate deciduous forest",
+              "dense deciduous forest",
+              "broadleaved woodland"
+            ]
+          },
+          {
+            "name": "brushwood",
+            "synonyms": [
+              "brushwood",
+              "bushes",
+              "low woody vegetation",
+              "short trees",
+              "brush",
+              "thicket",
+              "natural scrub",
+              "dense shrubs",
+              "woody undergrowth",
+              "abandoned field shrubs",
+              "small woody plants"
+            ]
+          },
+          {
+            "name": "vineyard",
+            "synonyms": [
+              "vineyard",
+              "vineyards",
+              "grape vines",
+              "grape field",
+              "vine rows",
+              "grape cultivation",
+              "vine plantation",
+              "grape plantation",
+              "wine grape field",
+              "rows of vines",
+              "cultivated vines",
+              "grape growing land",
+              "vineyard rows",
+              "grape growing field",
+              "grape farm",
+              "vineyard parcel",
+              "grape vines in rows"
+            ]
+          },
+          {
+            "name": "herbaceous vegetation",
+            "synonyms": [
+              "herbaceous vegetation",
+              "grass",
+              "grassland",
+              "natural grass",
+              "lawn",
+              "ornamental lawn",
+              "public park grass",
+              "garden grass",
+              "grassy ground",
+              "herbaceous cover",
+              "wild grass",
+              "uncultivated grass",
+              "roadside grass",
+              "natural meadow",
+              "non agricultural grassland",
+              "mountain grassland",
+              "grass in woodland",
+              "herbaceous plants",
+              "green grass cover"
+            ]
+          },
+          {
+            "name": "agricultural land",
+            "synonyms": [
+              "agricultural land",
+              "farmland",
+              "cropland",
+              "crop field",
+              "cultivated field",
+              "cultivated land",
+              "farm field",
+              "agricultural field",
+              "growing crops",
+              "arable land",
+              "cereal field",
+              "wheat field",
+              "corn field",
+              "crop rows",
+              "agricultural grassland",
+              "managed pasture",
+              "temporary pasture",
+              "permanent agricultural grassland",
+              "farming land",
+              "crop cultivation"
+            ]
+          },
+          {
+            "name": "plowed land",
+            "synonyms": [
+              "plowed land",
+              "ploughed land",
+              "plowed field",
+              "ploughed field",
+              "tilled field",
+              "tilled soil",
+              "bare agricultural field",
+              "harvested field",
+              "freshly harvested field",
+              "recently plowed land",
+              "bare farmland",
+              "fallow agricultural field",
+              "soil furrows",
+              "plough furrows",
+              "cultivated bare soil",
+              "brown agricultural field",
+              "unvegetated cropland",
+              "prepared agricultural soil",
+              "bare arable land"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "kev60_imagenet": {
+        "classes": [
+          {
+            "name": "building",
+            "synonyms": [
+              "building"
+            ]
+          },
+          {
+            "name": "pervious surface",
+            "synonyms": [
+              "pervious surface"
+            ]
+          },
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface"
+            ]
+          },
+          {
+            "name": "bare soil",
+            "synonyms": [
+              "bare soil"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water"
+            ]
+          },
+          {
+            "name": "coniferous",
+            "synonyms": [
+              "coniferous",
+              "pine trees",
+              "fir trees"
+            ]
+          },
+          {
+            "name": "deciduous",
+            "synonyms": [
+              "deciduous"
+            ]
+          },
+          {
+            "name": "brushwood",
+            "synonyms": [
+              "brushwood"
+            ]
+          },
+          {
+            "name": "vineyard",
+            "synonyms": [
+              "vineyard"
+            ]
+          },
+          {
+            "name": "herbaceous vegetation",
+            "synonyms": [
+              "herbaceous vegetation"
+            ]
+          },
+          {
+            "name": "agricultural land",
+            "synonyms": [
+              "agricultural land"
+            ]
+          },
+          {
+            "name": "plowed land",
+            "synonyms": [
+              "plowed land",
+              "soil furrows"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "kev80_imagenet": {
+        "classes": [
+          {
+            "name": "building",
+            "synonyms": [
+              "building"
+            ]
+          },
+          {
+            "name": "pervious surface",
+            "synonyms": [
+              "pervious surface"
+            ]
+          },
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface"
+            ]
+          },
+          {
+            "name": "bare soil",
+            "synonyms": [
+              "bare soil"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water"
+            ]
+          },
+          {
+            "name": "coniferous",
+            "synonyms": [
+              "coniferous"
+            ]
+          },
+          {
+            "name": "deciduous",
+            "synonyms": [
+              "deciduous"
+            ]
+          },
+          {
+            "name": "brushwood",
+            "synonyms": [
+              "brushwood"
+            ]
+          },
+          {
+            "name": "vineyard",
+            "synonyms": [
+              "vineyard"
+            ]
+          },
+          {
+            "name": "herbaceous vegetation",
+            "synonyms": [
+              "herbaceous vegetation"
+            ]
+          },
+          {
+            "name": "agricultural land",
+            "synonyms": [
+              "agricultural land"
+            ]
+          },
+          {
+            "name": "plowed land",
+            "synonyms": [
+              "plowed land"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "pool_imagenet": {
+        "classes": [
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "residential building",
+              "commercial building",
+              "industrial building",
+              "warehouse",
+              "apartment building",
+              "roofed structure",
+              "building roof",
+              "house roof",
+              "rooftop",
+              "construction",
+              "man made structure",
+              "urban building",
+              "rural building",
+              "farm building",
+              "agricultural silo",
+              "water tower"
+            ]
+          },
+          {
+            "name": "pervious surface",
+            "synonyms": [
+              "pervious surface",
+              "permeable surface",
+              "gravel surface",
+              "gravel ground",
+              "gravel pathway",
+              "unpaved pathway",
+              "loose stone surface",
+              "railway ballast",
+              "railway track",
+              "quarry",
+              "building site",
+              "construction site",
+              "mineral ground",
+              "artificial bare soil",
+              "gravel road",
+              "unpaved road",
+              "riprap",
+              "loose stones",
+              "gravel yard",
+              "landfill"
+            ]
+          },
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "paved surface",
+              "asphalt",
+              "concrete surface",
+              "road",
+              "paved road",
+              "roadway",
+              "street",
+              "parking lot",
+              "pavement",
+              "cobblestone surface",
+              "sealed ground",
+              "tarmac",
+              "paved courtyard",
+              "hard surface",
+              "urban pavement",
+              "asphalt road",
+              "concrete ground",
+              "paved sports court",
+              "paved path"
+            ]
+          },
+          {
+            "name": "bare soil",
+            "synonyms": [
+              "bare soil",
+              "bare ground",
+              "natural bare soil",
+              "exposed soil",
+              "unvegetated ground",
+              "sand",
+              "sandy ground",
+              "rocky ground",
+              "pebbles",
+              "stones",
+              "rock surface",
+              "natural mineral surface",
+              "bare terrain",
+              "coastal sand",
+              "sandy beach",
+              "bare rock",
+              "stony ground",
+              "dry soil",
+              "exposed earth",
+              "natural bare land"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "sea",
+              "ocean",
+              "stream",
+              "canal",
+              "reservoir",
+              "open water",
+              "surface water",
+              "fresh water",
+              "flowing water",
+              "standing water",
+              "river water",
+              "lake water",
+              "water surface",
+              "inland water",
+              "coastal water"
+            ]
+          },
+          {
+            "name": "coniferous",
+            "synonyms": [
+              "coniferous",
+              "coniferous trees",
+              "coniferous forest",
+              "evergreen forest",
+              "pine forest",
+              "fir forest",
+              "pine trees",
+              "fir trees",
+              "cedar trees",
+              "cypress trees",
+              "needleleaf trees",
+              "needleleaf forest",
+              "conifer canopy",
+              "evergreen canopy",
+              "pine canopy",
+              "conifer woodland",
+              "tall conifers",
+              "evergreen trees",
+              "dense conifer forest",
+              "coniferous woodland"
+            ]
+          },
+          {
+            "name": "deciduous",
+            "synonyms": [
+              "deciduous",
+              "deciduous trees",
+              "deciduous forest",
+              "broadleaf forest",
+              "broadleaf trees",
+              "oak trees",
+              "beech trees",
+              "birch trees",
+              "poplar trees",
+              "chestnut trees",
+              "deciduous canopy",
+              "broadleaf canopy",
+              "leafy trees",
+              "deciduous woodland",
+              "tall broadleaf trees",
+              "oak forest",
+              "beech forest",
+              "temperate deciduous forest",
+              "dense deciduous forest",
+              "broadleaved woodland"
+            ]
+          },
+          {
+            "name": "brushwood",
+            "synonyms": [
+              "brushwood",
+              "shrubland",
+              "shrubs",
+              "bushes",
+              "scrubland",
+              "low woody vegetation",
+              "young trees",
+              "short trees",
+              "brush",
+              "thicket",
+              "natural scrub",
+              "scrub vegetation",
+              "dense shrubs",
+              "bushy ground",
+              "mountain moor",
+              "woody undergrowth",
+              "abandoned field shrubs",
+              "shrub cover",
+              "low woodland",
+              "small woody plants"
+            ]
+          },
+          {
+            "name": "vineyard",
+            "synonyms": [
+              "vineyard",
+              "vineyards",
+              "grape vines",
+              "grape field",
+              "vine rows",
+              "grape cultivation",
+              "vine plantation",
+              "grape plantation",
+              "wine grape field",
+              "rows of vines",
+              "cultivated vines",
+              "grape growing land",
+              "vineyard rows",
+              "grape growing field",
+              "vine farming",
+              "vine crop",
+              "grape farm",
+              "vineyard parcel",
+              "vineyard landscape",
+              "grape vines in rows"
+            ]
+          },
+          {
+            "name": "herbaceous vegetation",
+            "synonyms": [
+              "herbaceous vegetation",
+              "grass",
+              "grassland",
+              "natural grass",
+              "lawn",
+              "ornamental lawn",
+              "public park grass",
+              "garden grass",
+              "recreational field",
+              "grassy ground",
+              "herbaceous cover",
+              "wild grass",
+              "uncultivated grass",
+              "roadside grass",
+              "natural meadow",
+              "non agricultural grassland",
+              "mountain grassland",
+              "grass in woodland",
+              "herbaceous plants",
+              "green grass cover"
+            ]
+          },
+          {
+            "name": "agricultural land",
+            "synonyms": [
+              "agricultural land",
+              "farmland",
+              "cropland",
+              "crop field",
+              "cultivated field",
+              "cultivated land",
+              "farm field",
+              "agricultural field",
+              "growing crops",
+              "arable land",
+              "cereal field",
+              "wheat field",
+              "corn field",
+              "crop rows",
+              "agricultural grassland",
+              "managed pasture",
+              "temporary pasture",
+              "permanent agricultural grassland",
+              "farming land",
+              "crop cultivation"
+            ]
+          },
+          {
+            "name": "plowed land",
+            "synonyms": [
+              "plowed land",
+              "ploughed land",
+              "plowed field",
+              "ploughed field",
+              "tilled field",
+              "tilled soil",
+              "bare agricultural field",
+              "harvested field",
+              "freshly harvested field",
+              "recently plowed land",
+              "bare farmland",
+              "fallow agricultural field",
+              "soil furrows",
+              "plough furrows",
+              "cultivated bare soil",
+              "brown agricultural field",
+              "unvegetated cropland",
+              "prepared agricultural soil",
+              "earth field",
+              "bare arable land"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "kev40_segmentation": {
+        "classes": [
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "residential building",
+              "commercial building",
+              "industrial building",
+              "warehouse",
+              "apartment building",
+              "roofed structure",
+              "house roof",
+              "rooftop",
+              "urban building",
+              "rural building",
+              "farm building",
+              "water tower"
+            ]
+          },
+          {
+            "name": "pervious surface",
+            "synonyms": [
+              "pervious surface",
+              "gravel surface",
+              "gravel ground",
+              "gravel pathway",
+              "unpaved pathway",
+              "gravel road",
+              "unpaved road",
+              "gravel yard"
+            ]
+          },
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "asphalt",
+              "concrete surface",
+              "road",
+              "paved road",
+              "roadway",
+              "street",
+              "parking lot",
+              "pavement",
+              "cobblestone surface",
+              "tarmac",
+              "paved courtyard",
+              "urban pavement",
+              "asphalt road",
+              "concrete ground",
+              "paved sports court",
+              "paved path"
+            ]
+          },
+          {
+            "name": "bare soil",
+            "synonyms": [
+              "bare soil",
+              "bare ground",
+              "natural bare soil",
+              "exposed soil",
+              "sandy ground",
+              "bare terrain",
+              "bare rock",
+              "dry soil",
+              "exposed earth",
+              "natural bare land"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "stream",
+              "canal",
+              "reservoir",
+              "open water",
+              "surface water",
+              "fresh water",
+              "flowing water",
+              "standing water",
+              "river water",
+              "lake water",
+              "water surface",
+              "inland water",
+              "coastal water"
+            ]
+          },
+          {
+            "name": "coniferous",
+            "synonyms": [
+              "coniferous",
+              "coniferous trees",
+              "coniferous forest",
+              "evergreen forest",
+              "pine forest",
+              "fir forest",
+              "pine trees",
+              "fir trees",
+              "cedar trees",
+              "cypress trees",
+              "needleleaf trees",
+              "needleleaf forest",
+              "conifer canopy",
+              "evergreen canopy",
+              "pine canopy",
+              "conifer woodland",
+              "tall conifers",
+              "evergreen trees",
+              "dense conifer forest",
+              "coniferous woodland"
+            ]
+          },
+          {
+            "name": "deciduous",
+            "synonyms": [
+              "deciduous",
+              "deciduous trees",
+              "deciduous forest",
+              "broadleaf forest",
+              "broadleaf trees",
+              "oak trees",
+              "beech trees",
+              "birch trees",
+              "poplar trees",
+              "chestnut trees",
+              "deciduous canopy",
+              "broadleaf canopy",
+              "leafy trees",
+              "deciduous woodland",
+              "tall broadleaf trees",
+              "oak forest",
+              "beech forest",
+              "temperate deciduous forest",
+              "dense deciduous forest",
+              "broadleaved woodland"
+            ]
+          },
+          {
+            "name": "brushwood",
+            "synonyms": [
+              "brushwood",
+              "bushes",
+              "low woody vegetation",
+              "short trees",
+              "brush",
+              "thicket",
+              "natural scrub",
+              "dense shrubs",
+              "woody undergrowth",
+              "abandoned field shrubs",
+              "small woody plants"
+            ]
+          },
+          {
+            "name": "vineyard",
+            "synonyms": [
+              "vineyard",
+              "vineyards",
+              "grape vines",
+              "grape field",
+              "vine rows",
+              "grape cultivation",
+              "vine plantation",
+              "grape plantation",
+              "wine grape field",
+              "rows of vines",
+              "cultivated vines",
+              "grape growing land",
+              "vineyard rows",
+              "grape growing field",
+              "grape farm",
+              "vineyard parcel",
+              "grape vines in rows"
+            ]
+          },
+          {
+            "name": "herbaceous vegetation",
+            "synonyms": [
+              "herbaceous vegetation",
+              "grass",
+              "grassland",
+              "natural grass",
+              "lawn",
+              "ornamental lawn",
+              "public park grass",
+              "garden grass",
+              "grassy ground",
+              "herbaceous cover",
+              "wild grass",
+              "uncultivated grass",
+              "roadside grass",
+              "natural meadow",
+              "non agricultural grassland",
+              "mountain grassland",
+              "grass in woodland",
+              "herbaceous plants",
+              "green grass cover"
+            ]
+          },
+          {
+            "name": "agricultural land",
+            "synonyms": [
+              "agricultural land",
+              "farmland",
+              "cropland",
+              "crop field",
+              "cultivated field",
+              "cultivated land",
+              "farm field",
+              "agricultural field",
+              "growing crops",
+              "arable land",
+              "cereal field",
+              "wheat field",
+              "corn field",
+              "crop rows",
+              "agricultural grassland",
+              "managed pasture",
+              "temporary pasture",
+              "permanent agricultural grassland",
+              "farming land",
+              "crop cultivation"
+            ]
+          },
+          {
+            "name": "plowed land",
+            "synonyms": [
+              "plowed land",
+              "ploughed land",
+              "plowed field",
+              "ploughed field",
+              "tilled field",
+              "tilled soil",
+              "bare agricultural field",
+              "harvested field",
+              "freshly harvested field",
+              "recently plowed land",
+              "bare farmland",
+              "fallow agricultural field",
+              "soil furrows",
+              "plough furrows",
+              "cultivated bare soil",
+              "brown agricultural field",
+              "unvegetated cropland",
+              "prepared agricultural soil",
+              "bare arable land"
+            ]
+          }
+        ],
+        "template": "seg_template"
+      },
+      "kev60_segmentation": {
+        "classes": [
+          {
+            "name": "building",
+            "synonyms": [
+              "building"
+            ]
+          },
+          {
+            "name": "pervious surface",
+            "synonyms": [
+              "pervious surface"
+            ]
+          },
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface"
+            ]
+          },
+          {
+            "name": "bare soil",
+            "synonyms": [
+              "bare soil"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water"
+            ]
+          },
+          {
+            "name": "coniferous",
+            "synonyms": [
+              "coniferous",
+              "pine trees",
+              "fir trees"
+            ]
+          },
+          {
+            "name": "deciduous",
+            "synonyms": [
+              "deciduous"
+            ]
+          },
+          {
+            "name": "brushwood",
+            "synonyms": [
+              "brushwood"
+            ]
+          },
+          {
+            "name": "vineyard",
+            "synonyms": [
+              "vineyard"
+            ]
+          },
+          {
+            "name": "herbaceous vegetation",
+            "synonyms": [
+              "herbaceous vegetation"
+            ]
+          },
+          {
+            "name": "agricultural land",
+            "synonyms": [
+              "agricultural land"
+            ]
+          },
+          {
+            "name": "plowed land",
+            "synonyms": [
+              "plowed land",
+              "soil furrows"
+            ]
+          }
+        ],
+        "template": "seg_template"
+      },
+      "kev80_segmentation": {
+        "classes": [
+          {
+            "name": "building",
+            "synonyms": [
+              "building"
+            ]
+          },
+          {
+            "name": "pervious surface",
+            "synonyms": [
+              "pervious surface"
+            ]
+          },
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface"
+            ]
+          },
+          {
+            "name": "bare soil",
+            "synonyms": [
+              "bare soil"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water"
+            ]
+          },
+          {
+            "name": "coniferous",
+            "synonyms": [
+              "coniferous"
+            ]
+          },
+          {
+            "name": "deciduous",
+            "synonyms": [
+              "deciduous"
+            ]
+          },
+          {
+            "name": "brushwood",
+            "synonyms": [
+              "brushwood"
+            ]
+          },
+          {
+            "name": "vineyard",
+            "synonyms": [
+              "vineyard"
+            ]
+          },
+          {
+            "name": "herbaceous vegetation",
+            "synonyms": [
+              "herbaceous vegetation"
+            ]
+          },
+          {
+            "name": "agricultural land",
+            "synonyms": [
+              "agricultural land"
+            ]
+          },
+          {
+            "name": "plowed land",
+            "synonyms": [
+              "plowed land"
+            ]
+          }
+        ],
+        "template": "seg_template"
+      },
+      "pool_segmentation": {
+        "classes": [
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "residential building",
+              "commercial building",
+              "industrial building",
+              "warehouse",
+              "apartment building",
+              "roofed structure",
+              "building roof",
+              "house roof",
+              "rooftop",
+              "construction",
+              "man made structure",
+              "urban building",
+              "rural building",
+              "farm building",
+              "agricultural silo",
+              "water tower"
+            ]
+          },
+          {
+            "name": "pervious surface",
+            "synonyms": [
+              "pervious surface",
+              "permeable surface",
+              "gravel surface",
+              "gravel ground",
+              "gravel pathway",
+              "unpaved pathway",
+              "loose stone surface",
+              "railway ballast",
+              "railway track",
+              "quarry",
+              "building site",
+              "construction site",
+              "mineral ground",
+              "artificial bare soil",
+              "gravel road",
+              "unpaved road",
+              "riprap",
+              "loose stones",
+              "gravel yard",
+              "landfill"
+            ]
+          },
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "paved surface",
+              "asphalt",
+              "concrete surface",
+              "road",
+              "paved road",
+              "roadway",
+              "street",
+              "parking lot",
+              "pavement",
+              "cobblestone surface",
+              "sealed ground",
+              "tarmac",
+              "paved courtyard",
+              "hard surface",
+              "urban pavement",
+              "asphalt road",
+              "concrete ground",
+              "paved sports court",
+              "paved path"
+            ]
+          },
+          {
+            "name": "bare soil",
+            "synonyms": [
+              "bare soil",
+              "bare ground",
+              "natural bare soil",
+              "exposed soil",
+              "unvegetated ground",
+              "sand",
+              "sandy ground",
+              "rocky ground",
+              "pebbles",
+              "stones",
+              "rock surface",
+              "natural mineral surface",
+              "bare terrain",
+              "coastal sand",
+              "sandy beach",
+              "bare rock",
+              "stony ground",
+              "dry soil",
+              "exposed earth",
+              "natural bare land"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "sea",
+              "ocean",
+              "stream",
+              "canal",
+              "reservoir",
+              "open water",
+              "surface water",
+              "fresh water",
+              "flowing water",
+              "standing water",
+              "river water",
+              "lake water",
+              "water surface",
+              "inland water",
+              "coastal water"
+            ]
+          },
+          {
+            "name": "coniferous",
+            "synonyms": [
+              "coniferous",
+              "coniferous trees",
+              "coniferous forest",
+              "evergreen forest",
+              "pine forest",
+              "fir forest",
+              "pine trees",
+              "fir trees",
+              "cedar trees",
+              "cypress trees",
+              "needleleaf trees",
+              "needleleaf forest",
+              "conifer canopy",
+              "evergreen canopy",
+              "pine canopy",
+              "conifer woodland",
+              "tall conifers",
+              "evergreen trees",
+              "dense conifer forest",
+              "coniferous woodland"
+            ]
+          },
+          {
+            "name": "deciduous",
+            "synonyms": [
+              "deciduous",
+              "deciduous trees",
+              "deciduous forest",
+              "broadleaf forest",
+              "broadleaf trees",
+              "oak trees",
+              "beech trees",
+              "birch trees",
+              "poplar trees",
+              "chestnut trees",
+              "deciduous canopy",
+              "broadleaf canopy",
+              "leafy trees",
+              "deciduous woodland",
+              "tall broadleaf trees",
+              "oak forest",
+              "beech forest",
+              "temperate deciduous forest",
+              "dense deciduous forest",
+              "broadleaved woodland"
+            ]
+          },
+          {
+            "name": "brushwood",
+            "synonyms": [
+              "brushwood",
+              "shrubland",
+              "shrubs",
+              "bushes",
+              "scrubland",
+              "low woody vegetation",
+              "young trees",
+              "short trees",
+              "brush",
+              "thicket",
+              "natural scrub",
+              "scrub vegetation",
+              "dense shrubs",
+              "bushy ground",
+              "mountain moor",
+              "woody undergrowth",
+              "abandoned field shrubs",
+              "shrub cover",
+              "low woodland",
+              "small woody plants"
+            ]
+          },
+          {
+            "name": "vineyard",
+            "synonyms": [
+              "vineyard",
+              "vineyards",
+              "grape vines",
+              "grape field",
+              "vine rows",
+              "grape cultivation",
+              "vine plantation",
+              "grape plantation",
+              "wine grape field",
+              "rows of vines",
+              "cultivated vines",
+              "grape growing land",
+              "vineyard rows",
+              "grape growing field",
+              "vine farming",
+              "vine crop",
+              "grape farm",
+              "vineyard parcel",
+              "vineyard landscape",
+              "grape vines in rows"
+            ]
+          },
+          {
+            "name": "herbaceous vegetation",
+            "synonyms": [
+              "herbaceous vegetation",
+              "grass",
+              "grassland",
+              "natural grass",
+              "lawn",
+              "ornamental lawn",
+              "public park grass",
+              "garden grass",
+              "recreational field",
+              "grassy ground",
+              "herbaceous cover",
+              "wild grass",
+              "uncultivated grass",
+              "roadside grass",
+              "natural meadow",
+              "non agricultural grassland",
+              "mountain grassland",
+              "grass in woodland",
+              "herbaceous plants",
+              "green grass cover"
+            ]
+          },
+          {
+            "name": "agricultural land",
+            "synonyms": [
+              "agricultural land",
+              "farmland",
+              "cropland",
+              "crop field",
+              "cultivated field",
+              "cultivated land",
+              "farm field",
+              "agricultural field",
+              "growing crops",
+              "arable land",
+              "cereal field",
+              "wheat field",
+              "corn field",
+              "crop rows",
+              "agricultural grassland",
+              "managed pasture",
+              "temporary pasture",
+              "permanent agricultural grassland",
+              "farming land",
+              "crop cultivation"
+            ]
+          },
+          {
+            "name": "plowed land",
+            "synonyms": [
+              "plowed land",
+              "ploughed land",
+              "plowed field",
+              "ploughed field",
+              "tilled field",
+              "tilled soil",
+              "bare agricultural field",
+              "harvested field",
+              "freshly harvested field",
+              "recently plowed land",
+              "bare farmland",
+              "fallow agricultural field",
+              "soil furrows",
+              "plough furrows",
+              "cultivated bare soil",
+              "brown agricultural field",
+              "unvegetated cropland",
+              "prepared agricultural soil",
+              "earth field",
+              "bare arable land"
+            ]
+          }
+        ],
+        "template": "seg_template"
+      }
+    },
+    "judgment": "jaredpalmer/kev-4b@6cfce5c2fa4b4bd64026336ab649c5ca78857d52",
+    "inference_uses_target_labels": false,
+    "target_label_development": true,
+    "source_protocol": "Labeled development-selected configuration, not a label-free selector or untouched independent test. Full scores and non-development complement; ADE uses training development. Kev is an additional frozen pretrained language prior."
+  },
+  "median_ms": 246.99523602612317,
+  "p95_ms": 253.10066854581237,
+  "peak_allocated_mib": 5548.4521484375,
+  "initialization_and_text_seconds": 28.711576214060187,
+  "target_masks_loaded": false,
+  "standalone_process": true,
+  "offline_language_cost_excluded_and_reported_separately": true,
+  "boundary": "RGB resize, all encodings, alias aggregation, coupled writeback, original-size restoration and CPU prediction. Decode/init/offline language and development search excluded. Seven deterministic images and seven repeats; not full-dataset mean."
+}

@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "dataset": "context60",
+  "key": "2008_000002",
+  "fresh_text_encoding": false,
+  "local_vector_max_error": 0.0,
+  "wide_vector_max_error": 0.0,
+  "changed_pixels": 0,
+  "pixels": 187500,
+  "exact_prediction": true,
+  "target_masks_loaded": false
+}

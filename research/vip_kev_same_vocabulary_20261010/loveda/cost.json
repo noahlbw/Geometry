@@ -1,0 +1,352 @@
+{
+  "status": "complete",
+  "dataset": "loveda",
+  "method": "VIP_SameText",
+  "images": [
+    {
+      "key": "2909.png",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        107.79895400628448,
+        106.88800504431129,
+        107.96181997284293,
+        106.9134168792516,
+        105.87008600123227,
+        105.1904580090195,
+        105.14016589149833
+      ],
+      "peak_allocated_mib": 1811.1240234375
+    },
+    {
+      "key": "3039.png",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        103.89860114082694,
+        104.26552291028202,
+        104.09283894114196,
+        104.58002309314907,
+        104.26465887576342,
+        104.31433492340147,
+        107.1944241411984
+      ],
+      "peak_allocated_mib": 1811.1240234375
+    },
+    {
+      "key": "3538.png",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        104.28331419825554,
+        107.09200403653085,
+        105.15676299110055,
+        104.13023899309337,
+        104.38428702764213,
+        104.09930604510009,
+        105.42805609293282
+      ],
+      "peak_allocated_mib": 1811.1240234375
+    },
+    {
+      "key": "3887.png",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        105.10172508656979,
+        106.65218904614449,
+        106.09140899032354,
+        107.01514407992363,
+        105.5737289134413,
+        105.95345706678927,
+        107.39784291945398
+      ],
+      "peak_allocated_mib": 1811.1240234375
+    },
+    {
+      "key": "3699.png",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        104.84518809244037,
+        105.92741402797401,
+        104.8862962052226,
+        106.69293394312263,
+        107.52227809280157,
+        107.30786598287523,
+        106.29043006338179
+      ],
+      "peak_allocated_mib": 1811.1240234375
+    },
+    {
+      "key": "3200.png",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        103.55470003560185,
+        103.15044806338847,
+        104.38898089341819,
+        105.12413503602147,
+        106.34343815036118,
+        104.51388894580305,
+        105.84138100966811
+      ],
+      "peak_allocated_mib": 1811.1240234375
+    },
+    {
+      "key": "3229.png",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        105.8560898527503,
+        105.99447297863662,
+        106.19815695099533,
+        105.87517893873155,
+        105.95427686348557,
+        107.61992097832263,
+        106.1470340937376
+      ],
+      "peak_allocated_mib": 1811.1240234375
+    }
+  ],
+  "median_ms": 105.8560898527503,
+  "p95_ms": 107.5808638241142,
+  "peak_allocated_mib": 1811.1240234375,
+  "settings": {
+    "tau": 4.0,
+    "tem": 1.0,
+    "prob_thd": 0.0,
+    "background": false,
+    "bg_idx": 0,
+    "resize_long_edge": 448,
+    "slide_crop": 336,
+    "slide_stride": 112,
+    "logit_scale": 40.0
+  },
+  "text_identity": {
+    "classes": [
+      {
+        "name": "background",
+        "synonyms": [
+          "background",
+          "other area",
+          "miscellaneous surface",
+          "unclassified terrain",
+          "unknown region",
+          "mixed land cover",
+          "surrounding land",
+          "open space",
+          "open ground",
+          "empty area",
+          "urban ground",
+          "rural ground",
+          "land parcel",
+          "shaded area",
+          "natural surface",
+          "artificial surface",
+          "non target area",
+          "remaining area",
+          "general terrain",
+          "mixed scene"
+        ]
+      },
+      {
+        "name": "building",
+        "synonyms": [
+          "building",
+          "buildings",
+          "structure",
+          "structures",
+          "house",
+          "houses",
+          "roof",
+          "roofs",
+          "apartment",
+          "office building",
+          "warehouse",
+          "commercial building",
+          "residential area",
+          "urban block",
+          "construction",
+          "built-up area",
+          "property",
+          "facility",
+          "man-made structure",
+          "city building"
+        ]
+      },
+      {
+        "name": "road",
+        "synonyms": [
+          "road",
+          "roads",
+          "street",
+          "streets",
+          "highway",
+          "path",
+          "lane",
+          "roadway",
+          "pavement",
+          "asphalt",
+          "transportation route",
+          "traffic route",
+          "intersection",
+          "junction",
+          "bridge approach",
+          "urban street",
+          "rural path",
+          "linear feature",
+          "access way",
+          "drive"
+        ]
+      },
+      {
+        "name": "water",
+        "synonyms": [
+          "water",
+          "water body",
+          "river",
+          "lake",
+          "pond",
+          "stream",
+          "canal",
+          "reservoir",
+          "shoreline",
+          "wetland",
+          "blue area",
+          "dark surface",
+          "waterway",
+          "drainage channel",
+          "flooded area",
+          "aquatic area",
+          "open water",
+          "coastal water",
+          "reflective surface",
+          "water feature"
+        ]
+      },
+      {
+        "name": "barren",
+        "synonyms": [
+          "barren",
+          "bare land",
+          "bare ground",
+          "bare soil",
+          "dirt",
+          "earth",
+          "sand",
+          "rock",
+          "gravel",
+          "dry land",
+          "open land",
+          "construction site",
+          "excavation",
+          "cleared area",
+          "vacant land",
+          "exposed terrain",
+          "soil patch",
+          "wasteland",
+          "undeveloped land",
+          "brown ground"
+        ]
+      },
+      {
+        "name": "tree",
+        "synonyms": [
+          "tree",
+          "trees",
+          "forest",
+          "woodland",
+          "vegetation",
+          "green area",
+          "canopy",
+          "shrubs",
+          "bush",
+          "park",
+          "grove",
+          "plantation",
+          "natural area",
+          "wooded land",
+          "tall vegetation",
+          "foliage",
+          "tree cover",
+          "leafy area",
+          "green space",
+          "forested region"
+        ]
+      },
+      {
+        "name": "farm",
+        "synonyms": [
+          "farm",
+          "farmland",
+          "agriculture",
+          "agricultural land",
+          "crop field",
+          "field",
+          "crops",
+          "cultivated land",
+          "plantation",
+          "orchard",
+          "rural land",
+          "crop area",
+          "paddy field",
+          "harvested field",
+          "irrigation area",
+          "agricultural zone",
+          "food production area",
+          "tilled land",
+          "growing crops",
+          "cultivated parcel"
+        ]
+      }
+    ],
+    "source_bank": "original",
+    "source_template": "openai_imagenet_template",
+    "residual_identity": null,
+    "checkpoints": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "upstream_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+    "official_template": "openai_imagenet_template"
+  },
+  "initialization_and_text_seconds": 14.996128838974983,
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "boundary": "Seven full inputs x seven warmed synchronized repeats. Native VIP resizing/encoding/readout/restoration/CPU output; decode/init/offline selection excluded.",
+  "weights_frozen": true,
+  "head_weights_unchanged": true
+}

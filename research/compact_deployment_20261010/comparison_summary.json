@@ -1,0 +1,334 @@
+{
+  "status": "complete",
+  "protocols": 15,
+  "sampled_protocol_images": 105,
+  "full_verified_images": 4073,
+  "costs": {
+    "vdd": {
+      "reference_ms": 333.30108993686736,
+      "compact_ms": 317.0535929966718,
+      "reference_mib": 5993.5185546875,
+      "compact_mib": 2847.416015625,
+      "vip_ms": 190.8537489362061,
+      "ratio": 1.6612384863482492,
+      "source": "isolated_vdd.json",
+      "latency_reduction_percent": 4.8747206147069955,
+      "memory_reduction_percent": 52.491746047936225,
+      "sample_predictions_exact": true
+    },
+    "potsdam": {
+      "reference_ms": 247.59353511035442,
+      "compact_ms": 229.27595302462578,
+      "reference_mib": 5515.771484375,
+      "compact_mib": 2156.59716796875,
+      "vip_ms": 104.11164304241538,
+      "ratio": 2.2022124166383397,
+      "source": "final_potsdam.json",
+      "latency_reduction_percent": 7.398247324012052,
+      "memory_reduction_percent": 60.901259704505016,
+      "sample_predictions_exact": true
+    },
+    "voc20": {
+      "reference_ms": 203.1348010059446,
+      "compact_ms": 181.54555093497038,
+      "reference_mib": 5514.30615234375,
+      "compact_mib": 2153.341796875,
+      "vip_ms": 58.16090712323785,
+      "ratio": 3.1214360283324214,
+      "source": "final_voc20.json",
+      "latency_reduction_percent": 10.62804106635693,
+      "memory_reduction_percent": 60.94990489492928,
+      "sample_predictions_exact": true
+    },
+    "voc21": {
+      "reference_ms": 193.63356195390224,
+      "compact_ms": 174.90609316155314,
+      "reference_mib": 5516.994140625,
+      "compact_mib": 2158.4208984375,
+      "vip_ms": 59.49572380632162,
+      "ratio": 2.9398094849796377,
+      "source": "final_voc21.json",
+      "latency_reduction_percent": 9.671602692929593,
+      "memory_reduction_percent": 60.87686802957197,
+      "sample_predictions_exact": true
+    },
+    "ade150": {
+      "reference_ms": 295.7642041146755,
+      "compact_ms": 264.686370966956,
+      "reference_mib": 6433.19873046875,
+      "compact_mib": 3296.818359375,
+      "vip_ms": 113.9793589245528,
+      "ratio": 2.3222307395338295,
+      "source": "final_ade150.json",
+      "latency_reduction_percent": 10.507638421203202,
+      "memory_reduction_percent": 48.75304654027407,
+      "sample_predictions_exact": true
+    },
+    "context60": {
+      "reference_ms": 265.03822510130703,
+      "compact_ms": 236.59517196938396,
+      "reference_mib": 5624.75537109375,
+      "compact_mib": 2484.3359375,
+      "vip_ms": 112.06194595433772,
+      "ratio": 2.1112891620299923,
+      "source": "final_context60.json",
+      "latency_reduction_percent": 10.731679598688505,
+      "memory_reduction_percent": 55.83210693451165,
+      "sample_predictions_exact": true
+    },
+    "udd5": {
+      "reference_ms": 319.0689960028976,
+      "compact_ms": 303.7480800412595,
+      "reference_mib": 5825.38134765625,
+      "compact_mib": 2677.27783203125,
+      "vip_ms": 191.1467609461397,
+      "ratio": 1.5890830612968012,
+      "source": "isolated_udd5.json",
+      "latency_reduction_percent": 4.801756408040026,
+      "memory_reduction_percent": 54.04115761265294,
+      "sample_predictions_exact": true
+    },
+    "oem": {
+      "reference_ms": 247.80608993023634,
+      "compact_ms": 228.97628997452557,
+      "reference_mib": 5540.31787109375,
+      "compact_mib": 2227.7265625,
+      "vip_ms": 105.38480500690639,
+      "ratio": 2.172763805555456,
+      "source": "final_oem.json",
+      "latency_reduction_percent": 7.598602585195479,
+      "memory_reduction_percent": 59.7906363076563,
+      "sample_predictions_exact": true
+    },
+    "vaihingen": {
+      "reference_ms": 240.21900887601078,
+      "compact_ms": 228.91964204609394,
+      "reference_mib": 5519.7568359375,
+      "compact_mib": 2183.005859375,
+      "vip_ms": 108.5547658149153,
+      "ratio": 2.1087940297010954,
+      "source": "final_vaihingen.json",
+      "latency_reduction_percent": 4.703777141861831,
+      "memory_reduction_percent": 60.45105021362362,
+      "sample_predictions_exact": true
+    },
+    "landcoverai": {
+      "reference_ms": 234.73195196129382,
+      "compact_ms": 217.33830799348652,
+      "reference_mib": 5529.21875,
+      "compact_mib": 2198.3720703125,
+      "vip_ms": 102.70966798998415,
+      "ratio": 2.1160452783732153,
+      "source": "final_landcoverai.json",
+      "latency_reduction_percent": 7.410002695617434,
+      "memory_reduction_percent": 60.24081936869472,
+      "sample_predictions_exact": true
+    },
+    "loveda": {
+      "reference_ms": 235.49310793168843,
+      "compact_ms": 217.8378589451313,
+      "reference_mib": 5532.14111328125,
+      "compact_mib": 2217.23095703125,
+      "vip_ms": 105.8560898527503,
+      "ratio": 2.0578679908558093,
+      "source": "final_loveda.json",
+      "latency_reduction_percent": 7.497140422333947,
+      "memory_reduction_percent": 59.92092552179755,
+      "sample_predictions_exact": true
+    },
+    "context59": {
+      "reference_ms": 258.68601887486875,
+      "compact_ms": 227.7066158130765,
+      "reference_mib": 5567.80419921875,
+      "compact_mib": 2424.8525390625,
+      "vip_ms": 111.83553701266646,
+      "ratio": 2.036084610451564,
+      "source": "final_context59.json",
+      "latency_reduction_percent": 11.975677385478479,
+      "memory_reduction_percent": 56.448674337313356,
+      "sample_predictions_exact": true
+    },
+    "coco_object81": {
+      "reference_ms": 286.0689440276474,
+      "compact_ms": 250.98582194186747,
+      "reference_mib": 5799.35791015625,
+      "compact_mib": 2700.37109375,
+      "vip_ms": 131.4632052090019,
+      "ratio": 1.9091716312777174,
+      "source": "final_coco_object81.json",
+      "latency_reduction_percent": 12.263869538522599,
+      "memory_reduction_percent": 53.43672289960036,
+      "sample_predictions_exact": true
+    },
+    "coco_stuff171": {
+      "reference_ms": 376.6182579565793,
+      "compact_ms": 334.4941339455545,
+      "reference_mib": 6536.998046875,
+      "compact_mib": 3399.1083984375,
+      "vip_ms": 185.8669009525329,
+      "ratio": 1.7996433589376861,
+      "source": "final_coco_stuff171.json",
+      "latency_reduction_percent": 11.184833215356582,
+      "memory_reduction_percent": 48.00199764382005,
+      "sample_predictions_exact": true
+    },
+    "flair1": {
+      "reference_ms": 242.27177700959146,
+      "compact_ms": 226.81243298575282,
+      "reference_mib": 5548.4521484375,
+      "compact_mib": 2265.18505859375,
+      "vip_ms": 111.14496015943587,
+      "ratio": 2.040690218075508,
+      "source": "final_flair1.json",
+      "latency_reduction_percent": 6.380992542613251,
+      "memory_reduction_percent": 59.174468879007115,
+      "sample_predictions_exact": true
+    }
+  },
+  "full_accuracy": {
+    "vdd": {
+      "images": 80,
+      "miou": 60.4352,
+      "exact_per_image_confusion": true
+    },
+    "potsdam": {
+      "images": 504,
+      "miou": 56.1934,
+      "exact_per_image_confusion": true
+    },
+    "udd5": {
+      "images": 40,
+      "miou": 55.8266,
+      "exact_per_image_confusion": true
+    },
+    "voc21": {
+      "images": 1449,
+      "miou": 69.4757,
+      "exact_per_image_confusion": true
+    },
+    "ade150": {
+      "images": 2000,
+      "miou": 31.3398,
+      "exact_per_image_confusion": true
+    }
+  },
+  "portable": {
+    "vdd": {
+      "status": "complete",
+      "dataset": "vdd",
+      "key": "DJI_0007.JPG",
+      "fresh_text_encoding": true,
+      "local_vector_max_error": 0.0,
+      "wide_vector_max_error": 0.0,
+      "changed_pixels": 0,
+      "pixels": 12000000,
+      "exact_prediction": true,
+      "target_masks_loaded": false
+    },
+    "oem": {
+      "status": "complete",
+      "dataset": "oem",
+      "key": "aachen/images/aachen_11.tif",
+      "fresh_text_encoding": true,
+      "local_vector_max_error": 0.0,
+      "wide_vector_max_error": 0.0,
+      "changed_pixels": 0,
+      "pixels": 1000000,
+      "exact_prediction": true,
+      "target_masks_loaded": false
+    },
+    "ade150": {
+      "status": "complete",
+      "dataset": "ade150",
+      "key": "ADE_val_00000001",
+      "fresh_text_encoding": true,
+      "local_vector_max_error": 0.0,
+      "wide_vector_max_error": 0.0,
+      "changed_pixels": 0,
+      "pixels": 349696,
+      "exact_prediction": true,
+      "target_masks_loaded": false
+    },
+    "context60": {
+      "status": "complete",
+      "dataset": "context60",
+      "key": "2008_000002",
+      "fresh_text_encoding": true,
+      "local_vector_max_error": 0.0,
+      "wide_vector_max_error": 0.0,
+      "changed_pixels": 0,
+      "pixels": 187500,
+      "exact_prediction": true,
+      "target_masks_loaded": false
+    },
+    "loveda": {
+      "status": "complete",
+      "dataset": "loveda",
+      "key": "2909.png",
+      "fresh_text_encoding": true,
+      "local_vector_max_error": 0.0,
+      "wide_vector_max_error": 0.0,
+      "changed_pixels": 0,
+      "pixels": 1048576,
+      "exact_prediction": true,
+      "target_masks_loaded": false,
+      "P_changed_pixels": 0,
+      "P_exact_prediction": true
+    }
+  },
+  "cached_constructor": {
+    "ade150": {
+      "status": "complete",
+      "dataset": "ade150",
+      "key": "ADE_val_00000001",
+      "fresh_text_encoding": false,
+      "local_vector_max_error": 0.0,
+      "wide_vector_max_error": 0.0,
+      "changed_pixels": 0,
+      "pixels": 349696,
+      "exact_prediction": true,
+      "target_masks_loaded": false
+    },
+    "context60": {
+      "status": "complete",
+      "dataset": "context60",
+      "key": "2008_000002",
+      "fresh_text_encoding": false,
+      "local_vector_max_error": 0.0,
+      "wide_vector_max_error": 0.0,
+      "changed_pixels": 0,
+      "pixels": 187500,
+      "exact_prediction": true,
+      "target_masks_loaded": false
+    },
+    "oem": {
+      "status": "complete",
+      "dataset": "oem",
+      "key": "aachen/images/aachen_11.tif",
+      "fresh_text_encoding": false,
+      "local_vector_max_error": 0.0,
+      "wide_vector_max_error": 0.0,
+      "changed_pixels": 0,
+      "pixels": 1000000,
+      "exact_prediction": true,
+      "target_masks_loaded": false
+    },
+    "vdd": {
+      "status": "complete",
+      "dataset": "vdd",
+      "key": "DJI_0007.JPG",
+      "fresh_text_encoding": false,
+      "local_vector_max_error": 0.0,
+      "wide_vector_max_error": 0.0,
+      "changed_pixels": 0,
+      "pixels": 12000000,
+      "exact_prediction": true,
+      "target_masks_loaded": false
+    }
+  },
+  "median_latency_reduction_percent": 7.598602585195479,
+  "memory_reduction_range_percent": [
+    48.00199764382005,
+    60.94990489492928
+  ]
+}

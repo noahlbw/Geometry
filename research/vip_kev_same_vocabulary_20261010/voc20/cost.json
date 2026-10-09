@@ -1,0 +1,340 @@
+{
+  "status": "complete",
+  "dataset": "voc20",
+  "method": "VIP_SameText",
+  "images": [
+    {
+      "key": "2007_000033",
+      "shape": [
+        366,
+        500
+      ],
+      "milliseconds": [
+        87.1277169790119,
+        85.20869095809758,
+        85.92313900589943,
+        85.2481690235436,
+        86.43279108218849,
+        85.4352239985019,
+        85.02195798791945
+      ],
+      "peak_allocated_mib": 1743.14404296875
+    },
+    {
+      "key": "2007_007498",
+      "shape": [
+        376,
+        500
+      ],
+      "milliseconds": [
+        57.853268925100565,
+        57.29956389404833,
+        57.592713041231036,
+        57.52898217178881,
+        57.53901111893356,
+        58.216240955516696,
+        58.90342383645475
+      ],
+      "peak_allocated_mib": 1743.12890625
+    },
+    {
+      "key": "2008_003856",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        57.86535097286105,
+        58.16141213290393,
+        58.36364789865911,
+        57.751219952479005,
+        58.36399085819721,
+        57.73284798488021,
+        57.99040896818042
+      ],
+      "peak_allocated_mib": 1743.1298828125
+    },
+    {
+      "key": "2009_001644",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        57.70646990276873,
+        58.064443059265614,
+        57.67133692279458,
+        57.88116715848446,
+        58.44679498113692,
+        57.22980503924191,
+        58.095622109249234
+      ],
+      "peak_allocated_mib": 1743.1298828125
+    },
+    {
+      "key": "2010_000552",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        59.29018999449909,
+        58.89551411382854,
+        58.56413603760302,
+        58.893884997814894,
+        58.8236590847373,
+        59.44532481953502,
+        59.75899496115744
+      ],
+      "peak_allocated_mib": 1743.1298828125
+    },
+    {
+      "key": "2010_005180",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        57.82637489028275,
+        58.16090712323785,
+        58.977865148335695,
+        60.61471113935113,
+        57.93494498357177,
+        58.38612699881196,
+        58.37534391321242
+      ],
+      "peak_allocated_mib": 1743.1298828125
+    },
+    {
+      "key": "2011_003271",
+      "shape": [
+        500,
+        500
+      ],
+      "milliseconds": [
+        29.974053846672177,
+        31.057175947353244,
+        30.511117074638605,
+        30.541056068614125,
+        30.78584000468254,
+        30.733732040971518,
+        30.59272514656186
+      ],
+      "peak_allocated_mib": 1739.2822265625
+    }
+  ],
+  "median_ms": 58.16090712323785,
+  "p95_ms": 85.72797300294042,
+  "peak_allocated_mib": 1743.14404296875,
+  "settings": {
+    "tau": 4.0,
+    "tem": 1.0,
+    "prob_thd": 0.0,
+    "background": false,
+    "bg_idx": 0,
+    "resize_long_edge": 448,
+    "slide_crop": 336,
+    "slide_stride": 112,
+    "logit_scale": 40.0
+  },
+  "text_identity": {
+    "classes": [
+      {
+        "name": "aeroplane",
+        "synonyms": [
+          "aeroplane",
+          "plane"
+        ]
+      },
+      {
+        "name": "bicycle",
+        "synonyms": [
+          "bicycle"
+        ]
+      },
+      {
+        "name": "bird",
+        "synonyms": [
+          "bird"
+        ]
+      },
+      {
+        "name": "boat",
+        "synonyms": [
+          "boat"
+        ]
+      },
+      {
+        "name": "bottle",
+        "synonyms": [
+          "bottle",
+          "wine bottle"
+        ]
+      },
+      {
+        "name": "bus",
+        "synonyms": [
+          "bus",
+          "red bus",
+          "double-decker bus"
+        ]
+      },
+      {
+        "name": "car",
+        "synonyms": [
+          "car"
+        ]
+      },
+      {
+        "name": "cat",
+        "synonyms": [
+          "cat"
+        ]
+      },
+      {
+        "name": "chair",
+        "synonyms": [
+          "chair",
+          "armchair",
+          "desk chair",
+          "wooden chair",
+          "dining chair",
+          "kitchen chair",
+          "office chair"
+        ]
+      },
+      {
+        "name": "cow",
+        "synonyms": [
+          "cow",
+          "cattle",
+          "bull",
+          "calf"
+        ]
+      },
+      {
+        "name": "diningtable",
+        "synonyms": [
+          "table",
+          "desk"
+        ]
+      },
+      {
+        "name": "dog",
+        "synonyms": [
+          "dog"
+        ]
+      },
+      {
+        "name": "horse",
+        "synonyms": [
+          "horse",
+          "wild horse"
+        ]
+      },
+      {
+        "name": "motorbike",
+        "synonyms": [
+          "motorcycle",
+          "motorbike"
+        ]
+      },
+      {
+        "name": "person",
+        "synonyms": [
+          "person",
+          "people",
+          "people in shirt",
+          "people in jeans",
+          "people in dress",
+          "people in sweater",
+          "people in skirt",
+          "people in jacket",
+          "people in hat",
+          "human in hat",
+          "human in jeans",
+          "human in sweater",
+          "human in skirt",
+          "human in jacket",
+          "human",
+          "crowd",
+          "child",
+          "boy",
+          "girl",
+          "man",
+          "women"
+        ]
+      },
+      {
+        "name": "pottedplant",
+        "synonyms": [
+          "potted plant",
+          "plant in a pot",
+          "houseplant",
+          "flowerpot"
+        ]
+      },
+      {
+        "name": "sheep",
+        "synonyms": [
+          "sheep"
+        ]
+      },
+      {
+        "name": "sofa",
+        "synonyms": [
+          "sofa",
+          "fabric sofa"
+        ]
+      },
+      {
+        "name": "train",
+        "synonyms": [
+          "train"
+        ]
+      },
+      {
+        "name": "tvmonitor",
+        "synonyms": [
+          "tv monitor",
+          "monitor",
+          "computer monitor",
+          "television monitor"
+        ]
+      }
+    ],
+    "source_bank": "official_segmentation",
+    "source_template": "seg_template",
+    "residual_identity": null,
+    "checkpoints": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "upstream_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+    "official_template": "seg_template"
+  },
+  "initialization_and_text_seconds": 15.542880776105449,
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "boundary": "Seven full inputs x seven warmed synchronized repeats. Native VIP resizing/encoding/readout/restoration/CPU output; decode/init/offline selection excluded.",
+  "weights_frozen": true,
+  "head_weights_unchanged": true
+}

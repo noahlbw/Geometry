@@ -1,0 +1,20 @@
+aeroplane	aeroplane | plane
+bicycle	bicycle
+bird	bird
+boat	boat
+bottle	bottle | wine bottle
+bus	bus | red bus | double-decker bus
+car	car
+cat	cat
+chair	chair | armchair | desk chair | wooden chair | dining chair | kitchen chair | office chair
+cow	cow | cattle | bull | calf
+diningtable	table | desk
+dog	dog
+horse	horse | wild horse
+motorbike	motorcycle | motorbike
+person	person | people | people in shirt | people in jeans | people in dress | people in sweater | people in skirt | people in jacket | people in hat | human in hat | human in jeans | human in sweater | human in skirt | human in jacket | human | crowd | child | boy | girl | man | women
+pottedplant	potted plant | plant in a pot | houseplant | flowerpot
+sheep	sheep
+sofa	sofa | fabric sofa
+train	train
+tvmonitor	tv monitor | monitor | computer monitor | television monitor

@@ -1,0 +1,5 @@
+impervious surface	impervious surface | paved surface | pavement | asphalt surface | concrete surface | road pavement | parking pavement | sealed ground | urban pavement | sidewalk | paved area | gray pavement | street surface | concrete ground | impermeable ground | road
+building	building | buildings | house | houses | rooftop | residential building | industrial building | apartment block | warehouse | large building | small building | built structure | dense buildings | commercial building | concrete building | urban building
+low vegetation	low vegetation | grass | grassland | short grass | ground vegetation | green ground cover | meadow | herbaceous cover | low plants | lawn | small plants | sparse grass | green field | low greenery | grass cover | short vegetation | herbal vegetation
+tree	tree | trees | tree canopy | dense trees | sparse trees | green canopy | tall vegetation | deciduous trees | evergreen trees | tree crown | tree cover | large tree
+car	car | cars | automobile | parked car | moving car | sedan | van | visible car

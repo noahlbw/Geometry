@@ -1,0 +1,171 @@
+person	people | people in shirt | people in jeans | people in dress | people in sweater | people in skirt | people in jacket | human | child | crowd | boy | girl | man | women | baby
+bicycle	bicycle
+car	car | automobile
+motorcycle	motorcycle | motorbike
+airplane	plane
+bus	bus | city bus
+train	train | locomotive
+truck	truck
+boat	ship
+traffic light	traffic light
+fire hydrant	fire hydrant
+stop sign	stop sign
+parking meter	parking meter
+bench	bench | wooden bench
+bird	bird
+cat	cat
+dog	dog
+horse	horse
+sheep	sheep
+cow	cow | cattle | dairy cow
+elephant	elephant
+bear	bear
+zebra	zebra
+giraffe	giraffe
+backpack	backpack
+umbrella	umbrella
+handbag	purse
+tie	tie
+suitcase	suitcase
+frisbee	frisbee
+skis	skis
+snowboard	snowboard
+sports ball	sports ball | ball | soccer ball | football | basketball | tennis ball | volleyball
+kite	kite | toy kite | flying kite
+baseball bat	baseball bat
+baseball glove	baseball glove
+skateboard	skateboard
+surfboard	surfboard
+tennis racket	tennis racket
+bottle	bottle | glass bottle | plastic bottle | wine bottle
+wine glass	wine glass
+cup	cup | drinking cup | coffee cup | tea cup | teacup
+fork	fork
+knife	knife
+spoon	spoon
+bowl	bowl
+banana	banana
+apple	apple | apples | red apple | green apple
+sandwich	sandwich
+orange	orange
+broccoli	broccoli
+carrot	carrot
+hot dog	hotdog
+pizza	pizza
+donut	donut | doughnut
+cake	cake
+chair	chair | armchair
+couch	sofa
+potted plant	potted plant | potted flower | pot plant | plant in a pot
+bed	bed
+dining table	dining table | dinner table | eating table | kitchen table
+toilet	toilet | toilet bowl
+tv	tv | television screen | screen | television | television monitor | tv monitor
+laptop	laptop
+mouse	computer mouse
+remote	remote | remote control
+keyboard	keyboard
+cell phone	cell phone
+microwave	microwave
+oven	oven | kitchen oven | baking oven
+toaster	toaster
+sink	sink | kitchen sink
+refrigerator	refrigerator | fridge
+book	book | a book | the book | open book | closed book | hardcover book
+clock	clock
+vase	vase
+scissors	scissors | a pair of scissors | shears
+teddy bear	teddybear
+hair drier	hair drier
+toothbrush	toothbrush
+banner	banner
+blanket	blanket
+branch	tree | trees | tree branch | tree branches | branch of a tree | branches of a tree
+bridge	bridge
+building-other	building | buildings | facade | frontage | frontal
+bush	bush | shrub | shrubbery | bushes
+cabinet	cabinet
+cage	cage | birdcage
+cardboard	cardboard | cardboard box | cardboard material
+carpet	carpet
+ceiling-other	indoor ceiling | plain ceiling | smooth ceiling
+ceiling-tile	ceiling-tile | tiled ceiling
+cloth	fabric | piece of fabric | cloth fabric | rag | blanket | sheet
+clothes	clothes | clothing | garments | apparel | shirts | pants
+clouds	clouds | cloud
+counter	counter | bar counter | kitchen counter | kitchen countertop | service counter
+cupboard	cupboard
+curtain	curtain
+desk-stuff	desk surface | tabletop
+dirt	dirt | soil | bare soil
+door-stuff	door
+fence	fence
+floor-marble	marble floor | marble flooring
+floor-other	floor | floor surface | flooring
+floor-stone	stone floor | stone flooring
+floor-tile	tiled floor | tile floor | tile flooring
+floor-wood	wooden floor | wood flooring | hardwood floor
+flower	flower | flowers | blooming flower
+fog	fog | mist | haze | smog
+food-other	food | meal | dish | plate of food
+fruit	fruit | fruits
+furniture-other	furniture | dresser | sideboard | shoe cabinet | tv stand
+grass	grass | field | meadow | lawn
+gravel	gravel | gravel surface | gravel road | gravel path
+ground-other	ground | cement ground | concrete ground | outdoor ground | playground surface
+hill	hill | hillside | hills | grassy hill | green hill
+house	house | residential house | family house
+leaves	leaves | green leaves | tree leaves
+light	light | ceiling light | lamp | ceiling lamp | table lamp
+mat	mat | door mat
+metal	metal | metallic | metal surface | metal panel
+mirror-stuff	mirror | wall mirror | bathroom mirror | makeup mirror | vanity mirror | decorative mirror
+moss	moss | green moss | mossy surface | mossy area
+mountain	mountain | rocky mountain | mountains | mountain range
+mud	mud | muddy ground | wet mud | muddy soil | muddy terrain
+napkin	napkin
+net	net
+paper	paper | piece of paper | sheet of paper | newspaper
+pavement	pavement | sidewalk
+pillow	pillow sham
+plant-other	plant | plant not in a pot | vines | crop plants
+plastic	plastic
+platform	platform
+playingfield	playing field | sports field | athletic field | sports ground | stadium field | football field
+railing	railing | metal railing | balcony railing | stair railing | bridge railing
+railroad	railroad
+river	river
+road	road | street | highway
+rock	rock | boulder | large stone | rocky surface | rock instead of stone
+roof	roof | rooftop | rooftop of a building | building roof | house roof
+rug	rug | floor rug | throw rug
+salad	salad
+sand	sand | beach sand | desert sand
+sea	sea | ocean | coastal water | ocean water | the sea | the ocean | seawater
+shelf	shelf | shelves
+sky-other	sky | blue sky | the sky above | clear sky | skyline | atmosphere
+skyscraper	skyscraper | skyscraping building
+snow	snow
+solid-other	solid surface | solid instead of stone | solid instead of metal
+stairs	stairs
+stone	stone | small stone
+straw	straw
+structural-other	building structure | support beam of the building | structural element of the building
+table	table
+tent	tent
+textile-other	textile fabric | woven textile | home textile (bedsheet | tablecloth)
+towel	towel
+tree	tree | trees | forest
+vegetable	vegetable | tomatoes | onions | cucumbers | peppers | a pile of vegetables
+wall-brick	brick wall | wall made of bricks
+wall-concrete	concrete wall | cement wall
+wall-other	wall surface | plain wall | wall
+wall-panel	panel wall | wall with panels
+wall-stone	stone wall
+wall-tile	tiled wall
+wall-wood	wooden wall
+water-other	water | water surface | puddle of water
+waterdrops	water drops | dew drops | raindrops | droplets of water
+window-blind	window blinds | window blind | blinds | window shade | window shades
+window-other	window
+wood	wood | wood material | wooden surface | timber

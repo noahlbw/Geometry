@@ -1,0 +1,3146 @@
+{
+  "status": "complete",
+  "dataset": "context60",
+  "method": "VIP_SameText",
+  "images": [
+    {
+      "key": "2008_000002",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        76.04033197276294,
+        76.17493602447212,
+        76.1915841139853,
+        75.89629711583257,
+        77.80881691724062,
+        75.0480720307678,
+        76.24789513647556
+      ],
+      "peak_allocated_mib": 1811.4228515625
+    },
+    {
+      "key": "2008_003295",
+      "shape": [
+        374,
+        500
+      ],
+      "milliseconds": [
+        111.9259491097182,
+        113.52579202502966,
+        112.20002989284694,
+        112.46926803141832,
+        111.780651146546,
+        113.51521196775138,
+        112.20522806979716
+      ],
+      "peak_allocated_mib": 1811.27294921875
+    },
+    {
+      "key": "2008_006665",
+      "shape": [
+        333,
+        500
+      ],
+      "milliseconds": [
+        111.91218695603311,
+        113.31176292151213,
+        112.68870602361858,
+        111.76846106536686,
+        111.75170005299151,
+        112.88660299032927,
+        111.77868698723614
+      ],
+      "peak_allocated_mib": 1806.99462890625
+    },
+    {
+      "key": "2009_001279",
+      "shape": [
+        334,
+        500
+      ],
+      "milliseconds": [
+        112.32449789531529,
+        112.32434003613889,
+        111.5356758236885,
+        114.92444900795817,
+        111.8531811516732,
+        111.62124015390873,
+        112.57374286651611
+      ],
+      "peak_allocated_mib": 1806.79931640625
+    },
+    {
+      "key": "2009_004601",
+      "shape": [
+        333,
+        500
+      ],
+      "milliseconds": [
+        112.12502489797771,
+        112.01324313879013,
+        112.966493004933,
+        112.50453512184322,
+        112.35276004299521,
+        112.21369286067784,
+        112.8974489402026
+      ],
+      "peak_allocated_mib": 1806.99462890625
+    },
+    {
+      "key": "2010_002691",
+      "shape": [
+        367,
+        500
+      ],
+      "milliseconds": [
+        113.5332309640944,
+        113.2969360332936,
+        113.21008298546076,
+        112.26790398359299,
+        112.91933595202863,
+        112.11259290575981,
+        112.06194595433772
+      ],
+      "peak_allocated_mib": 1810.3740234375
+    },
+    {
+      "key": "2010_006086",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        76.01667894050479,
+        76.05227292515337,
+        76.5966298058629,
+        75.99821197800338,
+        76.20290294289589,
+        77.28857593610883,
+        76.5227060765028
+      ],
+      "peak_allocated_mib": 1811.4228515625
+    }
+  ],
+  "median_ms": 112.06194595433772,
+  "p95_ms": 113.52156000211835,
+  "peak_allocated_mib": 1811.4228515625,
+  "settings": {
+    "tau": 2.2,
+    "tem": 1.0,
+    "prob_thd": 0.1,
+    "background": true,
+    "bg_idx": 0,
+    "resize_long_edge": 448,
+    "slide_crop": 336,
+    "slide_stride": 112,
+    "logit_scale": 40.0
+  },
+  "text_identity": {
+    "classes": [
+      {
+        "name": "background",
+        "synonyms": [
+          "background",
+          "accordion",
+          "air conditioner",
+          "antenna",
+          "artillery",
+          "ashtray",
+          "atrium",
+          "baby carriage",
+          "ball",
+          "balloon",
+          "bamboo weaving",
+          "barrel",
+          "baseball bat",
+          "basket",
+          "basketball backboard",
+          "bathtub",
+          "beer",
+          "bell",
+          "binoculars",
+          "bird cage",
+          "bird feeder",
+          "bird nest",
+          "blackboard",
+          "board",
+          "bone",
+          "bottle opener",
+          "bowl",
+          "box",
+          "bracelet",
+          "brick",
+          "bridge",
+          "broom",
+          "brush",
+          "bucket",
+          "cabinet door",
+          "cage",
+          "cake",
+          "calculator",
+          "calendar",
+          "camel",
+          "camera",
+          "camera lens",
+          "can",
+          "candle",
+          "candle holder",
+          "cap",
+          "card",
+          "cart",
+          "case",
+          "casette recorder",
+          "cash register",
+          "cd",
+          "cd player",
+          "cell phone",
+          "cello",
+          "chain",
+          "chessboard",
+          "chicken",
+          "chopstick",
+          "clip",
+          "clippers",
+          "clock",
+          "closet",
+          "clothes tree",
+          "coffee",
+          "coffee machine",
+          "comb",
+          "concrete",
+          "cone",
+          "container",
+          "control booth",
+          "controller",
+          "cooker",
+          "copying machine",
+          "coral",
+          "cork",
+          "corkscrew",
+          "counter",
+          "court",
+          "crabstick",
+          "crane",
+          "crate",
+          "cross",
+          "crutch",
+          "cushion",
+          "cutting board",
+          "dais",
+          "disc",
+          "disc case",
+          "dishwasher",
+          "dock",
+          "dolphin",
+          "drainer",
+          "dray",
+          "drink dispenser",
+          "drinking machine",
+          "drop",
+          "drug",
+          "drum",
+          "drum kit",
+          "duck",
+          "dumbbell",
+          "earphone",
+          "earrings",
+          "egg",
+          "electric fan",
+          "electric iron",
+          "electric pot",
+          "electric saw",
+          "electronic keyboard",
+          "engine",
+          "envelope",
+          "equipment",
+          "escalator",
+          "exhibition booth",
+          "extinguisher",
+          "eyeglass",
+          "fan",
+          "faucet",
+          "fax machine",
+          "ferris wheel",
+          "fire extinguisher",
+          "fire hydrant",
+          "fire place",
+          "fish",
+          "fish tank",
+          "fishbowl",
+          "fishing net",
+          "fishing pole",
+          "flag",
+          "flagstaff",
+          "flame",
+          "flashlight",
+          "fly",
+          "foam",
+          "footbridge",
+          "forceps",
+          "fork",
+          "forklift",
+          "fountain",
+          "fox",
+          "frame",
+          "fridge",
+          "frog",
+          "fruit",
+          "funnel",
+          "furnace",
+          "game controller",
+          "game machine",
+          "gas cylinder",
+          "gas hood",
+          "gas stove",
+          "gift box",
+          "glass",
+          "glass marble",
+          "globe",
+          "glove",
+          "goal",
+          "grandstand",
+          "gravestone",
+          "guardrail",
+          "guitar",
+          "gun",
+          "hammer",
+          "hand cart",
+          "handle",
+          "handrail",
+          "hanger",
+          "hard disk drive",
+          "hat",
+          "hay",
+          "headphone",
+          "heater",
+          "helicopter",
+          "helmet",
+          "holder",
+          "hook",
+          "horse-drawn carriage",
+          "hot-air balloon",
+          "hydrovalve",
+          "ice",
+          "inflator pump",
+          "ipod",
+          "iron",
+          "ironing board",
+          "jar",
+          "kart",
+          "kettle",
+          "key",
+          "kitchen range",
+          "kite",
+          "knife",
+          "knife block",
+          "ladder",
+          "ladder truck",
+          "ladle",
+          "laptop",
+          "leaves",
+          "lid",
+          "life buoy",
+          "light bulb",
+          "lighter",
+          "line",
+          "lion",
+          "lobster",
+          "lock",
+          "machine",
+          "mailbox",
+          "mannequin",
+          "map",
+          "mask",
+          "mat",
+          "match book",
+          "mattress",
+          "menu",
+          "metal",
+          "meter box",
+          "microphone",
+          "microwave",
+          "mirror",
+          "missile",
+          "model",
+          "money",
+          "monkey",
+          "mop",
+          "mouse pad",
+          "musical instrument",
+          "napkin",
+          "net",
+          "newspaper",
+          "oar",
+          "ornament",
+          "outlet",
+          "oven",
+          "oxygen bottle",
+          "pack",
+          "pan",
+          "paper",
+          "paper box",
+          "paper cutter",
+          "parachute",
+          "parasol",
+          "parterre",
+          "patio",
+          "pelage",
+          "pen",
+          "pen container",
+          "pencil",
+          "photo",
+          "piano",
+          "picture",
+          "pig",
+          "pillar",
+          "pillow",
+          "pipe",
+          "pitcher",
+          "plant",
+          "plastic",
+          "player",
+          "playground",
+          "pliers",
+          "plume",
+          "poker",
+          "poker chip",
+          "pole",
+          "pool table",
+          "postcard",
+          "poster",
+          "pot",
+          "printer",
+          "projector",
+          "pumpkin",
+          "rabbit",
+          "racket",
+          "radiator",
+          "radio",
+          "rail",
+          "rake",
+          "ramp",
+          "range hood",
+          "receiver",
+          "recorder",
+          "recreational machines",
+          "remote control",
+          "robot",
+          "rocket",
+          "rocking horse",
+          "rope",
+          "rug",
+          "ruler",
+          "runway",
+          "saddle",
+          "sand",
+          "saw",
+          "scale",
+          "scanner",
+          "scissors",
+          "scoop",
+          "screen",
+          "screwdriver",
+          "sculpture",
+          "scythe",
+          "sewer",
+          "sewing machine",
+          "shed",
+          "shell",
+          "shoe",
+          "shopping cart",
+          "shovel",
+          "sidecar",
+          "signal light",
+          "sink",
+          "skateboard",
+          "ski",
+          "sled",
+          "slippers",
+          "smoke",
+          "snail",
+          "snake",
+          "snowmobiles",
+          "spanner",
+          "spatula",
+          "speaker",
+          "speed bump",
+          "spice container",
+          "spoon",
+          "sprayer",
+          "squirrel",
+          "stage",
+          "stair",
+          "stapler",
+          "stick",
+          "sticky note",
+          "stone",
+          "stool",
+          "stove",
+          "straw",
+          "stretcher",
+          "sun",
+          "sunglass",
+          "sunshade",
+          "surveillance camera",
+          "swan",
+          "sweeper",
+          "swim ring",
+          "swimming pool",
+          "swing",
+          "switch",
+          "tableware",
+          "tank",
+          "tap",
+          "tape",
+          "tarp",
+          "telephone",
+          "telephone booth",
+          "tent",
+          "tire",
+          "toaster",
+          "toilet",
+          "tong",
+          "tool",
+          "toothbrush",
+          "towel",
+          "toy",
+          "toy car",
+          "trampoline",
+          "trash bin",
+          "tray",
+          "tricycle",
+          "tripod",
+          "trophy",
+          "tube",
+          "turtle",
+          "tweezers",
+          "typewriter",
+          "umbrella",
+          "unknown",
+          "vacuum cleaner",
+          "vending machine",
+          "video camera",
+          "video game console",
+          "video player",
+          "video tape",
+          "violin",
+          "wakeboard",
+          "wallet",
+          "wardrobe",
+          "washing machine",
+          "watch",
+          "water dispenser",
+          "water pipe",
+          "water skate board",
+          "watermelon",
+          "whale",
+          "wharf",
+          "wheel",
+          "wheelchair",
+          "window blinds",
+          "wineglass",
+          "wire",
+          "wool"
+        ]
+      },
+      {
+        "name": "aeroplane",
+        "synonyms": [
+          "aeroplane",
+          "plane",
+          "airplane",
+          "aircraft"
+        ]
+      },
+      {
+        "name": "bag",
+        "synonyms": [
+          "bag",
+          "backpack",
+          "handbag",
+          "carry bag",
+          "carrying bag"
+        ]
+      },
+      {
+        "name": "bed",
+        "synonyms": [
+          "bed",
+          "sleeping bed",
+          "bed furniture",
+          "room bed"
+        ]
+      },
+      {
+        "name": "bedclothes",
+        "synonyms": [
+          "bedclothes",
+          "bedding",
+          "bed sheets",
+          "comforter"
+        ]
+      },
+      {
+        "name": "bench",
+        "synonyms": [
+          "bench",
+          "wooden bench",
+          "seating bench",
+          "long bench"
+        ]
+      },
+      {
+        "name": "bicycle",
+        "synonyms": [
+          "bicycle",
+          "pedal bike",
+          "pedal bicycle"
+        ]
+      },
+      {
+        "name": "bird",
+        "synonyms": [
+          "bird",
+          "avian animal",
+          "feathered bird"
+        ]
+      },
+      {
+        "name": "boat",
+        "synonyms": [
+          "boat",
+          "watercraft",
+          "small boat",
+          "sailing boat"
+        ]
+      },
+      {
+        "name": "book",
+        "synonyms": [
+          "book",
+          "printed book",
+          "bound book"
+        ]
+      },
+      {
+        "name": "bottle",
+        "synonyms": [
+          "bottle",
+          "wine bottle",
+          "drink bottle",
+          "glass bottle",
+          "plastic bottle"
+        ]
+      },
+      {
+        "name": "building",
+        "synonyms": [
+          "building",
+          "buildings",
+          "building facade",
+          "building frontage",
+          "building structure",
+          "constructed building",
+          "building exterior",
+          "edifice"
+        ]
+      },
+      {
+        "name": "bus",
+        "synonyms": [
+          "bus",
+          "red bus",
+          "double-decker bus",
+          "passenger bus",
+          "public transit bus",
+          "city bus"
+        ]
+      },
+      {
+        "name": "cabinet",
+        "synonyms": [
+          "cabinet",
+          "cupboard",
+          "storage cabinet",
+          "cabinet furniture"
+        ]
+      },
+      {
+        "name": "car",
+        "synonyms": [
+          "car",
+          "automobile",
+          "passenger car",
+          "motorcar"
+        ]
+      },
+      {
+        "name": "cat",
+        "synonyms": [
+          "cat",
+          "feline",
+          "domestic cat",
+          "house cat"
+        ]
+      },
+      {
+        "name": "ceiling",
+        "synonyms": [
+          "ceiling",
+          "room ceiling",
+          "overhead ceiling",
+          "indoor ceiling"
+        ]
+      },
+      {
+        "name": "chair",
+        "synonyms": [
+          "chair",
+          "armchair",
+          "desk chair",
+          "wooden chair",
+          "dining chair",
+          "kitchen chair",
+          "seat chair",
+          "seating chair",
+          "individual chair"
+        ]
+      },
+      {
+        "name": "cloth",
+        "synonyms": [
+          "cloth",
+          "fabric",
+          "piece of fabric",
+          "textile",
+          "rag",
+          "towel",
+          "blanket",
+          "sheet"
+        ]
+      },
+      {
+        "name": "computer",
+        "synonyms": [
+          "computer",
+          "computing device",
+          "electronic computer"
+        ]
+      },
+      {
+        "name": "cow",
+        "synonyms": [
+          "cow",
+          "cattle",
+          "dairy cow",
+          "cattle animal",
+          "bovine",
+          "domestic cow"
+        ]
+      },
+      {
+        "name": "cup",
+        "synonyms": [
+          "cup",
+          "drinking cup",
+          "beverage cup"
+        ]
+      },
+      {
+        "name": "curtain",
+        "synonyms": [
+          "curtain",
+          "window curtain",
+          "hanging curtain",
+          "drapery"
+        ]
+      },
+      {
+        "name": "dog",
+        "synonyms": [
+          "dog",
+          "canine",
+          "domestic dog",
+          "pet dog"
+        ]
+      },
+      {
+        "name": "door",
+        "synonyms": [
+          "door",
+          "door panel",
+          "doorway door",
+          "entry door"
+        ]
+      },
+      {
+        "name": "fence",
+        "synonyms": [
+          "fence",
+          "wire fence",
+          "fencing",
+          "fence structure",
+          "boundary fence"
+        ]
+      },
+      {
+        "name": "floor",
+        "synonyms": [
+          "floor",
+          "floor surface",
+          "indoor floor",
+          "room floor",
+          "flooring"
+        ]
+      },
+      {
+        "name": "flower",
+        "synonyms": [
+          "flower"
+        ]
+      },
+      {
+        "name": "food",
+        "synonyms": [
+          "food"
+        ]
+      },
+      {
+        "name": "grass",
+        "synonyms": [
+          "grass",
+          "field",
+          "meadow",
+          "lawn",
+          "grassy ground",
+          "grass cover",
+          "grass surface"
+        ]
+      },
+      {
+        "name": "ground",
+        "synonyms": [
+          "ground",
+          "soil"
+        ]
+      },
+      {
+        "name": "horse",
+        "synonyms": [
+          "horse",
+          "equine animal",
+          "domestic horse"
+        ]
+      },
+      {
+        "name": "keyboard",
+        "synonyms": [
+          "computer keyboard",
+          "keypad",
+          "external keyboard",
+          "typing keyboard"
+        ]
+      },
+      {
+        "name": "light",
+        "synonyms": [
+          "light"
+        ]
+      },
+      {
+        "name": "motorbike",
+        "synonyms": [
+          "motorbike",
+          "motorcycle",
+          "motorized bike"
+        ]
+      },
+      {
+        "name": "mountain",
+        "synonyms": [
+          "mountain",
+          "mount",
+          "mountain terrain",
+          "mountain peak",
+          "mountain slope"
+        ]
+      },
+      {
+        "name": "mouse",
+        "synonyms": [
+          "computer mouse",
+          "desktop mouse"
+        ]
+      },
+      {
+        "name": "person",
+        "synonyms": [
+          "person",
+          "people",
+          "person wearing a shirt",
+          "person wearing jeans",
+          "person wearing a dress",
+          "person wearing a sweater",
+          "person wearing a skirt",
+          "person wearing a jacket",
+          "human",
+          "crowd",
+          "child",
+          "boy",
+          "girl",
+          "man",
+          "women",
+          "baby",
+          "human being",
+          "individual person"
+        ]
+      },
+      {
+        "name": "plate",
+        "synonyms": [
+          "plate",
+          "dinner plate",
+          "ceramic plate",
+          "serving plate",
+          "dish"
+        ]
+      },
+      {
+        "name": "platform",
+        "synonyms": [
+          "platform"
+        ]
+      },
+      {
+        "name": "pottedplant",
+        "synonyms": [
+          "potted plant",
+          "pot plant",
+          "plant in a pot"
+        ]
+      },
+      {
+        "name": "road",
+        "synonyms": [
+          "road",
+          "roadway",
+          "street road",
+          "paved road"
+        ]
+      },
+      {
+        "name": "rock",
+        "synonyms": [
+          "rock",
+          "stone",
+          "natural rock",
+          "rock surface"
+        ]
+      },
+      {
+        "name": "sheep",
+        "synonyms": [
+          "sheep",
+          "ovine animal",
+          "domestic sheep"
+        ]
+      },
+      {
+        "name": "shelves",
+        "synonyms": [
+          "shelves",
+          "shelf"
+        ]
+      },
+      {
+        "name": "sidewalk",
+        "synonyms": [
+          "sidewalk",
+          "footpath",
+          "pedestrian walkway",
+          "street sidewalk"
+        ]
+      },
+      {
+        "name": "sign",
+        "synonyms": [
+          "sign"
+        ]
+      },
+      {
+        "name": "sky",
+        "synonyms": [
+          "sky",
+          "cloudy sky",
+          "blue sky",
+          "the sky above",
+          "clear sky",
+          "sky above the horizon",
+          "open sky",
+          "sky above",
+          "overhead sky"
+        ]
+      },
+      {
+        "name": "snow",
+        "synonyms": [
+          "snow",
+          "snow cover",
+          "snow surface",
+          "snowy ground"
+        ]
+      },
+      {
+        "name": "sofa",
+        "synonyms": [
+          "sofa",
+          "couch",
+          "settee",
+          "upholstered sofa"
+        ]
+      },
+      {
+        "name": "table",
+        "synonyms": [
+          "table",
+          "table furniture",
+          "tabletop furniture"
+        ]
+      },
+      {
+        "name": "track",
+        "synonyms": [
+          "track"
+        ]
+      },
+      {
+        "name": "train",
+        "synonyms": [
+          "train",
+          "locomotive",
+          "railway train",
+          "railroad train",
+          "rail vehicle"
+        ]
+      },
+      {
+        "name": "tree",
+        "synonyms": [
+          "tree",
+          "trees",
+          "forest tree",
+          "woody tree",
+          "tree canopy",
+          "branching tree"
+        ]
+      },
+      {
+        "name": "truck",
+        "synonyms": [
+          "truck",
+          "lorry",
+          "cargo truck",
+          "motor truck"
+        ]
+      },
+      {
+        "name": "tvmonitor",
+        "synonyms": [
+          "television monitor",
+          "monitor",
+          "computer monitor",
+          "television",
+          "TV screen"
+        ]
+      },
+      {
+        "name": "wall",
+        "synonyms": [
+          "wall",
+          "brick wall",
+          "stone wall",
+          "wall surface",
+          "vertical wall",
+          "interior wall"
+        ]
+      },
+      {
+        "name": "water",
+        "synonyms": [
+          "water",
+          "body of water",
+          "river",
+          "lake",
+          "pond",
+          "ocean",
+          "sea",
+          "green water",
+          "blue water",
+          "water surface",
+          "open water"
+        ]
+      },
+      {
+        "name": "window",
+        "synonyms": [
+          "window",
+          "building window"
+        ]
+      },
+      {
+        "name": "wood",
+        "synonyms": [
+          "wood",
+          "wooden",
+          "lumber",
+          "timber",
+          "wooden plank"
+        ]
+      }
+    ],
+    "source_bank": "semantic_segmentation",
+    "source_template": "seg_template",
+    "residual_identity": {
+      "names": [
+        "background",
+        "accordion",
+        "air conditioner",
+        "antenna",
+        "artillery",
+        "ashtray",
+        "atrium",
+        "baby carriage",
+        "ball",
+        "balloon",
+        "bamboo weaving",
+        "barrel",
+        "baseball bat",
+        "basket",
+        "basketball backboard",
+        "bathtub",
+        "beer",
+        "bell",
+        "binoculars",
+        "bird cage",
+        "bird feeder",
+        "bird nest",
+        "blackboard",
+        "board",
+        "bone",
+        "bottle opener",
+        "bowl",
+        "box",
+        "bracelet",
+        "brick",
+        "bridge",
+        "broom",
+        "brush",
+        "bucket",
+        "cabinet door",
+        "cage",
+        "cake",
+        "calculator",
+        "calendar",
+        "camel",
+        "camera",
+        "camera lens",
+        "can",
+        "candle",
+        "candle holder",
+        "cap",
+        "card",
+        "cart",
+        "case",
+        "casette recorder",
+        "cash register",
+        "cd",
+        "cd player",
+        "cell phone",
+        "cello",
+        "chain",
+        "chessboard",
+        "chicken",
+        "chopstick",
+        "clip",
+        "clippers",
+        "clock",
+        "closet",
+        "clothes tree",
+        "coffee",
+        "coffee machine",
+        "comb",
+        "concrete",
+        "cone",
+        "container",
+        "control booth",
+        "controller",
+        "cooker",
+        "copying machine",
+        "coral",
+        "cork",
+        "corkscrew",
+        "counter",
+        "court",
+        "crabstick",
+        "crane",
+        "crate",
+        "cross",
+        "crutch",
+        "cushion",
+        "cutting board",
+        "dais",
+        "disc",
+        "disc case",
+        "dishwasher",
+        "dock",
+        "dolphin",
+        "drainer",
+        "dray",
+        "drink dispenser",
+        "drinking machine",
+        "drop",
+        "drug",
+        "drum",
+        "drum kit",
+        "duck",
+        "dumbbell",
+        "earphone",
+        "earrings",
+        "egg",
+        "electric fan",
+        "electric iron",
+        "electric pot",
+        "electric saw",
+        "electronic keyboard",
+        "engine",
+        "envelope",
+        "equipment",
+        "escalator",
+        "exhibition booth",
+        "extinguisher",
+        "eyeglass",
+        "fan",
+        "faucet",
+        "fax machine",
+        "ferris wheel",
+        "fire extinguisher",
+        "fire hydrant",
+        "fire place",
+        "fish",
+        "fish tank",
+        "fishbowl",
+        "fishing net",
+        "fishing pole",
+        "flag",
+        "flagstaff",
+        "flame",
+        "flashlight",
+        "fly",
+        "foam",
+        "footbridge",
+        "forceps",
+        "fork",
+        "forklift",
+        "fountain",
+        "fox",
+        "frame",
+        "fridge",
+        "frog",
+        "fruit",
+        "funnel",
+        "furnace",
+        "game controller",
+        "game machine",
+        "gas cylinder",
+        "gas hood",
+        "gas stove",
+        "gift box",
+        "glass",
+        "glass marble",
+        "globe",
+        "glove",
+        "goal",
+        "grandstand",
+        "gravestone",
+        "guardrail",
+        "guitar",
+        "gun",
+        "hammer",
+        "hand cart",
+        "handle",
+        "handrail",
+        "hanger",
+        "hard disk drive",
+        "hat",
+        "hay",
+        "headphone",
+        "heater",
+        "helicopter",
+        "helmet",
+        "holder",
+        "hook",
+        "horse-drawn carriage",
+        "hot-air balloon",
+        "hydrovalve",
+        "ice",
+        "inflator pump",
+        "ipod",
+        "iron",
+        "ironing board",
+        "jar",
+        "kart",
+        "kettle",
+        "key",
+        "kitchen range",
+        "kite",
+        "knife",
+        "knife block",
+        "ladder",
+        "ladder truck",
+        "ladle",
+        "laptop",
+        "leaves",
+        "lid",
+        "life buoy",
+        "light bulb",
+        "lighter",
+        "line",
+        "lion",
+        "lobster",
+        "lock",
+        "machine",
+        "mailbox",
+        "mannequin",
+        "map",
+        "mask",
+        "mat",
+        "match book",
+        "mattress",
+        "menu",
+        "metal",
+        "meter box",
+        "microphone",
+        "microwave",
+        "mirror",
+        "missile",
+        "model",
+        "money",
+        "monkey",
+        "mop",
+        "mouse pad",
+        "musical instrument",
+        "napkin",
+        "net",
+        "newspaper",
+        "oar",
+        "ornament",
+        "outlet",
+        "oven",
+        "oxygen bottle",
+        "pack",
+        "pan",
+        "paper",
+        "paper box",
+        "paper cutter",
+        "parachute",
+        "parasol",
+        "parterre",
+        "patio",
+        "pelage",
+        "pen",
+        "pen container",
+        "pencil",
+        "photo",
+        "piano",
+        "picture",
+        "pig",
+        "pillar",
+        "pillow",
+        "pipe",
+        "pitcher",
+        "plant",
+        "plastic",
+        "player",
+        "playground",
+        "pliers",
+        "plume",
+        "poker",
+        "poker chip",
+        "pole",
+        "pool table",
+        "postcard",
+        "poster",
+        "pot",
+        "printer",
+        "projector",
+        "pumpkin",
+        "rabbit",
+        "racket",
+        "radiator",
+        "radio",
+        "rail",
+        "rake",
+        "ramp",
+        "range hood",
+        "receiver",
+        "recorder",
+        "recreational machines",
+        "remote control",
+        "robot",
+        "rocket",
+        "rocking horse",
+        "rope",
+        "rug",
+        "ruler",
+        "runway",
+        "saddle",
+        "sand",
+        "saw",
+        "scale",
+        "scanner",
+        "scissors",
+        "scoop",
+        "screen",
+        "screwdriver",
+        "sculpture",
+        "scythe",
+        "sewer",
+        "sewing machine",
+        "shed",
+        "shell",
+        "shoe",
+        "shopping cart",
+        "shovel",
+        "sidecar",
+        "signal light",
+        "sink",
+        "skateboard",
+        "ski",
+        "sled",
+        "slippers",
+        "smoke",
+        "snail",
+        "snake",
+        "snowmobiles",
+        "spanner",
+        "spatula",
+        "speaker",
+        "speed bump",
+        "spice container",
+        "spoon",
+        "sprayer",
+        "squirrel",
+        "stage",
+        "stair",
+        "stapler",
+        "stick",
+        "sticky note",
+        "stone",
+        "stool",
+        "stove",
+        "straw",
+        "stretcher",
+        "sun",
+        "sunglass",
+        "sunshade",
+        "surveillance camera",
+        "swan",
+        "sweeper",
+        "swim ring",
+        "swimming pool",
+        "swing",
+        "switch",
+        "tableware",
+        "tank",
+        "tap",
+        "tape",
+        "tarp",
+        "telephone",
+        "telephone booth",
+        "tent",
+        "tire",
+        "toaster",
+        "toilet",
+        "tong",
+        "tool",
+        "toothbrush",
+        "towel",
+        "toy",
+        "toy car",
+        "trampoline",
+        "trash bin",
+        "tray",
+        "tricycle",
+        "tripod",
+        "trophy",
+        "tube",
+        "turtle",
+        "tweezers",
+        "typewriter",
+        "umbrella",
+        "unknown",
+        "vacuum cleaner",
+        "vending machine",
+        "video camera",
+        "video game console",
+        "video player",
+        "video tape",
+        "violin",
+        "wakeboard",
+        "wallet",
+        "wardrobe",
+        "washing machine",
+        "watch",
+        "water dispenser",
+        "water pipe",
+        "water skate board",
+        "watermelon",
+        "whale",
+        "wharf",
+        "wheel",
+        "wheelchair",
+        "window blinds",
+        "wineglass",
+        "wire",
+        "wool"
+      ],
+      "raw_residual_categories": [
+        [
+          1,
+          "accordion"
+        ],
+        [
+          3,
+          "air conditioner"
+        ],
+        [
+          4,
+          "antenna"
+        ],
+        [
+          5,
+          "artillery"
+        ],
+        [
+          6,
+          "ashtray"
+        ],
+        [
+          7,
+          "atrium"
+        ],
+        [
+          8,
+          "baby carriage"
+        ],
+        [
+          10,
+          "ball"
+        ],
+        [
+          11,
+          "balloon"
+        ],
+        [
+          12,
+          "bamboo weaving"
+        ],
+        [
+          13,
+          "barrel"
+        ],
+        [
+          14,
+          "baseball bat"
+        ],
+        [
+          15,
+          "basket"
+        ],
+        [
+          16,
+          "basketball backboard"
+        ],
+        [
+          17,
+          "bathtub"
+        ],
+        [
+          20,
+          "beer"
+        ],
+        [
+          21,
+          "bell"
+        ],
+        [
+          24,
+          "binoculars"
+        ],
+        [
+          26,
+          "bird cage"
+        ],
+        [
+          27,
+          "bird feeder"
+        ],
+        [
+          28,
+          "bird nest"
+        ],
+        [
+          29,
+          "blackboard"
+        ],
+        [
+          30,
+          "board"
+        ],
+        [
+          32,
+          "bone"
+        ],
+        [
+          35,
+          "bottle opener"
+        ],
+        [
+          36,
+          "bowl"
+        ],
+        [
+          37,
+          "box"
+        ],
+        [
+          38,
+          "bracelet"
+        ],
+        [
+          39,
+          "brick"
+        ],
+        [
+          40,
+          "bridge"
+        ],
+        [
+          41,
+          "broom"
+        ],
+        [
+          42,
+          "brush"
+        ],
+        [
+          43,
+          "bucket"
+        ],
+        [
+          47,
+          "cabinet door"
+        ],
+        [
+          48,
+          "cage"
+        ],
+        [
+          49,
+          "cake"
+        ],
+        [
+          50,
+          "calculator"
+        ],
+        [
+          51,
+          "calendar"
+        ],
+        [
+          52,
+          "camel"
+        ],
+        [
+          53,
+          "camera"
+        ],
+        [
+          54,
+          "camera lens"
+        ],
+        [
+          55,
+          "can"
+        ],
+        [
+          56,
+          "candle"
+        ],
+        [
+          57,
+          "candle holder"
+        ],
+        [
+          58,
+          "cap"
+        ],
+        [
+          60,
+          "card"
+        ],
+        [
+          61,
+          "cart"
+        ],
+        [
+          62,
+          "case"
+        ],
+        [
+          63,
+          "casette recorder"
+        ],
+        [
+          64,
+          "cash register"
+        ],
+        [
+          66,
+          "cd"
+        ],
+        [
+          67,
+          "cd player"
+        ],
+        [
+          69,
+          "cell phone"
+        ],
+        [
+          70,
+          "cello"
+        ],
+        [
+          71,
+          "chain"
+        ],
+        [
+          73,
+          "chessboard"
+        ],
+        [
+          74,
+          "chicken"
+        ],
+        [
+          75,
+          "chopstick"
+        ],
+        [
+          76,
+          "clip"
+        ],
+        [
+          77,
+          "clippers"
+        ],
+        [
+          78,
+          "clock"
+        ],
+        [
+          79,
+          "closet"
+        ],
+        [
+          81,
+          "clothes tree"
+        ],
+        [
+          82,
+          "coffee"
+        ],
+        [
+          83,
+          "coffee machine"
+        ],
+        [
+          84,
+          "comb"
+        ],
+        [
+          86,
+          "concrete"
+        ],
+        [
+          87,
+          "cone"
+        ],
+        [
+          88,
+          "container"
+        ],
+        [
+          89,
+          "control booth"
+        ],
+        [
+          90,
+          "controller"
+        ],
+        [
+          91,
+          "cooker"
+        ],
+        [
+          92,
+          "copying machine"
+        ],
+        [
+          93,
+          "coral"
+        ],
+        [
+          94,
+          "cork"
+        ],
+        [
+          95,
+          "corkscrew"
+        ],
+        [
+          96,
+          "counter"
+        ],
+        [
+          97,
+          "court"
+        ],
+        [
+          99,
+          "crabstick"
+        ],
+        [
+          100,
+          "crane"
+        ],
+        [
+          101,
+          "crate"
+        ],
+        [
+          102,
+          "cross"
+        ],
+        [
+          103,
+          "crutch"
+        ],
+        [
+          106,
+          "cushion"
+        ],
+        [
+          107,
+          "cutting board"
+        ],
+        [
+          108,
+          "dais"
+        ],
+        [
+          109,
+          "disc"
+        ],
+        [
+          110,
+          "disc case"
+        ],
+        [
+          111,
+          "dishwasher"
+        ],
+        [
+          112,
+          "dock"
+        ],
+        [
+          114,
+          "dolphin"
+        ],
+        [
+          116,
+          "drainer"
+        ],
+        [
+          117,
+          "dray"
+        ],
+        [
+          118,
+          "drink dispenser"
+        ],
+        [
+          119,
+          "drinking machine"
+        ],
+        [
+          120,
+          "drop"
+        ],
+        [
+          121,
+          "drug"
+        ],
+        [
+          122,
+          "drum"
+        ],
+        [
+          123,
+          "drum kit"
+        ],
+        [
+          124,
+          "duck"
+        ],
+        [
+          125,
+          "dumbbell"
+        ],
+        [
+          126,
+          "earphone"
+        ],
+        [
+          127,
+          "earrings"
+        ],
+        [
+          128,
+          "egg"
+        ],
+        [
+          129,
+          "electric fan"
+        ],
+        [
+          130,
+          "electric iron"
+        ],
+        [
+          131,
+          "electric pot"
+        ],
+        [
+          132,
+          "electric saw"
+        ],
+        [
+          133,
+          "electronic keyboard"
+        ],
+        [
+          134,
+          "engine"
+        ],
+        [
+          135,
+          "envelope"
+        ],
+        [
+          136,
+          "equipment"
+        ],
+        [
+          137,
+          "escalator"
+        ],
+        [
+          138,
+          "exhibition booth"
+        ],
+        [
+          139,
+          "extinguisher"
+        ],
+        [
+          140,
+          "eyeglass"
+        ],
+        [
+          141,
+          "fan"
+        ],
+        [
+          142,
+          "faucet"
+        ],
+        [
+          143,
+          "fax machine"
+        ],
+        [
+          145,
+          "ferris wheel"
+        ],
+        [
+          146,
+          "fire extinguisher"
+        ],
+        [
+          147,
+          "fire hydrant"
+        ],
+        [
+          148,
+          "fire place"
+        ],
+        [
+          149,
+          "fish"
+        ],
+        [
+          150,
+          "fish tank"
+        ],
+        [
+          151,
+          "fishbowl"
+        ],
+        [
+          152,
+          "fishing net"
+        ],
+        [
+          153,
+          "fishing pole"
+        ],
+        [
+          154,
+          "flag"
+        ],
+        [
+          155,
+          "flagstaff"
+        ],
+        [
+          156,
+          "flame"
+        ],
+        [
+          157,
+          "flashlight"
+        ],
+        [
+          160,
+          "fly"
+        ],
+        [
+          161,
+          "foam"
+        ],
+        [
+          163,
+          "footbridge"
+        ],
+        [
+          164,
+          "forceps"
+        ],
+        [
+          165,
+          "fork"
+        ],
+        [
+          166,
+          "forklift"
+        ],
+        [
+          167,
+          "fountain"
+        ],
+        [
+          168,
+          "fox"
+        ],
+        [
+          169,
+          "frame"
+        ],
+        [
+          170,
+          "fridge"
+        ],
+        [
+          171,
+          "frog"
+        ],
+        [
+          172,
+          "fruit"
+        ],
+        [
+          173,
+          "funnel"
+        ],
+        [
+          174,
+          "furnace"
+        ],
+        [
+          175,
+          "game controller"
+        ],
+        [
+          176,
+          "game machine"
+        ],
+        [
+          177,
+          "gas cylinder"
+        ],
+        [
+          178,
+          "gas hood"
+        ],
+        [
+          179,
+          "gas stove"
+        ],
+        [
+          180,
+          "gift box"
+        ],
+        [
+          181,
+          "glass"
+        ],
+        [
+          182,
+          "glass marble"
+        ],
+        [
+          183,
+          "globe"
+        ],
+        [
+          184,
+          "glove"
+        ],
+        [
+          185,
+          "goal"
+        ],
+        [
+          186,
+          "grandstand"
+        ],
+        [
+          188,
+          "gravestone"
+        ],
+        [
+          190,
+          "guardrail"
+        ],
+        [
+          191,
+          "guitar"
+        ],
+        [
+          192,
+          "gun"
+        ],
+        [
+          193,
+          "hammer"
+        ],
+        [
+          194,
+          "hand cart"
+        ],
+        [
+          195,
+          "handle"
+        ],
+        [
+          196,
+          "handrail"
+        ],
+        [
+          197,
+          "hanger"
+        ],
+        [
+          198,
+          "hard disk drive"
+        ],
+        [
+          199,
+          "hat"
+        ],
+        [
+          200,
+          "hay"
+        ],
+        [
+          201,
+          "headphone"
+        ],
+        [
+          202,
+          "heater"
+        ],
+        [
+          203,
+          "helicopter"
+        ],
+        [
+          204,
+          "helmet"
+        ],
+        [
+          205,
+          "holder"
+        ],
+        [
+          206,
+          "hook"
+        ],
+        [
+          208,
+          "horse-drawn carriage"
+        ],
+        [
+          209,
+          "hot-air balloon"
+        ],
+        [
+          210,
+          "hydrovalve"
+        ],
+        [
+          211,
+          "ice"
+        ],
+        [
+          212,
+          "inflator pump"
+        ],
+        [
+          213,
+          "ipod"
+        ],
+        [
+          214,
+          "iron"
+        ],
+        [
+          215,
+          "ironing board"
+        ],
+        [
+          216,
+          "jar"
+        ],
+        [
+          217,
+          "kart"
+        ],
+        [
+          218,
+          "kettle"
+        ],
+        [
+          219,
+          "key"
+        ],
+        [
+          221,
+          "kitchen range"
+        ],
+        [
+          222,
+          "kite"
+        ],
+        [
+          223,
+          "knife"
+        ],
+        [
+          224,
+          "knife block"
+        ],
+        [
+          225,
+          "ladder"
+        ],
+        [
+          226,
+          "ladder truck"
+        ],
+        [
+          227,
+          "ladle"
+        ],
+        [
+          228,
+          "laptop"
+        ],
+        [
+          229,
+          "leaves"
+        ],
+        [
+          230,
+          "lid"
+        ],
+        [
+          231,
+          "life buoy"
+        ],
+        [
+          233,
+          "light bulb"
+        ],
+        [
+          234,
+          "lighter"
+        ],
+        [
+          235,
+          "line"
+        ],
+        [
+          236,
+          "lion"
+        ],
+        [
+          237,
+          "lobster"
+        ],
+        [
+          238,
+          "lock"
+        ],
+        [
+          239,
+          "machine"
+        ],
+        [
+          240,
+          "mailbox"
+        ],
+        [
+          241,
+          "mannequin"
+        ],
+        [
+          242,
+          "map"
+        ],
+        [
+          243,
+          "mask"
+        ],
+        [
+          244,
+          "mat"
+        ],
+        [
+          245,
+          "match book"
+        ],
+        [
+          246,
+          "mattress"
+        ],
+        [
+          247,
+          "menu"
+        ],
+        [
+          248,
+          "metal"
+        ],
+        [
+          249,
+          "meter box"
+        ],
+        [
+          250,
+          "microphone"
+        ],
+        [
+          251,
+          "microwave"
+        ],
+        [
+          252,
+          "mirror"
+        ],
+        [
+          253,
+          "missile"
+        ],
+        [
+          254,
+          "model"
+        ],
+        [
+          255,
+          "money"
+        ],
+        [
+          256,
+          "monkey"
+        ],
+        [
+          257,
+          "mop"
+        ],
+        [
+          261,
+          "mouse pad"
+        ],
+        [
+          262,
+          "musical instrument"
+        ],
+        [
+          263,
+          "napkin"
+        ],
+        [
+          264,
+          "net"
+        ],
+        [
+          265,
+          "newspaper"
+        ],
+        [
+          266,
+          "oar"
+        ],
+        [
+          267,
+          "ornament"
+        ],
+        [
+          268,
+          "outlet"
+        ],
+        [
+          269,
+          "oven"
+        ],
+        [
+          270,
+          "oxygen bottle"
+        ],
+        [
+          271,
+          "pack"
+        ],
+        [
+          272,
+          "pan"
+        ],
+        [
+          273,
+          "paper"
+        ],
+        [
+          274,
+          "paper box"
+        ],
+        [
+          275,
+          "paper cutter"
+        ],
+        [
+          276,
+          "parachute"
+        ],
+        [
+          277,
+          "parasol"
+        ],
+        [
+          278,
+          "parterre"
+        ],
+        [
+          279,
+          "patio"
+        ],
+        [
+          280,
+          "pelage"
+        ],
+        [
+          281,
+          "pen"
+        ],
+        [
+          282,
+          "pen container"
+        ],
+        [
+          283,
+          "pencil"
+        ],
+        [
+          285,
+          "photo"
+        ],
+        [
+          286,
+          "piano"
+        ],
+        [
+          287,
+          "picture"
+        ],
+        [
+          288,
+          "pig"
+        ],
+        [
+          289,
+          "pillar"
+        ],
+        [
+          290,
+          "pillow"
+        ],
+        [
+          291,
+          "pipe"
+        ],
+        [
+          292,
+          "pitcher"
+        ],
+        [
+          293,
+          "plant"
+        ],
+        [
+          294,
+          "plastic"
+        ],
+        [
+          297,
+          "player"
+        ],
+        [
+          298,
+          "playground"
+        ],
+        [
+          299,
+          "pliers"
+        ],
+        [
+          300,
+          "plume"
+        ],
+        [
+          301,
+          "poker"
+        ],
+        [
+          302,
+          "poker chip"
+        ],
+        [
+          303,
+          "pole"
+        ],
+        [
+          304,
+          "pool table"
+        ],
+        [
+          305,
+          "postcard"
+        ],
+        [
+          306,
+          "poster"
+        ],
+        [
+          307,
+          "pot"
+        ],
+        [
+          309,
+          "printer"
+        ],
+        [
+          310,
+          "projector"
+        ],
+        [
+          311,
+          "pumpkin"
+        ],
+        [
+          312,
+          "rabbit"
+        ],
+        [
+          313,
+          "racket"
+        ],
+        [
+          314,
+          "radiator"
+        ],
+        [
+          315,
+          "radio"
+        ],
+        [
+          316,
+          "rail"
+        ],
+        [
+          317,
+          "rake"
+        ],
+        [
+          318,
+          "ramp"
+        ],
+        [
+          319,
+          "range hood"
+        ],
+        [
+          320,
+          "receiver"
+        ],
+        [
+          321,
+          "recorder"
+        ],
+        [
+          322,
+          "recreational machines"
+        ],
+        [
+          323,
+          "remote control"
+        ],
+        [
+          325,
+          "robot"
+        ],
+        [
+          327,
+          "rocket"
+        ],
+        [
+          328,
+          "rocking horse"
+        ],
+        [
+          329,
+          "rope"
+        ],
+        [
+          330,
+          "rug"
+        ],
+        [
+          331,
+          "ruler"
+        ],
+        [
+          332,
+          "runway"
+        ],
+        [
+          333,
+          "saddle"
+        ],
+        [
+          334,
+          "sand"
+        ],
+        [
+          335,
+          "saw"
+        ],
+        [
+          336,
+          "scale"
+        ],
+        [
+          337,
+          "scanner"
+        ],
+        [
+          338,
+          "scissors"
+        ],
+        [
+          339,
+          "scoop"
+        ],
+        [
+          340,
+          "screen"
+        ],
+        [
+          341,
+          "screwdriver"
+        ],
+        [
+          342,
+          "sculpture"
+        ],
+        [
+          343,
+          "scythe"
+        ],
+        [
+          344,
+          "sewer"
+        ],
+        [
+          345,
+          "sewing machine"
+        ],
+        [
+          346,
+          "shed"
+        ],
+        [
+          348,
+          "shell"
+        ],
+        [
+          350,
+          "shoe"
+        ],
+        [
+          351,
+          "shopping cart"
+        ],
+        [
+          352,
+          "shovel"
+        ],
+        [
+          353,
+          "sidecar"
+        ],
+        [
+          356,
+          "signal light"
+        ],
+        [
+          357,
+          "sink"
+        ],
+        [
+          358,
+          "skateboard"
+        ],
+        [
+          359,
+          "ski"
+        ],
+        [
+          361,
+          "sled"
+        ],
+        [
+          362,
+          "slippers"
+        ],
+        [
+          363,
+          "smoke"
+        ],
+        [
+          364,
+          "snail"
+        ],
+        [
+          365,
+          "snake"
+        ],
+        [
+          367,
+          "snowmobiles"
+        ],
+        [
+          369,
+          "spanner"
+        ],
+        [
+          370,
+          "spatula"
+        ],
+        [
+          371,
+          "speaker"
+        ],
+        [
+          372,
+          "speed bump"
+        ],
+        [
+          373,
+          "spice container"
+        ],
+        [
+          374,
+          "spoon"
+        ],
+        [
+          375,
+          "sprayer"
+        ],
+        [
+          376,
+          "squirrel"
+        ],
+        [
+          377,
+          "stage"
+        ],
+        [
+          378,
+          "stair"
+        ],
+        [
+          379,
+          "stapler"
+        ],
+        [
+          380,
+          "stick"
+        ],
+        [
+          381,
+          "sticky note"
+        ],
+        [
+          382,
+          "stone"
+        ],
+        [
+          383,
+          "stool"
+        ],
+        [
+          384,
+          "stove"
+        ],
+        [
+          385,
+          "straw"
+        ],
+        [
+          386,
+          "stretcher"
+        ],
+        [
+          387,
+          "sun"
+        ],
+        [
+          388,
+          "sunglass"
+        ],
+        [
+          389,
+          "sunshade"
+        ],
+        [
+          390,
+          "surveillance camera"
+        ],
+        [
+          391,
+          "swan"
+        ],
+        [
+          392,
+          "sweeper"
+        ],
+        [
+          393,
+          "swim ring"
+        ],
+        [
+          394,
+          "swimming pool"
+        ],
+        [
+          395,
+          "swing"
+        ],
+        [
+          396,
+          "switch"
+        ],
+        [
+          398,
+          "tableware"
+        ],
+        [
+          399,
+          "tank"
+        ],
+        [
+          400,
+          "tap"
+        ],
+        [
+          401,
+          "tape"
+        ],
+        [
+          402,
+          "tarp"
+        ],
+        [
+          403,
+          "telephone"
+        ],
+        [
+          404,
+          "telephone booth"
+        ],
+        [
+          405,
+          "tent"
+        ],
+        [
+          406,
+          "tire"
+        ],
+        [
+          407,
+          "toaster"
+        ],
+        [
+          408,
+          "toilet"
+        ],
+        [
+          409,
+          "tong"
+        ],
+        [
+          410,
+          "tool"
+        ],
+        [
+          411,
+          "toothbrush"
+        ],
+        [
+          412,
+          "towel"
+        ],
+        [
+          413,
+          "toy"
+        ],
+        [
+          414,
+          "toy car"
+        ],
+        [
+          417,
+          "trampoline"
+        ],
+        [
+          418,
+          "trash bin"
+        ],
+        [
+          419,
+          "tray"
+        ],
+        [
+          421,
+          "tricycle"
+        ],
+        [
+          422,
+          "tripod"
+        ],
+        [
+          423,
+          "trophy"
+        ],
+        [
+          425,
+          "tube"
+        ],
+        [
+          426,
+          "turtle"
+        ],
+        [
+          428,
+          "tweezers"
+        ],
+        [
+          429,
+          "typewriter"
+        ],
+        [
+          430,
+          "umbrella"
+        ],
+        [
+          431,
+          "unknown"
+        ],
+        [
+          432,
+          "vacuum cleaner"
+        ],
+        [
+          433,
+          "vending machine"
+        ],
+        [
+          434,
+          "video camera"
+        ],
+        [
+          435,
+          "video game console"
+        ],
+        [
+          436,
+          "video player"
+        ],
+        [
+          437,
+          "video tape"
+        ],
+        [
+          438,
+          "violin"
+        ],
+        [
+          439,
+          "wakeboard"
+        ],
+        [
+          441,
+          "wallet"
+        ],
+        [
+          442,
+          "wardrobe"
+        ],
+        [
+          443,
+          "washing machine"
+        ],
+        [
+          444,
+          "watch"
+        ],
+        [
+          446,
+          "water dispenser"
+        ],
+        [
+          447,
+          "water pipe"
+        ],
+        [
+          448,
+          "water skate board"
+        ],
+        [
+          449,
+          "watermelon"
+        ],
+        [
+          450,
+          "whale"
+        ],
+        [
+          451,
+          "wharf"
+        ],
+        [
+          452,
+          "wheel"
+        ],
+        [
+          453,
+          "wheelchair"
+        ],
+        [
+          455,
+          "window blinds"
+        ],
+        [
+          456,
+          "wineglass"
+        ],
+        [
+          457,
+          "wire"
+        ],
+        [
+          459,
+          "wool"
+        ]
+      ],
+      "template": "seg_template",
+      "selection": "Official category-name complement of scored raw IDs; no image/mask access.",
+      "provenance": "PC60-specific supplied full ontology, not generated unknown objects and not a synonym pool."
+    },
+    "checkpoints": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "upstream_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+    "official_template": "city_template"
+  },
+  "initialization_and_text_seconds": 14.676211802987382,
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "boundary": "Seven full inputs x seven warmed synchronized repeats. Native VIP resizing/encoding/readout/restoration/CPU output; decode/init/offline selection excluded.",
+  "weights_frozen": true,
+  "head_weights_unchanged": true
+}

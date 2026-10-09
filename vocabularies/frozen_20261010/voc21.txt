@@ -1,0 +1,21 @@
+background	background | sky | cloudy sky | blue sky | the sky above | clear sky | sky above the horizon | open sky | wall | brick wall | stone wall | trees | tree | forest | wood | wooden surface | lumber | timber | wooden plank | grass | field | soil | meadow | lawn | road | roadway | water | body of water | river | lake | pond | ocean | sea | green water | blue water | mountain | sand | bed | building | buildings | facade | building frontage | cloud | lamp | door | window | wardrobe | ceiling | shelf | shelves | curtain | stair | floor | hill | railway rail | fence
+aeroplane	aeroplane | plane | airplane | aircraft
+bicycle	bicycle | pedal bike | pedal bicycle
+bird	bird | avian animal | feathered bird
+boat	boat | watercraft | small boat | sailing boat
+bottle	bottle | wine bottle | water bottle | drink bottle | glass bottle | plastic bottle
+bus	bus | red bus | double-decker bus | passenger bus | public transit bus | city bus
+car	car | automobile | passenger car | motorcar
+cat	cat | feline | domestic cat | house cat
+chair	chair | armchair | desk chair | wooden chair | dining chair | kitchen chair | seat chair | seating chair | individual chair
+cow	cow | cattle | bull | calf | cattle animal | bovine | domestic cow
+diningtable	dining table | table | meal table | dinner table
+dog	dog | canine | domestic dog | pet dog
+horse	horse | wild horse | equine animal | domestic horse
+motorbike	motorbike | motorcycle | motorized bike
+person	person | people | person wearing a shirt | person wearing jeans | person wearing a dress | person wearing a sweater | person wearing a skirt | person wearing a jacket | person wearing a hat | human | crowd | child | boy | girl | man | women | human being | individual person
+pottedplant	potted plant | plant in a pot | houseplant | flowerpot | pot plant
+sheep	sheep | lamb | ovine animal | domestic sheep
+sofa	sofa | fabric sofa | settee | couch | upholstered sofa
+train	train | railway train | railroad train | rail vehicle
+tvmonitor	television monitor | tv monitor | monitor | computer monitor | television | TV screen

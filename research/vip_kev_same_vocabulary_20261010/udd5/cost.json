@@ -1,0 +1,233 @@
+{
+  "status": "complete",
+  "dataset": "udd5",
+  "method": "VIP_SameText",
+  "images": [
+    {
+      "key": "000061.JPG",
+      "shape": [
+        2160,
+        4096
+      ],
+      "milliseconds": [
+        150.78393882140517,
+        151.2759739998728,
+        150.90078697539866,
+        152.50501898117363,
+        153.01298396661878,
+        150.28000995516777,
+        151.61140100099146
+      ],
+      "peak_allocated_mib": 2026.341796875
+    },
+    {
+      "key": "001461.JPG",
+      "shape": [
+        2160,
+        4096
+      ],
+      "milliseconds": [
+        151.06233092956245,
+        150.56725894100964,
+        152.91801001876593,
+        150.3287039231509,
+        152.2856920491904,
+        151.74339315854013,
+        153.94694707356393
+      ],
+      "peak_allocated_mib": 2026.341796875
+    },
+    {
+      "key": "DJI_00528.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        191.35838584043086,
+        193.46912391483784,
+        197.5581650622189,
+        197.352898074314,
+        189.66604094021022,
+        190.9958350006491,
+        187.96474603004754
+      ],
+      "peak_allocated_mib": 2147.0224609375
+    },
+    {
+      "key": "DJI_0373_heda.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        196.02342299185693,
+        194.07000415958464,
+        191.9641389977187,
+        192.83280288800597,
+        191.4994150865823,
+        192.25022615864873,
+        192.26447795517743
+      ],
+      "peak_allocated_mib": 2147.0224609375
+    },
+    {
+      "key": "DJI_0451.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        186.9435349944979,
+        187.49005300924182,
+        184.23988204449415,
+        191.1467609461397,
+        191.9462929945439,
+        193.4595878701657,
+        191.64124107919633
+      ],
+      "peak_allocated_mib": 2147.0224609375
+    },
+    {
+      "key": "DJI_0511.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        190.04755886271596,
+        191.87386706471443,
+        191.7416879441589,
+        190.55025489069521,
+        191.90085213631392,
+        191.40415103174746,
+        191.22763606719673
+      ],
+      "peak_allocated_mib": 2147.0224609375
+    },
+    {
+      "key": "DJI_0707.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        186.7808101233095,
+        195.52891585044563,
+        191.15907908417284,
+        190.54448418319225,
+        193.33578506484628,
+        193.3320809621364,
+        192.41634802892804
+      ],
+      "peak_allocated_mib": 2147.0224609375
+    }
+  ],
+  "median_ms": 191.1467609461397,
+  "p95_ms": 195.8256201352924,
+  "peak_allocated_mib": 2147.0224609375,
+  "settings": {
+    "tau": 4.0,
+    "tem": 1.0,
+    "prob_thd": 0.0,
+    "background": false,
+    "bg_idx": 0,
+    "resize_long_edge": 448,
+    "slide_crop": 336,
+    "slide_stride": 112,
+    "logit_scale": 40.0
+  },
+  "text_identity": {
+    "classes": [
+      {
+        "name": "vegetation",
+        "synonyms": [
+          "vegetation",
+          "grass",
+          "grassland",
+          "bushes",
+          "tree canopy",
+          "trees",
+          "park vegetation"
+        ]
+      },
+      {
+        "name": "building",
+        "synonyms": [
+          "building"
+        ]
+      },
+      {
+        "name": "road",
+        "synonyms": [
+          "road",
+          "asphalt road"
+        ]
+      },
+      {
+        "name": "vehicle",
+        "synonyms": [
+          "vehicle"
+        ]
+      },
+      {
+        "name": "other",
+        "synonyms": [
+          "other",
+          "background",
+          "miscellaneous ground",
+          "unclassified area",
+          "unknown terrain",
+          "other land cover",
+          "non target area",
+          "open ground",
+          "bare ground",
+          "pavement",
+          "parking area",
+          "courtyard",
+          "shadow",
+          "construction area",
+          "water surface",
+          "agricultural field",
+          "sports field",
+          "mixed terrain",
+          "unused land",
+          "cluttered area"
+        ]
+      }
+    ],
+    "source_bank": "kev60_segmentation",
+    "source_template": "seg_template",
+    "residual_identity": null,
+    "checkpoints": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "upstream_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+    "official_template": "openai_imagenet_template"
+  },
+  "initialization_and_text_seconds": 14.440113350050524,
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "boundary": "Seven full inputs x seven warmed synchronized repeats. Native VIP resizing/encoding/readout/restoration/CPU output; decode/init/offline selection excluded.",
+  "weights_frozen": true,
+  "head_weights_unchanged": true
+}

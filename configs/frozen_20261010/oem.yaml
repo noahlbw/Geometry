@@ -1,0 +1,36 @@
+schema: 1
+dataset: oem
+family: remote_sensing
+total_images: 384
+background_index: null
+vocabulary: ../../vocabularies/frozen_20261010/oem.json
+profile:
+  bank: original
+  strength: 1.0
+  coupling: 0.25
+  temperature: 0.03
+  tau: 1.0
+  tem: 1.0
+  wide_policy: long448
+  background_rule: retained
+background_bias: 0.0
+background_threshold: 0.0
+geometry:
+  geometry_depth: 2
+  geometry_temperature: 0.1
+  spatial_sigma: 0.25
+  maximum_aliases_per_class: 20
+visual_budget:
+  geometry_max: 4
+  wide_max: 4
+  fine: 0
+upstream:
+  vip_commit: 5bd25ee03ec25c1538622cf7da661e8c0461e769
+  dinov3_commit: f6704c1b76137543328567c8f8b49a2dc318824c
+provenance:
+  labeled_development: true
+  prior_developed_data: true
+  selection_frozen: true
+  source: research/kev_alias_search_20261009/oem/selection.json
+  caveat: This is a frozen task-specific exploratory configuration, not label-free
+    adaptation.

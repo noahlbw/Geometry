@@ -1,0 +1,52 @@
+{
+  "dataset": "potsdam",
+  "banks": {
+    "official_imagenet": {
+      "classes": [
+        {
+          "name": "impervious surface",
+          "synonyms": [
+            "road",
+            "parking lots"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "buildings"
+          ]
+        },
+        {
+          "name": "low vegetation",
+          "synonyms": [
+            "grass",
+            "grassland",
+            "farmland",
+            "forest area"
+          ]
+        },
+        {
+          "name": "tree",
+          "synonyms": [
+            "tree",
+            "trees"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "cars"
+          ]
+        },
+        {
+          "name": "clutter",
+          "synonyms": [
+            "background"
+          ]
+        }
+      ],
+      "template": "ImageNet80"
+    }
+  },
+  "residual": null
+}

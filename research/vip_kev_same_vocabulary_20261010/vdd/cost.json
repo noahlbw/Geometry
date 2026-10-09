@@ -1,0 +1,221 @@
+{
+  "status": "complete",
+  "dataset": "vdd",
+  "method": "VIP_SameText",
+  "images": [
+    {
+      "key": "DJI_0007.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        190.76988985762,
+        189.88157995045185,
+        189.40128991380334,
+        191.9842199422419,
+        190.8537489362061,
+        190.29112695716321,
+        189.75437805056572
+      ],
+      "peak_allocated_mib": 2332.927734375
+    },
+    {
+      "key": "DJI_0390.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        189.4990091677755,
+        188.88177606277168,
+        189.23407094553113,
+        190.06458506919444,
+        192.4170299898833,
+        192.45301699265838,
+        191.16645911708474
+      ],
+      "peak_allocated_mib": 2332.927734375
+    },
+    {
+      "key": "DJI_0552.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        183.8866590987891,
+        193.59667506068945,
+        190.46247005462646,
+        192.200856981799,
+        192.5392730627209,
+        190.84368995390832,
+        189.43907809443772
+      ],
+      "peak_allocated_mib": 2332.927734375
+    },
+    {
+      "key": "DJI_0819.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        190.82578201778233,
+        192.36534414812922,
+        190.50256884656847,
+        191.01678021252155,
+        191.01516203954816,
+        189.7642849944532,
+        190.908744931221
+      ],
+      "peak_allocated_mib": 2332.927734375
+    },
+    {
+      "key": "DJI_10054.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        192.0541098807007,
+        193.6250040307641,
+        191.95707282051444,
+        192.74725182913244,
+        199.62128205224872,
+        194.12135402671993,
+        195.73011389002204
+      ],
+      "peak_allocated_mib": 2332.927734375
+    },
+    {
+      "key": "DJI_10397.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        204.4758249539882,
+        202.9386719223112,
+        191.58399011939764,
+        192.68255797214806,
+        192.83690000884235,
+        191.67696591466665,
+        187.91975383646786
+      ],
+      "peak_allocated_mib": 2332.927734375
+    },
+    {
+      "key": "DJI_10708.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        181.47675599902868,
+        188.1069669034332,
+        181.90302094444633,
+        190.80691784620285,
+        187.34796508215368,
+        186.7670041974634,
+        187.064278870821
+      ],
+      "peak_allocated_mib": 2332.927734375
+    }
+  ],
+  "median_ms": 190.8537489362061,
+  "p95_ms": 198.06481478735802,
+  "peak_allocated_mib": 2332.927734375,
+  "settings": {
+    "tau": 1.0,
+    "tem": 1.0,
+    "prob_thd": 0.35,
+    "background": true,
+    "bg_idx": 0,
+    "resize_long_edge": 448,
+    "slide_crop": 336,
+    "slide_stride": 112,
+    "logit_scale": 40.0
+  },
+  "text_identity": {
+    "classes": [
+      {
+        "name": "other",
+        "synonyms": [
+          "surface",
+          "other"
+        ]
+      },
+      {
+        "name": "wall",
+        "synonyms": [
+          "facade"
+        ]
+      },
+      {
+        "name": "road",
+        "synonyms": [
+          "road"
+        ]
+      },
+      {
+        "name": "vegetation",
+        "synonyms": [
+          "grassland",
+          "forest area"
+        ]
+      },
+      {
+        "name": "vehicle",
+        "synonyms": [
+          "vehicle"
+        ]
+      },
+      {
+        "name": "roof",
+        "synonyms": [
+          "roof"
+        ]
+      },
+      {
+        "name": "water",
+        "synonyms": [
+          "water"
+        ]
+      }
+    ],
+    "source_bank": "official_imagenet",
+    "source_template": "openai_imagenet_template",
+    "residual_identity": null,
+    "checkpoints": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "upstream_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+    "official_template": "openai_imagenet_template"
+  },
+  "initialization_and_text_seconds": 14.07482043094933,
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "boundary": "Seven full inputs x seven warmed synchronized repeats. Native VIP resizing/encoding/readout/restoration/CPU output; decode/init/offline selection excluded.",
+  "weights_frozen": true,
+  "head_weights_unchanged": true
+}

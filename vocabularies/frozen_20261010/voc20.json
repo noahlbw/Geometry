@@ -1,0 +1,174 @@
+{
+  "dataset": "voc20",
+  "banks": {
+    "official_segmentation": {
+      "classes": [
+        {
+          "name": "aeroplane",
+          "synonyms": [
+            "aeroplane",
+            "plane"
+          ]
+        },
+        {
+          "name": "bicycle",
+          "synonyms": [
+            "bicycle"
+          ]
+        },
+        {
+          "name": "bird",
+          "synonyms": [
+            "bird"
+          ]
+        },
+        {
+          "name": "boat",
+          "synonyms": [
+            "boat"
+          ]
+        },
+        {
+          "name": "bottle",
+          "synonyms": [
+            "bottle",
+            "wine bottle"
+          ]
+        },
+        {
+          "name": "bus",
+          "synonyms": [
+            "bus",
+            "red bus",
+            "double-decker bus"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car"
+          ]
+        },
+        {
+          "name": "cat",
+          "synonyms": [
+            "cat"
+          ]
+        },
+        {
+          "name": "chair",
+          "synonyms": [
+            "chair",
+            "armchair",
+            "desk chair",
+            "wooden chair",
+            "dining chair",
+            "kitchen chair",
+            "office chair"
+          ]
+        },
+        {
+          "name": "cow",
+          "synonyms": [
+            "cow",
+            "cattle",
+            "bull",
+            "calf"
+          ]
+        },
+        {
+          "name": "diningtable",
+          "synonyms": [
+            "table",
+            "desk"
+          ]
+        },
+        {
+          "name": "dog",
+          "synonyms": [
+            "dog"
+          ]
+        },
+        {
+          "name": "horse",
+          "synonyms": [
+            "horse",
+            "wild horse"
+          ]
+        },
+        {
+          "name": "motorbike",
+          "synonyms": [
+            "motorcycle",
+            "motorbike"
+          ]
+        },
+        {
+          "name": "person",
+          "synonyms": [
+            "person",
+            "people",
+            "people in shirt",
+            "people in jeans",
+            "people in dress",
+            "people in sweater",
+            "people in skirt",
+            "people in jacket",
+            "people in hat",
+            "human in hat",
+            "human in jeans",
+            "human in sweater",
+            "human in skirt",
+            "human in jacket",
+            "human",
+            "crowd",
+            "child",
+            "boy",
+            "girl",
+            "man",
+            "women"
+          ]
+        },
+        {
+          "name": "pottedplant",
+          "synonyms": [
+            "potted plant",
+            "plant in a pot",
+            "houseplant",
+            "flowerpot"
+          ]
+        },
+        {
+          "name": "sheep",
+          "synonyms": [
+            "sheep"
+          ]
+        },
+        {
+          "name": "sofa",
+          "synonyms": [
+            "sofa",
+            "fabric sofa"
+          ]
+        },
+        {
+          "name": "train",
+          "synonyms": [
+            "train"
+          ]
+        },
+        {
+          "name": "tvmonitor",
+          "synonyms": [
+            "tv monitor",
+            "monitor",
+            "computer monitor",
+            "television monitor"
+          ]
+        }
+      ],
+      "template": "seg_template"
+    }
+  },
+  "residual": null
+}

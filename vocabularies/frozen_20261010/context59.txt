@@ -1,0 +1,59 @@
+aeroplane	plane
+bag	backpack | handbag | bag
+bed	bed
+bedclothes	bedding | bed sheets | comforter
+bench	bench | wooden bench
+bicycle	bicycle
+bird	bird
+boat	boat
+book	book
+bottle	bottle | wine bottle | plastic bottle
+building	building | buildings | facade | frontage
+bus	bus
+cabinet	cabinet | cupboard
+car	car | automobile
+cat	cat
+ceiling	ceiling
+chair	chair | armchair | desk chair | wooden chair | dining chair | kitchen chair
+cloth	cloth | fabric | piece of fabric | textile | rag | towel | blanket | sheet
+computer	computer
+cow	cow | cattle | dairy cow
+cup	cup
+curtain	curtain
+dog	dog
+door	door
+fence	fence | wire fence
+floor	floor
+flower	flower
+food	food
+grass	grass | field | meadow | lawn
+ground	ground | soil
+horse	horse | wild horse
+keyboard	keyboard | computer keyboard | keypad | external keyboard
+light	light
+motorbike	motorcycle | motorbike
+mountain	mountain
+mouse	computer mouse
+person	person | people | people in shirt | people in jeans | people in dress | people in sweater | people in skirt | people in jacket | human | crowd | child | boy | girl | man | women | baby
+plate	plate | dinner plate | ceramic plate | serving plate | dish
+platform	platform
+pottedplant	potted plant | pot plant | plant in a pot
+road	road | roadway
+rock	rock
+sheep	sheep
+shelves	shelf | shelves
+sidewalk	sidewalk
+sign	sign
+sky	sky | cloudy sky | blue sky | the sky above | clear sky | skyline | atmosphere
+snow	snow
+sofa	sofa
+table	table
+track	track
+train	train | locomotive
+tree	tree | trees | forest
+truck	truck
+tvmonitor	television monitor | monitor | computer monitor
+wall	wall | brick wall | stone wall
+water	water | body of water | river | lake | pond | ocean | sea | green water | blue water
+window	window | building window
+wood	wood | wooden | lumber | timber | wooden plank

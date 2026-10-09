@@ -1,6 +1,15 @@
 # Geometry: frozen structure-guided open-vocabulary segmentation
 
-2026-10-09研究快照。当前冻结终版为 **Geometry局部读取＋VIP来源的宽视野观测＋Geometry关系支持的耦合写回**。主入口为 `TaxonomyInference.for_finalization(..., ordinary_alias_policy="uniform")`。
+2026-10-10更新：新增当前Kev开发选择后的冻结模型、15协议的实际alias与YAML，以及无需历史实验缓存的[独立推理／评测入口](docs/DEPLOYMENT_20261010.md)。原2026-10-09模型和实验记录保留在下面，不能将两版结果混用。最新精度见[Kev完整结果](research/KEV_ALIAS_SEARCH_20261009.md)和[相同词表VIP对照](research/VIP_KEV_SAME_VOCABULARY_20261010.md)，执行优化与验证见[效率报告](research/COMPACT_DEPLOYMENT_20261010.md)。
+
+```bash
+python DINOtool/scripts/infer_frozen_geometry.py --help
+python DINOtool/scripts/evaluate_frozen_geometry.py --help
+```
+
+当前配置是带标签开发选择后的任务特定配置；Kev只在离线词表判断中使用，单图分割不加载Kev。词表不是每类强制20个，VDD/Potsdam采用规范化解析的官方短词；不要将所有收益归为Kev筛词。精确历史二进制文本缓存不纳入Git，独立入口从词表重新编码并记录本机缓存身份，浮点并列处可能与历史缓存有细小差异。
+
+以下为2026-10-09原版研究快照。该版冻结终版为 **Geometry局部读取＋VIP来源的宽视野观测＋Geometry关系支持的耦合写回**。原版主入口为 `TaxonomyInference.for_finalization(..., ordinary_alias_policy="uniform")`；2026-10-10部署配置使用上面的独立入口。
 
 ![Final Geometry architecture](docs/architecture.svg)
 
@@ -19,7 +28,7 @@
 | 词表、模板、参数与选择标准 | [protocol.json](research/alias_finalization_20261009/protocol.json) |
 | 最终策略和比较来源 | [final_model.json](research/alias_finalization_20261009/final_model.json) |
 
-## 当前结果
+## 原版结果（2026-10-09）
 
 - 八遥感全量20,092图：终版等域平均 **49.1833 mIoU**，较强已测VIP参考 **44.0039**，差 **+5.1794pp**，八域均领先该参考。LoveDA主均值只计D一次，P另报。
 - 同观测等权logit融合为 **46.9965**；结构耦合提升 **+2.1869pp**，条件95%配对区间 **[+2.0106,+2.3440]**。

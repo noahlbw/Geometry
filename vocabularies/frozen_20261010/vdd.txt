@@ -1,0 +1,7 @@
+other	surface | other
+wall	facade
+road	road
+vegetation	grassland | forest area
+vehicle	vehicle
+roof	roof
+water	water

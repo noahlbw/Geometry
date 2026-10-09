@@ -1,0 +1,60 @@
+background	background
+aeroplane	aeroplane | plane | airplane | aircraft
+bag	bag | backpack | handbag | carry bag | carrying bag
+bed	bed | sleeping bed | bed furniture | room bed
+bedclothes	bedclothes | bedding | bed sheets | comforter
+bench	bench | wooden bench | seating bench | long bench
+bicycle	bicycle | pedal bike | pedal bicycle
+bird	bird | avian animal | feathered bird
+boat	boat | watercraft | small boat | sailing boat
+book	book | printed book | bound book
+bottle	bottle | wine bottle | drink bottle | glass bottle | plastic bottle
+building	building | buildings | building facade | building frontage | building structure | constructed building | building exterior | edifice
+bus	bus | red bus | double-decker bus | passenger bus | public transit bus | city bus
+cabinet	cabinet | cupboard | storage cabinet | cabinet furniture
+car	car | automobile | passenger car | motorcar
+cat	cat | feline | domestic cat | house cat
+ceiling	ceiling | room ceiling | overhead ceiling | indoor ceiling
+chair	chair | armchair | desk chair | wooden chair | dining chair | kitchen chair | seat chair | seating chair | individual chair
+cloth	cloth | fabric | piece of fabric | textile | rag | towel | blanket | sheet
+computer	computer | computing device | electronic computer
+cow	cow | cattle | dairy cow | cattle animal | bovine | domestic cow
+cup	cup | drinking cup | beverage cup
+curtain	curtain | window curtain | hanging curtain | drapery
+dog	dog | canine | domestic dog | pet dog
+door	door | door panel | doorway door | entry door
+fence	fence | wire fence | fencing | fence structure | boundary fence
+floor	floor | floor surface | indoor floor | room floor | flooring
+flower	flower
+food	food
+grass	grass | field | meadow | lawn | grassy ground | grass cover | grass surface
+ground	ground | soil
+horse	horse | equine animal | domestic horse
+keyboard	computer keyboard | keypad | external keyboard | typing keyboard
+light	light
+motorbike	motorbike | motorcycle | motorized bike
+mountain	mountain | mount | mountain terrain | mountain peak | mountain slope
+mouse	computer mouse | desktop mouse
+person	person | people | person wearing a shirt | person wearing jeans | person wearing a dress | person wearing a sweater | person wearing a skirt | person wearing a jacket | human | crowd | child | boy | girl | man | women | baby | human being | individual person
+plate	plate | dinner plate | ceramic plate | serving plate | dish
+platform	platform
+pottedplant	potted plant | pot plant | plant in a pot
+road	road | roadway | street road | paved road
+rock	rock | stone | natural rock | rock surface
+sheep	sheep | ovine animal | domestic sheep
+shelves	shelves | shelf
+sidewalk	sidewalk | footpath | pedestrian walkway | street sidewalk
+sign	sign
+sky	sky | cloudy sky | blue sky | the sky above | clear sky | sky above the horizon | open sky | sky above | overhead sky
+snow	snow | snow cover | snow surface | snowy ground
+sofa	sofa | couch | settee | upholstered sofa
+table	table | table furniture | tabletop furniture
+track	track
+train	train | locomotive | railway train | railroad train | rail vehicle
+tree	tree | trees | forest tree | woody tree | tree canopy | branching tree
+truck	truck | lorry | cargo truck | motor truck
+tvmonitor	television monitor | monitor | computer monitor | television | TV screen
+wall	wall | brick wall | stone wall | wall surface | vertical wall | interior wall
+water	water | body of water | river | lake | pond | ocean | sea | green water | blue water | water surface | open water
+window	window | building window
+wood	wood | wooden | lumber | timber | wooden plank

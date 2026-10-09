@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "dataset": "loveda",
+  "key": "2909.png",
+  "fresh_text_encoding": true,
+  "local_vector_max_error": 0.0,
+  "wide_vector_max_error": 0.0,
+  "changed_pixels": 0,
+  "pixels": 1048576,
+  "exact_prediction": true,
+  "target_masks_loaded": false,
+  "P_changed_pixels": 0,
+  "P_exact_prediction": true
+}

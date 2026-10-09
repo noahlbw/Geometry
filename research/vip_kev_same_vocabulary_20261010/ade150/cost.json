@@ -1,0 +1,1360 @@
+{
+  "status": "complete",
+  "dataset": "ade150",
+  "method": "VIP_SameText",
+  "images": [
+    {
+      "key": "ADE_val_00000001",
+      "shape": [
+        512,
+        683
+      ],
+      "milliseconds": [
+        113.88132511638105,
+        114.761812845245,
+        114.35110797174275,
+        114.63104002177715,
+        113.9793589245528,
+        115.1763389352709,
+        114.1613230574876
+      ],
+      "peak_allocated_mib": 2174.8046875
+    },
+    {
+      "key": "ADE_val_00000334",
+      "shape": [
+        320,
+        240
+      ],
+      "milliseconds": [
+        110.3874349500984,
+        110.52174400538206,
+        110.56843306869268,
+        110.61910493299365,
+        110.54179188795388,
+        110.91189598664641,
+        110.61873799189925
+      ],
+      "peak_allocated_mib": 1904.6875
+    },
+    {
+      "key": "ADE_val_00000667",
+      "shape": [
+        234,
+        350
+      ],
+      "milliseconds": [
+        166.91226395778358,
+        166.12249892205,
+        166.3732840679586,
+        165.28949094936252,
+        166.2042171228677,
+        165.58500798419118,
+        165.66117899492383
+      ],
+      "peak_allocated_mib": 1928.826171875
+    },
+    {
+      "key": "ADE_val_00001000",
+      "shape": [
+        200,
+        250
+      ],
+      "milliseconds": [
+        112.72493307478726,
+        110.88324012234807,
+        111.30527406930923,
+        111.7396499030292,
+        110.80171703360975,
+        110.5445281136781,
+        111.27025401219726
+      ],
+      "peak_allocated_mib": 1878.55029296875
+    },
+    {
+      "key": "ADE_val_00001333",
+      "shape": [
+        512,
+        683
+      ],
+      "milliseconds": [
+        114.36799098737538,
+        114.2945431638509,
+        114.59078406915069,
+        115.78875803388655,
+        116.44934583455324,
+        116.07511411421001,
+        116.4423180744052
+      ],
+      "peak_allocated_mib": 2174.8046875
+    },
+    {
+      "key": "ADE_val_00001666",
+      "shape": [
+        256,
+        256
+      ],
+      "milliseconds": [
+        58.191453106701374,
+        58.1278121098876,
+        57.51483608037233,
+        57.442275108769536,
+        57.865602895617485,
+        57.94537998735905,
+        57.7799619641155
+      ],
+      "peak_allocated_mib": 1855.0322265625
+    },
+    {
+      "key": "ADE_val_00002000",
+      "shape": [
+        300,
+        400
+      ],
+      "milliseconds": [
+        114.84072101302445,
+        115.69465300999582,
+        115.87671097368002,
+        115.13886204920709,
+        115.22021796554327,
+        113.31494594924152,
+        112.06193501129746
+      ],
+      "peak_allocated_mib": 1929.40673828125
+    }
+  ],
+  "median_ms": 113.9793589245528,
+  "p95_ms": 166.17152984254062,
+  "peak_allocated_mib": 2174.8046875,
+  "settings": {
+    "tau": 5.0,
+    "tem": 5.0,
+    "prob_thd": 0.07,
+    "background": true,
+    "bg_idx": 0,
+    "resize_long_edge": 448,
+    "slide_crop": 336,
+    "slide_stride": 112,
+    "logit_scale": 40.0
+  },
+  "text_identity": {
+    "classes": [
+      {
+        "name": "wall",
+        "synonyms": [
+          "wall",
+          "stone wall",
+          "wall surface",
+          "vertical wall",
+          "interior wall"
+        ]
+      },
+      {
+        "name": "building",
+        "synonyms": [
+          "building",
+          "building facade",
+          "building frontage",
+          "building front",
+          "building structure",
+          "constructed building",
+          "building exterior",
+          "edifice"
+        ]
+      },
+      {
+        "name": "sky",
+        "synonyms": [
+          "sky",
+          "cloudy sky",
+          "blue sky",
+          "the sky above",
+          "clear sky",
+          "sky above the horizon",
+          "open sky",
+          "sky above",
+          "overhead sky"
+        ]
+      },
+      {
+        "name": "floor",
+        "synonyms": [
+          "floor",
+          "floor surface",
+          "indoor floor",
+          "room floor",
+          "flooring"
+        ]
+      },
+      {
+        "name": "tree",
+        "synonyms": [
+          "tree",
+          "trees",
+          "forest tree",
+          "woody tree",
+          "tree canopy",
+          "branching tree"
+        ]
+      },
+      {
+        "name": "ceiling",
+        "synonyms": [
+          "ceiling",
+          "indoor ceiling",
+          "plain ceiling",
+          "smooth ceiling",
+          "room ceiling",
+          "overhead ceiling"
+        ]
+      },
+      {
+        "name": "road",
+        "synonyms": [
+          "road",
+          "roadway",
+          "street road",
+          "paved road"
+        ]
+      },
+      {
+        "name": "bed",
+        "synonyms": [
+          "bed"
+        ]
+      },
+      {
+        "name": "windowpane",
+        "synonyms": [
+          "windowpane",
+          "window pane",
+          "window glass",
+          "glass window"
+        ]
+      },
+      {
+        "name": "grass",
+        "synonyms": [
+          "grass",
+          "grassy ground",
+          "grass cover",
+          "grass surface"
+        ]
+      },
+      {
+        "name": "cabinet",
+        "synonyms": [
+          "cabinet",
+          "storage cabinet",
+          "cupboard",
+          "cabinet furniture"
+        ]
+      },
+      {
+        "name": "sidewalk",
+        "synonyms": [
+          "sidewalk",
+          "pavement",
+          "footpath",
+          "pedestrian walkway",
+          "street sidewalk"
+        ]
+      },
+      {
+        "name": "person",
+        "synonyms": [
+          "person",
+          "people",
+          "person wearing a shirt",
+          "person wearing jeans",
+          "person wearing a dress",
+          "person wearing a sweater",
+          "person wearing a skirt",
+          "person wearing a jacket",
+          "person wearing a hat",
+          "human",
+          "crowd",
+          "child",
+          "boy",
+          "girl",
+          "man",
+          "women",
+          "human being",
+          "individual person"
+        ]
+      },
+      {
+        "name": "earth",
+        "synonyms": [
+          "earth",
+          "ground",
+          "bare earth",
+          "soil surface",
+          "exposed soil"
+        ]
+      },
+      {
+        "name": "door",
+        "synonyms": [
+          "door",
+          "interior door",
+          "door panel",
+          "doorway door",
+          "entry door"
+        ]
+      },
+      {
+        "name": "table",
+        "synonyms": [
+          "table",
+          "table furniture",
+          "tabletop furniture"
+        ]
+      },
+      {
+        "name": "mountain",
+        "synonyms": [
+          "mountain",
+          "mountain terrain",
+          "mountain peak",
+          "mountain slope"
+        ]
+      },
+      {
+        "name": "plant",
+        "synonyms": [
+          "plant",
+          "bush",
+          "growing plant",
+          "leafy plant",
+          "green plant"
+        ]
+      },
+      {
+        "name": "curtain",
+        "synonyms": [
+          "curtain",
+          "window curtain",
+          "hanging curtain",
+          "drapery"
+        ]
+      },
+      {
+        "name": "chair",
+        "synonyms": [
+          "chair",
+          "seat chair",
+          "seating chair",
+          "individual chair"
+        ]
+      },
+      {
+        "name": "car",
+        "synonyms": [
+          "car",
+          "automobile",
+          "passenger car",
+          "motorcar"
+        ]
+      },
+      {
+        "name": "water",
+        "synonyms": [
+          "water",
+          "water surface",
+          "puddle of water",
+          "body of water",
+          "open water"
+        ]
+      },
+      {
+        "name": "painting",
+        "synonyms": [
+          "painting",
+          "painted artwork",
+          "wall painting"
+        ]
+      },
+      {
+        "name": "sofa",
+        "synonyms": [
+          "sofa",
+          "couch",
+          "lounge sofa",
+          "settee",
+          "upholstered sofa"
+        ]
+      },
+      {
+        "name": "shelf",
+        "synonyms": [
+          "shelf",
+          "shelving",
+          "storage shelf"
+        ]
+      },
+      {
+        "name": "house",
+        "synonyms": [
+          "house"
+        ]
+      },
+      {
+        "name": "sea",
+        "synonyms": [
+          "sea",
+          "ocean",
+          "seawater",
+          "ocean water"
+        ]
+      },
+      {
+        "name": "mirror",
+        "synonyms": [
+          "mirror"
+        ]
+      },
+      {
+        "name": "rug",
+        "synonyms": [
+          "rug",
+          "floor rug",
+          "area rug",
+          "floor carpet"
+        ]
+      },
+      {
+        "name": "field",
+        "synonyms": [
+          "field"
+        ]
+      },
+      {
+        "name": "armchair",
+        "synonyms": [
+          "armchair",
+          "arm chair",
+          "chair with armrests"
+        ]
+      },
+      {
+        "name": "seat",
+        "synonyms": [
+          "seat"
+        ]
+      },
+      {
+        "name": "fence",
+        "synonyms": [
+          "fence",
+          "fencing",
+          "fence structure",
+          "boundary fence"
+        ]
+      },
+      {
+        "name": "desk",
+        "synonyms": [
+          "desk",
+          "work desk",
+          "writing desk",
+          "desk furniture"
+        ]
+      },
+      {
+        "name": "rock",
+        "synonyms": [
+          "rock",
+          "stone",
+          "natural rock",
+          "rock surface"
+        ]
+      },
+      {
+        "name": "wardrobe",
+        "synonyms": [
+          "wardrobe",
+          "clothes wardrobe",
+          "clothing cabinet",
+          "clothes closet",
+          "clothing wardrobe"
+        ]
+      },
+      {
+        "name": "lamp",
+        "synonyms": [
+          "lamp",
+          "lighting lamp",
+          "light fixture",
+          "illuminating lamp"
+        ]
+      },
+      {
+        "name": "bathtub",
+        "synonyms": [
+          "bathtub",
+          "bath tub",
+          "bathing tub"
+        ]
+      },
+      {
+        "name": "railing",
+        "synonyms": [
+          "railing",
+          "guard railing",
+          "safety railing"
+        ]
+      },
+      {
+        "name": "cushion",
+        "synonyms": [
+          "cushion"
+        ]
+      },
+      {
+        "name": "base",
+        "synonyms": [
+          "pedestal",
+          "pedestal base",
+          "pedestal stand"
+        ]
+      },
+      {
+        "name": "box",
+        "synonyms": [
+          "box"
+        ]
+      },
+      {
+        "name": "column",
+        "synonyms": [
+          "column",
+          "pillar",
+          "support column"
+        ]
+      },
+      {
+        "name": "signboard",
+        "synonyms": [
+          "signboard",
+          "sign board",
+          "display sign"
+        ]
+      },
+      {
+        "name": "chest of drawers",
+        "synonyms": [
+          "chest of drawers",
+          "drawer chest",
+          "dresser"
+        ]
+      },
+      {
+        "name": "counter",
+        "synonyms": [
+          "counter",
+          "reception desk"
+        ]
+      },
+      {
+        "name": "sand",
+        "synonyms": [
+          "sand",
+          "sandy ground",
+          "sand surface",
+          "sandy area"
+        ]
+      },
+      {
+        "name": "sink",
+        "synonyms": [
+          "sink",
+          "wash basin",
+          "sink basin"
+        ]
+      },
+      {
+        "name": "skyscraper",
+        "synonyms": [
+          "skyscraper"
+        ]
+      },
+      {
+        "name": "fireplace",
+        "synonyms": [
+          "fireplace",
+          "hearth",
+          "open fireplace"
+        ]
+      },
+      {
+        "name": "refrigerator",
+        "synonyms": [
+          "refrigerator",
+          "fridge",
+          "kitchen refrigerator"
+        ]
+      },
+      {
+        "name": "grandstand",
+        "synonyms": [
+          "grandstand",
+          "covered spectator stand"
+        ]
+      },
+      {
+        "name": "path",
+        "synonyms": [
+          "path"
+        ]
+      },
+      {
+        "name": "stairs",
+        "synonyms": [
+          "stairs",
+          "stair steps"
+        ]
+      },
+      {
+        "name": "runway",
+        "synonyms": [
+          "runway"
+        ]
+      },
+      {
+        "name": "case",
+        "synonyms": [
+          "display case",
+          "showcase",
+          "vitrine"
+        ]
+      },
+      {
+        "name": "pool table",
+        "synonyms": [
+          "pool table",
+          "billiard table",
+          "snooker table"
+        ]
+      },
+      {
+        "name": "pillow",
+        "synonyms": [
+          "pillow",
+          "pillow sham"
+        ]
+      },
+      {
+        "name": "screen door",
+        "synonyms": [
+          "screen door",
+          "mesh screen door"
+        ]
+      },
+      {
+        "name": "stairway",
+        "synonyms": [
+          "stairway",
+          "staircase"
+        ]
+      },
+      {
+        "name": "river",
+        "synonyms": [
+          "river",
+          "river water",
+          "flowing river",
+          "river channel"
+        ]
+      },
+      {
+        "name": "bridge",
+        "synonyms": [
+          "bridge"
+        ]
+      },
+      {
+        "name": "bookcase",
+        "synonyms": [
+          "bookcase"
+        ]
+      },
+      {
+        "name": "blind",
+        "synonyms": [
+          "window blind"
+        ]
+      },
+      {
+        "name": "coffee table",
+        "synonyms": [
+          "coffee table",
+          "cocktail table"
+        ]
+      },
+      {
+        "name": "toilet",
+        "synonyms": [
+          "toilet",
+          "toilet fixture",
+          "toilet bowl"
+        ]
+      },
+      {
+        "name": "flower",
+        "synonyms": [
+          "flower"
+        ]
+      },
+      {
+        "name": "book",
+        "synonyms": [
+          "book",
+          "printed book",
+          "bound book"
+        ]
+      },
+      {
+        "name": "hill",
+        "synonyms": [
+          "hill",
+          "hillside"
+        ]
+      },
+      {
+        "name": "bench",
+        "synonyms": [
+          "bench",
+          "seating bench",
+          "long bench"
+        ]
+      },
+      {
+        "name": "countertop",
+        "synonyms": [
+          "countertop"
+        ]
+      },
+      {
+        "name": "stove",
+        "synonyms": [
+          "stove",
+          "kitchen stove",
+          "range",
+          "kitchen range",
+          "cooking stove"
+        ]
+      },
+      {
+        "name": "palm",
+        "synonyms": [
+          "palm tree",
+          "cabbage palm",
+          "cabbage palm tree",
+          "Livistona australis"
+        ]
+      },
+      {
+        "name": "kitchen island",
+        "synonyms": [
+          "kitchen island"
+        ]
+      },
+      {
+        "name": "computer",
+        "synonyms": [
+          "computer",
+          "desktop computer",
+          "computing device",
+          "electronic computer"
+        ]
+      },
+      {
+        "name": "swivel chair",
+        "synonyms": [
+          "swivel chair"
+        ]
+      },
+      {
+        "name": "boat",
+        "synonyms": [
+          "boat",
+          "watercraft",
+          "small boat",
+          "sailing boat"
+        ]
+      },
+      {
+        "name": "bar",
+        "synonyms": [
+          "bar"
+        ]
+      },
+      {
+        "name": "arcade machine",
+        "synonyms": [
+          "arcade machine"
+        ]
+      },
+      {
+        "name": "hovel",
+        "synonyms": [
+          "hovel",
+          "hut",
+          "shack",
+          "shanty"
+        ]
+      },
+      {
+        "name": "bus",
+        "synonyms": [
+          "bus",
+          "passenger bus",
+          "public transit bus",
+          "city bus"
+        ]
+      },
+      {
+        "name": "towel",
+        "synonyms": [
+          "towel"
+        ]
+      },
+      {
+        "name": "light",
+        "synonyms": [
+          "light source",
+          "lighting fixture"
+        ]
+      },
+      {
+        "name": "truck",
+        "synonyms": [
+          "truck",
+          "lorry",
+          "cargo truck",
+          "motor truck"
+        ]
+      },
+      {
+        "name": "tower",
+        "synonyms": [
+          "tower"
+        ]
+      },
+      {
+        "name": "chandelier",
+        "synonyms": [
+          "chandelier",
+          "hanging chandelier"
+        ]
+      },
+      {
+        "name": "awning",
+        "synonyms": [
+          "awning",
+          "sunshade awning",
+          "window awning"
+        ]
+      },
+      {
+        "name": "streetlight",
+        "synonyms": [
+          "streetlight",
+          "street lamp"
+        ]
+      },
+      {
+        "name": "booth",
+        "synonyms": [
+          "booth",
+          "newsstand",
+          "cubicle",
+          "kiosk",
+          "stall"
+        ]
+      },
+      {
+        "name": "television receiver",
+        "synonyms": [
+          "television receiver",
+          "television",
+          "television set",
+          "TV set"
+        ]
+      },
+      {
+        "name": "airplane",
+        "synonyms": [
+          "airplane",
+          "aeroplane",
+          "aircraft",
+          "plane"
+        ]
+      },
+      {
+        "name": "dirt track",
+        "synonyms": [
+          "dirt track"
+        ]
+      },
+      {
+        "name": "apparel",
+        "synonyms": [
+          "clothing",
+          "apparel",
+          "wearing apparel",
+          "dress",
+          "clothes"
+        ]
+      },
+      {
+        "name": "pole",
+        "synonyms": [
+          "pole"
+        ]
+      },
+      {
+        "name": "land",
+        "synonyms": [
+          "land"
+        ]
+      },
+      {
+        "name": "bannister",
+        "synonyms": [
+          "bannister",
+          "banister",
+          "balustrade",
+          "balusters",
+          "handrail"
+        ]
+      },
+      {
+        "name": "escalator",
+        "synonyms": [
+          "escalator",
+          "moving staircase"
+        ]
+      },
+      {
+        "name": "ottoman",
+        "synonyms": [
+          "ottoman",
+          "footstool",
+          "footrest",
+          "tuffet",
+          "pouf",
+          "hassock"
+        ]
+      },
+      {
+        "name": "bottle",
+        "synonyms": [
+          "bottle",
+          "drink bottle",
+          "glass bottle",
+          "plastic bottle"
+        ]
+      },
+      {
+        "name": "buffet",
+        "synonyms": [
+          "sideboard",
+          "china cabinet",
+          "sideboard furniture"
+        ]
+      },
+      {
+        "name": "poster",
+        "synonyms": [
+          "poster",
+          "wall poster",
+          "placard"
+        ]
+      },
+      {
+        "name": "stage",
+        "synonyms": [
+          "stage"
+        ]
+      },
+      {
+        "name": "van",
+        "synonyms": [
+          "van"
+        ]
+      },
+      {
+        "name": "ship",
+        "synonyms": [
+          "ship"
+        ]
+      },
+      {
+        "name": "fountain",
+        "synonyms": [
+          "fountain"
+        ]
+      },
+      {
+        "name": "conveyer belt",
+        "synonyms": [
+          "conveyor belt",
+          "conveyer belt",
+          "conveyor"
+        ]
+      },
+      {
+        "name": "canopy",
+        "synonyms": [
+          "canopy",
+          "baldachin"
+        ]
+      },
+      {
+        "name": "washer",
+        "synonyms": [
+          "washing machine",
+          "automatic washer"
+        ]
+      },
+      {
+        "name": "plaything",
+        "synonyms": [
+          "toy",
+          "plaything"
+        ]
+      },
+      {
+        "name": "swimming pool",
+        "synonyms": [
+          "swimming pool"
+        ]
+      },
+      {
+        "name": "stool",
+        "synonyms": [
+          "stool"
+        ]
+      },
+      {
+        "name": "barrel",
+        "synonyms": [
+          "barrel",
+          "cask"
+        ]
+      },
+      {
+        "name": "basket",
+        "synonyms": [
+          "basket",
+          "handbasket"
+        ]
+      },
+      {
+        "name": "waterfall",
+        "synonyms": [
+          "waterfall"
+        ]
+      },
+      {
+        "name": "tent",
+        "synonyms": [
+          "tent",
+          "camping tent"
+        ]
+      },
+      {
+        "name": "bag",
+        "synonyms": [
+          "bag",
+          "carry bag",
+          "carrying bag"
+        ]
+      },
+      {
+        "name": "minibike",
+        "synonyms": [
+          "minibike",
+          "motorcycle",
+          "motorbike"
+        ]
+      },
+      {
+        "name": "cradle",
+        "synonyms": [
+          "cradle",
+          "baby bed",
+          "baby\u2019s bed"
+        ]
+      },
+      {
+        "name": "oven",
+        "synonyms": [
+          "oven",
+          "cooking oven",
+          "kitchen oven"
+        ]
+      },
+      {
+        "name": "ball",
+        "synonyms": [
+          "ball"
+        ]
+      },
+      {
+        "name": "food",
+        "synonyms": [
+          "food"
+        ]
+      },
+      {
+        "name": "step",
+        "synonyms": [
+          "stair step",
+          "stair tread"
+        ]
+      },
+      {
+        "name": "tank",
+        "synonyms": [
+          "storage tank",
+          "water storage tank"
+        ]
+      },
+      {
+        "name": "trade name",
+        "synonyms": [
+          "brand name",
+          "brand logo"
+        ]
+      },
+      {
+        "name": "microwave",
+        "synonyms": [
+          "microwave",
+          "microwave oven",
+          "kitchen microwave"
+        ]
+      },
+      {
+        "name": "pot",
+        "synonyms": [
+          "flowerpot",
+          "plant pot"
+        ]
+      },
+      {
+        "name": "animal",
+        "synonyms": [
+          "animal",
+          "dog",
+          "cat",
+          "horse"
+        ]
+      },
+      {
+        "name": "bicycle",
+        "synonyms": [
+          "bicycle",
+          "pedal bike",
+          "pedal bicycle"
+        ]
+      },
+      {
+        "name": "lake",
+        "synonyms": [
+          "lake"
+        ]
+      },
+      {
+        "name": "dishwasher",
+        "synonyms": [
+          "dishwasher",
+          "dish washer",
+          "dishwashing machine"
+        ]
+      },
+      {
+        "name": "screen",
+        "synonyms": [
+          "projection screen"
+        ]
+      },
+      {
+        "name": "blanket",
+        "synonyms": [
+          "blanket",
+          "bed blanket"
+        ]
+      },
+      {
+        "name": "sculpture",
+        "synonyms": [
+          "sculpture"
+        ]
+      },
+      {
+        "name": "hood",
+        "synonyms": [
+          "exhaust hood",
+          "range hood",
+          "kitchen exhaust hood"
+        ]
+      },
+      {
+        "name": "sconce",
+        "synonyms": [
+          "sconce"
+        ]
+      },
+      {
+        "name": "vase",
+        "synonyms": [
+          "vase",
+          "flower vase",
+          "decorative vase"
+        ]
+      },
+      {
+        "name": "traffic light",
+        "synonyms": [
+          "traffic light",
+          "traffic signal",
+          "road traffic light"
+        ]
+      },
+      {
+        "name": "tray",
+        "synonyms": [
+          "tray"
+        ]
+      },
+      {
+        "name": "ashcan",
+        "synonyms": [
+          "trash can",
+          "ashcan",
+          "garbage can",
+          "wastebin",
+          "ash bin",
+          "ashbin",
+          "dustbin",
+          "trash barrel",
+          "trash bin"
+        ]
+      },
+      {
+        "name": "fan",
+        "synonyms": [
+          "fan"
+        ]
+      },
+      {
+        "name": "pier",
+        "synonyms": [
+          "pier",
+          "wharf",
+          "dock"
+        ]
+      },
+      {
+        "name": "crt screen",
+        "synonyms": [
+          "CRT screen",
+          "crtscreen",
+          "cathode ray tube screen"
+        ]
+      },
+      {
+        "name": "plate",
+        "synonyms": [
+          "plate",
+          "collection plate"
+        ]
+      },
+      {
+        "name": "monitor",
+        "synonyms": [
+          "computer monitor",
+          "monitor",
+          "computer screen",
+          "computer display"
+        ]
+      },
+      {
+        "name": "bulletin board",
+        "synonyms": [
+          "bulletin board",
+          "notice board"
+        ]
+      },
+      {
+        "name": "shower",
+        "synonyms": [
+          "shower"
+        ]
+      },
+      {
+        "name": "radiator",
+        "synonyms": [
+          "radiator"
+        ]
+      },
+      {
+        "name": "glass",
+        "synonyms": [
+          "drinking glass"
+        ]
+      },
+      {
+        "name": "clock",
+        "synonyms": [
+          "clock",
+          "timepiece",
+          "time clock"
+        ]
+      },
+      {
+        "name": "flag",
+        "synonyms": [
+          "flag"
+        ]
+      }
+    ],
+    "source_bank": "semantic_segmentation",
+    "source_template": "seg_template",
+    "residual_identity": null,
+    "checkpoints": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "upstream_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+    "official_template": "seg_template"
+  },
+  "initialization_and_text_seconds": 14.630734849022701,
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "boundary": "Seven full inputs x seven warmed synchronized repeats. Native VIP resizing/encoding/readout/restoration/CPU output; decode/init/offline selection excluded.",
+  "weights_frozen": true,
+  "head_weights_unchanged": true
+}

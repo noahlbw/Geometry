@@ -1,0 +1,218 @@
+{
+  "status": "complete",
+  "dataset": "potsdam",
+  "method": "VIP_SameText",
+  "images": [
+    {
+      "key": "top_potsdam_2_13_RGB_y00_x00.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        104.62930402718484,
+        104.03909790329635,
+        105.76681001111865,
+        105.95729202032089,
+        106.4423518255353,
+        106.86173709109426,
+        105.82222603261471
+      ],
+      "peak_allocated_mib": 1739.2109375
+    },
+    {
+      "key": "top_potsdam_3_13_RGB_y01_x05.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        105.00389104709029,
+        104.48464914225042,
+        106.1086819972843,
+        103.86775084771216,
+        104.11164304241538,
+        104.90847215987742,
+        104.25018589012325
+      ],
+      "peak_allocated_mib": 1739.2109375
+    },
+    {
+      "key": "top_potsdam_4_13_RGB_y03_x05.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        103.25801116414368,
+        104.77235703729093,
+        104.20785890892148,
+        104.13307906128466,
+        107.38142696209252,
+        104.22013397328556,
+        104.36453204602003
+      ],
+      "peak_allocated_mib": 1739.2109375
+    },
+    {
+      "key": "top_potsdam_4_15_RGB_y05_x05.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        102.94842696748674,
+        102.59748995304108,
+        102.92043490335345,
+        102.9022908769548,
+        103.52053004316986,
+        103.97617588751018,
+        104.18993118219078
+      ],
+      "peak_allocated_mib": 1739.2109375
+    },
+    {
+      "key": "top_potsdam_5_15_RGB_y01_x05.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        104.02525099925697,
+        104.17700395919383,
+        104.00671605020761,
+        103.39324781671166,
+        105.08065694011748,
+        103.65786706097424,
+        103.69247617200017
+      ],
+      "peak_allocated_mib": 1739.2109375
+    },
+    {
+      "key": "top_potsdam_6_14_RGB_y03_x05.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        103.19500998593867,
+        104.55488413572311,
+        103.39789791032672,
+        103.29555720090866,
+        103.02138794213533,
+        104.32128887623549,
+        104.70615397207439
+      ],
+      "peak_allocated_mib": 1739.2109375
+    },
+    {
+      "key": "top_potsdam_7_13_RGB_y05_x05.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        103.58963604085147,
+        103.72154111973941,
+        103.89094008132815,
+        103.8768570870161,
+        105.39620090276003,
+        103.8994409609586,
+        103.65595505572855
+      ],
+      "peak_allocated_mib": 1739.2109375
+    }
+  ],
+  "median_ms": 104.11164304241538,
+  "p95_ms": 106.3088838942349,
+  "peak_allocated_mib": 1739.2109375,
+  "settings": {
+    "tau": 1.0,
+    "tem": 2.0,
+    "prob_thd": 0.25,
+    "background": true,
+    "bg_idx": 5,
+    "resize_long_edge": 448,
+    "slide_crop": 336,
+    "slide_stride": 112,
+    "logit_scale": 40.0
+  },
+  "text_identity": {
+    "classes": [
+      {
+        "name": "impervious surface",
+        "synonyms": [
+          "road",
+          "parking lots"
+        ]
+      },
+      {
+        "name": "building",
+        "synonyms": [
+          "buildings"
+        ]
+      },
+      {
+        "name": "low vegetation",
+        "synonyms": [
+          "grass",
+          "grassland",
+          "farmland",
+          "forest area"
+        ]
+      },
+      {
+        "name": "tree",
+        "synonyms": [
+          "tree",
+          "trees"
+        ]
+      },
+      {
+        "name": "car",
+        "synonyms": [
+          "cars"
+        ]
+      },
+      {
+        "name": "clutter",
+        "synonyms": [
+          "background"
+        ]
+      }
+    ],
+    "source_bank": "official_imagenet",
+    "source_template": "openai_imagenet_template",
+    "residual_identity": null,
+    "checkpoints": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "upstream_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+    "official_template": "openai_imagenet_template"
+  },
+  "initialization_and_text_seconds": 14.347869270015508,
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "boundary": "Seven full inputs x seven warmed synchronized repeats. Native VIP resizing/encoding/readout/restoration/CPU output; decode/init/offline selection excluded.",
+  "weights_frozen": true,
+  "head_weights_unchanged": true
+}

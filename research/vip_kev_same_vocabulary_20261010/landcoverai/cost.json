@@ -1,0 +1,302 @@
+{
+  "status": "complete",
+  "dataset": "landcoverai",
+  "method": "VIP_SameText",
+  "images": [
+    {
+      "key": "M-33-20-D-c-4-2_101",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        169.97496713884175,
+        103.55839692056179,
+        103.43140293844044,
+        103.11079886741936,
+        103.18830399774015,
+        103.20911696180701,
+        102.62546595185995
+      ],
+      "peak_allocated_mib": 1762.62841796875
+    },
+    {
+      "key": "M-33-7-A-d-3-2_259",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        102.46470686979592,
+        102.59087011218071,
+        102.33618202619255,
+        102.99992002546787,
+        102.59930393658578,
+        102.00111195445061,
+        102.66624297946692
+      ],
+      "peak_allocated_mib": 1762.62841796875
+    },
+    {
+      "key": "M-34-56-A-b-1-4_14",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        105.33174290321767,
+        102.519357111305,
+        104.74372701719403,
+        102.38612303510308,
+        102.67226491123438,
+        103.88450999744236,
+        102.2551089990884
+      ],
+      "peak_allocated_mib": 1762.62841796875
+    },
+    {
+      "key": "M-34-68-B-a-1-3_239",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        102.89617511443794,
+        103.95321995019913,
+        103.97604410536587,
+        103.66581892594695,
+        102.33271308243275,
+        102.47136000543833,
+        102.81336796469986
+      ],
+      "peak_allocated_mib": 1762.62841796875
+    },
+    {
+      "key": "N-33-139-C-d-2-2_185",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        102.94298687949777,
+        103.0026760417968,
+        104.21898006461561,
+        103.10346400365233,
+        104.1252170689404,
+        102.70966798998415,
+        102.53894282504916
+      ],
+      "peak_allocated_mib": 1762.62841796875
+    },
+    {
+      "key": "N-34-140-A-b-4-2_1",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        103.04847196675837,
+        102.17091394588351,
+        102.00398019514978,
+        102.34048892743886,
+        101.86852910555899,
+        102.96922596171498,
+        102.33703907579184
+      ],
+      "peak_allocated_mib": 1762.62841796875
+    },
+    {
+      "key": "N-34-97-D-c-2-4_75",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        101.29099199548364,
+        102.11082501336932,
+        105.1174309104681,
+        101.93527000956237,
+        101.91555414348841,
+        101.96716501377523,
+        104.081513825804
+      ],
+      "peak_allocated_mib": 1762.62841796875
+    }
+  ],
+  "median_ms": 102.70966798998415,
+  "p95_ms": 104.96794935315847,
+  "peak_allocated_mib": 1762.62841796875,
+  "settings": {
+    "tau": 4.0,
+    "tem": 1.0,
+    "prob_thd": 0.0,
+    "background": false,
+    "bg_idx": 0,
+    "resize_long_edge": 448,
+    "slide_crop": 336,
+    "slide_stride": 112,
+    "logit_scale": 40.0
+  },
+  "text_identity": {
+    "classes": [
+      {
+        "name": "background",
+        "synonyms": [
+          "background",
+          "other land cover",
+          "unclassified land",
+          "other surface",
+          "open ground",
+          "grass",
+          "grassland",
+          "farmland",
+          "crop field",
+          "agricultural land",
+          "bare ground",
+          "bare soil",
+          "meadow",
+          "lawn",
+          "open field",
+          "uncultivated land",
+          "shrubland",
+          "sandy ground",
+          "rural open space",
+          "mixed terrain"
+        ]
+      },
+      {
+        "name": "building",
+        "synonyms": [
+          "building",
+          "buildings",
+          "house",
+          "houses",
+          "residential building",
+          "commercial building",
+          "industrial building",
+          "warehouse",
+          "apartment building",
+          "roofed structure",
+          "building roof",
+          "house roof",
+          "rooftop",
+          "construction",
+          "man made structure",
+          "urban building",
+          "rural building",
+          "farm building",
+          "building wall",
+          "roof"
+        ]
+      },
+      {
+        "name": "woodland",
+        "synonyms": [
+          "woodland",
+          "forest",
+          "dense forest",
+          "tree cover",
+          "tree canopy",
+          "wooded area",
+          "trees",
+          "forest canopy",
+          "broadleaf forest",
+          "coniferous forest",
+          "deciduous forest",
+          "evergreen forest",
+          "mixed forest",
+          "dense tree canopy",
+          "forest trees",
+          "wooded land",
+          "tree crowns",
+          "timberland",
+          "continuous forest",
+          "woodland vegetation"
+        ]
+      },
+      {
+        "name": "water",
+        "synonyms": [
+          "water",
+          "water body",
+          "river",
+          "lake",
+          "pond",
+          "stream",
+          "canal",
+          "reservoir",
+          "open water",
+          "surface water",
+          "fresh water",
+          "flowing water",
+          "standing water",
+          "river water",
+          "lake water",
+          "water surface",
+          "inland water",
+          "aquatic area",
+          "natural water body",
+          "watercourse"
+        ]
+      },
+      {
+        "name": "road",
+        "synonyms": [
+          "road",
+          "roads",
+          "street",
+          "roadway",
+          "asphalt road",
+          "paved road",
+          "highway",
+          "rural road",
+          "urban road",
+          "road surface",
+          "transportation road",
+          "vehicle road",
+          "traffic lane",
+          "road network",
+          "country road",
+          "unpaved road",
+          "gravel road",
+          "tarmac road",
+          "pavement road",
+          "driving road"
+        ]
+      }
+    ],
+    "source_bank": "original_imagenet",
+    "source_template": "openai_imagenet_template",
+    "residual_identity": null,
+    "checkpoints": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "upstream_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+    "official_template": "openai_imagenet_template"
+  },
+  "initialization_and_text_seconds": 14.248237838037312,
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "boundary": "Seven full inputs x seven warmed synchronized repeats. Native VIP resizing/encoding/readout/restoration/CPU output; decode/init/offline selection excluded.",
+  "weights_frozen": true,
+  "head_weights_unchanged": true
+}

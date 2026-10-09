@@ -1,0 +1,2125 @@
+{
+  "status": "complete",
+  "dataset": "vdd",
+  "choice": {
+    "profile": {
+      "bank": "official_imagenet",
+      "strength": "original",
+      "coupling": 1.0,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 0.3,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.0,
+    "development_miou": 60.65255345702133,
+    "profile_index": 8,
+    "bias_index": 0,
+    "confusion_matrix": [
+      [
+        33773974,
+        971372,
+        5987750,
+        3388229,
+        686245,
+        2522571,
+        1078368
+      ],
+      [
+        319864,
+        2340489,
+        2102,
+        114665,
+        240,
+        311586,
+        0
+      ],
+      [
+        514059,
+        557,
+        6948466,
+        124464,
+        72875,
+        8230,
+        0
+      ],
+      [
+        5521719,
+        289001,
+        2614040,
+        55834878,
+        131271,
+        250583,
+        214060
+      ],
+      [
+        132449,
+        3,
+        312455,
+        310572,
+        778928,
+        11,
+        0
+      ],
+      [
+        3901481,
+        755771,
+        2251,
+        96671,
+        0,
+        45693762,
+        1888
+      ],
+      [
+        536553,
+        0,
+        783992,
+        226269,
+        0,
+        0,
+        14445286
+      ]
+    ],
+    "development_confusions": {
+      "vdd": [
+        [
+          33773974,
+          971372,
+          5987750,
+          3388229,
+          686245,
+          2522571,
+          1078368
+        ],
+        [
+          319864,
+          2340489,
+          2102,
+          114665,
+          240,
+          311586,
+          0
+        ],
+        [
+          514059,
+          557,
+          6948466,
+          124464,
+          72875,
+          8230,
+          0
+        ],
+        [
+          5521719,
+          289001,
+          2614040,
+          55834878,
+          131271,
+          250583,
+          214060
+        ],
+        [
+          132449,
+          3,
+          312455,
+          310572,
+          778928,
+          11,
+          0
+        ],
+        [
+          3901481,
+          755771,
+          2251,
+          96671,
+          0,
+          45693762,
+          1888
+        ],
+        [
+          536553,
+          0,
+          783992,
+          226269,
+          0,
+          0,
+          14445286
+        ]
+      ]
+    },
+    "implementation": "geometry-kev-variable-alias-static-search-v1-20261009",
+    "status": "complete",
+    "development_keys": [
+      "DJI_0023.JPG",
+      "DJI_0024.JPG",
+      "DJI_0031.JPG",
+      "DJI_0325.JPG",
+      "DJI_0335.JPG",
+      "DJI_0462.JPG",
+      "DJI_0466.JPG",
+      "DJI_0537.JPG",
+      "DJI_0552.JPG",
+      "DJI_0759.JPG",
+      "DJI_10018.JPG",
+      "DJI_10019.JPG",
+      "DJI_10051.JPG",
+      "DJI_10076.JPG",
+      "DJI_10397.JPG",
+      "DJI_10671.JPG"
+    ],
+    "development_source": "fixed_labeled_validation_development_subset",
+    "vocabulary": {
+      "original": {
+        "classes": [
+          {
+            "name": "other",
+            "synonyms": [
+              "other",
+              "other area",
+              "other surface",
+              "other land cover",
+              "miscellaneous area",
+              "miscellaneous surface",
+              "miscellaneous ground",
+              "unclassified area",
+              "unclassified surface",
+              "unlabeled area",
+              "background clutter",
+              "scene clutter",
+              "mixed ground",
+              "unknown area",
+              "non target area",
+              "unassigned area",
+              "unclear surface",
+              "residual area",
+              "other ground",
+              "remaining area"
+            ]
+          },
+          {
+            "name": "wall",
+            "synonyms": [
+              "wall",
+              "walls",
+              "facade",
+              "facades",
+              "building facade",
+              "exterior wall",
+              "building wall",
+              "house wall",
+              "vertical wall",
+              "vertical building facade",
+              "visible building side",
+              "front facade",
+              "side facade",
+              "concrete wall",
+              "brick wall",
+              "painted wall",
+              "apartment facade",
+              "commercial facade",
+              "residential facade",
+              "building exterior wall"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road",
+              "roads",
+              "street",
+              "streets",
+              "roadway",
+              "paved road",
+              "asphalt road",
+              "highway",
+              "urban road",
+              "rural road",
+              "road lane",
+              "traffic lane",
+              "road junction",
+              "road intersection",
+              "transport corridor",
+              "linear pavement",
+              "wide road",
+              "narrow road",
+              "road surface",
+              "driving road"
+            ]
+          },
+          {
+            "name": "vegetation",
+            "synonyms": [
+              "vegetation",
+              "green vegetation",
+              "plant cover",
+              "trees",
+              "tree canopy",
+              "forest",
+              "woodland",
+              "grass",
+              "grassland",
+              "low vegetation",
+              "shrubs",
+              "bushes",
+              "greenery",
+              "leafy cover",
+              "natural vegetation",
+              "roadside vegetation",
+              "vegetated ground",
+              "park vegetation",
+              "dense foliage",
+              "vegetation patch"
+            ]
+          },
+          {
+            "name": "vehicle",
+            "synonyms": [
+              "vehicle",
+              "vehicles",
+              "car",
+              "cars",
+              "automobile",
+              "truck",
+              "bus",
+              "van",
+              "moving car",
+              "parked car",
+              "moving vehicle",
+              "road vehicle",
+              "traffic vehicle",
+              "small vehicle",
+              "large vehicle",
+              "vehicle cluster",
+              "motor vehicle",
+              "transport vehicle",
+              "driving vehicle",
+              "automotive vehicle"
+            ]
+          },
+          {
+            "name": "roof",
+            "synonyms": [
+              "roof",
+              "roofs",
+              "rooftop",
+              "rooftops",
+              "building roof",
+              "house roof",
+              "red roof",
+              "blue roof",
+              "flat roof",
+              "pitched roof",
+              "metal roof",
+              "tile roof",
+              "roof surface",
+              "visible roof",
+              "urban roof",
+              "large roof",
+              "small roof",
+              "roof plane",
+              "roof structure",
+              "covered roof"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "stream",
+              "canal",
+              "reservoir",
+              "blue water",
+              "open water",
+              "surface water",
+              "waterway",
+              "river channel",
+              "lake surface",
+              "pond water",
+              "inland water",
+              "water area",
+              "water surface",
+              "wet area",
+              "water region"
+            ]
+          }
+        ],
+        "template": "RS6"
+      },
+      "focused20": {
+        "classes": [
+          {
+            "name": "other",
+            "synonyms": [
+              "other",
+              "other area",
+              "other surface",
+              "other land cover",
+              "miscellaneous area",
+              "miscellaneous surface",
+              "miscellaneous ground",
+              "unclassified area",
+              "unclassified surface",
+              "unlabeled area",
+              "background clutter",
+              "scene clutter",
+              "mixed ground",
+              "unknown area",
+              "non target area",
+              "unassigned area",
+              "unclear surface",
+              "residual area",
+              "other ground",
+              "remaining area"
+            ]
+          },
+          {
+            "name": "wall",
+            "synonyms": [
+              "wall",
+              "walls",
+              "facade",
+              "facades",
+              "building facade",
+              "exterior wall",
+              "building wall",
+              "house wall",
+              "vertical wall",
+              "vertical building facade",
+              "visible building side",
+              "front facade",
+              "side facade",
+              "concrete wall",
+              "brick wall",
+              "painted wall",
+              "apartment facade",
+              "commercial facade",
+              "residential facade",
+              "building exterior wall"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road",
+              "roads",
+              "street",
+              "streets",
+              "roadway",
+              "paved road",
+              "asphalt road",
+              "highway",
+              "urban road",
+              "rural road",
+              "road lane",
+              "traffic lane",
+              "road junction",
+              "road intersection",
+              "paved roadway",
+              "street roadway",
+              "wide road",
+              "narrow road",
+              "road surface",
+              "driving road"
+            ]
+          },
+          {
+            "name": "vegetation",
+            "synonyms": [
+              "vegetation",
+              "green vegetation",
+              "plant cover",
+              "trees",
+              "tree canopy",
+              "forest",
+              "woodland",
+              "grass",
+              "grassland",
+              "low vegetation",
+              "shrubs",
+              "bushes",
+              "greenery",
+              "leafy cover",
+              "natural vegetation",
+              "roadside vegetation",
+              "vegetated ground",
+              "park vegetation",
+              "dense foliage",
+              "vegetation patch"
+            ]
+          },
+          {
+            "name": "vehicle",
+            "synonyms": [
+              "vehicle",
+              "vehicles",
+              "car",
+              "cars",
+              "automobile",
+              "truck",
+              "bus",
+              "van",
+              "moving car",
+              "parked car",
+              "moving vehicle",
+              "road vehicle",
+              "traffic vehicle",
+              "small vehicle",
+              "delivery vehicle",
+              "passenger car",
+              "motor vehicle",
+              "transport vehicle",
+              "driving vehicle",
+              "automotive vehicle"
+            ]
+          },
+          {
+            "name": "roof",
+            "synonyms": [
+              "roof",
+              "roofs",
+              "rooftop",
+              "rooftops",
+              "building roof",
+              "house roof",
+              "red roof",
+              "blue roof",
+              "flat roof",
+              "pitched roof",
+              "metal roof",
+              "tile roof",
+              "roof surface",
+              "visible roof",
+              "urban roof",
+              "large roof",
+              "small roof",
+              "roof plane",
+              "roof structure",
+              "covered roof"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "stream",
+              "canal",
+              "reservoir",
+              "pond surface",
+              "open water",
+              "surface water",
+              "waterway",
+              "river channel",
+              "lake surface",
+              "pond water",
+              "inland water",
+              "water area",
+              "water surface",
+              "river water",
+              "water region"
+            ]
+          }
+        ],
+        "template": "RS6"
+      },
+      "original_imagenet": {
+        "classes": [
+          {
+            "name": "other",
+            "synonyms": [
+              "other",
+              "other area",
+              "other surface",
+              "other land cover",
+              "miscellaneous area",
+              "miscellaneous surface",
+              "miscellaneous ground",
+              "unclassified area",
+              "unclassified surface",
+              "unlabeled area",
+              "background clutter",
+              "scene clutter",
+              "mixed ground",
+              "unknown area",
+              "non target area",
+              "unassigned area",
+              "unclear surface",
+              "residual area",
+              "other ground",
+              "remaining area"
+            ]
+          },
+          {
+            "name": "wall",
+            "synonyms": [
+              "wall",
+              "walls",
+              "facade",
+              "facades",
+              "building facade",
+              "exterior wall",
+              "building wall",
+              "house wall",
+              "vertical wall",
+              "vertical building facade",
+              "visible building side",
+              "front facade",
+              "side facade",
+              "concrete wall",
+              "brick wall",
+              "painted wall",
+              "apartment facade",
+              "commercial facade",
+              "residential facade",
+              "building exterior wall"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road",
+              "roads",
+              "street",
+              "streets",
+              "roadway",
+              "paved road",
+              "asphalt road",
+              "highway",
+              "urban road",
+              "rural road",
+              "road lane",
+              "traffic lane",
+              "road junction",
+              "road intersection",
+              "transport corridor",
+              "linear pavement",
+              "wide road",
+              "narrow road",
+              "road surface",
+              "driving road"
+            ]
+          },
+          {
+            "name": "vegetation",
+            "synonyms": [
+              "vegetation",
+              "green vegetation",
+              "plant cover",
+              "trees",
+              "tree canopy",
+              "forest",
+              "woodland",
+              "grass",
+              "grassland",
+              "low vegetation",
+              "shrubs",
+              "bushes",
+              "greenery",
+              "leafy cover",
+              "natural vegetation",
+              "roadside vegetation",
+              "vegetated ground",
+              "park vegetation",
+              "dense foliage",
+              "vegetation patch"
+            ]
+          },
+          {
+            "name": "vehicle",
+            "synonyms": [
+              "vehicle",
+              "vehicles",
+              "car",
+              "cars",
+              "automobile",
+              "truck",
+              "bus",
+              "van",
+              "moving car",
+              "parked car",
+              "moving vehicle",
+              "road vehicle",
+              "traffic vehicle",
+              "small vehicle",
+              "large vehicle",
+              "vehicle cluster",
+              "motor vehicle",
+              "transport vehicle",
+              "driving vehicle",
+              "automotive vehicle"
+            ]
+          },
+          {
+            "name": "roof",
+            "synonyms": [
+              "roof",
+              "roofs",
+              "rooftop",
+              "rooftops",
+              "building roof",
+              "house roof",
+              "red roof",
+              "blue roof",
+              "flat roof",
+              "pitched roof",
+              "metal roof",
+              "tile roof",
+              "roof surface",
+              "visible roof",
+              "urban roof",
+              "large roof",
+              "small roof",
+              "roof plane",
+              "roof structure",
+              "covered roof"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "stream",
+              "canal",
+              "reservoir",
+              "blue water",
+              "open water",
+              "surface water",
+              "waterway",
+              "river channel",
+              "lake surface",
+              "pond water",
+              "inland water",
+              "water area",
+              "water surface",
+              "wet area",
+              "water region"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "official_imagenet": {
+        "classes": [
+          {
+            "name": "other",
+            "synonyms": [
+              "surface",
+              "other"
+            ]
+          },
+          {
+            "name": "wall",
+            "synonyms": [
+              "facade"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road"
+            ]
+          },
+          {
+            "name": "vegetation",
+            "synonyms": [
+              "grassland",
+              "forest area"
+            ]
+          },
+          {
+            "name": "vehicle",
+            "synonyms": [
+              "vehicle"
+            ]
+          },
+          {
+            "name": "roof",
+            "synonyms": [
+              "roof"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "official_segmentation": {
+        "classes": [
+          {
+            "name": "other",
+            "synonyms": [
+              "surface",
+              "other"
+            ]
+          },
+          {
+            "name": "wall",
+            "synonyms": [
+              "facade"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road"
+            ]
+          },
+          {
+            "name": "vegetation",
+            "synonyms": [
+              "grassland",
+              "forest area"
+            ]
+          },
+          {
+            "name": "vehicle",
+            "synonyms": [
+              "vehicle"
+            ]
+          },
+          {
+            "name": "roof",
+            "synonyms": [
+              "roof"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water"
+            ]
+          }
+        ],
+        "template": "seg_template"
+      },
+      "kev40_imagenet": {
+        "classes": [
+          {
+            "name": "other",
+            "synonyms": [
+              "other",
+              "other area",
+              "other surface",
+              "other land cover",
+              "miscellaneous area",
+              "miscellaneous surface",
+              "miscellaneous ground",
+              "unclassified area",
+              "unclassified surface",
+              "unlabeled area",
+              "background clutter",
+              "scene clutter",
+              "mixed ground",
+              "unknown area",
+              "non target area",
+              "unassigned area",
+              "unclear surface",
+              "residual area",
+              "other ground",
+              "remaining area"
+            ]
+          },
+          {
+            "name": "wall",
+            "synonyms": [
+              "wall",
+              "walls",
+              "facade",
+              "facades",
+              "building facade",
+              "exterior wall",
+              "building wall",
+              "house wall",
+              "vertical wall",
+              "vertical building facade",
+              "visible building side",
+              "concrete wall",
+              "brick wall",
+              "painted wall",
+              "apartment facade",
+              "commercial facade",
+              "residential facade",
+              "building exterior wall"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road",
+              "roads",
+              "street",
+              "streets",
+              "roadway",
+              "paved road",
+              "asphalt road",
+              "highway",
+              "urban road",
+              "rural road",
+              "road lane",
+              "traffic lane",
+              "road junction",
+              "road intersection",
+              "linear pavement",
+              "wide road",
+              "narrow road",
+              "road surface",
+              "driving road",
+              "paved roadway",
+              "street roadway"
+            ]
+          },
+          {
+            "name": "vegetation",
+            "synonyms": [
+              "vegetation",
+              "green vegetation",
+              "plant cover",
+              "trees",
+              "tree canopy",
+              "forest",
+              "woodland",
+              "grass",
+              "grassland",
+              "low vegetation",
+              "shrubs",
+              "bushes",
+              "greenery",
+              "leafy cover",
+              "natural vegetation",
+              "roadside vegetation",
+              "vegetated ground",
+              "park vegetation",
+              "dense foliage",
+              "vegetation patch",
+              "forest area"
+            ]
+          },
+          {
+            "name": "vehicle",
+            "synonyms": [
+              "vehicle",
+              "vehicles",
+              "car",
+              "cars",
+              "automobile",
+              "truck",
+              "bus",
+              "van",
+              "moving car",
+              "parked car",
+              "moving vehicle",
+              "road vehicle",
+              "traffic vehicle",
+              "small vehicle",
+              "motor vehicle",
+              "transport vehicle",
+              "driving vehicle",
+              "automotive vehicle",
+              "delivery vehicle",
+              "passenger car"
+            ]
+          },
+          {
+            "name": "roof",
+            "synonyms": [
+              "roof",
+              "roofs",
+              "rooftop",
+              "rooftops",
+              "building roof",
+              "house roof",
+              "red roof",
+              "blue roof",
+              "flat roof",
+              "pitched roof",
+              "metal roof",
+              "tile roof",
+              "roof surface",
+              "visible roof",
+              "urban roof",
+              "large roof",
+              "small roof",
+              "roof plane",
+              "roof structure",
+              "covered roof"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "stream",
+              "canal",
+              "reservoir",
+              "blue water",
+              "open water",
+              "surface water",
+              "waterway",
+              "river channel",
+              "lake surface",
+              "pond water",
+              "inland water",
+              "water area",
+              "water surface",
+              "water region",
+              "pond surface",
+              "river water"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "kev60_imagenet": {
+        "classes": [
+          {
+            "name": "other",
+            "synonyms": [
+              "other",
+              "other area",
+              "other surface",
+              "other land cover",
+              "miscellaneous area",
+              "miscellaneous surface",
+              "miscellaneous ground",
+              "unclassified area",
+              "unclassified surface",
+              "unlabeled area",
+              "background clutter",
+              "scene clutter",
+              "mixed ground",
+              "unknown area",
+              "non target area",
+              "unassigned area",
+              "unclear surface",
+              "residual area",
+              "other ground",
+              "remaining area"
+            ]
+          },
+          {
+            "name": "wall",
+            "synonyms": [
+              "wall",
+              "vertical building facade",
+              "building exterior wall"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road"
+            ]
+          },
+          {
+            "name": "vegetation",
+            "synonyms": [
+              "vegetation",
+              "tree canopy",
+              "grass"
+            ]
+          },
+          {
+            "name": "vehicle",
+            "synonyms": [
+              "vehicle"
+            ]
+          },
+          {
+            "name": "roof",
+            "synonyms": [
+              "roof"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "pond surface"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "kev80_imagenet": {
+        "classes": [
+          {
+            "name": "other",
+            "synonyms": [
+              "other",
+              "other area",
+              "other surface",
+              "other land cover",
+              "miscellaneous area",
+              "miscellaneous surface",
+              "miscellaneous ground",
+              "unclassified area",
+              "unclassified surface",
+              "unlabeled area",
+              "background clutter",
+              "scene clutter",
+              "mixed ground",
+              "unknown area",
+              "non target area",
+              "unassigned area",
+              "unclear surface",
+              "residual area",
+              "other ground",
+              "remaining area"
+            ]
+          },
+          {
+            "name": "wall",
+            "synonyms": [
+              "wall"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road"
+            ]
+          },
+          {
+            "name": "vegetation",
+            "synonyms": [
+              "vegetation"
+            ]
+          },
+          {
+            "name": "vehicle",
+            "synonyms": [
+              "vehicle"
+            ]
+          },
+          {
+            "name": "roof",
+            "synonyms": [
+              "roof"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "pool_imagenet": {
+        "classes": [
+          {
+            "name": "other",
+            "synonyms": [
+              "other",
+              "other area",
+              "other surface",
+              "other land cover",
+              "miscellaneous area",
+              "miscellaneous surface",
+              "miscellaneous ground",
+              "unclassified area",
+              "unclassified surface",
+              "unlabeled area",
+              "background clutter",
+              "scene clutter",
+              "mixed ground",
+              "unknown area",
+              "non target area",
+              "unassigned area",
+              "unclear surface",
+              "residual area",
+              "other ground",
+              "remaining area"
+            ]
+          },
+          {
+            "name": "wall",
+            "synonyms": [
+              "wall",
+              "walls",
+              "facade",
+              "facades",
+              "building facade",
+              "exterior wall",
+              "building wall",
+              "house wall",
+              "vertical wall",
+              "vertical building facade",
+              "visible building side",
+              "front facade",
+              "side facade",
+              "concrete wall",
+              "brick wall",
+              "painted wall",
+              "apartment facade",
+              "commercial facade",
+              "residential facade",
+              "building exterior wall"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road",
+              "roads",
+              "street",
+              "streets",
+              "roadway",
+              "paved road",
+              "asphalt road",
+              "highway",
+              "urban road",
+              "rural road",
+              "road lane",
+              "traffic lane",
+              "road junction",
+              "road intersection",
+              "transport corridor",
+              "linear pavement",
+              "wide road",
+              "narrow road",
+              "road surface",
+              "driving road",
+              "paved roadway",
+              "street roadway"
+            ]
+          },
+          {
+            "name": "vegetation",
+            "synonyms": [
+              "vegetation",
+              "green vegetation",
+              "plant cover",
+              "trees",
+              "tree canopy",
+              "forest",
+              "woodland",
+              "grass",
+              "grassland",
+              "low vegetation",
+              "shrubs",
+              "bushes",
+              "greenery",
+              "leafy cover",
+              "natural vegetation",
+              "roadside vegetation",
+              "vegetated ground",
+              "park vegetation",
+              "dense foliage",
+              "vegetation patch",
+              "forest area"
+            ]
+          },
+          {
+            "name": "vehicle",
+            "synonyms": [
+              "vehicle",
+              "vehicles",
+              "car",
+              "cars",
+              "automobile",
+              "truck",
+              "bus",
+              "van",
+              "moving car",
+              "parked car",
+              "moving vehicle",
+              "road vehicle",
+              "traffic vehicle",
+              "small vehicle",
+              "large vehicle",
+              "vehicle cluster",
+              "motor vehicle",
+              "transport vehicle",
+              "driving vehicle",
+              "automotive vehicle",
+              "delivery vehicle",
+              "passenger car"
+            ]
+          },
+          {
+            "name": "roof",
+            "synonyms": [
+              "roof",
+              "roofs",
+              "rooftop",
+              "rooftops",
+              "building roof",
+              "house roof",
+              "red roof",
+              "blue roof",
+              "flat roof",
+              "pitched roof",
+              "metal roof",
+              "tile roof",
+              "roof surface",
+              "visible roof",
+              "urban roof",
+              "large roof",
+              "small roof",
+              "roof plane",
+              "roof structure",
+              "covered roof"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "stream",
+              "canal",
+              "reservoir",
+              "blue water",
+              "open water",
+              "surface water",
+              "waterway",
+              "river channel",
+              "lake surface",
+              "pond water",
+              "inland water",
+              "water area",
+              "water surface",
+              "wet area",
+              "water region",
+              "pond surface",
+              "river water"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "kev40_segmentation": {
+        "classes": [
+          {
+            "name": "other",
+            "synonyms": [
+              "other",
+              "other area",
+              "other surface",
+              "other land cover",
+              "miscellaneous area",
+              "miscellaneous surface",
+              "miscellaneous ground",
+              "unclassified area",
+              "unclassified surface",
+              "unlabeled area",
+              "background clutter",
+              "scene clutter",
+              "mixed ground",
+              "unknown area",
+              "non target area",
+              "unassigned area",
+              "unclear surface",
+              "residual area",
+              "other ground",
+              "remaining area"
+            ]
+          },
+          {
+            "name": "wall",
+            "synonyms": [
+              "wall",
+              "walls",
+              "facade",
+              "facades",
+              "building facade",
+              "exterior wall",
+              "building wall",
+              "house wall",
+              "vertical wall",
+              "vertical building facade",
+              "visible building side",
+              "concrete wall",
+              "brick wall",
+              "painted wall",
+              "apartment facade",
+              "commercial facade",
+              "residential facade",
+              "building exterior wall"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road",
+              "roads",
+              "street",
+              "streets",
+              "roadway",
+              "paved road",
+              "asphalt road",
+              "highway",
+              "urban road",
+              "rural road",
+              "road lane",
+              "traffic lane",
+              "road junction",
+              "road intersection",
+              "linear pavement",
+              "wide road",
+              "narrow road",
+              "road surface",
+              "driving road",
+              "paved roadway",
+              "street roadway"
+            ]
+          },
+          {
+            "name": "vegetation",
+            "synonyms": [
+              "vegetation",
+              "green vegetation",
+              "plant cover",
+              "trees",
+              "tree canopy",
+              "forest",
+              "woodland",
+              "grass",
+              "grassland",
+              "low vegetation",
+              "shrubs",
+              "bushes",
+              "greenery",
+              "leafy cover",
+              "natural vegetation",
+              "roadside vegetation",
+              "vegetated ground",
+              "park vegetation",
+              "dense foliage",
+              "vegetation patch",
+              "forest area"
+            ]
+          },
+          {
+            "name": "vehicle",
+            "synonyms": [
+              "vehicle",
+              "vehicles",
+              "car",
+              "cars",
+              "automobile",
+              "truck",
+              "bus",
+              "van",
+              "moving car",
+              "parked car",
+              "moving vehicle",
+              "road vehicle",
+              "traffic vehicle",
+              "small vehicle",
+              "motor vehicle",
+              "transport vehicle",
+              "driving vehicle",
+              "automotive vehicle",
+              "delivery vehicle",
+              "passenger car"
+            ]
+          },
+          {
+            "name": "roof",
+            "synonyms": [
+              "roof",
+              "roofs",
+              "rooftop",
+              "rooftops",
+              "building roof",
+              "house roof",
+              "red roof",
+              "blue roof",
+              "flat roof",
+              "pitched roof",
+              "metal roof",
+              "tile roof",
+              "roof surface",
+              "visible roof",
+              "urban roof",
+              "large roof",
+              "small roof",
+              "roof plane",
+              "roof structure",
+              "covered roof"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "stream",
+              "canal",
+              "reservoir",
+              "blue water",
+              "open water",
+              "surface water",
+              "waterway",
+              "river channel",
+              "lake surface",
+              "pond water",
+              "inland water",
+              "water area",
+              "water surface",
+              "water region",
+              "pond surface",
+              "river water"
+            ]
+          }
+        ],
+        "template": "seg_template"
+      },
+      "kev60_segmentation": {
+        "classes": [
+          {
+            "name": "other",
+            "synonyms": [
+              "other",
+              "other area",
+              "other surface",
+              "other land cover",
+              "miscellaneous area",
+              "miscellaneous surface",
+              "miscellaneous ground",
+              "unclassified area",
+              "unclassified surface",
+              "unlabeled area",
+              "background clutter",
+              "scene clutter",
+              "mixed ground",
+              "unknown area",
+              "non target area",
+              "unassigned area",
+              "unclear surface",
+              "residual area",
+              "other ground",
+              "remaining area"
+            ]
+          },
+          {
+            "name": "wall",
+            "synonyms": [
+              "wall",
+              "vertical building facade",
+              "building exterior wall"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road"
+            ]
+          },
+          {
+            "name": "vegetation",
+            "synonyms": [
+              "vegetation",
+              "tree canopy",
+              "grass"
+            ]
+          },
+          {
+            "name": "vehicle",
+            "synonyms": [
+              "vehicle"
+            ]
+          },
+          {
+            "name": "roof",
+            "synonyms": [
+              "roof"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "pond surface"
+            ]
+          }
+        ],
+        "template": "seg_template"
+      },
+      "kev80_segmentation": {
+        "classes": [
+          {
+            "name": "other",
+            "synonyms": [
+              "other",
+              "other area",
+              "other surface",
+              "other land cover",
+              "miscellaneous area",
+              "miscellaneous surface",
+              "miscellaneous ground",
+              "unclassified area",
+              "unclassified surface",
+              "unlabeled area",
+              "background clutter",
+              "scene clutter",
+              "mixed ground",
+              "unknown area",
+              "non target area",
+              "unassigned area",
+              "unclear surface",
+              "residual area",
+              "other ground",
+              "remaining area"
+            ]
+          },
+          {
+            "name": "wall",
+            "synonyms": [
+              "wall"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road"
+            ]
+          },
+          {
+            "name": "vegetation",
+            "synonyms": [
+              "vegetation"
+            ]
+          },
+          {
+            "name": "vehicle",
+            "synonyms": [
+              "vehicle"
+            ]
+          },
+          {
+            "name": "roof",
+            "synonyms": [
+              "roof"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water"
+            ]
+          }
+        ],
+        "template": "seg_template"
+      },
+      "pool_segmentation": {
+        "classes": [
+          {
+            "name": "other",
+            "synonyms": [
+              "other",
+              "other area",
+              "other surface",
+              "other land cover",
+              "miscellaneous area",
+              "miscellaneous surface",
+              "miscellaneous ground",
+              "unclassified area",
+              "unclassified surface",
+              "unlabeled area",
+              "background clutter",
+              "scene clutter",
+              "mixed ground",
+              "unknown area",
+              "non target area",
+              "unassigned area",
+              "unclear surface",
+              "residual area",
+              "other ground",
+              "remaining area"
+            ]
+          },
+          {
+            "name": "wall",
+            "synonyms": [
+              "wall",
+              "walls",
+              "facade",
+              "facades",
+              "building facade",
+              "exterior wall",
+              "building wall",
+              "house wall",
+              "vertical wall",
+              "vertical building facade",
+              "visible building side",
+              "front facade",
+              "side facade",
+              "concrete wall",
+              "brick wall",
+              "painted wall",
+              "apartment facade",
+              "commercial facade",
+              "residential facade",
+              "building exterior wall"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road",
+              "roads",
+              "street",
+              "streets",
+              "roadway",
+              "paved road",
+              "asphalt road",
+              "highway",
+              "urban road",
+              "rural road",
+              "road lane",
+              "traffic lane",
+              "road junction",
+              "road intersection",
+              "transport corridor",
+              "linear pavement",
+              "wide road",
+              "narrow road",
+              "road surface",
+              "driving road",
+              "paved roadway",
+              "street roadway"
+            ]
+          },
+          {
+            "name": "vegetation",
+            "synonyms": [
+              "vegetation",
+              "green vegetation",
+              "plant cover",
+              "trees",
+              "tree canopy",
+              "forest",
+              "woodland",
+              "grass",
+              "grassland",
+              "low vegetation",
+              "shrubs",
+              "bushes",
+              "greenery",
+              "leafy cover",
+              "natural vegetation",
+              "roadside vegetation",
+              "vegetated ground",
+              "park vegetation",
+              "dense foliage",
+              "vegetation patch",
+              "forest area"
+            ]
+          },
+          {
+            "name": "vehicle",
+            "synonyms": [
+              "vehicle",
+              "vehicles",
+              "car",
+              "cars",
+              "automobile",
+              "truck",
+              "bus",
+              "van",
+              "moving car",
+              "parked car",
+              "moving vehicle",
+              "road vehicle",
+              "traffic vehicle",
+              "small vehicle",
+              "large vehicle",
+              "vehicle cluster",
+              "motor vehicle",
+              "transport vehicle",
+              "driving vehicle",
+              "automotive vehicle",
+              "delivery vehicle",
+              "passenger car"
+            ]
+          },
+          {
+            "name": "roof",
+            "synonyms": [
+              "roof",
+              "roofs",
+              "rooftop",
+              "rooftops",
+              "building roof",
+              "house roof",
+              "red roof",
+              "blue roof",
+              "flat roof",
+              "pitched roof",
+              "metal roof",
+              "tile roof",
+              "roof surface",
+              "visible roof",
+              "urban roof",
+              "large roof",
+              "small roof",
+              "roof plane",
+              "roof structure",
+              "covered roof"
+            ]
+          },
+          {
+            "name": "water",
+            "synonyms": [
+              "water",
+              "water body",
+              "river",
+              "lake",
+              "pond",
+              "stream",
+              "canal",
+              "reservoir",
+              "blue water",
+              "open water",
+              "surface water",
+              "waterway",
+              "river channel",
+              "lake surface",
+              "pond water",
+              "inland water",
+              "water area",
+              "water surface",
+              "wet area",
+              "water region",
+              "pond surface",
+              "river water"
+            ]
+          }
+        ],
+        "template": "seg_template"
+      }
+    },
+    "judgment": "jaredpalmer/kev-4b@6cfce5c2fa4b4bd64026336ab649c5ca78857d52",
+    "inference_uses_target_labels": false,
+    "target_label_development": true,
+    "source_protocol": "Labeled development-selected configuration, not a label-free selector or untouched independent test. Full scores and non-development complement; ADE uses training development. Kev is an additional frozen pretrained language prior."
+  },
+  "exact_sample_predictions": true,
+  "images": 7,
+  "text_offload": [
+    {
+      "branch": "geometry",
+      "text_weight_bytes": 2152524800,
+      "released": true
+    },
+    {
+      "branch": "wide",
+      "text_weight_bytes": 1076262400,
+      "released": true
+    }
+  ],
+  "results": {
+    "reference": {
+      "images": [
+        {
+          "key": "DJI_0007.JPG",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            333.2106389570981,
+            333.0128339584917,
+            333.9797880034894,
+            332.9249450471252,
+            332.5490429997444,
+            333.3842761348933,
+            332.7590439002961
+          ],
+          "peak_allocated_mib": 5993.5185546875,
+          "peak_reserved_mib": 7798.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "DJI_0390.JPG",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            333.7013379205018,
+            333.1241279374808,
+            330.66542888991535,
+            332.7035189140588,
+            330.5291479919106,
+            333.2207310013473,
+            331.5479070879519
+          ],
+          "peak_allocated_mib": 5993.5185546875,
+          "peak_reserved_mib": 7798.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "DJI_0552.JPG",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            333.9818329550326,
+            332.0844159461558,
+            332.2958729695529,
+            332.12019805796444,
+            333.191161043942,
+            332.16558303683996,
+            332.48579408973455
+          ],
+          "peak_allocated_mib": 5993.5185546875,
+          "peak_reserved_mib": 7798.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "DJI_0819.JPG",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            334.0601180680096,
+            333.8342539500445,
+            332.14077493175864,
+            334.59084713831544,
+            332.78324897401035,
+            333.4802659228444,
+            332.7072861138731
+          ],
+          "peak_allocated_mib": 5993.5185546875,
+          "peak_reserved_mib": 7798.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "DJI_10054.JPG",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            333.8103259447962,
+            334.62905907072127,
+            334.31073906831443,
+            331.00513904355466,
+            333.7615269701928,
+            334.5798992086202,
+            330.82725503481925
+          ],
+          "peak_allocated_mib": 5993.5185546875,
+          "peak_reserved_mib": 7798.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "DJI_10397.JPG",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            334.5484749879688,
+            334.9594580940902,
+            334.77744995616376,
+            333.30108993686736,
+            335.6104220729321,
+            334.0317958500236,
+            333.55072303675115
+          ],
+          "peak_allocated_mib": 5993.5185546875,
+          "peak_reserved_mib": 7798.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "DJI_10708.JPG",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            334.46254301816225,
+            333.2821719814092,
+            334.15721100755036,
+            333.6379639804363,
+            333.32125609740615,
+            333.0338280647993,
+            334.64595093391836
+          ],
+          "peak_allocated_mib": 5993.5185546875,
+          "peak_reserved_mib": 7798.0,
+          "changed_pixels": 0
+        }
+      ],
+      "median_ms": 333.30108993686736,
+      "peak_allocated_mib": 5993.5185546875,
+      "peak_reserved_mib": 7798.0
+    },
+    "compact": {
+      "images": [
+        {
+          "key": "DJI_0007.JPG",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            316.77574710920453,
+            317.2878420446068,
+            315.99230598658323,
+            318.9832950010896,
+            317.0535929966718,
+            316.84581679292023,
+            319.0315088722855
+          ],
+          "peak_allocated_mib": 2847.416015625,
+          "peak_reserved_mib": 3304.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "DJI_0390.JPG",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            318.9264968968928,
+            316.8820149730891,
+            318.5196937993169,
+            316.2121851928532,
+            318.14377498812973,
+            319.08977683633566,
+            317.1874820254743
+          ],
+          "peak_allocated_mib": 2847.416015625,
+          "peak_reserved_mib": 3304.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "DJI_0552.JPG",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            316.3097379729152,
+            317.3612190876156,
+            316.9662819709629,
+            316.98002596385777,
+            315.81752304919064,
+            316.2644279655069,
+            316.3980070967227
+          ],
+          "peak_allocated_mib": 2847.416015625,
+          "peak_reserved_mib": 3304.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "DJI_0819.JPG",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            318.4964789543301,
+            317.4012720119208,
+            320.4747869167477,
+            318.51625395938754,
+            316.4544510655105,
+            316.27676100470126,
+            317.80347088351846
+          ],
+          "peak_allocated_mib": 2847.416015625,
+          "peak_reserved_mib": 3304.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "DJI_10054.JPG",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            317.75750196538866,
+            315.4504511039704,
+            317.00992793776095,
+            316.6370140388608,
+            318.6300420202315,
+            318.49227007478476,
+            316.4923801086843
+          ],
+          "peak_allocated_mib": 2847.416015625,
+          "peak_reserved_mib": 3304.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "DJI_10397.JPG",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            318.6662858352065,
+            318.7506820540875,
+            316.5943128988147,
+            316.9139490928501,
+            317.0007849112153,
+            319.04794299043715,
+            317.4396038521081
+          ],
+          "peak_allocated_mib": 2847.416015625,
+          "peak_reserved_mib": 3304.0,
+          "changed_pixels": 0
+        },
+        {
+          "key": "DJI_10708.JPG",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            315.66356495022774,
+            325.4964901134372,
+            316.59851409494877,
+            317.65216309577227,
+            315.66244713030756,
+            316.7959479615092,
+            319.66155604459345
+          ],
+          "peak_allocated_mib": 2847.416015625,
+          "peak_reserved_mib": 3304.0,
+          "changed_pixels": 0
+        }
+      ],
+      "median_ms": 317.0535929966718,
+      "peak_allocated_mib": 2847.416015625,
+      "peak_reserved_mib": 3304.0
+    }
+  },
+  "boundary": "Same frozen language, parameters, visual views and dtypes; whole RGB input to CPU prediction. Decode/init/text encoding excluded. Two warmups, seven fixed images, seven synchronized repeats."
+}

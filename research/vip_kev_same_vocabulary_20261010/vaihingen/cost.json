@@ -1,0 +1,271 @@
+{
+  "status": "complete",
+  "dataset": "vaihingen",
+  "method": "VIP_SameText",
+  "images": [
+    {
+      "key": "top_mosaic_09cm_area10_y00_x00.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        106.72378214076161,
+        107.57966013625264,
+        107.1366029791534,
+        108.3202559966594,
+        108.5547658149153,
+        108.14752196893096,
+        108.2145709078759
+      ],
+      "peak_allocated_mib": 1747.82470703125
+    },
+    {
+      "key": "top_mosaic_09cm_area16_y00_x00.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        110.84646615199745,
+        109.4924861099571,
+        108.87032304890454,
+        108.61889994703233,
+        108.49419888108969,
+        110.73570000007749,
+        109.69208786264062
+      ],
+      "peak_allocated_mib": 1747.82470703125
+    },
+    {
+      "key": "top_mosaic_09cm_area24_y00_x01.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        108.10036608017981,
+        108.58538700267673,
+        110.4359389282763,
+        109.00046117603779,
+        108.07250789366663,
+        108.7082619778812,
+        109.42033817991614
+      ],
+      "peak_allocated_mib": 1747.82470703125
+    },
+    {
+      "key": "top_mosaic_09cm_area2_y00_x00.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        110.04420695826411,
+        109.01133599691093,
+        108.46457304432988,
+        109.10535417497158,
+        110.00889912247658,
+        109.4002069439739,
+        110.54660403169692
+      ],
+      "peak_allocated_mib": 1747.82470703125
+    },
+    {
+      "key": "top_mosaic_09cm_area33_y01_x01.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        110.72109802626073,
+        110.07315292954445,
+        114.4762181211263,
+        109.84356584958732,
+        110.61628209426999,
+        110.49484717659652,
+        109.6306589897722
+      ],
+      "peak_allocated_mib": 1747.82470703125
+    },
+    {
+      "key": "top_mosaic_09cm_area38_y02_x02.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        106.66089504957199,
+        106.59874603152275,
+        105.96853797324002,
+        105.7694349437952,
+        105.37238186225295,
+        106.22615879401565,
+        104.88976305350661
+      ],
+      "peak_allocated_mib": 1747.82470703125
+    },
+    {
+      "key": "top_mosaic_09cm_area8_y02_x01.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        104.942959966138,
+        104.97499397024512,
+        105.18494201824069,
+        104.81526609510183,
+        104.29049003869295,
+        105.76066887006164,
+        104.36668386682868
+      ],
+      "peak_allocated_mib": 1747.82470703125
+    }
+  ],
+  "median_ms": 108.5547658149153,
+  "p95_ms": 110.72985921055079,
+  "peak_allocated_mib": 1747.82470703125,
+  "settings": {
+    "tau": 1.0,
+    "tem": 10.0,
+    "prob_thd": 0.1,
+    "background": true,
+    "bg_idx": 5,
+    "resize_long_edge": 448,
+    "slide_crop": 336,
+    "slide_stride": 112,
+    "logit_scale": 40.0
+  },
+  "text_identity": {
+    "classes": [
+      {
+        "name": "impervious surface",
+        "synonyms": [
+          "impervious surface",
+          "paved surface",
+          "pavement",
+          "asphalt surface",
+          "concrete surface",
+          "road pavement",
+          "parking pavement",
+          "sealed ground",
+          "urban pavement",
+          "sidewalk",
+          "paved area",
+          "gray pavement",
+          "street surface",
+          "concrete ground",
+          "impermeable ground",
+          "road"
+        ]
+      },
+      {
+        "name": "building",
+        "synonyms": [
+          "building",
+          "buildings",
+          "house",
+          "houses",
+          "rooftop",
+          "residential building",
+          "industrial building",
+          "apartment block",
+          "warehouse",
+          "large building",
+          "small building",
+          "built structure",
+          "dense buildings",
+          "commercial building",
+          "concrete building",
+          "urban building"
+        ]
+      },
+      {
+        "name": "low vegetation",
+        "synonyms": [
+          "low vegetation",
+          "grass",
+          "grassland",
+          "short grass",
+          "ground vegetation",
+          "green ground cover",
+          "meadow",
+          "herbaceous cover",
+          "low plants",
+          "lawn",
+          "small plants",
+          "sparse grass",
+          "green field",
+          "low greenery",
+          "grass cover",
+          "short vegetation",
+          "herbal vegetation"
+        ]
+      },
+      {
+        "name": "tree",
+        "synonyms": [
+          "tree",
+          "trees",
+          "tree canopy",
+          "dense trees",
+          "sparse trees",
+          "green canopy",
+          "tall vegetation",
+          "deciduous trees",
+          "evergreen trees",
+          "tree crown",
+          "tree cover",
+          "large tree"
+        ]
+      },
+      {
+        "name": "car",
+        "synonyms": [
+          "car",
+          "cars",
+          "automobile",
+          "parked car",
+          "moving car",
+          "sedan",
+          "van",
+          "visible car"
+        ]
+      }
+    ],
+    "source_bank": "kev40_imagenet",
+    "source_template": "openai_imagenet_template",
+    "residual_identity": null,
+    "checkpoints": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "upstream_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+    "official_template": "openai_imagenet_template"
+  },
+  "initialization_and_text_seconds": 14.66617906303145,
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "boundary": "Seven full inputs x seven warmed synchronized repeats. Native VIP resizing/encoding/readout/restoration/CPU output; decode/init/offline selection excluded.",
+  "weights_frozen": true,
+  "head_weights_unchanged": true
+}

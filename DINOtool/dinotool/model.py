@@ -30,6 +30,7 @@ class DINOTextSegmenter:
         device: str = "cuda",
         amp: bool = True,
         use_satellite: bool = False,
+        visual_only: bool = False,
     ) -> None:
         missing = [path for path in checkpoints.required(use_satellite) if not path.exists()]
         if missing:
@@ -49,6 +50,10 @@ class DINOTextSegmenter:
             backbone_weights=str(checkpoints.lvd_weights),
             bpe_path_or_url=str(checkpoints.bpe_path),
         )
+        # A deployment with an existing vocabulary cache needs no text tower.
+        # Drop it before moving weights to CUDA, including during startup.
+        if visual_only:
+            self.model.text_model = None
         self.model.to(self.device).eval().requires_grad_(False)
         self.tokenize = tokenizer.tokenize
         self._visual_tuning_indices: tuple[int, ...] = ()

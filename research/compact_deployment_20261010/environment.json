@@ -1,0 +1,10 @@
+{
+  "pillow": "12.2.0",
+  "torchvision": "0.21.0+cu124",
+  "opencv-python-headless": "4.11.0.86",
+  "timm": "1.0.28",
+  "numpy": "2.4.4",
+  "torch": "2.6.0+cu124",
+  "PyYAML": "6.0.3",
+  "einops": "0.8.2"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "dataset": "ade150",
+  "key": "ADE_val_00000001",
+  "fresh_text_encoding": false,
+  "local_vector_max_error": 0.0,
+  "wide_vector_max_error": 0.0,
+  "changed_pixels": 0,
+  "pixels": 349696,
+  "exact_prediction": true,
+  "target_masks_loaded": false
+}

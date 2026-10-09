@@ -127,13 +127,13 @@ class TaxonomyInference:
         return self.predict_observations(source,return_probability=return_probability)
 
     @torch.inference_mode()
-    def predict_observations(self,source,*,return_probability=False):
+    def predict_observations(self,source,*,return_probability=False,wide_scorer=None,return_prediction=True):
         """Read already computed observations for paired frozen evaluations."""
         import eval_development_readout as observation
         from eval_geometry_vip_reliability import sample_broad
         profile,decision=rs_profile(source,self.banks,self.background) if self.profile is None else (self.profile,self.decision)
         bank=self.banks[profile.bank]
-        broad=observation.wide_scores(source,self.queries[profile.bank],profile.tau,profile.tem)
+        broad=(observation.wide_scores if wide_scorer is None else wide_scorer)(source,self.queries[profile.bank],profile.tau,profile.tem)
         if self.wide_aggregation=='count_normalized':
             broad=self.wide_normalizers[profile.bank].apply(broad,profile.tau)
         old_broad=broad
@@ -191,7 +191,9 @@ class TaxonomyInference:
                                       source['output_size'],mode='bilinear',align_corners=False)[0]
         if not bool(torch.isfinite(probability).all()):
             raise RuntimeError('Nonfinite inference probability.')
-        prediction=probability.argmax(0).cpu().numpy()
+        if not return_prediction and not return_probability:
+            raise ValueError('Probability output is required when prediction is deferred.')
+        prediction=probability.argmax(0).cpu().numpy() if return_prediction else None
         diagnostic=dict(profile=profile.record(),decision=decision,soft_alias_weights=self.soft,
             geometry_encodings=len(source['local']),wide_encodings=len(source['wide']),fine_forwards=0,
             alias_backend='cached-reference-groups-for-hard-residual-rival' if self.residual_reader is not None else 'precomputed-vectorized-variable-groups',target_masks_loaded=False)

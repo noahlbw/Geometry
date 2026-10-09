@@ -1,0 +1,5 @@
+vegetation	vegetation | grass | grassland | bushes | tree canopy | trees | park vegetation
+building	building
+road	road | asphalt road
+vehicle	vehicle
+other	other | background | miscellaneous ground | unclassified area | unknown terrain | other land cover | non target area | open ground | bare ground | pavement | parking area | courtyard | shadow | construction area | water surface | agricultural field | sports field | mixed terrain | unused land | cluttered area
