@@ -1,0 +1,54 @@
+{
+  "protocol": "Fixed VIP-style UDD5 aliases; 20 phrases per class, no target labels or LLM call",
+  "classes": [
+    {
+      "name": "vegetation",
+      "synonyms": [
+        "vegetation", "green vegetation", "plant cover", "vegetated land",
+        "dense vegetation", "low vegetation", "grass", "grassland", "shrub",
+        "shrubs", "bushes", "green ground cover", "tree canopy", "trees",
+        "wooded vegetation", "natural vegetation", "roadside vegetation",
+        "park vegetation", "crop vegetation", "mixed vegetation"
+      ]
+    },
+    {
+      "name": "building",
+      "synonyms": [
+        "building", "buildings", "rooftop", "rooftops", "roof", "roofs",
+        "house", "houses", "residential building", "industrial building",
+        "warehouse", "apartment block", "urban structure", "constructed structure",
+        "rectangular rooftop", "bright roof", "dark roof", "detached house",
+        "dense building cluster", "small building"
+      ]
+    },
+    {
+      "name": "road",
+      "synonyms": [
+        "road", "roads", "street", "streets", "roadway", "paved road",
+        "paved roadway", "asphalt road", "highway", "urban road", "rural road",
+        "narrow road", "wide road", "road network", "transportation corridor",
+        "traffic lane", "road intersection", "road junction", "linear pavement",
+        "winding road"
+      ]
+    },
+    {
+      "name": "vehicle",
+      "synonyms": [
+        "vehicle", "vehicles", "car", "cars", "automobile", "automobiles",
+        "truck", "trucks", "bus", "buses", "van", "vans", "parked car",
+        "moving vehicle", "road vehicle", "small vehicle", "large vehicle",
+        "traffic vehicle", "vehicle cluster", "cars seen from above"
+      ]
+    },
+    {
+      "name": "other",
+      "synonyms": [
+        "other", "background", "miscellaneous ground", "unclassified area",
+        "unknown terrain", "other land cover", "non target area", "open ground",
+        "bare ground", "pavement", "parking area", "courtyard", "shadow",
+        "construction area", "water surface", "agricultural field", "sports field",
+        "mixed terrain", "unused land", "cluttered area"
+      ]
+    }
+  ]
+}

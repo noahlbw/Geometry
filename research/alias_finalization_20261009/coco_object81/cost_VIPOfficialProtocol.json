@@ -1,0 +1,394 @@
+{
+  "status": "complete",
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "dataset": "coco_object81",
+  "mode": "VIPOfficialProtocol",
+  "images": [
+    {
+      "key": "000000000139",
+      "shape": [
+        426,
+        640
+      ],
+      "milliseconds": [
+        135.77633281238377,
+        136.76069909706712,
+        133.61684209667146,
+        133.36396007798612,
+        136.75793609581888,
+        135.73611108586192,
+        134.51719214208424
+      ],
+      "median_ms": 135.73611108586192,
+      "p95_ms": 136.75987019669265,
+      "peak_allocated_mib": 1907.0146484375,
+      "peak_reserved_mib": 2406.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        }
+      ],
+      "decode_seconds": 0.1260152510367334
+    },
+    {
+      "key": "000000097994",
+      "shape": [
+        427,
+        640
+      ],
+      "milliseconds": [
+        132.65555608086288,
+        133.32383800297976,
+        133.48418893292546,
+        132.87781993858516,
+        133.21052305400372,
+        133.50963802076876,
+        132.8982780687511
+      ],
+      "median_ms": 133.21052305400372,
+      "p95_ms": 133.50200329441577,
+      "peak_allocated_mib": 1907.3046875,
+      "peak_reserved_mib": 2406.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        }
+      ],
+      "decode_seconds": 0.004436424933373928
+    },
+    {
+      "key": "000000190140",
+      "shape": [
+        428,
+        640
+      ],
+      "milliseconds": [
+        132.3722219094634,
+        133.2120420411229,
+        133.21275799535215,
+        133.4820392075926,
+        132.3683150112629,
+        132.5587269384414,
+        133.23676586151123
+      ],
+      "median_ms": 133.2120420411229,
+      "p95_ms": 133.4084572037682,
+      "peak_allocated_mib": 1907.490234375,
+      "peak_reserved_mib": 2406.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        }
+      ],
+      "decode_seconds": 0.0038108460139483213
+    },
+    {
+      "key": "000000289586",
+      "shape": [
+        640,
+        426
+      ],
+      "milliseconds": [
+        132.7999869827181,
+        132.61930993758142,
+        132.3809779714793,
+        132.91032589040697,
+        132.87538988515735,
+        133.34264396689832,
+        133.70316289365292
+      ],
+      "median_ms": 132.87538988515735,
+      "p95_ms": 133.59500721562654,
+      "peak_allocated_mib": 1907.0146484375,
+      "peak_reserved_mib": 2406.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        }
+      ],
+      "decode_seconds": 0.003227019915357232
+    },
+    {
+      "key": "000000384527",
+      "shape": [
+        480,
+        640
+      ],
+      "milliseconds": [
+        89.74815905094147,
+        89.50931602157652,
+        89.47776816785336,
+        90.17303120344877,
+        90.34846792928874,
+        90.37514613009989,
+        90.79502196982503
+      ],
+      "median_ms": 90.17303120344877,
+      "p95_ms": 90.66905921790749,
+      "peak_allocated_mib": 1922.380859375,
+      "peak_reserved_mib": 2414.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.004197118803858757
+    },
+    {
+      "key": "000000480985",
+      "shape": [
+        500,
+        375
+      ],
+      "milliseconds": [
+        89.52369610778987,
+        90.3383179102093,
+        90.69289197213948,
+        90.76970908790827,
+        90.50617413595319,
+        92.73492987267673,
+        90.78132500872016
+      ],
+      "median_ms": 90.69289197213948,
+      "p95_ms": 92.14884841348976,
+      "peak_allocated_mib": 1848.537109375,
+      "peak_reserved_mib": 2338.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.002813897095620632
+    },
+    {
+      "key": "000000581781",
+      "shape": [
+        478,
+        640
+      ],
+      "milliseconds": [
+        135.0742590148002,
+        137.16979697346687,
+        135.56692306883633,
+        135.74854005128145,
+        135.29140502214432,
+        134.26770200021565,
+        135.82753902301192
+      ],
+      "median_ms": 135.56692306883633,
+      "p95_ms": 136.7671195883304,
+      "peak_allocated_mib": 1921.80078125,
+      "peak_reserved_mib": 2414.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        }
+      ],
+      "decode_seconds": 0.004522022092714906
+    }
+  ],
+  "metadata": {
+    "words": "Pinned upstream official queries",
+    "template": "seg_template",
+    "scope": "Paper configuration reimplementation with explicit all-masked-row self-Value repair; not published benchmark timing.",
+    "view_policy": "Official natural short-edge336/maxlong2048/crop336/overlap224/actual stride112",
+    "settings": {
+      "tau": 6.0,
+      "tem": 0.3,
+      "prob_thd": 0.13,
+      "background": true,
+      "bg_idx": 0,
+      "resize_long_edge": 448,
+      "slide_crop": 336,
+      "slide_stride": 112,
+      "logit_scale": 40.0
+    },
+    "backbones_resident": 1,
+    "aliases": 156
+  },
+  "initialization_and_text_seconds": 15.059259329922497,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "median_ms": 132.91032589040697,
+  "p95_ms": 136.3857772666961,
+  "mean_image_median_ms": 121.6381303300815,
+  "peak_allocated_mib": 1922.380859375,
+  "peak_reserved_mib": 2414.0,
+  "scope": "Seven deterministic spread full inputs and7 warmed synchronized repeats. One candidate in this process; no other GPU process allowed. Host/other-GPU contention is possible. Not full-dataset mean or independent accuracy validation.",
+  "boundary": "Decode/model loading/text encoding excluded and reported separately. Includes resizing/all encoding/semantic readout/alias aggregation/writeback/original-size restoration/CPU argmax output."
+}

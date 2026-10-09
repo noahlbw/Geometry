@@ -1,0 +1,1073 @@
+{
+  "status": "complete",
+  "coverage_verified": true,
+  "processed_images": 113,
+  "total_images": 113,
+  "metrics": {
+    "vaihingen": {
+      "Reference20SameViews": {
+        "mean_iou_percent": 51.4282,
+        "pixel_accuracy_percent": 73.9168,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 61.5534
+          },
+          {
+            "name": "building",
+            "iou_percent": 68.7479
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 32.1553
+          },
+          {
+            "name": "tree",
+            "iou_percent": 67.7382
+          },
+          {
+            "name": "car",
+            "iou_percent": 26.9462
+          }
+        ],
+        "confusion_matrix": [
+          [
+            23622610,
+            4725697,
+            56693,
+            829859,
+            2642507
+          ],
+          [
+            233622,
+            29148209,
+            3588,
+            90162,
+            37498
+          ],
+          [
+            4824378,
+            6218334,
+            8101234,
+            4376470,
+            486577
+          ],
+          [
+            1344751,
+            1877626,
+            1126767,
+            20642173,
+            180379
+          ],
+          [
+            97284,
+            63945,
+            26,
+            5270,
+            1295962
+          ]
+        ],
+        "ignored_pixels": 968379
+      },
+      "Retained": {
+        "mean_iou_percent": 52.3345,
+        "pixel_accuracy_percent": 74.8947,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 61.6295
+          },
+          {
+            "name": "building",
+            "iou_percent": 72.3652
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 35.2467
+          },
+          {
+            "name": "tree",
+            "iou_percent": 68.0293
+          },
+          {
+            "name": "car",
+            "iou_percent": 24.4019
+          }
+        ],
+        "confusion_matrix": [
+          [
+            23330375,
+            4106075,
+            91117,
+            1036183,
+            3313616
+          ],
+          [
+            262795,
+            29044126,
+            32041,
+            127820,
+            46297
+          ],
+          [
+            4530640,
+            5135005,
+            8972513,
+            4832769,
+            536066
+          ],
+          [
+            1126241,
+            1334727,
+            1326160,
+            21208033,
+            176535
+          ],
+          [
+            58816,
+            46610,
+            37,
+            6376,
+            1350648
+          ]
+        ],
+        "ignored_pixels": 968379
+      },
+      "Uniform": {
+        "mean_iou_percent": 52.3535,
+        "pixel_accuracy_percent": 74.9089,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 61.6239
+          },
+          {
+            "name": "building",
+            "iou_percent": 72.3801
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 35.3293
+          },
+          {
+            "name": "tree",
+            "iou_percent": 68.0322
+          },
+          {
+            "name": "car",
+            "iou_percent": 24.402
+          }
+        ],
+        "confusion_matrix": [
+          [
+            23314459,
+            4107141,
+            91449,
+            1045224,
+            3319093
+          ],
+          [
+            263030,
+            29042784,
+            32295,
+            128688,
+            46282
+          ],
+          [
+            4515081,
+            5125948,
+            8993054,
+            4839803,
+            533107
+          ],
+          [
+            1119275,
+            1332738,
+            1324152,
+            21220468,
+            175063
+          ],
+          [
+            58716,
+            46462,
+            37,
+            6370,
+            1350902
+          ]
+        ],
+        "ignored_pixels": 968379
+      },
+      "UniformLocal": {
+        "mean_iou_percent": 51.4182,
+        "pixel_accuracy_percent": 74.2075,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 57.6618
+          },
+          {
+            "name": "building",
+            "iou_percent": 76.5757
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 38.717
+          },
+          {
+            "name": "tree",
+            "iou_percent": 67.3847
+          },
+          {
+            "name": "car",
+            "iou_percent": 16.7518
+          }
+        ],
+        "confusion_matrix": [
+          [
+            21354723,
+            3315139,
+            170631,
+            1364110,
+            5672763
+          ],
+          [
+            355527,
+            28751677,
+            131310,
+            199809,
+            74756
+          ],
+          [
+            3946678,
+            3835331,
+            10046413,
+            5282297,
+            896274
+          ],
+          [
+            829015,
+            857221,
+            1639095,
+            21580519,
+            265846
+          ],
+          [
+            25828,
+            25952,
+            294,
+            7935,
+            1402478
+          ]
+        ],
+        "ignored_pixels": 968379
+      },
+      "UniformWide": {
+        "mean_iou_percent": 47.1621,
+        "pixel_accuracy_percent": 70.4239,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 57.3797
+          },
+          {
+            "name": "building",
+            "iou_percent": 64.063
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 29.5139
+          },
+          {
+            "name": "tree",
+            "iou_percent": 61.7175
+          },
+          {
+            "name": "car",
+            "iou_percent": 23.1362
+          }
+        ],
+        "confusion_matrix": [
+          [
+            22843923,
+            5543278,
+            100723,
+            942201,
+            2447241
+          ],
+          [
+            388520,
+            28965241,
+            11551,
+            103407,
+            44360
+          ],
+          [
+            5295116,
+            6977782,
+            7519548,
+            3709593,
+            504954
+          ],
+          [
+            2004852,
+            3063778,
+            1358623,
+            18474137,
+            270306
+          ],
+          [
+            245986,
+            115761,
+            57,
+            6490,
+            1094193
+          ]
+        ],
+        "ignored_pixels": 968379
+      },
+      "UniformMean": {
+        "mean_iou_percent": 50.0354,
+        "pixel_accuracy_percent": 72.7826,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 59.6853
+          },
+          {
+            "name": "building",
+            "iou_percent": 67.6306
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 32.7968
+          },
+          {
+            "name": "tree",
+            "iou_percent": 65.1037
+          },
+          {
+            "name": "car",
+            "iou_percent": 24.9604
+          }
+        ],
+        "confusion_matrix": [
+          [
+            23164325,
+            4915110,
+            88201,
+            957840,
+            2751890
+          ],
+          [
+            309060,
+            29040581,
+            14825,
+            108255,
+            40358
+          ],
+          [
+            4865715,
+            6203111,
+            8353035,
+            4071472,
+            513660
+          ],
+          [
+            1627503,
+            2228567,
+            1358990,
+            19736373,
+            220263
+          ],
+          [
+            131096,
+            80135,
+            65,
+            6000,
+            1245191
+          ]
+        ],
+        "ignored_pixels": 968379
+      },
+      "RetainedScalar": {
+        "mean_iou_percent": 52.3345,
+        "pixel_accuracy_percent": 74.8947,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 61.6295
+          },
+          {
+            "name": "building",
+            "iou_percent": 72.3652
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 35.2467
+          },
+          {
+            "name": "tree",
+            "iou_percent": 68.0293
+          },
+          {
+            "name": "car",
+            "iou_percent": 24.4019
+          }
+        ],
+        "confusion_matrix": [
+          [
+            23330374,
+            4106075,
+            91117,
+            1036183,
+            3313617
+          ],
+          [
+            262795,
+            29044126,
+            32041,
+            127820,
+            46297
+          ],
+          [
+            4530639,
+            5135006,
+            8972513,
+            4832769,
+            536066
+          ],
+          [
+            1126241,
+            1334727,
+            1326160,
+            21208033,
+            176535
+          ],
+          [
+            58816,
+            46610,
+            37,
+            6376,
+            1350648
+          ]
+        ],
+        "ignored_pixels": 968379
+      }
+    }
+  },
+  "diagnostics": {
+    "vaihingen": {
+      "tiles": 452,
+      "wide_encodings": 452.0,
+      "fine_forwards": 0.0
+    }
+  },
+  "parallel_wall_seconds": 47.590647226898,
+  "aggregate_gpu_seconds": 47.590647226898,
+  "peak_cuda_memory_mb": 6716.287109375,
+  "signature": {
+    "implementation": "geometry-task-alias-global-finalization-v1-20261009",
+    "dataset": "vaihingen",
+    "methods": [
+      "Reference20SameViews",
+      "Retained",
+      "Uniform",
+      "UniformLocal",
+      "UniformWide",
+      "UniformMean",
+      "RetainedScalar"
+    ],
+    "classes": {
+      "vaihingen": [
+        "impervious surface",
+        "building",
+        "low vegetation",
+        "tree",
+        "car"
+      ]
+    },
+    "gear": {
+      "core": "geometry-bounded896-patch-only-strength2-coupled-v1-20261005",
+      "cap": [
+        4,
+        4,
+        0
+      ],
+      "wide_policy": "long448"
+    },
+    "competitive": {
+      "ordinary_alias_policies": [
+        "retained",
+        "uniform"
+      ],
+      "no_new_selector": true
+    },
+    "vocabulary": {
+      "original": {
+        "classes": [
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "paved surface",
+              "pavement",
+              "asphalt surface",
+              "concrete surface",
+              "hard surface",
+              "road pavement",
+              "parking pavement",
+              "sealed ground",
+              "built ground",
+              "urban pavement",
+              "sidewalk",
+              "paved area",
+              "hardscape",
+              "gray pavement",
+              "street surface",
+              "concrete ground",
+              "impermeable ground",
+              "man made surface",
+              "solid surface"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "rooftop",
+              "roof",
+              "residential building",
+              "industrial building",
+              "urban structure",
+              "constructed structure",
+              "apartment block",
+              "warehouse",
+              "large building",
+              "small building",
+              "building roof",
+              "built structure",
+              "dense buildings",
+              "commercial building",
+              "concrete building",
+              "urban building"
+            ]
+          },
+          {
+            "name": "low vegetation",
+            "synonyms": [
+              "low vegetation",
+              "grass",
+              "grassland",
+              "short grass",
+              "ground vegetation",
+              "green ground cover",
+              "meadow",
+              "herbaceous cover",
+              "low plants",
+              "lawn",
+              "pasture",
+              "small plants",
+              "ground cover",
+              "sparse grass",
+              "green field",
+              "low greenery",
+              "vegetated ground",
+              "grass cover",
+              "short vegetation",
+              "herbal vegetation"
+            ]
+          },
+          {
+            "name": "tree",
+            "synonyms": [
+              "tree",
+              "trees",
+              "tree canopy",
+              "forest",
+              "woodland",
+              "wooded area",
+              "tree cluster",
+              "grove",
+              "dense trees",
+              "sparse trees",
+              "green canopy",
+              "tall vegetation",
+              "deciduous trees",
+              "evergreen trees",
+              "tree crown",
+              "wooded vegetation",
+              "tree cover",
+              "plantation",
+              "forest patch",
+              "large tree"
+            ]
+          },
+          {
+            "name": "car",
+            "synonyms": [
+              "car",
+              "cars",
+              "vehicle",
+              "vehicles",
+              "automobile",
+              "parked car",
+              "road vehicle",
+              "small vehicle",
+              "large vehicle",
+              "traffic vehicle",
+              "moving car",
+              "sedan",
+              "van",
+              "truck",
+              "bus",
+              "motor vehicle",
+              "vehicle cluster",
+              "transport vehicle",
+              "visible car",
+              "automotive object"
+            ]
+          }
+        ],
+        "template": "RS6"
+      },
+      "original_imagenet": {
+        "classes": [
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "paved surface",
+              "pavement",
+              "asphalt surface",
+              "concrete surface",
+              "hard surface",
+              "road pavement",
+              "parking pavement",
+              "sealed ground",
+              "built ground",
+              "urban pavement",
+              "sidewalk",
+              "paved area",
+              "hardscape",
+              "gray pavement",
+              "street surface",
+              "concrete ground",
+              "impermeable ground",
+              "man made surface",
+              "solid surface"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "rooftop",
+              "roof",
+              "residential building",
+              "industrial building",
+              "urban structure",
+              "constructed structure",
+              "apartment block",
+              "warehouse",
+              "large building",
+              "small building",
+              "building roof",
+              "built structure",
+              "dense buildings",
+              "commercial building",
+              "concrete building",
+              "urban building"
+            ]
+          },
+          {
+            "name": "low vegetation",
+            "synonyms": [
+              "low vegetation",
+              "grass",
+              "grassland",
+              "short grass",
+              "ground vegetation",
+              "green ground cover",
+              "meadow",
+              "herbaceous cover",
+              "low plants",
+              "lawn",
+              "pasture",
+              "small plants",
+              "ground cover",
+              "sparse grass",
+              "green field",
+              "low greenery",
+              "vegetated ground",
+              "grass cover",
+              "short vegetation",
+              "herbal vegetation"
+            ]
+          },
+          {
+            "name": "tree",
+            "synonyms": [
+              "tree",
+              "trees",
+              "tree canopy",
+              "forest",
+              "woodland",
+              "wooded area",
+              "tree cluster",
+              "grove",
+              "dense trees",
+              "sparse trees",
+              "green canopy",
+              "tall vegetation",
+              "deciduous trees",
+              "evergreen trees",
+              "tree crown",
+              "wooded vegetation",
+              "tree cover",
+              "plantation",
+              "forest patch",
+              "large tree"
+            ]
+          },
+          {
+            "name": "car",
+            "synonyms": [
+              "car",
+              "cars",
+              "vehicle",
+              "vehicles",
+              "automobile",
+              "parked car",
+              "road vehicle",
+              "small vehicle",
+              "large vehicle",
+              "traffic vehicle",
+              "moving car",
+              "sedan",
+              "van",
+              "truck",
+              "bus",
+              "motor vehicle",
+              "vehicle cluster",
+              "transport vehicle",
+              "visible car",
+              "automotive object"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "focused20": {
+        "classes": [
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "paved surface",
+              "pavement",
+              "asphalt surface",
+              "concrete surface",
+              "hard surface",
+              "road pavement",
+              "parking pavement",
+              "sealed ground",
+              "built ground",
+              "urban pavement",
+              "sidewalk",
+              "paved area",
+              "hardscape",
+              "gray pavement",
+              "street surface",
+              "concrete ground",
+              "impermeable ground",
+              "man made surface",
+              "solid surface"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "rooftop",
+              "roof",
+              "residential building",
+              "industrial building",
+              "urban structure",
+              "constructed structure",
+              "apartment block",
+              "warehouse",
+              "large building",
+              "small building",
+              "building roof",
+              "built structure",
+              "dense buildings",
+              "commercial building",
+              "concrete building",
+              "urban building"
+            ]
+          },
+          {
+            "name": "low vegetation",
+            "synonyms": [
+              "low vegetation",
+              "grass",
+              "grassland",
+              "short grass",
+              "ground vegetation",
+              "green ground cover",
+              "meadow",
+              "herbaceous cover",
+              "low plants",
+              "lawn",
+              "pasture",
+              "small plants",
+              "ground cover",
+              "sparse grass",
+              "green field",
+              "low greenery",
+              "vegetated ground",
+              "grass cover",
+              "short vegetation",
+              "herbal vegetation"
+            ]
+          },
+          {
+            "name": "tree",
+            "synonyms": [
+              "tree",
+              "trees",
+              "tree canopy",
+              "forest",
+              "woodland",
+              "wooded area",
+              "tree cluster",
+              "grove",
+              "dense trees",
+              "sparse trees",
+              "green canopy",
+              "tall vegetation",
+              "deciduous trees",
+              "evergreen trees",
+              "tree crown",
+              "wooded vegetation",
+              "tree cover",
+              "plantation",
+              "forest patch",
+              "large tree"
+            ]
+          },
+          {
+            "name": "car",
+            "synonyms": [
+              "car",
+              "cars",
+              "vehicle",
+              "vehicles",
+              "automobile",
+              "parked car",
+              "road vehicle",
+              "small vehicle",
+              "large vehicle",
+              "traffic vehicle",
+              "moving car",
+              "sedan",
+              "van",
+              "truck",
+              "bus",
+              "motor vehicle",
+              "vehicle cluster",
+              "transport vehicle",
+              "visible car",
+              "automotive object"
+            ]
+          }
+        ],
+        "template": "RS6"
+      }
+    },
+    "residual_identity": null,
+    "checkpoints": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "global_sample_count": 113,
+    "global_sample_keys_sha256": "25720ac369c583d1c9d96c3da1b151770645ae61a858b41fc8f5847ffd6cc883",
+    "sample_keys": [
+      "top_mosaic_09cm_area10_y00_x00.tif",
+      "top_mosaic_09cm_area10_y00_x01.tif",
+      "top_mosaic_09cm_area10_y01_x00.tif",
+      "top_mosaic_09cm_area10_y01_x01.tif",
+      "top_mosaic_09cm_area10_y02_x00.tif",
+      "top_mosaic_09cm_area10_y02_x01.tif",
+      "top_mosaic_09cm_area12_y00_x00.tif",
+      "top_mosaic_09cm_area12_y00_x01.tif",
+      "top_mosaic_09cm_area12_y01_x00.tif",
+      "top_mosaic_09cm_area12_y01_x01.tif",
+      "top_mosaic_09cm_area12_y02_x00.tif",
+      "top_mosaic_09cm_area12_y02_x01.tif",
+      "top_mosaic_09cm_area14_y00_x00.tif",
+      "top_mosaic_09cm_area14_y00_x01.tif",
+      "top_mosaic_09cm_area14_y01_x00.tif",
+      "top_mosaic_09cm_area14_y01_x01.tif",
+      "top_mosaic_09cm_area14_y02_x00.tif",
+      "top_mosaic_09cm_area14_y02_x01.tif",
+      "top_mosaic_09cm_area16_y00_x00.tif",
+      "top_mosaic_09cm_area16_y00_x01.tif",
+      "top_mosaic_09cm_area16_y01_x00.tif",
+      "top_mosaic_09cm_area16_y01_x01.tif",
+      "top_mosaic_09cm_area16_y02_x00.tif",
+      "top_mosaic_09cm_area16_y02_x01.tif",
+      "top_mosaic_09cm_area20_y00_x00.tif",
+      "top_mosaic_09cm_area20_y00_x01.tif",
+      "top_mosaic_09cm_area20_y01_x00.tif",
+      "top_mosaic_09cm_area20_y01_x01.tif",
+      "top_mosaic_09cm_area20_y02_x00.tif",
+      "top_mosaic_09cm_area20_y02_x01.tif",
+      "top_mosaic_09cm_area22_y00_x00.tif",
+      "top_mosaic_09cm_area22_y00_x01.tif",
+      "top_mosaic_09cm_area22_y01_x00.tif",
+      "top_mosaic_09cm_area22_y01_x01.tif",
+      "top_mosaic_09cm_area22_y02_x00.tif",
+      "top_mosaic_09cm_area22_y02_x01.tif",
+      "top_mosaic_09cm_area24_y00_x00.tif",
+      "top_mosaic_09cm_area24_y00_x01.tif",
+      "top_mosaic_09cm_area24_y01_x00.tif",
+      "top_mosaic_09cm_area24_y01_x01.tif",
+      "top_mosaic_09cm_area24_y02_x00.tif",
+      "top_mosaic_09cm_area24_y02_x01.tif",
+      "top_mosaic_09cm_area27_y00_x00.tif",
+      "top_mosaic_09cm_area27_y00_x01.tif",
+      "top_mosaic_09cm_area27_y01_x00.tif",
+      "top_mosaic_09cm_area27_y01_x01.tif",
+      "top_mosaic_09cm_area27_y02_x00.tif",
+      "top_mosaic_09cm_area27_y02_x01.tif",
+      "top_mosaic_09cm_area27_y03_x00.tif",
+      "top_mosaic_09cm_area27_y03_x01.tif",
+      "top_mosaic_09cm_area29_y00_x00.tif",
+      "top_mosaic_09cm_area29_y00_x01.tif",
+      "top_mosaic_09cm_area29_y01_x00.tif",
+      "top_mosaic_09cm_area29_y01_x01.tif",
+      "top_mosaic_09cm_area29_y02_x00.tif",
+      "top_mosaic_09cm_area29_y02_x01.tif",
+      "top_mosaic_09cm_area2_y00_x00.tif",
+      "top_mosaic_09cm_area2_y00_x01.tif",
+      "top_mosaic_09cm_area2_y00_x02.tif",
+      "top_mosaic_09cm_area2_y01_x00.tif",
+      "top_mosaic_09cm_area2_y01_x01.tif",
+      "top_mosaic_09cm_area2_y01_x02.tif",
+      "top_mosaic_09cm_area2_y02_x00.tif",
+      "top_mosaic_09cm_area2_y02_x01.tif",
+      "top_mosaic_09cm_area2_y02_x02.tif",
+      "top_mosaic_09cm_area31_y00_x00.tif",
+      "top_mosaic_09cm_area31_y00_x01.tif",
+      "top_mosaic_09cm_area31_y01_x00.tif",
+      "top_mosaic_09cm_area31_y01_x01.tif",
+      "top_mosaic_09cm_area31_y02_x00.tif",
+      "top_mosaic_09cm_area31_y02_x01.tif",
+      "top_mosaic_09cm_area33_y00_x00.tif",
+      "top_mosaic_09cm_area33_y00_x01.tif",
+      "top_mosaic_09cm_area33_y01_x00.tif",
+      "top_mosaic_09cm_area33_y01_x01.tif",
+      "top_mosaic_09cm_area33_y02_x00.tif",
+      "top_mosaic_09cm_area33_y02_x01.tif",
+      "top_mosaic_09cm_area35_y00_x00.tif",
+      "top_mosaic_09cm_area35_y00_x01.tif",
+      "top_mosaic_09cm_area35_y00_x02.tif",
+      "top_mosaic_09cm_area35_y01_x00.tif",
+      "top_mosaic_09cm_area35_y01_x01.tif",
+      "top_mosaic_09cm_area35_y01_x02.tif",
+      "top_mosaic_09cm_area38_y00_x00.tif",
+      "top_mosaic_09cm_area38_y00_x01.tif",
+      "top_mosaic_09cm_area38_y00_x02.tif",
+      "top_mosaic_09cm_area38_y00_x03.tif",
+      "top_mosaic_09cm_area38_y01_x00.tif",
+      "top_mosaic_09cm_area38_y01_x01.tif",
+      "top_mosaic_09cm_area38_y01_x02.tif",
+      "top_mosaic_09cm_area38_y01_x03.tif",
+      "top_mosaic_09cm_area38_y02_x00.tif",
+      "top_mosaic_09cm_area38_y02_x01.tif",
+      "top_mosaic_09cm_area38_y02_x02.tif",
+      "top_mosaic_09cm_area38_y02_x03.tif",
+      "top_mosaic_09cm_area4_y00_x00.tif",
+      "top_mosaic_09cm_area4_y00_x01.tif",
+      "top_mosaic_09cm_area4_y01_x00.tif",
+      "top_mosaic_09cm_area4_y01_x01.tif",
+      "top_mosaic_09cm_area4_y02_x00.tif",
+      "top_mosaic_09cm_area4_y02_x01.tif",
+      "top_mosaic_09cm_area6_y00_x00.tif",
+      "top_mosaic_09cm_area6_y00_x01.tif",
+      "top_mosaic_09cm_area6_y01_x00.tif",
+      "top_mosaic_09cm_area6_y01_x01.tif",
+      "top_mosaic_09cm_area6_y02_x00.tif",
+      "top_mosaic_09cm_area6_y02_x01.tif",
+      "top_mosaic_09cm_area8_y00_x00.tif",
+      "top_mosaic_09cm_area8_y00_x01.tif",
+      "top_mosaic_09cm_area8_y01_x00.tif",
+      "top_mosaic_09cm_area8_y01_x01.tif",
+      "top_mosaic_09cm_area8_y02_x00.tif",
+      "top_mosaic_09cm_area8_y02_x01.tif"
+    ],
+    "sample_keys_sha256": "25720ac369c583d1c9d96c3da1b151770645ae61a858b41fc8f5847ffd6cc883",
+    "num_shards": 1,
+    "shard_index": null,
+    "config": {
+      "dataset": "vaihingen",
+      "data_root": "/data/test/datasets/Vaihingen/preprocessed_corrected_20261001",
+      "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009",
+      "output_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/vaihingen/s0",
+      "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/vaihingen.pt",
+      "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+      "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+      "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+      "mode": "full",
+      "device": "cuda",
+      "num_shards": 1,
+      "shard_index": 0,
+      "sample_seed": 20260923,
+      "vdd_ontology": "official"
+    },
+    "provenance": "Existing task rules and words were selected on developed data. Frozen finalization is exploratory, not untouched validation.",
+    "sample_count": 113
+  },
+  "shards": [
+    "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/vaihingen/s0/results.json"
+  ],
+  "paired_scored_targets_equal": true,
+  "scalar_agreement_verified": true,
+  "exact_historical_original20_replay": {
+    "vaihingen": true
+  },
+  "exact_selected_deployment_replay": null,
+  "historical_expected_field_note": "Frozen manifest field expected_retained_scalar is the historical NaturalShortEdge packed deployment confusion; its spelling is preserved. Independent scalar agreement permits only verified numerical ties.",
+  "deployment_changed_pixels": {
+    "retained": 3,
+    "uniform": 0
+  }
+}

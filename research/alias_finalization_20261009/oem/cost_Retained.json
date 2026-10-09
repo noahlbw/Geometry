@@ -1,0 +1,381 @@
+{
+  "status": "complete",
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "dataset": "oem",
+  "mode": "Retained",
+  "images": [
+    {
+      "key": "aachen/images/aachen_11.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        259.9966700654477,
+        255.36691793240607,
+        250.1888230908662,
+        257.4360480066389,
+        262.57048081606627,
+        273.4311888925731,
+        261.41414791345596
+      ],
+      "median_ms": 259.9966700654477,
+      "p95_ms": 270.17297646962106,
+      "peak_allocated_mib": 5586.95751953125,
+      "peak_reserved_mib": 6076.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.11042924481444061
+    },
+    {
+      "key": "chiclayo/images/chiclayo_49.tif",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        263.04297405295074,
+        262.66397908329964,
+        269.9177241884172,
+        264.1932920087129,
+        260.79711597412825,
+        271.95401093922555,
+        265.208720928058
+      ],
+      "median_ms": 264.1932920087129,
+      "p95_ms": 271.34312491398305,
+      "peak_allocated_mib": 5586.95751953125,
+      "peak_reserved_mib": 6010.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.011069003026932478
+    },
+    {
+      "key": "duesseldorf/images/duesseldorf_35.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        266.85822987928987,
+        270.02180297859013,
+        259.79020702652633,
+        273.0438259895891,
+        263.07855802588165,
+        265.23633813485503,
+        262.2525179758668
+      ],
+      "median_ms": 265.23633813485503,
+      "p95_ms": 272.1372190862894,
+      "peak_allocated_mib": 5586.95751953125,
+      "peak_reserved_mib": 6010.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.01087186485528946
+    },
+    {
+      "key": "lubuskie/images/lubuskie_8.tif",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        262.7804859075695,
+        258.23907903395593,
+        276.8917288631201,
+        262.1711289975792,
+        270.2595728915185,
+        264.33136709965765,
+        272.0500559080392
+      ],
+      "median_ms": 264.33136709965765,
+      "p95_ms": 275.4392269765958,
+      "peak_allocated_mib": 5586.95751953125,
+      "peak_reserved_mib": 6010.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.011038146913051605
+    },
+    {
+      "key": "piura/images/piura_48.tif",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        276.69730712659657,
+        261.6054790560156,
+        265.5152468942106,
+        273.65779993124306,
+        263.416551053524,
+        271.4081460144371,
+        267.4717390909791
+      ],
+      "median_ms": 267.4717390909791,
+      "p95_ms": 275.7854549679905,
+      "peak_allocated_mib": 5586.95751953125,
+      "peak_reserved_mib": 6010.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.011024913983419538
+    },
+    {
+      "key": "tokyo/images/tokyo_12.tif",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        261.96403219364583,
+        263.3519861847162,
+        271.14381501451135,
+        260.4266400448978,
+        273.03179586306214,
+        263.0895599722862,
+        266.72790898010135
+      ],
+      "median_ms": 263.3519861847162,
+      "p95_ms": 272.4654016084969,
+      "peak_allocated_mib": 5586.95751953125,
+      "peak_reserved_mib": 6010.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.011629228014498949
+    },
+    {
+      "key": "zanzibar/images/zanzibar_99.tif",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        273.3639129437506,
+        286.7824120912701,
+        297.29263484477997,
+        257.0411111228168,
+        257.1883420459926,
+        256.0706071089953,
+        255.22506586275995
+      ],
+      "median_ms": 257.1883420459926,
+      "p95_ms": 294.139568018727,
+      "peak_allocated_mib": 5586.95751953125,
+      "peak_reserved_mib": 6010.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.011306420899927616
+    }
+  ],
+  "metadata": {
+    "wide_policy": "long448",
+    "extra_soft_weights": true,
+    "residual_queries": 0,
+    "backbones_resident": 2
+  },
+  "initialization_and_text_seconds": 28.209756612079218,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "median_ms": 263.416551053524,
+  "p95_ms": 276.8139601685107,
+  "mean_image_median_ms": 263.1099620900516,
+  "peak_allocated_mib": 5586.95751953125,
+  "peak_reserved_mib": 6076.0,
+  "scope": "Seven deterministic spread full inputs and7 warmed synchronized repeats. One candidate in this process; no other GPU process allowed. Host/other-GPU contention is possible. Not full-dataset mean or independent accuracy validation.",
+  "boundary": "Decode/model loading/text encoding excluded and reported separately. Includes resizing/all encoding/semantic readout/alias aggregation/writeback/original-size restoration/CPU argmax output."
+}

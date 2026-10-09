@@ -1,0 +1,10 @@
+{
+  "flair1": {"global_sample_count":15700,"global_sample_keys_sha256":"edf5fd970af49b9434099d698fde2085b8670353172a533b3c66bbeb0da6a532","vocabulary_sha256":"5f58bce85fc9da535d4402511dc0d763eb96f9f8ad2b924d6f7adf4514bc82b1"},
+  "landcoverai": {"global_sample_count":1602,"global_sample_keys_sha256":"0e752e8426a9ae24fce26d56ddeeadf98c9a5172338cc3dcfdb4f17dbd2d8431","vocabulary_sha256":"a512d9329b90201662d4335b13aec9ccf0db82b76b3938ccc35f7f5d6fca6f67"},
+  "loveda": {"global_sample_count":1669,"global_sample_keys_sha256":"8fd154d842d97a4ed117a00ea581672d06feb51f3d739cf295180fd7911ac002","vocabulary_sha256":"31050ea98ecbe54c83c46eeca9c7d811bb23faf93f7797cc9656e3cb7c921b7b"},
+  "oem": {"global_sample_count":384,"global_sample_keys_sha256":"0930bddc2ce4a6272cb95d6c8e0499e26c33871378cd4190c9f2fd8ced05927d","vocabulary_sha256":"7bb90c0551ac35ea4abb298d94c9f2a77cd454c6ab68b1cbe20dd1ca5cef1894"},
+  "potsdam": {"global_sample_count":504,"global_sample_keys_sha256":"dfcdc24a21caf68f02ddf611038a9ceb0eec3dbd6322709aa7e77216821af57e","vocabulary_sha256":"ff749dcbc5faab227e5f3dd00c1c24f5246ce82ff103b1083c532c8a0219de95"},
+  "udd5": {"global_sample_count":40,"global_sample_keys_sha256":"01338dafdf1239280d8fd03edbb72e347660db756104ed1086b418b26388b876","vocabulary_sha256":"60dfb9003666c18f4e4caf003cb5867bbbbb30d40211d10bc9203176f29b375f"},
+  "vaihingen": {"global_sample_count":113,"global_sample_keys_sha256":"25720ac369c583d1c9d96c3da1b151770645ae61a858b41fc8f5847ffd6cc883","vocabulary_sha256":"7aa0ea1156b87ff49a3e05cd7fac100ec2ac84dbc51b6dd35f091ec792e0b566"},
+  "vdd": {"global_sample_count":80,"global_sample_keys_sha256":"f2e075bcb39b44b28292a0d074c06e0186784b4fc520c8122faa3ef1f896f967","vocabulary_sha256":"7ee098a016f246d0971ff231f64a8e4e16d075adb3bfa869d62ebefe09562861"}
+}

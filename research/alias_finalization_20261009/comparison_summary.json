@@ -1,0 +1,676 @@
+{
+  "complete": true,
+  "verified_protocol_images": 45200,
+  "expected_protocol_images": 45200,
+  "outcomes": {
+    "vdd": {
+      "vdd": {
+        "values": {
+          "Reference20SameViews": 53.46,
+          "Retained": 55.2382,
+          "Uniform": 55.1305,
+          "UniformLocal": 52.9857,
+          "UniformWide": 50.6085,
+          "UniformMean": 53.117,
+          "RetainedScalar": 55.2382
+        },
+        "delta_pp": -0.10770000000000124
+      }
+    },
+    "potsdam": {
+      "potsdam": {
+        "values": {
+          "Reference20SameViews": 45.9339,
+          "Retained": 49.7888,
+          "Uniform": 49.7278,
+          "UniformLocal": 50.2473,
+          "UniformWide": 44.1488,
+          "UniformMean": 46.9773,
+          "RetainedScalar": 49.7888
+        },
+        "delta_pp": -0.06099999999999994
+      }
+    },
+    "voc20": {
+      "voc20": {
+        "values": {
+          "Reference20SameViews": 89.4241,
+          "Retained": 92.1747,
+          "Uniform": 92.1747,
+          "UniformLocal": 82.2765,
+          "UniformWide": 91.388,
+          "UniformMean": 92.05,
+          "RetainedScalar": 92.1747
+        },
+        "delta_pp": 0.0
+      }
+    },
+    "voc21": {
+      "voc21": {
+        "values": {
+          "Reference20SameViews": 29.8016,
+          "Retained": 70.4508,
+          "Uniform": 70.4508,
+          "UniformLocal": 27.3117,
+          "UniformWide": 68.5522,
+          "UniformMean": 63.3533,
+          "RetainedScalar": 70.4508
+        },
+        "delta_pp": 0.0
+      }
+    },
+    "ade150": {
+      "ade150": {
+        "values": {
+          "Reference20SameViews": 24.8208,
+          "Retained": 31.1862,
+          "Uniform": 31.1862,
+          "UniformLocal": 27.4223,
+          "UniformWide": 26.149,
+          "UniformMean": 29.7892,
+          "RetainedScalar": 31.1862
+        },
+        "delta_pp": 0.0
+      }
+    },
+    "context60": {
+      "context60": {
+        "values": {
+          "Reference20SameViews": 36.7625,
+          "Retained": 41.6004,
+          "Uniform": 41.6004,
+          "UniformLocal": 36.111,
+          "UniformWide": 38.9585,
+          "UniformMean": 40.9204,
+          "RetainedScalar": 41.6004
+        },
+        "delta_pp": 0.0
+      }
+    },
+    "udd5": {
+      "udd5": {
+        "values": {
+          "Reference20SameViews": 47.0786,
+          "Retained": 48.3659,
+          "Uniform": 48.3506,
+          "UniformLocal": 48.9404,
+          "UniformWide": 44.5471,
+          "UniformMean": 46.798,
+          "RetainedScalar": 48.3659
+        },
+        "delta_pp": -0.015300000000003422
+      }
+    },
+    "oem": {
+      "oem": {
+        "values": {
+          "Reference20SameViews": 36.84,
+          "Retained": 39.7079,
+          "Uniform": 39.5582,
+          "UniformLocal": 43.1075,
+          "UniformWide": 32.0789,
+          "UniformMean": 35.7775,
+          "RetainedScalar": 39.7079
+        },
+        "delta_pp": -0.14970000000000283
+      }
+    },
+    "vaihingen": {
+      "vaihingen": {
+        "values": {
+          "Reference20SameViews": 51.4282,
+          "Retained": 52.3345,
+          "Uniform": 52.3535,
+          "UniformLocal": 51.4182,
+          "UniformWide": 47.1621,
+          "UniformMean": 50.0354,
+          "RetainedScalar": 52.3345
+        },
+        "delta_pp": 0.01899999999999835
+      }
+    },
+    "landcoverai": {
+      "landcoverai": {
+        "values": {
+          "Reference20SameViews": 65.1069,
+          "Retained": 65.5713,
+          "Uniform": 65.5954,
+          "UniformLocal": 61.9719,
+          "UniformWide": 61.0262,
+          "UniformMean": 63.8458,
+          "RetainedScalar": 65.5713
+        },
+        "delta_pp": 0.02410000000000423
+      }
+    },
+    "loveda": {
+      "P": {
+        "values": {
+          "Reference20SameViews": 61.4752,
+          "Retained": 64.4663,
+          "Uniform": 64.434,
+          "UniformLocal": 67.5769,
+          "UniformWide": 57.1042,
+          "UniformMean": 61.0071,
+          "RetainedScalar": 64.4663
+        },
+        "delta_pp": -0.032300000000006435
+      },
+      "D": {
+        "values": {
+          "Reference20SameViews": 38.8353,
+          "Retained": 40.2673,
+          "Uniform": 40.3047,
+          "UniformLocal": 41.421,
+          "UniformWide": 36.3922,
+          "UniformMean": 38.5148,
+          "RetainedScalar": 40.2673
+        },
+        "delta_pp": 0.0373999999999981
+      }
+    },
+    "context59": {
+      "context59": {
+        "values": {
+          "Reference20SameViews": 40.9447,
+          "Retained": 45.1338,
+          "Uniform": 45.1338,
+          "UniformLocal": 37.9339,
+          "UniformWide": 42.3241,
+          "UniformMean": 44.4838,
+          "RetainedScalar": 45.1338
+        },
+        "delta_pp": 0.0
+      }
+    },
+    "coco_object81": {
+      "coco_object81": {
+        "values": {
+          "Reference20SameViews": 24.6025,
+          "Retained": 44.2396,
+          "Uniform": 44.2396,
+          "UniformLocal": 23.5264,
+          "UniformWide": 47.37,
+          "UniformMean": 43.2747,
+          "RetainedScalar": 44.2396
+        },
+        "delta_pp": 0.0
+      }
+    },
+    "coco_stuff171": {
+      "coco_stuff171": {
+        "values": {
+          "Reference20SameViews": 29.9495,
+          "Retained": 32.8235,
+          "Uniform": 32.8235,
+          "UniformLocal": 28.5385,
+          "UniformWide": 30.9864,
+          "UniformMean": 32.6686,
+          "RetainedScalar": 32.8235
+        },
+        "delta_pp": 0.0
+      }
+    },
+    "flair1": {
+      "flair1": {
+        "values": {
+          "Reference20SameViews": 42.4363,
+          "Retained": 42.5056,
+          "Uniform": 42.446,
+          "UniformLocal": 41.0144,
+          "UniformWide": 38.7164,
+          "UniformMean": 40.9058,
+          "RetainedScalar": 42.5056
+        },
+        "delta_pp": -0.059600000000003206
+      }
+    }
+  },
+  "decision": {
+    "status": "frozen",
+    "ordinary_alias_policy": "uniform",
+    "primary_mean_delta_pp": -0.042175000000000296,
+    "primary_worst_delta_pp": -0.10770000000000124,
+    "transfer_worst_delta_pp": -0.14970000000000283,
+    "semantic_screening_contribution": false,
+    "statement": "Withdraw semantic-reliability/screening contribution. Preserve legacy heuristic only if global simplification fails."
+  },
+  "cost_summary": {
+    "vdd": {
+      "Retained": {
+        "median_ms": 346.448389114812,
+        "p95_ms": 351.6673450358212,
+        "peak_allocated_mib": 6070.931640625,
+        "peak_reserved_mib": 6966.0
+      },
+      "Uniform": {
+        "median_ms": 368.70743287727237,
+        "p95_ms": 384.9828861653805,
+        "peak_allocated_mib": 6070.931640625,
+        "peak_reserved_mib": 6966.0
+      },
+      "VIPMatched": {
+        "median_ms": 202.7488281019032,
+        "p95_ms": 241.86994610354301,
+        "peak_allocated_mib": 2353.2841796875,
+        "peak_reserved_mib": 2826.0
+      },
+      "VIPOfficial": {
+        "median_ms": 191.50020787492394,
+        "p95_ms": 194.97207780368626,
+        "peak_allocated_mib": 2332.552734375,
+        "peak_reserved_mib": 2748.0
+      },
+      "retained_official_ratio": 1.809128005443684,
+      "uniform_official_ratio": 1.9253630947392453,
+      "uniform_vs_retained_fraction": 0.06424923440785224
+    },
+    "potsdam": {
+      "Retained": {
+        "median_ms": 253.08070401661098,
+        "p95_ms": 258.1042126752436,
+        "peak_allocated_mib": 5571.57373046875,
+        "peak_reserved_mib": 6076.0
+      },
+      "Uniform": {
+        "median_ms": 251.59773509949446,
+        "p95_ms": 256.2013397458941,
+        "peak_allocated_mib": 5571.57373046875,
+        "peak_reserved_mib": 6076.0
+      },
+      "VIPMatched": {
+        "median_ms": 110.82538799382746,
+        "p95_ms": 112.94363010674715,
+        "peak_allocated_mib": 1777.90283203125,
+        "peak_reserved_mib": 2198.0
+      },
+      "VIPOfficial": {
+        "median_ms": 109.47395418770611,
+        "p95_ms": 111.73425684683025,
+        "peak_allocated_mib": 1739.28125,
+        "peak_reserved_mib": 2152.0
+      },
+      "retained_official_ratio": 2.311789191268948,
+      "uniform_official_ratio": 2.2982428739908327,
+      "uniform_vs_retained_fraction": -0.0058596680567918336
+    },
+    "voc20": {
+      "Retained": {
+        "median_ms": 191.74032588489354,
+        "p95_ms": 223.33763344213367,
+        "peak_allocated_mib": 5514.66455078125,
+        "peak_reserved_mib": 6022.0
+      },
+      "Uniform": {
+        "median_ms": 189.3768480513245,
+        "p95_ms": 217.7589929662645,
+        "peak_allocated_mib": 5514.66455078125,
+        "peak_reserved_mib": 6022.0
+      },
+      "VIPMatched": {
+        "median_ms": 61.8136920966208,
+        "p95_ms": 120.78527817502618,
+        "peak_allocated_mib": 1757.6220703125,
+        "peak_reserved_mib": 2174.0
+      },
+      "VIPOfficial": {
+        "median_ms": 58.60695196315646,
+        "p95_ms": 88.22627868503332,
+        "peak_allocated_mib": 1743.8623046875,
+        "peak_reserved_mib": 2130.0
+      },
+      "retained_official_ratio": 3.2716310857700295,
+      "uniform_official_ratio": 3.2313034837637886,
+      "uniform_vs_retained_fraction": -0.01232645153105616
+    },
+    "voc21": {
+      "Retained": {
+        "median_ms": 191.7781860101968,
+        "p95_ms": 243.16456145606935,
+        "peak_allocated_mib": 5516.36865234375,
+        "peak_reserved_mib": 6024.0
+      },
+      "Uniform": {
+        "median_ms": 185.3012260980904,
+        "p95_ms": 217.71537214517593,
+        "peak_allocated_mib": 5516.36865234375,
+        "peak_reserved_mib": 6024.0
+      },
+      "VIPMatched": {
+        "median_ms": 60.345182893797755,
+        "p95_ms": 117.87275224924088,
+        "peak_allocated_mib": 1758.67822265625,
+        "peak_reserved_mib": 2182.0
+      },
+      "VIPOfficial": {
+        "median_ms": 60.736317886039615,
+        "p95_ms": 90.1718268636614,
+        "peak_allocated_mib": 1744.8466796875,
+        "peak_reserved_mib": 2154.0
+      },
+      "retained_official_ratio": 3.1575537122621236,
+      "uniform_official_ratio": 3.0509130705910366,
+      "uniform_vs_retained_fraction": -0.03377318373301341
+    },
+    "ade150": {
+      "Retained": {
+        "median_ms": 249.10897598601878,
+        "p95_ms": 303.64012802019715,
+        "peak_allocated_mib": 6430.08544921875,
+        "peak_reserved_mib": 7626.0
+      },
+      "Uniform": {
+        "median_ms": 244.02873683720827,
+        "p95_ms": 305.91498194262385,
+        "peak_allocated_mib": 6430.08544921875,
+        "peak_reserved_mib": 7626.0
+      },
+      "VIPMatched": {
+        "median_ms": 119.52198902145028,
+        "p95_ms": 231.13486035726964,
+        "peak_allocated_mib": 2239.404296875,
+        "peak_reserved_mib": 2802.0
+      },
+      "VIPOfficial": {
+        "median_ms": 111.30452109500766,
+        "p95_ms": 164.3402464222163,
+        "peak_allocated_mib": 2172.47119140625,
+        "peak_reserved_mib": 2736.0
+      },
+      "retained_official_ratio": 2.238084972068507,
+      "uniform_official_ratio": 2.1924422695184993,
+      "uniform_vs_retained_fraction": -0.020393641492451264
+    },
+    "context60": {
+      "Retained": {
+        "median_ms": 259.4683300703764,
+        "p95_ms": 264.8980553727597,
+        "peak_allocated_mib": 5621.83056640625,
+        "peak_reserved_mib": 6538.0
+      },
+      "Uniform": {
+        "median_ms": 259.9397220183164,
+        "p95_ms": 271.79656010121107,
+        "peak_allocated_mib": 5621.83056640625,
+        "peak_reserved_mib": 6538.0
+      },
+      "VIPMatched": {
+        "median_ms": 78.06178485043347,
+        "p95_ms": 82.77951064519584,
+        "peak_allocated_mib": 1832.732421875,
+        "peak_reserved_mib": 2302.0
+      },
+      "VIPOfficial": {
+        "median_ms": 112.81087482348084,
+        "p95_ms": 114.82530455105007,
+        "peak_allocated_mib": 1806.5166015625,
+        "peak_reserved_mib": 2276.0
+      },
+      "retained_official_ratio": 2.3000294118485973,
+      "uniform_official_ratio": 2.3042080156283977,
+      "uniform_vs_retained_fraction": 0.0018167610197827866
+    },
+    "udd5": {
+      "Retained": {
+        "median_ms": 349.7444689273834,
+        "p95_ms": 356.65028784424067,
+        "peak_allocated_mib": 5800.66845703125,
+        "peak_reserved_mib": 6470.0
+      },
+      "Uniform": {
+        "median_ms": 350.1582439057529,
+        "p95_ms": 411.854376969859,
+        "peak_allocated_mib": 5800.66845703125,
+        "peak_reserved_mib": 6470.0
+      },
+      "VIPMatched": {
+        "median_ms": 195.3708149958402,
+        "p95_ms": 211.0361552797258,
+        "peak_allocated_mib": 2162.28466796875,
+        "peak_reserved_mib": 2624.0
+      },
+      "VIPOfficial": {
+        "median_ms": 187.5676759518683,
+        "p95_ms": 194.07460293732584,
+        "peak_allocated_mib": 2162.28466796875,
+        "peak_reserved_mib": 2624.0
+      },
+      "retained_official_ratio": 1.8646308173969766,
+      "uniform_official_ratio": 1.866836821050163,
+      "uniform_vs_retained_fraction": 0.0011830779758674748
+    },
+    "oem": {
+      "Retained": {
+        "median_ms": 263.416551053524,
+        "p95_ms": 276.8139601685107,
+        "peak_allocated_mib": 5586.95751953125,
+        "peak_reserved_mib": 6076.0
+      },
+      "Uniform": {
+        "median_ms": 254.73116897046566,
+        "p95_ms": 258.84497752413154,
+        "peak_allocated_mib": 5586.95751953125,
+        "peak_reserved_mib": 6076.0
+      },
+      "VIPMatched": {
+        "median_ms": 107.53129702061415,
+        "p95_ms": 109.68564585782588,
+        "peak_allocated_mib": 1810.0244140625,
+        "peak_reserved_mib": 2224.0
+      },
+      "VIPOfficial": {
+        "median_ms": 108.07138704694808,
+        "p95_ms": 112.62464369647205,
+        "peak_allocated_mib": 1810.0244140625,
+        "peak_reserved_mib": 2224.0
+      },
+      "retained_official_ratio": 2.4374310189901727,
+      "uniform_official_ratio": 2.357063936449766,
+      "uniform_vs_retained_fraction": -0.03297204389140129
+    },
+    "vaihingen": {
+      "Retained": {
+        "median_ms": 244.75038587115705,
+        "p95_ms": 247.48253636062145,
+        "peak_allocated_mib": 5565.25830078125,
+        "peak_reserved_mib": 6010.0
+      },
+      "Uniform": {
+        "median_ms": 243.06886410340667,
+        "p95_ms": 245.62741918489337,
+        "peak_allocated_mib": 5565.25830078125,
+        "peak_reserved_mib": 6010.0
+      },
+      "VIPMatched": {
+        "median_ms": 105.08161201141775,
+        "p95_ms": 106.90738316625357,
+        "peak_allocated_mib": 1763.75341796875,
+        "peak_reserved_mib": 2184.0
+      },
+      "VIPOfficial": {
+        "median_ms": 107.71133191883564,
+        "p95_ms": 111.29911043681204,
+        "peak_allocated_mib": 1739.28125,
+        "peak_reserved_mib": 2152.0
+      },
+      "retained_official_ratio": 2.2722807480979372,
+      "uniform_official_ratio": 2.25666937520156,
+      "uniform_vs_retained_fraction": -0.006870353898586257
+    },
+    "landcoverai": {
+      "Retained": {
+        "median_ms": 233.82392898201942,
+        "p95_ms": 236.80456136353314,
+        "peak_allocated_mib": 5565.25830078125,
+        "peak_reserved_mib": 6010.0
+      },
+      "Uniform": {
+        "median_ms": 233.48297900520265,
+        "p95_ms": 237.02623741701245,
+        "peak_allocated_mib": 5565.25830078125,
+        "peak_reserved_mib": 6010.0
+      },
+      "VIPMatched": {
+        "median_ms": 104.49688602238894,
+        "p95_ms": 109.11014005541801,
+        "peak_allocated_mib": 1763.75341796875,
+        "peak_reserved_mib": 2164.0
+      },
+      "VIPOfficial": {
+        "median_ms": 106.84174997732043,
+        "p95_ms": 108.46703327260911,
+        "peak_allocated_mib": 1763.75341796875,
+        "peak_reserved_mib": 2164.0
+      },
+      "retained_official_ratio": 2.1885071054307312,
+      "uniform_official_ratio": 2.185315937400545,
+      "uniform_vs_retained_fraction": -0.0014581483524852556
+    },
+    "loveda": {
+      "Retained": {
+        "median_ms": 248.85184783488512,
+        "p95_ms": 256.17183218710124,
+        "peak_allocated_mib": 5578.62255859375,
+        "peak_reserved_mib": 6076.0
+      },
+      "Uniform": {
+        "median_ms": 249.87351102754474,
+        "p95_ms": 268.18814245052636,
+        "peak_allocated_mib": 5578.62255859375,
+        "peak_reserved_mib": 6076.0
+      },
+      "VIPMatched": {
+        "median_ms": 110.62247608788311,
+        "p95_ms": 112.25208449177444,
+        "peak_allocated_mib": 1792.748046875,
+        "peak_reserved_mib": 2210.0
+      },
+      "VIPOfficial": {
+        "median_ms": 110.02144287340343,
+        "p95_ms": 111.98911899700761,
+        "peak_allocated_mib": 1792.748046875,
+        "peak_reserved_mib": 2210.0
+      },
+      "retained_official_ratio": 2.2618486118313084,
+      "uniform_official_ratio": 2.2711346488617004,
+      "uniform_vs_retained_fraction": 0.004105507761137828
+    },
+    "context59": {
+      "Retained": {
+        "median_ms": 243.38204693049192,
+        "p95_ms": 251.02316583506763,
+        "peak_allocated_mib": 5571.14990234375,
+        "peak_reserved_mib": 6530.0
+      },
+      "Uniform": {
+        "median_ms": 236.54576996341348,
+        "p95_ms": 242.4756036605686,
+        "peak_allocated_mib": 5571.14990234375,
+        "peak_reserved_mib": 6530.0
+      },
+      "VIPMatched": {
+        "median_ms": 78.02628888748586,
+        "p95_ms": 80.57584231719375,
+        "peak_allocated_mib": 1830.8134765625,
+        "peak_reserved_mib": 2298.0
+      },
+      "VIPOfficial": {
+        "median_ms": 111.34756705723703,
+        "p95_ms": 112.94306833297014,
+        "peak_allocated_mib": 1804.861328125,
+        "peak_reserved_mib": 2272.0
+      },
+      "retained_official_ratio": 2.185786841713245,
+      "uniform_official_ratio": 2.124391005703965,
+      "uniform_vs_retained_fraction": -0.028088665755329312
+    },
+    "coco_object81": {
+      "Retained": {
+        "median_ms": 264.9509340990335,
+        "p95_ms": 274.3235158268362,
+        "peak_allocated_mib": 5781.49462890625,
+        "peak_reserved_mib": 6764.0
+      },
+      "Uniform": {
+        "median_ms": 258.7541309185326,
+        "p95_ms": 263.5072008706629,
+        "peak_allocated_mib": 5781.49462890625,
+        "peak_reserved_mib": 6764.0
+      },
+      "VIPMatched": {
+        "median_ms": 89.85045785084367,
+        "p95_ms": 91.67511956766248,
+        "peak_allocated_mib": 1958.37890625,
+        "peak_reserved_mib": 2464.0
+      },
+      "VIPOfficial": {
+        "median_ms": 132.91032589040697,
+        "p95_ms": 136.3857772666961,
+        "peak_allocated_mib": 1922.380859375,
+        "peak_reserved_mib": 2414.0
+      },
+      "retained_official_ratio": 1.9934563573149493,
+      "uniform_official_ratio": 1.94683241640602,
+      "uniform_vs_retained_fraction": -0.023388493426426682
+    },
+    "coco_stuff171": {
+      "Retained": {
+        "median_ms": 309.7885681781918,
+        "p95_ms": 317.9817377589643,
+        "peak_allocated_mib": 6538.79931640625,
+        "peak_reserved_mib": 7948.0
+      },
+      "Uniform": {
+        "median_ms": 315.36876899190247,
+        "p95_ms": 321.44301272928715,
+        "peak_allocated_mib": 6538.79931640625,
+        "peak_reserved_mib": 7948.0
+      },
+      "VIPMatched": {
+        "median_ms": 123.61607584170997,
+        "p95_ms": 124.77067010477185,
+        "peak_allocated_mib": 2263.87646484375,
+        "peak_reserved_mib": 2858.0
+      },
+      "VIPOfficial": {
+        "median_ms": 183.6856040172279,
+        "p95_ms": 186.09698582440615,
+        "peak_allocated_mib": 2190.3828125,
+        "peak_reserved_mib": 2796.0
+      },
+      "retained_official_ratio": 1.6865152271221902,
+      "uniform_official_ratio": 1.716894313406967,
+      "uniform_vs_retained_fraction": 0.01801293329359055
+    },
+    "flair1": {
+      "Retained": {
+        "median_ms": 241.74459208734334,
+        "p95_ms": 244.41906460560858,
+        "peak_allocated_mib": 5611.22607421875,
+        "peak_reserved_mib": 6134.0
+      },
+      "Uniform": {
+        "median_ms": 239.7344799246639,
+        "p95_ms": 241.89893314614892,
+        "peak_allocated_mib": 5611.22607421875,
+        "peak_reserved_mib": 6134.0
+      },
+      "VIPMatched": {
+        "median_ms": 109.20804203487933,
+        "p95_ms": 110.55942787788808,
+        "peak_allocated_mib": 1867.791015625,
+        "peak_reserved_mib": 2320.0
+      },
+      "VIPOfficial": {
+        "median_ms": 109.07742916606367,
+        "p95_ms": 115.82747190259397,
+        "peak_allocated_mib": 1867.791015625,
+        "peak_reserved_mib": 2320.0
+      },
+      "retained_official_ratio": 2.2162659492029473,
+      "uniform_official_ratio": 2.1978376439334935,
+      "uniform_vs_retained_fraction": -0.008315024321012165
+    }
+  },
+  "cost_complete": true
+}

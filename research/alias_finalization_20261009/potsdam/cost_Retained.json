@@ -1,0 +1,381 @@
+{
+  "status": "complete",
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "dataset": "potsdam",
+  "mode": "Retained",
+  "images": [
+    {
+      "key": "top_potsdam_2_13_RGB_y00_x00.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        254.7203239519149,
+        258.6929239332676,
+        256.7265529651195,
+        250.72183995507658,
+        253.11028701253235,
+        252.68484186381102,
+        252.31936597265303
+      ],
+      "median_ms": 253.11028701253235,
+      "p95_ms": 258.10301264282316,
+      "peak_allocated_mib": 5571.57373046875,
+      "peak_reserved_mib": 6076.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.07469148584641516
+    },
+    {
+      "key": "top_potsdam_3_13_RGB_y01_x05.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        253.48753994330764,
+        250.75708399526775,
+        250.3012150991708,
+        252.54436116665602,
+        253.5265008918941,
+        253.50560410879552,
+        251.73650705255568
+      ],
+      "median_ms": 252.54436116665602,
+      "p95_ms": 253.52023185696453,
+      "peak_allocated_mib": 5571.57373046875,
+      "peak_reserved_mib": 6010.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.035323532996699214
+    },
+    {
+      "key": "top_potsdam_4_13_RGB_y03_x05.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        250.90927304700017,
+        255.23990392684937,
+        253.07382899336517,
+        254.12191194482148,
+        253.464788896963,
+        252.02421587891877,
+        250.8733021095395
+      ],
+      "median_ms": 253.07382899336517,
+      "p95_ms": 254.904506332241,
+      "peak_allocated_mib": 5571.57373046875,
+      "peak_reserved_mib": 6010.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.0350815849378705
+    },
+    {
+      "key": "top_potsdam_4_15_RGB_y05_x05.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        253.08070401661098,
+        252.94748903252184,
+        252.83966003917158,
+        249.3097260594368,
+        253.0399370007217,
+        253.9142118766904,
+        254.04793792404234
+      ],
+      "median_ms": 253.0399370007217,
+      "p95_ms": 254.00782010983676,
+      "peak_allocated_mib": 5571.57373046875,
+      "peak_reserved_mib": 6010.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.035487832967191935
+    },
+    {
+      "key": "top_potsdam_5_15_RGB_y01_x05.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        249.7109048999846,
+        251.65979214943945,
+        255.2925159689039,
+        253.69001016952097,
+        252.3110220208764,
+        250.2433299086988,
+        248.36355005390942
+      ],
+      "median_ms": 251.65979214943945,
+      "p95_ms": 254.81176422908902,
+      "peak_allocated_mib": 5571.57373046875,
+      "peak_reserved_mib": 6010.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.03598219994455576
+    },
+    {
+      "key": "top_potsdam_6_14_RGB_y03_x05.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        257.198175881058,
+        252.5052938144654,
+        255.3672199137509,
+        256.0748839750886,
+        257.8399439807981,
+        258.28039180487394,
+        259.4391410239041
+      ],
+      "median_ms": 257.198175881058,
+      "p95_ms": 259.09151625819504,
+      "peak_allocated_mib": 5571.57373046875,
+      "peak_reserved_mib": 6010.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.03594752005301416
+    },
+    {
+      "key": "top_potsdam_7_13_RGB_y05_x05.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        253.0404671560973,
+        251.38767203316092,
+        254.3555679731071,
+        253.42293991707265,
+        255.18935499712825,
+        252.43590003810823,
+        253.87010094709694
+      ],
+      "median_ms": 253.42293991707265,
+      "p95_ms": 254.9392188899219,
+      "peak_allocated_mib": 5571.57373046875,
+      "peak_reserved_mib": 6010.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        },
+        {
+          "geometry": 4,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.03560085711069405
+    }
+  ],
+  "metadata": {
+    "wide_policy": "long448",
+    "extra_soft_weights": true,
+    "residual_queries": 0,
+    "backbones_resident": 2
+  },
+  "initialization_and_text_seconds": 28.760681835003197,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "median_ms": 253.08070401661098,
+  "p95_ms": 258.1042126752436,
+  "mean_image_median_ms": 253.43561744583505,
+  "peak_allocated_mib": 5571.57373046875,
+  "peak_reserved_mib": 6076.0,
+  "scope": "Seven deterministic spread full inputs and7 warmed synchronized repeats. One candidate in this process; no other GPU process allowed. Host/other-GPU contention is possible. Not full-dataset mean or independent accuracy validation.",
+  "boundary": "Decode/model loading/text encoding excluded and reported separately. Includes resizing/all encoding/semantic readout/alias aggregation/writeback/original-size restoration/CPU argmax output."
+}

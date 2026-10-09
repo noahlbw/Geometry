@@ -1,0 +1,78 @@
+{
+  "protocol": "Fixed raw LLM-style alias expansion. No image, target mask, DINO score, or evaluation result was used to retain, remove, or reorder phrases.",
+  "generation_prompt": "For each named aerial land-cover class, list 20 ordinary English expressions a general-purpose LLM may offer: direct names, near synonyms, broader or narrower terms, common scene descriptions, and use-related phrases. Do not optimize for any dataset or visual encoder.",
+  "classes": [
+    {
+      "name": "bareland",
+      "synonyms": [
+        "bareland", "bare land", "bare ground", "bare soil", "dirt",
+        "earth", "sand", "rock", "gravel", "dry land",
+        "open land", "cleared area", "construction site", "excavation", "vacant land",
+        "exposed terrain", "soil patch", "wasteland", "undeveloped land", "brown ground"
+      ]
+    },
+    {
+      "name": "rangeland",
+      "synonyms": [
+        "rangeland", "range land", "grassland", "pasture", "grazing land",
+        "meadow", "open grass", "field", "natural grass", "open vegetation",
+        "low vegetation", "scrub", "shrubland", "rural land", "open countryside",
+        "green ground", "uncultivated land", "grass area", "grazing field", "natural area"
+      ]
+    },
+    {
+      "name": "developed space",
+      "synonyms": [
+        "developed space", "developed land", "urban area", "built-up area", "city surface",
+        "impervious surface", "paved area", "concrete", "asphalt", "hardscape",
+        "commercial area", "industrial area", "parking lot", "courtyard", "settlement",
+        "built environment", "man-made surface", "urban ground", "infrastructure", "developed zone"
+      ]
+    },
+    {
+      "name": "road",
+      "synonyms": [
+        "road", "roads", "street", "highway", "path",
+        "lane", "roadway", "pavement", "asphalt", "driveway",
+        "transportation route", "traffic route", "intersection", "junction", "access way",
+        "urban street", "rural path", "linear feature", "road surface", "travel route"
+      ]
+    },
+    {
+      "name": "tree",
+      "synonyms": [
+        "tree", "trees", "forest", "woodland", "vegetation",
+        "green area", "canopy", "shrubs", "bush", "park",
+        "grove", "plantation", "natural area", "wooded land", "tall vegetation",
+        "foliage", "tree cover", "leafy area", "green space", "forested region"
+      ]
+    },
+    {
+      "name": "water",
+      "synonyms": [
+        "water", "water body", "river", "lake", "pond",
+        "stream", "canal", "reservoir", "shoreline", "wetland",
+        "blue area", "dark surface", "waterway", "drainage channel", "flooded area",
+        "aquatic area", "open water", "coastal water", "reflective surface", "water feature"
+      ]
+    },
+    {
+      "name": "agriculture land",
+      "synonyms": [
+        "agriculture land", "farmland", "agriculture", "crop field", "field",
+        "crops", "cultivated land", "plantation", "orchard", "rural land",
+        "crop area", "paddy field", "harvested field", "irrigation area", "agricultural zone",
+        "food production area", "tilled land", "growing crops", "cultivated parcel", "farm area"
+      ]
+    },
+    {
+      "name": "building",
+      "synonyms": [
+        "building", "buildings", "structure", "house", "roof",
+        "rooftop", "apartment", "office", "warehouse", "facility",
+        "residential area", "commercial property", "urban block", "built-up area", "construction",
+        "man-made structure", "city building", "property", "industrial site", "premises"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1660 @@
+{
+  "status": "complete",
+  "coverage_verified": true,
+  "processed_images": 504,
+  "total_images": 504,
+  "metrics": {
+    "potsdam": {
+      "Reference20SameViews": {
+        "mean_iou_percent": 45.9339,
+        "pixel_accuracy_percent": 71.0725,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 62.7987
+          },
+          {
+            "name": "building",
+            "iou_percent": 79.0175
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 38.5018
+          },
+          {
+            "name": "tree",
+            "iou_percent": 58.5794
+          },
+          {
+            "name": "car",
+            "iou_percent": 30.1233
+          },
+          {
+            "name": "clutter",
+            "iou_percent": 6.5825
+          }
+        ],
+        "confusion_matrix": [
+          [
+            127879412,
+            11402707,
+            229446,
+            701946,
+            15557844,
+            2843166
+          ],
+          [
+            2138812,
+            116811432,
+            969993,
+            76423,
+            41912,
+            515395
+          ],
+          [
+            19778074,
+            7873037,
+            42168549,
+            11683421,
+            1864259,
+            22517157
+          ],
+          [
+            10624046,
+            2361589,
+            2295811,
+            57745602,
+            4218833,
+            8642275
+          ],
+          [
+            52449,
+            34247,
+            0,
+            407,
+            9803373,
+            12647
+          ],
+          [
+            12425833,
+            5604310,
+            143956,
+            226245,
+            958182,
+            3797210
+          ]
+        ],
+        "ignored_pixels": 0
+      },
+      "Retained": {
+        "mean_iou_percent": 49.7888,
+        "pixel_accuracy_percent": 74.3817,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 67.2087
+          },
+          {
+            "name": "building",
+            "iou_percent": 80.5641
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 43.1983
+          },
+          {
+            "name": "tree",
+            "iou_percent": 61.8622
+          },
+          {
+            "name": "car",
+            "iou_percent": 36.7792
+          },
+          {
+            "name": "clutter",
+            "iou_percent": 9.1203
+          }
+        ],
+        "confusion_matrix": [
+          [
+            133797625,
+            9293218,
+            336617,
+            1069116,
+            10985874,
+            3132071
+          ],
+          [
+            3101073,
+            115699290,
+            1065174,
+            127361,
+            46491,
+            514578
+          ],
+          [
+            16496823,
+            6586438,
+            47593219,
+            14985526,
+            1755918,
+            18466573
+          ],
+          [
+            9241190,
+            1807426,
+            2668597,
+            63352543,
+            2794069,
+            6024331
+          ],
+          [
+            94896,
+            35459,
+            1,
+            2092,
+            9762080,
+            8595
+          ],
+          [
+            11529283,
+            5334886,
+            218858,
+            336877,
+            1056947,
+            4678885
+          ]
+        ],
+        "ignored_pixels": 0
+      },
+      "Uniform": {
+        "mean_iou_percent": 49.7278,
+        "pixel_accuracy_percent": 74.3639,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 67.186
+          },
+          {
+            "name": "building",
+            "iou_percent": 80.5867
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 43.0884
+          },
+          {
+            "name": "tree",
+            "iou_percent": 61.9424
+          },
+          {
+            "name": "car",
+            "iou_percent": 36.6319
+          },
+          {
+            "name": "clutter",
+            "iou_percent": 8.9316
+          }
+        ],
+        "confusion_matrix": [
+          [
+            133745587,
+            9276230,
+            335550,
+            1085570,
+            11083729,
+            3087855
+          ],
+          [
+            3116127,
+            115683549,
+            1061877,
+            129227,
+            46752,
+            516435
+          ],
+          [
+            16453172,
+            6554741,
+            47452791,
+            15190309,
+            1751431,
+            18482053
+          ],
+          [
+            9156796,
+            1800857,
+            2629551,
+            63577729,
+            2813932,
+            5909291
+          ],
+          [
+            92296,
+            35173,
+            1,
+            2061,
+            9765248,
+            8344
+          ],
+          [
+            11634728,
+            5330648,
+            217438,
+            344749,
+            1058814,
+            4569359
+          ]
+        ],
+        "ignored_pixels": 0
+      },
+      "UniformLocal": {
+        "mean_iou_percent": 50.2473,
+        "pixel_accuracy_percent": 75.6295,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 67.174
+          },
+          {
+            "name": "building",
+            "iou_percent": 80.3911
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 49.3312
+          },
+          {
+            "name": "tree",
+            "iou_percent": 63.165
+          },
+          {
+            "name": "car",
+            "iou_percent": 29.793
+          },
+          {
+            "name": "clutter",
+            "iou_percent": 11.6297
+          }
+        ],
+        "confusion_matrix": [
+          [
+            129363656,
+            8787809,
+            822251,
+            1913727,
+            15318294,
+            2408784
+          ],
+          [
+            3803231,
+            114306079,
+            1382534,
+            302500,
+            224344,
+            535279
+          ],
+          [
+            13013928,
+            5941934,
+            55716144,
+            18120163,
+            2755379,
+            10336949
+          ],
+          [
+            6508234,
+            1510067,
+            4288391,
+            67407262,
+            3029596,
+            3144606
+          ],
+          [
+            69949,
+            37588,
+            699,
+            11646,
+            9775535,
+            7706
+          ],
+          [
+            10570128,
+            5356189,
+            564697,
+            479912,
+            1580728,
+            4604082
+          ]
+        ],
+        "ignored_pixels": 0
+      },
+      "UniformWide": {
+        "mean_iou_percent": 44.1488,
+        "pixel_accuracy_percent": 68.6514,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 62.1433
+          },
+          {
+            "name": "building",
+            "iou_percent": 77.3925
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 32.286
+          },
+          {
+            "name": "tree",
+            "iou_percent": 53.514
+          },
+          {
+            "name": "car",
+            "iou_percent": 32.9108
+          },
+          {
+            "name": "clutter",
+            "iou_percent": 6.6461
+          }
+        ],
+        "confusion_matrix": [
+          [
+            128517951,
+            11872500,
+            252209,
+            893186,
+            12268046,
+            4810629
+          ],
+          [
+            2797171,
+            115980983,
+            719901,
+            124479,
+            73682,
+            857751
+          ],
+          [
+            20366767,
+            9279404,
+            35045659,
+            10633647,
+            1936193,
+            28622827
+          ],
+          [
+            12751195,
+            2833148,
+            1539187,
+            52333077,
+            3654883,
+            12776666
+          ],
+          [
+            362526,
+            53703,
+            0,
+            532,
+            9456100,
+            30262
+          ],
+          [
+            11916842,
+            5268002,
+            151838,
+            253319,
+            896619,
+            4669116
+          ]
+        ],
+        "ignored_pixels": 0
+      },
+      "UniformMean": {
+        "mean_iou_percent": 46.9773,
+        "pixel_accuracy_percent": 71.5928,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 64.4427
+          },
+          {
+            "name": "building",
+            "iou_percent": 78.5761
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 38.0538
+          },
+          {
+            "name": "tree",
+            "iou_percent": 58.1513
+          },
+          {
+            "name": "car",
+            "iou_percent": 34.8856
+          },
+          {
+            "name": "clutter",
+            "iou_percent": 7.7542
+          }
+        ],
+        "confusion_matrix": [
+          [
+            130920372,
+            10864435,
+            265308,
+            913766,
+            11822921,
+            3827719
+          ],
+          [
+            2911848,
+            115918051,
+            899800,
+            135469,
+            54753,
+            634046
+          ],
+          [
+            18563642,
+            8350624,
+            41557749,
+            12703074,
+            1798230,
+            22911178
+          ],
+          [
+            11119848,
+            2417454,
+            1987446,
+            58113359,
+            3256760,
+            8993289
+          ],
+          [
+            145860,
+            37205,
+            0,
+            464,
+            9701063,
+            18531
+          ],
+          [
+            11802125,
+            5299570,
+            170921,
+            293842,
+            972396,
+            4616882
+          ]
+        ],
+        "ignored_pixels": 0
+      },
+      "RetainedScalar": {
+        "mean_iou_percent": 49.7888,
+        "pixel_accuracy_percent": 74.3817,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 67.2087
+          },
+          {
+            "name": "building",
+            "iou_percent": 80.5641
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 43.1983
+          },
+          {
+            "name": "tree",
+            "iou_percent": 61.8622
+          },
+          {
+            "name": "car",
+            "iou_percent": 36.7792
+          },
+          {
+            "name": "clutter",
+            "iou_percent": 9.1203
+          }
+        ],
+        "confusion_matrix": [
+          [
+            133797626,
+            9293218,
+            336617,
+            1069116,
+            10985873,
+            3132071
+          ],
+          [
+            3101072,
+            115699290,
+            1065174,
+            127361,
+            46491,
+            514579
+          ],
+          [
+            16496823,
+            6586438,
+            47593221,
+            14985528,
+            1755918,
+            18466569
+          ],
+          [
+            9241189,
+            1807427,
+            2668599,
+            63352543,
+            2794069,
+            6024329
+          ],
+          [
+            94896,
+            35459,
+            1,
+            2092,
+            9762080,
+            8595
+          ],
+          [
+            11529281,
+            5334886,
+            218858,
+            336877,
+            1056947,
+            4678887
+          ]
+        ],
+        "ignored_pixels": 0
+      }
+    }
+  },
+  "diagnostics": {
+    "potsdam": {
+      "tiles": 2016,
+      "wide_encodings": 2016.0,
+      "fine_forwards": 0.0
+    }
+  },
+  "parallel_wall_seconds": 240.0411743670702,
+  "aggregate_gpu_seconds": 240.0411743670702,
+  "peak_cuda_memory_mb": 6716.287109375,
+  "signature": {
+    "implementation": "geometry-task-alias-global-finalization-v1-20261009",
+    "dataset": "potsdam",
+    "methods": [
+      "Reference20SameViews",
+      "Retained",
+      "Uniform",
+      "UniformLocal",
+      "UniformWide",
+      "UniformMean",
+      "RetainedScalar"
+    ],
+    "classes": {
+      "potsdam": [
+        "impervious surface",
+        "building",
+        "low vegetation",
+        "tree",
+        "car",
+        "clutter"
+      ]
+    },
+    "gear": {
+      "core": "geometry-bounded896-patch-only-strength2-coupled-v1-20261005",
+      "cap": [
+        4,
+        4,
+        0
+      ],
+      "wide_policy": "long448"
+    },
+    "competitive": {
+      "ordinary_alias_policies": [
+        "retained",
+        "uniform"
+      ],
+      "no_new_selector": true
+    },
+    "vocabulary": {
+      "original": {
+        "classes": [
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "paved surface",
+              "pavement",
+              "asphalt surface",
+              "concrete surface",
+              "hard surface",
+              "road pavement",
+              "parking pavement",
+              "sealed ground",
+              "built ground",
+              "urban pavement",
+              "sidewalk",
+              "paved area",
+              "hardscape",
+              "gray pavement",
+              "street surface",
+              "concrete ground",
+              "impermeable ground",
+              "man made surface",
+              "solid surface"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "rooftop",
+              "roof",
+              "residential building",
+              "industrial building",
+              "urban structure",
+              "constructed structure",
+              "apartment block",
+              "warehouse",
+              "large building",
+              "small building",
+              "building roof",
+              "built structure",
+              "dense buildings",
+              "commercial building",
+              "concrete building",
+              "urban building"
+            ]
+          },
+          {
+            "name": "low vegetation",
+            "synonyms": [
+              "low vegetation",
+              "grass",
+              "grassland",
+              "short grass",
+              "ground vegetation",
+              "green ground cover",
+              "meadow",
+              "herbaceous cover",
+              "low plants",
+              "lawn",
+              "pasture",
+              "small plants",
+              "ground cover",
+              "sparse grass",
+              "green field",
+              "low greenery",
+              "vegetated ground",
+              "grass cover",
+              "short vegetation",
+              "herbal vegetation"
+            ]
+          },
+          {
+            "name": "tree",
+            "synonyms": [
+              "tree",
+              "trees",
+              "tree canopy",
+              "forest",
+              "woodland",
+              "wooded area",
+              "tree cluster",
+              "grove",
+              "dense trees",
+              "sparse trees",
+              "green canopy",
+              "tall vegetation",
+              "deciduous trees",
+              "evergreen trees",
+              "tree crown",
+              "wooded vegetation",
+              "tree cover",
+              "plantation",
+              "forest patch",
+              "large tree"
+            ]
+          },
+          {
+            "name": "car",
+            "synonyms": [
+              "car",
+              "cars",
+              "vehicle",
+              "vehicles",
+              "automobile",
+              "parked car",
+              "road vehicle",
+              "small vehicle",
+              "large vehicle",
+              "traffic vehicle",
+              "moving car",
+              "sedan",
+              "van",
+              "truck",
+              "bus",
+              "motor vehicle",
+              "vehicle cluster",
+              "transport vehicle",
+              "visible car",
+              "automotive object"
+            ]
+          },
+          {
+            "name": "clutter",
+            "synonyms": [
+              "clutter",
+              "background clutter",
+              "miscellaneous object",
+              "unclassified area",
+              "unknown object",
+              "other land cover",
+              "unlabeled region",
+              "mixed clutter",
+              "scene clutter",
+              "construction debris",
+              "small object",
+              "unclear surface",
+              "miscellaneous ground",
+              "non target area",
+              "unassigned area",
+              "ambiguous object",
+              "red clutter",
+              "object clutter",
+              "other class",
+              "residual area"
+            ]
+          }
+        ],
+        "template": "RS6"
+      },
+      "focused20": {
+        "classes": [
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "paved surface",
+              "pavement",
+              "asphalt surface",
+              "concrete surface",
+              "paved ground",
+              "road pavement",
+              "parking pavement",
+              "sealed ground",
+              "paved courtyard",
+              "urban pavement",
+              "sidewalk",
+              "paved area",
+              "hardscape",
+              "asphalt pavement",
+              "street surface",
+              "concrete ground",
+              "impermeable ground",
+              "paved parking area",
+              "sealed pavement"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "rooftop",
+              "roof",
+              "residential building",
+              "industrial building",
+              "house roof",
+              "roofed building",
+              "apartment block",
+              "warehouse",
+              "large building",
+              "small building",
+              "building roof",
+              "building rooftop",
+              "building roof surface",
+              "commercial building",
+              "concrete building",
+              "urban building"
+            ]
+          },
+          {
+            "name": "low vegetation",
+            "synonyms": [
+              "low vegetation",
+              "grass",
+              "grassland",
+              "short grass",
+              "ground vegetation",
+              "green ground cover",
+              "meadow",
+              "herbaceous cover",
+              "low plants",
+              "lawn",
+              "pasture",
+              "small plants",
+              "herbaceous ground cover",
+              "sparse grass",
+              "grassy field",
+              "low herbaceous vegetation",
+              "vegetated ground",
+              "grass cover",
+              "short vegetation",
+              "herbaceous vegetation"
+            ]
+          },
+          {
+            "name": "tree",
+            "synonyms": [
+              "tree",
+              "trees",
+              "tree canopy",
+              "forest",
+              "woodland",
+              "wooded area",
+              "tree cluster",
+              "grove",
+              "dense trees",
+              "sparse trees",
+              "leafy tree canopy",
+              "tall trees",
+              "deciduous trees",
+              "evergreen trees",
+              "tree crown",
+              "woody tree canopy",
+              "tree cover",
+              "planted trees",
+              "forest patch",
+              "large tree"
+            ]
+          },
+          {
+            "name": "car",
+            "synonyms": [
+              "car",
+              "cars",
+              "vehicle",
+              "vehicles",
+              "automobile",
+              "parked car",
+              "road vehicle",
+              "small vehicle",
+              "passenger car",
+              "passenger automobile",
+              "moving car",
+              "sedan",
+              "van",
+              "truck",
+              "bus",
+              "motor vehicle",
+              "parked automobile",
+              "compact car",
+              "visible car",
+              "passenger motorcar"
+            ]
+          },
+          {
+            "name": "clutter",
+            "synonyms": [
+              "clutter",
+              "background clutter",
+              "miscellaneous object",
+              "unclassified area",
+              "unknown object",
+              "other land cover",
+              "unlabeled region",
+              "mixed clutter",
+              "scene clutter",
+              "construction debris",
+              "unclassified clutter",
+              "unclear surface",
+              "miscellaneous ground",
+              "non target area",
+              "unassigned area",
+              "ambiguous object",
+              "miscellaneous clutter",
+              "object clutter",
+              "other class",
+              "residual area"
+            ]
+          }
+        ],
+        "template": "RS6"
+      },
+      "original_imagenet": {
+        "classes": [
+          {
+            "name": "impervious surface",
+            "synonyms": [
+              "impervious surface",
+              "paved surface",
+              "pavement",
+              "asphalt surface",
+              "concrete surface",
+              "hard surface",
+              "road pavement",
+              "parking pavement",
+              "sealed ground",
+              "built ground",
+              "urban pavement",
+              "sidewalk",
+              "paved area",
+              "hardscape",
+              "gray pavement",
+              "street surface",
+              "concrete ground",
+              "impermeable ground",
+              "man made surface",
+              "solid surface"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "house",
+              "houses",
+              "rooftop",
+              "roof",
+              "residential building",
+              "industrial building",
+              "urban structure",
+              "constructed structure",
+              "apartment block",
+              "warehouse",
+              "large building",
+              "small building",
+              "building roof",
+              "built structure",
+              "dense buildings",
+              "commercial building",
+              "concrete building",
+              "urban building"
+            ]
+          },
+          {
+            "name": "low vegetation",
+            "synonyms": [
+              "low vegetation",
+              "grass",
+              "grassland",
+              "short grass",
+              "ground vegetation",
+              "green ground cover",
+              "meadow",
+              "herbaceous cover",
+              "low plants",
+              "lawn",
+              "pasture",
+              "small plants",
+              "ground cover",
+              "sparse grass",
+              "green field",
+              "low greenery",
+              "vegetated ground",
+              "grass cover",
+              "short vegetation",
+              "herbal vegetation"
+            ]
+          },
+          {
+            "name": "tree",
+            "synonyms": [
+              "tree",
+              "trees",
+              "tree canopy",
+              "forest",
+              "woodland",
+              "wooded area",
+              "tree cluster",
+              "grove",
+              "dense trees",
+              "sparse trees",
+              "green canopy",
+              "tall vegetation",
+              "deciduous trees",
+              "evergreen trees",
+              "tree crown",
+              "wooded vegetation",
+              "tree cover",
+              "plantation",
+              "forest patch",
+              "large tree"
+            ]
+          },
+          {
+            "name": "car",
+            "synonyms": [
+              "car",
+              "cars",
+              "vehicle",
+              "vehicles",
+              "automobile",
+              "parked car",
+              "road vehicle",
+              "small vehicle",
+              "large vehicle",
+              "traffic vehicle",
+              "moving car",
+              "sedan",
+              "van",
+              "truck",
+              "bus",
+              "motor vehicle",
+              "vehicle cluster",
+              "transport vehicle",
+              "visible car",
+              "automotive object"
+            ]
+          },
+          {
+            "name": "clutter",
+            "synonyms": [
+              "clutter",
+              "background clutter",
+              "miscellaneous object",
+              "unclassified area",
+              "unknown object",
+              "other land cover",
+              "unlabeled region",
+              "mixed clutter",
+              "scene clutter",
+              "construction debris",
+              "small object",
+              "unclear surface",
+              "miscellaneous ground",
+              "non target area",
+              "unassigned area",
+              "ambiguous object",
+              "red clutter",
+              "object clutter",
+              "other class",
+              "residual area"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      }
+    },
+    "residual_identity": null,
+    "checkpoints": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "global_sample_count": 504,
+    "global_sample_keys_sha256": "dfcdc24a21caf68f02ddf611038a9ceb0eec3dbd6322709aa7e77216821af57e",
+    "sample_keys": [
+      "top_potsdam_2_13_RGB_y00_x00.tif",
+      "top_potsdam_2_13_RGB_y00_x01.tif",
+      "top_potsdam_2_13_RGB_y00_x02.tif",
+      "top_potsdam_2_13_RGB_y00_x03.tif",
+      "top_potsdam_2_13_RGB_y00_x04.tif",
+      "top_potsdam_2_13_RGB_y00_x05.tif",
+      "top_potsdam_2_13_RGB_y01_x00.tif",
+      "top_potsdam_2_13_RGB_y01_x01.tif",
+      "top_potsdam_2_13_RGB_y01_x02.tif",
+      "top_potsdam_2_13_RGB_y01_x03.tif",
+      "top_potsdam_2_13_RGB_y01_x04.tif",
+      "top_potsdam_2_13_RGB_y01_x05.tif",
+      "top_potsdam_2_13_RGB_y02_x00.tif",
+      "top_potsdam_2_13_RGB_y02_x01.tif",
+      "top_potsdam_2_13_RGB_y02_x02.tif",
+      "top_potsdam_2_13_RGB_y02_x03.tif",
+      "top_potsdam_2_13_RGB_y02_x04.tif",
+      "top_potsdam_2_13_RGB_y02_x05.tif",
+      "top_potsdam_2_13_RGB_y03_x00.tif",
+      "top_potsdam_2_13_RGB_y03_x01.tif",
+      "top_potsdam_2_13_RGB_y03_x02.tif",
+      "top_potsdam_2_13_RGB_y03_x03.tif",
+      "top_potsdam_2_13_RGB_y03_x04.tif",
+      "top_potsdam_2_13_RGB_y03_x05.tif",
+      "top_potsdam_2_13_RGB_y04_x00.tif",
+      "top_potsdam_2_13_RGB_y04_x01.tif",
+      "top_potsdam_2_13_RGB_y04_x02.tif",
+      "top_potsdam_2_13_RGB_y04_x03.tif",
+      "top_potsdam_2_13_RGB_y04_x04.tif",
+      "top_potsdam_2_13_RGB_y04_x05.tif",
+      "top_potsdam_2_13_RGB_y05_x00.tif",
+      "top_potsdam_2_13_RGB_y05_x01.tif",
+      "top_potsdam_2_13_RGB_y05_x02.tif",
+      "top_potsdam_2_13_RGB_y05_x03.tif",
+      "top_potsdam_2_13_RGB_y05_x04.tif",
+      "top_potsdam_2_13_RGB_y05_x05.tif",
+      "top_potsdam_2_14_RGB_y00_x00.tif",
+      "top_potsdam_2_14_RGB_y00_x01.tif",
+      "top_potsdam_2_14_RGB_y00_x02.tif",
+      "top_potsdam_2_14_RGB_y00_x03.tif",
+      "top_potsdam_2_14_RGB_y00_x04.tif",
+      "top_potsdam_2_14_RGB_y00_x05.tif",
+      "top_potsdam_2_14_RGB_y01_x00.tif",
+      "top_potsdam_2_14_RGB_y01_x01.tif",
+      "top_potsdam_2_14_RGB_y01_x02.tif",
+      "top_potsdam_2_14_RGB_y01_x03.tif",
+      "top_potsdam_2_14_RGB_y01_x04.tif",
+      "top_potsdam_2_14_RGB_y01_x05.tif",
+      "top_potsdam_2_14_RGB_y02_x00.tif",
+      "top_potsdam_2_14_RGB_y02_x01.tif",
+      "top_potsdam_2_14_RGB_y02_x02.tif",
+      "top_potsdam_2_14_RGB_y02_x03.tif",
+      "top_potsdam_2_14_RGB_y02_x04.tif",
+      "top_potsdam_2_14_RGB_y02_x05.tif",
+      "top_potsdam_2_14_RGB_y03_x00.tif",
+      "top_potsdam_2_14_RGB_y03_x01.tif",
+      "top_potsdam_2_14_RGB_y03_x02.tif",
+      "top_potsdam_2_14_RGB_y03_x03.tif",
+      "top_potsdam_2_14_RGB_y03_x04.tif",
+      "top_potsdam_2_14_RGB_y03_x05.tif",
+      "top_potsdam_2_14_RGB_y04_x00.tif",
+      "top_potsdam_2_14_RGB_y04_x01.tif",
+      "top_potsdam_2_14_RGB_y04_x02.tif",
+      "top_potsdam_2_14_RGB_y04_x03.tif",
+      "top_potsdam_2_14_RGB_y04_x04.tif",
+      "top_potsdam_2_14_RGB_y04_x05.tif",
+      "top_potsdam_2_14_RGB_y05_x00.tif",
+      "top_potsdam_2_14_RGB_y05_x01.tif",
+      "top_potsdam_2_14_RGB_y05_x02.tif",
+      "top_potsdam_2_14_RGB_y05_x03.tif",
+      "top_potsdam_2_14_RGB_y05_x04.tif",
+      "top_potsdam_2_14_RGB_y05_x05.tif",
+      "top_potsdam_3_13_RGB_y00_x00.tif",
+      "top_potsdam_3_13_RGB_y00_x01.tif",
+      "top_potsdam_3_13_RGB_y00_x02.tif",
+      "top_potsdam_3_13_RGB_y00_x03.tif",
+      "top_potsdam_3_13_RGB_y00_x04.tif",
+      "top_potsdam_3_13_RGB_y00_x05.tif",
+      "top_potsdam_3_13_RGB_y01_x00.tif",
+      "top_potsdam_3_13_RGB_y01_x01.tif",
+      "top_potsdam_3_13_RGB_y01_x02.tif",
+      "top_potsdam_3_13_RGB_y01_x03.tif",
+      "top_potsdam_3_13_RGB_y01_x04.tif",
+      "top_potsdam_3_13_RGB_y01_x05.tif",
+      "top_potsdam_3_13_RGB_y02_x00.tif",
+      "top_potsdam_3_13_RGB_y02_x01.tif",
+      "top_potsdam_3_13_RGB_y02_x02.tif",
+      "top_potsdam_3_13_RGB_y02_x03.tif",
+      "top_potsdam_3_13_RGB_y02_x04.tif",
+      "top_potsdam_3_13_RGB_y02_x05.tif",
+      "top_potsdam_3_13_RGB_y03_x00.tif",
+      "top_potsdam_3_13_RGB_y03_x01.tif",
+      "top_potsdam_3_13_RGB_y03_x02.tif",
+      "top_potsdam_3_13_RGB_y03_x03.tif",
+      "top_potsdam_3_13_RGB_y03_x04.tif",
+      "top_potsdam_3_13_RGB_y03_x05.tif",
+      "top_potsdam_3_13_RGB_y04_x00.tif",
+      "top_potsdam_3_13_RGB_y04_x01.tif",
+      "top_potsdam_3_13_RGB_y04_x02.tif",
+      "top_potsdam_3_13_RGB_y04_x03.tif",
+      "top_potsdam_3_13_RGB_y04_x04.tif",
+      "top_potsdam_3_13_RGB_y04_x05.tif",
+      "top_potsdam_3_13_RGB_y05_x00.tif",
+      "top_potsdam_3_13_RGB_y05_x01.tif",
+      "top_potsdam_3_13_RGB_y05_x02.tif",
+      "top_potsdam_3_13_RGB_y05_x03.tif",
+      "top_potsdam_3_13_RGB_y05_x04.tif",
+      "top_potsdam_3_13_RGB_y05_x05.tif",
+      "top_potsdam_3_14_RGB_y00_x00.tif",
+      "top_potsdam_3_14_RGB_y00_x01.tif",
+      "top_potsdam_3_14_RGB_y00_x02.tif",
+      "top_potsdam_3_14_RGB_y00_x03.tif",
+      "top_potsdam_3_14_RGB_y00_x04.tif",
+      "top_potsdam_3_14_RGB_y00_x05.tif",
+      "top_potsdam_3_14_RGB_y01_x00.tif",
+      "top_potsdam_3_14_RGB_y01_x01.tif",
+      "top_potsdam_3_14_RGB_y01_x02.tif",
+      "top_potsdam_3_14_RGB_y01_x03.tif",
+      "top_potsdam_3_14_RGB_y01_x04.tif",
+      "top_potsdam_3_14_RGB_y01_x05.tif",
+      "top_potsdam_3_14_RGB_y02_x00.tif",
+      "top_potsdam_3_14_RGB_y02_x01.tif",
+      "top_potsdam_3_14_RGB_y02_x02.tif",
+      "top_potsdam_3_14_RGB_y02_x03.tif",
+      "top_potsdam_3_14_RGB_y02_x04.tif",
+      "top_potsdam_3_14_RGB_y02_x05.tif",
+      "top_potsdam_3_14_RGB_y03_x00.tif",
+      "top_potsdam_3_14_RGB_y03_x01.tif",
+      "top_potsdam_3_14_RGB_y03_x02.tif",
+      "top_potsdam_3_14_RGB_y03_x03.tif",
+      "top_potsdam_3_14_RGB_y03_x04.tif",
+      "top_potsdam_3_14_RGB_y03_x05.tif",
+      "top_potsdam_3_14_RGB_y04_x00.tif",
+      "top_potsdam_3_14_RGB_y04_x01.tif",
+      "top_potsdam_3_14_RGB_y04_x02.tif",
+      "top_potsdam_3_14_RGB_y04_x03.tif",
+      "top_potsdam_3_14_RGB_y04_x04.tif",
+      "top_potsdam_3_14_RGB_y04_x05.tif",
+      "top_potsdam_3_14_RGB_y05_x00.tif",
+      "top_potsdam_3_14_RGB_y05_x01.tif",
+      "top_potsdam_3_14_RGB_y05_x02.tif",
+      "top_potsdam_3_14_RGB_y05_x03.tif",
+      "top_potsdam_3_14_RGB_y05_x04.tif",
+      "top_potsdam_3_14_RGB_y05_x05.tif",
+      "top_potsdam_4_13_RGB_y00_x00.tif",
+      "top_potsdam_4_13_RGB_y00_x01.tif",
+      "top_potsdam_4_13_RGB_y00_x02.tif",
+      "top_potsdam_4_13_RGB_y00_x03.tif",
+      "top_potsdam_4_13_RGB_y00_x04.tif",
+      "top_potsdam_4_13_RGB_y00_x05.tif",
+      "top_potsdam_4_13_RGB_y01_x00.tif",
+      "top_potsdam_4_13_RGB_y01_x01.tif",
+      "top_potsdam_4_13_RGB_y01_x02.tif",
+      "top_potsdam_4_13_RGB_y01_x03.tif",
+      "top_potsdam_4_13_RGB_y01_x04.tif",
+      "top_potsdam_4_13_RGB_y01_x05.tif",
+      "top_potsdam_4_13_RGB_y02_x00.tif",
+      "top_potsdam_4_13_RGB_y02_x01.tif",
+      "top_potsdam_4_13_RGB_y02_x02.tif",
+      "top_potsdam_4_13_RGB_y02_x03.tif",
+      "top_potsdam_4_13_RGB_y02_x04.tif",
+      "top_potsdam_4_13_RGB_y02_x05.tif",
+      "top_potsdam_4_13_RGB_y03_x00.tif",
+      "top_potsdam_4_13_RGB_y03_x01.tif",
+      "top_potsdam_4_13_RGB_y03_x02.tif",
+      "top_potsdam_4_13_RGB_y03_x03.tif",
+      "top_potsdam_4_13_RGB_y03_x04.tif",
+      "top_potsdam_4_13_RGB_y03_x05.tif",
+      "top_potsdam_4_13_RGB_y04_x00.tif",
+      "top_potsdam_4_13_RGB_y04_x01.tif",
+      "top_potsdam_4_13_RGB_y04_x02.tif",
+      "top_potsdam_4_13_RGB_y04_x03.tif",
+      "top_potsdam_4_13_RGB_y04_x04.tif",
+      "top_potsdam_4_13_RGB_y04_x05.tif",
+      "top_potsdam_4_13_RGB_y05_x00.tif",
+      "top_potsdam_4_13_RGB_y05_x01.tif",
+      "top_potsdam_4_13_RGB_y05_x02.tif",
+      "top_potsdam_4_13_RGB_y05_x03.tif",
+      "top_potsdam_4_13_RGB_y05_x04.tif",
+      "top_potsdam_4_13_RGB_y05_x05.tif",
+      "top_potsdam_4_14_RGB_y00_x00.tif",
+      "top_potsdam_4_14_RGB_y00_x01.tif",
+      "top_potsdam_4_14_RGB_y00_x02.tif",
+      "top_potsdam_4_14_RGB_y00_x03.tif",
+      "top_potsdam_4_14_RGB_y00_x04.tif",
+      "top_potsdam_4_14_RGB_y00_x05.tif",
+      "top_potsdam_4_14_RGB_y01_x00.tif",
+      "top_potsdam_4_14_RGB_y01_x01.tif",
+      "top_potsdam_4_14_RGB_y01_x02.tif",
+      "top_potsdam_4_14_RGB_y01_x03.tif",
+      "top_potsdam_4_14_RGB_y01_x04.tif",
+      "top_potsdam_4_14_RGB_y01_x05.tif",
+      "top_potsdam_4_14_RGB_y02_x00.tif",
+      "top_potsdam_4_14_RGB_y02_x01.tif",
+      "top_potsdam_4_14_RGB_y02_x02.tif",
+      "top_potsdam_4_14_RGB_y02_x03.tif",
+      "top_potsdam_4_14_RGB_y02_x04.tif",
+      "top_potsdam_4_14_RGB_y02_x05.tif",
+      "top_potsdam_4_14_RGB_y03_x00.tif",
+      "top_potsdam_4_14_RGB_y03_x01.tif",
+      "top_potsdam_4_14_RGB_y03_x02.tif",
+      "top_potsdam_4_14_RGB_y03_x03.tif",
+      "top_potsdam_4_14_RGB_y03_x04.tif",
+      "top_potsdam_4_14_RGB_y03_x05.tif",
+      "top_potsdam_4_14_RGB_y04_x00.tif",
+      "top_potsdam_4_14_RGB_y04_x01.tif",
+      "top_potsdam_4_14_RGB_y04_x02.tif",
+      "top_potsdam_4_14_RGB_y04_x03.tif",
+      "top_potsdam_4_14_RGB_y04_x04.tif",
+      "top_potsdam_4_14_RGB_y04_x05.tif",
+      "top_potsdam_4_14_RGB_y05_x00.tif",
+      "top_potsdam_4_14_RGB_y05_x01.tif",
+      "top_potsdam_4_14_RGB_y05_x02.tif",
+      "top_potsdam_4_14_RGB_y05_x03.tif",
+      "top_potsdam_4_14_RGB_y05_x04.tif",
+      "top_potsdam_4_14_RGB_y05_x05.tif",
+      "top_potsdam_4_15_RGB_y00_x00.tif",
+      "top_potsdam_4_15_RGB_y00_x01.tif",
+      "top_potsdam_4_15_RGB_y00_x02.tif",
+      "top_potsdam_4_15_RGB_y00_x03.tif",
+      "top_potsdam_4_15_RGB_y00_x04.tif",
+      "top_potsdam_4_15_RGB_y00_x05.tif",
+      "top_potsdam_4_15_RGB_y01_x00.tif",
+      "top_potsdam_4_15_RGB_y01_x01.tif",
+      "top_potsdam_4_15_RGB_y01_x02.tif",
+      "top_potsdam_4_15_RGB_y01_x03.tif",
+      "top_potsdam_4_15_RGB_y01_x04.tif",
+      "top_potsdam_4_15_RGB_y01_x05.tif",
+      "top_potsdam_4_15_RGB_y02_x00.tif",
+      "top_potsdam_4_15_RGB_y02_x01.tif",
+      "top_potsdam_4_15_RGB_y02_x02.tif",
+      "top_potsdam_4_15_RGB_y02_x03.tif",
+      "top_potsdam_4_15_RGB_y02_x04.tif",
+      "top_potsdam_4_15_RGB_y02_x05.tif",
+      "top_potsdam_4_15_RGB_y03_x00.tif",
+      "top_potsdam_4_15_RGB_y03_x01.tif",
+      "top_potsdam_4_15_RGB_y03_x02.tif",
+      "top_potsdam_4_15_RGB_y03_x03.tif",
+      "top_potsdam_4_15_RGB_y03_x04.tif",
+      "top_potsdam_4_15_RGB_y03_x05.tif",
+      "top_potsdam_4_15_RGB_y04_x00.tif",
+      "top_potsdam_4_15_RGB_y04_x01.tif",
+      "top_potsdam_4_15_RGB_y04_x02.tif",
+      "top_potsdam_4_15_RGB_y04_x03.tif",
+      "top_potsdam_4_15_RGB_y04_x04.tif",
+      "top_potsdam_4_15_RGB_y04_x05.tif",
+      "top_potsdam_4_15_RGB_y05_x00.tif",
+      "top_potsdam_4_15_RGB_y05_x01.tif",
+      "top_potsdam_4_15_RGB_y05_x02.tif",
+      "top_potsdam_4_15_RGB_y05_x03.tif",
+      "top_potsdam_4_15_RGB_y05_x04.tif",
+      "top_potsdam_4_15_RGB_y05_x05.tif",
+      "top_potsdam_5_13_RGB_y00_x00.tif",
+      "top_potsdam_5_13_RGB_y00_x01.tif",
+      "top_potsdam_5_13_RGB_y00_x02.tif",
+      "top_potsdam_5_13_RGB_y00_x03.tif",
+      "top_potsdam_5_13_RGB_y00_x04.tif",
+      "top_potsdam_5_13_RGB_y00_x05.tif",
+      "top_potsdam_5_13_RGB_y01_x00.tif",
+      "top_potsdam_5_13_RGB_y01_x01.tif",
+      "top_potsdam_5_13_RGB_y01_x02.tif",
+      "top_potsdam_5_13_RGB_y01_x03.tif",
+      "top_potsdam_5_13_RGB_y01_x04.tif",
+      "top_potsdam_5_13_RGB_y01_x05.tif",
+      "top_potsdam_5_13_RGB_y02_x00.tif",
+      "top_potsdam_5_13_RGB_y02_x01.tif",
+      "top_potsdam_5_13_RGB_y02_x02.tif",
+      "top_potsdam_5_13_RGB_y02_x03.tif",
+      "top_potsdam_5_13_RGB_y02_x04.tif",
+      "top_potsdam_5_13_RGB_y02_x05.tif",
+      "top_potsdam_5_13_RGB_y03_x00.tif",
+      "top_potsdam_5_13_RGB_y03_x01.tif",
+      "top_potsdam_5_13_RGB_y03_x02.tif",
+      "top_potsdam_5_13_RGB_y03_x03.tif",
+      "top_potsdam_5_13_RGB_y03_x04.tif",
+      "top_potsdam_5_13_RGB_y03_x05.tif",
+      "top_potsdam_5_13_RGB_y04_x00.tif",
+      "top_potsdam_5_13_RGB_y04_x01.tif",
+      "top_potsdam_5_13_RGB_y04_x02.tif",
+      "top_potsdam_5_13_RGB_y04_x03.tif",
+      "top_potsdam_5_13_RGB_y04_x04.tif",
+      "top_potsdam_5_13_RGB_y04_x05.tif",
+      "top_potsdam_5_13_RGB_y05_x00.tif",
+      "top_potsdam_5_13_RGB_y05_x01.tif",
+      "top_potsdam_5_13_RGB_y05_x02.tif",
+      "top_potsdam_5_13_RGB_y05_x03.tif",
+      "top_potsdam_5_13_RGB_y05_x04.tif",
+      "top_potsdam_5_13_RGB_y05_x05.tif",
+      "top_potsdam_5_14_RGB_y00_x00.tif",
+      "top_potsdam_5_14_RGB_y00_x01.tif",
+      "top_potsdam_5_14_RGB_y00_x02.tif",
+      "top_potsdam_5_14_RGB_y00_x03.tif",
+      "top_potsdam_5_14_RGB_y00_x04.tif",
+      "top_potsdam_5_14_RGB_y00_x05.tif",
+      "top_potsdam_5_14_RGB_y01_x00.tif",
+      "top_potsdam_5_14_RGB_y01_x01.tif",
+      "top_potsdam_5_14_RGB_y01_x02.tif",
+      "top_potsdam_5_14_RGB_y01_x03.tif",
+      "top_potsdam_5_14_RGB_y01_x04.tif",
+      "top_potsdam_5_14_RGB_y01_x05.tif",
+      "top_potsdam_5_14_RGB_y02_x00.tif",
+      "top_potsdam_5_14_RGB_y02_x01.tif",
+      "top_potsdam_5_14_RGB_y02_x02.tif",
+      "top_potsdam_5_14_RGB_y02_x03.tif",
+      "top_potsdam_5_14_RGB_y02_x04.tif",
+      "top_potsdam_5_14_RGB_y02_x05.tif",
+      "top_potsdam_5_14_RGB_y03_x00.tif",
+      "top_potsdam_5_14_RGB_y03_x01.tif",
+      "top_potsdam_5_14_RGB_y03_x02.tif",
+      "top_potsdam_5_14_RGB_y03_x03.tif",
+      "top_potsdam_5_14_RGB_y03_x04.tif",
+      "top_potsdam_5_14_RGB_y03_x05.tif",
+      "top_potsdam_5_14_RGB_y04_x00.tif",
+      "top_potsdam_5_14_RGB_y04_x01.tif",
+      "top_potsdam_5_14_RGB_y04_x02.tif",
+      "top_potsdam_5_14_RGB_y04_x03.tif",
+      "top_potsdam_5_14_RGB_y04_x04.tif",
+      "top_potsdam_5_14_RGB_y04_x05.tif",
+      "top_potsdam_5_14_RGB_y05_x00.tif",
+      "top_potsdam_5_14_RGB_y05_x01.tif",
+      "top_potsdam_5_14_RGB_y05_x02.tif",
+      "top_potsdam_5_14_RGB_y05_x03.tif",
+      "top_potsdam_5_14_RGB_y05_x04.tif",
+      "top_potsdam_5_14_RGB_y05_x05.tif",
+      "top_potsdam_5_15_RGB_y00_x00.tif",
+      "top_potsdam_5_15_RGB_y00_x01.tif",
+      "top_potsdam_5_15_RGB_y00_x02.tif",
+      "top_potsdam_5_15_RGB_y00_x03.tif",
+      "top_potsdam_5_15_RGB_y00_x04.tif",
+      "top_potsdam_5_15_RGB_y00_x05.tif",
+      "top_potsdam_5_15_RGB_y01_x00.tif",
+      "top_potsdam_5_15_RGB_y01_x01.tif",
+      "top_potsdam_5_15_RGB_y01_x02.tif",
+      "top_potsdam_5_15_RGB_y01_x03.tif",
+      "top_potsdam_5_15_RGB_y01_x04.tif",
+      "top_potsdam_5_15_RGB_y01_x05.tif",
+      "top_potsdam_5_15_RGB_y02_x00.tif",
+      "top_potsdam_5_15_RGB_y02_x01.tif",
+      "top_potsdam_5_15_RGB_y02_x02.tif",
+      "top_potsdam_5_15_RGB_y02_x03.tif",
+      "top_potsdam_5_15_RGB_y02_x04.tif",
+      "top_potsdam_5_15_RGB_y02_x05.tif",
+      "top_potsdam_5_15_RGB_y03_x00.tif",
+      "top_potsdam_5_15_RGB_y03_x01.tif",
+      "top_potsdam_5_15_RGB_y03_x02.tif",
+      "top_potsdam_5_15_RGB_y03_x03.tif",
+      "top_potsdam_5_15_RGB_y03_x04.tif",
+      "top_potsdam_5_15_RGB_y03_x05.tif",
+      "top_potsdam_5_15_RGB_y04_x00.tif",
+      "top_potsdam_5_15_RGB_y04_x01.tif",
+      "top_potsdam_5_15_RGB_y04_x02.tif",
+      "top_potsdam_5_15_RGB_y04_x03.tif",
+      "top_potsdam_5_15_RGB_y04_x04.tif",
+      "top_potsdam_5_15_RGB_y04_x05.tif",
+      "top_potsdam_5_15_RGB_y05_x00.tif",
+      "top_potsdam_5_15_RGB_y05_x01.tif",
+      "top_potsdam_5_15_RGB_y05_x02.tif",
+      "top_potsdam_5_15_RGB_y05_x03.tif",
+      "top_potsdam_5_15_RGB_y05_x04.tif",
+      "top_potsdam_5_15_RGB_y05_x05.tif",
+      "top_potsdam_6_13_RGB_y00_x00.tif",
+      "top_potsdam_6_13_RGB_y00_x01.tif",
+      "top_potsdam_6_13_RGB_y00_x02.tif",
+      "top_potsdam_6_13_RGB_y00_x03.tif",
+      "top_potsdam_6_13_RGB_y00_x04.tif",
+      "top_potsdam_6_13_RGB_y00_x05.tif",
+      "top_potsdam_6_13_RGB_y01_x00.tif",
+      "top_potsdam_6_13_RGB_y01_x01.tif",
+      "top_potsdam_6_13_RGB_y01_x02.tif",
+      "top_potsdam_6_13_RGB_y01_x03.tif",
+      "top_potsdam_6_13_RGB_y01_x04.tif",
+      "top_potsdam_6_13_RGB_y01_x05.tif",
+      "top_potsdam_6_13_RGB_y02_x00.tif",
+      "top_potsdam_6_13_RGB_y02_x01.tif",
+      "top_potsdam_6_13_RGB_y02_x02.tif",
+      "top_potsdam_6_13_RGB_y02_x03.tif",
+      "top_potsdam_6_13_RGB_y02_x04.tif",
+      "top_potsdam_6_13_RGB_y02_x05.tif",
+      "top_potsdam_6_13_RGB_y03_x00.tif",
+      "top_potsdam_6_13_RGB_y03_x01.tif",
+      "top_potsdam_6_13_RGB_y03_x02.tif",
+      "top_potsdam_6_13_RGB_y03_x03.tif",
+      "top_potsdam_6_13_RGB_y03_x04.tif",
+      "top_potsdam_6_13_RGB_y03_x05.tif",
+      "top_potsdam_6_13_RGB_y04_x00.tif",
+      "top_potsdam_6_13_RGB_y04_x01.tif",
+      "top_potsdam_6_13_RGB_y04_x02.tif",
+      "top_potsdam_6_13_RGB_y04_x03.tif",
+      "top_potsdam_6_13_RGB_y04_x04.tif",
+      "top_potsdam_6_13_RGB_y04_x05.tif",
+      "top_potsdam_6_13_RGB_y05_x00.tif",
+      "top_potsdam_6_13_RGB_y05_x01.tif",
+      "top_potsdam_6_13_RGB_y05_x02.tif",
+      "top_potsdam_6_13_RGB_y05_x03.tif",
+      "top_potsdam_6_13_RGB_y05_x04.tif",
+      "top_potsdam_6_13_RGB_y05_x05.tif",
+      "top_potsdam_6_14_RGB_y00_x00.tif",
+      "top_potsdam_6_14_RGB_y00_x01.tif",
+      "top_potsdam_6_14_RGB_y00_x02.tif",
+      "top_potsdam_6_14_RGB_y00_x03.tif",
+      "top_potsdam_6_14_RGB_y00_x04.tif",
+      "top_potsdam_6_14_RGB_y00_x05.tif",
+      "top_potsdam_6_14_RGB_y01_x00.tif",
+      "top_potsdam_6_14_RGB_y01_x01.tif",
+      "top_potsdam_6_14_RGB_y01_x02.tif",
+      "top_potsdam_6_14_RGB_y01_x03.tif",
+      "top_potsdam_6_14_RGB_y01_x04.tif",
+      "top_potsdam_6_14_RGB_y01_x05.tif",
+      "top_potsdam_6_14_RGB_y02_x00.tif",
+      "top_potsdam_6_14_RGB_y02_x01.tif",
+      "top_potsdam_6_14_RGB_y02_x02.tif",
+      "top_potsdam_6_14_RGB_y02_x03.tif",
+      "top_potsdam_6_14_RGB_y02_x04.tif",
+      "top_potsdam_6_14_RGB_y02_x05.tif",
+      "top_potsdam_6_14_RGB_y03_x00.tif",
+      "top_potsdam_6_14_RGB_y03_x01.tif",
+      "top_potsdam_6_14_RGB_y03_x02.tif",
+      "top_potsdam_6_14_RGB_y03_x03.tif",
+      "top_potsdam_6_14_RGB_y03_x04.tif",
+      "top_potsdam_6_14_RGB_y03_x05.tif",
+      "top_potsdam_6_14_RGB_y04_x00.tif",
+      "top_potsdam_6_14_RGB_y04_x01.tif",
+      "top_potsdam_6_14_RGB_y04_x02.tif",
+      "top_potsdam_6_14_RGB_y04_x03.tif",
+      "top_potsdam_6_14_RGB_y04_x04.tif",
+      "top_potsdam_6_14_RGB_y04_x05.tif",
+      "top_potsdam_6_14_RGB_y05_x00.tif",
+      "top_potsdam_6_14_RGB_y05_x01.tif",
+      "top_potsdam_6_14_RGB_y05_x02.tif",
+      "top_potsdam_6_14_RGB_y05_x03.tif",
+      "top_potsdam_6_14_RGB_y05_x04.tif",
+      "top_potsdam_6_14_RGB_y05_x05.tif",
+      "top_potsdam_6_15_RGB_y00_x00.tif",
+      "top_potsdam_6_15_RGB_y00_x01.tif",
+      "top_potsdam_6_15_RGB_y00_x02.tif",
+      "top_potsdam_6_15_RGB_y00_x03.tif",
+      "top_potsdam_6_15_RGB_y00_x04.tif",
+      "top_potsdam_6_15_RGB_y00_x05.tif",
+      "top_potsdam_6_15_RGB_y01_x00.tif",
+      "top_potsdam_6_15_RGB_y01_x01.tif",
+      "top_potsdam_6_15_RGB_y01_x02.tif",
+      "top_potsdam_6_15_RGB_y01_x03.tif",
+      "top_potsdam_6_15_RGB_y01_x04.tif",
+      "top_potsdam_6_15_RGB_y01_x05.tif",
+      "top_potsdam_6_15_RGB_y02_x00.tif",
+      "top_potsdam_6_15_RGB_y02_x01.tif",
+      "top_potsdam_6_15_RGB_y02_x02.tif",
+      "top_potsdam_6_15_RGB_y02_x03.tif",
+      "top_potsdam_6_15_RGB_y02_x04.tif",
+      "top_potsdam_6_15_RGB_y02_x05.tif",
+      "top_potsdam_6_15_RGB_y03_x00.tif",
+      "top_potsdam_6_15_RGB_y03_x01.tif",
+      "top_potsdam_6_15_RGB_y03_x02.tif",
+      "top_potsdam_6_15_RGB_y03_x03.tif",
+      "top_potsdam_6_15_RGB_y03_x04.tif",
+      "top_potsdam_6_15_RGB_y03_x05.tif",
+      "top_potsdam_6_15_RGB_y04_x00.tif",
+      "top_potsdam_6_15_RGB_y04_x01.tif",
+      "top_potsdam_6_15_RGB_y04_x02.tif",
+      "top_potsdam_6_15_RGB_y04_x03.tif",
+      "top_potsdam_6_15_RGB_y04_x04.tif",
+      "top_potsdam_6_15_RGB_y04_x05.tif",
+      "top_potsdam_6_15_RGB_y05_x00.tif",
+      "top_potsdam_6_15_RGB_y05_x01.tif",
+      "top_potsdam_6_15_RGB_y05_x02.tif",
+      "top_potsdam_6_15_RGB_y05_x03.tif",
+      "top_potsdam_6_15_RGB_y05_x04.tif",
+      "top_potsdam_6_15_RGB_y05_x05.tif",
+      "top_potsdam_7_13_RGB_y00_x00.tif",
+      "top_potsdam_7_13_RGB_y00_x01.tif",
+      "top_potsdam_7_13_RGB_y00_x02.tif",
+      "top_potsdam_7_13_RGB_y00_x03.tif",
+      "top_potsdam_7_13_RGB_y00_x04.tif",
+      "top_potsdam_7_13_RGB_y00_x05.tif",
+      "top_potsdam_7_13_RGB_y01_x00.tif",
+      "top_potsdam_7_13_RGB_y01_x01.tif",
+      "top_potsdam_7_13_RGB_y01_x02.tif",
+      "top_potsdam_7_13_RGB_y01_x03.tif",
+      "top_potsdam_7_13_RGB_y01_x04.tif",
+      "top_potsdam_7_13_RGB_y01_x05.tif",
+      "top_potsdam_7_13_RGB_y02_x00.tif",
+      "top_potsdam_7_13_RGB_y02_x01.tif",
+      "top_potsdam_7_13_RGB_y02_x02.tif",
+      "top_potsdam_7_13_RGB_y02_x03.tif",
+      "top_potsdam_7_13_RGB_y02_x04.tif",
+      "top_potsdam_7_13_RGB_y02_x05.tif",
+      "top_potsdam_7_13_RGB_y03_x00.tif",
+      "top_potsdam_7_13_RGB_y03_x01.tif",
+      "top_potsdam_7_13_RGB_y03_x02.tif",
+      "top_potsdam_7_13_RGB_y03_x03.tif",
+      "top_potsdam_7_13_RGB_y03_x04.tif",
+      "top_potsdam_7_13_RGB_y03_x05.tif",
+      "top_potsdam_7_13_RGB_y04_x00.tif",
+      "top_potsdam_7_13_RGB_y04_x01.tif",
+      "top_potsdam_7_13_RGB_y04_x02.tif",
+      "top_potsdam_7_13_RGB_y04_x03.tif",
+      "top_potsdam_7_13_RGB_y04_x04.tif",
+      "top_potsdam_7_13_RGB_y04_x05.tif",
+      "top_potsdam_7_13_RGB_y05_x00.tif",
+      "top_potsdam_7_13_RGB_y05_x01.tif",
+      "top_potsdam_7_13_RGB_y05_x02.tif",
+      "top_potsdam_7_13_RGB_y05_x03.tif",
+      "top_potsdam_7_13_RGB_y05_x04.tif",
+      "top_potsdam_7_13_RGB_y05_x05.tif"
+    ],
+    "sample_keys_sha256": "dfcdc24a21caf68f02ddf611038a9ceb0eec3dbd6322709aa7e77216821af57e",
+    "num_shards": 1,
+    "shard_index": null,
+    "config": {
+      "dataset": "potsdam",
+      "data_root": "/data/test/datasets/Potsdam/preprocessed_RGB",
+      "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009",
+      "output_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/potsdam/s0",
+      "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/potsdam.pt",
+      "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+      "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+      "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+      "mode": "full",
+      "device": "cuda",
+      "num_shards": 1,
+      "shard_index": 0,
+      "sample_seed": 20260923,
+      "vdd_ontology": "official"
+    },
+    "provenance": "Existing task rules and words were selected on developed data. Frozen finalization is exploratory, not untouched validation.",
+    "sample_count": 504
+  },
+  "shards": [
+    "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/potsdam/s0/results.json"
+  ],
+  "original_merge_preserved": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/potsdam/merged.json",
+  "paired_scored_targets_equal": true,
+  "scalar_agreement_verified": true,
+  "exact_historical_original20_replay": {
+    "potsdam": true
+  },
+  "exact_selected_deployment_replay": true,
+  "historical_expected_field_note": "Frozen manifest field expected_retained_scalar is the historical NaturalShortEdge packed deployment confusion; its spelling is preserved. Independent scalar agreement permits only verified numerical ties.",
+  "deployment_changed_pixels": {
+    "retained": 15,
+    "uniform": 0
+  }
+}

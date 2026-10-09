@@ -1,0 +1,12 @@
+{
+  "aggregation": "mean",
+  "classes": [
+    {"name": "background", "prompts": ["background", "other land cover", "miscellaneous terrain", "unlabeled terrain"]},
+    {"name": "building", "prompts": ["building", "roof", "house", "structure"]},
+    {"name": "road", "prompts": ["road", "street", "paved roadway", "paved road", "transport route"]},
+    {"name": "water", "prompts": ["water", "river", "lake", "pond", "water body"]},
+    {"name": "barren", "prompts": ["barren", "barren land", "bare soil", "bare earth", "exposed ground"]},
+    {"name": "tree", "prompts": ["tree", "trees", "woodland", "forest", "wooded area"]},
+    {"name": "farm", "prompts": ["farm", "farmland", "agricultural land", "cropland", "cultivated field"]}
+  ]
+}

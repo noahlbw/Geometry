@@ -1,0 +1,10 @@
+{
+  "protocol": "Fixed once from VIP's official prompt form: Generate 20 image-caption style noun phrases for {category}, covering synonyms, plurals, hyponyms, and concrete visual variants. No image, label, DINO score, or metric informed these candidates.",
+  "classes": [
+    {"name": "vegetation", "synonyms": ["vegetation", "green vegetation", "plants", "grass", "grassland", "lawn", "shrub", "bushes", "tree canopy", "leafy vegetation", "ground vegetation", "green ground cover", "dense vegetation", "sparse vegetation", "wooded vegetation", "natural vegetation", "roadside vegetation", "park vegetation", "planted vegetation", "crop vegetation"]},
+    {"name": "building", "synonyms": ["building", "buildings", "house", "houses", "roof", "rooftop", "rooftops", "residential building", "industrial building", "warehouse", "office building", "apartment building", "small house", "detached house", "large building", "rectangular building", "bright roof", "dark roof", "building complex", "urban structure"]},
+    {"name": "road", "synonyms": ["road", "roads", "street", "streets", "roadway", "paved road", "asphalt road", "highway", "lane", "traffic lane", "driveway", "rural road", "urban road", "narrow road", "wide road", "road junction", "road intersection", "road network", "linear pavement", "winding road"]},
+    {"name": "vehicle", "synonyms": ["vehicle", "vehicles", "car", "cars", "automobile", "automobiles", "truck", "trucks", "bus", "buses", "van", "vans", "parked car", "parked vehicle", "small car", "passenger car", "delivery truck", "road vehicle", "white car", "dark vehicle"]},
+    {"name": "other", "synonyms": ["other", "background", "miscellaneous ground", "unknown terrain", "unclassified area", "open ground", "empty ground", "mixed surface", "general land cover", "pavement", "parking area", "courtyard", "shadow", "bare ground", "water surface", "sports field", "construction area", "unused land", "cluttered ground", "remaining surface"]}
+  ]
+}

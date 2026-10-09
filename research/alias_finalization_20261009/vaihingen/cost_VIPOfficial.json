@@ -1,0 +1,394 @@
+{
+  "status": "complete",
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "dataset": "vaihingen",
+  "mode": "VIPOfficial",
+  "images": [
+    {
+      "key": "top_mosaic_09cm_area10_y00_x00.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        107.95535007491708,
+        109.72939385101199,
+        111.47221201099455,
+        108.55463100597262,
+        107.32569685205817,
+        108.83655701763928,
+        108.4435919765383
+      ],
+      "median_ms": 108.55463100597262,
+      "p95_ms": 110.94936656299978,
+      "peak_allocated_mib": 1739.28125,
+      "peak_reserved_mib": 2152.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.014052794082090259
+    },
+    {
+      "key": "top_mosaic_09cm_area16_y00_x00.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        109.1796241234988,
+        111.03945807553828,
+        111.82450479827821,
+        109.56773883663118,
+        107.77352307923138,
+        106.10031080432236,
+        106.45719710737467
+      ],
+      "median_ms": 109.1796241234988,
+      "p95_ms": 111.58899078145623,
+      "peak_allocated_mib": 1739.28125,
+      "peak_reserved_mib": 2152.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.0022382268216460943
+    },
+    {
+      "key": "top_mosaic_09cm_area24_y00_x01.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        106.87231086194515,
+        107.71133191883564,
+        107.38604608923197,
+        107.51021490432322,
+        107.38891898654401,
+        108.73457812704146,
+        107.3394741397351
+      ],
+      "median_ms": 107.38891898654401,
+      "p95_ms": 108.42760426457971,
+      "peak_allocated_mib": 1739.28125,
+      "peak_reserved_mib": 2152.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.00217002397403121
+    },
+    {
+      "key": "top_mosaic_09cm_area2_y00_x00.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        106.99343401938677,
+        108.69696503505111,
+        106.16095503792167,
+        109.46408798918128,
+        107.0539120119065,
+        107.02902008779347,
+        108.6269710212946
+      ],
+      "median_ms": 107.0539120119065,
+      "p95_ms": 109.23395110294223,
+      "peak_allocated_mib": 1739.28125,
+      "peak_reserved_mib": 2152.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.002095803851261735
+    },
+    {
+      "key": "top_mosaic_09cm_area33_y01_x01.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        105.8218339458108,
+        108.85502910241485,
+        108.47139288671315,
+        106.72069690190256,
+        107.16936411336064,
+        107.27075207978487,
+        108.16203686408699
+      ],
+      "median_ms": 107.27075207978487,
+      "p95_ms": 108.73993823770434,
+      "peak_allocated_mib": 1739.28125,
+      "peak_reserved_mib": 2152.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.002260901965200901
+    },
+    {
+      "key": "top_mosaic_09cm_area38_y02_x02.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        109.75287412293255,
+        107.85073996521533,
+        106.52199201285839,
+        106.89194384030998,
+        107.11302701383829,
+        106.18247580714524,
+        107.81223699450493
+      ],
+      "median_ms": 107.11302701383829,
+      "p95_ms": 109.18223387561738,
+      "peak_allocated_mib": 1739.28125,
+      "peak_reserved_mib": 2152.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.0021343939006328583
+    },
+    {
+      "key": "top_mosaic_09cm_area8_y02_x01.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        128.5588820464909,
+        106.58461088314652,
+        107.23621514625847,
+        106.20604595169425,
+        106.66409088298678,
+        108.2956891041249,
+        108.71530906297266
+      ],
+      "median_ms": 107.23621514625847,
+      "p95_ms": 122.60581015143542,
+      "peak_allocated_mib": 1739.28125,
+      "peak_reserved_mib": 2152.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.002216560998931527
+    }
+  ],
+  "metadata": {
+    "words": "Pinned upstream official queries",
+    "template": "openai_imagenet_template",
+    "scope": "Paper configuration reimplementation with explicit all-masked-row self-Value repair; not published benchmark timing.",
+    "view_policy": "Adapter long-edge448/crop336/stride112",
+    "settings": {
+      "tau": 1.0,
+      "tem": 10.0,
+      "prob_thd": 0.1,
+      "background": true,
+      "bg_idx": 5,
+      "resize_long_edge": 448,
+      "slide_crop": 336,
+      "slide_stride": 112,
+      "logit_scale": 40.0
+    },
+    "backbones_resident": 1,
+    "aliases": 10
+  },
+  "initialization_and_text_seconds": 15.186911553144455,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "median_ms": 107.71133191883564,
+  "p95_ms": 111.29911043681204,
+  "mean_image_median_ms": 107.68529719540051,
+  "peak_allocated_mib": 1739.28125,
+  "peak_reserved_mib": 2152.0,
+  "scope": "Seven deterministic spread full inputs and7 warmed synchronized repeats. One candidate in this process; no other GPU process allowed. Host/other-GPU contention is possible. Not full-dataset mean or independent accuracy validation.",
+  "boundary": "Decode/model loading/text encoding excluded and reported separately. Includes resizing/all encoding/semantic readout/alias aggregation/writeback/original-size restoration/CPU argmax output."
+}

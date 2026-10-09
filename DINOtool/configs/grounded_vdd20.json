@@ -1,0 +1,12 @@
+{
+  "protocol": "Frozen VDD aliases, 20 phrases per class",
+  "classes": [
+    {"name":"background","synonyms":["background","background clutter","unlabeled area","dark background","scene background","non target area","unclassified area","empty background","ground background","shadow background","miscellaneous background","neutral background","dark ground","open background","out of class","non semantic area","distant background","image background","unassigned area","other background"]},
+    {"name":"building","synonyms":["building","buildings","house","houses","rooftop","roof","residential building","industrial building","urban structure","constructed structure","apartment block","warehouse","large building","small building","building facade","built structure","dense buildings","commercial building","concrete building","urban building"]},
+    {"name":"road","synonyms":["road","roads","street","streets","roadway","paved road","asphalt road","highway","urban road","rural road","road lane","traffic lane","road junction","road intersection","transport corridor","linear pavement","wide road","narrow road","road surface","driving road"]},
+    {"name":"vegetation","synonyms":["vegetation","green vegetation","plant cover","trees","tree canopy","forest","woodland","grass","grassland","low vegetation","shrubs","bushes","greenery","leafy cover","natural vegetation","roadside vegetation","vegetated ground","park vegetation","dense foliage","vegetation patch"]},
+    {"name":"vehicle","synonyms":["vehicle","vehicles","car","cars","automobile","truck","bus","van","moving car","parked car","moving vehicle","road vehicle","traffic vehicle","small vehicle","large vehicle","vehicle cluster","motor vehicle","transport vehicle","driving vehicle","automotive vehicle"]},
+    {"name":"roof","synonyms":["roof","roofs","rooftop","rooftops","building roof","house roof","red roof","blue roof","flat roof","pitched roof","metal roof","tile roof","roof surface","visible roof","urban roof","large roof","small roof","roof plane","roof structure","covered roof"]},
+    {"name":"water","synonyms":["water","water body","river","lake","pond","stream","canal","reservoir","blue water","open water","surface water","waterway","river channel","lake surface","pond water","inland water","water area","water surface","wet area","water region"]}
+  ]
+}

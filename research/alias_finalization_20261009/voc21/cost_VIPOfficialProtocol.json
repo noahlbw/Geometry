@@ -1,0 +1,394 @@
+{
+  "status": "complete",
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "dataset": "voc21",
+  "mode": "VIPOfficialProtocol",
+  "images": [
+    {
+      "key": "2007_000033",
+      "shape": [
+        366,
+        500
+      ],
+      "milliseconds": [
+        91.11184813082218,
+        90.71328607387841,
+        88.7663490138948,
+        92.53277606330812,
+        89.35963804833591,
+        88.80041586235166,
+        88.9741440769285
+      ],
+      "median_ms": 89.35963804833591,
+      "p95_ms": 92.10649768356234,
+      "peak_allocated_mib": 1744.8466796875,
+      "peak_reserved_mib": 2126.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        }
+      ],
+      "decode_seconds": 0.21892284182831645
+    },
+    {
+      "key": "2007_007498",
+      "shape": [
+        376,
+        500
+      ],
+      "milliseconds": [
+        62.024730956181884,
+        60.29216991737485,
+        60.247265035286546,
+        61.78624788299203,
+        60.43664598837495,
+        59.820603812113404,
+        63.75979399308562
+      ],
+      "median_ms": 60.43664598837495,
+      "p95_ms": 63.2392750820145,
+      "peak_allocated_mib": 1744.50830078125,
+      "peak_reserved_mib": 2126.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.0029503179248422384
+    },
+    {
+      "key": "2008_003856",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        60.66402303986251,
+        59.88345597870648,
+        60.41163788177073,
+        60.6059308629483,
+        60.1278159301728,
+        60.85403310135007,
+        60.61240006238222
+      ],
+      "median_ms": 60.6059308629483,
+      "p95_ms": 60.7970300829038,
+      "peak_allocated_mib": 1744.5361328125,
+      "peak_reserved_mib": 2126.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.0039509611669927835
+    },
+    {
+      "key": "2009_001644",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        60.11650199070573,
+        60.10655499994755,
+        61.00902194157243,
+        63.06007690727711,
+        61.094522010535,
+        60.736317886039615,
+        60.738472966477275
+      ],
+      "median_ms": 60.738472966477275,
+      "p95_ms": 62.470410438254476,
+      "peak_allocated_mib": 1744.5361328125,
+      "peak_reserved_mib": 2126.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.0031704120337963104
+    },
+    {
+      "key": "2010_000552",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        60.72350102476776,
+        60.45712297782302,
+        60.76314812526107,
+        60.69939490407705,
+        60.937496135011315,
+        60.83944905549288,
+        60.98080682568252
+      ],
+      "median_ms": 60.76314812526107,
+      "p95_ms": 60.96781361848116,
+      "peak_allocated_mib": 1744.5361328125,
+      "peak_reserved_mib": 2126.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.003733286866918206
+    },
+    {
+      "key": "2010_005180",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        60.6611508410424,
+        61.05778296478093,
+        60.618855990469456,
+        61.345614958554506,
+        61.66827096603811,
+        61.20795710012317,
+        60.92625507153571
+      ],
+      "median_ms": 61.05778296478093,
+      "p95_ms": 61.57147416379303,
+      "peak_allocated_mib": 1744.5361328125,
+      "peak_reserved_mib": 2126.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.0022058598697185516
+    },
+    {
+      "key": "2011_003271",
+      "shape": [
+        500,
+        500
+      ],
+      "milliseconds": [
+        32.23281097598374,
+        32.551129115745425,
+        31.75402618944645,
+        31.86325589194894,
+        33.796072006225586,
+        34.34796794317663,
+        33.04951195605099
+      ],
+      "median_ms": 32.551129115745425,
+      "p95_ms": 34.182399162091315,
+      "peak_allocated_mib": 1741.83837890625,
+      "peak_reserved_mib": 2154.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 1
+        },
+        {
+          "geometry": 0,
+          "wide": 1
+        },
+        {
+          "geometry": 0,
+          "wide": 1
+        },
+        {
+          "geometry": 0,
+          "wide": 1
+        },
+        {
+          "geometry": 0,
+          "wide": 1
+        },
+        {
+          "geometry": 0,
+          "wide": 1
+        },
+        {
+          "geometry": 0,
+          "wide": 1
+        }
+      ],
+      "decode_seconds": 0.0039363710675388575
+    }
+  ],
+  "metadata": {
+    "words": "Pinned upstream official queries",
+    "template": "seg_template",
+    "scope": "Paper configuration reimplementation with explicit all-masked-row self-Value repair; not published benchmark timing.",
+    "view_policy": "Official natural short-edge336/maxlong2048/crop336/overlap224/actual stride112",
+    "settings": {
+      "tau": 3.0,
+      "tem": 0.3,
+      "prob_thd": 0.28,
+      "background": true,
+      "bg_idx": 0,
+      "resize_long_edge": 448,
+      "slide_crop": 336,
+      "slide_stride": 112,
+      "logit_scale": 40.0
+    },
+    "backbones_resident": 1,
+    "aliases": 119
+  },
+  "initialization_and_text_seconds": 15.38631786685437,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "median_ms": 60.736317886039615,
+  "p95_ms": 90.1718268636614,
+  "mean_image_median_ms": 60.78753543884626,
+  "peak_allocated_mib": 1744.8466796875,
+  "peak_reserved_mib": 2154.0,
+  "scope": "Seven deterministic spread full inputs and7 warmed synchronized repeats. One candidate in this process; no other GPU process allowed. Host/other-GPU contention is possible. Not full-dataset mean or independent accuracy validation.",
+  "boundary": "Decode/model loading/text encoding excluded and reported separately. Includes resizing/all encoding/semantic readout/alias aggregation/writeback/original-size restoration/CPU argmax output."
+}

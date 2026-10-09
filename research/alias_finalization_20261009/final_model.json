@@ -1,0 +1,1284 @@
+{
+  "implementation": "geometry-task-alias-global-finalization-v1-20261009",
+  "ordinary_alias_policy": "uniform",
+  "factory": "dinotool.taxonomy_inference.TaxonomyInference.for_finalization",
+  "frozen_input_manifest": "protocol.json",
+  "datasets": [
+    "vdd",
+    "potsdam",
+    "voc20",
+    "voc21",
+    "ade150",
+    "context60",
+    "udd5",
+    "oem",
+    "vaihingen",
+    "landcoverai",
+    "loveda",
+    "context59",
+    "coco_object81",
+    "coco_stuff171",
+    "flair1"
+  ],
+  "factory_arguments": "Explicit family/background/residual_features from frozen protocol; local_background=retained. No new per-domain arm selection.",
+  "evidence": "comparison_summary.json and statistics_full/paired_statistics.json",
+  "budget": {
+    "max_geometry": 4,
+    "max_wide": 4,
+    "fine": 0,
+    "new_visual_forwards": 0,
+    "alias_increment_limit": 0.2,
+    "whole_image_target_vip_ratio": [
+      2,
+      3
+    ],
+    "expansion_stop_vip_ratio": 6
+  },
+  "expected_protocol_images": 45200,
+  "semantic_screening_contribution": false,
+  "default_incumbent_api_changed": false,
+  "conditional_alias": "LME response responsibility and inherited image salience remain. These do not certify semantic reliability.",
+  "ordinary_weighting": "Disabled globally for simplification.",
+  "provenance": "Existing task rules and words were selected on developed data. Frozen finalization is exploratory, not untouched validation.",
+  "vip_comparators": {
+    "vdd": {
+      "vdd": {
+        "pool20": {
+          "miou": 51.4827,
+          "source": "research\\vip_official20_distillation_full_20261003\\vdd\\merged.json",
+          "method": "VIP_All20",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {
+            "non_residual_mean_iou_percent": 53.9689
+          }
+        },
+        "declared": {
+          "miou": 52.0647,
+          "source": "research\\vip_paper_distillation_full_20261003\\vdd\\merged.json",
+          "method": "direct_protocol_metric",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {
+            "non_residual_mean_iou_percent": 54.8116
+          }
+        }
+      }
+    },
+    "potsdam": {
+      "potsdam": {
+        "pool20": {
+          "miou": 42.3028,
+          "source": "research\\vip_official20_distillation_full_20261003\\potsdam\\merged.json",
+          "method": "VIP_All20",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {}
+        },
+        "declared": {
+          "miou": 44.8995,
+          "source": "research\\vip_paper_distillation_full_20261003\\potsdam\\merged.json",
+          "method": "direct_protocol_metric",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {}
+        }
+      }
+    },
+    "voc20": {
+      "voc20": {
+        "declared": {
+          "miou": 92.5051,
+          "source": "research\\natural_text_adaptation_20261003\\voc20\\full_merged.json",
+          "method": "VIP_Official_Finite",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {}
+        }
+      }
+    },
+    "voc21": {
+      "voc21": {
+        "declared": {
+          "miou": 73.2591,
+          "source": "research\\natural_text_adaptation_20261003\\voc21\\full_merged.json",
+          "method": "VIP_Official_Finite",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {
+            "foreground_mean_iou_percent": 72.3574
+          }
+        }
+      }
+    },
+    "ade150": {
+      "ade150": {
+        "declared": {
+          "miou": 29.1387,
+          "source": "research\\natural_text_adaptation_20261003\\ade150\\full_merged.json",
+          "method": "VIP_Official_Finite",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {}
+        }
+      }
+    },
+    "context60": {
+      "context60": {
+        "declared": {
+          "miou": 42.5987,
+          "source": "research\\context60_official_finite_20261007\\merged.json",
+          "method": "VIP_Official_Finite",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {
+            "foreground_mean_iou_percent": 43.0323
+          }
+        }
+      }
+    },
+    "udd5": {
+      "udd5": {
+        "pool20": {
+          "miou": 41.4336,
+          "source": "research\\vip_paper_distillation_full_20261003\\udd5\\merged.json",
+          "method": "VIP_All20",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {
+            "non_residual_mean_iou_percent": 44.168
+          }
+        },
+        "declared": {
+          "miou": 44.9713,
+          "source": "research\\vip_paper_distillation_full_20261003\\udd5\\merged.json",
+          "method": "VIP_Distilled",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {
+            "non_residual_mean_iou_percent": 48.6691
+          }
+        }
+      }
+    },
+    "oem": {
+      "oem": {
+        "pool20": {
+          "miou": 33.2064,
+          "source": "research\\vip_paper_distillation_full_20261003\\oem\\merged.json",
+          "method": "VIP_All20",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {}
+        },
+        "declared": {
+          "miou": 35.0388,
+          "source": "research\\vip_paper_distillation_full_20261003\\oem\\merged.json",
+          "method": "VIP_Distilled",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {}
+        }
+      }
+    },
+    "vaihingen": {
+      "vaihingen": {
+        "pool20": {
+          "miou": 47.362,
+          "source": "research\\shared_rival_soft20_full_20261005\\vip_all20_vaihingen.json",
+          "method": "direct_protocol_metric",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {}
+        },
+        "declared": {
+          "miou": 41.9062,
+          "source": "research\\vip_paper_distillation_full_20261003\\vaihingen\\merged.json",
+          "method": "direct_protocol_metric",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {}
+        }
+      }
+    },
+    "landcoverai": {
+      "landcoverai": {
+        "pool20": {
+          "miou": 54.942,
+          "source": "research\\vip_paper_distillation_full_20261003\\landcoverai\\merged.json",
+          "method": "VIP_All20",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {
+            "foreground_mean_iou_percent": 50.1322
+          }
+        },
+        "declared": {
+          "miou": 50.298,
+          "source": "research\\vip_paper_distillation_full_20261003\\landcoverai\\merged.json",
+          "method": "VIP_Distilled",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {
+            "foreground_mean_iou_percent": 44.7117
+          }
+        }
+      }
+    },
+    "loveda": {
+      "P": {
+        "pool20": {
+          "miou": 56.311,
+          "source": "research\\vip_paper_distillation_full_20261003\\loveda\\merged.json",
+          "method": "VIP_All20",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {}
+        },
+        "declared": {
+          "miou": 55.0261,
+          "source": "research\\vip_paper_distillation_full_20261003\\loveda\\merged.json",
+          "method": "VIP_Distilled",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {}
+        }
+      },
+      "D": {
+        "pool20": {
+          "miou": 36.1457,
+          "source": "research\\vip_paper_distillation_full_20261003\\loveda\\merged.json",
+          "method": "VIP_All20",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {
+            "foreground_mean_iou_percent": 40.1802
+          }
+        },
+        "declared": {
+          "miou": 35.3436,
+          "source": "research\\vip_paper_distillation_full_20261003\\loveda\\merged.json",
+          "method": "VIP_Distilled",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {
+            "foreground_mean_iou_percent": 39.2398
+          }
+        }
+      }
+    },
+    "context59": {
+      "context59": {
+        "declared": null
+      }
+    },
+    "coco_object81": {
+      "coco_object81": {
+        "declared": {
+          "miou": 48.9955,
+          "source": "research\\natural_text_adaptation_20261003\\coco_object81\\full_merged.json",
+          "method": "VIP_Official_Finite",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {
+            "foreground_mean_iou_percent": 48.5939
+          }
+        }
+      }
+    },
+    "coco_stuff171": {
+      "coco_stuff171": {
+        "declared": {
+          "miou": 33.4867,
+          "source": "research\\natural_text_adaptation_20261003\\coco_stuff171\\full_merged.json",
+          "method": "VIP_Official_Finite",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {}
+        }
+      }
+    },
+    "flair1": {
+      "flair1": {
+        "pool20": {
+          "miou": 35.2977,
+          "source": "research\\vip_paper_distillation_full_20261003\\flair1\\merged.json",
+          "method": "VIP_All20",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {}
+        },
+        "declared": {
+          "miou": 36.6074,
+          "source": "research\\vip_paper_distillation_full_20261003\\flair1\\merged.json",
+          "method": "VIP_Distilled",
+          "checkpoint_identity_verified": true,
+          "scored_class_order_verified": true,
+          "scored_name_normalization": "Surrounding display whitespace only; no semantic or ID remapping.",
+          "extra_metrics": {}
+        }
+      }
+    }
+  },
+  "limitations": [
+    "No untouched validation from rerunning developed domains.",
+    "Nearest bounded SCLIP control belongs to fixed patch-only2, not this task route.",
+    "VIP observer and salience are attributed; quadratic solve is classical.",
+    "No universal positive transfer or all-domain SOTA claim."
+  ],
+  "vocabulary_budget": {
+    "vdd": {
+      "original_imagenet": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "focused20": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    "potsdam": {
+      "original_imagenet": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "focused20": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    "voc20": {
+      "semantic_segmentation": [
+        4,
+        3,
+        3,
+        4,
+        5,
+        6,
+        4,
+        4,
+        10,
+        7,
+        5,
+        4,
+        4,
+        3,
+        18,
+        5,
+        3,
+        5,
+        4,
+        6
+      ]
+    },
+    "voc21": {
+      "semantic_segmentation": [
+        56,
+        4,
+        3,
+        3,
+        4,
+        6,
+        6,
+        4,
+        4,
+        9,
+        7,
+        4,
+        4,
+        4,
+        3,
+        18,
+        5,
+        4,
+        5,
+        4,
+        6
+      ]
+    },
+    "ade150": {
+      "semantic_segmentation": [
+        5,
+        8,
+        9,
+        5,
+        6,
+        6,
+        4,
+        1,
+        4,
+        4,
+        4,
+        5,
+        18,
+        5,
+        5,
+        3,
+        4,
+        5,
+        4,
+        4,
+        4,
+        5,
+        3,
+        5,
+        3,
+        1,
+        4,
+        1,
+        4,
+        1,
+        3,
+        1,
+        4,
+        4,
+        4,
+        5,
+        4,
+        3,
+        3,
+        1,
+        3,
+        1,
+        3,
+        3,
+        3,
+        2,
+        4,
+        3,
+        1,
+        3,
+        3,
+        2,
+        1,
+        2,
+        1,
+        3,
+        3,
+        2,
+        2,
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        3,
+        1,
+        3,
+        2,
+        3,
+        1,
+        5,
+        4,
+        1,
+        4,
+        1,
+        4,
+        1,
+        1,
+        4,
+        4,
+        1,
+        2,
+        4,
+        1,
+        2,
+        3,
+        2,
+        5,
+        4,
+        4,
+        1,
+        5,
+        1,
+        1,
+        5,
+        2,
+        6,
+        4,
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        3,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        2,
+        4,
+        3,
+        1,
+        3,
+        1,
+        2,
+        1,
+        3,
+        1,
+        3,
+        3,
+        1,
+        9,
+        1,
+        3,
+        3,
+        2,
+        4,
+        2,
+        1,
+        1,
+        1,
+        3,
+        1
+      ]
+    },
+    "context60": {
+      "semantic_segmentation": [
+        1,
+        4,
+        5,
+        4,
+        4,
+        4,
+        3,
+        3,
+        4,
+        3,
+        5,
+        8,
+        6,
+        4,
+        4,
+        4,
+        4,
+        9,
+        8,
+        3,
+        6,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        1,
+        1,
+        7,
+        2,
+        3,
+        4,
+        1,
+        3,
+        5,
+        2,
+        18,
+        5,
+        1,
+        3,
+        4,
+        4,
+        3,
+        2,
+        4,
+        1,
+        9,
+        4,
+        4,
+        3,
+        1,
+        5,
+        6,
+        4,
+        5,
+        6,
+        11,
+        2,
+        5
+      ]
+    },
+    "udd5": {
+      "original_imagenet": [
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "focused20": [
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    "oem": {
+      "original_imagenet": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "focused20": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    "vaihingen": {
+      "original_imagenet": [
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "focused20": [
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    "landcoverai": {
+      "original_imagenet": [
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "focused20": [
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    "loveda": {
+      "original_imagenet": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "focused20": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    "context59": {
+      "semantic_segmentation": [
+        4,
+        5,
+        4,
+        4,
+        4,
+        3,
+        3,
+        4,
+        3,
+        5,
+        8,
+        4,
+        4,
+        4,
+        4,
+        4,
+        9,
+        8,
+        3,
+        6,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        1,
+        1,
+        7,
+        2,
+        4,
+        4,
+        1,
+        3,
+        4,
+        2,
+        18,
+        5,
+        1,
+        3,
+        4,
+        4,
+        3,
+        2,
+        4,
+        1,
+        9,
+        4,
+        4,
+        3,
+        1,
+        5,
+        6,
+        4,
+        5,
+        6,
+        11,
+        2,
+        5
+      ]
+    },
+    "coco_object81": {
+      "semantic_segmentation": [
+        32,
+        17,
+        3,
+        4,
+        3,
+        4,
+        4,
+        5,
+        4,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        3,
+        3,
+        6,
+        3,
+        3,
+        3,
+        3,
+        4,
+        3,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        5,
+        3,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        3,
+        7,
+        3,
+        2,
+        2,
+        2,
+        4,
+        3,
+        4,
+        3,
+        3,
+        3,
+        8,
+        3,
+        3,
+        5,
+        3,
+        3,
+        3
+      ]
+    },
+    "coco_stuff171": {
+      "semantic_segmentation": [
+        18,
+        3,
+        4,
+        3,
+        4,
+        4,
+        5,
+        4,
+        5,
+        3,
+        3,
+        3,
+        3,
+        4,
+        3,
+        4,
+        4,
+        3,
+        3,
+        6,
+        3,
+        3,
+        3,
+        3,
+        4,
+        3,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        9,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        5,
+        3,
+        6,
+        3,
+        3,
+        3,
+        3,
+        3,
+        6,
+        3,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        5,
+        4,
+        4,
+        4,
+        5,
+        3,
+        7,
+        3,
+        2,
+        2,
+        2,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        8,
+        3,
+        3,
+        5,
+        4,
+        3,
+        3,
+        1,
+        2,
+        5,
+        1,
+        5,
+        4,
+        3,
+        2,
+        3,
+        1,
+        4,
+        1,
+        6,
+        6,
+        2,
+        5,
+        1,
+        4,
+        2,
+        3,
+        1,
+        4,
+        2,
+        3,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        2,
+        5,
+        7,
+        4,
+        5,
+        5,
+        3,
+        3,
+        5,
+        2,
+        4,
+        6,
+        4,
+        7,
+        5,
+        1,
+        1,
+        4,
+        2,
+        2,
+        4,
+        1,
+        1,
+        7,
+        7,
+        1,
+        4,
+        6,
+        6,
+        5,
+        5,
+        1,
+        6,
+        7,
+        4,
+        6,
+        2,
+        4,
+        2,
+        2,
+        2,
+        1,
+        3,
+        3,
+        2,
+        4,
+        1,
+        5,
+        6,
+        2,
+        2,
+        3,
+        2,
+        1,
+        1,
+        1,
+        3,
+        5,
+        4,
+        1,
+        4
+      ]
+    },
+    "flair1": {
+      "original_imagenet": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "focused20": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    }
+  },
+  "supplemental_reference_recovery": {
+    "loveda": {
+      "protocol": "P",
+      "reference_merged": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/reference_replay/loveda/merged.json",
+      "historical_merged": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/full/loveda/merged.json",
+      "independent_text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/loveda.pt",
+      "exact_historical_per_image_confusions": true,
+      "global_sample_keys_sha256": "8fd154d842d97a4ed117a00ea581672d06feb51f3d739cf295180fd7911ac002",
+      "images": 1669,
+      "metric": {
+        "mean_iou_percent": 61.4752,
+        "pixel_accuracy_percent": 79.9915,
+        "per_class": [
+          {
+            "name": "building",
+            "iou_percent": 88.6825
+          },
+          {
+            "name": "road",
+            "iou_percent": 68.3298
+          },
+          {
+            "name": "water",
+            "iou_percent": 69.1266
+          },
+          {
+            "name": "barren",
+            "iou_percent": 39.8354
+          },
+          {
+            "name": "tree",
+            "iou_percent": 30.437
+          },
+          {
+            "name": "farm",
+            "iou_percent": 72.44
+          }
+        ],
+        "confusion_matrix": [
+          [
+            116709229,
+            322050,
+            149838,
+            2437956,
+            565464,
+            2621254
+          ],
+          [
+            3955470,
+            63431587,
+            160520,
+            4274208,
+            756768,
+            7011947
+          ],
+          [
+            281640,
+            1536172,
+            142815070,
+            4614879,
+            727840,
+            49592215
+          ],
+          [
+            526165,
+            2683387,
+            3503424,
+            39138670,
+            93169,
+            28438318
+          ],
+          [
+            2337770,
+            5184057,
+            2011416,
+            3077662,
+            39340316,
+            73664426
+          ],
+          [
+            1696562,
+            3515299,
+            1206396,
+            9463260,
+            1492623,
+            469708562
+          ]
+        ],
+        "ignored_pixels": 661027755
+      },
+      "discrepancy": "Main reference sliced D local text features; three P alias vectors differ from the independently cached historical P bank. Wide features and all candidate outputs are preserved.",
+      "raw_reference_metric": {
+        "mean_iou_percent": 61.4749,
+        "pixel_accuracy_percent": 79.9912,
+        "per_class": [
+          {
+            "name": "building",
+            "iou_percent": 88.6825
+          },
+          {
+            "name": "road",
+            "iou_percent": 68.3299
+          },
+          {
+            "name": "water",
+            "iou_percent": 69.1257
+          },
+          {
+            "name": "barren",
+            "iou_percent": 39.8346
+          },
+          {
+            "name": "tree",
+            "iou_percent": 30.4371
+          },
+          {
+            "name": "farm",
+            "iou_percent": 72.4394
+          }
+        ],
+        "confusion_matrix": [
+          [
+            116709261,
+            322047,
+            149837,
+            2437887,
+            565474,
+            2621285
+          ],
+          [
+            3955483,
+            63431501,
+            160507,
+            4274185,
+            756768,
+            7012056
+          ],
+          [
+            281633,
+            1536152,
+            142812736,
+            4614471,
+            727837,
+            49594987
+          ],
+          [
+            526150,
+            2683304,
+            3502886,
+            39137329,
+            93184,
+            28440280
+          ],
+          [
+            2337791,
+            5183903,
+            2011219,
+            3077235,
+            39340386,
+            73665113
+          ],
+          [
+            1696573,
+            3515310,
+            1206310,
+            9462754,
+            1492683,
+            469709072
+          ]
+        ],
+        "ignored_pixels": 661027755
+      },
+      "scope": "Only P Reference20SameViews uses its independent historical P text cache. All candidate metrics and raw per-image outputs are unchanged."
+    }
+  },
+  "class_competition": "class_competition.json",
+  "eight_rs_mean": {
+    "Uniform": 49.18333749999999,
+    "UniformLocal": 48.8883,
+    "UniformMean": 46.99645
+  },
+  "eight_rs_stronger_measured_vip_mean": 44.003924999999995
+}

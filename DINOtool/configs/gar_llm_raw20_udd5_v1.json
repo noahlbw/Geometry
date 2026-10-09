@@ -1,0 +1,51 @@
+{
+  "protocol": "Fixed raw LLM-style alias expansion. No image, target mask, DINO score, or evaluation result was used to retain, remove, or reorder phrases.",
+  "generation_prompt": "For each named aerial class, list 20 ordinary English expressions a general-purpose LLM may offer: direct names, near synonyms, broader or narrower terms, common scene descriptions, and use-related phrases. Do not optimize for any dataset or visual encoder.",
+  "classes": [
+    {
+      "name": "vegetation",
+      "synonyms": [
+        "vegetation", "plants", "plant cover", "greenery", "green area",
+        "grass", "grassland", "shrub", "bushes", "trees",
+        "foliage", "natural growth", "parkland", "green space", "ground cover",
+        "leafy area", "wooded area", "garden", "field vegetation", "living plants"
+      ]
+    },
+    {
+      "name": "building",
+      "synonyms": [
+        "building", "buildings", "structure", "house", "roof",
+        "rooftop", "apartment", "office", "warehouse", "facility",
+        "residential area", "commercial property", "urban block", "built-up area", "construction",
+        "man-made structure", "city building", "property", "industrial site", "premises"
+      ]
+    },
+    {
+      "name": "road",
+      "synonyms": [
+        "road", "roads", "street", "highway", "path",
+        "lane", "roadway", "pavement", "asphalt", "driveway",
+        "transportation route", "traffic route", "intersection", "junction", "access way",
+        "urban street", "rural path", "linear feature", "road surface", "travel route"
+      ]
+    },
+    {
+      "name": "vehicle",
+      "synonyms": [
+        "vehicle", "vehicles", "car", "cars", "automobile",
+        "truck", "bus", "van", "motor vehicle", "transport",
+        "parked car", "moving car", "traffic", "road user", "small object",
+        "fleet", "automotive vehicle", "passenger vehicle", "delivery truck", "transportation"
+      ]
+    },
+    {
+      "name": "other",
+      "synonyms": [
+        "other", "background", "miscellaneous area", "unknown surface", "unclassified terrain",
+        "open ground", "empty area", "mixed scene", "remaining land", "general surface",
+        "pavement", "parking area", "courtyard", "shadow", "construction area",
+        "water surface", "bare ground", "sports field", "unused space", "cluttered area"
+      ]
+    }
+  ]
+}

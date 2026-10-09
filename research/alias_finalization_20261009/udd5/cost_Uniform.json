@@ -1,0 +1,381 @@
+{
+  "status": "complete",
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "dataset": "udd5",
+  "mode": "Uniform",
+  "images": [
+    {
+      "key": "000061.JPG",
+      "shape": [
+        2160,
+        4096
+      ],
+      "milliseconds": [
+        232.50501602888107,
+        229.32801698334515,
+        228.69433602318168,
+        230.18249706365168,
+        229.36149802990258,
+        237.44468903169036,
+        237.16265801340342
+      ],
+      "median_ms": 230.18249706365168,
+      "p95_ms": 237.36007972620428,
+      "peak_allocated_mib": 5594.97412109375,
+      "peak_reserved_mib": 6350.0,
+      "calls": [
+        {
+          "geometry": 2,
+          "wide": 2
+        },
+        {
+          "geometry": 2,
+          "wide": 2
+        },
+        {
+          "geometry": 2,
+          "wide": 2
+        },
+        {
+          "geometry": 2,
+          "wide": 2
+        },
+        {
+          "geometry": 2,
+          "wide": 2
+        },
+        {
+          "geometry": 2,
+          "wide": 2
+        },
+        {
+          "geometry": 2,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.10224245791323483
+    },
+    {
+      "key": "001461.JPG",
+      "shape": [
+        2160,
+        4096
+      ],
+      "milliseconds": [
+        239.82332204468548,
+        246.9011798966676,
+        242.07830196246505,
+        240.1583669707179,
+        240.01521617174149,
+        245.5992391332984,
+        239.96723210439086
+      ],
+      "median_ms": 240.1583669707179,
+      "p95_ms": 246.51059766765684,
+      "peak_allocated_mib": 5594.97412109375,
+      "peak_reserved_mib": 6350.0,
+      "calls": [
+        {
+          "geometry": 2,
+          "wide": 2
+        },
+        {
+          "geometry": 2,
+          "wide": 2
+        },
+        {
+          "geometry": 2,
+          "wide": 2
+        },
+        {
+          "geometry": 2,
+          "wide": 2
+        },
+        {
+          "geometry": 2,
+          "wide": 2
+        },
+        {
+          "geometry": 2,
+          "wide": 2
+        },
+        {
+          "geometry": 2,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.05450134398415685
+    },
+    {
+      "key": "DJI_00528.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        345.00978305004537,
+        346.9237720128149,
+        347.6470401510596,
+        347.0380960498005,
+        345.3520140610635,
+        346.96025098674,
+        346.7325419187546
+      ],
+      "median_ms": 346.9237720128149,
+      "p95_ms": 347.4643569206819,
+      "peak_allocated_mib": 5800.66845703125,
+      "peak_reserved_mib": 6470.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.12889009108766913
+    },
+    {
+      "key": "DJI_0373_heda.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        345.8094438537955,
+        349.29665410891175,
+        346.3741010054946,
+        412.13962086476386,
+        411.4265111275017,
+        465.86322714574635,
+        438.1055699195713
+      ],
+      "median_ms": 411.4265111275017,
+      "p95_ms": 457.53592997789383,
+      "peak_allocated_mib": 5800.66845703125,
+      "peak_reserved_mib": 6470.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.12648012302815914
+    },
+    {
+      "key": "DJI_0451.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        367.5299498718232,
+        359.6974899992347,
+        357.4876030907035,
+        359.0765849221498,
+        360.71264487691224,
+        363.57966787181795,
+        360.07456202059984
+      ],
+      "median_ms": 360.07456202059984,
+      "p95_ms": 366.3448652718216,
+      "peak_allocated_mib": 5800.66845703125,
+      "peak_reserved_mib": 6470.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.14589459588751197
+    },
+    {
+      "key": "DJI_0511.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        363.39258402585983,
+        359.12068001925945,
+        365.8697889186442,
+        366.3376139011234,
+        367.8102269768715,
+        363.02922293543816,
+        366.13460001535714
+      ],
+      "median_ms": 365.8697889186442,
+      "p95_ms": 367.36844305414706,
+      "peak_allocated_mib": 5800.66845703125,
+      "peak_reserved_mib": 6470.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.13542997580952942
+    },
+    {
+      "key": "DJI_0707.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        359.5945630222559,
+        358.1971419043839,
+        359.3077489640564,
+        358.3488219883293,
+        357.9916260205209,
+        350.1582439057529,
+        361.2527120858431
+      ],
+      "median_ms": 358.3488219883293,
+      "p95_ms": 360.75526736676693,
+      "peak_allocated_mib": 5800.66845703125,
+      "peak_reserved_mib": 6470.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.133163491031155
+    }
+  ],
+  "metadata": {
+    "wide_policy": "long448",
+    "extra_soft_weights": false,
+    "residual_queries": 0,
+    "backbones_resident": 2
+  },
+  "initialization_and_text_seconds": 27.76782929105684,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "median_ms": 350.1582439057529,
+  "p95_ms": 411.854376969859,
+  "mean_image_median_ms": 330.42633144317995,
+  "peak_allocated_mib": 5800.66845703125,
+  "peak_reserved_mib": 6470.0,
+  "scope": "Seven deterministic spread full inputs and7 warmed synchronized repeats. One candidate in this process; no other GPU process allowed. Host/other-GPU contention is possible. Not full-dataset mean or independent accuracy validation.",
+  "boundary": "Decode/model loading/text encoding excluded and reported separately. Includes resizing/all encoding/semantic readout/alias aggregation/writeback/original-size restoration/CPU argmax output."
+}

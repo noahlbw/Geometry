@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "completed": [
+    "voc20",
+    "voc21",
+    "ade150",
+    "context60",
+    "context59",
+    "coco_object81",
+    "coco_stuff171"
+  ],
+  "failures": {}
+}

@@ -1,0 +1,32 @@
+{
+  "classes": [
+    {
+      "name": "background",
+      "synonyms": ["background", "other land cover", "miscellaneous terrain"]
+    },
+    {
+      "name": "building",
+      "synonyms": ["building", "rooftop", "house"]
+    },
+    {
+      "name": "road",
+      "synonyms": ["road", "street", "paved roadway"]
+    },
+    {
+      "name": "water",
+      "synonyms": ["water", "river", "lake", "pond"]
+    },
+    {
+      "name": "barren",
+      "synonyms": ["barren", "barren land", "bare soil", "exposed earth"]
+    },
+    {
+      "name": "forest",
+      "synonyms": ["forest", "woodland", "trees"]
+    },
+    {
+      "name": "agricultural",
+      "synonyms": ["agricultural", "agricultural land", "farmland", "cropland", "cultivated field"]
+    }
+  ]
+}

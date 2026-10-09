@@ -1,0 +1,392 @@
+{
+  "status": "complete",
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "dataset": "oem",
+  "mode": "VIPMatched",
+  "images": [
+    {
+      "key": "aachen/images/aachen_11.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        106.8823728710413,
+        106.32024193182588,
+        108.59195585362613,
+        107.519794953987,
+        108.38801180943847,
+        108.34615491330624,
+        107.87082207389176
+      ],
+      "median_ms": 107.87082207389176,
+      "p95_ms": 108.53077264036983,
+      "peak_allocated_mib": 1810.0244140625,
+      "peak_reserved_mib": 2224.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.10602207598276436
+    },
+    {
+      "key": "chiclayo/images/chiclayo_49.tif",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        108.04416402243078,
+        109.62643916718662,
+        107.53129702061415,
+        107.02342097647488,
+        107.75192407891154,
+        106.94390395656228,
+        108.18710504099727
+      ],
+      "median_ms": 107.75192407891154,
+      "p95_ms": 109.19463892932981,
+      "peak_allocated_mib": 1810.0244140625,
+      "peak_reserved_mib": 2224.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.011252260068431497
+    },
+    {
+      "key": "duesseldorf/images/duesseldorf_35.tif",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        106.03844397701323,
+        105.77083798125386,
+        105.85987381637096,
+        105.57649098336697,
+        111.29410285502672,
+        106.60003288649023,
+        107.67576517537236
+      ],
+      "median_ms": 106.03844397701323,
+      "p95_ms": 110.20860155113041,
+      "peak_allocated_mib": 1810.0244140625,
+      "peak_reserved_mib": 2224.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.010045735165476799
+    },
+    {
+      "key": "lubuskie/images/lubuskie_8.tif",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        109.2768928501755,
+        109.59824500605464,
+        108.06813393719494,
+        106.80248099379241,
+        109.44281099364161,
+        109.98802492395043,
+        108.28448506072164
+      ],
+      "median_ms": 109.2768928501755,
+      "p95_ms": 109.8710909485817,
+      "peak_allocated_mib": 1810.0244140625,
+      "peak_reserved_mib": 2224.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.010619612876325846
+    },
+    {
+      "key": "piura/images/piura_48.tif",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        108.56122896075249,
+        106.78645293228328,
+        109.31965801864862,
+        107.09167504683137,
+        109.72511698491871,
+        107.14685800485313,
+        107.46346903033555
+      ],
+      "median_ms": 107.46346903033555,
+      "p95_ms": 109.60347929503769,
+      "peak_allocated_mib": 1810.0244140625,
+      "peak_reserved_mib": 2224.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.010937060927972198
+    },
+    {
+      "key": "tokyo/images/tokyo_12.tif",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        106.93000094033778,
+        106.48038797080517,
+        106.37073987163603,
+        107.5922311283648,
+        106.72120889648795,
+        109.48213702067733,
+        108.47957292571664
+      ],
+      "median_ms": 106.93000094033778,
+      "p95_ms": 109.18136779218912,
+      "peak_allocated_mib": 1810.0244140625,
+      "peak_reserved_mib": 2224.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.011808797949925065
+    },
+    {
+      "key": "zanzibar/images/zanzibar_99.tif",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        106.81081702932715,
+        107.76681499555707,
+        106.97018913924694,
+        107.22249606624246,
+        108.20698901079595,
+        107.2316609788686,
+        106.78910207934678
+      ],
+      "median_ms": 107.22249606624246,
+      "p95_ms": 108.07493680622429,
+      "peak_allocated_mib": 1810.0244140625,
+      "peak_reserved_mib": 2224.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.011084993137046695
+    }
+  ],
+  "metadata": {
+    "words": "Frozen final bank original_imagenet",
+    "scope": "Query-pool matched; standard VIP long448 views and no Geometry-based bank choice. Not a same-observation readout control.",
+    "settings": {
+      "tau": 1.0,
+      "tem": 1.0,
+      "prob_thd": 0.0,
+      "background": false,
+      "bg_idx": 0,
+      "resize_long_edge": 448,
+      "slide_crop": 336,
+      "slide_stride": 112,
+      "logit_scale": 40.0
+    },
+    "backbones_resident": 1,
+    "aliases": 160
+  },
+  "initialization_and_text_seconds": 14.058889168081805,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "median_ms": 107.53129702061415,
+  "p95_ms": 109.68564585782588,
+  "mean_image_median_ms": 107.50772128812969,
+  "peak_allocated_mib": 1810.0244140625,
+  "peak_reserved_mib": 2224.0,
+  "scope": "Seven deterministic spread full inputs and7 warmed synchronized repeats. One candidate in this process; no other GPU process allowed. Host/other-GPU contention is possible. Not full-dataset mean or independent accuracy validation.",
+  "boundary": "Decode/model loading/text encoding excluded and reported separately. Includes resizing/all encoding/semantic readout/alias aggregation/writeback/original-size restoration/CPU argmax output."
+}

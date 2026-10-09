@@ -1,0 +1,1007 @@
+{
+  "status": "complete",
+  "coverage_verified": true,
+  "processed_images": 40,
+  "total_images": 40,
+  "metrics": {
+    "udd5": {
+      "Reference20SameViews": {
+        "mean_iou_percent": 47.0786,
+        "pixel_accuracy_percent": 74.6957,
+        "per_class": [
+          {
+            "name": "vegetation",
+            "iou_percent": 66.2953
+          },
+          {
+            "name": "building",
+            "iou_percent": 81.2771
+          },
+          {
+            "name": "road",
+            "iou_percent": 37.2416
+          },
+          {
+            "name": "vehicle",
+            "iou_percent": 16.995
+          },
+          {
+            "name": "other",
+            "iou_percent": 33.5843
+          }
+        ],
+        "confusion_matrix": [
+          [
+            88491707,
+            14692972,
+            6606320,
+            1219005,
+            19300440
+          ],
+          [
+            86026,
+            170151754,
+            62087,
+            256525,
+            2164242
+          ],
+          [
+            393488,
+            3998995,
+            27196528,
+            4414576,
+            22995307
+          ],
+          [
+            5716,
+            129569,
+            301546,
+            2759636,
+            325339
+          ],
+          [
+            2685355,
+            17805632,
+            7058531,
+            6826062,
+            40029122
+          ]
+        ],
+        "ignored_pixels": 0,
+        "non_residual_mean_iou_percent": 50.4523
+      },
+      "Retained": {
+        "mean_iou_percent": 48.3659,
+        "pixel_accuracy_percent": 75.7369,
+        "per_class": [
+          {
+            "name": "vegetation",
+            "iou_percent": 68.0866
+          },
+          {
+            "name": "building",
+            "iou_percent": 81.6559
+          },
+          {
+            "name": "road",
+            "iou_percent": 42.5005
+          },
+          {
+            "name": "vehicle",
+            "iou_percent": 16.2341
+          },
+          {
+            "name": "other",
+            "iou_percent": 33.3526
+          }
+        ],
+        "confusion_matrix": [
+          [
+            91002199,
+            14046512,
+            7326439,
+            1454462,
+            16480832
+          ],
+          [
+            83455,
+            170146074,
+            83614,
+            432350,
+            1975141
+          ],
+          [
+            368712,
+            3539424,
+            32183825,
+            5232526,
+            17674407
+          ],
+          [
+            8156,
+            95972,
+            324462,
+            2969755,
+            123461
+          ],
+          [
+            2885725,
+            17967034,
+            8992299,
+            7652166,
+            36907478
+          ]
+        ],
+        "ignored_pixels": 0,
+        "non_residual_mean_iou_percent": 52.1193
+      },
+      "Uniform": {
+        "mean_iou_percent": 48.3506,
+        "pixel_accuracy_percent": 75.7344,
+        "per_class": [
+          {
+            "name": "vegetation",
+            "iou_percent": 68.2122
+          },
+          {
+            "name": "building",
+            "iou_percent": 81.7249
+          },
+          {
+            "name": "road",
+            "iou_percent": 42.0333
+          },
+          {
+            "name": "vehicle",
+            "iou_percent": 16.3953
+          },
+          {
+            "name": "other",
+            "iou_percent": 33.3873
+          }
+        ],
+        "confusion_matrix": [
+          [
+            91179736,
+            13967470,
+            7308260,
+            1426848,
+            16428130
+          ],
+          [
+            83060,
+            170163687,
+            81822,
+            430686,
+            1961379
+          ],
+          [
+            368535,
+            3503177,
+            31791452,
+            5138520,
+            18197210
+          ],
+          [
+            8225,
+            95715,
+            325013,
+            2963229,
+            129624
+          ],
+          [
+            2900502,
+            17928154,
+            8919955,
+            7555801,
+            37100290
+          ]
+        ],
+        "ignored_pixels": 0,
+        "non_residual_mean_iou_percent": 52.0914
+      },
+      "UniformLocal": {
+        "mean_iou_percent": 48.9404,
+        "pixel_accuracy_percent": 76.6193,
+        "per_class": [
+          {
+            "name": "vegetation",
+            "iou_percent": 72.3775
+          },
+          {
+            "name": "building",
+            "iou_percent": 82.4194
+          },
+          {
+            "name": "road",
+            "iou_percent": 46.3107
+          },
+          {
+            "name": "vehicle",
+            "iou_percent": 12.8441
+          },
+          {
+            "name": "other",
+            "iou_percent": 30.7503
+          }
+        ],
+        "confusion_matrix": [
+          [
+            97450472,
+            11626303,
+            7296185,
+            2303807,
+            11633677
+          ],
+          [
+            164400,
+            169482807,
+            145713,
+            1129095,
+            1798619
+          ],
+          [
+            494309,
+            3386915,
+            36504737,
+            7304028,
+            11308905
+          ],
+          [
+            21485,
+            62053,
+            235450,
+            3149357,
+            53461
+          ],
+          [
+            3651214,
+            17838805,
+            12149423,
+            10261152,
+            30504108
+          ]
+        ],
+        "ignored_pixels": 0,
+        "non_residual_mean_iou_percent": 53.4879
+      },
+      "UniformWide": {
+        "mean_iou_percent": 44.5471,
+        "pixel_accuracy_percent": 72.2997,
+        "per_class": [
+          {
+            "name": "vegetation",
+            "iou_percent": 59.738
+          },
+          {
+            "name": "building",
+            "iou_percent": 79.3386
+          },
+          {
+            "name": "road",
+            "iou_percent": 33.7346
+          },
+          {
+            "name": "vehicle",
+            "iou_percent": 16.9536
+          },
+          {
+            "name": "other",
+            "iou_percent": 32.9707
+          }
+        ],
+        "confusion_matrix": [
+          [
+            79870403,
+            17181632,
+            9066700,
+            836503,
+            23355206
+          ],
+          [
+            105923,
+            168473097,
+            211775,
+            128493,
+            3801346
+          ],
+          [
+            561283,
+            4425950,
+            25549925,
+            3106264,
+            25355472
+          ],
+          [
+            2606,
+            230900,
+            422307,
+            2093923,
+            772070
+          ],
+          [
+            2720871,
+            17787851,
+            7038280,
+            4757815,
+            42099885
+          ]
+        ],
+        "ignored_pixels": 0,
+        "non_residual_mean_iou_percent": 47.4412
+      },
+      "UniformMean": {
+        "mean_iou_percent": 46.798,
+        "pixel_accuracy_percent": 74.2287,
+        "per_class": [
+          {
+            "name": "vegetation",
+            "iou_percent": 64.0423
+          },
+          {
+            "name": "building",
+            "iou_percent": 80.6237
+          },
+          {
+            "name": "road",
+            "iou_percent": 37.8152
+          },
+          {
+            "name": "vehicle",
+            "iou_percent": 17.7666
+          },
+          {
+            "name": "other",
+            "iou_percent": 33.7421
+          }
+        ],
+        "confusion_matrix": [
+          [
+            85524253,
+            15894735,
+            8308901,
+            1011361,
+            19571194
+          ],
+          [
+            67558,
+            169670961,
+            121409,
+            234218,
+            2626488
+          ],
+          [
+            405610,
+            4044692,
+            28636288,
+            3967261,
+            21945043
+          ],
+          [
+            4634,
+            160867,
+            349045,
+            2606907,
+            400353
+          ],
+          [
+            2755157,
+            17626946,
+            7948738,
+            5938433,
+            40135428
+          ]
+        ],
+        "ignored_pixels": 0,
+        "non_residual_mean_iou_percent": 50.062
+      },
+      "RetainedScalar": {
+        "mean_iou_percent": 48.3659,
+        "pixel_accuracy_percent": 75.7369,
+        "per_class": [
+          {
+            "name": "vegetation",
+            "iou_percent": 68.0866
+          },
+          {
+            "name": "building",
+            "iou_percent": 81.6559
+          },
+          {
+            "name": "road",
+            "iou_percent": 42.5005
+          },
+          {
+            "name": "vehicle",
+            "iou_percent": 16.2341
+          },
+          {
+            "name": "other",
+            "iou_percent": 33.3526
+          }
+        ],
+        "confusion_matrix": [
+          [
+            91002200,
+            14046511,
+            7326439,
+            1454462,
+            16480832
+          ],
+          [
+            83455,
+            170146074,
+            83614,
+            432350,
+            1975141
+          ],
+          [
+            368712,
+            3539423,
+            32183825,
+            5232526,
+            17674408
+          ],
+          [
+            8156,
+            95972,
+            324462,
+            2969755,
+            123461
+          ],
+          [
+            2885726,
+            17967037,
+            8992299,
+            7652165,
+            36907475
+          ]
+        ],
+        "ignored_pixels": 0,
+        "non_residual_mean_iou_percent": 52.1193
+      }
+    }
+  },
+  "diagnostics": {
+    "udd5": {
+      "tiles": 136,
+      "wide_encodings": 80.0,
+      "fine_forwards": 0.0
+    }
+  },
+  "parallel_wall_seconds": 56.596419122070074,
+  "aggregate_gpu_seconds": 56.596419122070074,
+  "peak_cuda_memory_mb": 6716.287109375,
+  "signature": {
+    "implementation": "geometry-task-alias-global-finalization-v1-20261009",
+    "dataset": "udd5",
+    "methods": [
+      "Reference20SameViews",
+      "Retained",
+      "Uniform",
+      "UniformLocal",
+      "UniformWide",
+      "UniformMean",
+      "RetainedScalar"
+    ],
+    "classes": {
+      "udd5": [
+        "vegetation",
+        "building",
+        "road",
+        "vehicle",
+        "other"
+      ]
+    },
+    "gear": {
+      "core": "geometry-bounded896-patch-only-strength2-coupled-v1-20261005",
+      "cap": [
+        4,
+        4,
+        0
+      ],
+      "wide_policy": "long448"
+    },
+    "competitive": {
+      "ordinary_alias_policies": [
+        "retained",
+        "uniform"
+      ],
+      "no_new_selector": true
+    },
+    "vocabulary": {
+      "original": {
+        "classes": [
+          {
+            "name": "vegetation",
+            "synonyms": [
+              "vegetation",
+              "green vegetation",
+              "plant cover",
+              "vegetated land",
+              "dense vegetation",
+              "low vegetation",
+              "grass",
+              "grassland",
+              "shrub",
+              "shrubs",
+              "bushes",
+              "green ground cover",
+              "tree canopy",
+              "trees",
+              "wooded vegetation",
+              "natural vegetation",
+              "roadside vegetation",
+              "park vegetation",
+              "crop vegetation",
+              "mixed vegetation"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "rooftop",
+              "rooftops",
+              "roof",
+              "roofs",
+              "house",
+              "houses",
+              "residential building",
+              "industrial building",
+              "warehouse",
+              "apartment block",
+              "urban structure",
+              "constructed structure",
+              "rectangular rooftop",
+              "bright roof",
+              "dark roof",
+              "detached house",
+              "dense building cluster",
+              "small building"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road",
+              "roads",
+              "street",
+              "streets",
+              "roadway",
+              "paved road",
+              "paved roadway",
+              "asphalt road",
+              "highway",
+              "urban road",
+              "rural road",
+              "narrow road",
+              "wide road",
+              "road network",
+              "transportation corridor",
+              "traffic lane",
+              "road intersection",
+              "road junction",
+              "linear pavement",
+              "winding road"
+            ]
+          },
+          {
+            "name": "vehicle",
+            "synonyms": [
+              "vehicle",
+              "vehicles",
+              "car",
+              "cars",
+              "automobile",
+              "automobiles",
+              "truck",
+              "trucks",
+              "bus",
+              "buses",
+              "van",
+              "vans",
+              "parked car",
+              "moving vehicle",
+              "road vehicle",
+              "small vehicle",
+              "large vehicle",
+              "traffic vehicle",
+              "vehicle cluster",
+              "cars seen from above"
+            ]
+          },
+          {
+            "name": "other",
+            "synonyms": [
+              "other",
+              "background",
+              "miscellaneous ground",
+              "unclassified area",
+              "unknown terrain",
+              "other land cover",
+              "non target area",
+              "open ground",
+              "bare ground",
+              "pavement",
+              "parking area",
+              "courtyard",
+              "shadow",
+              "construction area",
+              "water surface",
+              "agricultural field",
+              "sports field",
+              "mixed terrain",
+              "unused land",
+              "cluttered area"
+            ]
+          }
+        ],
+        "template": "RS6"
+      },
+      "original_imagenet": {
+        "classes": [
+          {
+            "name": "vegetation",
+            "synonyms": [
+              "vegetation",
+              "green vegetation",
+              "plant cover",
+              "vegetated land",
+              "dense vegetation",
+              "low vegetation",
+              "grass",
+              "grassland",
+              "shrub",
+              "shrubs",
+              "bushes",
+              "green ground cover",
+              "tree canopy",
+              "trees",
+              "wooded vegetation",
+              "natural vegetation",
+              "roadside vegetation",
+              "park vegetation",
+              "crop vegetation",
+              "mixed vegetation"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "rooftop",
+              "rooftops",
+              "roof",
+              "roofs",
+              "house",
+              "houses",
+              "residential building",
+              "industrial building",
+              "warehouse",
+              "apartment block",
+              "urban structure",
+              "constructed structure",
+              "rectangular rooftop",
+              "bright roof",
+              "dark roof",
+              "detached house",
+              "dense building cluster",
+              "small building"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road",
+              "roads",
+              "street",
+              "streets",
+              "roadway",
+              "paved road",
+              "paved roadway",
+              "asphalt road",
+              "highway",
+              "urban road",
+              "rural road",
+              "narrow road",
+              "wide road",
+              "road network",
+              "transportation corridor",
+              "traffic lane",
+              "road intersection",
+              "road junction",
+              "linear pavement",
+              "winding road"
+            ]
+          },
+          {
+            "name": "vehicle",
+            "synonyms": [
+              "vehicle",
+              "vehicles",
+              "car",
+              "cars",
+              "automobile",
+              "automobiles",
+              "truck",
+              "trucks",
+              "bus",
+              "buses",
+              "van",
+              "vans",
+              "parked car",
+              "moving vehicle",
+              "road vehicle",
+              "small vehicle",
+              "large vehicle",
+              "traffic vehicle",
+              "vehicle cluster",
+              "cars seen from above"
+            ]
+          },
+          {
+            "name": "other",
+            "synonyms": [
+              "other",
+              "background",
+              "miscellaneous ground",
+              "unclassified area",
+              "unknown terrain",
+              "other land cover",
+              "non target area",
+              "open ground",
+              "bare ground",
+              "pavement",
+              "parking area",
+              "courtyard",
+              "shadow",
+              "construction area",
+              "water surface",
+              "agricultural field",
+              "sports field",
+              "mixed terrain",
+              "unused land",
+              "cluttered area"
+            ]
+          }
+        ],
+        "template": "ImageNet80"
+      },
+      "focused20": {
+        "classes": [
+          {
+            "name": "vegetation",
+            "synonyms": [
+              "vegetation",
+              "green vegetation",
+              "plant cover",
+              "vegetated land",
+              "dense vegetation",
+              "low vegetation",
+              "grass",
+              "grassland",
+              "shrub",
+              "shrubs",
+              "bushes",
+              "green ground cover",
+              "tree canopy",
+              "trees",
+              "wooded vegetation",
+              "natural vegetation",
+              "roadside vegetation",
+              "park vegetation",
+              "crop vegetation",
+              "mixed vegetation"
+            ]
+          },
+          {
+            "name": "building",
+            "synonyms": [
+              "building",
+              "buildings",
+              "rooftop",
+              "rooftops",
+              "roof",
+              "roofs",
+              "house",
+              "houses",
+              "residential building",
+              "industrial building",
+              "warehouse",
+              "apartment block",
+              "urban structure",
+              "constructed structure",
+              "rectangular rooftop",
+              "bright roof",
+              "dark roof",
+              "detached house",
+              "dense building cluster",
+              "small building"
+            ]
+          },
+          {
+            "name": "road",
+            "synonyms": [
+              "road",
+              "roads",
+              "street",
+              "streets",
+              "roadway",
+              "paved road",
+              "paved roadway",
+              "asphalt road",
+              "highway",
+              "urban road",
+              "rural road",
+              "narrow road",
+              "wide road",
+              "road network",
+              "transportation corridor",
+              "traffic lane",
+              "road intersection",
+              "road junction",
+              "linear pavement",
+              "winding road"
+            ]
+          },
+          {
+            "name": "vehicle",
+            "synonyms": [
+              "vehicle",
+              "vehicles",
+              "car",
+              "cars",
+              "automobile",
+              "automobiles",
+              "truck",
+              "trucks",
+              "bus",
+              "buses",
+              "van",
+              "vans",
+              "parked car",
+              "moving vehicle",
+              "road vehicle",
+              "small vehicle",
+              "large vehicle",
+              "traffic vehicle",
+              "vehicle cluster",
+              "cars seen from above"
+            ]
+          },
+          {
+            "name": "other",
+            "synonyms": [
+              "other",
+              "background",
+              "miscellaneous ground",
+              "unclassified area",
+              "unknown terrain",
+              "other land cover",
+              "non target area",
+              "open ground",
+              "bare ground",
+              "pavement",
+              "parking area",
+              "courtyard",
+              "shadow",
+              "construction area",
+              "water surface",
+              "agricultural field",
+              "sports field",
+              "mixed terrain",
+              "unused land",
+              "cluttered area"
+            ]
+          }
+        ],
+        "template": "RS6"
+      }
+    },
+    "residual_identity": null,
+    "checkpoints": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "global_sample_count": 40,
+    "global_sample_keys_sha256": "01338dafdf1239280d8fd03edbb72e347660db756104ed1086b418b26388b876",
+    "sample_keys": [
+      "000061.JPG",
+      "000161.JPG",
+      "000261.JPG",
+      "000361.JPG",
+      "001261.JPG",
+      "001361.JPG",
+      "001461.JPG",
+      "001561.JPG",
+      "0119_3img2031.JPG",
+      "0119_4img1001.JPG",
+      "0119_4img3041.JPG",
+      "0119_5img3001.JPG",
+      "DJI_0031.JPG",
+      "DJI_00528.JPG",
+      "DJI_00581.JPG",
+      "DJI_00591.JPG",
+      "DJI_0291.JPG",
+      "DJI_0303.JPG",
+      "DJI_0316.JPG",
+      "DJI_0373_heda.JPG",
+      "DJI_0388.JPG",
+      "DJI_0397.JPG",
+      "DJI_0406.JPG",
+      "DJI_0415.JPG",
+      "DJI_0431.JPG",
+      "DJI_0442.JPG",
+      "DJI_0451.JPG",
+      "DJI_0460.JPG",
+      "DJI_0469.JPG",
+      "DJI_0479_heda.JPG",
+      "DJI_0490.JPG",
+      "DJI_0499_heda.JPG",
+      "DJI_0511.JPG",
+      "DJI_0520.JPG",
+      "DJI_0532.JPG",
+      "DJI_0539_heda.JPG",
+      "DJI_0553_heda.JPG",
+      "DJI_0563_heda.JPG",
+      "DJI_0627.JPG",
+      "DJI_0707.JPG"
+    ],
+    "sample_keys_sha256": "01338dafdf1239280d8fd03edbb72e347660db756104ed1086b418b26388b876",
+    "num_shards": 1,
+    "shard_index": null,
+    "config": {
+      "dataset": "udd5",
+      "data_root": "/data/test/datasets/UDD5/extracted/UDD/UDD5",
+      "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009",
+      "output_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/udd5/s0",
+      "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/udd5.pt",
+      "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+      "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+      "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+      "mode": "full",
+      "device": "cuda",
+      "num_shards": 1,
+      "shard_index": 0,
+      "sample_seed": 20260923,
+      "vdd_ontology": "official"
+    },
+    "provenance": "Existing task rules and words were selected on developed data. Frozen finalization is exploratory, not untouched validation.",
+    "sample_count": 40
+  },
+  "shards": [
+    "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/udd5/s0/results.json"
+  ],
+  "paired_scored_targets_equal": true,
+  "scalar_agreement_verified": true,
+  "exact_historical_original20_replay": {
+    "udd5": true
+  },
+  "exact_selected_deployment_replay": null,
+  "historical_expected_field_note": "Frozen manifest field expected_retained_scalar is the historical NaturalShortEdge packed deployment confusion; its spelling is preserved. Independent scalar agreement permits only verified numerical ties.",
+  "deployment_changed_pixels": {
+    "retained": 11,
+    "uniform": 0
+  }
+}

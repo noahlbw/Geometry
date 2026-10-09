@@ -1,0 +1,19 @@
+# Frozen native-wide cross-view validation experiment
+
+The user authorized a bounded experiment on currently idle A800 cards. Only physical GPUs0-3 are used; ongoing natural-image queues on4-7 remain active. One fixed candidate, unchanged original Geometry, checkpoints, all20 aliases/class, six RS templates, normalized LME and output temperature .07. No target masks enter prediction.
+
+Wide source: resize each complete image to long edge448. Grid1 uses the historical336 crop /224 overlap starts. Grid2 starts at -56 and advances112px until each axis is covered. Encode each crop once with the original native DINO.text head; no VIP proxy attention or salience. Zero RGB outside image; discard padded pixels when averaging spatial observations. Wide class scores use the same encoded local bank. Thus any difference from historical VIP coupling includes both a different head and different text/readout settings.
+
+Sample both wide maps at the original local512 patch centres. Centre each score vector across classes. For view v, form d_v with the existing anchored solver: (I+R^T R)d_v=R^T R(W_v-G), where R is image-valid original Geometry. Fit one scalar a_v in[0,1] by minimizing ||R(a_v d_v-(W_other-G))|| squared. It uses no labels, but adapts to each image tile. Output original G+.5(a1*d1+a2*d2). This implements the proposed scalar rule; no class-dependent gate or alias screening is added. Shared-view biases and weak native semantics can still fail.
+
+All five outputs share the exact source: Geometry, native wide mean, local/wide logit mean, ungated two-view anchored coupling, and validated coupling. Interpolate patch scores before dividing by .07, then retain original Hann probability assembly. The original Geometry confusion arrays must exactly match historical per-image references.
+
+Use exactly the prior96-image screen: full40 UDD5 plus eight each from VDD, Potsdam, OEM, LoveDA, corrected IRRG Vaihingen, LandCover.ai, FLAIR-1. Complete image predictions, not window-only scores. These are developed domains, not independent validation. LoveDA P/D share samples; D enters the eight-domain mean once. LandCover.ai substitutes for iSAID, which has no labeled validation here.
+
+Six focused CPU tests verify the analytic coefficient against bounded search, endpoints, no-innovation recovery, view symmetry/class-offset invariance, padding neutrality at invalid local queries, and shifted crop coverage. A real-checkpoint smoke loads no masks, checks native feature replay and frozen weights, and times three identical standalone primary image predictions after warm-up.
+
+Decision: mean above Geometry, same-source logit mean and ungated coupling; VDD/Potsdam above Geometry and ungated coupling; no protocol loss above1pp. This is an exploratory advancement criterion, not significance or a novelty/SOTA claim. No automatic full-dataset rollout or coefficient fitting follows a failed result. Report all outcomes and retain the previous best model.
+
+Code: dinotool/cross_view_validation.py; scripts/eval_cross_view_validation.py; scripts/run_cross_view_validation_suite.py. Local manager: tools/cross_view_validation_experiment.py. Active root: results/geometry_native_cross_view_screen_20261004_r2.
+
+The initial mask-free smoke stopped before evaluation: native-head features differed by0.0037421109 from TCPR's manually computed FP32-attention native path under bf16. That path is not the standard fused native head being proposed. The corrected smoke compares with the original backbone.encode_image API (tolerance2e-6), while retaining the manual-path difference as a diagnostic. Only the verification reference changed; candidate inference, crop geometry, texts and coefficient formula did not change. Initial logs/results remain at results/geometry_native_cross_view_screen_20261004; the repeat uses a fresh r2 root. No segmentation metrics preceded this repair.

@@ -1,0 +1,33 @@
+{
+  "classes": [
+    {
+      "name": "background",
+      "synonyms": ["background", "other land cover", "unclassified area"]
+    },
+    {
+      "name": "building",
+      "synonyms": ["building", "rooftop", "man-made structure"]
+    },
+    {
+      "name": "road",
+      "synonyms": ["road", "street", "paved roadway"]
+    },
+    {
+      "name": "water",
+      "synonyms": ["water", "river", "lake"]
+    },
+    {
+      "name": "vegetation",
+      "synonyms": ["vegetation", "trees and grass", "green plants"]
+    },
+    {
+      "name": "bare soil",
+      "synonyms": ["bare soil", "exposed earth", "barren ground"]
+    },
+    {
+      "name": "vehicle",
+      "synonyms": ["vehicle", "car", "truck"]
+    }
+  ]
+}
+

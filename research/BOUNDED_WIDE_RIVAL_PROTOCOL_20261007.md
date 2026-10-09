@@ -1,0 +1,11 @@
+# Bounded competitive attenuation in wide-view alias aggregation
+
+One fixed rule on VDD80/Potsdam504/VOC21 1449/PC60 5105/ADE150 2000;9138 protocol images. Retained Geometry, read strength, coupling, words, temperatures, local weights, long448 view and explicit residual ontology stay unchanged.
+
+The wide-view inherited score is `B_c=logsumexp(tau*K_c*q_j*s_j)/tau`. For each wide patch, pick the highest other scored non-residual class from inherited B. Add `log(.5+.5*sigmoid((cos(t_j,mu_c)-cos(t_j,mu_r))/.07))` inside alias LSE. Centroids use the actual wide text bank. The .5 floor and .07 scale reuse existing local-rule constants; this is not a parameter-free whole model or a new fitted scalar. No gate renormalization: a lower alias contribution does not boost other aliases. Class suppression lies in[-ln2/tau,0] at the wide patch scores; this does not bound final probability, confusion or IoU changes through signed reconstruction.
+
+Explicit residual groups are concept unions rather than ordinary synonym ensembles, so their inherited score remains unchanged. PC60's separate residual max and protected local residual use the original wide foreground rival, isolating the new intervention to the broad semantic evidence. This semantic distinction uses declared background metadata, not labelled domain-specific winner selection.
+
+Wrong and highly responsive aliases can remain textually similar to their own centroid; the semantic gate is a hypothesis, not proof of visual validity. Canonical queries are not specially exempted. Rival is per patch, but the alias/centroid similarities are cached text quantities, not fresh visual evidence. Query-count offsets are deliberately retained after the failed count-normalization control.
+
+The optional API uses `wide_aggregation='bounded_rival'`; default remains inherited. It recomputes text scores for the retained old_broad needed by PC60 protection but adds no encoder forward. Standalone timing is pending if performance supports adoption. Controller `gbwr07_controller` uses idle GPUs, mask-free smoke, shared observations and exact Frozen full-confusion replay before accepting results. Prior label development informed the profiles/hypothesis; full results are exploratory. Manager `tools/bounded_wide_rival_experiment.py` exposes prepare/deploy/launch/status/collect and refuses existing outputs.

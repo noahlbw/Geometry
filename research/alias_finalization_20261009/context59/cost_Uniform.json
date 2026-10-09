@@ -1,0 +1,381 @@
+{
+  "status": "complete",
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "dataset": "context59",
+  "mode": "Uniform",
+  "images": [
+    {
+      "key": "2008_000002",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        208.97669391706586,
+        203.4153479617089,
+        208.15320312976837,
+        208.30835215747356,
+        205.43820410966873,
+        203.19847809150815,
+        205.7500269729644
+      ],
+      "median_ms": 205.7500269729644,
+      "p95_ms": 208.77619138918817,
+      "peak_allocated_mib": 5569.5849609375,
+      "peak_reserved_mib": 6530.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.024964914191514254
+    },
+    {
+      "key": "2008_003295",
+      "shape": [
+        374,
+        500
+      ],
+      "milliseconds": [
+        236.54576996341348,
+        239.1154591459781,
+        238.7752349022776,
+        239.5106148906052,
+        240.0640759151429,
+        240.69664883427322,
+        237.85324511118233
+      ],
+      "median_ms": 239.1154591459781,
+      "p95_ms": 240.50687695853412,
+      "peak_allocated_mib": 5571.14990234375,
+      "peak_reserved_mib": 6464.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        }
+      ],
+      "decode_seconds": 0.0030491140205413103
+    },
+    {
+      "key": "2008_006665",
+      "shape": [
+        333,
+        500
+      ],
+      "milliseconds": [
+        238.5770478285849,
+        239.94645103812218,
+        240.27912598103285,
+        237.30888916179538,
+        241.91782786510885,
+        242.6437868271023,
+        241.8934789020568
+      ],
+      "median_ms": 240.27912598103285,
+      "p95_ms": 242.42599913850427,
+      "peak_allocated_mib": 5558.68798828125,
+      "peak_reserved_mib": 6436.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        }
+      ],
+      "decode_seconds": 0.001950979931280017
+    },
+    {
+      "key": "2009_001279",
+      "shape": [
+        334,
+        500
+      ],
+      "milliseconds": [
+        241.33301596157253,
+        242.85417585633695,
+        238.4264289867133,
+        237.0626439806074,
+        237.50606481917202,
+        238.4134349413216,
+        245.37624418735504
+      ],
+      "median_ms": 238.4264289867133,
+      "p95_ms": 244.61962368804961,
+      "peak_allocated_mib": 5558.9404296875,
+      "peak_reserved_mib": 6436.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        }
+      ],
+      "decode_seconds": 0.002691240981221199
+    },
+    {
+      "key": "2009_004601",
+      "shape": [
+        333,
+        500
+      ],
+      "milliseconds": [
+        232.68335103057325,
+        236.31757800467312,
+        233.8028191588819,
+        232.90614993311465,
+        235.22927099838853,
+        236.99475079774857,
+        233.6047941353172
+      ],
+      "median_ms": 233.8028191588819,
+      "p95_ms": 236.79159895982593,
+      "peak_allocated_mib": 5558.68798828125,
+      "peak_reserved_mib": 6436.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        }
+      ],
+      "decode_seconds": 0.0028297610115259886
+    },
+    {
+      "key": "2010_002691",
+      "shape": [
+        367,
+        500
+      ],
+      "milliseconds": [
+        235.85171112790704,
+        233.84360503405333,
+        235.13383697718382,
+        234.72261801362038,
+        242.22332891076803,
+        238.22415713220835,
+        238.05896006524563
+      ],
+      "median_ms": 235.85171112790704,
+      "p95_ms": 241.02357737720013,
+      "peak_allocated_mib": 5567.43505859375,
+      "peak_reserved_mib": 6460.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        },
+        {
+          "geometry": 4,
+          "wide": 3
+        }
+      ],
+      "decode_seconds": 0.002436939161270857
+    },
+    {
+      "key": "2010_006086",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        208.24137888848782,
+        204.63473722338676,
+        202.20176805742085,
+        204.25567706115544,
+        205.98882413469255,
+        206.45297900773585,
+        205.39972907863557
+      ],
+      "median_ms": 205.39972907863557,
+      "p95_ms": 207.70485892426223,
+      "peak_allocated_mib": 5569.4638671875,
+      "peak_reserved_mib": 6464.0,
+      "calls": [
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        },
+        {
+          "geometry": 4,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.002920763101428747
+    }
+  ],
+  "metadata": {
+    "wide_policy": "natural_short336_cap672",
+    "extra_soft_weights": false,
+    "residual_queries": 0,
+    "backbones_resident": 2
+  },
+  "initialization_and_text_seconds": 27.728142368840054,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "median_ms": 236.54576996341348,
+  "p95_ms": 242.4756036605686,
+  "mean_image_median_ms": 228.37504292173045,
+  "peak_allocated_mib": 5571.14990234375,
+  "peak_reserved_mib": 6530.0,
+  "scope": "Seven deterministic spread full inputs and7 warmed synchronized repeats. One candidate in this process; no other GPU process allowed. Host/other-GPU contention is possible. Not full-dataset mean or independent accuracy validation.",
+  "boundary": "Decode/model loading/text encoding excluded and reported separately. Includes resizing/all encoding/semantic readout/alias aggregation/writeback/original-size restoration/CPU argmax output."
+}

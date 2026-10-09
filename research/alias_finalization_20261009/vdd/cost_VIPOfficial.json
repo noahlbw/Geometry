@@ -1,0 +1,393 @@
+{
+  "status": "complete",
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "dataset": "vdd",
+  "mode": "VIPOfficial",
+  "images": [
+    {
+      "key": "DJI_0007.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        193.21089889854193,
+        191.6883469093591,
+        197.53885501995683,
+        195.03454701043665,
+        193.41534399427474,
+        192.98633909784257,
+        194.80566796846688
+      ],
+      "median_ms": 193.41534399427474,
+      "p95_ms": 196.78756261710078,
+      "peak_allocated_mib": 2332.552734375,
+      "peak_reserved_mib": 2748.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.16748937405645847
+    },
+    {
+      "key": "DJI_0390.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        192.22985091619194,
+        192.00944900512695,
+        192.27682589553297,
+        191.24879618175328,
+        194.87837399356067,
+        193.68459307588637,
+        192.23745493218303
+      ],
+      "median_ms": 192.23745493218303,
+      "p95_ms": 194.52023971825838,
+      "peak_allocated_mib": 2332.552734375,
+      "peak_reserved_mib": 2748.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.14343087980523705
+    },
+    {
+      "key": "DJI_0552.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        195.18735306337476,
+        190.87389879859984,
+        192.09157093428075,
+        190.04245195537806,
+        190.63200894743204,
+        191.22828310355544,
+        190.5604898929596
+      ],
+      "median_ms": 190.87389879859984,
+      "p95_ms": 194.25861842464656,
+      "peak_allocated_mib": 2332.552734375,
+      "peak_reserved_mib": 2748.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.1364425418432802
+    },
+    {
+      "key": "DJI_0819.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        191.89301412552595,
+        189.94218995794654,
+        188.7957549188286,
+        189.93132491596043,
+        189.19707485474646,
+        191.45355303771794,
+        190.07799006067216
+      ],
+      "median_ms": 189.94218995794654,
+      "p95_ms": 191.76117579918355,
+      "peak_allocated_mib": 2332.552734375,
+      "peak_reserved_mib": 2748.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.13938082219101489
+    },
+    {
+      "key": "DJI_10054.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        191.9323429465294,
+        194.42394911311567,
+        192.07337987609208,
+        194.74245491437614,
+        192.20872898586094,
+        191.86380715109408,
+        191.50020787492394
+      ],
+      "median_ms": 192.07337987609208,
+      "p95_ms": 194.646903173998,
+      "peak_allocated_mib": 2332.552734375,
+      "peak_reserved_mib": 2748.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.1368405087850988
+    },
+    {
+      "key": "DJI_10397.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        186.54947611503303,
+        186.3298190291971,
+        186.15276901982725,
+        186.69740110635757,
+        186.18881586007774,
+        186.85452197678387,
+        186.94306118413806
+      ],
+      "median_ms": 186.54947611503303,
+      "p95_ms": 186.9164994219318,
+      "peak_allocated_mib": 2332.552734375,
+      "peak_reserved_mib": 2748.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.13022681116126478
+    },
+    {
+      "key": "DJI_10708.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        187.48741201125085,
+        189.57134895026684,
+        186.7810890544206,
+        189.02000202797353,
+        189.8592310026288,
+        193.90965206548572,
+        193.53936100378633
+      ],
+      "median_ms": 189.57134895026684,
+      "p95_ms": 193.7985647469759,
+      "peak_allocated_mib": 2332.552734375,
+      "peak_reserved_mib": 2748.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.14298376790247858
+    }
+  ],
+  "metadata": {
+    "words": "Pinned upstream official queries",
+    "template": "openai_imagenet_template",
+    "scope": "Paper configuration reimplementation with explicit all-masked-row self-Value repair; not published benchmark timing.",
+    "settings": {
+      "tau": 1.0,
+      "tem": 1.0,
+      "prob_thd": 0.35,
+      "background": true,
+      "bg_idx": 0,
+      "resize_long_edge": 448,
+      "slide_crop": 336,
+      "slide_stride": 112,
+      "logit_scale": 40.0
+    },
+    "backbones_resident": 1,
+    "aliases": 7
+  },
+  "initialization_and_text_seconds": 15.15954183996655,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "median_ms": 191.50020787492394,
+  "p95_ms": 194.97207780368626,
+  "mean_image_median_ms": 190.66615608919943,
+  "peak_allocated_mib": 2332.552734375,
+  "peak_reserved_mib": 2748.0,
+  "scope": "Seven deterministic spread full inputs and7 warmed synchronized repeats. One candidate in this process; no other GPU process allowed. Host/other-GPU contention is possible. Not full-dataset mean or independent accuracy validation.",
+  "boundary": "Decode/model loading/text encoding excluded and reported separately. Includes resizing/all encoding/semantic readout/alias aggregation/writeback/original-size restoration/CPU argmax output."
+}

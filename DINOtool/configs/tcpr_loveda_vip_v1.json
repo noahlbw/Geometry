@@ -1,0 +1,72 @@
+{
+  "protocol": "Fixed VIP-style LoveDA alias candidates; no LLM call and no target labels",
+  "classes": [
+    {
+      "name": "background",
+      "synonyms": [
+        "background", "other land cover", "miscellaneous terrain", "unclassified land",
+        "unknown ground", "non target area", "mixed land cover", "urban open space",
+        "rural open space", "shadowed ground", "grass ground", "low vegetation",
+        "parking area", "sports field", "courtyard", "unused land",
+        "other urban surface", "other rural surface", "unlabeled terrain", "mixed terrain"
+      ]
+    },
+    {
+      "name": "building",
+      "synonyms": [
+        "building", "buildings", "rooftop", "rooftops", "roof", "house", "houses",
+        "residential building", "industrial building", "apartment block", "warehouse roof",
+        "urban structure", "constructed structure", "bright roof", "dark roof",
+        "rectangular rooftop", "dense building cluster", "detached house",
+        "large building", "small building"
+      ]
+    },
+    {
+      "name": "road",
+      "synonyms": [
+        "road", "roads", "street", "streets", "roadway", "paved road", "paved roadway",
+        "asphalt road", "highway", "urban road", "rural road", "narrow road", "wide road",
+        "road network", "transportation corridor", "traffic lane", "road intersection",
+        "road junction", "linear pavement", "winding road"
+      ]
+    },
+    {
+      "name": "water",
+      "synonyms": [
+        "water", "water body", "river", "rivers", "lake", "lakes", "pond", "ponds",
+        "reservoir", "canal", "stream", "blue water", "dark water", "inland water",
+        "open water", "narrow waterway", "river channel", "shoreline water",
+        "artificial pond", "surface water"
+      ]
+    },
+    {
+      "name": "barren",
+      "synonyms": [
+        "barren", "barren land", "bare soil", "bare earth", "exposed earth",
+        "exposed ground", "unvegetated ground", "dry soil", "sandy ground", "rocky ground",
+        "construction ground", "cleared land", "dirt field", "soil patch", "excavation site",
+        "open pit", "brown earth", "gravel ground", "sparse bareland", "wasteland"
+      ]
+    },
+    {
+      "name": "tree",
+      "synonyms": [
+        "tree", "trees", "forest", "woodland", "wooded area", "tree canopy",
+        "dense tree canopy", "sparse trees", "tree cluster", "grove", "urban trees",
+        "roadside trees", "evergreen forest", "deciduous forest", "green canopy",
+        "forest patch", "tall vegetation", "tree covered land", "plantation forest",
+        "dense woodland"
+      ]
+    },
+    {
+      "name": "farm",
+      "synonyms": [
+        "farm", "farms", "farmland", "agricultural land", "cropland", "cultivated field",
+        "crop field", "agricultural field", "farm field", "paddy field", "rice field",
+        "plantation", "orchard", "rectangular farmland", "striped cropland",
+        "cultivated parcel", "agricultural parcel", "harvested field",
+        "irrigated field", "large crop field"
+      ]
+    }
+  ]
+}

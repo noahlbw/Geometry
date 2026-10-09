@@ -1,0 +1,286 @@
+{
+  "status": "complete",
+  "coverage_verified": true,
+  "processed_images": 113,
+  "total_images": 113,
+  "metrics": {
+    "vaihingen": {
+      "mean_iou_percent": 41.9062,
+      "pixel_accuracy_percent": 64.178,
+      "per_class": [
+        {
+          "name": "impervious surface",
+          "iou_percent": 45.4945
+        },
+        {
+          "name": "building",
+          "iou_percent": 60.4878
+        },
+        {
+          "name": "low vegetation",
+          "iou_percent": 22.1971
+        },
+        {
+          "name": "tree",
+          "iou_percent": 56.9623
+        },
+        {
+          "name": "car",
+          "iou_percent": 24.3892
+        }
+      ],
+      "confusion_matrix": [
+        [
+          26966840,
+          3248534,
+          26438,
+          1051623,
+          474927,
+          109004
+        ],
+        [
+          7360284,
+          21856451,
+          65911,
+          202465,
+          6621,
+          21347
+        ],
+        [
+          12157963,
+          2567423,
+          5397148,
+          3719870,
+          68647,
+          95942
+        ],
+        [
+          7106272,
+          644144,
+          215193,
+          17186133,
+          8920,
+          11034
+        ],
+        [
+          773023,
+          160497,
+          74,
+          25418,
+          493053,
+          10422
+        ]
+      ],
+      "ignored_pixels": 968379,
+      "unscored_prediction_classes": 1
+    }
+  },
+  "short_edge_padded_crops": {
+    "vaihingen": 0
+  },
+  "parallel_wall_seconds": 14.99557361798361,
+  "aggregate_gpu_seconds": 14.99557361798361,
+  "peak_cuda_memory_mb": 1739.28125,
+  "signature": {
+    "implementation": "vip-official-5bd25ee-finite-rows-20261003",
+    "upstream_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+    "dataset": "vaihingen",
+    "source_type": "upstream_official",
+    "scored_classes": {
+      "vaihingen": [
+        "impervious surface",
+        "building",
+        "low vegetation",
+        "tree",
+        "car"
+      ]
+    },
+    "query_classes": {
+      "vaihingen": [
+        "impervious surface",
+        "building",
+        "low vegetation",
+        "tree",
+        "car",
+        "clutter"
+      ]
+    },
+    "alias_counts": {
+      "vaihingen": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    "sample_keys": [
+      "top_mosaic_09cm_area10_y00_x00.tif",
+      "top_mosaic_09cm_area10_y00_x01.tif",
+      "top_mosaic_09cm_area10_y01_x00.tif",
+      "top_mosaic_09cm_area10_y01_x01.tif",
+      "top_mosaic_09cm_area10_y02_x00.tif",
+      "top_mosaic_09cm_area10_y02_x01.tif",
+      "top_mosaic_09cm_area12_y00_x00.tif",
+      "top_mosaic_09cm_area12_y00_x01.tif",
+      "top_mosaic_09cm_area12_y01_x00.tif",
+      "top_mosaic_09cm_area12_y01_x01.tif",
+      "top_mosaic_09cm_area12_y02_x00.tif",
+      "top_mosaic_09cm_area12_y02_x01.tif",
+      "top_mosaic_09cm_area14_y00_x00.tif",
+      "top_mosaic_09cm_area14_y00_x01.tif",
+      "top_mosaic_09cm_area14_y01_x00.tif",
+      "top_mosaic_09cm_area14_y01_x01.tif",
+      "top_mosaic_09cm_area14_y02_x00.tif",
+      "top_mosaic_09cm_area14_y02_x01.tif",
+      "top_mosaic_09cm_area16_y00_x00.tif",
+      "top_mosaic_09cm_area16_y00_x01.tif",
+      "top_mosaic_09cm_area16_y01_x00.tif",
+      "top_mosaic_09cm_area16_y01_x01.tif",
+      "top_mosaic_09cm_area16_y02_x00.tif",
+      "top_mosaic_09cm_area16_y02_x01.tif",
+      "top_mosaic_09cm_area20_y00_x00.tif",
+      "top_mosaic_09cm_area20_y00_x01.tif",
+      "top_mosaic_09cm_area20_y01_x00.tif",
+      "top_mosaic_09cm_area20_y01_x01.tif",
+      "top_mosaic_09cm_area20_y02_x00.tif",
+      "top_mosaic_09cm_area20_y02_x01.tif",
+      "top_mosaic_09cm_area22_y00_x00.tif",
+      "top_mosaic_09cm_area22_y00_x01.tif",
+      "top_mosaic_09cm_area22_y01_x00.tif",
+      "top_mosaic_09cm_area22_y01_x01.tif",
+      "top_mosaic_09cm_area22_y02_x00.tif",
+      "top_mosaic_09cm_area22_y02_x01.tif",
+      "top_mosaic_09cm_area24_y00_x00.tif",
+      "top_mosaic_09cm_area24_y00_x01.tif",
+      "top_mosaic_09cm_area24_y01_x00.tif",
+      "top_mosaic_09cm_area24_y01_x01.tif",
+      "top_mosaic_09cm_area24_y02_x00.tif",
+      "top_mosaic_09cm_area24_y02_x01.tif",
+      "top_mosaic_09cm_area27_y00_x00.tif",
+      "top_mosaic_09cm_area27_y00_x01.tif",
+      "top_mosaic_09cm_area27_y01_x00.tif",
+      "top_mosaic_09cm_area27_y01_x01.tif",
+      "top_mosaic_09cm_area27_y02_x00.tif",
+      "top_mosaic_09cm_area27_y02_x01.tif",
+      "top_mosaic_09cm_area27_y03_x00.tif",
+      "top_mosaic_09cm_area27_y03_x01.tif",
+      "top_mosaic_09cm_area29_y00_x00.tif",
+      "top_mosaic_09cm_area29_y00_x01.tif",
+      "top_mosaic_09cm_area29_y01_x00.tif",
+      "top_mosaic_09cm_area29_y01_x01.tif",
+      "top_mosaic_09cm_area29_y02_x00.tif",
+      "top_mosaic_09cm_area29_y02_x01.tif",
+      "top_mosaic_09cm_area2_y00_x00.tif",
+      "top_mosaic_09cm_area2_y00_x01.tif",
+      "top_mosaic_09cm_area2_y00_x02.tif",
+      "top_mosaic_09cm_area2_y01_x00.tif",
+      "top_mosaic_09cm_area2_y01_x01.tif",
+      "top_mosaic_09cm_area2_y01_x02.tif",
+      "top_mosaic_09cm_area2_y02_x00.tif",
+      "top_mosaic_09cm_area2_y02_x01.tif",
+      "top_mosaic_09cm_area2_y02_x02.tif",
+      "top_mosaic_09cm_area31_y00_x00.tif",
+      "top_mosaic_09cm_area31_y00_x01.tif",
+      "top_mosaic_09cm_area31_y01_x00.tif",
+      "top_mosaic_09cm_area31_y01_x01.tif",
+      "top_mosaic_09cm_area31_y02_x00.tif",
+      "top_mosaic_09cm_area31_y02_x01.tif",
+      "top_mosaic_09cm_area33_y00_x00.tif",
+      "top_mosaic_09cm_area33_y00_x01.tif",
+      "top_mosaic_09cm_area33_y01_x00.tif",
+      "top_mosaic_09cm_area33_y01_x01.tif",
+      "top_mosaic_09cm_area33_y02_x00.tif",
+      "top_mosaic_09cm_area33_y02_x01.tif",
+      "top_mosaic_09cm_area35_y00_x00.tif",
+      "top_mosaic_09cm_area35_y00_x01.tif",
+      "top_mosaic_09cm_area35_y00_x02.tif",
+      "top_mosaic_09cm_area35_y01_x00.tif",
+      "top_mosaic_09cm_area35_y01_x01.tif",
+      "top_mosaic_09cm_area35_y01_x02.tif",
+      "top_mosaic_09cm_area38_y00_x00.tif",
+      "top_mosaic_09cm_area38_y00_x01.tif",
+      "top_mosaic_09cm_area38_y00_x02.tif",
+      "top_mosaic_09cm_area38_y00_x03.tif",
+      "top_mosaic_09cm_area38_y01_x00.tif",
+      "top_mosaic_09cm_area38_y01_x01.tif",
+      "top_mosaic_09cm_area38_y01_x02.tif",
+      "top_mosaic_09cm_area38_y01_x03.tif",
+      "top_mosaic_09cm_area38_y02_x00.tif",
+      "top_mosaic_09cm_area38_y02_x01.tif",
+      "top_mosaic_09cm_area38_y02_x02.tif",
+      "top_mosaic_09cm_area38_y02_x03.tif",
+      "top_mosaic_09cm_area4_y00_x00.tif",
+      "top_mosaic_09cm_area4_y00_x01.tif",
+      "top_mosaic_09cm_area4_y01_x00.tif",
+      "top_mosaic_09cm_area4_y01_x01.tif",
+      "top_mosaic_09cm_area4_y02_x00.tif",
+      "top_mosaic_09cm_area4_y02_x01.tif",
+      "top_mosaic_09cm_area6_y00_x00.tif",
+      "top_mosaic_09cm_area6_y00_x01.tif",
+      "top_mosaic_09cm_area6_y01_x00.tif",
+      "top_mosaic_09cm_area6_y01_x01.tif",
+      "top_mosaic_09cm_area6_y02_x00.tif",
+      "top_mosaic_09cm_area6_y02_x01.tif",
+      "top_mosaic_09cm_area8_y00_x00.tif",
+      "top_mosaic_09cm_area8_y00_x01.tif",
+      "top_mosaic_09cm_area8_y01_x00.tif",
+      "top_mosaic_09cm_area8_y01_x01.tif",
+      "top_mosaic_09cm_area8_y02_x00.tif",
+      "top_mosaic_09cm_area8_y02_x01.tif"
+    ],
+    "sample_count": 113,
+    "sample_keys_sha256": "25720ac369c583d1c9d96c3da1b151770645ae61a858b41fc8f5847ffd6cc883",
+    "global_sample_count": 113,
+    "global_sample_keys_sha256": "25720ac369c583d1c9d96c3da1b151770645ae61a858b41fc8f5847ffd6cc883",
+    "num_shards": 1,
+    "shard_index": null,
+    "settings": {
+      "tau": 1.0,
+      "tem": 10.0,
+      "prob_thd": 0.1,
+      "background": true,
+      "bg_idx": 5,
+      "resize_long_edge": 448,
+      "slide_crop": 336,
+      "slide_stride": 112,
+      "logit_scale": 40.0
+    },
+    "template_count": 80,
+    "background_ablation": false,
+    "vocabulary_path": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee/configs/cls_vaihingen.txt",
+    "vocabulary_sha256": "9c022bf17ab49aa62ace1d078666e8e6298e5e0a7b2f0209a11804cd3f5da994",
+    "checkpoint_manifest": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "data_root": "/data/test/datasets/Vaihingen/preprocessed_corrected_20261001",
+    "short_edge_policy": "Pad crop to 336 if keep-ratio resize yields a shorter edge; report count.",
+    "note": "Upstream VIP visual proxy attention and scoring; original masks and class scoring locked to GEAR run.",
+    "numeric_repair": "Self-Value only on all-masked proxy rows; no threshold/settings changes."
+  },
+  "shards": [
+    "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/vip_paper_distillation_finite_full_20261003/official/vaihingen/s0/results.json"
+  ],
+  "empty_proxy_rows": 0,
+  "observed_proxy_rows": 398664
+}

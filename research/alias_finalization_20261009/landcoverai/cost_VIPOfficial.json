@@ -1,0 +1,393 @@
+{
+  "status": "complete",
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "dataset": "landcoverai",
+  "mode": "VIPOfficial",
+  "images": [
+    {
+      "key": "M-33-20-D-c-4-2_101",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        106.4533251337707,
+        107.70783899351954,
+        107.66489617526531,
+        107.80456103384495,
+        107.82759310677648,
+        106.24883603304625,
+        107.77745093218982
+      ],
+      "median_ms": 107.70783899351954,
+      "p95_ms": 107.82068348489702,
+      "peak_allocated_mib": 1763.75341796875,
+      "peak_reserved_mib": 2164.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.04705007281154394
+    },
+    {
+      "key": "M-33-7-A-d-3-2_259",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        107.67137282527983,
+        106.64485208690166,
+        107.5280299410224,
+        108.73774089850485,
+        107.71588888019323,
+        105.26276682503521,
+        106.26542312093079
+      ],
+      "median_ms": 107.5280299410224,
+      "p95_ms": 108.43118529301137,
+      "peak_allocated_mib": 1763.75341796875,
+      "peak_reserved_mib": 2164.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.0032976497896015644
+    },
+    {
+      "key": "M-34-56-A-b-1-4_14",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        106.8345841486007,
+        106.82092793285847,
+        106.73545696772635,
+        107.69253200851381,
+        107.20519698224962,
+        106.91559105180204,
+        105.63439200632274
+      ],
+      "median_ms": 106.8345841486007,
+      "p95_ms": 107.54633150063455,
+      "peak_allocated_mib": 1763.75341796875,
+      "peak_reserved_mib": 2164.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.0028779238928109407
+    },
+    {
+      "key": "M-34-68-B-a-1-3_239",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        110.16586096957326,
+        106.98460508137941,
+        106.37047584168613,
+        108.03388897329569,
+        107.3679281398654,
+        106.93636815994978,
+        105.30601302161813
+      ],
+      "median_ms": 106.98460508137941,
+      "p95_ms": 109.52626937068999,
+      "peak_allocated_mib": 1763.75341796875,
+      "peak_reserved_mib": 2164.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.00394835602492094
+    },
+    {
+      "key": "N-33-139-C-d-2-2_185",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        106.56594019383192,
+        106.34137294255197,
+        106.8063098937273,
+        107.37460083328187,
+        107.06579894758761,
+        105.77961499802768,
+        105.24389683268964
+      ],
+      "median_ms": 106.56594019383192,
+      "p95_ms": 107.2819602675736,
+      "peak_allocated_mib": 1763.75341796875,
+      "peak_reserved_mib": 2164.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.0030053008813410997
+    },
+    {
+      "key": "N-34-140-A-b-4-2_1",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        105.95996514894068,
+        106.57430812716484,
+        107.49523411504924,
+        107.56093892268836,
+        108.8281359989196,
+        106.84174997732043,
+        105.16364802606404
+      ],
+      "median_ms": 106.84174997732043,
+      "p95_ms": 108.44797687605023,
+      "peak_allocated_mib": 1763.75341796875,
+      "peak_reserved_mib": 2164.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.002765537006780505
+    },
+    {
+      "key": "N-34-97-D-c-2-4_75",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        106.78301611915231,
+        108.0609718337655,
+        106.7440127953887,
+        106.40509915538132,
+        107.90577391162515,
+        106.4775031991303,
+        105.34299584105611
+      ],
+      "median_ms": 106.7440127953887,
+      "p95_ms": 108.0144124571234,
+      "peak_allocated_mib": 1763.75341796875,
+      "peak_reserved_mib": 2164.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        },
+        {
+          "geometry": 0,
+          "wide": 4
+        }
+      ],
+      "decode_seconds": 0.003211104078218341
+    }
+  ],
+  "metadata": {
+    "words": "External original20; no official VIP vocabulary exists",
+    "scope": "Cross-domain VIP adaptation, not published/official-domain benchmark or distilled-query timing.",
+    "view_policy": "Adapter long-edge448/crop336/stride112",
+    "settings": {
+      "tau": 4.0,
+      "tem": 1.0,
+      "prob_thd": 0.0,
+      "background": false,
+      "bg_idx": 0,
+      "resize_long_edge": 448,
+      "slide_crop": 336,
+      "slide_stride": 112,
+      "logit_scale": 40.0
+    },
+    "backbones_resident": 1,
+    "aliases": 100
+  },
+  "initialization_and_text_seconds": 14.89415322500281,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "median_ms": 106.84174997732043,
+  "p95_ms": 108.46703327260911,
+  "mean_image_median_ms": 107.02953730443758,
+  "peak_allocated_mib": 1763.75341796875,
+  "peak_reserved_mib": 2164.0,
+  "scope": "Seven deterministic spread full inputs and7 warmed synchronized repeats. One candidate in this process; no other GPU process allowed. Host/other-GPU contention is possible. Not full-dataset mean or independent accuracy validation.",
+  "boundary": "Decode/model loading/text encoding excluded and reported separately. Includes resizing/all encoding/semantic readout/alias aggregation/writeback/original-size restoration/CPU argmax output."
+}

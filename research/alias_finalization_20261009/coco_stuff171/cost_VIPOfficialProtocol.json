@@ -1,0 +1,394 @@
+{
+  "status": "complete",
+  "standalone_process": true,
+  "target_masks_loaded": false,
+  "dataset": "coco_stuff171",
+  "mode": "VIPOfficialProtocol",
+  "images": [
+    {
+      "key": "000000000139",
+      "shape": [
+        426,
+        640
+      ],
+      "milliseconds": [
+        184.86045813187957,
+        184.3295858707279,
+        184.06491307541728,
+        183.9966969564557,
+        184.92230400443077,
+        186.43860705196857,
+        184.92965609766543
+      ],
+      "median_ms": 184.86045813187957,
+      "p95_ms": 185.98592176567763,
+      "peak_allocated_mib": 2158.16796875,
+      "peak_reserved_mib": 2772.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        }
+      ],
+      "decode_seconds": 0.20802057697437704
+    },
+    {
+      "key": "000000097994",
+      "shape": [
+        427,
+        640
+      ],
+      "milliseconds": [
+        184.2290940694511,
+        184.26438211463392,
+        186.68707110919058,
+        184.18409605510533,
+        184.5811209641397,
+        184.63647505268455,
+        184.16474014520645
+      ],
+      "median_ms": 184.26438211463392,
+      "p95_ms": 186.07189229223877,
+      "peak_allocated_mib": 2158.4755859375,
+      "peak_reserved_mib": 2776.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        }
+      ],
+      "decode_seconds": 0.003875207854434848
+    },
+    {
+      "key": "000000190140",
+      "shape": [
+        428,
+        640
+      ],
+      "milliseconds": [
+        184.89385186694562,
+        185.5845539830625,
+        184.167108964175,
+        188.0921779666096,
+        184.84419584274292,
+        185.0370520260185,
+        184.8778910934925
+      ],
+      "median_ms": 184.89385186694562,
+      "p95_ms": 187.33989077154547,
+      "peak_allocated_mib": 2158.8701171875,
+      "peak_reserved_mib": 2776.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        }
+      ],
+      "decode_seconds": 0.004338369006291032
+    },
+    {
+      "key": "000000289586",
+      "shape": [
+        640,
+        426
+      ],
+      "milliseconds": [
+        183.16451902501285,
+        182.7167309820652,
+        183.11876198276877,
+        183.30782605335116,
+        184.1127739753574,
+        183.13164403662086,
+        184.12046087905765
+      ],
+      "median_ms": 183.16451902501285,
+      "p95_ms": 184.11815480794758,
+      "peak_allocated_mib": 2158.16796875,
+      "peak_reserved_mib": 2772.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        }
+      ],
+      "decode_seconds": 0.0035623980220407248
+    },
+    {
+      "key": "000000384527",
+      "shape": [
+        480,
+        640
+      ],
+      "milliseconds": [
+        126.06847495771945,
+        124.29439998231828,
+        124.09408390522003,
+        122.77716607786715,
+        122.11883999407291,
+        121.68483389541507,
+        122.02788610011339
+      ],
+      "median_ms": 122.77716607786715,
+      "p95_ms": 125.5362524650991,
+      "peak_allocated_mib": 2190.3828125,
+      "peak_reserved_mib": 2796.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.004554075887426734
+    },
+    {
+      "key": "000000480985",
+      "shape": [
+        500,
+        375
+      ],
+      "milliseconds": [
+        120.85504503920674,
+        122.4281380418688,
+        122.73034104146063,
+        122.35624995082617,
+        122.43569595739245,
+        120.4989159014076,
+        121.43508112058043
+      ],
+      "median_ms": 122.35624995082617,
+      "p95_ms": 122.64194751624018,
+      "peak_allocated_mib": 2034.2197265625,
+      "peak_reserved_mib": 2640.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        },
+        {
+          "geometry": 0,
+          "wide": 2
+        }
+      ],
+      "decode_seconds": 0.0029264078475534916
+    },
+    {
+      "key": "000000581781",
+      "shape": [
+        478,
+        640
+      ],
+      "milliseconds": [
+        183.06715390644968,
+        183.1841820385307,
+        183.31094807945192,
+        183.6856040172279,
+        183.9750639628619,
+        181.8689771462232,
+        181.9535221438855
+      ],
+      "median_ms": 183.1841820385307,
+      "p95_ms": 183.8882259791717,
+      "peak_allocated_mib": 2190.04296875,
+      "peak_reserved_mib": 2792.0,
+      "calls": [
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        },
+        {
+          "geometry": 0,
+          "wide": 3
+        }
+      ],
+      "decode_seconds": 0.004577848128974438
+    }
+  ],
+  "metadata": {
+    "words": "Pinned upstream official queries",
+    "template": "city_template",
+    "scope": "Paper configuration reimplementation with explicit all-masked-row self-Value repair; not published benchmark timing.",
+    "view_policy": "Official natural short-edge336/maxlong2048/crop336/overlap224/actual stride112",
+    "settings": {
+      "tau": 5.0,
+      "tem": 10.0,
+      "prob_thd": 0.05,
+      "background": false,
+      "bg_idx": 0,
+      "resize_long_edge": 448,
+      "slide_crop": 336,
+      "slide_stride": 112,
+      "logit_scale": 40.0
+    },
+    "backbones_resident": 1,
+    "aliases": 410
+  },
+  "initialization_and_text_seconds": 14.854703851044178,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "median_ms": 183.6856040172279,
+  "p95_ms": 186.09698582440615,
+  "mean_image_median_ms": 166.5001156008137,
+  "peak_allocated_mib": 2190.3828125,
+  "peak_reserved_mib": 2796.0,
+  "scope": "Seven deterministic spread full inputs and7 warmed synchronized repeats. One candidate in this process; no other GPU process allowed. Host/other-GPU contention is possible. Not full-dataset mean or independent accuracy validation.",
+  "boundary": "Decode/model loading/text encoding excluded and reported separately. Includes resizing/all encoding/semantic readout/alias aggregation/writeback/original-size restoration/CPU argmax output."
+}

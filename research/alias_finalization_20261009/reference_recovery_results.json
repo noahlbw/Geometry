@@ -1,0 +1,114 @@
+{
+  "status": "complete",
+  "completed": {
+    "vdd": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/vdd/verified_merged.json",
+    "potsdam": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/potsdam/verified_merged.json",
+    "voc20": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/voc20/verified_merged.json",
+    "voc21": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/voc21/verified_merged.json",
+    "udd5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/udd5/merged.json",
+    "oem": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/oem/merged.json",
+    "vaihingen": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/vaihingen/merged.json",
+    "landcoverai": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/landcoverai/merged.json",
+    "context60": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/context60/merged.json",
+    "ade150": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/ade150/merged.json",
+    "context59": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/context59/merged.json",
+    "coco_object81": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/coco_object81/merged.json",
+    "coco_stuff171": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/coco_stuff171/merged.json",
+    "flair1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/flair1/merged.json",
+    "loveda": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/full/loveda/verified_merged.json"
+  },
+  "failures": {},
+  "candidate_inference_rerun": false,
+  "reference_only_replay": true,
+  "reference_verification": {
+    "protocol": "P",
+    "reference_merged": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/alias_finalization_20261009/reference_replay/loveda/merged.json",
+    "historical_merged": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/full/loveda/merged.json",
+    "independent_text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/loveda.pt",
+    "exact_historical_per_image_confusions": true,
+    "global_sample_keys_sha256": "8fd154d842d97a4ed117a00ea581672d06feb51f3d739cf295180fd7911ac002",
+    "images": 1669,
+    "metric": {
+      "mean_iou_percent": 61.4752,
+      "pixel_accuracy_percent": 79.9915,
+      "per_class": [
+        {
+          "name": "building",
+          "iou_percent": 88.6825
+        },
+        {
+          "name": "road",
+          "iou_percent": 68.3298
+        },
+        {
+          "name": "water",
+          "iou_percent": 69.1266
+        },
+        {
+          "name": "barren",
+          "iou_percent": 39.8354
+        },
+        {
+          "name": "tree",
+          "iou_percent": 30.437
+        },
+        {
+          "name": "farm",
+          "iou_percent": 72.44
+        }
+      ],
+      "confusion_matrix": [
+        [
+          116709229,
+          322050,
+          149838,
+          2437956,
+          565464,
+          2621254
+        ],
+        [
+          3955470,
+          63431587,
+          160520,
+          4274208,
+          756768,
+          7011947
+        ],
+        [
+          281640,
+          1536172,
+          142815070,
+          4614879,
+          727840,
+          49592215
+        ],
+        [
+          526165,
+          2683387,
+          3503424,
+          39138670,
+          93169,
+          28438318
+        ],
+        [
+          2337770,
+          5184057,
+          2011416,
+          3077662,
+          39340316,
+          73664426
+        ],
+        [
+          1696562,
+          3515299,
+          1206396,
+          9463260,
+          1492623,
+          469708562
+        ]
+      ],
+      "ignored_pixels": 661027755
+    },
+    "discrepancy": "Main reference sliced D local text features; three P alias vectors differ from the independently cached historical P bank. Wide features and all candidate outputs are preserved."
+  }
+}

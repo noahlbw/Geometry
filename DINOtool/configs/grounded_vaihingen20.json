@@ -1,0 +1,10 @@
+{
+  "protocol": "Frozen ISPRS Vaihingen aliases, 20 phrases per class",
+  "classes": [
+    {"name":"impervious surface","synonyms":["impervious surface","paved surface","pavement","asphalt surface","concrete surface","hard surface","road pavement","parking pavement","sealed ground","built ground","urban pavement","sidewalk","paved area","hardscape","gray pavement","street surface","concrete ground","impermeable ground","man made surface","solid surface"]},
+    {"name":"building","synonyms":["building","buildings","house","houses","rooftop","roof","residential building","industrial building","urban structure","constructed structure","apartment block","warehouse","large building","small building","building roof","built structure","dense buildings","commercial building","concrete building","urban building"]},
+    {"name":"low vegetation","synonyms":["low vegetation","grass","grassland","short grass","ground vegetation","green ground cover","meadow","herbaceous cover","low plants","lawn","pasture","small plants","ground cover","sparse grass","green field","low greenery","vegetated ground","grass cover","short vegetation","herbal vegetation"]},
+    {"name":"tree","synonyms":["tree","trees","tree canopy","forest","woodland","wooded area","tree cluster","grove","dense trees","sparse trees","green canopy","tall vegetation","deciduous trees","evergreen trees","tree crown","wooded vegetation","tree cover","plantation","forest patch","large tree"]},
+    {"name":"car","synonyms":["car","cars","vehicle","vehicles","automobile","parked car","road vehicle","small vehicle","large vehicle","traffic vehicle","moving car","sedan","van","truck","bus","motor vehicle","vehicle cluster","transport vehicle","visible car","automotive object"]}
+  ]
+}

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="820" viewBox="0 0 1440 820" role="img" aria-labelledby="title desc">
+<title id="title">Frozen Geometry coupled model, 2026-10-09</title>
+<desc id="desc">A bounded local Geometry reader and attributed VIP wide observer produce local and wide semantic fields. The same visual relation supports residual writeback. Extra ordinary alias soft weights and fine image encodings are disabled.</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#43566d"/></marker>
+  <style>
+    text {font-family:Arial,Helvetica,sans-serif;fill:#172c45}
+    .heading {font-size:28px;font-weight:700}
+    .label {font-size:19px;font-weight:700}
+    .body {font-size:16px}
+    .small {font-size:14px;fill:#52667b}
+    .box {fill:#fff;stroke:#b9c9d8;stroke-width:1.6;rx:12}
+    .flow {fill:none;stroke:#43566d;stroke-width:2;marker-end:url(#arrow)}
+    .language {fill:none;stroke:#9d6f30;stroke-width:1.8;stroke-dasharray:7 5;marker-end:url(#arrow)}
+  </style>
+</defs>
+<rect width="1440" height="820" fill="#f8fafc"/>
+<text x="50" y="48" class="heading">Geometry reading + relation-supported cross-view correction</text>
+<text x="50" y="76" class="body">Frozen final policy: Uniform ordinary aliases · 0 fine RGB forwards · at most 4 local + 4 wide encodings</text>
+<rect x="265" y="105" width="850" height="300" rx="20" fill="#e9f2fa"/>
+<text x="285" y="134" class="label">LOCAL STRUCTURE / where to read</text>
+<rect x="265" y="450" width="850" height="185" rx="20" fill="#eef3e8"/>
+<text x="285" y="479" class="label">WIDE SEMANTIC OBSERVATION / attributed VIP source</text>
+<rect class="box" x="45" y="325" width="170" height="90"/>
+<text x="130" y="360" text-anchor="middle" class="label">Full RGB image</text>
+<text x="130" y="389" text-anchor="middle" class="body">original dimensions</text>
+<rect class="box" x="290" y="175" width="205" height="95"/>
+<text x="392" y="208" text-anchor="middle" class="label">Bounded local views</text>
+<text x="392" y="236" text-anchor="middle" class="body">long edge 896</text>
+<text x="392" y="257" text-anchor="middle" class="small">≤4 × 512 crops</text>
+<rect class="box" x="550" y="175" width="220" height="95"/>
+<text x="660" y="209" text-anchor="middle" class="label">Frozen DINOv3</text>
+<text x="660" y="237" text-anchor="middle" class="body">raw descriptors + positions</text>
+<rect class="box" x="845" y="155" width="240" height="75"/>
+<text x="965" y="184" text-anchor="middle" class="label">Visual relation A</text>
+<text x="965" y="210" text-anchor="middle" class="body">cosine + distance prior</text>
+<rect class="box" x="550" y="305" width="220" height="75"/>
+<text x="660" y="334" text-anchor="middle" class="label">Geometry head reading</text>
+<text x="660" y="360" text-anchor="middle" class="body">2 frozen semantic blocks</text>
+<rect class="box" x="845" y="305" width="240" height="75"/>
+<text x="965" y="334" text-anchor="middle" class="label">Local semantic field L</text>
+<text x="965" y="360" text-anchor="middle" class="body">alias response → LME</text>
+<rect class="box" x="290" y="515" width="205" height="95"/>
+<text x="392" y="545" text-anchor="middle" class="label">Bounded wide views</text>
+<text x="392" y="573" text-anchor="middle" class="body">RS: long 448</text>
+<text x="392" y="595" text-anchor="middle" class="small">natural: short 336 / cap 672</text>
+<rect class="box" x="550" y="515" width="220" height="95"/>
+<text x="660" y="547" text-anchor="middle" class="label">Finite VIP observer</text>
+<text x="660" y="575" text-anchor="middle" class="body">empty-row self-Value repair</text>
+<text x="660" y="597" text-anchor="middle" class="small">≤4 × 336 crops</text>
+<rect class="box" x="845" y="515" width="240" height="95"/>
+<text x="965" y="546" text-anchor="middle" class="label">Wide semantic field W</text>
+<text x="965" y="575" text-anchor="middle" class="body">inherited image salience</text>
+<text x="965" y="597" text-anchor="middle" class="small">original language aggregation</text>
+<rect x="1160" y="270" width="235" height="195" rx="16" fill="#f0eafb" stroke="#b5a4d2" stroke-width="1.8"/>
+<text x="1277" y="307" text-anchor="middle" class="label">Structure writeback</text>
+<text x="1277" y="344" text-anchor="middle" class="body">H = (I + AᵀA)⁻¹ AᵀA</text>
+<text x="1277" y="387" text-anchor="middle" class="label">Z = L + gH(W − L)</text>
+<text x="1277" y="421" text-anchor="middle" class="small">local anchor + structured residual</text>
+<text x="1277" y="445" text-anchor="middle" class="small">H does not certify semantic truth</text>
+<rect class="box" x="1160" y="535" width="235" height="95"/>
+<text x="1277" y="567" text-anchor="middle" class="label">Original-size prediction</text>
+<text x="1277" y="595" text-anchor="middle" class="body">Hann probability stitching</text>
+<text x="1277" y="618" text-anchor="middle" class="small">interpolation → argmax</text>
+<rect x="45" y="665" width="400" height="70" rx="12" fill="#fff4df" stroke="#d9bd85"/>
+<text x="245" y="693" text-anchor="middle" class="label">Frozen vocabulary + text templates</text>
+<text x="245" y="719" text-anchor="middle" class="body">RS20; natural variable banks; residuals disclosed</text>
+<path class="flow" d="M215 350H240V220H290"/>
+<path class="flow" d="M215 390H240V560H290"/>
+<path class="flow" d="M495 222H550"/>
+<path class="flow" d="M770 205H845"/>
+<path class="flow" d="M660 270V305"/>
+<path class="flow" d="M965 230V282H730V305"/>
+<path class="flow" d="M770 343H845"/>
+<path class="flow" d="M1085 343H1160"/>
+<path class="flow" d="M1085 190H1277V270"/>
+<path class="flow" d="M495 563H550"/>
+<path class="flow" d="M770 563H845"/>
+<path class="flow" d="M1085 563H1125V430H1160"/>
+<path class="flow" d="M1277 465V535"/>
+<path class="language" d="M445 700H965V610"/>
+<path class="language" d="M445 685H815V365H845"/>
+<text x="500" y="717" class="small">No extra ordinary coverage-soft weights; LME and image salience remain.</text>
+<text x="50" y="778" class="small">Original mass-preserving Geometry and patch-only strength routes have different invariants. VIP observer/salience and the quadratic solve are attributed.</text>
+<text x="50" y="802" class="small">Frozen exploratory release · 2026-10-09 · Full results, vocabulary budget, timing scope and failure cases are documented separately.</text>
+</svg>
