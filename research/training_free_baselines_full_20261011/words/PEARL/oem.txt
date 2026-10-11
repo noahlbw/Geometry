@@ -1,0 +1,8 @@
+bareland
+rangeland
+developed space
+road
+tree
+water
+agriculture land
+building

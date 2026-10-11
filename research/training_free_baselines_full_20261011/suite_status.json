@@ -1,0 +1,915 @@
+{
+  "status": "running",
+  "active": [
+    {
+      "method": "GLA-CLIP",
+      "dataset": "vdd",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 1,
+      "gpu": 7,
+      "session": "gtf11_glaclip_evaluate_vdd_0",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/vdd/evaluate/s0",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/vdd/evaluate/s0.log"
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "potsdam",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 1,
+      "gpu": 0,
+      "session": "gtf11_glaclip_evaluate_potsdam_0",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/potsdam/evaluate/s0",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/potsdam/evaluate/s0.log"
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "oem",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 1,
+      "gpu": 3,
+      "session": "gtf11_glaclip_evaluate_oem_0",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/oem/evaluate/s0",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/oem/evaluate/s0.log"
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "loveda",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 8,
+      "gpu": 4,
+      "session": "gtf11_glaclip_evaluate_loveda_0",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/loveda/evaluate/s0",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/loveda/evaluate/s0.log"
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "loveda",
+      "phase": "evaluate",
+      "shard": 1,
+      "shards": 8,
+      "gpu": 5,
+      "session": "gtf11_glaclip_evaluate_loveda_1",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/loveda/evaluate/s1",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/loveda/evaluate/s1.log"
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "loveda",
+      "phase": "evaluate",
+      "shard": 2,
+      "shards": 8,
+      "gpu": 6,
+      "session": "gtf11_glaclip_evaluate_loveda_2",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/loveda/evaluate/s2",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/loveda/evaluate/s2.log"
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "loveda",
+      "phase": "evaluate",
+      "shard": 3,
+      "shards": 8,
+      "gpu": 2,
+      "session": "gtf11_glaclip_evaluate_loveda_3",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/loveda/evaluate/s3",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/loveda/evaluate/s3.log"
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "loveda",
+      "phase": "evaluate",
+      "shard": 4,
+      "shards": 8,
+      "gpu": 1,
+      "session": "gtf11_glaclip_evaluate_loveda_4",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/loveda/evaluate/s4",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/loveda/evaluate/s4.log"
+    }
+  ],
+  "completed": [
+    "PEARL/smoke/vdd/0",
+    "PEARL/smoke/potsdam/0",
+    "PEARL/smoke/udd5/0",
+    "PEARL/smoke/vaihingen/0",
+    "PEARL/smoke/oem/0",
+    "PEARL/smoke/loveda/0",
+    "PEARL/smoke/landcoverai/0",
+    "PEARL/smoke/flair1/0",
+    "PEARL/smoke/voc20/0",
+    "PEARL/smoke/voc21/0",
+    "PEARL/smoke/ade150/0",
+    "PEARL/smoke/context59/0",
+    "PEARL/smoke/context60/0",
+    "PEARL/smoke/coco_object81/0",
+    "PEARL/smoke/coco_stuff171/0",
+    "PEARL/evaluate/vaihingen/0",
+    "PEARL/evaluate/udd5/0",
+    "PEARL/evaluate/vdd/0",
+    "PEARL/evaluate/oem/0",
+    "PEARL/evaluate/loveda/0",
+    "PEARL/evaluate/loveda/1",
+    "PEARL/evaluate/loveda/2",
+    "PEARL/evaluate/potsdam/0",
+    "PEARL/evaluate/loveda/3",
+    "PEARL/evaluate/loveda/4",
+    "PEARL/evaluate/landcoverai/0",
+    "PEARL/evaluate/landcoverai/1",
+    "PEARL/evaluate/loveda/5",
+    "PEARL/evaluate/loveda/6",
+    "PEARL/evaluate/loveda/7",
+    "PEARL/evaluate/landcoverai/2",
+    "PEARL/evaluate/landcoverai/3",
+    "PEARL/evaluate/landcoverai/4",
+    "PEARL/evaluate/landcoverai/5",
+    "PEARL/evaluate/landcoverai/6",
+    "PEARL/evaluate/landcoverai/7",
+    "PEARL/evaluate/flair1/0",
+    "PEARL/evaluate/flair1/1",
+    "PEARL/evaluate/flair1/2",
+    "PEARL/evaluate/flair1/3",
+    "PEARL/evaluate/flair1/4",
+    "PEARL/evaluate/flair1/5",
+    "PEARL/evaluate/flair1/6",
+    "PEARL/evaluate/voc20/0",
+    "PEARL/evaluate/voc20/1",
+    "PEARL/evaluate/voc20/2",
+    "PEARL/evaluate/voc20/3",
+    "PEARL/evaluate/flair1/7",
+    "PEARL/evaluate/voc20/4",
+    "PEARL/evaluate/voc20/5",
+    "PEARL/evaluate/voc20/6",
+    "PEARL/evaluate/voc20/7",
+    "PEARL/evaluate/voc21/0",
+    "PEARL/evaluate/voc21/1",
+    "PEARL/evaluate/voc21/2",
+    "PEARL/evaluate/voc21/3",
+    "PEARL/evaluate/voc21/4",
+    "PEARL/evaluate/voc21/5",
+    "PEARL/evaluate/voc21/6",
+    "PEARL/evaluate/voc21/7",
+    "PEARL/evaluate/ade150/0",
+    "PEARL/evaluate/ade150/1",
+    "PEARL/evaluate/ade150/2",
+    "PEARL/evaluate/ade150/3",
+    "PEARL/evaluate/ade150/4",
+    "PEARL/evaluate/ade150/5",
+    "PEARL/evaluate/ade150/6",
+    "PEARL/evaluate/ade150/7",
+    "PEARL/evaluate/context59/0",
+    "PEARL/evaluate/context59/1",
+    "PEARL/evaluate/context59/2",
+    "PEARL/evaluate/context59/3",
+    "PEARL/evaluate/context59/4",
+    "PEARL/evaluate/context59/5",
+    "PEARL/evaluate/context59/6",
+    "PEARL/evaluate/context59/7",
+    "PEARL/evaluate/context60/0",
+    "PEARL/evaluate/context60/1",
+    "PEARL/evaluate/context60/2",
+    "PEARL/evaluate/context60/3",
+    "PEARL/evaluate/context60/4",
+    "PEARL/evaluate/context60/5",
+    "PEARL/evaluate/context60/6",
+    "PEARL/evaluate/context60/7",
+    "PEARL/evaluate/coco_object81/0",
+    "PEARL/evaluate/coco_object81/1",
+    "PEARL/evaluate/coco_object81/2",
+    "PEARL/evaluate/coco_object81/4",
+    "PEARL/evaluate/coco_object81/6",
+    "PEARL/evaluate/coco_object81/3",
+    "PEARL/evaluate/coco_object81/5",
+    "PEARL/evaluate/coco_object81/7",
+    "PEARL/evaluate/coco_stuff171/0",
+    "PEARL/evaluate/coco_stuff171/1",
+    "PEARL/evaluate/coco_stuff171/2",
+    "PEARL/cost/vdd/0",
+    "PEARL/evaluate/coco_stuff171/3",
+    "PEARL/evaluate/coco_stuff171/4",
+    "PEARL/evaluate/coco_stuff171/5",
+    "PEARL/evaluate/coco_stuff171/6",
+    "PEARL/evaluate/coco_stuff171/7",
+    "PEARL/cost/potsdam/0",
+    "PEARL/cost/udd5/0",
+    "PEARL/cost/vaihingen/0",
+    "PEARL/cost/oem/0",
+    "PEARL/cost/loveda/0",
+    "PEARL/cost/landcoverai/0",
+    "PEARL/cost/flair1/0",
+    "PEARL/cost/voc20/0",
+    "PEARL/cost/voc21/0",
+    "PEARL/cost/ade150/0",
+    "PEARL/cost/context59/0",
+    "PEARL/cost/context60/0",
+    "PEARL/cost/coco_object81/0",
+    "PEARL/cost/coco_stuff171/0",
+    "GLA-CLIP/smoke/vdd/0",
+    "GLA-CLIP/smoke/potsdam/0",
+    "GLA-CLIP/smoke/udd5/0",
+    "GLA-CLIP/smoke/vaihingen/0",
+    "GLA-CLIP/smoke/oem/0",
+    "GLA-CLIP/smoke/loveda/0",
+    "GLA-CLIP/smoke/landcoverai/0",
+    "GLA-CLIP/smoke/flair1/0",
+    "GLA-CLIP/smoke/voc20/0",
+    "GLA-CLIP/smoke/voc21/0",
+    "GLA-CLIP/smoke/ade150/0",
+    "GLA-CLIP/smoke/context59/0",
+    "GLA-CLIP/smoke/context60/0",
+    "GLA-CLIP/smoke/coco_object81/0",
+    "GLA-CLIP/smoke/coco_stuff171/0",
+    "GLA-CLIP/evaluate/vaihingen/0",
+    "GLA-CLIP/evaluate/udd5/0"
+  ],
+  "failures": {},
+  "merged": {
+    "PEARL/vaihingen": {
+      "vaihingen": 26.1222
+    },
+    "PEARL/udd5": {
+      "udd5": 43.3762
+    },
+    "PEARL/vdd": {
+      "vdd": 37.9121
+    },
+    "PEARL/oem": {
+      "oem": 27.707
+    },
+    "PEARL/potsdam": {
+      "potsdam": 31.5545
+    },
+    "PEARL/loveda": {
+      "P": 47.5212,
+      "D": 29.6031
+    },
+    "PEARL/landcoverai": {
+      "landcoverai": 30.9757
+    },
+    "PEARL/flair1": {
+      "flair1": 19.3884
+    },
+    "PEARL/voc20": {
+      "voc20": 86.9143
+    },
+    "PEARL/voc21": {
+      "voc21": 64.0821
+    },
+    "PEARL/ade150": {
+      "ade150": 19.3537
+    },
+    "PEARL/context59": {
+      "context59": 38.7213
+    },
+    "PEARL/context60": {
+      "context60": 36.5263
+    },
+    "PEARL/coco_object81": {
+      "coco_object81": 38.6592
+    },
+    "PEARL/coco_stuff171": {
+      "coco_stuff171": 26.3142
+    },
+    "GLA-CLIP/vaihingen": {
+      "vaihingen": 28.5356
+    },
+    "GLA-CLIP/udd5": {
+      "udd5": 47.7428
+    }
+  },
+  "pending": [
+    {
+      "method": "GLA-CLIP",
+      "dataset": "loveda",
+      "phase": "evaluate",
+      "shard": 5,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "loveda",
+      "phase": "evaluate",
+      "shard": 6,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "loveda",
+      "phase": "evaluate",
+      "shard": 7,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "landcoverai",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "landcoverai",
+      "phase": "evaluate",
+      "shard": 1,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "landcoverai",
+      "phase": "evaluate",
+      "shard": 2,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "landcoverai",
+      "phase": "evaluate",
+      "shard": 3,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "landcoverai",
+      "phase": "evaluate",
+      "shard": 4,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "landcoverai",
+      "phase": "evaluate",
+      "shard": 5,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "landcoverai",
+      "phase": "evaluate",
+      "shard": 6,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "landcoverai",
+      "phase": "evaluate",
+      "shard": 7,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "flair1",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "flair1",
+      "phase": "evaluate",
+      "shard": 1,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "flair1",
+      "phase": "evaluate",
+      "shard": 2,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "flair1",
+      "phase": "evaluate",
+      "shard": 3,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "flair1",
+      "phase": "evaluate",
+      "shard": 4,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "flair1",
+      "phase": "evaluate",
+      "shard": 5,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "flair1",
+      "phase": "evaluate",
+      "shard": 6,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "flair1",
+      "phase": "evaluate",
+      "shard": 7,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "voc20",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "voc20",
+      "phase": "evaluate",
+      "shard": 1,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "voc20",
+      "phase": "evaluate",
+      "shard": 2,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "voc20",
+      "phase": "evaluate",
+      "shard": 3,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "voc20",
+      "phase": "evaluate",
+      "shard": 4,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "voc20",
+      "phase": "evaluate",
+      "shard": 5,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "voc20",
+      "phase": "evaluate",
+      "shard": 6,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "voc20",
+      "phase": "evaluate",
+      "shard": 7,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "voc21",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "voc21",
+      "phase": "evaluate",
+      "shard": 1,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "voc21",
+      "phase": "evaluate",
+      "shard": 2,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "voc21",
+      "phase": "evaluate",
+      "shard": 3,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "voc21",
+      "phase": "evaluate",
+      "shard": 4,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "voc21",
+      "phase": "evaluate",
+      "shard": 5,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "voc21",
+      "phase": "evaluate",
+      "shard": 6,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "voc21",
+      "phase": "evaluate",
+      "shard": 7,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "ade150",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "ade150",
+      "phase": "evaluate",
+      "shard": 1,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "ade150",
+      "phase": "evaluate",
+      "shard": 2,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "ade150",
+      "phase": "evaluate",
+      "shard": 3,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "ade150",
+      "phase": "evaluate",
+      "shard": 4,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "ade150",
+      "phase": "evaluate",
+      "shard": 5,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "ade150",
+      "phase": "evaluate",
+      "shard": 6,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "ade150",
+      "phase": "evaluate",
+      "shard": 7,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "context59",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "context59",
+      "phase": "evaluate",
+      "shard": 1,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "context59",
+      "phase": "evaluate",
+      "shard": 2,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "context59",
+      "phase": "evaluate",
+      "shard": 3,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "context59",
+      "phase": "evaluate",
+      "shard": 4,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "context59",
+      "phase": "evaluate",
+      "shard": 5,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "context59",
+      "phase": "evaluate",
+      "shard": 6,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "context59",
+      "phase": "evaluate",
+      "shard": 7,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "context60",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "context60",
+      "phase": "evaluate",
+      "shard": 1,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "context60",
+      "phase": "evaluate",
+      "shard": 2,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "context60",
+      "phase": "evaluate",
+      "shard": 3,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "context60",
+      "phase": "evaluate",
+      "shard": 4,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "context60",
+      "phase": "evaluate",
+      "shard": 5,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "context60",
+      "phase": "evaluate",
+      "shard": 6,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "context60",
+      "phase": "evaluate",
+      "shard": 7,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "coco_object81",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "coco_object81",
+      "phase": "evaluate",
+      "shard": 1,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "coco_object81",
+      "phase": "evaluate",
+      "shard": 2,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "coco_object81",
+      "phase": "evaluate",
+      "shard": 3,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "coco_object81",
+      "phase": "evaluate",
+      "shard": 4,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "coco_object81",
+      "phase": "evaluate",
+      "shard": 5,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "coco_object81",
+      "phase": "evaluate",
+      "shard": 6,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "coco_object81",
+      "phase": "evaluate",
+      "shard": 7,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "coco_stuff171",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "coco_stuff171",
+      "phase": "evaluate",
+      "shard": 1,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "coco_stuff171",
+      "phase": "evaluate",
+      "shard": 2,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "coco_stuff171",
+      "phase": "evaluate",
+      "shard": 3,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "coco_stuff171",
+      "phase": "evaluate",
+      "shard": 4,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "coco_stuff171",
+      "phase": "evaluate",
+      "shard": 5,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "coco_stuff171",
+      "phase": "evaluate",
+      "shard": 6,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "coco_stuff171",
+      "phase": "evaluate",
+      "shard": 7,
+      "shards": 8
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "vdd",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "potsdam",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "udd5",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "vaihingen",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "oem",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "loveda",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "landcoverai",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "flair1",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "voc20",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "voc21",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "ade150",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "context59",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "context60",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "coco_object81",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "GLA-CLIP",
+      "dataset": "coco_stuff171",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    }
+  ],
+  "current_method": "GLA-CLIP"
+}

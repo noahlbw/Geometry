@@ -1,0 +1,5 @@
+background
+building
+woodland
+water
+road

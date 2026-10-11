@@ -1,0 +1,305 @@
+{
+  "coverage": {
+    "sample_keys": [
+      "top_mosaic_09cm_area10_y00_x00.tif",
+      "top_mosaic_09cm_area10_y00_x01.tif",
+      "top_mosaic_09cm_area10_y01_x00.tif",
+      "top_mosaic_09cm_area10_y01_x01.tif",
+      "top_mosaic_09cm_area10_y02_x00.tif",
+      "top_mosaic_09cm_area10_y02_x01.tif",
+      "top_mosaic_09cm_area12_y00_x00.tif",
+      "top_mosaic_09cm_area12_y00_x01.tif",
+      "top_mosaic_09cm_area12_y01_x00.tif",
+      "top_mosaic_09cm_area12_y01_x01.tif",
+      "top_mosaic_09cm_area12_y02_x00.tif",
+      "top_mosaic_09cm_area12_y02_x01.tif",
+      "top_mosaic_09cm_area14_y00_x00.tif",
+      "top_mosaic_09cm_area14_y00_x01.tif",
+      "top_mosaic_09cm_area14_y01_x00.tif",
+      "top_mosaic_09cm_area14_y01_x01.tif",
+      "top_mosaic_09cm_area14_y02_x00.tif",
+      "top_mosaic_09cm_area14_y02_x01.tif",
+      "top_mosaic_09cm_area16_y00_x00.tif",
+      "top_mosaic_09cm_area16_y00_x01.tif",
+      "top_mosaic_09cm_area16_y01_x00.tif",
+      "top_mosaic_09cm_area16_y01_x01.tif",
+      "top_mosaic_09cm_area16_y02_x00.tif",
+      "top_mosaic_09cm_area16_y02_x01.tif",
+      "top_mosaic_09cm_area20_y00_x00.tif",
+      "top_mosaic_09cm_area20_y00_x01.tif",
+      "top_mosaic_09cm_area20_y01_x00.tif",
+      "top_mosaic_09cm_area20_y01_x01.tif",
+      "top_mosaic_09cm_area20_y02_x00.tif",
+      "top_mosaic_09cm_area20_y02_x01.tif",
+      "top_mosaic_09cm_area22_y00_x00.tif",
+      "top_mosaic_09cm_area22_y00_x01.tif",
+      "top_mosaic_09cm_area22_y01_x00.tif",
+      "top_mosaic_09cm_area22_y01_x01.tif",
+      "top_mosaic_09cm_area22_y02_x00.tif",
+      "top_mosaic_09cm_area22_y02_x01.tif",
+      "top_mosaic_09cm_area24_y00_x00.tif",
+      "top_mosaic_09cm_area24_y00_x01.tif",
+      "top_mosaic_09cm_area24_y01_x00.tif",
+      "top_mosaic_09cm_area24_y01_x01.tif",
+      "top_mosaic_09cm_area24_y02_x00.tif",
+      "top_mosaic_09cm_area24_y02_x01.tif",
+      "top_mosaic_09cm_area27_y00_x00.tif",
+      "top_mosaic_09cm_area27_y00_x01.tif",
+      "top_mosaic_09cm_area27_y01_x00.tif",
+      "top_mosaic_09cm_area27_y01_x01.tif",
+      "top_mosaic_09cm_area27_y02_x00.tif",
+      "top_mosaic_09cm_area27_y02_x01.tif",
+      "top_mosaic_09cm_area27_y03_x00.tif",
+      "top_mosaic_09cm_area27_y03_x01.tif",
+      "top_mosaic_09cm_area29_y00_x00.tif",
+      "top_mosaic_09cm_area29_y00_x01.tif",
+      "top_mosaic_09cm_area29_y01_x00.tif",
+      "top_mosaic_09cm_area29_y01_x01.tif",
+      "top_mosaic_09cm_area29_y02_x00.tif",
+      "top_mosaic_09cm_area29_y02_x01.tif",
+      "top_mosaic_09cm_area2_y00_x00.tif",
+      "top_mosaic_09cm_area2_y00_x01.tif",
+      "top_mosaic_09cm_area2_y00_x02.tif",
+      "top_mosaic_09cm_area2_y01_x00.tif",
+      "top_mosaic_09cm_area2_y01_x01.tif",
+      "top_mosaic_09cm_area2_y01_x02.tif",
+      "top_mosaic_09cm_area2_y02_x00.tif",
+      "top_mosaic_09cm_area2_y02_x01.tif",
+      "top_mosaic_09cm_area2_y02_x02.tif",
+      "top_mosaic_09cm_area31_y00_x00.tif",
+      "top_mosaic_09cm_area31_y00_x01.tif",
+      "top_mosaic_09cm_area31_y01_x00.tif",
+      "top_mosaic_09cm_area31_y01_x01.tif",
+      "top_mosaic_09cm_area31_y02_x00.tif",
+      "top_mosaic_09cm_area31_y02_x01.tif",
+      "top_mosaic_09cm_area33_y00_x00.tif",
+      "top_mosaic_09cm_area33_y00_x01.tif",
+      "top_mosaic_09cm_area33_y01_x00.tif",
+      "top_mosaic_09cm_area33_y01_x01.tif",
+      "top_mosaic_09cm_area33_y02_x00.tif",
+      "top_mosaic_09cm_area33_y02_x01.tif",
+      "top_mosaic_09cm_area35_y00_x00.tif",
+      "top_mosaic_09cm_area35_y00_x01.tif",
+      "top_mosaic_09cm_area35_y00_x02.tif",
+      "top_mosaic_09cm_area35_y01_x00.tif",
+      "top_mosaic_09cm_area35_y01_x01.tif",
+      "top_mosaic_09cm_area35_y01_x02.tif",
+      "top_mosaic_09cm_area38_y00_x00.tif",
+      "top_mosaic_09cm_area38_y00_x01.tif",
+      "top_mosaic_09cm_area38_y00_x02.tif",
+      "top_mosaic_09cm_area38_y00_x03.tif",
+      "top_mosaic_09cm_area38_y01_x00.tif",
+      "top_mosaic_09cm_area38_y01_x01.tif",
+      "top_mosaic_09cm_area38_y01_x02.tif",
+      "top_mosaic_09cm_area38_y01_x03.tif",
+      "top_mosaic_09cm_area38_y02_x00.tif",
+      "top_mosaic_09cm_area38_y02_x01.tif",
+      "top_mosaic_09cm_area38_y02_x02.tif",
+      "top_mosaic_09cm_area38_y02_x03.tif",
+      "top_mosaic_09cm_area4_y00_x00.tif",
+      "top_mosaic_09cm_area4_y00_x01.tif",
+      "top_mosaic_09cm_area4_y01_x00.tif",
+      "top_mosaic_09cm_area4_y01_x01.tif",
+      "top_mosaic_09cm_area4_y02_x00.tif",
+      "top_mosaic_09cm_area4_y02_x01.tif",
+      "top_mosaic_09cm_area6_y00_x00.tif",
+      "top_mosaic_09cm_area6_y00_x01.tif",
+      "top_mosaic_09cm_area6_y01_x00.tif",
+      "top_mosaic_09cm_area6_y01_x01.tif",
+      "top_mosaic_09cm_area6_y02_x00.tif",
+      "top_mosaic_09cm_area6_y02_x01.tif",
+      "top_mosaic_09cm_area8_y00_x00.tif",
+      "top_mosaic_09cm_area8_y00_x01.tif",
+      "top_mosaic_09cm_area8_y01_x00.tif",
+      "top_mosaic_09cm_area8_y01_x01.tif",
+      "top_mosaic_09cm_area8_y02_x00.tif",
+      "top_mosaic_09cm_area8_y02_x01.tif"
+    ],
+    "global_sample_keys_sha256": "25720ac369c583d1c9d96c3da1b151770645ae61a858b41fc8f5847ffd6cc883"
+  },
+  "results": {
+    "vaihingen": {
+      "VIP_SameText": {
+        "mean_iou_percent": 49.1039,
+        "pixel_accuracy_percent": 71.2433,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 60.4679,
+            "target_pixels": 31877366,
+            "predicted_pixels": 33956770,
+            "precision_percent": 73.057,
+            "recall_percent": 77.8226,
+            "predicted_area_percent": 30.31
+          },
+          {
+            "name": "building",
+            "iou_percent": 62.8241,
+            "target_pixels": 29513079,
+            "predicted_pixels": 45615362,
+            "precision_percent": 63.5478,
+            "recall_percent": 98.2194,
+            "predicted_area_percent": 40.7165
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 35.6116,
+            "target_pixels": 24006993,
+            "predicted_pixels": 13110863,
+            "precision_percent": 74.3441,
+            "recall_percent": 40.6013,
+            "predicted_area_percent": 11.7028
+          },
+          {
+            "name": "tree",
+            "iou_percent": 56.8126,
+            "target_pixels": 25171696,
+            "predicted_pixels": 17895608,
+            "precision_percent": 87.1897,
+            "recall_percent": 61.9868,
+            "predicted_area_percent": 15.9737
+          },
+          {
+            "name": "car",
+            "iou_percent": 29.8032,
+            "target_pixels": 1462487,
+            "predicted_pixels": 1453018,
+            "precision_percent": 46.0702,
+            "recall_percent": 45.7719,
+            "predicted_area_percent": 1.297
+          }
+        ],
+        "confusion_matrix": [
+          [
+            24807787,
+            5708367,
+            192886,
+            541437,
+            626889
+          ],
+          [
+            417233,
+            28987580,
+            39302,
+            58898,
+            10066
+          ],
+          [
+            5353691,
+            7112615,
+            9747157,
+            1686936,
+            106594
+          ],
+          [
+            2785792,
+            3611366,
+            3131356,
+            15603121,
+            40061
+          ],
+          [
+            592267,
+            195434,
+            162,
+            5216,
+            669408
+          ]
+        ],
+        "ignored_pixels": 968379,
+        "unscored_prediction_classes": 0
+      },
+      "VIP_SameWordsOfficialTemplate": {
+        "mean_iou_percent": 49.1039,
+        "pixel_accuracy_percent": 71.2433,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 60.4679,
+            "target_pixels": 31877366,
+            "predicted_pixels": 33956770,
+            "precision_percent": 73.057,
+            "recall_percent": 77.8226,
+            "predicted_area_percent": 30.31
+          },
+          {
+            "name": "building",
+            "iou_percent": 62.8241,
+            "target_pixels": 29513079,
+            "predicted_pixels": 45615362,
+            "precision_percent": 63.5478,
+            "recall_percent": 98.2194,
+            "predicted_area_percent": 40.7165
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 35.6116,
+            "target_pixels": 24006993,
+            "predicted_pixels": 13110863,
+            "precision_percent": 74.3441,
+            "recall_percent": 40.6013,
+            "predicted_area_percent": 11.7028
+          },
+          {
+            "name": "tree",
+            "iou_percent": 56.8126,
+            "target_pixels": 25171696,
+            "predicted_pixels": 17895608,
+            "precision_percent": 87.1897,
+            "recall_percent": 61.9868,
+            "predicted_area_percent": 15.9737
+          },
+          {
+            "name": "car",
+            "iou_percent": 29.8032,
+            "target_pixels": 1462487,
+            "predicted_pixels": 1453018,
+            "precision_percent": 46.0702,
+            "recall_percent": 45.7719,
+            "predicted_area_percent": 1.297
+          }
+        ],
+        "confusion_matrix": [
+          [
+            24807787,
+            5708367,
+            192886,
+            541437,
+            626889
+          ],
+          [
+            417233,
+            28987580,
+            39302,
+            58898,
+            10066
+          ],
+          [
+            5353691,
+            7112615,
+            9747157,
+            1686936,
+            106594
+          ],
+          [
+            2785792,
+            3611366,
+            3131356,
+            15603121,
+            40061
+          ],
+          [
+            592267,
+            195434,
+            162,
+            5216,
+            669408
+          ]
+        ],
+        "ignored_pixels": 968379,
+        "unscored_prediction_classes": 0
+      }
+    }
+  },
+  "source": "verified local finite-row-repaired native VIP reimplementation, not paper numbers"
+}

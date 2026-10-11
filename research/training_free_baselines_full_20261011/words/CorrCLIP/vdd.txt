@@ -1,0 +1,7 @@
+other
+wall
+road
+vegetation
+vehicle
+roof
+water

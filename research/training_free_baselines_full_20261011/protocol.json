@@ -1,0 +1,3323 @@
+{
+  "implementation": "pinned-native-training-free-baseline-suite-v1-20261011",
+  "datasets": {
+    "vdd": {
+      "family": "remote_sensing",
+      "background_index": 0,
+      "total_images": 80,
+      "data_root": "/data/test/datasets/VDD Release Version/VDD",
+      "class_names": [
+        "other",
+        "wall",
+        "road",
+        "vegetation",
+        "vehicle",
+        "roof",
+        "water"
+      ]
+    },
+    "potsdam": {
+      "family": "remote_sensing",
+      "background_index": 5,
+      "total_images": 504,
+      "data_root": "/data/test/datasets/Potsdam/preprocessed_RGB",
+      "class_names": [
+        "impervious surface",
+        "building",
+        "low vegetation",
+        "tree",
+        "car",
+        "clutter"
+      ]
+    },
+    "voc20": {
+      "family": "natural",
+      "background_index": null,
+      "total_images": 1449,
+      "data_root": "/data/test/datasets/VIP_natural/VOCdevkit/VOC2012",
+      "class_names": [
+        "aeroplane",
+        "bicycle",
+        "bird",
+        "boat",
+        "bottle",
+        "bus",
+        "car",
+        "cat",
+        "chair",
+        "cow",
+        "diningtable",
+        "dog",
+        "horse",
+        "motorbike",
+        "person",
+        "pottedplant",
+        "sheep",
+        "sofa",
+        "train",
+        "tvmonitor"
+      ]
+    },
+    "voc21": {
+      "family": "natural",
+      "background_index": 0,
+      "total_images": 1449,
+      "data_root": "/data/test/datasets/VIP_natural/VOCdevkit/VOC2012",
+      "class_names": [
+        "background",
+        "aeroplane",
+        "bicycle",
+        "bird",
+        "boat",
+        "bottle",
+        "bus",
+        "car",
+        "cat",
+        "chair",
+        "cow",
+        "diningtable",
+        "dog",
+        "horse",
+        "motorbike",
+        "person",
+        "pottedplant",
+        "sheep",
+        "sofa",
+        "train",
+        "tvmonitor"
+      ]
+    },
+    "ade150": {
+      "family": "natural",
+      "background_index": null,
+      "total_images": 2000,
+      "data_root": "/data/test/datasets/VIP_natural/ADEChallengeData2016",
+      "class_names": [
+        "wall",
+        "building",
+        "sky",
+        "floor",
+        "tree",
+        "ceiling",
+        "road",
+        "bed",
+        "windowpane",
+        "grass",
+        "cabinet",
+        "sidewalk",
+        "person",
+        "earth",
+        "door",
+        "table",
+        "mountain",
+        "plant",
+        "curtain",
+        "chair",
+        "car",
+        "water",
+        "painting",
+        "sofa",
+        "shelf",
+        "house",
+        "sea",
+        "mirror",
+        "rug",
+        "field",
+        "armchair",
+        "seat",
+        "fence",
+        "desk",
+        "rock",
+        "wardrobe",
+        "lamp",
+        "bathtub",
+        "railing",
+        "cushion",
+        "base",
+        "box",
+        "column",
+        "signboard",
+        "chest of drawers",
+        "counter",
+        "sand",
+        "sink",
+        "skyscraper",
+        "fireplace",
+        "refrigerator",
+        "grandstand",
+        "path",
+        "stairs",
+        "runway",
+        "case",
+        "pool table",
+        "pillow",
+        "screen door",
+        "stairway",
+        "river",
+        "bridge",
+        "bookcase",
+        "blind",
+        "coffee table",
+        "toilet",
+        "flower",
+        "book",
+        "hill",
+        "bench",
+        "countertop",
+        "stove",
+        "palm",
+        "kitchen island",
+        "computer",
+        "swivel chair",
+        "boat",
+        "bar",
+        "arcade machine",
+        "hovel",
+        "bus",
+        "towel",
+        "light",
+        "truck",
+        "tower",
+        "chandelier",
+        "awning",
+        "streetlight",
+        "booth",
+        "television receiver",
+        "airplane",
+        "dirt track",
+        "apparel",
+        "pole",
+        "land",
+        "bannister",
+        "escalator",
+        "ottoman",
+        "bottle",
+        "buffet",
+        "poster",
+        "stage",
+        "van",
+        "ship",
+        "fountain",
+        "conveyer belt",
+        "canopy",
+        "washer",
+        "plaything",
+        "swimming pool",
+        "stool",
+        "barrel",
+        "basket",
+        "waterfall",
+        "tent",
+        "bag",
+        "minibike",
+        "cradle",
+        "oven",
+        "ball",
+        "food",
+        "step",
+        "tank",
+        "trade name",
+        "microwave",
+        "pot",
+        "animal",
+        "bicycle",
+        "lake",
+        "dishwasher",
+        "screen",
+        "blanket",
+        "sculpture",
+        "hood",
+        "sconce",
+        "vase",
+        "traffic light",
+        "tray",
+        "ashcan",
+        "fan",
+        "pier",
+        "crt screen",
+        "plate",
+        "monitor",
+        "bulletin board",
+        "shower",
+        "radiator",
+        "glass",
+        "clock",
+        "flag"
+      ]
+    },
+    "context60": {
+      "family": "natural",
+      "background_index": 0,
+      "total_images": 5105,
+      "data_root": "/data/test/datasets/VIP_natural/VOCdevkit/VOC2010",
+      "class_names": [
+        "background",
+        "aeroplane",
+        "bag",
+        "bed",
+        "bedclothes",
+        "bench",
+        "bicycle",
+        "bird",
+        "boat",
+        "book",
+        "bottle",
+        "building",
+        "bus",
+        "cabinet",
+        "car",
+        "cat",
+        "ceiling",
+        "chair",
+        "cloth",
+        "computer",
+        "cow",
+        "cup",
+        "curtain",
+        "dog",
+        "door",
+        "fence",
+        "floor",
+        "flower",
+        "food",
+        "grass",
+        "ground",
+        "horse",
+        "keyboard",
+        "light",
+        "motorbike",
+        "mountain",
+        "mouse",
+        "person",
+        "plate",
+        "platform",
+        "pottedplant",
+        "road",
+        "rock",
+        "sheep",
+        "shelves",
+        "sidewalk",
+        "sign",
+        "sky",
+        "snow",
+        "sofa",
+        "table",
+        "track",
+        "train",
+        "tree",
+        "truck",
+        "tvmonitor",
+        "wall",
+        "water",
+        "window",
+        "wood"
+      ]
+    },
+    "udd5": {
+      "family": "remote_sensing",
+      "background_index": 4,
+      "total_images": 40,
+      "data_root": "/data/test/datasets/UDD5/extracted/UDD/UDD5",
+      "class_names": [
+        "vegetation",
+        "building",
+        "road",
+        "vehicle",
+        "other"
+      ]
+    },
+    "oem": {
+      "family": "remote_sensing",
+      "background_index": null,
+      "total_images": 384,
+      "data_root": "/data/test/datasets/OpenEarthMap_wo_xBD",
+      "class_names": [
+        "bareland",
+        "rangeland",
+        "developed space",
+        "road",
+        "tree",
+        "water",
+        "agriculture land",
+        "building"
+      ]
+    },
+    "vaihingen": {
+      "family": "remote_sensing",
+      "background_index": null,
+      "total_images": 113,
+      "data_root": "/data/test/datasets/Vaihingen/preprocessed_corrected_20261001",
+      "class_names": [
+        "impervious surface",
+        "building",
+        "low vegetation",
+        "tree",
+        "car"
+      ]
+    },
+    "landcoverai": {
+      "family": "remote_sensing",
+      "background_index": 0,
+      "total_images": 1602,
+      "data_root": "/data/test/datasets/LandCoverAI_v1_target_20260922/preprocessed_official512_gear29",
+      "class_names": [
+        "background",
+        "building",
+        "woodland",
+        "water",
+        "road"
+      ]
+    },
+    "loveda": {
+      "family": "remote_sensing",
+      "background_index": 0,
+      "total_images": 1669,
+      "data_root": "/data/test/cafe-efa/data/processed/loveda/val",
+      "class_names": [
+        "background",
+        "building",
+        "road",
+        "water",
+        "barren",
+        "tree",
+        "farm"
+      ]
+    },
+    "context59": {
+      "family": "natural",
+      "background_index": null,
+      "total_images": 5105,
+      "data_root": "/data/test/datasets/VIP_natural/VOCdevkit/VOC2010",
+      "class_names": [
+        "aeroplane",
+        "bag",
+        "bed",
+        "bedclothes",
+        "bench",
+        "bicycle",
+        "bird",
+        "boat",
+        "book",
+        "bottle",
+        "building",
+        "bus",
+        "cabinet",
+        "car",
+        "cat",
+        "ceiling",
+        "chair",
+        "cloth",
+        "computer",
+        "cow",
+        "cup",
+        "curtain",
+        "dog",
+        "door",
+        "fence",
+        "floor",
+        "flower",
+        "food",
+        "grass",
+        "ground",
+        "horse",
+        "keyboard",
+        "light",
+        "motorbike",
+        "mountain",
+        "mouse",
+        "person",
+        "plate",
+        "platform",
+        "pottedplant",
+        "road",
+        "rock",
+        "sheep",
+        "shelves",
+        "sidewalk",
+        "sign",
+        "sky",
+        "snow",
+        "sofa",
+        "table",
+        "track",
+        "train",
+        "tree",
+        "truck",
+        "tvmonitor",
+        "wall",
+        "water",
+        "window",
+        "wood"
+      ]
+    },
+    "coco_object81": {
+      "family": "natural",
+      "background_index": 0,
+      "total_images": 5000,
+      "data_root": "/data/test/datasets/VIP_natural/COCOObject",
+      "class_names": [
+        "background",
+        "person",
+        "bicycle",
+        "car",
+        "motorcycle",
+        "airplane",
+        "bus",
+        "train",
+        "truck",
+        "boat",
+        "traffic light",
+        "fire hydrant",
+        "stop sign",
+        "parking meter",
+        "bench",
+        "bird",
+        "cat",
+        "dog",
+        "horse",
+        "sheep",
+        "cow",
+        "elephant",
+        "bear",
+        "zebra",
+        "giraffe",
+        "backpack",
+        "umbrella",
+        "handbag",
+        "tie",
+        "suitcase",
+        "frisbee",
+        "skis",
+        "snowboard",
+        "sports ball",
+        "kite",
+        "baseball bat",
+        "baseball glove",
+        "skateboard",
+        "surfboard",
+        "tennis racket",
+        "bottle",
+        "wine glass",
+        "cup",
+        "fork",
+        "knife",
+        "spoon",
+        "bowl",
+        "banana",
+        "apple",
+        "sandwich",
+        "orange",
+        "broccoli",
+        "carrot",
+        "hot dog",
+        "pizza",
+        "donut",
+        "cake",
+        "chair",
+        "couch",
+        "potted plant",
+        "bed",
+        "dining table",
+        "toilet",
+        "tv",
+        "laptop",
+        "mouse",
+        "remote",
+        "keyboard",
+        "cell phone",
+        "microwave",
+        "oven",
+        "toaster",
+        "sink",
+        "refrigerator",
+        "book",
+        "clock",
+        "vase",
+        "scissors",
+        "teddy bear",
+        "hair drier",
+        "toothbrush"
+      ]
+    },
+    "coco_stuff171": {
+      "family": "natural",
+      "background_index": null,
+      "total_images": 5000,
+      "data_root": "/data/test/datasets/VIP_natural/COCOStuff164k",
+      "class_names": [
+        "person",
+        "bicycle",
+        "car",
+        "motorcycle",
+        "airplane",
+        "bus",
+        "train",
+        "truck",
+        "boat",
+        "traffic light",
+        "fire hydrant",
+        "stop sign",
+        "parking meter",
+        "bench",
+        "bird",
+        "cat",
+        "dog",
+        "horse",
+        "sheep",
+        "cow",
+        "elephant",
+        "bear",
+        "zebra",
+        "giraffe",
+        "backpack",
+        "umbrella",
+        "handbag",
+        "tie",
+        "suitcase",
+        "frisbee",
+        "skis",
+        "snowboard",
+        "sports ball",
+        "kite",
+        "baseball bat",
+        "baseball glove",
+        "skateboard",
+        "surfboard",
+        "tennis racket",
+        "bottle",
+        "wine glass",
+        "cup",
+        "fork",
+        "knife",
+        "spoon",
+        "bowl",
+        "banana",
+        "apple",
+        "sandwich",
+        "orange",
+        "broccoli",
+        "carrot",
+        "hot dog",
+        "pizza",
+        "donut",
+        "cake",
+        "chair",
+        "couch",
+        "potted plant",
+        "bed",
+        "dining table",
+        "toilet",
+        "tv",
+        "laptop",
+        "mouse",
+        "remote",
+        "keyboard",
+        "cell phone",
+        "microwave",
+        "oven",
+        "toaster",
+        "sink",
+        "refrigerator",
+        "book",
+        "clock",
+        "vase",
+        "scissors",
+        "teddy bear",
+        "hair drier",
+        "toothbrush",
+        "banner",
+        "blanket",
+        "branch",
+        "bridge",
+        "building-other",
+        "bush",
+        "cabinet",
+        "cage",
+        "cardboard",
+        "carpet",
+        "ceiling-other",
+        "ceiling-tile",
+        "cloth",
+        "clothes",
+        "clouds",
+        "counter",
+        "cupboard",
+        "curtain",
+        "desk-stuff",
+        "dirt",
+        "door-stuff",
+        "fence",
+        "floor-marble",
+        "floor-other",
+        "floor-stone",
+        "floor-tile",
+        "floor-wood",
+        "flower",
+        "fog",
+        "food-other",
+        "fruit",
+        "furniture-other",
+        "grass",
+        "gravel",
+        "ground-other",
+        "hill",
+        "house",
+        "leaves",
+        "light",
+        "mat",
+        "metal",
+        "mirror-stuff",
+        "moss",
+        "mountain",
+        "mud",
+        "napkin",
+        "net",
+        "paper",
+        "pavement",
+        "pillow",
+        "plant-other",
+        "plastic",
+        "platform",
+        "playingfield",
+        "railing",
+        "railroad",
+        "river",
+        "road",
+        "rock",
+        "roof",
+        "rug",
+        "salad",
+        "sand",
+        "sea",
+        "shelf",
+        "sky-other",
+        "skyscraper",
+        "snow",
+        "solid-other",
+        "stairs",
+        "stone",
+        "straw",
+        "structural-other",
+        "table",
+        "tent",
+        "textile-other",
+        "towel",
+        "tree",
+        "vegetable",
+        "wall-brick",
+        "wall-concrete",
+        "wall-other",
+        "wall-panel",
+        "wall-stone",
+        "wall-tile",
+        "wall-wood",
+        "water-other",
+        "waterdrops",
+        "window-blind",
+        "window-other",
+        "wood"
+      ]
+    },
+    "flair1": {
+      "family": "remote_sensing",
+      "background_index": null,
+      "total_images": 15700,
+      "data_root": "/data/test/datasets/FLAIR1_target_20260922",
+      "class_names": [
+        "building",
+        "pervious surface",
+        "impervious surface",
+        "bare soil",
+        "water",
+        "coniferous",
+        "deciduous",
+        "brushwood",
+        "vineyard",
+        "herbaceous vegetation",
+        "agricultural land",
+        "plowed land"
+      ]
+    }
+  },
+  "methods": {
+    "PEARL": {
+      "repository": "https://github.com/PGSmall/PEARL",
+      "commit": "c26062b5062b73f712cbe10846fb3a51e313a6fa",
+      "source_subdirectory": "PEARL",
+      "configs": {
+        "vdd": {
+          "method": "PEARL",
+          "module": "pearl_ovss",
+          "class": "PEARL",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PEARL",
+          "model": {
+            "type": "PEARL",
+            "clip_path": "ViT-B/16",
+            "prob_thd": 0.0,
+            "use_prop": "on"
+          },
+          "word_file": "words/PEARL/vdd.txt",
+          "word_sha256": "996531937f1cac893508a291a789faf4852aeeea7eaaae20a737aefa37f94727",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "potsdam": {
+          "method": "PEARL",
+          "module": "pearl_ovss",
+          "class": "PEARL",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PEARL",
+          "model": {
+            "type": "PEARL",
+            "clip_path": "ViT-B/16",
+            "prob_thd": 0.0,
+            "use_prop": "on"
+          },
+          "word_file": "words/PEARL/potsdam.txt",
+          "word_sha256": "5b55eeac82e06b6513610608fa36bba5ad12301a33d73d5970475b5adbf1f26a",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "voc20": {
+          "method": "PEARL",
+          "module": "pearl_ovss",
+          "class": "PEARL",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PEARL",
+          "model": {
+            "type": "PEARL",
+            "clip_path": "ViT-B/16",
+            "slide_crop": 0,
+            "use_prop": "on"
+          },
+          "word_file": "words/PEARL/voc20.txt",
+          "word_sha256": "6cd64a32bb6179541b3e275daa8cb3a617a6c6404360592722acbe2f3a9be996",
+          "word_origin": "PEARL\\configs\\cfg_voc20.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "PEARL\\configs\\cfg_voc20.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "voc21": {
+          "method": "PEARL",
+          "module": "pearl_ovss",
+          "class": "PEARL",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PEARL",
+          "model": {
+            "type": "PEARL",
+            "clip_path": "ViT-B/16",
+            "prob_thd": 0.1,
+            "slide_crop": 0,
+            "use_prop": "on"
+          },
+          "word_file": "words/PEARL/voc21.txt",
+          "word_sha256": "6ac4359b33d2a307385c91115cab664395f2a7e8da8d2b3eaf5da0509a7056c3",
+          "word_origin": "PEARL\\configs\\cfg_voc21.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "PEARL\\configs\\cfg_voc21.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "ade150": {
+          "method": "PEARL",
+          "module": "pearl_ovss",
+          "class": "PEARL",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PEARL",
+          "model": {
+            "type": "PEARL",
+            "clip_path": "ViT-B/16",
+            "alpha_kk": 0.3,
+            "use_prop": "on"
+          },
+          "word_file": "words/PEARL/ade150.txt",
+          "word_sha256": "2de0a8999569b1a30f3b7e855a90990825b7eaa05343b305611a6d959980dccb",
+          "word_origin": "PEARL\\configs\\cfg_ade20k.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "PEARL\\configs\\cfg_ade20k.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "context60": {
+          "method": "PEARL",
+          "module": "pearl_ovss",
+          "class": "PEARL",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PEARL",
+          "model": {
+            "type": "PEARL",
+            "clip_path": "ViT-B/16",
+            "prob_thd": 0.1,
+            "use_prop": "on"
+          },
+          "word_file": "words/PEARL/context60.txt",
+          "word_sha256": "535db08c2d5bba9c9d77af9ac50eee7241feb10ceeee704a68730e0fc3abf806",
+          "word_origin": "PEARL\\configs\\cfg_context60.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "PEARL\\configs\\cfg_context60.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "udd5": {
+          "method": "PEARL",
+          "module": "pearl_ovss",
+          "class": "PEARL",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PEARL",
+          "model": {
+            "type": "PEARL",
+            "clip_path": "ViT-B/16",
+            "prob_thd": 0.0,
+            "use_prop": "on"
+          },
+          "word_file": "words/PEARL/udd5.txt",
+          "word_sha256": "1a251f1867bf2768f9c4ea1967d664670bf350a2e5e487373804e9fd6fc969d9",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "oem": {
+          "method": "PEARL",
+          "module": "pearl_ovss",
+          "class": "PEARL",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PEARL",
+          "model": {
+            "type": "PEARL",
+            "clip_path": "ViT-B/16",
+            "prob_thd": 0.0,
+            "use_prop": "on"
+          },
+          "word_file": "words/PEARL/oem.txt",
+          "word_sha256": "2a20b0a455ff642138c1ed8b6b13e3d72871c693665417e966fd4c1251e8e29a",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "vaihingen": {
+          "method": "PEARL",
+          "module": "pearl_ovss",
+          "class": "PEARL",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PEARL",
+          "model": {
+            "type": "PEARL",
+            "clip_path": "ViT-B/16",
+            "prob_thd": 0.0,
+            "use_prop": "on"
+          },
+          "word_file": "words/PEARL/vaihingen.txt",
+          "word_sha256": "b3897a8a1a83842fc328c69ad564684fd930dd0ef25923306a36e4ecfccd32bc",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "landcoverai": {
+          "method": "PEARL",
+          "module": "pearl_ovss",
+          "class": "PEARL",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PEARL",
+          "model": {
+            "type": "PEARL",
+            "clip_path": "ViT-B/16",
+            "prob_thd": 0.0,
+            "use_prop": "on"
+          },
+          "word_file": "words/PEARL/landcoverai.txt",
+          "word_sha256": "d0b3f117853593ffd6b71848408354dc8a1a68442028918661409cc46c0be936",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "loveda": {
+          "method": "PEARL",
+          "module": "pearl_ovss",
+          "class": "PEARL",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PEARL",
+          "model": {
+            "type": "PEARL",
+            "clip_path": "ViT-B/16",
+            "prob_thd": 0.0,
+            "use_prop": "on"
+          },
+          "word_file": "words/PEARL/loveda.txt",
+          "word_sha256": "79e37f78a454553a081015f5d9187596777cbf5d29331acde227da6b64d7547d",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "foreground_word_file": "words/PEARL/loveda_P.txt",
+          "foreground_note": "Separate six-class P inference. Rejection disabled because P has no background slot. D retains native config when available."
+        },
+        "context59": {
+          "method": "PEARL",
+          "module": "pearl_ovss",
+          "class": "PEARL",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PEARL",
+          "model": {
+            "type": "PEARL",
+            "clip_path": "ViT-B/16",
+            "use_prop": "on"
+          },
+          "word_file": "words/PEARL/context59.txt",
+          "word_sha256": "2b1627d98e0690694e9ff58907e5d2bcf54896ef65982477bf101a816b9d0616",
+          "word_origin": "PEARL\\configs\\cfg_context59.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "PEARL\\configs\\cfg_context59.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "coco_object81": {
+          "method": "PEARL",
+          "module": "pearl_ovss",
+          "class": "PEARL",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PEARL",
+          "model": {
+            "type": "PEARL",
+            "clip_path": "ViT-B/16",
+            "prob_thd": 0.1,
+            "use_prop": "on"
+          },
+          "word_file": "words/PEARL/coco_object81.txt",
+          "word_sha256": "0611dc838461cbea0c6229e5f3234278b5ac74d98315a540d95624e1a17200ca",
+          "word_origin": "PEARL\\configs\\cfg_coco_object.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "PEARL\\configs\\cfg_coco_object.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "coco_stuff171": {
+          "method": "PEARL",
+          "module": "pearl_ovss",
+          "class": "PEARL",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PEARL",
+          "model": {
+            "type": "PEARL",
+            "clip_path": "ViT-B/16",
+            "use_prop": "on"
+          },
+          "word_file": "words/PEARL/coco_stuff171.txt",
+          "word_sha256": "3d2fb4e2d90948cad3e2d6b11d0a9880f873e3ccaae2d86f4a078752f4deaa8d",
+          "word_origin": "PEARL\\configs\\cfg_coco_stuff164k.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "PEARL\\configs\\cfg_coco_stuff164k.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "flair1": {
+          "method": "PEARL",
+          "module": "pearl_ovss",
+          "class": "PEARL",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PEARL",
+          "model": {
+            "type": "PEARL",
+            "clip_path": "ViT-B/16",
+            "prob_thd": 0.0,
+            "use_prop": "on"
+          },
+          "word_file": "words/PEARL/flair1.txt",
+          "word_sha256": "4cad196dacc781d8b4749b43846f8dd565ac2654390811ace9e2cc40fd33dc76",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        }
+      }
+    },
+    "GLA-CLIP": {
+      "repository": "https://github.com/2btlFe/GLA-CLIP",
+      "commit": "63d674626cb1ddc566e3177b9cb5b2dc7a212158",
+      "source_subdirectory": "GLA-CLIP",
+      "configs": {
+        "vdd": {
+          "method": "GLA-CLIP",
+          "module": "gla_clip_segmentor",
+          "class": "GLA_CLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/GLA-CLIP",
+          "model": {
+            "type": "GLA_CLIPSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "prob_thd": 0.0
+          },
+          "word_file": "words/GLA-CLIP/vdd.txt",
+          "word_sha256": "996531937f1cac893508a291a789faf4852aeeea7eaaae20a737aefa37f94727",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {
+            "CLIP_type": "ProxyCLIP",
+            "token_norm": true,
+            "KV_token_extension": true,
+            "proxy_sim": true,
+            "mini_iters": 2,
+            "initial_crit_pos": 0.6,
+            "dynamic_beta": true,
+            "beta_alpha": 0.3,
+            "dynamic_gamma": true,
+            "gamma_alpha": 30.0
+          },
+          "prediction_map": null
+        },
+        "potsdam": {
+          "method": "GLA-CLIP",
+          "module": "gla_clip_segmentor",
+          "class": "GLA_CLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/GLA-CLIP",
+          "model": {
+            "type": "GLA_CLIPSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "prob_thd": 0.0
+          },
+          "word_file": "words/GLA-CLIP/potsdam.txt",
+          "word_sha256": "5b55eeac82e06b6513610608fa36bba5ad12301a33d73d5970475b5adbf1f26a",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {
+            "CLIP_type": "ProxyCLIP",
+            "token_norm": true,
+            "KV_token_extension": true,
+            "proxy_sim": true,
+            "mini_iters": 2,
+            "initial_crit_pos": 0.6,
+            "dynamic_beta": true,
+            "beta_alpha": 0.3,
+            "dynamic_gamma": true,
+            "gamma_alpha": 30.0
+          },
+          "prediction_map": null
+        },
+        "voc20": {
+          "method": "GLA-CLIP",
+          "module": "gla_clip_segmentor",
+          "class": "GLA_CLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/GLA-CLIP",
+          "model": {
+            "type": "GLA_CLIPSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "scale": 336
+          },
+          "word_file": "words/GLA-CLIP/voc20.txt",
+          "word_sha256": "d1a5c5955774836bbb60862eb6979bab7f6c3afaca88707973db08f45a7b68f3",
+          "word_origin": "GLA-CLIP\\configs\\cfg_voc20.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "GLA-CLIP\\configs\\cfg_voc20.py",
+          "parser": "native comma-space",
+          "full_flags": {
+            "CLIP_type": "ProxyCLIP",
+            "token_norm": true,
+            "KV_token_extension": true,
+            "proxy_sim": true,
+            "mini_iters": 2,
+            "initial_crit_pos": 0.6,
+            "dynamic_beta": true,
+            "beta_alpha": 0.3,
+            "dynamic_gamma": true,
+            "gamma_alpha": 30.0
+          },
+          "prediction_map": null
+        },
+        "voc21": {
+          "method": "GLA-CLIP",
+          "module": "gla_clip_segmentor",
+          "class": "GLA_CLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/GLA-CLIP",
+          "model": {
+            "type": "GLA_CLIPSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "prob_thd": 0.1,
+            "slide_crop": 224,
+            "scale": 336
+          },
+          "word_file": "words/GLA-CLIP/voc21.txt",
+          "word_sha256": "c7becaac934b6d68187d15eb0a8faa1483e129cbd5bedccc3f1d2d3a253f5960",
+          "word_origin": "GLA-CLIP\\configs\\cfg_voc21.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "GLA-CLIP\\configs\\cfg_voc21.py",
+          "parser": "native comma-space",
+          "full_flags": {
+            "CLIP_type": "ProxyCLIP",
+            "token_norm": true,
+            "KV_token_extension": true,
+            "proxy_sim": true,
+            "mini_iters": 2,
+            "initial_crit_pos": 0.6,
+            "dynamic_beta": true,
+            "beta_alpha": 0.3,
+            "dynamic_gamma": true,
+            "gamma_alpha": 30.0
+          },
+          "prediction_map": null
+        },
+        "ade150": {
+          "method": "GLA-CLIP",
+          "module": "gla_clip_segmentor",
+          "class": "GLA_CLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/GLA-CLIP",
+          "model": {
+            "type": "GLA_CLIPSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "scale": 336
+          },
+          "word_file": "words/GLA-CLIP/ade150.txt",
+          "word_sha256": "2de0a8999569b1a30f3b7e855a90990825b7eaa05343b305611a6d959980dccb",
+          "word_origin": "GLA-CLIP\\configs\\cfg_ade20k.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "GLA-CLIP\\configs\\cfg_ade20k.py",
+          "parser": "native comma-space",
+          "full_flags": {
+            "CLIP_type": "ProxyCLIP",
+            "token_norm": true,
+            "KV_token_extension": true,
+            "proxy_sim": true,
+            "mini_iters": 2,
+            "initial_crit_pos": 0.6,
+            "dynamic_beta": true,
+            "beta_alpha": 0.3,
+            "dynamic_gamma": true,
+            "gamma_alpha": 30.0
+          },
+          "prediction_map": null
+        },
+        "context60": {
+          "method": "GLA-CLIP",
+          "module": "gla_clip_segmentor",
+          "class": "GLA_CLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/GLA-CLIP",
+          "model": {
+            "type": "GLA_CLIPSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "prob_thd": 0.1,
+            "scale": 336
+          },
+          "word_file": "words/GLA-CLIP/context60.txt",
+          "word_sha256": "535db08c2d5bba9c9d77af9ac50eee7241feb10ceeee704a68730e0fc3abf806",
+          "word_origin": "GLA-CLIP\\configs\\cfg_context60.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "GLA-CLIP\\configs\\cfg_context60.py",
+          "parser": "native comma-space",
+          "full_flags": {
+            "CLIP_type": "ProxyCLIP",
+            "token_norm": true,
+            "KV_token_extension": true,
+            "proxy_sim": true,
+            "mini_iters": 2,
+            "initial_crit_pos": 0.6,
+            "dynamic_beta": true,
+            "beta_alpha": 0.3,
+            "dynamic_gamma": true,
+            "gamma_alpha": 30.0
+          },
+          "prediction_map": null
+        },
+        "udd5": {
+          "method": "GLA-CLIP",
+          "module": "gla_clip_segmentor",
+          "class": "GLA_CLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/GLA-CLIP",
+          "model": {
+            "type": "GLA_CLIPSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "prob_thd": 0.0
+          },
+          "word_file": "words/GLA-CLIP/udd5.txt",
+          "word_sha256": "1a251f1867bf2768f9c4ea1967d664670bf350a2e5e487373804e9fd6fc969d9",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {
+            "CLIP_type": "ProxyCLIP",
+            "token_norm": true,
+            "KV_token_extension": true,
+            "proxy_sim": true,
+            "mini_iters": 2,
+            "initial_crit_pos": 0.6,
+            "dynamic_beta": true,
+            "beta_alpha": 0.3,
+            "dynamic_gamma": true,
+            "gamma_alpha": 30.0
+          },
+          "prediction_map": null
+        },
+        "oem": {
+          "method": "GLA-CLIP",
+          "module": "gla_clip_segmentor",
+          "class": "GLA_CLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/GLA-CLIP",
+          "model": {
+            "type": "GLA_CLIPSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "prob_thd": 0.0
+          },
+          "word_file": "words/GLA-CLIP/oem.txt",
+          "word_sha256": "2a20b0a455ff642138c1ed8b6b13e3d72871c693665417e966fd4c1251e8e29a",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {
+            "CLIP_type": "ProxyCLIP",
+            "token_norm": true,
+            "KV_token_extension": true,
+            "proxy_sim": true,
+            "mini_iters": 2,
+            "initial_crit_pos": 0.6,
+            "dynamic_beta": true,
+            "beta_alpha": 0.3,
+            "dynamic_gamma": true,
+            "gamma_alpha": 30.0
+          },
+          "prediction_map": null
+        },
+        "vaihingen": {
+          "method": "GLA-CLIP",
+          "module": "gla_clip_segmentor",
+          "class": "GLA_CLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/GLA-CLIP",
+          "model": {
+            "type": "GLA_CLIPSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "prob_thd": 0.0
+          },
+          "word_file": "words/GLA-CLIP/vaihingen.txt",
+          "word_sha256": "b3897a8a1a83842fc328c69ad564684fd930dd0ef25923306a36e4ecfccd32bc",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {
+            "CLIP_type": "ProxyCLIP",
+            "token_norm": true,
+            "KV_token_extension": true,
+            "proxy_sim": true,
+            "mini_iters": 2,
+            "initial_crit_pos": 0.6,
+            "dynamic_beta": true,
+            "beta_alpha": 0.3,
+            "dynamic_gamma": true,
+            "gamma_alpha": 30.0
+          },
+          "prediction_map": null
+        },
+        "landcoverai": {
+          "method": "GLA-CLIP",
+          "module": "gla_clip_segmentor",
+          "class": "GLA_CLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/GLA-CLIP",
+          "model": {
+            "type": "GLA_CLIPSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "prob_thd": 0.0
+          },
+          "word_file": "words/GLA-CLIP/landcoverai.txt",
+          "word_sha256": "d0b3f117853593ffd6b71848408354dc8a1a68442028918661409cc46c0be936",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {
+            "CLIP_type": "ProxyCLIP",
+            "token_norm": true,
+            "KV_token_extension": true,
+            "proxy_sim": true,
+            "mini_iters": 2,
+            "initial_crit_pos": 0.6,
+            "dynamic_beta": true,
+            "beta_alpha": 0.3,
+            "dynamic_gamma": true,
+            "gamma_alpha": 30.0
+          },
+          "prediction_map": null
+        },
+        "loveda": {
+          "method": "GLA-CLIP",
+          "module": "gla_clip_segmentor",
+          "class": "GLA_CLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/GLA-CLIP",
+          "model": {
+            "type": "GLA_CLIPSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "prob_thd": 0.0
+          },
+          "word_file": "words/GLA-CLIP/loveda.txt",
+          "word_sha256": "79e37f78a454553a081015f5d9187596777cbf5d29331acde227da6b64d7547d",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {
+            "CLIP_type": "ProxyCLIP",
+            "token_norm": true,
+            "KV_token_extension": true,
+            "proxy_sim": true,
+            "mini_iters": 2,
+            "initial_crit_pos": 0.6,
+            "dynamic_beta": true,
+            "beta_alpha": 0.3,
+            "dynamic_gamma": true,
+            "gamma_alpha": 30.0
+          },
+          "prediction_map": null,
+          "foreground_word_file": "words/GLA-CLIP/loveda_P.txt",
+          "foreground_note": "Separate six-class P inference. Rejection disabled because P has no background slot. D retains native config when available."
+        },
+        "context59": {
+          "method": "GLA-CLIP",
+          "module": "gla_clip_segmentor",
+          "class": "GLA_CLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/GLA-CLIP",
+          "model": {
+            "type": "GLA_CLIPSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "scale": 336
+          },
+          "word_file": "words/GLA-CLIP/context59.txt",
+          "word_sha256": "2b1627d98e0690694e9ff58907e5d2bcf54896ef65982477bf101a816b9d0616",
+          "word_origin": "GLA-CLIP\\configs\\cfg_context59.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "GLA-CLIP\\configs\\cfg_context59.py",
+          "parser": "native comma-space",
+          "full_flags": {
+            "CLIP_type": "ProxyCLIP",
+            "token_norm": true,
+            "KV_token_extension": true,
+            "proxy_sim": true,
+            "mini_iters": 2,
+            "initial_crit_pos": 0.6,
+            "dynamic_beta": true,
+            "beta_alpha": 0.3,
+            "dynamic_gamma": true,
+            "gamma_alpha": 30.0
+          },
+          "prediction_map": null
+        },
+        "coco_object81": {
+          "method": "GLA-CLIP",
+          "module": "gla_clip_segmentor",
+          "class": "GLA_CLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/GLA-CLIP",
+          "model": {
+            "type": "GLA_CLIPSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "prob_thd": 0.1,
+            "scale": 336
+          },
+          "word_file": "words/GLA-CLIP/coco_object81.txt",
+          "word_sha256": "5808f1848dead10426e2e82098fc2654b6d0436c3cc35a32fd333c27c95b8422",
+          "word_origin": "GLA-CLIP\\configs\\cfg_coco_object.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "GLA-CLIP\\configs\\cfg_coco_object.py",
+          "parser": "native comma-space",
+          "full_flags": {
+            "CLIP_type": "ProxyCLIP",
+            "token_norm": true,
+            "KV_token_extension": true,
+            "proxy_sim": true,
+            "mini_iters": 2,
+            "initial_crit_pos": 0.6,
+            "dynamic_beta": true,
+            "beta_alpha": 0.3,
+            "dynamic_gamma": true,
+            "gamma_alpha": 30.0
+          },
+          "prediction_map": null
+        },
+        "coco_stuff171": {
+          "method": "GLA-CLIP",
+          "module": "gla_clip_segmentor",
+          "class": "GLA_CLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/GLA-CLIP",
+          "model": {
+            "type": "GLA_CLIPSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "scale": 336
+          },
+          "word_file": "words/GLA-CLIP/coco_stuff171.txt",
+          "word_sha256": "3d2fb4e2d90948cad3e2d6b11d0a9880f873e3ccaae2d86f4a078752f4deaa8d",
+          "word_origin": "GLA-CLIP\\configs\\cfg_coco_stuff164k.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "GLA-CLIP\\configs\\cfg_coco_stuff164k.py",
+          "parser": "native comma-space",
+          "full_flags": {
+            "CLIP_type": "ProxyCLIP",
+            "token_norm": true,
+            "KV_token_extension": true,
+            "proxy_sim": true,
+            "mini_iters": 2,
+            "initial_crit_pos": 0.6,
+            "dynamic_beta": true,
+            "beta_alpha": 0.3,
+            "dynamic_gamma": true,
+            "gamma_alpha": 30.0
+          },
+          "prediction_map": null
+        },
+        "flair1": {
+          "method": "GLA-CLIP",
+          "module": "gla_clip_segmentor",
+          "class": "GLA_CLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/GLA-CLIP",
+          "model": {
+            "type": "GLA_CLIPSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "prob_thd": 0.0
+          },
+          "word_file": "words/GLA-CLIP/flair1.txt",
+          "word_sha256": "4cad196dacc781d8b4749b43846f8dd565ac2654390811ace9e2cc40fd33dc76",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {
+            "CLIP_type": "ProxyCLIP",
+            "token_norm": true,
+            "KV_token_extension": true,
+            "proxy_sim": true,
+            "mini_iters": 2,
+            "initial_crit_pos": 0.6,
+            "dynamic_beta": true,
+            "beta_alpha": 0.3,
+            "dynamic_gamma": true,
+            "gamma_alpha": 30.0
+          },
+          "prediction_map": null
+        }
+      }
+    },
+    "PTC": {
+      "repository": "https://github.com/Valeria-MaW/PTC",
+      "commit": "8656ec33760dc786902e324321de5565df4710b8",
+      "source_subdirectory": "PTC",
+      "configs": {
+        "vdd": {
+          "method": "PTC",
+          "module": "ptc_segmentor",
+          "class": "PTCSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC",
+          "model": {
+            "type": "PTCSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "ptc_enable": true,
+            "ptc_proto_mode": "auto",
+            "ptc_proto_crop": 224,
+            "prob_thd": 0.0
+          },
+          "word_file": "words/PTC/vdd.txt",
+          "word_sha256": "996531937f1cac893508a291a789faf4852aeeea7eaaae20a737aefa37f94727",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "potsdam": {
+          "method": "PTC",
+          "module": "ptc_segmentor",
+          "class": "PTCSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC",
+          "model": {
+            "type": "PTCSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "ptc_enable": true,
+            "ptc_proto_mode": "auto",
+            "ptc_proto_crop": 224,
+            "prob_thd": 0.0
+          },
+          "word_file": "words/PTC/potsdam.txt",
+          "word_sha256": "5b55eeac82e06b6513610608fa36bba5ad12301a33d73d5970475b5adbf1f26a",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "voc20": {
+          "method": "PTC",
+          "module": "ptc_segmentor",
+          "class": "PTCSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC",
+          "model": {
+            "type": "PTCSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "ptc_enable": true,
+            "ptc_proto_mode": "auto",
+            "ptc_proto_crop": 224,
+            "ptc_min_seeds": 132,
+            "ptc_mu": 0.08,
+            "ptc_border": 1
+          },
+          "word_file": "words/PTC/voc20.txt",
+          "word_sha256": "6b9a85ffb907e34ac920d704a520b45e1424bf96796ca7de5b1823ee202db119",
+          "word_origin": "PTC\\configs\\cfg_voc20.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "PTC\\configs\\cfg_voc20.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "voc21": {
+          "method": "PTC",
+          "module": "ptc_segmentor",
+          "class": "PTCSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC",
+          "model": {
+            "type": "PTCSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "ptc_enable": true,
+            "ptc_proto_mode": "auto",
+            "ptc_proto_crop": 224,
+            "prob_thd": 0.2,
+            "ptc_min_seeds": 100,
+            "ptc_mu": 0.3,
+            "ptc_border": 1
+          },
+          "word_file": "words/PTC/voc21.txt",
+          "word_sha256": "6a194e9134d44459bf8b86ba89a9cf06242848051e04d130011c017bca3e3c05",
+          "word_origin": "PTC\\configs\\cfg_voc21.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "PTC\\configs\\cfg_voc21.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "ade150": {
+          "method": "PTC",
+          "module": "ptc_segmentor",
+          "class": "PTCSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC",
+          "model": {
+            "type": "PTCSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "ptc_enable": true,
+            "ptc_proto_mode": "auto",
+            "ptc_proto_crop": 224,
+            "ptc_min_seeds": 10,
+            "ptc_mu": 0.15
+          },
+          "word_file": "words/PTC/ade150.txt",
+          "word_sha256": "e53ded02c488bdb903ef000a2d207e4ac4f2bb4502a72572e4aab7c2504aef3a",
+          "word_origin": "PTC\\configs\\cfg_ade20k.py",
+          "resize": {
+            "scale": [
+              2048,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "PTC\\configs\\cfg_ade20k.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "context60": {
+          "method": "PTC",
+          "module": "ptc_segmentor",
+          "class": "PTCSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC",
+          "model": {
+            "type": "PTCSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "ptc_enable": true,
+            "ptc_proto_mode": "auto",
+            "ptc_proto_crop": 224,
+            "prob_thd": 0.15,
+            "ptc_min_seeds": 64,
+            "ptc_mu": 0.02,
+            "ptc_skip_bg": true
+          },
+          "word_file": "words/PTC/context60.txt",
+          "word_sha256": "5e620446a8699f292a4c2e37fa8918a33dd4f14713dc1b3f22884d2be68b45a1",
+          "word_origin": "PTC\\configs\\cfg_context60.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "PTC\\configs\\cfg_context60.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "udd5": {
+          "method": "PTC",
+          "module": "ptc_segmentor",
+          "class": "PTCSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC",
+          "model": {
+            "type": "PTCSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "ptc_enable": true,
+            "ptc_proto_mode": "auto",
+            "ptc_proto_crop": 224,
+            "prob_thd": 0.0
+          },
+          "word_file": "words/PTC/udd5.txt",
+          "word_sha256": "1a251f1867bf2768f9c4ea1967d664670bf350a2e5e487373804e9fd6fc969d9",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "oem": {
+          "method": "PTC",
+          "module": "ptc_segmentor",
+          "class": "PTCSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC",
+          "model": {
+            "type": "PTCSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "ptc_enable": true,
+            "ptc_proto_mode": "auto",
+            "ptc_proto_crop": 224,
+            "prob_thd": 0.0
+          },
+          "word_file": "words/PTC/oem.txt",
+          "word_sha256": "2a20b0a455ff642138c1ed8b6b13e3d72871c693665417e966fd4c1251e8e29a",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "vaihingen": {
+          "method": "PTC",
+          "module": "ptc_segmentor",
+          "class": "PTCSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC",
+          "model": {
+            "type": "PTCSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "ptc_enable": true,
+            "ptc_proto_mode": "auto",
+            "ptc_proto_crop": 224,
+            "prob_thd": 0.0
+          },
+          "word_file": "words/PTC/vaihingen.txt",
+          "word_sha256": "b3897a8a1a83842fc328c69ad564684fd930dd0ef25923306a36e4ecfccd32bc",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "landcoverai": {
+          "method": "PTC",
+          "module": "ptc_segmentor",
+          "class": "PTCSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC",
+          "model": {
+            "type": "PTCSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "ptc_enable": true,
+            "ptc_proto_mode": "auto",
+            "ptc_proto_crop": 224,
+            "prob_thd": 0.0
+          },
+          "word_file": "words/PTC/landcoverai.txt",
+          "word_sha256": "d0b3f117853593ffd6b71848408354dc8a1a68442028918661409cc46c0be936",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "loveda": {
+          "method": "PTC",
+          "module": "ptc_segmentor",
+          "class": "PTCSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC",
+          "model": {
+            "type": "PTCSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "ptc_enable": true,
+            "ptc_proto_mode": "auto",
+            "ptc_proto_crop": 224,
+            "prob_thd": 0.0
+          },
+          "word_file": "words/PTC/loveda.txt",
+          "word_sha256": "79e37f78a454553a081015f5d9187596777cbf5d29331acde227da6b64d7547d",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "foreground_word_file": "words/PTC/loveda_P.txt",
+          "foreground_note": "Separate six-class P inference. Rejection disabled because P has no background slot. D retains native config when available."
+        },
+        "context59": {
+          "method": "PTC",
+          "module": "ptc_segmentor",
+          "class": "PTCSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC",
+          "model": {
+            "type": "PTCSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "ptc_enable": true,
+            "ptc_proto_mode": "auto",
+            "ptc_proto_crop": 224,
+            "ptc_min_seeds": 28,
+            "ptc_mu": 0.12
+          },
+          "word_file": "words/PTC/context59.txt",
+          "word_sha256": "cd808465f06a16169edc25580073f0eda347e64f06cc1c2e24acd0b237f6497d",
+          "word_origin": "PTC\\configs\\cfg_context59.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "PTC\\configs\\cfg_context59.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "coco_object81": {
+          "method": "PTC",
+          "module": "ptc_segmentor",
+          "class": "PTCSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC",
+          "model": {
+            "type": "PTCSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "ptc_enable": true,
+            "ptc_proto_mode": "auto",
+            "ptc_proto_crop": 224,
+            "prob_thd": 0.25,
+            "ptc_min_seeds": 132,
+            "ptc_mu": 0.02
+          },
+          "word_file": "words/PTC/coco_object81.txt",
+          "word_sha256": "87b6d3e1d3adf5202f4fe5a2a939cfc62224065f3a8e44a8f64fe1a81b751dc6",
+          "word_origin": "PTC\\configs\\cfg_coco_object.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "PTC\\configs\\cfg_coco_object.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "coco_stuff171": {
+          "method": "PTC",
+          "module": "ptc_segmentor",
+          "class": "PTCSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC",
+          "model": {
+            "type": "PTCSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "ptc_enable": true,
+            "ptc_proto_mode": "auto",
+            "ptc_proto_crop": 224,
+            "ptc_min_seeds": 8,
+            "ptc_mu": 0.15
+          },
+          "word_file": "words/PTC/coco_stuff171.txt",
+          "word_sha256": "fb98709b9ab1baff4fd930bac4a77772a0458c7d534911de545f9a4081e14a3e",
+          "word_origin": "PTC\\configs\\cfg_coco_stuff164k.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "PTC\\configs\\cfg_coco_stuff164k.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "flair1": {
+          "method": "PTC",
+          "module": "ptc_segmentor",
+          "class": "PTCSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC",
+          "model": {
+            "type": "PTCSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "ptc_enable": true,
+            "ptc_proto_mode": "auto",
+            "ptc_proto_crop": 224,
+            "prob_thd": 0.0
+          },
+          "word_file": "words/PTC/flair1.txt",
+          "word_sha256": "4cad196dacc781d8b4749b43846f8dd565ac2654390811ace9e2cc40fd33dc76",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        }
+      }
+    },
+    "CorrCLIP": {
+      "repository": "https://github.com/zdk258/CorrCLIP",
+      "commit": "103bc18213e6d906e55a21b8491bc7b04cbf106b",
+      "source_subdirectory": "CorrCLIP/CorrCLIPv1",
+      "configs": {
+        "vdd": {
+          "method": "CorrCLIP",
+          "module": "corrclip_segmentor",
+          "class": "CorrCLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1",
+          "model": {
+            "type": "CorrCLIPSegmentation",
+            "clip_type": "metaclip_fullcc",
+            "model_type": "ViT-B-16-quickgelu",
+            "dino_type": "dino_vitb8",
+            "mask_generator": "sam2",
+            "prob_thd": 0.0
+          },
+          "word_file": "words/CorrCLIP/vdd.txt",
+          "word_sha256": "996531937f1cac893508a291a789faf4852aeeea7eaaae20a737aefa37f94727",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "semicolon-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "mask_note": "Native online SAM2 HieraLarge generation, 8 points/side, IoU/stability .4; included in inference cost. Official precomputed-mask scores are a separate resource setting."
+        },
+        "potsdam": {
+          "method": "CorrCLIP",
+          "module": "corrclip_segmentor",
+          "class": "CorrCLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1",
+          "model": {
+            "type": "CorrCLIPSegmentation",
+            "clip_type": "metaclip_fullcc",
+            "model_type": "ViT-B-16-quickgelu",
+            "dino_type": "dino_vitb8",
+            "mask_generator": "sam2",
+            "prob_thd": 0.0
+          },
+          "word_file": "words/CorrCLIP/potsdam.txt",
+          "word_sha256": "5b55eeac82e06b6513610608fa36bba5ad12301a33d73d5970475b5adbf1f26a",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "semicolon-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "mask_note": "Native online SAM2 HieraLarge generation, 8 points/side, IoU/stability .4; included in inference cost. Official precomputed-mask scores are a separate resource setting."
+        },
+        "voc20": {
+          "method": "CorrCLIP",
+          "module": "corrclip_segmentor",
+          "class": "CorrCLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1",
+          "model": {
+            "type": "CorrCLIPSegmentation",
+            "clip_type": "metaclip_fullcc",
+            "model_type": "ViT-B-16-quickgelu",
+            "dino_type": "dino_vitb8",
+            "mask_generator": "sam2",
+            "instance_mask_path": "data/region_masks/voc"
+          },
+          "word_file": "words/CorrCLIP/voc20.txt",
+          "word_sha256": "cfa5c791cd52b7ff3366f2d1507a4601b420bcfb5d4ad54bafc62785977d5835",
+          "word_origin": "CorrCLIP\\CorrCLIPv1\\configs\\cfg_voc20.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "CorrCLIP\\CorrCLIPv1\\configs\\cfg_voc20.py",
+          "parser": "semicolon-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "mask_note": "Native online SAM2 HieraLarge generation, 8 points/side, IoU/stability .4; included in inference cost. Official precomputed-mask scores are a separate resource setting."
+        },
+        "voc21": {
+          "method": "CorrCLIP",
+          "module": "corrclip_segmentor",
+          "class": "CorrCLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1",
+          "model": {
+            "type": "CorrCLIPSegmentation",
+            "clip_type": "metaclip_fullcc",
+            "model_type": "ViT-B-16-quickgelu",
+            "dino_type": "dino_vitb8",
+            "mask_generator": "sam2",
+            "instance_mask_path": "data/region_masks/voc",
+            "prob_thd": 0.2
+          },
+          "word_file": "words/CorrCLIP/voc21.txt",
+          "word_sha256": "af453972b93f552ffc281a49533d0c56ee20d714e1c744e1d9fecb6a12285239",
+          "word_origin": "CorrCLIP\\CorrCLIPv1\\configs\\cfg_voc21.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "CorrCLIP\\CorrCLIPv1\\configs\\cfg_voc21.py",
+          "parser": "semicolon-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "mask_note": "Native online SAM2 HieraLarge generation, 8 points/side, IoU/stability .4; included in inference cost. Official precomputed-mask scores are a separate resource setting."
+        },
+        "ade150": {
+          "method": "CorrCLIP",
+          "module": "corrclip_segmentor",
+          "class": "CorrCLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1",
+          "model": {
+            "type": "CorrCLIPSegmentation",
+            "clip_type": "metaclip_fullcc",
+            "model_type": "ViT-B-16-quickgelu",
+            "dino_type": "dino_vitb8",
+            "mask_generator": "sam2",
+            "instance_mask_path": "data/region_masks/ade"
+          },
+          "word_file": "words/CorrCLIP/ade150.txt",
+          "word_sha256": "d86203500dd2c37eae9ec5ebdb4c905746a5722dd72e223db6bab591d6c9be35",
+          "word_origin": "CorrCLIP\\CorrCLIPv1\\configs\\cfg_ade20k.py",
+          "resize": {
+            "scale": [
+              2048,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "CorrCLIP\\CorrCLIPv1\\configs\\cfg_ade20k.py",
+          "parser": "semicolon-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "mask_note": "Native online SAM2 HieraLarge generation, 8 points/side, IoU/stability .4; included in inference cost. Official precomputed-mask scores are a separate resource setting."
+        },
+        "context60": {
+          "method": "CorrCLIP",
+          "module": "corrclip_segmentor",
+          "class": "CorrCLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1",
+          "model": {
+            "type": "CorrCLIPSegmentation",
+            "clip_type": "metaclip_fullcc",
+            "model_type": "ViT-B-16-quickgelu",
+            "dino_type": "dino_vitb8",
+            "mask_generator": "sam2",
+            "instance_mask_path": "data/region_masks/context",
+            "prob_thd": 0.15
+          },
+          "word_file": "words/CorrCLIP/context60.txt",
+          "word_sha256": "d37b9877a342273745a42e5d35efa6bfebfcefd469cb29de94002e362ee4db60",
+          "word_origin": "CorrCLIP\\CorrCLIPv1\\configs\\cfg_context60.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "CorrCLIP\\CorrCLIPv1\\configs\\cfg_context60.py",
+          "parser": "semicolon-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "mask_note": "Native online SAM2 HieraLarge generation, 8 points/side, IoU/stability .4; included in inference cost. Official precomputed-mask scores are a separate resource setting."
+        },
+        "udd5": {
+          "method": "CorrCLIP",
+          "module": "corrclip_segmentor",
+          "class": "CorrCLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1",
+          "model": {
+            "type": "CorrCLIPSegmentation",
+            "clip_type": "metaclip_fullcc",
+            "model_type": "ViT-B-16-quickgelu",
+            "dino_type": "dino_vitb8",
+            "mask_generator": "sam2",
+            "prob_thd": 0.0
+          },
+          "word_file": "words/CorrCLIP/udd5.txt",
+          "word_sha256": "1a251f1867bf2768f9c4ea1967d664670bf350a2e5e487373804e9fd6fc969d9",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "semicolon-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "mask_note": "Native online SAM2 HieraLarge generation, 8 points/side, IoU/stability .4; included in inference cost. Official precomputed-mask scores are a separate resource setting."
+        },
+        "oem": {
+          "method": "CorrCLIP",
+          "module": "corrclip_segmentor",
+          "class": "CorrCLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1",
+          "model": {
+            "type": "CorrCLIPSegmentation",
+            "clip_type": "metaclip_fullcc",
+            "model_type": "ViT-B-16-quickgelu",
+            "dino_type": "dino_vitb8",
+            "mask_generator": "sam2",
+            "prob_thd": 0.0
+          },
+          "word_file": "words/CorrCLIP/oem.txt",
+          "word_sha256": "2a20b0a455ff642138c1ed8b6b13e3d72871c693665417e966fd4c1251e8e29a",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "semicolon-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "mask_note": "Native online SAM2 HieraLarge generation, 8 points/side, IoU/stability .4; included in inference cost. Official precomputed-mask scores are a separate resource setting."
+        },
+        "vaihingen": {
+          "method": "CorrCLIP",
+          "module": "corrclip_segmentor",
+          "class": "CorrCLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1",
+          "model": {
+            "type": "CorrCLIPSegmentation",
+            "clip_type": "metaclip_fullcc",
+            "model_type": "ViT-B-16-quickgelu",
+            "dino_type": "dino_vitb8",
+            "mask_generator": "sam2",
+            "prob_thd": 0.0
+          },
+          "word_file": "words/CorrCLIP/vaihingen.txt",
+          "word_sha256": "b3897a8a1a83842fc328c69ad564684fd930dd0ef25923306a36e4ecfccd32bc",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "semicolon-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "mask_note": "Native online SAM2 HieraLarge generation, 8 points/side, IoU/stability .4; included in inference cost. Official precomputed-mask scores are a separate resource setting."
+        },
+        "landcoverai": {
+          "method": "CorrCLIP",
+          "module": "corrclip_segmentor",
+          "class": "CorrCLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1",
+          "model": {
+            "type": "CorrCLIPSegmentation",
+            "clip_type": "metaclip_fullcc",
+            "model_type": "ViT-B-16-quickgelu",
+            "dino_type": "dino_vitb8",
+            "mask_generator": "sam2",
+            "prob_thd": 0.0
+          },
+          "word_file": "words/CorrCLIP/landcoverai.txt",
+          "word_sha256": "d0b3f117853593ffd6b71848408354dc8a1a68442028918661409cc46c0be936",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "semicolon-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "mask_note": "Native online SAM2 HieraLarge generation, 8 points/side, IoU/stability .4; included in inference cost. Official precomputed-mask scores are a separate resource setting."
+        },
+        "loveda": {
+          "method": "CorrCLIP",
+          "module": "corrclip_segmentor",
+          "class": "CorrCLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1",
+          "model": {
+            "type": "CorrCLIPSegmentation",
+            "clip_type": "metaclip_fullcc",
+            "model_type": "ViT-B-16-quickgelu",
+            "dino_type": "dino_vitb8",
+            "mask_generator": "sam2",
+            "prob_thd": 0.0
+          },
+          "word_file": "words/CorrCLIP/loveda.txt",
+          "word_sha256": "79e37f78a454553a081015f5d9187596777cbf5d29331acde227da6b64d7547d",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "semicolon-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "mask_note": "Native online SAM2 HieraLarge generation, 8 points/side, IoU/stability .4; included in inference cost. Official precomputed-mask scores are a separate resource setting.",
+          "foreground_word_file": "words/CorrCLIP/loveda_P.txt",
+          "foreground_note": "Separate six-class P inference. Rejection disabled because P has no background slot. D retains native config when available."
+        },
+        "context59": {
+          "method": "CorrCLIP",
+          "module": "corrclip_segmentor",
+          "class": "CorrCLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1",
+          "model": {
+            "type": "CorrCLIPSegmentation",
+            "clip_type": "metaclip_fullcc",
+            "model_type": "ViT-B-16-quickgelu",
+            "dino_type": "dino_vitb8",
+            "mask_generator": "sam2",
+            "instance_mask_path": "data/region_masks/context"
+          },
+          "word_file": "words/CorrCLIP/context59.txt",
+          "word_sha256": "8ab72b7759bc003174058b271cd82dca36fd47272934184d36f76b98d4bf1a6b",
+          "word_origin": "CorrCLIP\\CorrCLIPv1\\configs\\cfg_context59.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "CorrCLIP\\CorrCLIPv1\\configs\\cfg_context59.py",
+          "parser": "semicolon-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "mask_note": "Native online SAM2 HieraLarge generation, 8 points/side, IoU/stability .4; included in inference cost. Official precomputed-mask scores are a separate resource setting."
+        },
+        "coco_object81": {
+          "method": "CorrCLIP",
+          "module": "corrclip_segmentor",
+          "class": "CorrCLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1",
+          "model": {
+            "type": "CorrCLIPSegmentation",
+            "clip_type": "metaclip_fullcc",
+            "model_type": "ViT-B-16-quickgelu",
+            "dino_type": "dino_vitb8",
+            "mask_generator": "sam2",
+            "instance_mask_path": "data/region_masks/coco",
+            "prob_thd": 0.25
+          },
+          "word_file": "words/CorrCLIP/coco_object81.txt",
+          "word_sha256": "17505659e6f3cc6a4ee5c539af400a068ae1fe8f7cdc5f7008457c0e0351850d",
+          "word_origin": "CorrCLIP\\CorrCLIPv1\\configs\\cfg_coco_object.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "CorrCLIP\\CorrCLIPv1\\configs\\cfg_coco_object.py",
+          "parser": "semicolon-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "mask_note": "Native online SAM2 HieraLarge generation, 8 points/side, IoU/stability .4; included in inference cost. Official precomputed-mask scores are a separate resource setting."
+        },
+        "coco_stuff171": {
+          "method": "CorrCLIP",
+          "module": "corrclip_segmentor",
+          "class": "CorrCLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1",
+          "model": {
+            "type": "CorrCLIPSegmentation",
+            "clip_type": "metaclip_fullcc",
+            "model_type": "ViT-B-16-quickgelu",
+            "dino_type": "dino_vitb8",
+            "mask_generator": "sam2",
+            "instance_mask_path": "data/region_masks/coco"
+          },
+          "word_file": "words/CorrCLIP/coco_stuff171.txt",
+          "word_sha256": "5a358dc55a416f4384b8f1d347055a42e8a44403538134ec6c9369342a6aee32",
+          "word_origin": "CorrCLIP\\CorrCLIPv1\\configs\\cfg_coco_stuff164k.py",
+          "resize": {
+            "scale": [
+              2048,
+              336
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "CorrCLIP\\CorrCLIPv1\\configs\\cfg_coco_stuff164k.py",
+          "parser": "semicolon-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "mask_note": "Native online SAM2 HieraLarge generation, 8 points/side, IoU/stability .4; included in inference cost. Official precomputed-mask scores are a separate resource setting."
+        },
+        "flair1": {
+          "method": "CorrCLIP",
+          "module": "corrclip_segmentor",
+          "class": "CorrCLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1",
+          "model": {
+            "type": "CorrCLIPSegmentation",
+            "clip_type": "metaclip_fullcc",
+            "model_type": "ViT-B-16-quickgelu",
+            "dino_type": "dino_vitb8",
+            "mask_generator": "sam2",
+            "prob_thd": 0.0
+          },
+          "word_file": "words/CorrCLIP/flair1.txt",
+          "word_sha256": "4cad196dacc781d8b4749b43846f8dd565ac2654390811ace9e2cc40fd33dc76",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "semicolon-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "mask_note": "Native online SAM2 HieraLarge generation, 8 points/side, IoU/stability .4; included in inference cost. Official precomputed-mask scores are a separate resource setting."
+        }
+      }
+    },
+    "SegEarth-OV": {
+      "repository": "https://github.com/likyoo/SegEarth-OV",
+      "commit": "3e22a969b32c6d751bdbba64a88a0b670e630f55",
+      "source_subdirectory": "SegEarth-OV",
+      "configs": {
+        "vdd": {
+          "method": "SegEarth-OV",
+          "module": "segearth_segmentor",
+          "class": "SegEarthSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/SegEarth-OV",
+          "model": {
+            "type": "SegEarthSegmentation",
+            "clip_type": "CLIP",
+            "vit_type": "ViT-B/16",
+            "model_type": "SegEarth",
+            "ignore_residual": true,
+            "feature_up": true,
+            "feature_up_cfg": {
+              "model_name": "jbu_one",
+              "model_path": "simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt"
+            },
+            "cls_token_lambda": -0.3,
+            "prob_thd": 0.3
+          },
+          "word_file": "words/SegEarth-OV/vdd.txt",
+          "word_sha256": "6b22b4b343c00d708eb778948c627e42dad67023c5400884cd824eb784648bba",
+          "word_origin": "SegEarth-OV\\configs\\cfg_vdd.py",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "SegEarth-OV\\configs\\cfg_vdd.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "potsdam": {
+          "method": "SegEarth-OV",
+          "module": "segearth_segmentor",
+          "class": "SegEarthSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/SegEarth-OV",
+          "model": {
+            "type": "SegEarthSegmentation",
+            "clip_type": "CLIP",
+            "vit_type": "ViT-B/16",
+            "model_type": "SegEarth",
+            "ignore_residual": true,
+            "feature_up": true,
+            "feature_up_cfg": {
+              "model_name": "jbu_one",
+              "model_path": "simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt"
+            },
+            "cls_token_lambda": -0.3,
+            "prob_thd": 0.1,
+            "bg_idx": 5
+          },
+          "word_file": "words/SegEarth-OV/potsdam.txt",
+          "word_sha256": "63bb00def62217b3cbcddfc30396177d60806294bfd06c5a130f3631147bcb50",
+          "word_origin": "SegEarth-OV\\configs\\cfg_potsdam.py",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "SegEarth-OV\\configs\\cfg_potsdam.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "voc20": {
+          "method": "SegEarth-OV",
+          "module": "segearth_segmentor",
+          "class": "SegEarthSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/SegEarth-OV",
+          "model": {
+            "type": "SegEarthSegmentation",
+            "clip_type": "CLIP",
+            "vit_type": "ViT-B/16",
+            "model_type": "SegEarth",
+            "ignore_residual": true,
+            "feature_up": true,
+            "feature_up_cfg": {
+              "model_name": "jbu_one",
+              "model_path": "simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt"
+            },
+            "cls_token_lambda": -0.3,
+            "prob_thd": 0.0,
+            "bg_idx": 0
+          },
+          "word_file": "words/SegEarth-OV/voc20.txt",
+          "word_sha256": "6cd64a32bb6179541b3e275daa8cb3a617a6c6404360592722acbe2f3a9be996",
+          "word_origin": "PEARL/configs/cls_voc20.txt (fixed transfer ontology)",
+          "resize": {
+            "scale": [
+              2048,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "voc21": {
+          "method": "SegEarth-OV",
+          "module": "segearth_segmentor",
+          "class": "SegEarthSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/SegEarth-OV",
+          "model": {
+            "type": "SegEarthSegmentation",
+            "clip_type": "CLIP",
+            "vit_type": "ViT-B/16",
+            "model_type": "SegEarth",
+            "ignore_residual": true,
+            "feature_up": true,
+            "feature_up_cfg": {
+              "model_name": "jbu_one",
+              "model_path": "simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt"
+            },
+            "cls_token_lambda": -0.3,
+            "prob_thd": 0.0,
+            "bg_idx": 0
+          },
+          "word_file": "words/SegEarth-OV/voc21.txt",
+          "word_sha256": "6ac4359b33d2a307385c91115cab664395f2a7e8da8d2b3eaf5da0509a7056c3",
+          "word_origin": "PEARL/configs/cls_voc21.txt (fixed transfer ontology)",
+          "resize": {
+            "scale": [
+              2048,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "ade150": {
+          "method": "SegEarth-OV",
+          "module": "segearth_segmentor",
+          "class": "SegEarthSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/SegEarth-OV",
+          "model": {
+            "type": "SegEarthSegmentation",
+            "clip_type": "CLIP",
+            "vit_type": "ViT-B/16",
+            "model_type": "SegEarth",
+            "ignore_residual": true,
+            "feature_up": true,
+            "feature_up_cfg": {
+              "model_name": "jbu_one",
+              "model_path": "simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt"
+            },
+            "cls_token_lambda": -0.3,
+            "prob_thd": 0.0,
+            "bg_idx": 0
+          },
+          "word_file": "words/SegEarth-OV/ade150.txt",
+          "word_sha256": "2de0a8999569b1a30f3b7e855a90990825b7eaa05343b305611a6d959980dccb",
+          "word_origin": "PEARL/configs/cls_ade20k.txt (fixed transfer ontology)",
+          "resize": {
+            "scale": [
+              2048,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "context60": {
+          "method": "SegEarth-OV",
+          "module": "segearth_segmentor",
+          "class": "SegEarthSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/SegEarth-OV",
+          "model": {
+            "type": "SegEarthSegmentation",
+            "clip_type": "CLIP",
+            "vit_type": "ViT-B/16",
+            "model_type": "SegEarth",
+            "ignore_residual": true,
+            "feature_up": true,
+            "feature_up_cfg": {
+              "model_name": "jbu_one",
+              "model_path": "simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt"
+            },
+            "cls_token_lambda": -0.3,
+            "prob_thd": 0.0,
+            "bg_idx": 0
+          },
+          "word_file": "words/SegEarth-OV/context60.txt",
+          "word_sha256": "535db08c2d5bba9c9d77af9ac50eee7241feb10ceeee704a68730e0fc3abf806",
+          "word_origin": "PEARL/configs/cls_context60.txt (fixed transfer ontology)",
+          "resize": {
+            "scale": [
+              2048,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "udd5": {
+          "method": "SegEarth-OV",
+          "module": "segearth_segmentor",
+          "class": "SegEarthSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/SegEarth-OV",
+          "model": {
+            "type": "SegEarthSegmentation",
+            "clip_type": "CLIP",
+            "vit_type": "ViT-B/16",
+            "model_type": "SegEarth",
+            "ignore_residual": true,
+            "feature_up": true,
+            "feature_up_cfg": {
+              "model_name": "jbu_one",
+              "model_path": "simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt"
+            },
+            "cls_token_lambda": -0.3,
+            "prob_thd": 0.4,
+            "bg_idx": 4
+          },
+          "word_file": "words/SegEarth-OV/udd5.txt",
+          "word_sha256": "b39e2e799c40727afb55caaf6559ee919b8d3aff59e960ea02e33d5e66a486df",
+          "word_origin": "SegEarth-OV\\configs\\cfg_udd5.py",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "SegEarth-OV\\configs\\cfg_udd5.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "oem": {
+          "method": "SegEarth-OV",
+          "module": "segearth_segmentor",
+          "class": "SegEarthSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/SegEarth-OV",
+          "model": {
+            "type": "SegEarthSegmentation",
+            "clip_type": "CLIP",
+            "vit_type": "ViT-B/16",
+            "model_type": "SegEarth",
+            "ignore_residual": true,
+            "feature_up": true,
+            "feature_up_cfg": {
+              "model_name": "jbu_one",
+              "model_path": "simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt"
+            },
+            "cls_token_lambda": -0.3,
+            "prob_thd": 0.1
+          },
+          "word_file": "words/SegEarth-OV/oem.txt",
+          "word_sha256": "4bd2b269788b1fc32bc7ff7e88c4cf1d9f577207fc070dda68f368b406f3b956",
+          "word_origin": "SegEarth-OV\\configs\\cfg_openearthmap.py",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "SegEarth-OV\\configs\\cfg_openearthmap.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": [
+            8,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "vaihingen": {
+          "method": "SegEarth-OV",
+          "module": "segearth_segmentor",
+          "class": "SegEarthSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/SegEarth-OV",
+          "model": {
+            "type": "SegEarthSegmentation",
+            "clip_type": "CLIP",
+            "vit_type": "ViT-B/16",
+            "model_type": "SegEarth",
+            "ignore_residual": true,
+            "feature_up": true,
+            "feature_up_cfg": {
+              "model_name": "jbu_one",
+              "model_path": "simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt"
+            },
+            "cls_token_lambda": -0.3,
+            "prob_thd": 0.1,
+            "bg_idx": 5
+          },
+          "word_file": "words/SegEarth-OV/vaihingen.txt",
+          "word_sha256": "407724fbe59d49303480cf27692ae397722b62886a13e1761922ce94b098b79b",
+          "word_origin": "SegEarth-OV\\configs\\cfg_vaihingen.py",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "SegEarth-OV\\configs\\cfg_vaihingen.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "landcoverai": {
+          "method": "SegEarth-OV",
+          "module": "segearth_segmentor",
+          "class": "SegEarthSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/SegEarth-OV",
+          "model": {
+            "type": "SegEarthSegmentation",
+            "clip_type": "CLIP",
+            "vit_type": "ViT-B/16",
+            "model_type": "SegEarth",
+            "ignore_residual": true,
+            "feature_up": true,
+            "feature_up_cfg": {
+              "model_name": "jbu_one",
+              "model_path": "simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt"
+            },
+            "cls_token_lambda": -0.3,
+            "prob_thd": 0.0,
+            "bg_idx": 0
+          },
+          "word_file": "words/SegEarth-OV/landcoverai.txt",
+          "word_sha256": "d0b3f117853593ffd6b71848408354dc8a1a68442028918661409cc46c0be936",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "loveda": {
+          "method": "SegEarth-OV",
+          "module": "segearth_segmentor",
+          "class": "SegEarthSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/SegEarth-OV",
+          "model": {
+            "type": "SegEarthSegmentation",
+            "clip_type": "CLIP",
+            "vit_type": "ViT-B/16",
+            "model_type": "SegEarth",
+            "ignore_residual": true,
+            "feature_up": true,
+            "feature_up_cfg": {
+              "model_name": "jbu_one",
+              "model_path": "simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt"
+            },
+            "cls_token_lambda": -0.3,
+            "prob_thd": 0.3
+          },
+          "word_file": "words/SegEarth-OV/loveda.txt",
+          "word_sha256": "562297f85ac55635d0b93e17f7df62dcf9c3faa85f6c6394926127fba45bfd26",
+          "word_origin": "SegEarth-OV\\configs\\cfg_loveda.py",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "SegEarth-OV\\configs\\cfg_loveda.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "foreground_word_file": "words/SegEarth-OV/loveda_P.txt",
+          "foreground_note": "Separate six-class P inference. Rejection disabled because P has no background slot. D retains native config when available."
+        },
+        "context59": {
+          "method": "SegEarth-OV",
+          "module": "segearth_segmentor",
+          "class": "SegEarthSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/SegEarth-OV",
+          "model": {
+            "type": "SegEarthSegmentation",
+            "clip_type": "CLIP",
+            "vit_type": "ViT-B/16",
+            "model_type": "SegEarth",
+            "ignore_residual": true,
+            "feature_up": true,
+            "feature_up_cfg": {
+              "model_name": "jbu_one",
+              "model_path": "simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt"
+            },
+            "cls_token_lambda": -0.3,
+            "prob_thd": 0.0,
+            "bg_idx": 0
+          },
+          "word_file": "words/SegEarth-OV/context59.txt",
+          "word_sha256": "2b1627d98e0690694e9ff58907e5d2bcf54896ef65982477bf101a816b9d0616",
+          "word_origin": "PEARL/configs/cls_context59.txt (fixed transfer ontology)",
+          "resize": {
+            "scale": [
+              2048,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "coco_object81": {
+          "method": "SegEarth-OV",
+          "module": "segearth_segmentor",
+          "class": "SegEarthSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/SegEarth-OV",
+          "model": {
+            "type": "SegEarthSegmentation",
+            "clip_type": "CLIP",
+            "vit_type": "ViT-B/16",
+            "model_type": "SegEarth",
+            "ignore_residual": true,
+            "feature_up": true,
+            "feature_up_cfg": {
+              "model_name": "jbu_one",
+              "model_path": "simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt"
+            },
+            "cls_token_lambda": -0.3,
+            "prob_thd": 0.0,
+            "bg_idx": 0
+          },
+          "word_file": "words/SegEarth-OV/coco_object81.txt",
+          "word_sha256": "0611dc838461cbea0c6229e5f3234278b5ac74d98315a540d95624e1a17200ca",
+          "word_origin": "PEARL/configs/cls_coco_object.txt (fixed transfer ontology)",
+          "resize": {
+            "scale": [
+              2048,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "coco_stuff171": {
+          "method": "SegEarth-OV",
+          "module": "segearth_segmentor",
+          "class": "SegEarthSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/SegEarth-OV",
+          "model": {
+            "type": "SegEarthSegmentation",
+            "clip_type": "CLIP",
+            "vit_type": "ViT-B/16",
+            "model_type": "SegEarth",
+            "ignore_residual": true,
+            "feature_up": true,
+            "feature_up_cfg": {
+              "model_name": "jbu_one",
+              "model_path": "simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt"
+            },
+            "cls_token_lambda": -0.3,
+            "prob_thd": 0.0,
+            "bg_idx": 0
+          },
+          "word_file": "words/SegEarth-OV/coco_stuff171.txt",
+          "word_sha256": "3d2fb4e2d90948cad3e2d6b11d0a9880f873e3ccaae2d86f4a078752f4deaa8d",
+          "word_origin": "PEARL/configs/cls_coco_stuff164k.txt (fixed transfer ontology)",
+          "resize": {
+            "scale": [
+              2048,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        },
+        "flair1": {
+          "method": "SegEarth-OV",
+          "module": "segearth_segmentor",
+          "class": "SegEarthSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/SegEarth-OV",
+          "model": {
+            "type": "SegEarthSegmentation",
+            "clip_type": "CLIP",
+            "vit_type": "ViT-B/16",
+            "model_type": "SegEarth",
+            "ignore_residual": true,
+            "feature_up": true,
+            "feature_up_cfg": {
+              "model_name": "jbu_one",
+              "model_path": "simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt"
+            },
+            "cls_token_lambda": -0.3,
+            "prob_thd": 0.0,
+            "bg_idx": 0
+          },
+          "word_file": "words/SegEarth-OV/flair1.txt",
+          "word_sha256": "4cad196dacc781d8b4749b43846f8dd565ac2654390811ace9e2cc40fd33dc76",
+          "word_origin": "one locked canonical dataset class per line; no alias tuning",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        }
+      }
+    }
+  },
+  "method_order": [
+    "PEARL",
+    "GLA-CLIP",
+    "PTC",
+    "CorrCLIP",
+    "SegEarth-OV"
+  ],
+  "dataset_order": [
+    "vdd",
+    "potsdam",
+    "udd5",
+    "vaihingen",
+    "oem",
+    "loveda",
+    "landcoverai",
+    "flair1",
+    "voc20",
+    "voc21",
+    "ade150",
+    "context59",
+    "context60",
+    "coco_object81",
+    "coco_stuff171"
+  ],
+  "expected_protocol_images": 45200,
+  "provenance": "Authors native official config where provided; fixed untuned transfer elsewhere. Matched existing images/targets. Different pretrained backbones and external resources remain part of each full method; this is not an operator ablation. Geometry references used prior labeled development optimization."
+}

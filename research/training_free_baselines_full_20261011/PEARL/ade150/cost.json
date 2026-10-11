@@ -1,0 +1,238 @@
+{
+  "status": "complete",
+  "signature": {
+    "implementation": "pinned-native-training-free-baseline-suite-v1-20261011",
+    "method": "PEARL",
+    "dataset": "ade150",
+    "config": {
+      "method": "PEARL",
+      "module": "pearl_ovss",
+      "class": "PEARL",
+      "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PEARL",
+      "model": {
+        "type": "PEARL",
+        "clip_path": "ViT-B/16",
+        "alpha_kk": 0.3,
+        "use_prop": "on"
+      },
+      "word_file": "words/PEARL/ade150.txt",
+      "word_sha256": "2de0a8999569b1a30f3b7e855a90990825b7eaa05343b305611a6d959980dccb",
+      "word_origin": "PEARL\\configs\\cfg_ade20k.py",
+      "resize": {
+        "scale": [
+          2048,
+          336
+        ],
+        "keep_ratio": true
+      },
+      "native_protocol_config": true,
+      "config_origin": "PEARL\\configs\\cfg_ade20k.py",
+      "parser": "native comma-space",
+      "full_flags": {},
+      "prediction_map": null
+    },
+    "source_commit": "c26062b5062b73f712cbe10846fb3a51e313a6fa",
+    "checkpoint_manifest": {
+      "weights": {
+        "ViT-B-16.pt": {
+          "url": "https://openaipublic.azureedge.net/clip/models/5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f/ViT-B-16.pt",
+          "sha256": "5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f",
+          "bytes": 350837078
+        },
+        "dino_vitbase8_pretrain.pth": {
+          "url": "https://dl.fbaipublicfiles.com/dino/dino_vitbase8_pretrain/dino_vitbase8_pretrain.pth",
+          "sha256": "575f0efc4838938314afa09897a62ed2b87919928b5edcd133abb907328995eb",
+          "bytes": 343279349
+        },
+        "b16_fullcc2.5b.pt": {
+          "url": "https://dl.fbaipublicfiles.com/MMPT/metaclip/b16_fullcc2.5b.pt",
+          "sha256": "512ea0fb9f2cf88d027e96e4674247a1a91a96af18abc2e2fcdb8008c551e04b",
+          "bytes": 1795798327
+        },
+        "sam2_hiera_large.pt": {
+          "url": "https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt",
+          "sha256": "7442e4e9b732a508f80e141e7c2913437a3610ee0c77381a66658c3a445df87b",
+          "bytes": 897952466
+        },
+        "xclip_jbu_one_million_aid.ckpt": {
+          "url": "https://raw.githubusercontent.com/likyoo/SegEarth-OV/3e22a969b32c6d751bdbba64a88a0b670e630f55/simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt",
+          "sha256": "cabc594d0042535f3413ac89d5f0b8b3173aecf18e2e469fb91b015ea4de49d8",
+          "bytes": 5690776
+        }
+      },
+      "dependencies": {
+        "dino": {
+          "url": "https://github.com/facebookresearch/dino.git",
+          "commit": "7c446df5b9f45747937fb0d72314eb9f7b66930a",
+          "archive_sha256": "3c65181860269457eed8367f313a5a6d695951dd985750a940722de2175a05ff"
+        },
+        "sam2": {
+          "url": "https://github.com/facebookresearch/sam2.git",
+          "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+          "archive_sha256": "fe93082a71a885a427894b1eab76341768781b6b58a298a0717e03862097d137"
+        },
+        "SimFeatUp": {
+          "url": "https://github.com/likyoo/SimFeatUp.git",
+          "commit": "78a0ba70b1d6ea7283684a88c98ce338af4593ca",
+          "archive_sha256": "4aec32fbc5140c048042545726a74a049c80590a57eeba74d64fd81b1d20665a"
+        }
+      }
+    },
+    "runtime": {
+      "packages": {
+        "torch": "2.4.0",
+        "torchvision": "0.19.0",
+        "mmcv": "2.2.0",
+        "mmengine": "0.10.7",
+        "mmsegmentation": "1.2.2",
+        "numpy": "1.26.4",
+        "transformers": "4.44.2",
+        "timm": "1.0.9"
+      },
+      "compatibility": {
+        "operation": "MMCV version-guard upper bound 2.2.0 -> 2.2.1 only",
+        "before_sha256": "6800b7c849b11fbfac8e0ef481601659e2621d9a2d7ed335c24c18d6453d0ba9",
+        "after_sha256": "b03255d861c75871be63ae4488720b8d6c0f373bbaa497a09cc168f853ef5048"
+      }
+    },
+    "sample_manifest_sha256": "ea1c90a7ccd457dda9514cc222d606241e61d58a5ba75215d5ceff95f1557a36"
+  },
+  "images": [
+    {
+      "key": "ADE_val_00000001",
+      "original_shape": [
+        512,
+        683
+      ],
+      "milliseconds": [
+        52.23424010910094,
+        52.66484012827277,
+        51.96731211617589,
+        51.5831308439374,
+        52.04075900837779,
+        50.82895886152983,
+        52.25913319736719
+      ],
+      "median_ms": 52.04075900837779,
+      "peak_allocated_bytes": 893301760,
+      "peak_reserved_bytes": 1214251008
+    },
+    {
+      "key": "ADE_val_00000334",
+      "original_shape": [
+        320,
+        240
+      ],
+      "milliseconds": [
+        46.51422495953739,
+        47.240915009751916,
+        45.93967506662011,
+        47.64413507655263,
+        46.53644189238548,
+        46.61842598579824,
+        45.54494493640959
+      ],
+      "median_ms": 46.53644189238548,
+      "peak_allocated_bytes": 565046272,
+      "peak_reserved_bytes": 1214251008
+    },
+    {
+      "key": "ADE_val_00000667",
+      "original_shape": [
+        234,
+        350
+      ],
+      "milliseconds": [
+        57.06377699971199,
+        56.40705884434283,
+        57.17093707062304,
+        57.10552306845784,
+        57.4130960740149,
+        56.94062006659806,
+        56.26545404084027
+      ],
+      "median_ms": 57.06377699971199,
+      "peak_allocated_bytes": 587519488,
+      "peak_reserved_bytes": 1214251008
+    },
+    {
+      "key": "ADE_val_00001000",
+      "original_shape": [
+        200,
+        250
+      ],
+      "milliseconds": [
+        45.95354385674,
+        45.405609998852015,
+        46.07894807122648,
+        45.56226218119264,
+        45.628624968230724,
+        45.4315438400954,
+        45.30748911201954
+      ],
+      "median_ms": 45.56226218119264,
+      "peak_allocated_bytes": 553606656,
+      "peak_reserved_bytes": 1214251008
+    },
+    {
+      "key": "ADE_val_00001333",
+      "original_shape": [
+        512,
+        683
+      ],
+      "milliseconds": [
+        49.765089992433786,
+        49.93328801356256,
+        50.05074106156826,
+        50.06510601378977,
+        49.70994987525046,
+        50.406410126015544,
+        50.05185795016587
+      ],
+      "median_ms": 50.05074106156826,
+      "peak_allocated_bytes": 893301760,
+      "peak_reserved_bytes": 1214251008
+    },
+    {
+      "key": "ADE_val_00001666",
+      "original_shape": [
+        256,
+        256
+      ],
+      "milliseconds": [
+        35.514720948413014,
+        35.62290989793837,
+        36.070512840524316,
+        37.07440895959735,
+        35.71722097694874,
+        36.35920793749392,
+        36.004212917760015
+      ],
+      "median_ms": 36.004212917760015,
+      "peak_allocated_bytes": 519285760,
+      "peak_reserved_bytes": 1214251008
+    },
+    {
+      "key": "ADE_val_00002000",
+      "original_shape": [
+        300,
+        400
+      ],
+      "milliseconds": [
+        47.40954400040209,
+        47.42933390662074,
+        47.62635496445,
+        46.79387807846069,
+        46.390611911192536,
+        46.98360408656299,
+        46.246943064033985
+      ],
+      "median_ms": 46.98360408656299,
+      "peak_allocated_bytes": 565046272,
+      "peak_reserved_bytes": 1214251008
+    }
+  ],
+  "median_ms": 47.40954400040209,
+  "includes": "BGR conversion/official resize/preprocess/native inference/postprocess; CorrCLIP includes online SAM2",
+  "excludes": "disk decode, model/text initialization, metric/target loading"
+}

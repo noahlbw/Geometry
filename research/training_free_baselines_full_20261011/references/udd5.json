@@ -1,0 +1,234 @@
+{
+  "coverage": {
+    "sample_keys": [
+      "000061.JPG",
+      "000161.JPG",
+      "000261.JPG",
+      "000361.JPG",
+      "001261.JPG",
+      "001361.JPG",
+      "001461.JPG",
+      "001561.JPG",
+      "0119_3img2031.JPG",
+      "0119_4img1001.JPG",
+      "0119_4img3041.JPG",
+      "0119_5img3001.JPG",
+      "DJI_0031.JPG",
+      "DJI_00528.JPG",
+      "DJI_00581.JPG",
+      "DJI_00591.JPG",
+      "DJI_0291.JPG",
+      "DJI_0303.JPG",
+      "DJI_0316.JPG",
+      "DJI_0373_heda.JPG",
+      "DJI_0388.JPG",
+      "DJI_0397.JPG",
+      "DJI_0406.JPG",
+      "DJI_0415.JPG",
+      "DJI_0431.JPG",
+      "DJI_0442.JPG",
+      "DJI_0451.JPG",
+      "DJI_0460.JPG",
+      "DJI_0469.JPG",
+      "DJI_0479_heda.JPG",
+      "DJI_0490.JPG",
+      "DJI_0499_heda.JPG",
+      "DJI_0511.JPG",
+      "DJI_0520.JPG",
+      "DJI_0532.JPG",
+      "DJI_0539_heda.JPG",
+      "DJI_0553_heda.JPG",
+      "DJI_0563_heda.JPG",
+      "DJI_0627.JPG",
+      "DJI_0707.JPG"
+    ],
+    "global_sample_keys_sha256": "01338dafdf1239280d8fd03edbb72e347660db756104ed1086b418b26388b876"
+  },
+  "results": {
+    "udd5": {
+      "VIP_SameText": {
+        "mean_iou_percent": 23.4923,
+        "pixel_accuracy_percent": 46.1312,
+        "per_class": [
+          {
+            "name": "vegetation",
+            "iou_percent": 68.3982,
+            "target_pixels": 130310444,
+            "predicted_pixels": 99786680,
+            "precision_percent": 93.6582,
+            "recall_percent": 71.7198,
+            "predicted_area_percent": 22.681
+          },
+          {
+            "name": "building",
+            "iou_percent": 22.6962,
+            "target_pixels": 172720634,
+            "predicted_pixels": 40656102,
+            "precision_percent": 97.083,
+            "recall_percent": 22.852,
+            "predicted_area_percent": 9.2409
+          },
+          {
+            "name": "road",
+            "iou_percent": 2.1466,
+            "target_pixels": 58998894,
+            "predicted_pixels": 1355246,
+            "precision_percent": 93.5872,
+            "recall_percent": 2.1498,
+            "predicted_area_percent": 0.308
+          },
+          {
+            "name": "vehicle",
+            "iou_percent": 1.6049,
+            "target_pixels": 3521806,
+            "predicted_pixels": 73718,
+            "precision_percent": 77.0409,
+            "recall_percent": 1.6126,
+            "predicted_area_percent": 0.0168
+          },
+          {
+            "name": "other",
+            "iou_percent": 22.6158,
+            "target_pixels": 74404702,
+            "predicted_pixels": 298084734,
+            "precision_percent": 23.0483,
+            "recall_percent": 92.3377,
+            "predicted_area_percent": 67.7532
+          }
+        ],
+        "confusion_matrix": [
+          [
+            93458451,
+            240570,
+            51316,
+            4739,
+            36555368
+          ],
+          [
+            281195,
+            39470148,
+            0,
+            0,
+            132969291
+          ],
+          [
+            1282047,
+            28410,
+            1268337,
+            7359,
+            56412741
+          ],
+          [
+            6700,
+            166,
+            14425,
+            56793,
+            3443722
+          ],
+          [
+            4758287,
+            916808,
+            21168,
+            4827,
+            68703612
+          ]
+        ],
+        "ignored_pixels": 0,
+        "unscored_prediction_classes": 0,
+        "non_residual_mean_iou_percent": 23.7115
+      },
+      "VIP_SameWordsOfficialTemplate": {
+        "mean_iou_percent": 24.2481,
+        "pixel_accuracy_percent": 47.7375,
+        "per_class": [
+          {
+            "name": "vegetation",
+            "iou_percent": 64.2025,
+            "target_pixels": 130310444,
+            "predicted_pixels": 91618579,
+            "precision_percent": 94.7115,
+            "recall_percent": 66.5897,
+            "predicted_area_percent": 20.8245
+          },
+          {
+            "name": "building",
+            "iou_percent": 30.428,
+            "target_pixels": 172720634,
+            "predicted_pixels": 55829943,
+            "precision_percent": 95.5033,
+            "recall_percent": 30.8703,
+            "predicted_area_percent": 12.6899
+          },
+          {
+            "name": "road",
+            "iou_percent": 1.8496,
+            "target_pixels": 58998894,
+            "predicted_pixels": 1206389,
+            "precision_percent": 90.6277,
+            "recall_percent": 1.8531,
+            "predicted_area_percent": 0.2742
+          },
+          {
+            "name": "vehicle",
+            "iou_percent": 1.5898,
+            "target_pixels": 3521806,
+            "predicted_pixels": 76119,
+            "precision_percent": 73.9671,
+            "recall_percent": 1.5987,
+            "predicted_area_percent": 0.0173
+          },
+          {
+            "name": "other",
+            "iou_percent": 23.1707,
+            "target_pixels": 74404702,
+            "predicted_pixels": 291225450,
+            "precision_percent": 23.6181,
+            "recall_percent": 92.4428,
+            "predicted_area_percent": 66.1941
+          }
+        ],
+        "confusion_matrix": [
+          [
+            86773325,
+            473734,
+            72516,
+            5803,
+            42985066
+          ],
+          [
+            285142,
+            53319411,
+            0,
+            0,
+            119116081
+          ],
+          [
+            952248,
+            45343,
+            1093323,
+            9697,
+            56898283
+          ],
+          [
+            9600,
+            123,
+            11549,
+            56303,
+            3444231
+          ],
+          [
+            3598264,
+            1991332,
+            29001,
+            4316,
+            68781789
+          ]
+        ],
+        "ignored_pixels": 0,
+        "unscored_prediction_classes": 0,
+        "non_residual_mean_iou_percent": 24.5175
+      }
+    }
+  },
+  "source": "verified local finite-row-repaired native VIP reimplementation, not paper numbers"
+}

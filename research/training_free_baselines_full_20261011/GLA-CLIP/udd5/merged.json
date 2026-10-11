@@ -1,0 +1,256 @@
+{
+  "status": "complete",
+  "coverage_verified": true,
+  "processed_images": 40,
+  "total_images": 40,
+  "signature": {
+    "implementation": "pinned-native-training-free-baseline-suite-v1-20261011",
+    "method": "GLA-CLIP",
+    "dataset": "udd5",
+    "config": {
+      "method": "GLA-CLIP",
+      "module": "gla_clip_segmentor",
+      "class": "GLA_CLIPSegmentation",
+      "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/GLA-CLIP",
+      "model": {
+        "type": "GLA_CLIPSegmentation",
+        "clip_type": "openai",
+        "model_type": "ViT-B/16",
+        "vfm_model": "dino",
+        "checkpoint": null,
+        "prob_thd": 0.0
+      },
+      "word_file": "words/GLA-CLIP/udd5.txt",
+      "word_sha256": "1a251f1867bf2768f9c4ea1967d664670bf350a2e5e487373804e9fd6fc969d9",
+      "word_origin": "one locked canonical dataset class per line; no alias tuning",
+      "resize": {
+        "scale": [
+          448,
+          448
+        ],
+        "keep_ratio": true
+      },
+      "native_protocol_config": false,
+      "config_origin": "fixed transfer",
+      "parser": "native comma-space",
+      "full_flags": {
+        "CLIP_type": "ProxyCLIP",
+        "token_norm": true,
+        "KV_token_extension": true,
+        "proxy_sim": true,
+        "mini_iters": 2,
+        "initial_crit_pos": 0.6,
+        "dynamic_beta": true,
+        "beta_alpha": 0.3,
+        "dynamic_gamma": true,
+        "gamma_alpha": 30.0
+      },
+      "prediction_map": null
+    },
+    "source_commit": "63d674626cb1ddc566e3177b9cb5b2dc7a212158",
+    "checkpoint_manifest": {
+      "weights": {
+        "ViT-B-16.pt": {
+          "url": "https://openaipublic.azureedge.net/clip/models/5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f/ViT-B-16.pt",
+          "sha256": "5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f",
+          "bytes": 350837078
+        },
+        "dino_vitbase8_pretrain.pth": {
+          "url": "https://dl.fbaipublicfiles.com/dino/dino_vitbase8_pretrain/dino_vitbase8_pretrain.pth",
+          "sha256": "575f0efc4838938314afa09897a62ed2b87919928b5edcd133abb907328995eb",
+          "bytes": 343279349
+        },
+        "b16_fullcc2.5b.pt": {
+          "url": "https://dl.fbaipublicfiles.com/MMPT/metaclip/b16_fullcc2.5b.pt",
+          "sha256": "512ea0fb9f2cf88d027e96e4674247a1a91a96af18abc2e2fcdb8008c551e04b",
+          "bytes": 1795798327
+        },
+        "sam2_hiera_large.pt": {
+          "url": "https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt",
+          "sha256": "7442e4e9b732a508f80e141e7c2913437a3610ee0c77381a66658c3a445df87b",
+          "bytes": 897952466
+        },
+        "xclip_jbu_one_million_aid.ckpt": {
+          "url": "https://raw.githubusercontent.com/likyoo/SegEarth-OV/3e22a969b32c6d751bdbba64a88a0b670e630f55/simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt",
+          "sha256": "cabc594d0042535f3413ac89d5f0b8b3173aecf18e2e469fb91b015ea4de49d8",
+          "bytes": 5690776
+        }
+      },
+      "dependencies": {
+        "dino": {
+          "url": "https://github.com/facebookresearch/dino.git",
+          "commit": "7c446df5b9f45747937fb0d72314eb9f7b66930a",
+          "archive_sha256": "3c65181860269457eed8367f313a5a6d695951dd985750a940722de2175a05ff"
+        },
+        "sam2": {
+          "url": "https://github.com/facebookresearch/sam2.git",
+          "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+          "archive_sha256": "fe93082a71a885a427894b1eab76341768781b6b58a298a0717e03862097d137"
+        },
+        "SimFeatUp": {
+          "url": "https://github.com/likyoo/SimFeatUp.git",
+          "commit": "78a0ba70b1d6ea7283684a88c98ce338af4593ca",
+          "archive_sha256": "4aec32fbc5140c048042545726a74a049c80590a57eeba74d64fd81b1d20665a"
+        }
+      }
+    },
+    "runtime": {
+      "packages": {
+        "torch": "2.4.0",
+        "torchvision": "0.19.0",
+        "mmcv": "2.2.0",
+        "mmengine": "0.10.7",
+        "mmsegmentation": "1.2.2",
+        "numpy": "1.26.4",
+        "transformers": "4.44.2",
+        "timm": "1.0.9"
+      },
+      "compatibility": {
+        "operation": "MMCV version-guard upper bound 2.2.0 -> 2.2.1 only",
+        "before_sha256": "6800b7c849b11fbfac8e0ef481601659e2621d9a2d7ed335c24c18d6453d0ba9",
+        "after_sha256": "b03255d861c75871be63ae4488720b8d6c0f373bbaa497a09cc168f853ef5048"
+      }
+    },
+    "sample_manifest_sha256": "01338dafdf1239280d8fd03edbb72e347660db756104ed1086b418b26388b876"
+  },
+  "sample_keys": [
+    "000061.JPG",
+    "000161.JPG",
+    "000261.JPG",
+    "000361.JPG",
+    "001261.JPG",
+    "001361.JPG",
+    "001461.JPG",
+    "001561.JPG",
+    "0119_3img2031.JPG",
+    "0119_4img1001.JPG",
+    "0119_4img3041.JPG",
+    "0119_5img3001.JPG",
+    "DJI_0031.JPG",
+    "DJI_00528.JPG",
+    "DJI_00581.JPG",
+    "DJI_00591.JPG",
+    "DJI_0291.JPG",
+    "DJI_0303.JPG",
+    "DJI_0316.JPG",
+    "DJI_0373_heda.JPG",
+    "DJI_0388.JPG",
+    "DJI_0397.JPG",
+    "DJI_0406.JPG",
+    "DJI_0415.JPG",
+    "DJI_0431.JPG",
+    "DJI_0442.JPG",
+    "DJI_0451.JPG",
+    "DJI_0460.JPG",
+    "DJI_0469.JPG",
+    "DJI_0479_heda.JPG",
+    "DJI_0490.JPG",
+    "DJI_0499_heda.JPG",
+    "DJI_0511.JPG",
+    "DJI_0520.JPG",
+    "DJI_0532.JPG",
+    "DJI_0539_heda.JPG",
+    "DJI_0553_heda.JPG",
+    "DJI_0563_heda.JPG",
+    "DJI_0627.JPG",
+    "DJI_0707.JPG"
+  ],
+  "sample_keys_sha256": "01338dafdf1239280d8fd03edbb72e347660db756104ed1086b418b26388b876",
+  "results": {
+    "udd5": {
+      "mean_iou_percent": 47.7428,
+      "pixel_accuracy_percent": 74.58,
+      "per_class": [
+        {
+          "name": "vegetation",
+          "iou_percent": 81.8175,
+          "target_pixels": 130310444,
+          "predicted_pixels": 137510183,
+          "precision_percent": 87.64351582602433,
+          "recall_percent": 92.48587856856662
+        },
+        {
+          "name": "building",
+          "iou_percent": 73.6285,
+          "target_pixels": 172720634,
+          "predicted_pixels": 152662137,
+          "precision_percent": 90.38325724472205,
+          "recall_percent": 79.88681421815531
+        },
+        {
+          "name": "road",
+          "iou_percent": 42.4527,
+          "target_pixels": 58998894,
+          "predicted_pixels": 124904788,
+          "precision_percent": 43.877918434960236,
+          "recall_percent": 92.89262439394203
+        },
+        {
+          "name": "vehicle",
+          "iou_percent": 24.43,
+          "target_pixels": 3521806,
+          "predicted_pixels": 2614210,
+          "precision_percent": 46.083443946737255,
+          "recall_percent": 34.20739245716544
+        },
+        {
+          "name": "other",
+          "iou_percent": 16.3852,
+          "target_pixels": 74404702,
+          "predicted_pixels": 22265162,
+          "precision_percent": 61.1250616546154,
+          "recall_percent": 18.29130906269875
+        }
+      ],
+      "confusion_matrix": [
+        [
+          120518759,
+          2003303,
+          7405659,
+          42882,
+          339841,
+          0
+        ],
+        [
+          3375278,
+          137981012,
+          22823472,
+          376648,
+          8164224,
+          0
+        ],
+        [
+          2338356,
+          1312257,
+          54805621,
+          438703,
+          103957,
+          0
+        ],
+        [
+          86402,
+          184706,
+          1998434,
+          1204718,
+          47546,
+          0
+        ],
+        [
+          11191388,
+          11180859,
+          37871602,
+          551259,
+          13609594,
+          0
+        ]
+      ],
+      "valid_pixels": 439956480,
+      "non_residual_mean_iou_percent": 55.5822
+    }
+  },
+  "scored_target_counts_match": true,
+  "aggregate_gpu_wall_seconds": 28.290571451187134,
+  "parallel_wall_seconds": 28.290571451187134,
+  "peak_allocated_bytes": 1420680704,
+  "peak_reserved_bytes": 2325741568
+}
