@@ -1,6 +1,103 @@
 {
   "status": "running",
-  "active": [],
+  "active": [
+    {
+      "method": "CorrCLIP",
+      "dataset": "potsdam",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 1,
+      "gpu": 0,
+      "session": "gtf11_corrclip_evaluate_potsdam_0",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/potsdam/evaluate/s0",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/potsdam/evaluate/s0.log",
+      "attempt": 0
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "loveda",
+      "phase": "evaluate",
+      "shard": 3,
+      "shards": 8,
+      "gpu": 2,
+      "session": "gtf11_corrclip_evaluate_loveda_3",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s3",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s3.log",
+      "attempt": 0
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "loveda",
+      "phase": "evaluate",
+      "shard": 4,
+      "shards": 8,
+      "gpu": 1,
+      "session": "gtf11_corrclip_evaluate_loveda_4",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s4",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s4.log",
+      "attempt": 0
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "loveda",
+      "phase": "evaluate",
+      "shard": 5,
+      "shards": 8,
+      "gpu": 7,
+      "session": "gtf11_corrclip_evaluate_loveda_5",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s5",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s5.log",
+      "attempt": 0
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "loveda",
+      "phase": "evaluate",
+      "shard": 6,
+      "shards": 8,
+      "gpu": 3,
+      "session": "gtf11_corrclip_evaluate_loveda_6",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s6",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s6.log",
+      "attempt": 0
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "loveda",
+      "phase": "evaluate",
+      "shard": 7,
+      "shards": 8,
+      "gpu": 4,
+      "session": "gtf11_corrclip_evaluate_loveda_7",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s7",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s7.log",
+      "attempt": 0
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "landcoverai",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 8,
+      "gpu": 5,
+      "session": "gtf11_corrclip_evaluate_landcoverai_0",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/landcoverai/evaluate/s0",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/landcoverai/evaluate/s0.log",
+      "attempt": 0
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "landcoverai",
+      "phase": "evaluate",
+      "shard": 1,
+      "shards": 8,
+      "gpu": 6,
+      "session": "gtf11_corrclip_evaluate_landcoverai_1",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/landcoverai/evaluate/s1",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/landcoverai/evaluate/s1.log",
+      "attempt": 0
+    }
+  ],
   "completed": [
     "PEARL/smoke/vdd/0",
     "PEARL/smoke/potsdam/0",
@@ -264,9 +361,145 @@
     "PTC/evaluate/flair1/4",
     "PTC/evaluate/flair1/5",
     "PTC/evaluate/flair1/6",
-    "PTC/evaluate/flair1/7"
+    "PTC/evaluate/flair1/7",
+    "PTC/smoke/udd5/0",
+    "PTC/evaluate/udd5/0",
+    "PTC/evaluate/landcoverai/3",
+    "PTC/evaluate/loveda/0",
+    "PTC/evaluate/loveda/1",
+    "PTC/evaluate/loveda/2",
+    "PTC/evaluate/loveda/3",
+    "PTC/evaluate/loveda/4",
+    "PTC/evaluate/loveda/5",
+    "PTC/evaluate/loveda/7",
+    "PTC/evaluate/landcoverai/7",
+    "PTC/evaluate/voc20/0",
+    "PTC/evaluate/voc20/1",
+    "PTC/evaluate/voc20/2",
+    "PTC/evaluate/voc20/3",
+    "PTC/evaluate/voc20/5",
+    "PTC/evaluate/voc20/6",
+    "PTC/evaluate/voc20/4",
+    "PTC/evaluate/voc20/7",
+    "PTC/evaluate/voc21/0",
+    "PTC/evaluate/voc21/1",
+    "PTC/evaluate/voc21/2",
+    "PTC/evaluate/voc21/3",
+    "PTC/evaluate/voc21/4",
+    "PTC/evaluate/voc21/5",
+    "PTC/evaluate/voc21/6",
+    "PTC/evaluate/voc21/7",
+    "PTC/evaluate/ade150/3",
+    "PTC/evaluate/ade150/4",
+    "PTC/evaluate/ade150/0",
+    "PTC/evaluate/ade150/1",
+    "PTC/evaluate/ade150/2",
+    "PTC/evaluate/ade150/5",
+    "PTC/evaluate/ade150/6",
+    "PTC/evaluate/ade150/7",
+    "PTC/evaluate/context59/0",
+    "PTC/evaluate/context59/1",
+    "PTC/evaluate/context59/2",
+    "PTC/evaluate/context59/3",
+    "PTC/evaluate/context59/4",
+    "PTC/evaluate/context59/5",
+    "PTC/evaluate/context59/6",
+    "PTC/evaluate/context59/7",
+    "PTC/evaluate/context60/0",
+    "PTC/evaluate/context60/1",
+    "PTC/evaluate/context60/2",
+    "PTC/evaluate/context60/3",
+    "PTC/evaluate/context60/4",
+    "PTC/evaluate/context60/5",
+    "PTC/evaluate/context60/6",
+    "PTC/evaluate/context60/7",
+    "PTC/evaluate/coco_object81/0",
+    "PTC/evaluate/coco_object81/1",
+    "PTC/evaluate/coco_object81/2",
+    "PTC/evaluate/coco_object81/3",
+    "PTC/evaluate/coco_object81/4",
+    "PTC/evaluate/coco_object81/5",
+    "PTC/evaluate/coco_object81/6",
+    "PTC/evaluate/coco_object81/7",
+    "PTC/evaluate/coco_stuff171/0",
+    "PTC/evaluate/coco_stuff171/1",
+    "PTC/evaluate/coco_stuff171/2",
+    "PTC/evaluate/coco_stuff171/3",
+    "PTC/evaluate/coco_stuff171/4",
+    "PTC/evaluate/coco_stuff171/5",
+    "PTC/evaluate/coco_stuff171/6",
+    "PTC/cost/vdd/0",
+    "PTC/evaluate/coco_stuff171/7",
+    "PTC/cost/potsdam/0",
+    "PTC/cost/udd5/0",
+    "PTC/cost/vaihingen/0",
+    "PTC/cost/oem/0",
+    "PTC/cost/loveda/0",
+    "PTC/cost/landcoverai/0",
+    "PTC/cost/flair1/0",
+    "PTC/cost/voc20/0",
+    "PTC/cost/voc21/0",
+    "PTC/cost/context59/0",
+    "PTC/cost/context60/0",
+    "PTC/cost/coco_object81/0",
+    "PTC/cost/coco_stuff171/0",
+    "PTC/cost/ade150/0",
+    "CorrCLIP/smoke/vdd/0",
+    "CorrCLIP/smoke/potsdam/0",
+    "CorrCLIP/smoke/udd5/0",
+    "CorrCLIP/smoke/vaihingen/0",
+    "CorrCLIP/smoke/oem/0",
+    "CorrCLIP/smoke/loveda/0",
+    "CorrCLIP/smoke/landcoverai/0",
+    "CorrCLIP/smoke/voc20/0",
+    "CorrCLIP/smoke/voc21/0",
+    "CorrCLIP/smoke/ade150/0",
+    "CorrCLIP/smoke/context59/0",
+    "CorrCLIP/smoke/context60/0",
+    "CorrCLIP/smoke/coco_object81/0",
+    "CorrCLIP/smoke/coco_stuff171/0",
+    "CorrCLIP/evaluate/vaihingen/0",
+    "CorrCLIP/evaluate/udd5/0",
+    "CorrCLIP/evaluate/vdd/0",
+    "CorrCLIP/evaluate/oem/0",
+    "CorrCLIP/evaluate/loveda/0",
+    "CorrCLIP/evaluate/loveda/1",
+    "CorrCLIP/evaluate/loveda/2"
   ],
-  "failures": {},
+  "failures": {
+    "CorrCLIP/smoke/flair1/0": {
+      "error": "Exited before complete verified coverage: /data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/flair1/smoke/s0.log",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/flair1/smoke/s0.log",
+      "tail": "EoMT is not installed\nEntitySeg is not installed\n{\"method\": \"CorrCLIP\", \"dataset\": \"flair1\", \"phase\": \"smoke\", \"status\": \"running\", \"processed\": 0, \"total\": 1}\nTraceback (most recent call last):\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 301, in <module>\n    main(parser.parse_args())\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 269, in main\n    predictions={p:predict(m,image,row,dict(config,\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 269, in <dictcomp>\n    predictions={p:predict(m,image,row,dict(config,\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/torch/utils/_contextlib.py\", line 116, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 177, in predict\n    result = model.predict(data['inputs'], data['data_samples'])[0]\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1/corrclip_segmentor.py\", line 190, in predict\n    instance_masks = [self.generate_mask(data_sample.img_path) for data_sample in data_samples]\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1/corrclip_segmentor.py\", line 190, in <listcomp>\n    instance_masks = [self.generate_mask(data_sample.img_path) for data_sample in data_samples]\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1/corrclip_segmentor.py\", line 330, in generate_mask\n    image = Image.open(img_path).convert(\"RGB\")\n            ^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/PIL/Image.py\", line 3715, in open\n    raise UnidentifiedImageError(msg)\nPIL.UnidentifiedImageError: cannot identify image file '/data/test/datasets/FLAIR1_target_20260922/extracted/flair_1_aerial_test/D012_2019/Z10_UU/img/IMG_062613.tif'\n"
+    },
+    "CorrCLIP/evaluate/flair1/0": {
+      "error": "Skipped because image-only smoke failed"
+    },
+    "CorrCLIP/evaluate/flair1/1": {
+      "error": "Skipped because image-only smoke failed"
+    },
+    "CorrCLIP/evaluate/flair1/2": {
+      "error": "Skipped because image-only smoke failed"
+    },
+    "CorrCLIP/evaluate/flair1/3": {
+      "error": "Skipped because image-only smoke failed"
+    },
+    "CorrCLIP/evaluate/flair1/4": {
+      "error": "Skipped because image-only smoke failed"
+    },
+    "CorrCLIP/evaluate/flair1/5": {
+      "error": "Skipped because image-only smoke failed"
+    },
+    "CorrCLIP/evaluate/flair1/6": {
+      "error": "Skipped because image-only smoke failed"
+    },
+    "CorrCLIP/evaluate/flair1/7": {
+      "error": "Skipped because image-only smoke failed"
+    },
+    "CorrCLIP/cost/flair1/0": {
+      "error": "Skipped because image-only smoke failed"
+    }
+  },
   "merged": {
     "PEARL/vaihingen": {
       "vaihingen": 26.1222
@@ -371,10 +604,589 @@
     },
     "PTC/potsdam": {
       "potsdam": 33.6962
+    },
+    "PTC/flair1": {
+      "flair1": 20.7257
+    },
+    "PTC/udd5": {
+      "udd5": 39.8159
+    },
+    "PTC/loveda": {
+      "P": 50.6271,
+      "D": 31.1501
+    },
+    "PTC/landcoverai": {
+      "landcoverai": 33.0437
+    },
+    "PTC/voc20": {
+      "voc20": 82.7334
+    },
+    "PTC/voc21": {
+      "voc21": 67.1752
+    },
+    "PTC/ade150": {
+      "ade150": 20.909
+    },
+    "PTC/context59": {
+      "context59": 40.5982
+    },
+    "PTC/context60": {
+      "context60": 37.7346
+    },
+    "PTC/coco_object81": {
+      "coco_object81": 39.6947
+    },
+    "PTC/coco_stuff171": {
+      "coco_stuff171": 27.4517
+    },
+    "CorrCLIP/vaihingen": {
+      "vaihingen": 25.0724
+    },
+    "CorrCLIP/udd5": {
+      "udd5": 40.0991
+    },
+    "CorrCLIP/vdd": {
+      "vdd": 37.127
+    },
+    "CorrCLIP/oem": {
+      "oem": 24.4936
     }
   },
-  "pending": [],
-  "current_method": "PEARL",
+  "pending": [
+    {
+      "method": "CorrCLIP",
+      "dataset": "landcoverai",
+      "phase": "evaluate",
+      "shard": 2,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "landcoverai",
+      "phase": "evaluate",
+      "shard": 3,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "landcoverai",
+      "phase": "evaluate",
+      "shard": 4,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "landcoverai",
+      "phase": "evaluate",
+      "shard": 5,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "landcoverai",
+      "phase": "evaluate",
+      "shard": 6,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "landcoverai",
+      "phase": "evaluate",
+      "shard": 7,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "voc20",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "voc20",
+      "phase": "evaluate",
+      "shard": 1,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "voc20",
+      "phase": "evaluate",
+      "shard": 2,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "voc20",
+      "phase": "evaluate",
+      "shard": 3,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "voc20",
+      "phase": "evaluate",
+      "shard": 4,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "voc20",
+      "phase": "evaluate",
+      "shard": 5,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "voc20",
+      "phase": "evaluate",
+      "shard": 6,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "voc20",
+      "phase": "evaluate",
+      "shard": 7,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "voc21",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "voc21",
+      "phase": "evaluate",
+      "shard": 1,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "voc21",
+      "phase": "evaluate",
+      "shard": 2,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "voc21",
+      "phase": "evaluate",
+      "shard": 3,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "voc21",
+      "phase": "evaluate",
+      "shard": 4,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "voc21",
+      "phase": "evaluate",
+      "shard": 5,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "voc21",
+      "phase": "evaluate",
+      "shard": 6,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "voc21",
+      "phase": "evaluate",
+      "shard": 7,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "ade150",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "ade150",
+      "phase": "evaluate",
+      "shard": 1,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "ade150",
+      "phase": "evaluate",
+      "shard": 2,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "ade150",
+      "phase": "evaluate",
+      "shard": 3,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "ade150",
+      "phase": "evaluate",
+      "shard": 4,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "ade150",
+      "phase": "evaluate",
+      "shard": 5,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "ade150",
+      "phase": "evaluate",
+      "shard": 6,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "ade150",
+      "phase": "evaluate",
+      "shard": 7,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "context59",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "context59",
+      "phase": "evaluate",
+      "shard": 1,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "context59",
+      "phase": "evaluate",
+      "shard": 2,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "context59",
+      "phase": "evaluate",
+      "shard": 3,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "context59",
+      "phase": "evaluate",
+      "shard": 4,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "context59",
+      "phase": "evaluate",
+      "shard": 5,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "context59",
+      "phase": "evaluate",
+      "shard": 6,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "context59",
+      "phase": "evaluate",
+      "shard": 7,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "context60",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "context60",
+      "phase": "evaluate",
+      "shard": 1,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "context60",
+      "phase": "evaluate",
+      "shard": 2,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "context60",
+      "phase": "evaluate",
+      "shard": 3,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "context60",
+      "phase": "evaluate",
+      "shard": 4,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "context60",
+      "phase": "evaluate",
+      "shard": 5,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "context60",
+      "phase": "evaluate",
+      "shard": 6,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "context60",
+      "phase": "evaluate",
+      "shard": 7,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "coco_object81",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "coco_object81",
+      "phase": "evaluate",
+      "shard": 1,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "coco_object81",
+      "phase": "evaluate",
+      "shard": 2,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "coco_object81",
+      "phase": "evaluate",
+      "shard": 3,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "coco_object81",
+      "phase": "evaluate",
+      "shard": 4,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "coco_object81",
+      "phase": "evaluate",
+      "shard": 5,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "coco_object81",
+      "phase": "evaluate",
+      "shard": 6,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "coco_object81",
+      "phase": "evaluate",
+      "shard": 7,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "coco_stuff171",
+      "phase": "evaluate",
+      "shard": 0,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "coco_stuff171",
+      "phase": "evaluate",
+      "shard": 1,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "coco_stuff171",
+      "phase": "evaluate",
+      "shard": 2,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "coco_stuff171",
+      "phase": "evaluate",
+      "shard": 3,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "coco_stuff171",
+      "phase": "evaluate",
+      "shard": 4,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "coco_stuff171",
+      "phase": "evaluate",
+      "shard": 5,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "coco_stuff171",
+      "phase": "evaluate",
+      "shard": 6,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "coco_stuff171",
+      "phase": "evaluate",
+      "shard": 7,
+      "shards": 8
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "vdd",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "potsdam",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "udd5",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "vaihingen",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "oem",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "loveda",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "landcoverai",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "voc20",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "voc21",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "ade150",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "context59",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "context60",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "coco_object81",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "CorrCLIP",
+      "dataset": "coco_stuff171",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    }
+  ],
+  "current_method": "CorrCLIP",
   "completed_outputs": {
     "PTC/evaluate/flair1/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/flair1/evaluate/s0",
     "PTC/evaluate/flair1/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/flair1/evaluate/s1",
@@ -383,7 +1195,110 @@
     "PTC/evaluate/flair1/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/flair1/evaluate/s4",
     "PTC/evaluate/flair1/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/flair1/evaluate/s5",
     "PTC/evaluate/flair1/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/flair1/evaluate/s6",
-    "PTC/evaluate/flair1/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/flair1/evaluate/s7"
+    "PTC/evaluate/flair1/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/flair1/evaluate/s7",
+    "PTC/smoke/udd5/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/udd5/smoke/s0_attempt1",
+    "PTC/evaluate/udd5/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/udd5/evaluate/s0_attempt1",
+    "PTC/evaluate/landcoverai/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/landcoverai/evaluate/s3_attempt1",
+    "PTC/evaluate/loveda/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s0_attempt1",
+    "PTC/evaluate/loveda/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s1_attempt1",
+    "PTC/evaluate/loveda/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s2_attempt1",
+    "PTC/evaluate/loveda/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s3_attempt1",
+    "PTC/evaluate/loveda/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s4_attempt1",
+    "PTC/evaluate/loveda/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s5_attempt1",
+    "PTC/evaluate/loveda/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s7_attempt1",
+    "PTC/evaluate/landcoverai/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/landcoverai/evaluate/s7_attempt1",
+    "PTC/evaluate/voc20/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/voc20/evaluate/s0",
+    "PTC/evaluate/voc20/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/voc20/evaluate/s1",
+    "PTC/evaluate/voc20/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/voc20/evaluate/s2",
+    "PTC/evaluate/voc20/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/voc20/evaluate/s3",
+    "PTC/evaluate/voc20/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/voc20/evaluate/s5",
+    "PTC/evaluate/voc20/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/voc20/evaluate/s6",
+    "PTC/evaluate/voc20/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/voc20/evaluate/s4",
+    "PTC/evaluate/voc20/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/voc20/evaluate/s7",
+    "PTC/evaluate/voc21/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/voc21/evaluate/s0",
+    "PTC/evaluate/voc21/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/voc21/evaluate/s1",
+    "PTC/evaluate/voc21/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/voc21/evaluate/s2",
+    "PTC/evaluate/voc21/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/voc21/evaluate/s3",
+    "PTC/evaluate/voc21/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/voc21/evaluate/s4",
+    "PTC/evaluate/voc21/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/voc21/evaluate/s5",
+    "PTC/evaluate/voc21/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/voc21/evaluate/s6",
+    "PTC/evaluate/voc21/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/voc21/evaluate/s7",
+    "PTC/evaluate/ade150/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/ade150/evaluate/s3",
+    "PTC/evaluate/ade150/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/ade150/evaluate/s4",
+    "PTC/evaluate/ade150/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/ade150/evaluate/s0",
+    "PTC/evaluate/ade150/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/ade150/evaluate/s1",
+    "PTC/evaluate/ade150/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/ade150/evaluate/s2",
+    "PTC/evaluate/ade150/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/ade150/evaluate/s5",
+    "PTC/evaluate/ade150/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/ade150/evaluate/s6",
+    "PTC/evaluate/ade150/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/ade150/evaluate/s7",
+    "PTC/evaluate/context59/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/context59/evaluate/s0",
+    "PTC/evaluate/context59/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/context59/evaluate/s1",
+    "PTC/evaluate/context59/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/context59/evaluate/s2",
+    "PTC/evaluate/context59/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/context59/evaluate/s3",
+    "PTC/evaluate/context59/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/context59/evaluate/s4",
+    "PTC/evaluate/context59/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/context59/evaluate/s5",
+    "PTC/evaluate/context59/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/context59/evaluate/s6",
+    "PTC/evaluate/context59/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/context59/evaluate/s7",
+    "PTC/evaluate/context60/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/context60/evaluate/s0",
+    "PTC/evaluate/context60/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/context60/evaluate/s1",
+    "PTC/evaluate/context60/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/context60/evaluate/s2",
+    "PTC/evaluate/context60/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/context60/evaluate/s3",
+    "PTC/evaluate/context60/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/context60/evaluate/s4",
+    "PTC/evaluate/context60/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/context60/evaluate/s5",
+    "PTC/evaluate/context60/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/context60/evaluate/s6",
+    "PTC/evaluate/context60/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/context60/evaluate/s7",
+    "PTC/evaluate/coco_object81/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/coco_object81/evaluate/s0",
+    "PTC/evaluate/coco_object81/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/coco_object81/evaluate/s1",
+    "PTC/evaluate/coco_object81/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/coco_object81/evaluate/s2",
+    "PTC/evaluate/coco_object81/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/coco_object81/evaluate/s3",
+    "PTC/evaluate/coco_object81/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/coco_object81/evaluate/s4",
+    "PTC/evaluate/coco_object81/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/coco_object81/evaluate/s5",
+    "PTC/evaluate/coco_object81/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/coco_object81/evaluate/s6",
+    "PTC/evaluate/coco_object81/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/coco_object81/evaluate/s7",
+    "PTC/evaluate/coco_stuff171/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/coco_stuff171/evaluate/s0",
+    "PTC/evaluate/coco_stuff171/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/coco_stuff171/evaluate/s1",
+    "PTC/evaluate/coco_stuff171/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/coco_stuff171/evaluate/s2",
+    "PTC/evaluate/coco_stuff171/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/coco_stuff171/evaluate/s3",
+    "PTC/evaluate/coco_stuff171/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/coco_stuff171/evaluate/s4",
+    "PTC/evaluate/coco_stuff171/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/coco_stuff171/evaluate/s5",
+    "PTC/evaluate/coco_stuff171/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/coco_stuff171/evaluate/s6",
+    "PTC/cost/vdd/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/vdd/cost/s0",
+    "PTC/evaluate/coco_stuff171/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/coco_stuff171/evaluate/s7",
+    "PTC/cost/potsdam/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/potsdam/cost/s0",
+    "PTC/cost/udd5/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/udd5/cost/s0_attempt1",
+    "PTC/cost/vaihingen/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/vaihingen/cost/s0",
+    "PTC/cost/oem/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/oem/cost/s0",
+    "PTC/cost/loveda/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/cost/s0",
+    "PTC/cost/landcoverai/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/landcoverai/cost/s0",
+    "PTC/cost/flair1/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/flair1/cost/s0",
+    "PTC/cost/voc20/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/voc20/cost/s0",
+    "PTC/cost/voc21/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/voc21/cost/s0",
+    "PTC/cost/context59/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/context59/cost/s0",
+    "PTC/cost/context60/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/context60/cost/s0",
+    "PTC/cost/coco_object81/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/coco_object81/cost/s0",
+    "PTC/cost/coco_stuff171/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/coco_stuff171/cost/s0",
+    "PTC/cost/ade150/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/ade150/cost/s0",
+    "CorrCLIP/smoke/vdd/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/vdd/smoke/s0",
+    "CorrCLIP/smoke/potsdam/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/potsdam/smoke/s0",
+    "CorrCLIP/smoke/udd5/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/udd5/smoke/s0",
+    "CorrCLIP/smoke/vaihingen/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/vaihingen/smoke/s0",
+    "CorrCLIP/smoke/oem/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/oem/smoke/s0",
+    "CorrCLIP/smoke/loveda/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/smoke/s0",
+    "CorrCLIP/smoke/landcoverai/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/landcoverai/smoke/s0",
+    "CorrCLIP/smoke/voc20/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/voc20/smoke/s0",
+    "CorrCLIP/smoke/voc21/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/voc21/smoke/s0",
+    "CorrCLIP/smoke/ade150/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/ade150/smoke/s0",
+    "CorrCLIP/smoke/context59/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/context59/smoke/s0",
+    "CorrCLIP/smoke/context60/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/context60/smoke/s0",
+    "CorrCLIP/smoke/coco_object81/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/coco_object81/smoke/s0",
+    "CorrCLIP/smoke/coco_stuff171/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/coco_stuff171/smoke/s0",
+    "CorrCLIP/evaluate/vaihingen/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/vaihingen/evaluate/s0",
+    "CorrCLIP/evaluate/udd5/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/udd5/evaluate/s0",
+    "CorrCLIP/evaluate/vdd/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/vdd/evaluate/s0",
+    "CorrCLIP/evaluate/oem/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/oem/evaluate/s0",
+    "CorrCLIP/evaluate/loveda/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s0",
+    "CorrCLIP/evaluate/loveda/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s1",
+    "CorrCLIP/evaluate/loveda/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s2"
   },
   "attempts": {
     "PTC/smoke/udd5/0": 1,

@@ -1,0 +1,325 @@
+{
+  "status": "complete",
+  "coverage_verified": true,
+  "processed_images": 113,
+  "total_images": 113,
+  "signature": {
+    "implementation": "pinned-native-training-free-baseline-suite-v1-20261011",
+    "method": "CorrCLIP",
+    "dataset": "vaihingen",
+    "config": {
+      "method": "CorrCLIP",
+      "module": "corrclip_segmentor",
+      "class": "CorrCLIPSegmentation",
+      "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1",
+      "model": {
+        "type": "CorrCLIPSegmentation",
+        "clip_type": "metaclip_fullcc",
+        "model_type": "ViT-B-16-quickgelu",
+        "dino_type": "dino_vitb8",
+        "mask_generator": "sam2",
+        "prob_thd": 0.0
+      },
+      "word_file": "words/CorrCLIP/vaihingen.txt",
+      "word_sha256": "b3897a8a1a83842fc328c69ad564684fd930dd0ef25923306a36e4ecfccd32bc",
+      "word_origin": "one locked canonical dataset class per line; no alias tuning",
+      "resize": {
+        "scale": [
+          448,
+          448
+        ],
+        "keep_ratio": true
+      },
+      "native_protocol_config": false,
+      "config_origin": "fixed transfer",
+      "parser": "semicolon-space",
+      "full_flags": {},
+      "prediction_map": null,
+      "mask_note": "Native online SAM2 HieraLarge generation, 8 points/side, IoU/stability .4; included in inference cost. Official precomputed-mask scores are a separate resource setting."
+    },
+    "source_commit": "103bc18213e6d906e55a21b8491bc7b04cbf106b",
+    "checkpoint_manifest": {
+      "weights": {
+        "ViT-B-16.pt": {
+          "url": "https://openaipublic.azureedge.net/clip/models/5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f/ViT-B-16.pt",
+          "sha256": "5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f",
+          "bytes": 350837078
+        },
+        "dino_vitbase8_pretrain.pth": {
+          "url": "https://dl.fbaipublicfiles.com/dino/dino_vitbase8_pretrain/dino_vitbase8_pretrain.pth",
+          "sha256": "575f0efc4838938314afa09897a62ed2b87919928b5edcd133abb907328995eb",
+          "bytes": 343279349
+        },
+        "b16_fullcc2.5b.pt": {
+          "url": "https://dl.fbaipublicfiles.com/MMPT/metaclip/b16_fullcc2.5b.pt",
+          "sha256": "512ea0fb9f2cf88d027e96e4674247a1a91a96af18abc2e2fcdb8008c551e04b",
+          "bytes": 1795798327
+        },
+        "sam2_hiera_large.pt": {
+          "url": "https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt",
+          "sha256": "7442e4e9b732a508f80e141e7c2913437a3610ee0c77381a66658c3a445df87b",
+          "bytes": 897952466
+        },
+        "xclip_jbu_one_million_aid.ckpt": {
+          "url": "https://raw.githubusercontent.com/likyoo/SegEarth-OV/3e22a969b32c6d751bdbba64a88a0b670e630f55/simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt",
+          "sha256": "cabc594d0042535f3413ac89d5f0b8b3173aecf18e2e469fb91b015ea4de49d8",
+          "bytes": 5690776
+        }
+      },
+      "dependencies": {
+        "dino": {
+          "url": "https://github.com/facebookresearch/dino.git",
+          "commit": "7c446df5b9f45747937fb0d72314eb9f7b66930a",
+          "archive_sha256": "3c65181860269457eed8367f313a5a6d695951dd985750a940722de2175a05ff"
+        },
+        "sam2": {
+          "url": "https://github.com/facebookresearch/sam2.git",
+          "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+          "archive_sha256": "fe93082a71a885a427894b1eab76341768781b6b58a298a0717e03862097d137"
+        },
+        "SimFeatUp": {
+          "url": "https://github.com/likyoo/SimFeatUp.git",
+          "commit": "78a0ba70b1d6ea7283684a88c98ce338af4593ca",
+          "archive_sha256": "4aec32fbc5140c048042545726a74a049c80590a57eeba74d64fd81b1d20665a"
+        }
+      }
+    },
+    "runtime": {
+      "packages": {
+        "torch": "2.4.0",
+        "torchvision": "0.19.0",
+        "mmcv": "2.2.0",
+        "mmengine": "0.10.7",
+        "mmsegmentation": "1.2.2",
+        "numpy": "1.26.4",
+        "transformers": "4.44.2",
+        "timm": "1.0.9"
+      },
+      "compatibility": {
+        "operation": "MMCV version-guard upper bound 2.2.0 -> 2.2.1 only",
+        "before_sha256": "6800b7c849b11fbfac8e0ef481601659e2621d9a2d7ed335c24c18d6453d0ba9",
+        "after_sha256": "b03255d861c75871be63ae4488720b8d6c0f373bbaa497a09cc168f853ef5048"
+      }
+    },
+    "sample_manifest_sha256": "25720ac369c583d1c9d96c3da1b151770645ae61a858b41fc8f5847ffd6cc883"
+  },
+  "sample_keys": [
+    "top_mosaic_09cm_area10_y00_x00.tif",
+    "top_mosaic_09cm_area10_y00_x01.tif",
+    "top_mosaic_09cm_area10_y01_x00.tif",
+    "top_mosaic_09cm_area10_y01_x01.tif",
+    "top_mosaic_09cm_area10_y02_x00.tif",
+    "top_mosaic_09cm_area10_y02_x01.tif",
+    "top_mosaic_09cm_area12_y00_x00.tif",
+    "top_mosaic_09cm_area12_y00_x01.tif",
+    "top_mosaic_09cm_area12_y01_x00.tif",
+    "top_mosaic_09cm_area12_y01_x01.tif",
+    "top_mosaic_09cm_area12_y02_x00.tif",
+    "top_mosaic_09cm_area12_y02_x01.tif",
+    "top_mosaic_09cm_area14_y00_x00.tif",
+    "top_mosaic_09cm_area14_y00_x01.tif",
+    "top_mosaic_09cm_area14_y01_x00.tif",
+    "top_mosaic_09cm_area14_y01_x01.tif",
+    "top_mosaic_09cm_area14_y02_x00.tif",
+    "top_mosaic_09cm_area14_y02_x01.tif",
+    "top_mosaic_09cm_area16_y00_x00.tif",
+    "top_mosaic_09cm_area16_y00_x01.tif",
+    "top_mosaic_09cm_area16_y01_x00.tif",
+    "top_mosaic_09cm_area16_y01_x01.tif",
+    "top_mosaic_09cm_area16_y02_x00.tif",
+    "top_mosaic_09cm_area16_y02_x01.tif",
+    "top_mosaic_09cm_area20_y00_x00.tif",
+    "top_mosaic_09cm_area20_y00_x01.tif",
+    "top_mosaic_09cm_area20_y01_x00.tif",
+    "top_mosaic_09cm_area20_y01_x01.tif",
+    "top_mosaic_09cm_area20_y02_x00.tif",
+    "top_mosaic_09cm_area20_y02_x01.tif",
+    "top_mosaic_09cm_area22_y00_x00.tif",
+    "top_mosaic_09cm_area22_y00_x01.tif",
+    "top_mosaic_09cm_area22_y01_x00.tif",
+    "top_mosaic_09cm_area22_y01_x01.tif",
+    "top_mosaic_09cm_area22_y02_x00.tif",
+    "top_mosaic_09cm_area22_y02_x01.tif",
+    "top_mosaic_09cm_area24_y00_x00.tif",
+    "top_mosaic_09cm_area24_y00_x01.tif",
+    "top_mosaic_09cm_area24_y01_x00.tif",
+    "top_mosaic_09cm_area24_y01_x01.tif",
+    "top_mosaic_09cm_area24_y02_x00.tif",
+    "top_mosaic_09cm_area24_y02_x01.tif",
+    "top_mosaic_09cm_area27_y00_x00.tif",
+    "top_mosaic_09cm_area27_y00_x01.tif",
+    "top_mosaic_09cm_area27_y01_x00.tif",
+    "top_mosaic_09cm_area27_y01_x01.tif",
+    "top_mosaic_09cm_area27_y02_x00.tif",
+    "top_mosaic_09cm_area27_y02_x01.tif",
+    "top_mosaic_09cm_area27_y03_x00.tif",
+    "top_mosaic_09cm_area27_y03_x01.tif",
+    "top_mosaic_09cm_area29_y00_x00.tif",
+    "top_mosaic_09cm_area29_y00_x01.tif",
+    "top_mosaic_09cm_area29_y01_x00.tif",
+    "top_mosaic_09cm_area29_y01_x01.tif",
+    "top_mosaic_09cm_area29_y02_x00.tif",
+    "top_mosaic_09cm_area29_y02_x01.tif",
+    "top_mosaic_09cm_area2_y00_x00.tif",
+    "top_mosaic_09cm_area2_y00_x01.tif",
+    "top_mosaic_09cm_area2_y00_x02.tif",
+    "top_mosaic_09cm_area2_y01_x00.tif",
+    "top_mosaic_09cm_area2_y01_x01.tif",
+    "top_mosaic_09cm_area2_y01_x02.tif",
+    "top_mosaic_09cm_area2_y02_x00.tif",
+    "top_mosaic_09cm_area2_y02_x01.tif",
+    "top_mosaic_09cm_area2_y02_x02.tif",
+    "top_mosaic_09cm_area31_y00_x00.tif",
+    "top_mosaic_09cm_area31_y00_x01.tif",
+    "top_mosaic_09cm_area31_y01_x00.tif",
+    "top_mosaic_09cm_area31_y01_x01.tif",
+    "top_mosaic_09cm_area31_y02_x00.tif",
+    "top_mosaic_09cm_area31_y02_x01.tif",
+    "top_mosaic_09cm_area33_y00_x00.tif",
+    "top_mosaic_09cm_area33_y00_x01.tif",
+    "top_mosaic_09cm_area33_y01_x00.tif",
+    "top_mosaic_09cm_area33_y01_x01.tif",
+    "top_mosaic_09cm_area33_y02_x00.tif",
+    "top_mosaic_09cm_area33_y02_x01.tif",
+    "top_mosaic_09cm_area35_y00_x00.tif",
+    "top_mosaic_09cm_area35_y00_x01.tif",
+    "top_mosaic_09cm_area35_y00_x02.tif",
+    "top_mosaic_09cm_area35_y01_x00.tif",
+    "top_mosaic_09cm_area35_y01_x01.tif",
+    "top_mosaic_09cm_area35_y01_x02.tif",
+    "top_mosaic_09cm_area38_y00_x00.tif",
+    "top_mosaic_09cm_area38_y00_x01.tif",
+    "top_mosaic_09cm_area38_y00_x02.tif",
+    "top_mosaic_09cm_area38_y00_x03.tif",
+    "top_mosaic_09cm_area38_y01_x00.tif",
+    "top_mosaic_09cm_area38_y01_x01.tif",
+    "top_mosaic_09cm_area38_y01_x02.tif",
+    "top_mosaic_09cm_area38_y01_x03.tif",
+    "top_mosaic_09cm_area38_y02_x00.tif",
+    "top_mosaic_09cm_area38_y02_x01.tif",
+    "top_mosaic_09cm_area38_y02_x02.tif",
+    "top_mosaic_09cm_area38_y02_x03.tif",
+    "top_mosaic_09cm_area4_y00_x00.tif",
+    "top_mosaic_09cm_area4_y00_x01.tif",
+    "top_mosaic_09cm_area4_y01_x00.tif",
+    "top_mosaic_09cm_area4_y01_x01.tif",
+    "top_mosaic_09cm_area4_y02_x00.tif",
+    "top_mosaic_09cm_area4_y02_x01.tif",
+    "top_mosaic_09cm_area6_y00_x00.tif",
+    "top_mosaic_09cm_area6_y00_x01.tif",
+    "top_mosaic_09cm_area6_y01_x00.tif",
+    "top_mosaic_09cm_area6_y01_x01.tif",
+    "top_mosaic_09cm_area6_y02_x00.tif",
+    "top_mosaic_09cm_area6_y02_x01.tif",
+    "top_mosaic_09cm_area8_y00_x00.tif",
+    "top_mosaic_09cm_area8_y00_x01.tif",
+    "top_mosaic_09cm_area8_y01_x00.tif",
+    "top_mosaic_09cm_area8_y01_x01.tif",
+    "top_mosaic_09cm_area8_y02_x00.tif",
+    "top_mosaic_09cm_area8_y02_x01.tif"
+  ],
+  "sample_keys_sha256": "25720ac369c583d1c9d96c3da1b151770645ae61a858b41fc8f5847ffd6cc883",
+  "results": {
+    "vaihingen": {
+      "mean_iou_percent": 25.0724,
+      "pixel_accuracy_percent": 51.513,
+      "per_class": [
+        {
+          "name": "impervious surface",
+          "iou_percent": 10.8203,
+          "target_pixels": 31877366,
+          "predicted_pixels": 5298491,
+          "precision_percent": 68.50625961240662,
+          "recall_percent": 11.386756358728007
+        },
+        {
+          "name": "building",
+          "iou_percent": 45.6034,
+          "target_pixels": 29513079,
+          "predicted_pixels": 63157721,
+          "precision_percent": 45.95599958396219,
+          "recall_percent": 98.34542170269663
+        },
+        {
+          "name": "low vegetation",
+          "iou_percent": 6.4983,
+          "target_pixels": 24006993,
+          "predicted_pixels": 1649996,
+          "precision_percent": 94.8818057740746,
+          "recall_percent": 6.521208216289312
+        },
+        {
+          "name": "tree",
+          "iou_percent": 58.5402,
+          "target_pixels": 25171696,
+          "predicted_pixels": 37887547,
+          "precision_percent": 61.45641468950207,
+          "recall_percent": 92.5020229069984
+        },
+        {
+          "name": "car",
+          "iou_percent": 3.8996,
+          "target_pixels": 1462487,
+          "predicted_pixels": 4037866,
+          "precision_percent": 5.112601557357277,
+          "recall_percent": 14.115681028275805
+        }
+      ],
+      "confusion_matrix": [
+        [
+          3629798,
+          21234728,
+          4802,
+          3231966,
+          3776072,
+          0
+        ],
+        [
+          164569,
+          29024762,
+          34881,
+          279080,
+          9787,
+          0
+        ],
+        [
+          1465436,
+          9893366,
+          1565546,
+          11046846,
+          35799,
+          0
+        ],
+        [
+          22561,
+          1810277,
+          44762,
+          23284328,
+          9768,
+          0
+        ],
+        [
+          16127,
+          1194588,
+          5,
+          45327,
+          206440,
+          0
+        ]
+      ],
+      "valid_pixels": 112031621
+    }
+  },
+  "scored_target_counts_match": true,
+  "aggregate_gpu_wall_seconds": 43.17215037345886,
+  "parallel_wall_seconds": 43.17215037345886,
+  "peak_allocated_bytes": 20729525760,
+  "peak_reserved_bytes": 20896022528,
+  "execution_variants": [
+    {
+      "shard": 0,
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/vaihingen/evaluate/s0",
+      "repair": null
+    }
+  ]
+}

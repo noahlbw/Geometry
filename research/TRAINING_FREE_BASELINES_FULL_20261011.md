@@ -6,23 +6,23 @@ Status: running. Only verified complete protocols receive scores.
 
 |Protocol|Images|Geometry best measured|Strong verified local VIP|PEARL|GLA-CLIP|PTC|CorrCLIP|SegEarth-OV|
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-|vdd|80|60.4352|52.5765|37.9121|37.8462|41.1191|pending|pending|
+|vdd|80|60.4352|52.5765|37.9121|37.8462|41.1191|37.1270|pending|
 |potsdam|504|56.1934|44.8995|31.5545|34.8473|33.6962|pending|pending|
-|udd5|40|55.8266|44.9713|43.3762|47.7428|pending|pending|pending|
-|vaihingen|113|58.8562|49.1039|26.1222|28.5356|25.8137|pending|pending|
-|oem|384|45.1052|35.0388|27.7070|30.7688|29.4806|pending|pending|
-|loveda P|1669|69.6117|56.3110|47.5212|50.6544|pending|pending|pending|
-|loveda D|1669|45.3171|36.1457|29.6031|31.0830|pending|pending|pending|
-|landcoverai|1602|65.5400|54.9420|30.9757|31.8306|pending|pending|pending|
-|flair1|15700|43.6579|36.6074|19.3884|19.4995|pending|pending|pending|
-|voc20|1449|92.7936|92.5051|86.9143|84.2087|pending|pending|pending|
-|voc21|1449|75.8586|73.2591|64.0821|66.2608|pending|pending|pending|
-|ade150|2000|31.3398|29.4630|19.3537|20.0191|pending|pending|pending|
-|context59|5105|46.3075|45.9359|38.7213|40.0670|pending|pending|pending|
-|context60|5105|44.7613|42.5987|36.5263|37.6621|pending|pending|pending|
-|coco_object81|5000|50.3999|48.9955|38.6592|39.0724|pending|pending|pending|
-|coco_stuff171|5000|33.7661|33.4940|26.3142|26.9368|pending|pending|pending|
-|Eight remote mean|20092|53.8665|44.2856|30.8299|32.7692|pending|pending|pending|
+|udd5|40|55.8266|44.9713|43.3762|47.7428|39.8159|40.0991|pending|
+|vaihingen|113|58.8562|49.1039|26.1222|28.5356|25.8137|25.0724|pending|
+|oem|384|45.1052|35.0388|27.7070|30.7688|29.4806|24.4936|pending|
+|loveda P|1669|69.6117|56.3110|47.5212|50.6544|50.6271|pending|pending|
+|loveda D|1669|45.3171|36.1457|29.6031|31.0830|31.1501|pending|pending|
+|landcoverai|1602|65.5400|54.9420|30.9757|31.8306|33.0437|pending|pending|
+|flair1|15700|43.6579|36.6074|19.3884|19.4995|20.7257|pending|pending|
+|voc20|1449|92.7936|92.5051|86.9143|84.2087|82.7334|pending|pending|
+|voc21|1449|75.8586|73.2591|64.0821|66.2608|67.1752|pending|pending|
+|ade150|2000|31.3398|29.4630|19.3537|20.0191|20.9090|pending|pending|
+|context59|5105|46.3075|45.9359|38.7213|40.0670|40.5982|pending|pending|
+|context60|5105|44.7613|42.5987|36.5263|37.6621|37.7346|pending|pending|
+|coco_object81|5000|50.3999|48.9955|38.6592|39.0724|39.6947|pending|pending|
+|coco_stuff171|5000|33.7661|33.4940|26.3142|26.9368|27.4517|pending|pending|
+|Eight remote mean|20092|53.8665|44.2856|30.8299|32.7692|31.8556|pending|pending|
 
 ## Standalone whole-image cost
 
@@ -58,6 +58,21 @@ Status: running. Only verified complete protocols receive scores.
 |GLA-CLIP|coco_object81|50.30|1005.31|131.46|0.383|True|
 |GLA-CLIP|coco_stuff171|53.02|1148.07|185.87|0.285|True|
 |GLA-CLIP|flair1|51.83|1030.62|111.14|0.466|False|
+|PTC|vdd|257.33|1494.40|190.85|1.348|False|
+|PTC|potsdam|243.54|706.64|104.11|2.339|False|
+|PTC|voc20|136.05|716.49|58.16|2.339|True|
+|PTC|voc21|150.90|1591.43|59.50|2.536|True|
+|PTC|ade150|534.66|1123.71|113.98|4.691|True|
+|PTC|context60|210.23|751.25|112.06|1.876|True|
+|PTC|udd5|258.93|1243.40|191.15|1.355|False|
+|PTC|oem|248.91|709.80|105.38|2.362|False|
+|PTC|vaihingen|246.12|706.53|108.55|2.267|False|
+|PTC|landcoverai|230.25|706.53|102.71|2.242|False|
+|PTC|loveda|246.39|1218.69|105.86|2.328|False|
+|PTC|context59|208.03|750.39|111.84|1.860|True|
+|PTC|coco_object81|293.69|10622.90|131.46|2.234|True|
+|PTC|coco_stuff171|253.39|1123.31|185.87|1.363|True|
+|PTC|flair1|238.56|713.16|111.14|2.146|False|
 
 Previous Geometry/VIP costs are retained below as historical full-method measurements. VIP timing uses its previous same-text bank, which can differ from the strongest accuracy reference. New baselines use the same seven VIP image keys; no matched-backbone/operator claim follows.
 
@@ -89,3 +104,16 @@ Runtime uses a dedicated Torch2.4/MMCV2.2 environment and an explicitly recorded
 ## Recorded execution repairs
 
 PTC originally failed on rectangular UDD5 crops (width grid used height) and on LoveDA all-masked proxy-attention rows (softmax of all negative infinity). An isolated source copy corrects the width index and uses self-Value only on empty attention rows. Vocabulary, calibration, thresholds and finite attention rows are unchanged. Originally finite image predictions replay exactly in the image-only validation. These are local execution-repaired results, not unmodified published baseline scores. Completed original shards are preserved; merged execution_variants record each source variant. Failed attempts and logs remain in place; partial failed prefixes without a per-image checkpoint are recomputed only in new attempt directories. Exact source diffs, hashes and image-only evidence are in [source_repairs.json](training_free_baselines_full_20261011/source_repairs.json).
+
+## Incomplete jobs
+
+- CorrCLIP/smoke/flair1/0: Exited before complete verified coverage: /data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/flair1/smoke/s0.log
+- CorrCLIP/evaluate/flair1/0: Skipped because image-only smoke failed
+- CorrCLIP/evaluate/flair1/1: Skipped because image-only smoke failed
+- CorrCLIP/evaluate/flair1/2: Skipped because image-only smoke failed
+- CorrCLIP/evaluate/flair1/3: Skipped because image-only smoke failed
+- CorrCLIP/evaluate/flair1/4: Skipped because image-only smoke failed
+- CorrCLIP/evaluate/flair1/5: Skipped because image-only smoke failed
+- CorrCLIP/evaluate/flair1/6: Skipped because image-only smoke failed
+- CorrCLIP/evaluate/flair1/7: Skipped because image-only smoke failed
+- CorrCLIP/cost/flair1/0: Skipped because image-only smoke failed

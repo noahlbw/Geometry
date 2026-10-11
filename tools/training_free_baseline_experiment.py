@@ -65,7 +65,8 @@ SESSION='gtf11_controller'
 FILES=('export_training_free_samples.py','eval_training_free_baseline.py',
        'run_training_free_baselines.py','prepare_training_free_weights.py',
        'training_free_baseline_runtime.py','setup_training_free_baselines.sh','setup_training_free_extra.sh',
-       'diagnose_training_free_ptc.py','repair_training_free_ptc.py')
+       'diagnose_training_free_ptc.py','repair_training_free_ptc.py',
+       'diagnose_training_free_corrclip.py','repair_training_free_corrclip.py')
 METHODS={
     'PEARL':('PEARL','pearl_ovss','PEARL'),
     'GLA-CLIP':('GLA-CLIP','gla_clip_segmentor','GLA_CLIPSegmentation'),
@@ -347,7 +348,7 @@ def collect(client,sftp):
         'No evaluation labels select a baseline vocabulary, threshold or transfer setting. LoveDA P is read independently.',
         'VOC20/21 and PC59/60 reuse photographs. Eight remote domains count LoveDA D once; LandCover.ai substitutes for unavailable labeled iSAID.',
         'Runtime uses a dedicated Torch2.4/MMCV2.2 environment and an explicitly recorded MMSeg version-guard compatibility change.']
-    if repairs:
+    if 'PTC' in repairs:
         lines+=['','## Recorded execution repairs','',
             'PTC originally failed on rectangular UDD5 crops (width grid used height) and on LoveDA all-masked proxy-attention rows (softmax of all negative infinity). '
             'An isolated source copy corrects the width index and uses self-Value only on empty attention rows. '
@@ -356,6 +357,12 @@ def collect(client,sftp):
             'Completed original shards are preserved; merged execution_variants record each source variant. '
             'Failed attempts and logs remain in place; partial failed prefixes without a per-image checkpoint are recomputed only in new attempt directories. '
             'Exact source diffs, hashes and image-only evidence are in [source_repairs.json](training_free_baselines_full_20261011/source_repairs.json).']
+    if 'CorrCLIP' in repairs:
+        lines+=['','CorrCLIP native online SAM2 cannot open FLAIR multi-band TIFF with PIL. '
+            'The isolated decoder compatibility patch falls back to rasterio uint8 RGB bands 1,2,3 only when PIL raises UnidentifiedImageError, '
+            'matching the frozen input RGB loader. SAM2 and segmentation operators/settings are unchanged. '
+            'Image-only validation confirms finite FLAIR output and exact native-image prediction replay. '
+            'Source diffs and evidence are also in source_repairs.json.']
     if state.get('failures'):
         lines+=['','## Incomplete jobs','']
         lines += ['- '+key+': '+str(value.get('error',value) if isinstance(value,dict) else value)

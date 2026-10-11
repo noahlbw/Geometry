@@ -175,5 +175,53 @@
     },
     "finite_prediction_replay_exact": true,
     "finite_replay_images": 1
+  },
+  "CorrCLIP": {
+    "id": "corrclip-native-sam2-tiff-rgb-reader-v1",
+    "source_relative": "sources_repaired/CorrCLIPv1_tiff_rgb_v1_crlf",
+    "status": "validated",
+    "diagnosis": {
+      "target_masks_loaded": false,
+      "outcomes": [
+        {
+          "dataset": "vdd",
+          "key": "DJI_0007.JPG",
+          "status": "finite",
+          "prediction_sha256": "b6d1d3683215283ebb66d2507731ac9b51aadbb0952b2902de040ccd30b5899b"
+        },
+        {
+          "dataset": "flair1",
+          "key": "D012_2019/Z10_UU/img/IMG_062613.tif",
+          "status": "failed",
+          "error": "UnidentifiedImageError(\"cannot identify image file '/data/test/datasets/FLAIR1_target_20260922/extracted/flair_1_aerial_test/D012_2019/Z10_UU/img/IMG_062613.tif'\")"
+        }
+      ]
+    },
+    "files": {
+      "corrclip_segmentor.py": {
+        "original_sha256": "7599fa817a801fa04dc24a982675efd4315b0b298ac69204458318263e691975",
+        "repaired_sha256": "a4281501b8a1227b56405a773e39b5f2ba99232eed98e8ab54b1b5048cc0de75",
+        "diff": "--- upstream/corrclip_segmentor.py\n+++ repaired/corrclip_segmentor.py\n@@ -327,8 +327,17 @@\n             for index in ranks:\r\n                 instance_mask[(selected_masks[index - 1] == 1)] = int(index)\r\n         elif self.mask_generator_type == 'sam2':\r\n-            image = Image.open(img_path).convert(\"RGB\")\r\n-            image = np.array(image)\r\n+            from PIL import UnidentifiedImageError\r\n+            try:\r\n+                image = Image.open(img_path).convert(\"RGB\")\r\n+                image = np.array(image)\r\n+            except UnidentifiedImageError:\r\n+                # FLAIR uint8 RGB bands, identical to the frozen image loader.\r\n+                import rasterio\r\n+                with rasterio.open(img_path) as source:\r\n+                    image = np.moveaxis(source.read((1, 2, 3)), 0, -1)\r\n+                if image.dtype != np.uint8 or image.ndim != 3 or image.shape[-1] != 3:\r\n+                    raise ValueError(\"TIFF fallback requires uint8 RGB bands 1,2,3\")\r\n             with torch.inference_mode(), torch.autocast(\"cuda\", dtype=torch.float16):\r\n                 masks = self.mask_generator.generate(image)\r\n             instance_mask = np.zeros((image.shape[0], image.shape[1]), dtype=int)\r\n"
+      }
+    },
+    "note": "Only PIL-unreadable uint8 TIFF uses RGB bands 1,2,3; SAM2, views and parameters unchanged.",
+    "validation": {
+      "target_masks_loaded": false,
+      "outcomes": [
+        {
+          "dataset": "vdd",
+          "key": "DJI_0007.JPG",
+          "status": "finite",
+          "prediction_sha256": "b6d1d3683215283ebb66d2507731ac9b51aadbb0952b2902de040ccd30b5899b"
+        },
+        {
+          "dataset": "flair1",
+          "key": "D012_2019/Z10_UU/img/IMG_062613.tif",
+          "status": "finite",
+          "prediction_sha256": "5f41d41ad51c3f71ef36982c378811fda3b714eecbe487e15a40e76d0d4c0ed3"
+        }
+      ]
+    },
+    "native_image_replay_exact": true
   }
 }

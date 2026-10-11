@@ -54,3 +54,5 @@ PYTHONPATH=DINOtool:DINOtool/scripts python DINOtool/scripts/eval_training_free_
 原生 PTC 在 UDD5 的非正方形裁剪上将特征网格宽度误写为高度，触发 reshape 错误；LoveDA 上部分 ProxyCLIP 注意力行全为负无穷，softmax 产生 NaN。原源码、失败输出和日志均保留。单独源码副本仅修正宽度下标，并对全屏蔽行回退到自身 Value；参数、词表、校准规则及正常注意力行不变。不读取标签的检查确认三个故障图像恢复有限输出、UDD5 矩形图可运行，原本有限图像的预测逐像素完全一致。
 
 这些结果标记为本地执行修复版，不等于作者原样发布的论文成绩。[修复记录](../research/training_free_baselines_full_20261011/source_repairs.json)包含完整 diff、源码哈希和诊断证据。合并文件的 `execution_variants` 标明各分片版本；已完成分片不重跑。失败分片恢复到新 `sN_attemptN` 目录，缺少逐图检查点的失败前缀会重新计算，原记录不覆盖。验证后可用 `resume --retry-failed-method PTC` 恢复失败任务。
+
+CorrCLIP 的 FLAIR 多波段 TIFF 输入采用单独的图像解码兼容补丁：仅当 PIL 无法识别图像时，使用 rasterio 读取原始 uint8 第 1、2、3 波段，与冻结评测的 RGB 输入一致。在线 SAM2、其生成参数及后续分割算子均保持原样；不做归一化或重新缩放光谱值。修复经过不读标签的检查后再恢复失败任务，原日志保留；详细证据同样记录到 `source_repairs.json`。

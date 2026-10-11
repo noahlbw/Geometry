@@ -1,0 +1,431 @@
+{
+  "status": "complete",
+  "coverage_verified": true,
+  "processed_images": 40,
+  "total_images": 40,
+  "signature": {
+    "implementation": "pinned-native-training-free-baseline-suite-v1-20261011",
+    "method": "PTC",
+    "dataset": "udd5",
+    "config": {
+      "method": "PTC",
+      "module": "ptc_segmentor",
+      "class": "PTCSegmentation",
+      "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC",
+      "model": {
+        "type": "PTCSegmentation",
+        "clip_type": "openai",
+        "model_type": "ViT-B/16",
+        "vfm_model": "dino",
+        "checkpoint": null,
+        "ptc_enable": true,
+        "ptc_proto_mode": "auto",
+        "ptc_proto_crop": 224,
+        "prob_thd": 0.0
+      },
+      "word_file": "words/PTC/udd5.txt",
+      "word_sha256": "1a251f1867bf2768f9c4ea1967d664670bf350a2e5e487373804e9fd6fc969d9",
+      "word_origin": "one locked canonical dataset class per line; no alias tuning",
+      "resize": {
+        "scale": [
+          448,
+          448
+        ],
+        "keep_ratio": true
+      },
+      "native_protocol_config": false,
+      "config_origin": "fixed transfer",
+      "parser": "native comma-space",
+      "full_flags": {},
+      "prediction_map": null
+    },
+    "source_commit": "8656ec33760dc786902e324321de5565df4710b8",
+    "checkpoint_manifest": {
+      "weights": {
+        "ViT-B-16.pt": {
+          "url": "https://openaipublic.azureedge.net/clip/models/5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f/ViT-B-16.pt",
+          "sha256": "5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f",
+          "bytes": 350837078
+        },
+        "dino_vitbase8_pretrain.pth": {
+          "url": "https://dl.fbaipublicfiles.com/dino/dino_vitbase8_pretrain/dino_vitbase8_pretrain.pth",
+          "sha256": "575f0efc4838938314afa09897a62ed2b87919928b5edcd133abb907328995eb",
+          "bytes": 343279349
+        },
+        "b16_fullcc2.5b.pt": {
+          "url": "https://dl.fbaipublicfiles.com/MMPT/metaclip/b16_fullcc2.5b.pt",
+          "sha256": "512ea0fb9f2cf88d027e96e4674247a1a91a96af18abc2e2fcdb8008c551e04b",
+          "bytes": 1795798327
+        },
+        "sam2_hiera_large.pt": {
+          "url": "https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt",
+          "sha256": "7442e4e9b732a508f80e141e7c2913437a3610ee0c77381a66658c3a445df87b",
+          "bytes": 897952466
+        },
+        "xclip_jbu_one_million_aid.ckpt": {
+          "url": "https://raw.githubusercontent.com/likyoo/SegEarth-OV/3e22a969b32c6d751bdbba64a88a0b670e630f55/simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt",
+          "sha256": "cabc594d0042535f3413ac89d5f0b8b3173aecf18e2e469fb91b015ea4de49d8",
+          "bytes": 5690776
+        }
+      },
+      "dependencies": {
+        "dino": {
+          "url": "https://github.com/facebookresearch/dino.git",
+          "commit": "7c446df5b9f45747937fb0d72314eb9f7b66930a",
+          "archive_sha256": "3c65181860269457eed8367f313a5a6d695951dd985750a940722de2175a05ff"
+        },
+        "sam2": {
+          "url": "https://github.com/facebookresearch/sam2.git",
+          "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+          "archive_sha256": "fe93082a71a885a427894b1eab76341768781b6b58a298a0717e03862097d137"
+        },
+        "SimFeatUp": {
+          "url": "https://github.com/likyoo/SimFeatUp.git",
+          "commit": "78a0ba70b1d6ea7283684a88c98ce338af4593ca",
+          "archive_sha256": "4aec32fbc5140c048042545726a74a049c80590a57eeba74d64fd81b1d20665a"
+        }
+      }
+    },
+    "runtime": {
+      "packages": {
+        "torch": "2.4.0",
+        "torchvision": "0.19.0",
+        "mmcv": "2.2.0",
+        "mmengine": "0.10.7",
+        "mmsegmentation": "1.2.2",
+        "numpy": "1.26.4",
+        "transformers": "4.44.2",
+        "timm": "1.0.9"
+      },
+      "compatibility": {
+        "operation": "MMCV version-guard upper bound 2.2.0 -> 2.2.1 only",
+        "before_sha256": "6800b7c849b11fbfac8e0ef481601659e2621d9a2d7ed335c24c18d6453d0ba9",
+        "after_sha256": "b03255d861c75871be63ae4488720b8d6c0f373bbaa497a09cc168f853ef5048"
+      }
+    },
+    "sample_manifest_sha256": "01338dafdf1239280d8fd03edbb72e347660db756104ed1086b418b26388b876"
+  },
+  "sample_keys": [
+    "000061.JPG",
+    "000161.JPG",
+    "000261.JPG",
+    "000361.JPG",
+    "001261.JPG",
+    "001361.JPG",
+    "001461.JPG",
+    "001561.JPG",
+    "0119_3img2031.JPG",
+    "0119_4img1001.JPG",
+    "0119_4img3041.JPG",
+    "0119_5img3001.JPG",
+    "DJI_0031.JPG",
+    "DJI_00528.JPG",
+    "DJI_00581.JPG",
+    "DJI_00591.JPG",
+    "DJI_0291.JPG",
+    "DJI_0303.JPG",
+    "DJI_0316.JPG",
+    "DJI_0373_heda.JPG",
+    "DJI_0388.JPG",
+    "DJI_0397.JPG",
+    "DJI_0406.JPG",
+    "DJI_0415.JPG",
+    "DJI_0431.JPG",
+    "DJI_0442.JPG",
+    "DJI_0451.JPG",
+    "DJI_0460.JPG",
+    "DJI_0469.JPG",
+    "DJI_0479_heda.JPG",
+    "DJI_0490.JPG",
+    "DJI_0499_heda.JPG",
+    "DJI_0511.JPG",
+    "DJI_0520.JPG",
+    "DJI_0532.JPG",
+    "DJI_0539_heda.JPG",
+    "DJI_0553_heda.JPG",
+    "DJI_0563_heda.JPG",
+    "DJI_0627.JPG",
+    "DJI_0707.JPG"
+  ],
+  "sample_keys_sha256": "01338dafdf1239280d8fd03edbb72e347660db756104ed1086b418b26388b876",
+  "results": {
+    "udd5": {
+      "mean_iou_percent": 39.8159,
+      "pixel_accuracy_percent": 70.3649,
+      "per_class": [
+        {
+          "name": "vegetation",
+          "iou_percent": 76.3212,
+          "target_pixels": 130310444,
+          "predicted_pixels": 122224365,
+          "precision_percent": 89.43429569055237,
+          "recall_percent": 83.88468080117968
+        },
+        {
+          "name": "building",
+          "iou_percent": 67.3585,
+          "target_pixels": 172720634,
+          "predicted_pixels": 158600540,
+          "precision_percent": 84.07928686749743,
+          "recall_percent": 77.20571648665903
+        },
+        {
+          "name": "road",
+          "iou_percent": 36.5898,
+          "target_pixels": 58998894,
+          "predicted_pixels": 137246385,
+          "precision_percent": 38.303605592234724,
+          "recall_percent": 89.10389743916215
+        },
+        {
+          "name": "vehicle",
+          "iou_percent": 1.364,
+          "target_pixels": 3521806,
+          "predicted_pixels": 50246,
+          "precision_percent": 95.66532659316165,
+          "recall_percent": 1.364867911520396
+        },
+        {
+          "name": "other",
+          "iou_percent": 17.4461,
+          "target_pixels": 74404702,
+          "predicted_pixels": 21834944,
+          "precision_percent": 65.47276237575879,
+          "recall_percent": 19.213760173382592
+        }
+      ],
+      "confusion_matrix": [
+        [
+          109310500,
+          4914208,
+          14550683,
+          0,
+          1535053,
+          0
+        ],
+        [
+          2732489,
+          133350203,
+          30827194,
+          902,
+          5809846,
+          0
+        ],
+        [
+          2057921,
+          4184807,
+          52570314,
+          33,
+          185819,
+          0
+        ],
+        [
+          76024,
+          738813,
+          2650616,
+          48068,
+          8285,
+          0
+        ],
+        [
+          8047431,
+          15412509,
+          36647578,
+          1243,
+          14295941,
+          0
+        ]
+      ],
+      "valid_pixels": 439956480,
+      "non_residual_mean_iou_percent": 45.4084
+    }
+  },
+  "scored_target_counts_match": true,
+  "aggregate_gpu_wall_seconds": 30.665573120117188,
+  "parallel_wall_seconds": 30.665573120117188,
+  "peak_allocated_bytes": 1398982656,
+  "peak_reserved_bytes": 1524629504,
+  "execution_variants": [
+    {
+      "shard": 0,
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/udd5/evaluate/s0_attempt1",
+      "repair": {
+        "id": "ptc-empty-row-self-value-and-rectangular-grid-v1",
+        "source_relative": "sources_repaired/PTC_empty_rows_rectangular_v1",
+        "files": {
+          "ptc_segmentor.py": {
+            "original_sha256": "c08cd23d7ba90dd707bfb8cbbfb89b9aad0bc9aa5f61320177b1cb1a239472b0",
+            "repaired_sha256": "6eb1e12e546bd498e5c904723b2488b5cb2454bb62b76258c52ace9f4e768d1a",
+            "diff": "--- upstream/ptc_segmentor.py\n+++ repaired/ptc_segmentor.py\n@@ -176,7 +176,7 @@\n             v = v.transpose(1, 2).reshape(nb_im, nb_tokens, -1)[:, 1:, :]\n \n             patch_size = self.vfm.patch_embed.patch_size\n-            I, J = imgs_norm[0].shape[-2] // patch_size, imgs_norm[0].shape[-2] // patch_size\n+            I, J = imgs_norm[0].shape[-2] // patch_size, imgs_norm[0].shape[-1] // patch_size\n \n             ex_feats = feat[:, 1:, :].reshape(nb_im, I, J, -1).permute(0, 3, 1, 2)\n \n"
+          },
+          "open_clip/transformer.py": {
+            "original_sha256": "40e0ddadb7d1ad19152dc0cdced85dd75769b87231db4dba1db039dec0a3168d",
+            "repaired_sha256": "a7b1e0915d2231b87d63d5f78bcf50d40b529e3afe83f2903c60251315533340",
+            "diff": "--- upstream/open_clip/transformer.py\n+++ repaired/open_clip/transformer.py\n@@ -575,6 +575,11 @@\n \n         mask = similarity.to(q.dtype).unsqueeze(1).repeat(1, num_heads, 1, 1)\n         mask = mask.reshape(bsz * num_heads, mask.shape[2], mask.shape[3])\n+        # Numerical repair: self-Value only for rows with no finite source.\n+        empty_rows = torch.isneginf(mask).all(dim=-1)\n+        if empty_rows.any():\n+            batch, row = empty_rows.nonzero(as_tuple=True)\n+            mask[batch, row, row] = 0.0\n         attn_weights = F.softmax(mask, dim=-1)\n \n         v = v[:, 1:, :].reshape(bsz*num_heads, token_size[0], token_size[1], head_dim).permute(0, 3, 1, 2)\n"
+          }
+        },
+        "diagnosis": {
+          "target_masks_loaded": false,
+          "outcomes": [
+            {
+              "key": "2909.png",
+              "status": "finite",
+              "prediction_sha256": "4a0aeb1ccefd9f34e3c90ea1add6f06a13a67ccf899898e28c2d94c0bc253122",
+              "events": []
+            },
+            {
+              "key": "3868.png",
+              "status": "failed",
+              "error": "FloatingPointError('Non-finite native output: 3868.png')",
+              "events": [
+                {
+                  "operator": "softmax",
+                  "shape": [
+                    12,
+                    784,
+                    784
+                  ],
+                  "dtype": "torch.float16",
+                  "all_negative_infinity_rows": 9408,
+                  "input_nan": 0,
+                  "input_positive_infinity": 0,
+                  "output_nan": 7375872
+                },
+                {
+                  "operator": "softmax",
+                  "shape": [
+                    12,
+                    784,
+                    784
+                  ],
+                  "dtype": "torch.float16",
+                  "all_negative_infinity_rows": 9408,
+                  "input_nan": 0,
+                  "input_positive_infinity": 0,
+                  "output_nan": 7375872
+                },
+                {
+                  "operator": "softmax",
+                  "shape": [
+                    12,
+                    784,
+                    784
+                  ],
+                  "dtype": "torch.float16",
+                  "all_negative_infinity_rows": 9408,
+                  "input_nan": 0,
+                  "input_positive_infinity": 0,
+                  "output_nan": 7375872
+                }
+              ]
+            },
+            {
+              "key": "3785.png",
+              "status": "failed",
+              "error": "FloatingPointError('Non-finite native output: 3785.png')",
+              "events": [
+                {
+                  "operator": "softmax",
+                  "shape": [
+                    12,
+                    784,
+                    784
+                  ],
+                  "dtype": "torch.float16",
+                  "all_negative_infinity_rows": 9408,
+                  "input_nan": 0,
+                  "input_positive_infinity": 0,
+                  "output_nan": 7375872
+                },
+                {
+                  "operator": "softmax",
+                  "shape": [
+                    12,
+                    784,
+                    784
+                  ],
+                  "dtype": "torch.float16",
+                  "all_negative_infinity_rows": 9408,
+                  "input_nan": 0,
+                  "input_positive_infinity": 0,
+                  "output_nan": 7375872
+                }
+              ]
+            },
+            {
+              "key": "3479.png",
+              "status": "failed",
+              "error": "FloatingPointError('Non-finite native output: 3479.png')",
+              "events": [
+                {
+                  "operator": "softmax",
+                  "shape": [
+                    12,
+                    784,
+                    784
+                  ],
+                  "dtype": "torch.float16",
+                  "all_negative_infinity_rows": 9408,
+                  "input_nan": 0,
+                  "input_positive_infinity": 0,
+                  "output_nan": 7375872
+                },
+                {
+                  "operator": "softmax",
+                  "shape": [
+                    12,
+                    784,
+                    784
+                  ],
+                  "dtype": "torch.float16",
+                  "all_negative_infinity_rows": 9408,
+                  "input_nan": 0,
+                  "input_positive_infinity": 0,
+                  "output_nan": 7375872
+                }
+              ]
+            }
+          ]
+        },
+        "status": "validated",
+        "note": "Original finite attention rows unchanged; no parameter, vocabulary or threshold change.",
+        "validation": {
+          "target_masks_loaded": false,
+          "outcomes": [
+            {
+              "key": "2909.png",
+              "status": "finite",
+              "prediction_sha256": "4a0aeb1ccefd9f34e3c90ea1add6f06a13a67ccf899898e28c2d94c0bc253122",
+              "events": []
+            },
+            {
+              "key": "3868.png",
+              "status": "finite",
+              "prediction_sha256": "e12ae3ccf6a2d8e54c94480824fae2ee4f531df5869fa7c7184a4279d8c4a905",
+              "events": []
+            },
+            {
+              "key": "3785.png",
+              "status": "finite",
+              "prediction_sha256": "5fc60152548e6dfa13dd6ea5b6da3f616649d580e1b654a5dbb60e4a4f96b920",
+              "events": []
+            },
+            {
+              "key": "3479.png",
+              "status": "finite",
+              "prediction_sha256": "ec9926752484e09d7a90c54b9e9552b9bf493f333c10f150c722b254e736ecdc",
+              "events": []
+            },
+            {
+              "key": "udd5/000061.JPG",
+              "status": "finite",
+              "rectangular_grid_verified": true
+            }
+          ]
+        },
+        "finite_prediction_replay_exact": true,
+        "finite_replay_images": 1
+      }
+    }
+  ]
+}
