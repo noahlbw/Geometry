@@ -104,8 +104,17 @@ def summary(matrix, names, background=None):
     return result
 
 
-def load_model(config, root):
+def load_model(config, root, allow_prepared_repair=False):
     source = (root/'sources'/config['source_path'].split('/sources/',1)[-1]).resolve()
+    repair_file = root/'source_repairs.json'
+    repair = json.loads(repair_file.read_text()).get(config['method']) if repair_file.exists() else None
+    if repair:
+        if repair['status'] != 'validated' and not allow_prepared_repair:
+            raise RuntimeError('Execution repair must pass image-only validation before evaluation')
+        source = (root/repair['source_relative']).resolve()
+        for relative, hashes in repair['files'].items():
+            if hashlib.sha256((source/relative).read_bytes()).hexdigest() != hashes['repaired_sha256']:
+                raise RuntimeError('Recorded execution repair source differs: '+relative)
     sys.path.insert(0, str(source))
     os.chdir(source)
     # Supply the pinned, preloaded DINO source to the author's torch.hub call.
@@ -118,6 +127,12 @@ def load_model(config, root):
     module = importlib.import_module(config['module'])
     kwargs = dict(config['model'])
     kwargs['name_path'] = str(root/config['word_file'])
+    raw_words=Path(kwargs['name_path']).read_bytes()
+    if config['word_file'].endswith('_P.txt'):
+        full=Path(kwargs['name_path']).with_name('loveda.txt').read_text().splitlines()
+        if raw_words!=('\n'.join(full[1:])+'\n').encode():raise RuntimeError('Frozen foreground query file differs')
+    elif hashlib.sha256(raw_words).hexdigest()!=config['word_sha256']:
+        raise RuntimeError('Frozen native query bytes differ')
     kwargs.pop('type', None)
     if config['method'] == 'PEARL':
         kwargs['clip_path'] = str(root/'checkpoints/ViT-B-16.pt')
@@ -137,6 +152,7 @@ def load_model(config, root):
         if not (source/'sam2_hiera_large.pt').exists():
             raise FileNotFoundError('Native SAM2 checkpoint symlink missing')
     model = getattr(module, config['class'])(**kwargs).cuda().eval()
+    model._benchmark_execution_repairs = repair
     return model
 
 
@@ -205,9 +221,10 @@ def main(args):
         config=config, source_commit=suite['methods'][args.method]['commit'],
         checkpoint_manifest=json.loads((root/'checkpoint_manifest.json').read_text()),
         runtime=json.loads((root/'runtime.json').read_text()), sample_manifest_sha256=manifest['global_sample_keys_sha256'])
+    execution_repairs = getattr(model, '_benchmark_execution_repairs', None)
     def record(status):
         value = dict(status=status, phase=args.phase, processed_images=len(keys), total_images=len(rows),
-            signature=signature, sample_keys=keys, sample_keys_sha256=digest(keys),
+            signature=signature, execution_repairs=execution_repairs, sample_keys=keys, sample_keys_sha256=digest(keys),
             results={p:summary(matrix,protocols[p], None if p=='P' else entry['background_index'])
                 for p,matrix in matrices.items()}, wall_seconds=time.time()-started,
             target_masks_loaded=args.phase=='evaluate' and bool(keys),weights_frozen=status=='complete',
@@ -239,10 +256,12 @@ def main(args):
             costs.append(dict(key=row['key'],original_shape=list(image.shape[-2:]),milliseconds=samples,
                 median_ms=float(np.median(samples)),peak_allocated_bytes=torch.cuda.max_memory_allocated(),
                 peak_reserved_bytes=torch.cuda.max_memory_reserved()))
-        save(output/'cost.json',dict(status='complete',signature=signature,images=costs,
+        save(output/'cost.json',dict(status='complete',signature=signature,execution_repairs=execution_repairs,images=costs,
             median_ms=float(np.median([x for row in costs for x in row['milliseconds']])),
             includes='BGR conversion/official resize/preprocess/native inference/postprocess; CorrCLIP includes online SAM2',
             excludes='disk decode, model/text initialization, metric/target loading'))
+        for k,v in model.named_parameters():
+            if not torch.equal(v.detach().cpu(),initial_weights[k]):raise RuntimeError('Frozen cost-model weight changed: '+k)
         keys.extend(r['key'] for r in rows);record('complete');return
     for row in rows:
         image=load_rgb(row,args.dataset)

@@ -20,6 +20,7 @@
 
 ```bash
 python tools/training_free_baseline_experiment.py prepare
+python tools/training_free_baseline_experiment.py fetch
 python tools/training_free_baseline_experiment.py deploy
 python tools/training_free_baseline_experiment.py start
 python tools/training_free_baseline_experiment.py status
@@ -47,3 +48,9 @@ PYTHONPATH=DINOtool:DINOtool/scripts python DINOtool/scripts/eval_training_free_
 耗时使用与先前 VIP 相同的 7 张固定整图，每图 2 次预热、7 次同步计时，单卡单模型进程；包含官方 resize、预处理、模型和后处理，排除外围文件解码、初始化和指标计算。记录峰值 allocated/reserved 显存。LoveDA 成本测 D 单协议，避免把 P+D 两次推理误记为单次。CorrCLIP 原生 SAM2 内部的读图与生成仍计入。
 
 全量 JSON 保存逐类 IoU、precision、recall、预测面积像素数、有效目标像素数、残余类以外 mIoU 和运行成本。下载与 GitHub 更新只追加本轮结果，不更换较差候选或覆盖历史记录。
+
+## PTC 执行修复与失败恢复
+
+原生 PTC 在 UDD5 的非正方形裁剪上将特征网格宽度误写为高度，触发 reshape 错误；LoveDA 上部分 ProxyCLIP 注意力行全为负无穷，softmax 产生 NaN。原源码、失败输出和日志均保留。单独源码副本仅修正宽度下标，并对全屏蔽行回退到自身 Value；参数、词表、校准规则及正常注意力行不变。不读取标签的检查确认三个故障图像恢复有限输出、UDD5 矩形图可运行，原本有限图像的预测逐像素完全一致。
+
+这些结果标记为本地执行修复版，不等于作者原样发布的论文成绩。[修复记录](../research/training_free_baselines_full_20261011/source_repairs.json)包含完整 diff、源码哈希和诊断证据。合并文件的 `execution_variants` 标明各分片版本；已完成分片不重跑。失败分片恢复到新 `sN_attemptN` 目录，缺少逐图检查点的失败前缀会重新计算，原记录不覆盖。验证后可用 `resume --retry-failed-method PTC` 恢复失败任务。

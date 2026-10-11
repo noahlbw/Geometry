@@ -1,95 +1,6 @@
 {
   "status": "running",
-  "active": [
-    {
-      "method": "GLA-CLIP",
-      "dataset": "vdd",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 1,
-      "gpu": 7,
-      "session": "gtf11_glaclip_evaluate_vdd_0",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/vdd/evaluate/s0",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/vdd/evaluate/s0.log"
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "potsdam",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 1,
-      "gpu": 0,
-      "session": "gtf11_glaclip_evaluate_potsdam_0",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/potsdam/evaluate/s0",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/potsdam/evaluate/s0.log"
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "oem",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 1,
-      "gpu": 3,
-      "session": "gtf11_glaclip_evaluate_oem_0",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/oem/evaluate/s0",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/oem/evaluate/s0.log"
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "loveda",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 8,
-      "gpu": 4,
-      "session": "gtf11_glaclip_evaluate_loveda_0",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/loveda/evaluate/s0",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/loveda/evaluate/s0.log"
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "loveda",
-      "phase": "evaluate",
-      "shard": 1,
-      "shards": 8,
-      "gpu": 5,
-      "session": "gtf11_glaclip_evaluate_loveda_1",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/loveda/evaluate/s1",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/loveda/evaluate/s1.log"
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "loveda",
-      "phase": "evaluate",
-      "shard": 2,
-      "shards": 8,
-      "gpu": 6,
-      "session": "gtf11_glaclip_evaluate_loveda_2",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/loveda/evaluate/s2",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/loveda/evaluate/s2.log"
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "loveda",
-      "phase": "evaluate",
-      "shard": 3,
-      "shards": 8,
-      "gpu": 2,
-      "session": "gtf11_glaclip_evaluate_loveda_3",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/loveda/evaluate/s3",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/loveda/evaluate/s3.log"
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "loveda",
-      "phase": "evaluate",
-      "shard": 4,
-      "shards": 8,
-      "gpu": 1,
-      "session": "gtf11_glaclip_evaluate_loveda_4",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/loveda/evaluate/s4",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/GLA-CLIP/loveda/evaluate/s4.log"
-    }
-  ],
+  "active": [],
   "completed": [
     "PEARL/smoke/vdd/0",
     "PEARL/smoke/potsdam/0",
@@ -222,7 +133,138 @@
     "GLA-CLIP/smoke/coco_object81/0",
     "GLA-CLIP/smoke/coco_stuff171/0",
     "GLA-CLIP/evaluate/vaihingen/0",
-    "GLA-CLIP/evaluate/udd5/0"
+    "GLA-CLIP/evaluate/udd5/0",
+    "GLA-CLIP/evaluate/vdd/0",
+    "GLA-CLIP/evaluate/oem/0",
+    "GLA-CLIP/evaluate/loveda/0",
+    "GLA-CLIP/evaluate/loveda/1",
+    "GLA-CLIP/evaluate/loveda/2",
+    "GLA-CLIP/evaluate/potsdam/0",
+    "GLA-CLIP/evaluate/loveda/3",
+    "GLA-CLIP/evaluate/loveda/4",
+    "GLA-CLIP/evaluate/landcoverai/0",
+    "GLA-CLIP/evaluate/landcoverai/1",
+    "GLA-CLIP/evaluate/loveda/5",
+    "GLA-CLIP/evaluate/loveda/6",
+    "GLA-CLIP/evaluate/loveda/7",
+    "GLA-CLIP/evaluate/landcoverai/2",
+    "GLA-CLIP/evaluate/landcoverai/3",
+    "GLA-CLIP/evaluate/landcoverai/4",
+    "GLA-CLIP/evaluate/landcoverai/5",
+    "GLA-CLIP/evaluate/landcoverai/6",
+    "GLA-CLIP/evaluate/landcoverai/7",
+    "GLA-CLIP/evaluate/flair1/0",
+    "GLA-CLIP/evaluate/flair1/1",
+    "GLA-CLIP/evaluate/flair1/2",
+    "GLA-CLIP/evaluate/flair1/3",
+    "GLA-CLIP/evaluate/flair1/4",
+    "GLA-CLIP/evaluate/flair1/5",
+    "GLA-CLIP/evaluate/flair1/6",
+    "GLA-CLIP/evaluate/voc20/0",
+    "GLA-CLIP/evaluate/voc20/1",
+    "GLA-CLIP/evaluate/voc20/2",
+    "GLA-CLIP/evaluate/voc20/3",
+    "GLA-CLIP/evaluate/flair1/7",
+    "GLA-CLIP/evaluate/voc20/4",
+    "GLA-CLIP/evaluate/voc20/5",
+    "GLA-CLIP/evaluate/voc20/6",
+    "GLA-CLIP/evaluate/voc20/7",
+    "GLA-CLIP/evaluate/voc21/0",
+    "GLA-CLIP/evaluate/voc21/1",
+    "GLA-CLIP/evaluate/voc21/2",
+    "GLA-CLIP/evaluate/voc21/3",
+    "GLA-CLIP/evaluate/voc21/4",
+    "GLA-CLIP/evaluate/voc21/5",
+    "GLA-CLIP/evaluate/voc21/6",
+    "GLA-CLIP/evaluate/voc21/7",
+    "GLA-CLIP/evaluate/ade150/0",
+    "GLA-CLIP/evaluate/ade150/1",
+    "GLA-CLIP/evaluate/ade150/2",
+    "GLA-CLIP/evaluate/ade150/3",
+    "GLA-CLIP/evaluate/ade150/4",
+    "GLA-CLIP/evaluate/ade150/5",
+    "GLA-CLIP/evaluate/ade150/6",
+    "GLA-CLIP/evaluate/ade150/7",
+    "GLA-CLIP/evaluate/context59/0",
+    "GLA-CLIP/evaluate/context59/1",
+    "GLA-CLIP/evaluate/context59/2",
+    "GLA-CLIP/evaluate/context59/3",
+    "GLA-CLIP/evaluate/context59/4",
+    "GLA-CLIP/evaluate/context59/5",
+    "GLA-CLIP/evaluate/context59/6",
+    "GLA-CLIP/evaluate/context59/7",
+    "GLA-CLIP/evaluate/context60/0",
+    "GLA-CLIP/evaluate/context60/1",
+    "GLA-CLIP/evaluate/context60/2",
+    "GLA-CLIP/evaluate/context60/3",
+    "GLA-CLIP/evaluate/context60/4",
+    "GLA-CLIP/evaluate/context60/5",
+    "GLA-CLIP/evaluate/context60/6",
+    "GLA-CLIP/evaluate/context60/7",
+    "GLA-CLIP/evaluate/coco_object81/0",
+    "GLA-CLIP/evaluate/coco_object81/1",
+    "GLA-CLIP/evaluate/coco_object81/2",
+    "GLA-CLIP/evaluate/coco_object81/3",
+    "GLA-CLIP/evaluate/coco_object81/4",
+    "GLA-CLIP/evaluate/coco_object81/5",
+    "GLA-CLIP/evaluate/coco_object81/6",
+    "GLA-CLIP/evaluate/coco_object81/7",
+    "GLA-CLIP/evaluate/coco_stuff171/0",
+    "GLA-CLIP/evaluate/coco_stuff171/1",
+    "GLA-CLIP/evaluate/coco_stuff171/2",
+    "GLA-CLIP/cost/vdd/0",
+    "GLA-CLIP/cost/potsdam/0",
+    "GLA-CLIP/cost/udd5/0",
+    "GLA-CLIP/evaluate/coco_stuff171/3",
+    "GLA-CLIP/evaluate/coco_stuff171/4",
+    "GLA-CLIP/evaluate/coco_stuff171/5",
+    "GLA-CLIP/evaluate/coco_stuff171/6",
+    "GLA-CLIP/evaluate/coco_stuff171/7",
+    "GLA-CLIP/cost/vaihingen/0",
+    "GLA-CLIP/cost/oem/0",
+    "GLA-CLIP/cost/loveda/0",
+    "GLA-CLIP/cost/landcoverai/0",
+    "GLA-CLIP/cost/flair1/0",
+    "GLA-CLIP/cost/voc20/0",
+    "GLA-CLIP/cost/voc21/0",
+    "GLA-CLIP/cost/ade150/0",
+    "GLA-CLIP/cost/context59/0",
+    "GLA-CLIP/cost/context60/0",
+    "GLA-CLIP/cost/coco_object81/0",
+    "GLA-CLIP/cost/coco_stuff171/0",
+    "PTC/smoke/vdd/0",
+    "PTC/smoke/potsdam/0",
+    "PTC/smoke/vaihingen/0",
+    "PTC/smoke/oem/0",
+    "PTC/smoke/loveda/0",
+    "PTC/smoke/landcoverai/0",
+    "PTC/smoke/flair1/0",
+    "PTC/smoke/voc20/0",
+    "PTC/smoke/voc21/0",
+    "PTC/smoke/ade150/0",
+    "PTC/smoke/context59/0",
+    "PTC/smoke/context60/0",
+    "PTC/smoke/coco_object81/0",
+    "PTC/smoke/coco_stuff171/0",
+    "PTC/evaluate/vaihingen/0",
+    "PTC/evaluate/vdd/0",
+    "PTC/evaluate/oem/0",
+    "PTC/evaluate/landcoverai/0",
+    "PTC/evaluate/landcoverai/1",
+    "PTC/evaluate/landcoverai/2",
+    "PTC/evaluate/potsdam/0",
+    "PTC/evaluate/landcoverai/4",
+    "PTC/evaluate/landcoverai/5",
+    "PTC/evaluate/landcoverai/6",
+    "PTC/evaluate/loveda/6",
+    "PTC/evaluate/flair1/0",
+    "PTC/evaluate/flair1/1",
+    "PTC/evaluate/flair1/2",
+    "PTC/evaluate/flair1/3",
+    "PTC/evaluate/flair1/4",
+    "PTC/evaluate/flair1/5",
+    "PTC/evaluate/flair1/6",
+    "PTC/evaluate/flair1/7"
   ],
   "failures": {},
   "merged": {
@@ -277,639 +319,190 @@
     },
     "GLA-CLIP/udd5": {
       "udd5": 47.7428
+    },
+    "GLA-CLIP/vdd": {
+      "vdd": 37.8462
+    },
+    "GLA-CLIP/oem": {
+      "oem": 30.7688
+    },
+    "GLA-CLIP/potsdam": {
+      "potsdam": 34.8473
+    },
+    "GLA-CLIP/loveda": {
+      "P": 50.6544,
+      "D": 31.083
+    },
+    "GLA-CLIP/landcoverai": {
+      "landcoverai": 31.8306
+    },
+    "GLA-CLIP/flair1": {
+      "flair1": 19.4995
+    },
+    "GLA-CLIP/voc20": {
+      "voc20": 84.2087
+    },
+    "GLA-CLIP/voc21": {
+      "voc21": 66.2608
+    },
+    "GLA-CLIP/ade150": {
+      "ade150": 20.0191
+    },
+    "GLA-CLIP/context59": {
+      "context59": 40.067
+    },
+    "GLA-CLIP/context60": {
+      "context60": 37.6621
+    },
+    "GLA-CLIP/coco_object81": {
+      "coco_object81": 39.0724
+    },
+    "GLA-CLIP/coco_stuff171": {
+      "coco_stuff171": 26.9368
+    },
+    "PTC/vaihingen": {
+      "vaihingen": 25.8137
+    },
+    "PTC/vdd": {
+      "vdd": 41.1191
+    },
+    "PTC/oem": {
+      "oem": 29.4806
+    },
+    "PTC/potsdam": {
+      "potsdam": 33.6962
     }
   },
-  "pending": [
-    {
-      "method": "GLA-CLIP",
-      "dataset": "loveda",
-      "phase": "evaluate",
-      "shard": 5,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "loveda",
-      "phase": "evaluate",
-      "shard": 6,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "loveda",
-      "phase": "evaluate",
-      "shard": 7,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "landcoverai",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "landcoverai",
-      "phase": "evaluate",
-      "shard": 1,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "landcoverai",
-      "phase": "evaluate",
-      "shard": 2,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "landcoverai",
-      "phase": "evaluate",
-      "shard": 3,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "landcoverai",
-      "phase": "evaluate",
-      "shard": 4,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "landcoverai",
-      "phase": "evaluate",
-      "shard": 5,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "landcoverai",
-      "phase": "evaluate",
-      "shard": 6,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "landcoverai",
-      "phase": "evaluate",
-      "shard": 7,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "flair1",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "flair1",
-      "phase": "evaluate",
-      "shard": 1,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "flair1",
-      "phase": "evaluate",
-      "shard": 2,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "flair1",
-      "phase": "evaluate",
-      "shard": 3,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "flair1",
-      "phase": "evaluate",
-      "shard": 4,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "flair1",
-      "phase": "evaluate",
-      "shard": 5,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "flair1",
-      "phase": "evaluate",
-      "shard": 6,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "flair1",
-      "phase": "evaluate",
-      "shard": 7,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "voc20",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "voc20",
-      "phase": "evaluate",
-      "shard": 1,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "voc20",
-      "phase": "evaluate",
-      "shard": 2,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "voc20",
-      "phase": "evaluate",
-      "shard": 3,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "voc20",
-      "phase": "evaluate",
-      "shard": 4,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "voc20",
-      "phase": "evaluate",
-      "shard": 5,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "voc20",
-      "phase": "evaluate",
-      "shard": 6,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "voc20",
-      "phase": "evaluate",
-      "shard": 7,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "voc21",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "voc21",
-      "phase": "evaluate",
-      "shard": 1,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "voc21",
-      "phase": "evaluate",
-      "shard": 2,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "voc21",
-      "phase": "evaluate",
-      "shard": 3,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "voc21",
-      "phase": "evaluate",
-      "shard": 4,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "voc21",
-      "phase": "evaluate",
-      "shard": 5,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "voc21",
-      "phase": "evaluate",
-      "shard": 6,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "voc21",
-      "phase": "evaluate",
-      "shard": 7,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "ade150",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "ade150",
-      "phase": "evaluate",
-      "shard": 1,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "ade150",
-      "phase": "evaluate",
-      "shard": 2,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "ade150",
-      "phase": "evaluate",
-      "shard": 3,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "ade150",
-      "phase": "evaluate",
-      "shard": 4,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "ade150",
-      "phase": "evaluate",
-      "shard": 5,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "ade150",
-      "phase": "evaluate",
-      "shard": 6,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "ade150",
-      "phase": "evaluate",
-      "shard": 7,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "context59",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "context59",
-      "phase": "evaluate",
-      "shard": 1,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "context59",
-      "phase": "evaluate",
-      "shard": 2,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "context59",
-      "phase": "evaluate",
-      "shard": 3,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "context59",
-      "phase": "evaluate",
-      "shard": 4,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "context59",
-      "phase": "evaluate",
-      "shard": 5,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "context59",
-      "phase": "evaluate",
-      "shard": 6,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "context59",
-      "phase": "evaluate",
-      "shard": 7,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "context60",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "context60",
-      "phase": "evaluate",
-      "shard": 1,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "context60",
-      "phase": "evaluate",
-      "shard": 2,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "context60",
-      "phase": "evaluate",
-      "shard": 3,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "context60",
-      "phase": "evaluate",
-      "shard": 4,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "context60",
-      "phase": "evaluate",
-      "shard": 5,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "context60",
-      "phase": "evaluate",
-      "shard": 6,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "context60",
-      "phase": "evaluate",
-      "shard": 7,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "coco_object81",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "coco_object81",
-      "phase": "evaluate",
-      "shard": 1,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "coco_object81",
-      "phase": "evaluate",
-      "shard": 2,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "coco_object81",
-      "phase": "evaluate",
-      "shard": 3,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "coco_object81",
-      "phase": "evaluate",
-      "shard": 4,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "coco_object81",
-      "phase": "evaluate",
-      "shard": 5,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "coco_object81",
-      "phase": "evaluate",
-      "shard": 6,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "coco_object81",
-      "phase": "evaluate",
-      "shard": 7,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "coco_stuff171",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "coco_stuff171",
-      "phase": "evaluate",
-      "shard": 1,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "coco_stuff171",
-      "phase": "evaluate",
-      "shard": 2,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "coco_stuff171",
-      "phase": "evaluate",
-      "shard": 3,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "coco_stuff171",
-      "phase": "evaluate",
-      "shard": 4,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "coco_stuff171",
-      "phase": "evaluate",
-      "shard": 5,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "coco_stuff171",
-      "phase": "evaluate",
-      "shard": 6,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "coco_stuff171",
-      "phase": "evaluate",
-      "shard": 7,
-      "shards": 8
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "vdd",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "potsdam",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "udd5",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "vaihingen",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "oem",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "loveda",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "landcoverai",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "flair1",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "voc20",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "voc21",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "ade150",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "context59",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "context60",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "coco_object81",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "GLA-CLIP",
-      "dataset": "coco_stuff171",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
+  "pending": [],
+  "current_method": "PEARL",
+  "completed_outputs": {
+    "PTC/evaluate/flair1/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/flair1/evaluate/s0",
+    "PTC/evaluate/flair1/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/flair1/evaluate/s1",
+    "PTC/evaluate/flair1/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/flair1/evaluate/s2",
+    "PTC/evaluate/flair1/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/flair1/evaluate/s3",
+    "PTC/evaluate/flair1/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/flair1/evaluate/s4",
+    "PTC/evaluate/flair1/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/flair1/evaluate/s5",
+    "PTC/evaluate/flair1/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/flair1/evaluate/s6",
+    "PTC/evaluate/flair1/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/flair1/evaluate/s7"
+  },
+  "attempts": {
+    "PTC/smoke/udd5/0": 1,
+    "PTC/evaluate/udd5/0": 1,
+    "PTC/cost/udd5/0": 1,
+    "PTC/evaluate/loveda/0": 1,
+    "PTC/evaluate/loveda/2": 1,
+    "PTC/evaluate/loveda/4": 1,
+    "PTC/evaluate/loveda/3": 1,
+    "PTC/evaluate/loveda/7": 1,
+    "PTC/evaluate/loveda/1": 1,
+    "PTC/evaluate/loveda/5": 1,
+    "PTC/evaluate/landcoverai/3": 1,
+    "PTC/evaluate/landcoverai/7": 1
+  },
+  "failure_history": [
+    {
+      "key": "PTC/smoke/udd5/0",
+      "failure": {
+        "error": "Exited before complete verified coverage: /data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/udd5/smoke/s0.log",
+        "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/udd5/smoke/s0.log",
+        "tail": "  from torch.distributed.optim import \\\n{\"method\": \"PTC\", \"dataset\": \"udd5\", \"phase\": \"smoke\", \"status\": \"running\", \"processed\": 0, \"total\": 1}\nTraceback (most recent call last):\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 288, in <module>\n    main(parser.parse_args())\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in main\n    predictions={p:predict(m,image,row,dict(config,\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in <dictcomp>\n    predictions={p:predict(m,image,row,dict(config,\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/torch/utils/_contextlib.py\", line 116, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 167, in predict\n    result = model.predict(data['inputs'], data['data_samples'])[0]\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC/ptc_segmentor.py\", line 313, in predict\n    seg_logits = self.forward_slide(\n                 ^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC/ptc_segmentor.py\", line 272, in forward_slide\n    crop_seg_logit = self.forward_feature(crop_img, query_override=query_override).detach()\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/torch/utils/_contextlib.py\", line 116, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC/ptc_segmentor.py\", line 181, in forward_feature\n    ex_feats = feat[:, 1:, :].reshape(nb_im, I, J, -1).permute(0, 3, 1, 2)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: shape '[1, 35, 35, -1]' is invalid for input of size 1128960\n"
+      },
+      "recovered_with": "ptc-empty-row-self-value-and-rectangular-grid-v1"
+    },
+    {
+      "key": "PTC/evaluate/udd5/0",
+      "failure": {
+        "error": "Skipped because image-only smoke failed"
+      },
+      "recovered_with": "ptc-empty-row-self-value-and-rectangular-grid-v1"
+    },
+    {
+      "key": "PTC/cost/udd5/0",
+      "failure": {
+        "error": "Skipped because image-only smoke failed"
+      },
+      "recovered_with": "ptc-empty-row-self-value-and-rectangular-grid-v1"
+    },
+    {
+      "key": "PTC/evaluate/loveda/0",
+      "failure": {
+        "error": "Exited before complete verified coverage: /data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s0.log",
+        "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s0.log",
+        "tail": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/mmengine/optim/optimizer/zero_optimizer.py:11: DeprecationWarning: `TorchScript` support for functional optimizers is deprecated and will be removed in a future PyTorch release. Consider using the `torch.compile` optimizer instead.\n  from torch.distributed.optim import \\\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 0, \"total\": 209}\nTraceback (most recent call last):\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 288, in <module>\n    main(parser.parse_args())\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in main\n    predictions={p:predict(m,image,row,dict(config,\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in <dictcomp>\n    predictions={p:predict(m,image,row,dict(config,\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/torch/utils/_contextlib.py\", line 116, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 170, in predict\n    raise FloatingPointError('Non-finite native output: '+row['key'])\nFloatingPointError: Non-finite native output: 3868.png\n"
+      },
+      "recovered_with": "ptc-empty-row-self-value-and-rectangular-grid-v1"
+    },
+    {
+      "key": "PTC/evaluate/loveda/2",
+      "failure": {
+        "error": "Exited before complete verified coverage: /data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s2.log",
+        "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s2.log",
+        "tail": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/mmengine/optim/optimizer/zero_optimizer.py:11: DeprecationWarning: `TorchScript` support for functional optimizers is deprecated and will be removed in a future PyTorch release. Consider using the `torch.compile` optimizer instead.\n  from torch.distributed.optim import \\\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 0, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 10, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 20, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 30, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 40, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 50, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 60, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 70, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 80, \"total\": 209}\nTraceback (most recent call last):\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 288, in <module>\n    main(parser.parse_args())\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in main\n    predictions={p:predict(m,image,row,dict(config,\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in <dictcomp>\n    predictions={p:predict(m,image,row,dict(config,\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/torch/utils/_contextlib.py\", line 116, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 170, in predict\n    raise FloatingPointError('Non-finite native output: '+row['key'])\nFloatingPointError: Non-finite native output: 3479.png\n"
+      },
+      "recovered_with": "ptc-empty-row-self-value-and-rectangular-grid-v1"
+    },
+    {
+      "key": "PTC/evaluate/loveda/4",
+      "failure": {
+        "error": "Exited before complete verified coverage: /data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s4.log",
+        "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s4.log",
+        "tail": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/mmengine/optim/optimizer/zero_optimizer.py:11: DeprecationWarning: `TorchScript` support for functional optimizers is deprecated and will be removed in a future PyTorch release. Consider using the `torch.compile` optimizer instead.\n  from torch.distributed.optim import \\\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 0, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 10, \"total\": 209}\nTraceback (most recent call last):\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 288, in <module>\n    main(parser.parse_args())\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in main\n    predictions={p:predict(m,image,row,dict(config,\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in <dictcomp>\n    predictions={p:predict(m,image,row,dict(config,\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/torch/utils/_contextlib.py\", line 116, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 170, in predict\n    raise FloatingPointError('Non-finite native output: '+row['key'])\nFloatingPointError: Non-finite native output: 4173.png\n"
+      },
+      "recovered_with": "ptc-empty-row-self-value-and-rectangular-grid-v1"
+    },
+    {
+      "key": "PTC/evaluate/loveda/3",
+      "failure": {
+        "error": "Exited before complete verified coverage: /data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s3.log",
+        "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s3.log",
+        "tail": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/mmengine/optim/optimizer/zero_optimizer.py:11: DeprecationWarning: `TorchScript` support for functional optimizers is deprecated and will be removed in a future PyTorch release. Consider using the `torch.compile` optimizer instead.\n  from torch.distributed.optim import \\\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 0, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 10, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 20, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 30, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 40, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 50, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 60, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 70, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 80, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 90, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 100, \"total\": 209}\nTraceback (most recent call last):\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 288, in <module>\n    main(parser.parse_args())\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in main\n    predictions={p:predict(m,image,row,dict(config,\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in <dictcomp>\n    predictions={p:predict(m,image,row,dict(config,\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/torch/utils/_contextlib.py\", line 116, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 170, in predict\n    raise FloatingPointError('Non-finite native output: '+row['key'])\nFloatingPointError: Non-finite native output: 2617.png\n"
+      },
+      "recovered_with": "ptc-empty-row-self-value-and-rectangular-grid-v1"
+    },
+    {
+      "key": "PTC/evaluate/loveda/7",
+      "failure": {
+        "error": "Exited before complete verified coverage: /data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s7.log",
+        "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s7.log",
+        "tail": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/mmengine/optim/optimizer/zero_optimizer.py:11: DeprecationWarning: `TorchScript` support for functional optimizers is deprecated and will be removed in a future PyTorch release. Consider using the `torch.compile` optimizer instead.\n  from torch.distributed.optim import \\\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 0, \"total\": 208}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 10, \"total\": 208}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 20, \"total\": 208}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 30, \"total\": 208}\nTraceback (most recent call last):\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 288, in <module>\n    main(parser.parse_args())\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in main\n    predictions={p:predict(m,image,row,dict(config,\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in <dictcomp>\n    predictions={p:predict(m,image,row,dict(config,\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/torch/utils/_contextlib.py\", line 116, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 170, in predict\n    raise FloatingPointError('Non-finite native output: '+row['key'])\nFloatingPointError: Non-finite native output: 3785.png\n"
+      },
+      "recovered_with": "ptc-empty-row-self-value-and-rectangular-grid-v1"
+    },
+    {
+      "key": "PTC/evaluate/loveda/1",
+      "failure": {
+        "error": "Exited before complete verified coverage: /data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s1.log",
+        "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s1.log",
+        "tail": "{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 30, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 40, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 50, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 60, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 70, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 80, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 90, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 100, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 110, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 120, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 130, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 140, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 150, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 160, \"total\": 209}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 170, \"total\": 209}\nTraceback (most recent call last):\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 288, in <module>\n    main(parser.parse_args())\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in main\n    predictions={p:predict(m,image,row,dict(config,\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in <dictcomp>\n    predictions={p:predict(m,image,row,dict(config,\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/torch/utils/_contextlib.py\", line 116, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 170, in predict\n    raise FloatingPointError('Non-finite native output: '+row['key'])\nFloatingPointError: Non-finite native output: 4158.png\n"
+      },
+      "recovered_with": "ptc-empty-row-self-value-and-rectangular-grid-v1"
+    },
+    {
+      "key": "PTC/evaluate/loveda/5",
+      "failure": {
+        "error": "Exited before complete verified coverage: /data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s5.log",
+        "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/loveda/evaluate/s5.log",
+        "tail": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/mmengine/optim/optimizer/zero_optimizer.py:11: DeprecationWarning: `TorchScript` support for functional optimizers is deprecated and will be removed in a future PyTorch release. Consider using the `torch.compile` optimizer instead.\n  from torch.distributed.optim import \\\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 0, \"total\": 208}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 10, \"total\": 208}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 20, \"total\": 208}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 30, \"total\": 208}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 40, \"total\": 208}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 50, \"total\": 208}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 60, \"total\": 208}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 70, \"total\": 208}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 80, \"total\": 208}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 90, \"total\": 208}\n{\"method\": \"PTC\", \"dataset\": \"loveda\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 100, \"total\": 208}\nTraceback (most recent call last):\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 288, in <module>\n    main(parser.parse_args())\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in main\n    predictions={p:predict(m,image,row,dict(config,\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in <dictcomp>\n    predictions={p:predict(m,image,row,dict(config,\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/torch/utils/_contextlib.py\", line 116, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 170, in predict\n    raise FloatingPointError('Non-finite native output: '+row['key'])\nFloatingPointError: Non-finite native output: 3518.png\n"
+      },
+      "recovered_with": "ptc-empty-row-self-value-and-rectangular-grid-v1"
+    },
+    {
+      "key": "PTC/evaluate/landcoverai/3",
+      "failure": {
+        "error": "Exited before complete verified coverage: /data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/landcoverai/evaluate/s3.log",
+        "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/landcoverai/evaluate/s3.log",
+        "tail": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/mmengine/optim/optimizer/zero_optimizer.py:11: DeprecationWarning: `TorchScript` support for functional optimizers is deprecated and will be removed in a future PyTorch release. Consider using the `torch.compile` optimizer instead.\n  from torch.distributed.optim import \\\n{\"method\": \"PTC\", \"dataset\": \"landcoverai\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 0, \"total\": 200}\n{\"method\": \"PTC\", \"dataset\": \"landcoverai\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 10, \"total\": 200}\n{\"method\": \"PTC\", \"dataset\": \"landcoverai\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 20, \"total\": 200}\n{\"method\": \"PTC\", \"dataset\": \"landcoverai\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 30, \"total\": 200}\n{\"method\": \"PTC\", \"dataset\": \"landcoverai\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 40, \"total\": 200}\nTraceback (most recent call last):\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 288, in <module>\n    main(parser.parse_args())\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in main\n    predictions={p:predict(m,image,row,dict(config,\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in <dictcomp>\n    predictions={p:predict(m,image,row,dict(config,\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/torch/utils/_contextlib.py\", line 116, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 170, in predict\n    raise FloatingPointError('Non-finite native output: '+row['key'])\nFloatingPointError: Non-finite native output: M-34-32-B-b-1-3_4\n"
+      },
+      "recovered_with": "ptc-empty-row-self-value-and-rectangular-grid-v1"
+    },
+    {
+      "key": "PTC/evaluate/landcoverai/7",
+      "failure": {
+        "error": "Exited before complete verified coverage: /data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/landcoverai/evaluate/s7.log",
+        "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/landcoverai/evaluate/s7.log",
+        "tail": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/mmengine/optim/optimizer/zero_optimizer.py:11: DeprecationWarning: `TorchScript` support for functional optimizers is deprecated and will be removed in a future PyTorch release. Consider using the `torch.compile` optimizer instead.\n  from torch.distributed.optim import \\\n{\"method\": \"PTC\", \"dataset\": \"landcoverai\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 0, \"total\": 200}\n{\"method\": \"PTC\", \"dataset\": \"landcoverai\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 10, \"total\": 200}\n{\"method\": \"PTC\", \"dataset\": \"landcoverai\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 20, \"total\": 200}\n{\"method\": \"PTC\", \"dataset\": \"landcoverai\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 30, \"total\": 200}\n{\"method\": \"PTC\", \"dataset\": \"landcoverai\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 40, \"total\": 200}\nTraceback (most recent call last):\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 288, in <module>\n    main(parser.parse_args())\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in main\n    predictions={p:predict(m,image,row,dict(config,\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in <dictcomp>\n    predictions={p:predict(m,image,row,dict(config,\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/torch/utils/_contextlib.py\", line 116, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 170, in predict\n    raise FloatingPointError('Non-finite native output: '+row['key'])\nFloatingPointError: Non-finite native output: M-34-32-B-b-1-3_0\n"
+      },
+      "recovered_with": "ptc-empty-row-self-value-and-rectangular-grid-v1"
     }
-  ],
-  "current_method": "GLA-CLIP"
+  ]
 }

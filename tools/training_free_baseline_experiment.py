@@ -8,6 +8,7 @@ import runpy
 import shlex
 import subprocess
 import tarfile
+import time
 
 import paramiko
 
@@ -63,7 +64,8 @@ SOURCE=WORKSPACE/'third_party/training_free_ovss_20261010'
 SESSION='gtf11_controller'
 FILES=('export_training_free_samples.py','eval_training_free_baseline.py',
        'run_training_free_baselines.py','prepare_training_free_weights.py',
-       'training_free_baseline_runtime.py','setup_training_free_baselines.sh','setup_training_free_extra.sh')
+       'training_free_baseline_runtime.py','setup_training_free_baselines.sh','setup_training_free_extra.sh',
+       'diagnose_training_free_ptc.py','repair_training_free_ptc.py')
 METHODS={
     'PEARL':('PEARL','pearl_ovss','PEARL'),
     'GLA-CLIP':('GLA-CLIP','gla_clip_segmentor','GLA_CLIPSegmentation'),
@@ -190,6 +192,22 @@ def prepare_cost_manifest():
     write(LOCAL/'cost_keys.json',keys)
 
 
+def fetch():
+    protocol=read(LOCAL/'protocol.json')
+    for method,entry in protocol['methods'].items():
+        destination=SOURCE/method
+        prefix=['git','-c','safe.directory='+destination.as_posix(),'-c','http.sslBackend=openssl','-c','http.version=HTTP/1.1']
+        if not destination.exists():
+            destination.parent.mkdir(parents=True,exist_ok=True)
+            subprocess.run(prefix+['clone','--no-checkout','--depth','1',entry['repository']+'.git',str(destination)],check=True)
+            subprocess.run(prefix+['-C',str(destination),'fetch','--depth','1','origin',entry['commit']],check=True)
+            subprocess.run(prefix+['-C',str(destination),'checkout','--detach',entry['commit']],check=True)
+        head=subprocess.check_output(prefix+['-C',str(destination),'rev-parse','HEAD'],text=True).strip()
+        changes=subprocess.check_output(prefix+['-C',str(destination),'diff','--name-only','HEAD'],text=True).strip()
+        if head!=entry['commit'] or changes:raise RuntimeError('Existing source differs; preserve it: '+method)
+        print(method+' pinned source verified '+head)
+
+
 def deploy(client,sftp):
     mkdir(sftp,ROOT)
     for name in FILES:
@@ -221,13 +239,15 @@ def start(client,sftp):
     print(execute(client,shlex.join(['tmux','new-session','-d','-s',SESSION,shell])))
 
 
-def resume(client,sftp):
+def resume(client,sftp,retry_failed_method=None):
     if alive(client,SESSION):print('Existing controller preserved.');return
     state=remote_json(sftp,ROOT+'/suite_status.json')
     if not state:raise RuntimeError('Use start for a new suite')
     if state['status']=='complete':print('Complete suite preserved.');return
     cmd=[PYTHON,'-u','scripts/run_training_free_baselines.py','--root',ROOT,'--resume']
-    shell='cd '+shlex.quote(REMOTE)+' && exec env PYTHONPATH=.:scripts '+shlex.join(cmd)+' > '+shlex.quote(ROOT+'/controller_resume.log')+' 2>&1'
+    if retry_failed_method:cmd+=['--retry-failed-method',retry_failed_method]
+    log=ROOT+'/controller_resume_'+time.strftime('%Y%m%d_%H%M%S')+'.log'
+    shell='cd '+shlex.quote(REMOTE)+' && exec env PYTHONPATH=.:scripts '+shlex.join(cmd)+' > '+shlex.quote(log)+' 2>&1'
     print(execute(client,shlex.join(['tmux','new-session','-d','-s',SESSION,shell])))
 
 
@@ -246,6 +266,8 @@ def collect(client,sftp):
     state=remote_json(sftp,ROOT+'/suite_status.json') or {}
     write(LOCAL/'suite_status.json',state)
     protocol=read(LOCAL/'protocol.json')
+    repairs=remote_json(sftp,ROOT+'/source_repairs.json') or {}
+    if repairs:write(LOCAL/'source_repairs.json',repairs)
     lines=['# Pinned native training-free baseline comparison','',protocol['provenance'],'',
         'Status: '+str(state.get('status','preparing'))+'. Only verified complete protocols receive scores.','']
     scores={}
@@ -254,25 +276,45 @@ def collect(client,sftp):
         scores[method]={}
         for d,e in protocol['datasets'].items():
             merged=remote_json(sftp,f'{ROOT}/{method}/{d}/merged.json')
-            cost=remote_json(sftp,f'{ROOT}/{method}/{d}/cost/s0/cost.json')
+            cost_output=state.get('completed_outputs',{}).get(f'{method}/cost/{d}/0',f'{ROOT}/{method}/{d}/cost/s0')
+            cost=remote_json(sftp,cost_output+'/cost.json')
             if cost:
                 write(LOCAL/method/d/'cost.json',cost);costs[method+'/'+d]=cost
             if not merged:continue
             write(LOCAL/method/d/'merged.json',merged);scores[method][d]=merged['results']
-    old=read(WORKSPACE/'research/vip_kev_same_vocabulary_20261010/comparison_summary.json')['comparisons']
+    previous_path=LOCAL/'comparison_summary.json'
+    cached=read(previous_path).get('previous_references',{}) if previous_path.exists() else {}
+    source_path=WORKSPACE/'research/vip_kev_same_vocabulary_20261010/comparison_summary.json'
+    old=read(source_path)['comparisons'] if source_path.exists() else {}
     references={}
     lines+=['|Protocol|Images|Geometry best measured|Strong verified local VIP|'+ '|'.join(METHODS)+'|',
             '|---|---:|---:|---:|'+ '|'.join('---:' for _ in METHODS)+'|']
     for d in protocol['dataset_order']:
         for p in ('P','D') if d=='loveda' else (d,):
-            row=old[d+'__'+p]
-            our=row['ours']
-            vip=max(v for v in (row.get('historical_vip'),row.get('same_text'),row.get('official_template')) if v is not None)
-            if d in ('context60','voc20','voc21'):
+            name=d+'__'+p
+            row=old.get(name,{})
+            if name in cached:our,vip=cached[name]['ours'],cached[name]['vip']
+            else:
+                our=row['ours']
+                vip=max(v for v in (row.get('historical_vip'),row.get('same_text'),row.get('official_template')) if v is not None)
+            if name not in cached and d in ('context60','voc20','voc21'):
                 latest=read(WORKSPACE/'research/natural_alias_best_20261010'/d/'merged.json')
                 our=latest['metrics'][p]['CuratedTuned']['mean_iou_percent']
             references[d+'__'+p]=dict(ours=our,vip=vip,
                 provenance='Best previously measured labeled-development/full-validation-viewed Geometry configuration; strongest of verified local VIP references. Neither is a new evaluation or a published paper number.')
+            previous=cached.get(name,{})
+            if 'vip_cost' in previous:references[name]['vip_cost']=previous['vip_cost']
+            elif row.get('cost'):
+                references[name]['vip_cost']={k:row['cost'][k] for k in ('median_ms','peak_allocated_mib')}
+            if 'geometry_cost' in previous:references[name]['geometry_cost']=previous['geometry_cost']
+            else:
+                source_cost=WORKSPACE/'research/natural_alias_best_20261010'/d/'cost.json'
+                if source_cost.exists():
+                    c=read(source_cost)
+                    references[name]['geometry_cost']={k:c[k] for k in ('median_ms','peak_allocated_mib')}
+                elif (WORKSPACE/'research/kev_alias_search_20261009/comparison_summary.json').exists():
+                    c=read(WORKSPACE/'research/kev_alias_search_20261009/comparison_summary.json')['comparisons'][name]['cost']
+                    references[name]['geometry_cost']={k:c[k] for k in ('median_ms','peak_allocated_mib')}
             values=[f"{scores[m][d][p]['mean_iou_percent']:.4f}" if d in scores[m] else 'pending' for m in METHODS]
             label=d+(' '+p if d=='loveda' else '')
             lines.append(f"|{label}|{protocol['datasets'][d]['total_images']}|{our:.4f}|{vip:.4f}|"+'|'.join(values)+'|')
@@ -283,33 +325,60 @@ def collect(client,sftp):
     means=[f"{mean([scores[m][d]['D' if d=='loveda' else d]['mean_iou_percent'] for d in rs]):.4f}" if all(d in scores[m] for d in rs) else 'pending' for m in METHODS]
     lines.append(f'|Eight remote mean|20092|{our_mean:.4f}|{vip_mean:.4f}|'+ '|'.join(means)+'|')
     lines+=['','## Standalone whole-image cost','',
-        '|Method|Protocol|Median ms|Peak allocated MiB|Native config|',
-        '|---|---|---:|---:|---|']
+        '|Method|Protocol|Median ms|Peak allocated MiB|Prior same-text VIP ms|Ratio|Native config|',
+        '|---|---|---:|---:|---:|---:|---|']
     for key,cost in costs.items():
         method,d=key.split('/')
         peak=max(x['peak_allocated_bytes'] for x in cost['images'])/1024**2
-        lines.append(f"|{method}|{d}|{cost['median_ms']:.2f}|{peak:.2f}|{protocol['methods'][method]['configs'][d]['native_protocol_config']}|")
+        reference=references[d+'__'+('D' if d=='loveda' else d)].get('vip_cost')
+        prior=f"{reference['median_ms']:.2f}|{cost['median_ms']/reference['median_ms']:.3f}" if reference else 'missing|missing'
+        lines.append(f"|{method}|{d}|{cost['median_ms']:.2f}|{peak:.2f}|{prior}|{protocol['methods'][method]['configs'][d]['native_protocol_config']}|")
+    lines+=['','Previous Geometry/VIP costs are retained below as historical full-method measurements. '
+        'VIP timing uses its previous same-text bank, which can differ from the strongest accuracy reference. '
+        'New baselines use the same seven VIP image keys; no matched-backbone/operator claim follows.',
+        '', '|Protocol|Previous Geometry ms / MiB|Previous VIP ms / MiB|','|---|---:|---:|']
+    for d in protocol['dataset_order']:
+        r=references[d+'__'+('D' if d=='loveda' else d)]
+        format_cost=lambda c:f"{c['median_ms']:.2f} / {c['peak_allocated_mib']:.2f}" if c else 'missing'
+        lines.append('|'+d+'|'+format_cost(r.get('geometry_cost'))+'|'+format_cost(r.get('vip_cost'))+'|')
     lines+=['','Reproduce: `python tools/training_free_baseline_experiment.py prepare`, `deploy`, `start`, `status`, `collect`.',
         'Pinned commits, exact query files, official settings and fixed transfer policies are in `protocol.json` and `words/`.',
         'CorrCLIP uses native online SAM2 masks, including their cost; SegEarth-OV retains pretrained SimFeatUp.',
         'No evaluation labels select a baseline vocabulary, threshold or transfer setting. LoveDA P is read independently.',
         'VOC20/21 and PC59/60 reuse photographs. Eight remote domains count LoveDA D once; LandCover.ai substitutes for unavailable labeled iSAID.',
         'Runtime uses a dedicated Torch2.4/MMCV2.2 environment and an explicitly recorded MMSeg version-guard compatibility change.']
+    if repairs:
+        lines+=['','## Recorded execution repairs','',
+            'PTC originally failed on rectangular UDD5 crops (width grid used height) and on LoveDA all-masked proxy-attention rows (softmax of all negative infinity). '
+            'An isolated source copy corrects the width index and uses self-Value only on empty attention rows. '
+            'Vocabulary, calibration, thresholds and finite attention rows are unchanged. Originally finite image predictions replay exactly in the image-only validation. '
+            'These are local execution-repaired results, not unmodified published baseline scores. '
+            'Completed original shards are preserved; merged execution_variants record each source variant. '
+            'Failed attempts and logs remain in place; partial failed prefixes without a per-image checkpoint are recomputed only in new attempt directories. '
+            'Exact source diffs, hashes and image-only evidence are in [source_repairs.json](training_free_baselines_full_20261011/source_repairs.json).']
+    if state.get('failures'):
+        lines+=['','## Incomplete jobs','']
+        lines += ['- '+key+': '+str(value.get('error',value) if isinstance(value,dict) else value)
+            for key,value in state['failures'].items()]
     report=WORKSPACE/'research/TRAINING_FREE_BASELINES_FULL_20261011.md'
     report.write_text('\n'.join(lines)+'\n',encoding='utf-8')
     write(LOCAL/'comparison_summary.json',dict(status=state.get('status','preparing'),methods=scores,previous_references=references,
-        completed_protocols=sum(len(v) for v in scores.values()),expected_protocols=75,costs=costs))
+        completed_protocols=sum(len(v) for v in scores.values()),expected_protocols=75,costs=costs,execution_repairs=repairs))
     print(str(report))
 
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('action',choices=('prepare','deploy','start','resume','status','collect'))
+    parser.add_argument('action',choices=('prepare','fetch','deploy','start','resume','status','collect'))
+    parser.add_argument('--retry-failed-method',choices=METHODS)
     args=parser.parse_args()
     if args.action=='prepare':prepare();return
+    if args.action=='fetch':fetch();return
     client=checked_connect()
     try:
-        with client.open_sftp() as sftp:globals()[args.action](client,sftp)
+        with client.open_sftp() as sftp:
+            if args.action=='resume':resume(client,sftp,args.retry_failed_method)
+            else:globals()[args.action](client,sftp)
     finally:client.close()
 
 

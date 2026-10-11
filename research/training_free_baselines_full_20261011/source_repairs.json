@@ -1,0 +1,179 @@
+{
+  "PTC": {
+    "id": "ptc-empty-row-self-value-and-rectangular-grid-v1",
+    "source_relative": "sources_repaired/PTC_empty_rows_rectangular_v1",
+    "files": {
+      "ptc_segmentor.py": {
+        "original_sha256": "c08cd23d7ba90dd707bfb8cbbfb89b9aad0bc9aa5f61320177b1cb1a239472b0",
+        "repaired_sha256": "6eb1e12e546bd498e5c904723b2488b5cb2454bb62b76258c52ace9f4e768d1a",
+        "diff": "--- upstream/ptc_segmentor.py\n+++ repaired/ptc_segmentor.py\n@@ -176,7 +176,7 @@\n             v = v.transpose(1, 2).reshape(nb_im, nb_tokens, -1)[:, 1:, :]\n \n             patch_size = self.vfm.patch_embed.patch_size\n-            I, J = imgs_norm[0].shape[-2] // patch_size, imgs_norm[0].shape[-2] // patch_size\n+            I, J = imgs_norm[0].shape[-2] // patch_size, imgs_norm[0].shape[-1] // patch_size\n \n             ex_feats = feat[:, 1:, :].reshape(nb_im, I, J, -1).permute(0, 3, 1, 2)\n \n"
+      },
+      "open_clip/transformer.py": {
+        "original_sha256": "40e0ddadb7d1ad19152dc0cdced85dd75769b87231db4dba1db039dec0a3168d",
+        "repaired_sha256": "a7b1e0915d2231b87d63d5f78bcf50d40b529e3afe83f2903c60251315533340",
+        "diff": "--- upstream/open_clip/transformer.py\n+++ repaired/open_clip/transformer.py\n@@ -575,6 +575,11 @@\n \n         mask = similarity.to(q.dtype).unsqueeze(1).repeat(1, num_heads, 1, 1)\n         mask = mask.reshape(bsz * num_heads, mask.shape[2], mask.shape[3])\n+        # Numerical repair: self-Value only for rows with no finite source.\n+        empty_rows = torch.isneginf(mask).all(dim=-1)\n+        if empty_rows.any():\n+            batch, row = empty_rows.nonzero(as_tuple=True)\n+            mask[batch, row, row] = 0.0\n         attn_weights = F.softmax(mask, dim=-1)\n \n         v = v[:, 1:, :].reshape(bsz*num_heads, token_size[0], token_size[1], head_dim).permute(0, 3, 1, 2)\n"
+      }
+    },
+    "diagnosis": {
+      "target_masks_loaded": false,
+      "outcomes": [
+        {
+          "key": "2909.png",
+          "status": "finite",
+          "prediction_sha256": "4a0aeb1ccefd9f34e3c90ea1add6f06a13a67ccf899898e28c2d94c0bc253122",
+          "events": []
+        },
+        {
+          "key": "3868.png",
+          "status": "failed",
+          "error": "FloatingPointError('Non-finite native output: 3868.png')",
+          "events": [
+            {
+              "operator": "softmax",
+              "shape": [
+                12,
+                784,
+                784
+              ],
+              "dtype": "torch.float16",
+              "all_negative_infinity_rows": 9408,
+              "input_nan": 0,
+              "input_positive_infinity": 0,
+              "output_nan": 7375872
+            },
+            {
+              "operator": "softmax",
+              "shape": [
+                12,
+                784,
+                784
+              ],
+              "dtype": "torch.float16",
+              "all_negative_infinity_rows": 9408,
+              "input_nan": 0,
+              "input_positive_infinity": 0,
+              "output_nan": 7375872
+            },
+            {
+              "operator": "softmax",
+              "shape": [
+                12,
+                784,
+                784
+              ],
+              "dtype": "torch.float16",
+              "all_negative_infinity_rows": 9408,
+              "input_nan": 0,
+              "input_positive_infinity": 0,
+              "output_nan": 7375872
+            }
+          ]
+        },
+        {
+          "key": "3785.png",
+          "status": "failed",
+          "error": "FloatingPointError('Non-finite native output: 3785.png')",
+          "events": [
+            {
+              "operator": "softmax",
+              "shape": [
+                12,
+                784,
+                784
+              ],
+              "dtype": "torch.float16",
+              "all_negative_infinity_rows": 9408,
+              "input_nan": 0,
+              "input_positive_infinity": 0,
+              "output_nan": 7375872
+            },
+            {
+              "operator": "softmax",
+              "shape": [
+                12,
+                784,
+                784
+              ],
+              "dtype": "torch.float16",
+              "all_negative_infinity_rows": 9408,
+              "input_nan": 0,
+              "input_positive_infinity": 0,
+              "output_nan": 7375872
+            }
+          ]
+        },
+        {
+          "key": "3479.png",
+          "status": "failed",
+          "error": "FloatingPointError('Non-finite native output: 3479.png')",
+          "events": [
+            {
+              "operator": "softmax",
+              "shape": [
+                12,
+                784,
+                784
+              ],
+              "dtype": "torch.float16",
+              "all_negative_infinity_rows": 9408,
+              "input_nan": 0,
+              "input_positive_infinity": 0,
+              "output_nan": 7375872
+            },
+            {
+              "operator": "softmax",
+              "shape": [
+                12,
+                784,
+                784
+              ],
+              "dtype": "torch.float16",
+              "all_negative_infinity_rows": 9408,
+              "input_nan": 0,
+              "input_positive_infinity": 0,
+              "output_nan": 7375872
+            }
+          ]
+        }
+      ]
+    },
+    "status": "validated",
+    "note": "Original finite attention rows unchanged; no parameter, vocabulary or threshold change.",
+    "validation": {
+      "target_masks_loaded": false,
+      "outcomes": [
+        {
+          "key": "2909.png",
+          "status": "finite",
+          "prediction_sha256": "4a0aeb1ccefd9f34e3c90ea1add6f06a13a67ccf899898e28c2d94c0bc253122",
+          "events": []
+        },
+        {
+          "key": "3868.png",
+          "status": "finite",
+          "prediction_sha256": "e12ae3ccf6a2d8e54c94480824fae2ee4f531df5869fa7c7184a4279d8c4a905",
+          "events": []
+        },
+        {
+          "key": "3785.png",
+          "status": "finite",
+          "prediction_sha256": "5fc60152548e6dfa13dd6ea5b6da3f616649d580e1b654a5dbb60e4a4f96b920",
+          "events": []
+        },
+        {
+          "key": "3479.png",
+          "status": "finite",
+          "prediction_sha256": "ec9926752484e09d7a90c54b9e9552b9bf493f333c10f150c722b254e736ecdc",
+          "events": []
+        },
+        {
+          "key": "udd5/000061.JPG",
+          "status": "finite",
+          "rectangular_grid_verified": true
+        }
+      ]
+    },
+    "finite_prediction_replay_exact": true,
+    "finite_replay_images": 1
+  }
+}

@@ -1,2 +1,3 @@
 * text=auto eol=lf
 *.png binary
+research/training_free_baselines_full_20261011/words/** -text

@@ -26,10 +26,11 @@ def idle(gpu):
     return memory<100 and usage<5
 
 
-def launch(root,method,dataset,phase,shard,shards,gpu):
-    output=root/method/dataset/phase/('s'+str(shard));log=output.with_suffix('.log')
+def launch(root,method,dataset,phase,shard,shards,gpu,attempt=0):
+    suffix=('_attempt'+str(attempt)) if attempt else ''
+    output=root/method/dataset/phase/('s'+str(shard)+suffix);log=output.with_suffix('.log')
     safe_method=method.replace('-','').lower()
-    session=f'gtf11_{safe_method}_{phase}_{dataset}_{shard}'
+    session=f'gtf11_{safe_method}_{phase}_{dataset}_{shard}'+suffix
     if output.exists() or log.exists() or alive(session) or not idle(gpu):
         raise RuntimeError('Preserve existing worker/output or occupied GPU: '+session)
     output.parent.mkdir(parents=True,exist_ok=True)
@@ -42,7 +43,7 @@ def launch(root,method,dataset,phase,shard,shards,gpu):
     shell='cd '+shlex.quote(str(tool))+' && exec '+shlex.join(command)+' > '+shlex.quote(str(log))+' 2>&1'
     subprocess.run(['tmux','new-session','-d','-s',session,shell],check=True)
     return dict(method=method,dataset=dataset,phase=phase,shard=shard,shards=shards,gpu=gpu,
-        session=session,output=str(output),log=str(log))
+        session=session,output=str(output),log=str(log),attempt=attempt)
 
 
 def verify(job):
@@ -59,8 +60,11 @@ def verify(job):
     return row
 
 
-def merge(root,method,dataset,shards):
-    rows=[read(root/method/dataset/'evaluate'/('s'+str(i))/'results.json') for i in range(shards)]
+def merge(root,method,dataset,shards,completed_outputs=None):
+    completed_outputs=completed_outputs or {}
+    paths=[Path(completed_outputs.get(f'{method}/evaluate/{dataset}/{i}',
+        str(root/method/dataset/'evaluate'/('s'+str(i))))) for i in range(shards)]
+    rows=[read(path/'results.json') for path in paths]
     if any(not row or row['status']!='complete' for row in rows):return None
     manifest=read(root/'samples.json')[dataset];expected=[r['key'] for r in manifest['samples']]
     keys=[None]*len(expected)
@@ -84,10 +88,15 @@ def merge(root,method,dataset,shards):
         scored_target_counts_match=True,aggregate_gpu_wall_seconds=sum(r['wall_seconds'] for r in rows),
         parallel_wall_seconds=max(r['wall_seconds'] for r in rows),
         peak_allocated_bytes=max(r['peak_allocated_bytes'] for r in rows),
-        peak_reserved_bytes=max(r['peak_reserved_bytes'] for r in rows))
+        peak_reserved_bytes=max(r['peak_reserved_bytes'] for r in rows),
+        execution_variants=[dict(shard=i,output=str(path),repair=row.get('execution_repairs'))
+            for i,(path,row) in enumerate(zip(paths,rows))])
     path=root/method/dataset/'merged.json'
     if path.exists():
-        if read(path)!=result:raise RuntimeError('Existing merged result differs; preserve it')
+        previous=read(path)
+        # Older verified files predate explicit null execution-provenance metadata.
+        if previous!={k:v for k,v in result.items() if k in previous}:
+            raise RuntimeError('Existing merged result differs; preserve it')
     else:save(path,result)
     return {p:m['mean_iou_percent'] for p,m in metrics.items()}
 
@@ -103,6 +112,19 @@ def main(args):
     else:
         state=dict(status='waiting_environment',active=[],completed=[],failures={},merged={},pending=[])
     protocol=read(root/'protocol.json')
+    state.setdefault('completed_outputs',{})
+    state.setdefault('attempts',{})
+    if args.retry_failed_method:
+        repairs=read(root/'source_repairs.json') or {}
+        if repairs.get(args.retry_failed_method,{}).get('status')!='validated':
+            raise RuntimeError('Retry requires a validated execution-only source repair')
+        history=state.setdefault('failure_history',[])
+        for failed in list(state['failures']):
+            if failed.startswith(args.retry_failed_method+'/') and len(failed.split('/'))==4:
+                history.append(dict(key=failed,failure=state['failures'].pop(failed),
+                    recovered_with=repairs[args.retry_failed_method]['id']))
+                state['attempts'][failed]=state['attempts'].get(failed,0)+1
+        save(state_path,state)
     # Environment/weights preparation is independent of visual workers.
     while not (root/'environment_ready').exists() or not (root/'weights_ready').exists():
         if not alive('gtf11_setup') and not (root/'environment_ready').exists():
@@ -130,6 +152,7 @@ def main(args):
                 state['active'].remove(job)
                 try:
                     verify(job);state['completed'].append(key(job))
+                    state['completed_outputs'][key(job)]=job['output']
                 except Exception as error:
                     tail=subprocess.run(['tail','-n','30',job['log']],capture_output=True,text=True).stdout
                     state['failures'][key(job)]=dict(error=str(error),log=job['log'],tail=tail)
@@ -140,7 +163,7 @@ def main(args):
                 if all(f'{method}/evaluate/{d}/{s}' in complete for s in range(n)):
                     k=method+'/'+d
                     if k not in state['merged']:
-                        try:state['merged'][k]=merge(root,method,d,n)
+                        try:state['merged'][k]=merge(root,method,d,n,state['completed_outputs'])
                         except Exception as error:state['failures'][k+'/merge']=dict(error=str(error))
             eligible=[]
             for j in pending[:]:
@@ -154,7 +177,7 @@ def main(args):
                 if not eligible:break
                 if gpu in busy or not idle(gpu):continue
                 job=eligible.pop(0);pending.remove(job)
-                state['active'].append(launch(root,gpu=gpu,**job))
+                state['active'].append(launch(root,gpu=gpu,attempt=state['attempts'].get(key(job),0),**job))
             state.update(status='running',current_method=method,pending=pending)
             save(state_path,state);time.sleep(20)
     expected=len(protocol['methods'])*len(protocol['datasets'])
@@ -170,4 +193,5 @@ def key(job):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--root',required=True);parser.add_argument('--resume',action='store_true')
+    parser.add_argument('--retry-failed-method')
     main(parser.parse_args())
