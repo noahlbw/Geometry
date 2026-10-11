@@ -4,6 +4,10 @@
 
 实时汇总见 [全量比较表](../research/TRAINING_FREE_BASELINES_FULL_20261011.md)，冻结设置见 [protocol.json](../research/training_free_baselines_full_20261011/protocol.json)。`pending` 表示尚未完成，不能当作零分或已完成结果。
 
+2026-10-12 全部完成：75 项全量结果、75 项独立成本测试；每个方法 45,200 次协议图像评测，共 226,000 次。425 个评测分片的逐图混淆矩阵、完整有序唯一样本、VIP 有效目标像素计数及冻结身份均已核验。[verification.json](../research/training_free_baselines_full_20261011/verification.json)保存证据。可在已有结果目录运行 `DINOtool/scripts/verify_training_free_baselines.py --root SUITE`，无需重新推理。
+
+完整结果中，Geometry 历史参考在 14/16 个展示行领先五个新增配置；CorrCLIP 的 PC59／PC60 为 47.7036／45.1164，超过 Geometry 参考 1.3961／0.3551 点。16 行包含 LoveDA P、D 两种读出，不能作为 16 个独立数据集。这是不同词表、预训练骨干和额外资源下的完整方法比较；Geometry 历史配置参与过有标签选择，不能据此宣称 Geometry 算子独立获胜或所有数据集 SOTA。
+
 ## 比较原则
 
 - 作者支持的协议保留原词表文件字节、原解析器、阈值、模板、缩放与模型参数。PEARL 显式启用 TLP；GLA-CLIP 显式启用作者 `predict.sh` 中的完整开关；PTC 保留其校准参数。

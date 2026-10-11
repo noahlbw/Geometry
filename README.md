@@ -1,6 +1,6 @@
 # Geometry: frozen structure-guided open-vocabulary segmentation
 
-2026-10-11更新：新增五个公开方法的[全量复现协议与运行说明](docs/BASELINE_BENCHMARK_20261011.md)、[对比表](research/TRAINING_FREE_BASELINES_FULL_20261011.md)和固定词表。实验正在逐个执行，未完成项明确标记为 `pending`。
+2026-10-12更新：五个公开方法的全部 **75 项全量评测＋75 项耗时／显存测试已完成**，覆盖 226,000 次协议图像评测。见[复现协议与运行说明](docs/BASELINE_BENCHMARK_20261011.md)、[完整对比表](research/TRAINING_FREE_BASELINES_FULL_20261011.md)和[核验证据](research/training_free_baselines_full_20261011/verification.json)。CorrCLIP 在 PC59／PC60 上超过当前 Geometry 历史参考；保留这些结果及资源、配置与选择协议的差异。
 
 2026-10-10更新：新增当前Kev开发选择后的冻结模型、15协议的实际alias与YAML，以及无需历史实验缓存的[独立推理／评测入口](docs/DEPLOYMENT_20261010.md)。原2026-10-09模型和实验记录保留在下面，不能将两版结果混用。最新精度见[Kev完整结果](research/KEV_ALIAS_SEARCH_20261009.md)和[相同词表VIP对照](research/VIP_KEV_SAME_VOCABULARY_20261010.md)，执行优化与验证见[效率报告](research/COMPACT_DEPLOYMENT_20261010.md)。
 

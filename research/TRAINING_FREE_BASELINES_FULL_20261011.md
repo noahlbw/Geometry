@@ -2,7 +2,7 @@
 
 Authors native official config where provided; fixed untuned transfer elsewhere. Matched existing images/targets. Different pretrained backbones and external resources remain part of each full method; this is not an operator ablation. Geometry references used prior labeled development optimization.
 
-Status: running. Only verified complete protocols receive scores.
+Status: complete. Only verified complete protocols receive scores.
 
 |Protocol|Images|Geometry best measured|Strong verified local VIP|PEARL|GLA-CLIP|PTC|CorrCLIP|SegEarth-OV|
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -14,15 +14,15 @@ Status: running. Only verified complete protocols receive scores.
 |loveda P|1669|69.6117|56.3110|47.5212|50.6544|50.6271|43.7985|53.4885|
 |loveda D|1669|45.3171|36.1457|29.6031|31.0830|31.1501|26.6162|36.8928|
 |landcoverai|1602|65.5400|54.9420|30.9757|31.8306|33.0437|30.8354|32.7043|
-|flair1|15700|43.6579|36.6074|19.3884|19.4995|20.7257|20.3994|pending|
-|voc20|1449|92.7936|92.5051|86.9143|84.2087|82.7334|87.5405|pending|
-|voc21|1449|75.8586|73.2591|64.0821|66.2608|67.1752|73.9381|pending|
-|ade150|2000|31.3398|29.4630|19.3537|20.0191|20.9090|26.4301|pending|
-|context59|5105|46.3075|45.9359|38.7213|40.0670|40.5982|47.7036|pending|
-|context60|5105|44.7613|42.5987|36.5263|37.6621|37.7346|45.1164|pending|
-|coco_object81|5000|50.3999|48.9955|38.6592|39.0724|39.6947|44.6265|pending|
-|coco_stuff171|5000|33.7661|33.4940|26.3142|26.9368|27.4517|31.8365|pending|
-|Eight remote mean|20092|53.8665|44.2856|30.8299|32.7692|31.8556|29.6102|pending|
+|flair1|15700|43.6579|36.6074|19.3884|19.4995|20.7257|20.3994|18.2782|
+|voc20|1449|92.7936|92.5051|86.9143|84.2087|82.7334|87.5405|73.0056|
+|voc21|1449|75.8586|73.2591|64.0821|66.2608|67.1752|73.9381|57.1139|
+|ade150|2000|31.3398|29.4630|19.3537|20.0191|20.9090|26.4301|17.8261|
+|context59|5105|46.3075|45.9359|38.7213|40.0670|40.5982|47.7036|35.5333|
+|context60|5105|44.7613|42.5987|36.5263|37.6621|37.7346|45.1164|32.6773|
+|coco_object81|5000|50.3999|48.9955|38.6592|39.0724|39.6947|44.6265|31.2886|
+|coco_stuff171|5000|33.7661|33.4940|26.3142|26.9368|27.4517|31.8365|23.3325|
+|Eight remote mean|20092|53.8665|44.2856|30.8299|32.7692|31.8556|29.6102|37.0394|
 
 ## Standalone whole-image cost
 
@@ -88,6 +88,21 @@ Status: running. Only verified complete protocols receive scores.
 |CorrCLIP|coco_object81|242.16|2605.48|131.46|1.842|True|
 |CorrCLIP|coco_stuff171|244.81|2605.46|185.87|1.317|True|
 |CorrCLIP|flair1|278.40|2605.63|111.14|2.505|False|
+|SegEarth-OV|vdd|311.03|1148.31|190.85|1.630|True|
+|SegEarth-OV|potsdam|291.49|1150.92|104.11|2.800|True|
+|SegEarth-OV|voc20|472.90|1166.14|58.16|8.131|False|
+|SegEarth-OV|voc21|474.49|1183.92|59.50|7.975|False|
+|SegEarth-OV|ade150|478.96|1248.41|113.98|4.202|False|
+|SegEarth-OV|context60|475.01|1189.45|112.06|4.239|False|
+|SegEarth-OV|udd5|309.49|1146.81|191.15|1.619|True|
+|SegEarth-OV|oem|294.21|1154.18|105.38|2.792|True|
+|SegEarth-OV|vaihingen|291.87|1149.53|108.55|2.689|True|
+|SegEarth-OV|landcoverai|286.45|1149.05|102.71|2.789|False|
+|SegEarth-OV|loveda|293.66|1151.02|105.86|2.774|True|
+|SegEarth-OV|context59|474.39|1187.39|111.84|4.242|False|
+|SegEarth-OV|coco_object81|501.06|6468.83|131.46|3.811|False|
+|SegEarth-OV|coco_stuff171|483.63|1263.20|185.87|2.602|False|
+|SegEarth-OV|flair1|286.66|1152.40|111.14|2.579|False|
 
 Previous Geometry/VIP costs are retained below as historical full-method measurements. VIP timing uses its previous same-text bank, which can differ from the strongest accuracy reference. New baselines use the same seven VIP image keys; no matched-backbone/operator claim follows.
 
@@ -121,3 +136,18 @@ Runtime uses a dedicated Torch2.4/MMCV2.2 environment and an explicitly recorded
 PTC originally failed on rectangular UDD5 crops (width grid used height) and on LoveDA all-masked proxy-attention rows (softmax of all negative infinity). An isolated source copy corrects the width index and uses self-Value only on empty attention rows. Vocabulary, calibration, thresholds and finite attention rows are unchanged. Originally finite image predictions replay exactly in the image-only validation. These are local execution-repaired results, not unmodified published baseline scores. Completed original shards are preserved; merged execution_variants record each source variant. Failed attempts and logs remain in place; partial failed prefixes without a per-image checkpoint are recomputed only in new attempt directories. Exact source diffs, hashes and image-only evidence are in [source_repairs.json](training_free_baselines_full_20261011/source_repairs.json).
 
 CorrCLIP native online SAM2 cannot open FLAIR multi-band TIFF with PIL. The isolated decoder compatibility patch falls back to rasterio uint8 RGB bands 1,2,3 only when PIL raises UnidentifiedImageError, matching the frozen input RGB loader. SAM2 and segmentation operators/settings are unchanged. Image-only validation confirms finite FLAIR output and exact native-image prediction replay. Source diffs and evidence are also in source_repairs.json.
+
+## Final artifact verification
+
+All 75 full method/protocol results and 75 standalone cost records passed verification. The 425 evaluation shards have complete ordered unique coverage and their per-image confusion matrices sum exactly to the merged matrices. Scored class target counts match the verified VIP references; source/config/query/checkpoint/runtime identities and frozen weights match. Each method covers 45,200 protocol images (226,000 across five methods). Every cost record contains the same seven image keys and seven timed repetitions per image. Evidence: [verification.json](training_free_baselines_full_20261011/verification.json). Recheck without inference: `python DINOtool/scripts/verify_training_free_baselines.py --root SUITE`.
+
+## Reading the completed comparison
+
+These are full-method measurements under the recorded vocabularies, backbones and external resources; they do not isolate the Geometry operator or establish a universal SOTA claim. The previously selected Geometry reference leads all five new configurations on 14/16 displayed result rows (LoveDA P/D are separate rows). The following negative outcomes for Geometry are retained:
+
+|Protocol|Best new method|Method mIoU|Geometry reference|Method minus Geometry|
+|---|---|---:|---:|---:|
+|context59 |CorrCLIP|47.7036|46.3075|+1.3961|
+|context60 |CorrCLIP|45.1164|44.7613|+0.3551|
+
+CorrCLIP uses MetaCLIP and online SAM2; its accuracy and resource cost are both reported. Geometry references used prior labeled development and full-validation-viewed choices, whereas these baseline transfer settings were frozen without target-label tuning. VIP references are verified local repaired reimplementations, not published paper scores.

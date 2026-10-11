@@ -66,7 +66,7 @@ FILES=('export_training_free_samples.py','eval_training_free_baseline.py',
        'run_training_free_baselines.py','prepare_training_free_weights.py',
        'training_free_baseline_runtime.py','setup_training_free_baselines.sh','setup_training_free_extra.sh',
        'diagnose_training_free_ptc.py','repair_training_free_ptc.py',
-       'diagnose_training_free_corrclip.py','repair_training_free_corrclip.py')
+       'diagnose_training_free_corrclip.py','repair_training_free_corrclip.py','verify_training_free_baselines.py')
 METHODS={
     'PEARL':('PEARL','pearl_ovss','PEARL'),
     'GLA-CLIP':('GLA-CLIP','gla_clip_segmentor','GLA_CLIPSegmentation'),
@@ -269,6 +269,10 @@ def collect(client,sftp):
     protocol=read(LOCAL/'protocol.json')
     repairs=remote_json(sftp,ROOT+'/source_repairs.json') or {}
     if repairs:write(LOCAL/'source_repairs.json',repairs)
+    verification=remote_json(sftp,ROOT+'/verification.json')
+    if verification:write(LOCAL/'verification.json',verification)
+    suite_result=remote_json(sftp,ROOT+'/suite_results.json')
+    if suite_result:write(LOCAL/'suite_results.json',suite_result)
     lines=['# Pinned native training-free baseline comparison','',protocol['provenance'],'',
         'Status: '+str(state.get('status','preparing'))+'. Only verified complete protocols receive scores.','']
     scores={}
@@ -367,6 +371,35 @@ def collect(client,sftp):
         lines+=['','## Incomplete jobs','']
         lines += ['- '+key+': '+str(value.get('error',value) if isinstance(value,dict) else value)
             for key,value in state['failures'].items()]
+    if verification:
+        lines+=['','## Final artifact verification','',
+            'All 75 full method/protocol results and 75 standalone cost records passed verification. '
+            'The 425 evaluation shards have complete ordered unique coverage and their per-image confusion matrices sum exactly to the merged matrices. '
+            'Scored class target counts match the verified VIP references; source/config/query/checkpoint/runtime identities and frozen weights match. '
+            'Each method covers 45,200 protocol images (226,000 across five methods). '
+            'Every cost record contains the same seven image keys and seven timed repetitions per image. '
+            'Evidence: [verification.json](training_free_baselines_full_20261011/verification.json). '
+            'Recheck without inference: `python DINOtool/scripts/verify_training_free_baselines.py --root SUITE`.']
+        losses=[]
+        for d in protocol['dataset_order']:
+            for p in ('P','D') if d=='loveda' else (d,):
+                best=max(METHODS,key=lambda m:scores[m][d][p]['mean_iou_percent'])
+                value=scores[best][d][p]['mean_iou_percent'];ours=references[d+'__'+p]['ours']
+                if value>ours:losses.append((d,p,best,value,ours))
+        lines+=['','## Reading the completed comparison','',
+            'These are full-method measurements under the recorded vocabularies, backbones and external resources; '
+            'they do not isolate the Geometry operator or establish a universal SOTA claim. '
+            'The previously selected Geometry reference leads all five new configurations on '
+            f'{len(references)-len(losses)}/{len(references)} displayed result rows (LoveDA P/D are separate rows). '
+            'The following negative outcomes for Geometry are retained:',
+            '', '|Protocol|Best new method|Method mIoU|Geometry reference|Method minus Geometry|',
+            '|---|---|---:|---:|---:|']
+        lines += [f'|{d} {p if d=="loveda" else ""}|{m}|{value:.4f}|{ours:.4f}|{value-ours:+.4f}|'
+            for d,p,m,value,ours in losses]
+        lines+=['','CorrCLIP uses MetaCLIP and online SAM2; its accuracy and resource cost are both reported. '
+            'Geometry references used prior labeled development and full-validation-viewed choices, '
+            'whereas these baseline transfer settings were frozen without target-label tuning. '
+            'VIP references are verified local repaired reimplementations, not published paper scores.']
     report=WORKSPACE/'research/TRAINING_FREE_BASELINES_FULL_20261011.md'
     report.write_text('\n'.join(lines)+'\n',encoding='utf-8')
     write(LOCAL/'comparison_summary.json',dict(status=state.get('status','preparing'),methods=scores,previous_references=references,

@@ -1,103 +1,6 @@
 {
-  "status": "running",
-  "active": [
-    {
-      "method": "SegEarth-OV",
-      "dataset": "flair1",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 8,
-      "gpu": 0,
-      "session": "gtf11_segearthov_evaluate_flair1_0",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s0",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s0.log",
-      "attempt": 0
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "flair1",
-      "phase": "evaluate",
-      "shard": 1,
-      "shards": 8,
-      "gpu": 1,
-      "session": "gtf11_segearthov_evaluate_flair1_1",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s1",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s1.log",
-      "attempt": 0
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "flair1",
-      "phase": "evaluate",
-      "shard": 2,
-      "shards": 8,
-      "gpu": 2,
-      "session": "gtf11_segearthov_evaluate_flair1_2",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s2",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s2.log",
-      "attempt": 0
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "flair1",
-      "phase": "evaluate",
-      "shard": 3,
-      "shards": 8,
-      "gpu": 3,
-      "session": "gtf11_segearthov_evaluate_flair1_3",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s3",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s3.log",
-      "attempt": 0
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "flair1",
-      "phase": "evaluate",
-      "shard": 4,
-      "shards": 8,
-      "gpu": 4,
-      "session": "gtf11_segearthov_evaluate_flair1_4",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s4",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s4.log",
-      "attempt": 0
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "flair1",
-      "phase": "evaluate",
-      "shard": 5,
-      "shards": 8,
-      "gpu": 5,
-      "session": "gtf11_segearthov_evaluate_flair1_5",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s5",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s5.log",
-      "attempt": 0
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "flair1",
-      "phase": "evaluate",
-      "shard": 6,
-      "shards": 8,
-      "gpu": 6,
-      "session": "gtf11_segearthov_evaluate_flair1_6",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s6",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s6.log",
-      "attempt": 0
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "flair1",
-      "phase": "evaluate",
-      "shard": 7,
-      "shards": 8,
-      "gpu": 7,
-      "session": "gtf11_segearthov_evaluate_flair1_7",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s7",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s7.log",
-      "attempt": 0
-    }
-  ],
+  "status": "complete",
+  "active": [],
   "completed": [
     "PEARL/smoke/vdd/0",
     "PEARL/smoke/potsdam/0",
@@ -594,7 +497,86 @@
     "SegEarth-OV/evaluate/loveda/7",
     "SegEarth-OV/evaluate/landcoverai/5",
     "SegEarth-OV/evaluate/landcoverai/6",
-    "SegEarth-OV/evaluate/landcoverai/7"
+    "SegEarth-OV/evaluate/landcoverai/7",
+    "SegEarth-OV/evaluate/flair1/0",
+    "SegEarth-OV/evaluate/flair1/1",
+    "SegEarth-OV/evaluate/flair1/2",
+    "SegEarth-OV/evaluate/flair1/3",
+    "SegEarth-OV/evaluate/flair1/4",
+    "SegEarth-OV/evaluate/flair1/5",
+    "SegEarth-OV/evaluate/flair1/6",
+    "SegEarth-OV/evaluate/flair1/7",
+    "SegEarth-OV/evaluate/voc20/0",
+    "SegEarth-OV/evaluate/voc20/1",
+    "SegEarth-OV/evaluate/voc20/2",
+    "SegEarth-OV/evaluate/voc20/3",
+    "SegEarth-OV/evaluate/voc20/4",
+    "SegEarth-OV/evaluate/voc20/5",
+    "SegEarth-OV/evaluate/voc20/6",
+    "SegEarth-OV/evaluate/voc20/7",
+    "SegEarth-OV/evaluate/voc21/0",
+    "SegEarth-OV/evaluate/voc21/1",
+    "SegEarth-OV/evaluate/voc21/2",
+    "SegEarth-OV/evaluate/voc21/3",
+    "SegEarth-OV/evaluate/voc21/4",
+    "SegEarth-OV/evaluate/voc21/5",
+    "SegEarth-OV/evaluate/voc21/6",
+    "SegEarth-OV/evaluate/voc21/7",
+    "SegEarth-OV/evaluate/ade150/0",
+    "SegEarth-OV/evaluate/ade150/1",
+    "SegEarth-OV/evaluate/ade150/2",
+    "SegEarth-OV/evaluate/ade150/3",
+    "SegEarth-OV/evaluate/ade150/4",
+    "SegEarth-OV/evaluate/ade150/5",
+    "SegEarth-OV/evaluate/ade150/6",
+    "SegEarth-OV/evaluate/ade150/7",
+    "SegEarth-OV/evaluate/context59/0",
+    "SegEarth-OV/evaluate/context59/1",
+    "SegEarth-OV/evaluate/context59/2",
+    "SegEarth-OV/evaluate/context59/3",
+    "SegEarth-OV/evaluate/context59/4",
+    "SegEarth-OV/evaluate/context59/5",
+    "SegEarth-OV/evaluate/context59/6",
+    "SegEarth-OV/evaluate/context59/7",
+    "SegEarth-OV/evaluate/context60/0",
+    "SegEarth-OV/evaluate/context60/1",
+    "SegEarth-OV/evaluate/context60/2",
+    "SegEarth-OV/evaluate/context60/3",
+    "SegEarth-OV/evaluate/context60/4",
+    "SegEarth-OV/evaluate/context60/5",
+    "SegEarth-OV/evaluate/context60/6",
+    "SegEarth-OV/evaluate/context60/7",
+    "SegEarth-OV/evaluate/coco_object81/0",
+    "SegEarth-OV/evaluate/coco_object81/1",
+    "SegEarth-OV/evaluate/coco_object81/2",
+    "SegEarth-OV/evaluate/coco_object81/3",
+    "SegEarth-OV/evaluate/coco_object81/4",
+    "SegEarth-OV/evaluate/coco_object81/6",
+    "SegEarth-OV/evaluate/coco_object81/7",
+    "SegEarth-OV/evaluate/coco_object81/5",
+    "SegEarth-OV/evaluate/coco_stuff171/0",
+    "SegEarth-OV/evaluate/coco_stuff171/1",
+    "SegEarth-OV/evaluate/coco_stuff171/2",
+    "SegEarth-OV/evaluate/coco_stuff171/3",
+    "SegEarth-OV/evaluate/coco_stuff171/4",
+    "SegEarth-OV/evaluate/coco_stuff171/5",
+    "SegEarth-OV/evaluate/coco_stuff171/6",
+    "SegEarth-OV/cost/vdd/0",
+    "SegEarth-OV/evaluate/coco_stuff171/7",
+    "SegEarth-OV/cost/potsdam/0",
+    "SegEarth-OV/cost/udd5/0",
+    "SegEarth-OV/cost/vaihingen/0",
+    "SegEarth-OV/cost/oem/0",
+    "SegEarth-OV/cost/loveda/0",
+    "SegEarth-OV/cost/landcoverai/0",
+    "SegEarth-OV/cost/flair1/0",
+    "SegEarth-OV/cost/voc20/0",
+    "SegEarth-OV/cost/voc21/0",
+    "SegEarth-OV/cost/ade150/0",
+    "SegEarth-OV/cost/context59/0",
+    "SegEarth-OV/cost/context60/0",
+    "SegEarth-OV/cost/coco_object81/0",
+    "SegEarth-OV/cost/coco_stuff171/0"
   ],
   "failures": {},
   "merged": {
@@ -803,507 +785,33 @@
     },
     "SegEarth-OV/landcoverai": {
       "landcoverai": 32.7043
+    },
+    "SegEarth-OV/flair1": {
+      "flair1": 18.2782
+    },
+    "SegEarth-OV/voc20": {
+      "voc20": 73.0056
+    },
+    "SegEarth-OV/voc21": {
+      "voc21": 57.1139
+    },
+    "SegEarth-OV/ade150": {
+      "ade150": 17.8261
+    },
+    "SegEarth-OV/context59": {
+      "context59": 35.5333
+    },
+    "SegEarth-OV/context60": {
+      "context60": 32.6773
+    },
+    "SegEarth-OV/coco_object81": {
+      "coco_object81": 31.2886
+    },
+    "SegEarth-OV/coco_stuff171": {
+      "coco_stuff171": 23.3325
     }
   },
-  "pending": [
-    {
-      "method": "SegEarth-OV",
-      "dataset": "voc20",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "voc20",
-      "phase": "evaluate",
-      "shard": 1,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "voc20",
-      "phase": "evaluate",
-      "shard": 2,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "voc20",
-      "phase": "evaluate",
-      "shard": 3,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "voc20",
-      "phase": "evaluate",
-      "shard": 4,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "voc20",
-      "phase": "evaluate",
-      "shard": 5,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "voc20",
-      "phase": "evaluate",
-      "shard": 6,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "voc20",
-      "phase": "evaluate",
-      "shard": 7,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "voc21",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "voc21",
-      "phase": "evaluate",
-      "shard": 1,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "voc21",
-      "phase": "evaluate",
-      "shard": 2,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "voc21",
-      "phase": "evaluate",
-      "shard": 3,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "voc21",
-      "phase": "evaluate",
-      "shard": 4,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "voc21",
-      "phase": "evaluate",
-      "shard": 5,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "voc21",
-      "phase": "evaluate",
-      "shard": 6,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "voc21",
-      "phase": "evaluate",
-      "shard": 7,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "ade150",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "ade150",
-      "phase": "evaluate",
-      "shard": 1,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "ade150",
-      "phase": "evaluate",
-      "shard": 2,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "ade150",
-      "phase": "evaluate",
-      "shard": 3,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "ade150",
-      "phase": "evaluate",
-      "shard": 4,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "ade150",
-      "phase": "evaluate",
-      "shard": 5,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "ade150",
-      "phase": "evaluate",
-      "shard": 6,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "ade150",
-      "phase": "evaluate",
-      "shard": 7,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "context59",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "context59",
-      "phase": "evaluate",
-      "shard": 1,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "context59",
-      "phase": "evaluate",
-      "shard": 2,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "context59",
-      "phase": "evaluate",
-      "shard": 3,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "context59",
-      "phase": "evaluate",
-      "shard": 4,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "context59",
-      "phase": "evaluate",
-      "shard": 5,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "context59",
-      "phase": "evaluate",
-      "shard": 6,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "context59",
-      "phase": "evaluate",
-      "shard": 7,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "context60",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "context60",
-      "phase": "evaluate",
-      "shard": 1,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "context60",
-      "phase": "evaluate",
-      "shard": 2,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "context60",
-      "phase": "evaluate",
-      "shard": 3,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "context60",
-      "phase": "evaluate",
-      "shard": 4,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "context60",
-      "phase": "evaluate",
-      "shard": 5,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "context60",
-      "phase": "evaluate",
-      "shard": 6,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "context60",
-      "phase": "evaluate",
-      "shard": 7,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "coco_object81",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "coco_object81",
-      "phase": "evaluate",
-      "shard": 1,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "coco_object81",
-      "phase": "evaluate",
-      "shard": 2,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "coco_object81",
-      "phase": "evaluate",
-      "shard": 3,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "coco_object81",
-      "phase": "evaluate",
-      "shard": 4,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "coco_object81",
-      "phase": "evaluate",
-      "shard": 5,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "coco_object81",
-      "phase": "evaluate",
-      "shard": 6,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "coco_object81",
-      "phase": "evaluate",
-      "shard": 7,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "coco_stuff171",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "coco_stuff171",
-      "phase": "evaluate",
-      "shard": 1,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "coco_stuff171",
-      "phase": "evaluate",
-      "shard": 2,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "coco_stuff171",
-      "phase": "evaluate",
-      "shard": 3,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "coco_stuff171",
-      "phase": "evaluate",
-      "shard": 4,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "coco_stuff171",
-      "phase": "evaluate",
-      "shard": 5,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "coco_stuff171",
-      "phase": "evaluate",
-      "shard": 6,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "coco_stuff171",
-      "phase": "evaluate",
-      "shard": 7,
-      "shards": 8
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "vdd",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "potsdam",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "udd5",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "vaihingen",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "oem",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "loveda",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "landcoverai",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "flair1",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "voc20",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "voc21",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "ade150",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "context59",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "context60",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "coco_object81",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    },
-    {
-      "method": "SegEarth-OV",
-      "dataset": "coco_stuff171",
-      "phase": "cost",
-      "shard": 0,
-      "shards": 1
-    }
-  ],
+  "pending": [],
   "current_method": "SegEarth-OV",
   "completed_outputs": {
     "PTC/evaluate/flair1/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/flair1/evaluate/s0",
@@ -1546,7 +1054,86 @@
     "SegEarth-OV/evaluate/loveda/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/loveda/evaluate/s7",
     "SegEarth-OV/evaluate/landcoverai/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/landcoverai/evaluate/s5",
     "SegEarth-OV/evaluate/landcoverai/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/landcoverai/evaluate/s6",
-    "SegEarth-OV/evaluate/landcoverai/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/landcoverai/evaluate/s7"
+    "SegEarth-OV/evaluate/landcoverai/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/landcoverai/evaluate/s7",
+    "SegEarth-OV/evaluate/flair1/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s0",
+    "SegEarth-OV/evaluate/flair1/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s1",
+    "SegEarth-OV/evaluate/flair1/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s2",
+    "SegEarth-OV/evaluate/flair1/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s3",
+    "SegEarth-OV/evaluate/flair1/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s4",
+    "SegEarth-OV/evaluate/flair1/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s5",
+    "SegEarth-OV/evaluate/flair1/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s6",
+    "SegEarth-OV/evaluate/flair1/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s7",
+    "SegEarth-OV/evaluate/voc20/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/voc20/evaluate/s0",
+    "SegEarth-OV/evaluate/voc20/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/voc20/evaluate/s1",
+    "SegEarth-OV/evaluate/voc20/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/voc20/evaluate/s2",
+    "SegEarth-OV/evaluate/voc20/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/voc20/evaluate/s3",
+    "SegEarth-OV/evaluate/voc20/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/voc20/evaluate/s4",
+    "SegEarth-OV/evaluate/voc20/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/voc20/evaluate/s5",
+    "SegEarth-OV/evaluate/voc20/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/voc20/evaluate/s6",
+    "SegEarth-OV/evaluate/voc20/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/voc20/evaluate/s7",
+    "SegEarth-OV/evaluate/voc21/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/voc21/evaluate/s0",
+    "SegEarth-OV/evaluate/voc21/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/voc21/evaluate/s1",
+    "SegEarth-OV/evaluate/voc21/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/voc21/evaluate/s2",
+    "SegEarth-OV/evaluate/voc21/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/voc21/evaluate/s3",
+    "SegEarth-OV/evaluate/voc21/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/voc21/evaluate/s4",
+    "SegEarth-OV/evaluate/voc21/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/voc21/evaluate/s5",
+    "SegEarth-OV/evaluate/voc21/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/voc21/evaluate/s6",
+    "SegEarth-OV/evaluate/voc21/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/voc21/evaluate/s7",
+    "SegEarth-OV/evaluate/ade150/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/ade150/evaluate/s0",
+    "SegEarth-OV/evaluate/ade150/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/ade150/evaluate/s1",
+    "SegEarth-OV/evaluate/ade150/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/ade150/evaluate/s2",
+    "SegEarth-OV/evaluate/ade150/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/ade150/evaluate/s3",
+    "SegEarth-OV/evaluate/ade150/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/ade150/evaluate/s4",
+    "SegEarth-OV/evaluate/ade150/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/ade150/evaluate/s5",
+    "SegEarth-OV/evaluate/ade150/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/ade150/evaluate/s6",
+    "SegEarth-OV/evaluate/ade150/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/ade150/evaluate/s7",
+    "SegEarth-OV/evaluate/context59/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/context59/evaluate/s0",
+    "SegEarth-OV/evaluate/context59/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/context59/evaluate/s1",
+    "SegEarth-OV/evaluate/context59/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/context59/evaluate/s2",
+    "SegEarth-OV/evaluate/context59/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/context59/evaluate/s3",
+    "SegEarth-OV/evaluate/context59/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/context59/evaluate/s4",
+    "SegEarth-OV/evaluate/context59/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/context59/evaluate/s5",
+    "SegEarth-OV/evaluate/context59/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/context59/evaluate/s6",
+    "SegEarth-OV/evaluate/context59/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/context59/evaluate/s7",
+    "SegEarth-OV/evaluate/context60/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/context60/evaluate/s0",
+    "SegEarth-OV/evaluate/context60/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/context60/evaluate/s1",
+    "SegEarth-OV/evaluate/context60/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/context60/evaluate/s2",
+    "SegEarth-OV/evaluate/context60/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/context60/evaluate/s3",
+    "SegEarth-OV/evaluate/context60/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/context60/evaluate/s4",
+    "SegEarth-OV/evaluate/context60/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/context60/evaluate/s5",
+    "SegEarth-OV/evaluate/context60/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/context60/evaluate/s6",
+    "SegEarth-OV/evaluate/context60/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/context60/evaluate/s7",
+    "SegEarth-OV/evaluate/coco_object81/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/coco_object81/evaluate/s0",
+    "SegEarth-OV/evaluate/coco_object81/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/coco_object81/evaluate/s1",
+    "SegEarth-OV/evaluate/coco_object81/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/coco_object81/evaluate/s2",
+    "SegEarth-OV/evaluate/coco_object81/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/coco_object81/evaluate/s3",
+    "SegEarth-OV/evaluate/coco_object81/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/coco_object81/evaluate/s4",
+    "SegEarth-OV/evaluate/coco_object81/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/coco_object81/evaluate/s6",
+    "SegEarth-OV/evaluate/coco_object81/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/coco_object81/evaluate/s7",
+    "SegEarth-OV/evaluate/coco_object81/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/coco_object81/evaluate/s5",
+    "SegEarth-OV/evaluate/coco_stuff171/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/coco_stuff171/evaluate/s0",
+    "SegEarth-OV/evaluate/coco_stuff171/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/coco_stuff171/evaluate/s1",
+    "SegEarth-OV/evaluate/coco_stuff171/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/coco_stuff171/evaluate/s2",
+    "SegEarth-OV/evaluate/coco_stuff171/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/coco_stuff171/evaluate/s3",
+    "SegEarth-OV/evaluate/coco_stuff171/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/coco_stuff171/evaluate/s4",
+    "SegEarth-OV/evaluate/coco_stuff171/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/coco_stuff171/evaluate/s5",
+    "SegEarth-OV/evaluate/coco_stuff171/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/coco_stuff171/evaluate/s6",
+    "SegEarth-OV/cost/vdd/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/vdd/cost/s0",
+    "SegEarth-OV/evaluate/coco_stuff171/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/coco_stuff171/evaluate/s7",
+    "SegEarth-OV/cost/potsdam/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/potsdam/cost/s0",
+    "SegEarth-OV/cost/udd5/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/udd5/cost/s0",
+    "SegEarth-OV/cost/vaihingen/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/vaihingen/cost/s0",
+    "SegEarth-OV/cost/oem/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/oem/cost/s0",
+    "SegEarth-OV/cost/loveda/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/loveda/cost/s0",
+    "SegEarth-OV/cost/landcoverai/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/landcoverai/cost/s0",
+    "SegEarth-OV/cost/flair1/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/cost/s0",
+    "SegEarth-OV/cost/voc20/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/voc20/cost/s0",
+    "SegEarth-OV/cost/voc21/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/voc21/cost/s0",
+    "SegEarth-OV/cost/ade150/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/ade150/cost/s0",
+    "SegEarth-OV/cost/context59/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/context59/cost/s0",
+    "SegEarth-OV/cost/context60/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/context60/cost/s0",
+    "SegEarth-OV/cost/coco_object81/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/coco_object81/cost/s0",
+    "SegEarth-OV/cost/coco_stuff171/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/coco_stuff171/cost/s0"
   },
   "attempts": {
     "PTC/smoke/udd5/0": 1,

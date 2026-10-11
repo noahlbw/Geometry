@@ -1,0 +1,41 @@
+{
+  "status": "complete",
+  "complete_protocols": 75,
+  "standalone_costs": 75,
+  "per_image_confusion_shards_verified": 425,
+  "total_protocol_images": 226000,
+  "methods": {
+    "PEARL": {
+      "complete_protocols": 15,
+      "protocol_images": 45200,
+      "standalone_costs": 15
+    },
+    "GLA-CLIP": {
+      "complete_protocols": 15,
+      "protocol_images": 45200,
+      "standalone_costs": 15
+    },
+    "PTC": {
+      "complete_protocols": 15,
+      "protocol_images": 45200,
+      "standalone_costs": 15
+    },
+    "CorrCLIP": {
+      "complete_protocols": 15,
+      "protocol_images": 45200,
+      "standalone_costs": 15
+    },
+    "SegEarth-OV": {
+      "complete_protocols": 15,
+      "protocol_images": 45200,
+      "standalone_costs": 15
+    }
+  },
+  "unique_ordered_coverage_verified": true,
+  "per_image_confusion_sums_verified": true,
+  "vip_scored_target_counts_match": true,
+  "frozen_source_config_query_checkpoint_runtime_identities_verified": true,
+  "cost_7_images_by_7_repeats_verified": true,
+  "model_weights_frozen": true,
+  "note": "Protocol-image total includes shared VOC20/21 and PC59/60 photos; LoveDA P/D inference is separate."
+}

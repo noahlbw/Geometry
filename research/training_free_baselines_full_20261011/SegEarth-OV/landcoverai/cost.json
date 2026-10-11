@@ -1,0 +1,248 @@
+{
+  "status": "complete",
+  "signature": {
+    "implementation": "pinned-native-training-free-baseline-suite-v1-20261011",
+    "method": "SegEarth-OV",
+    "dataset": "landcoverai",
+    "config": {
+      "method": "SegEarth-OV",
+      "module": "segearth_segmentor",
+      "class": "SegEarthSegmentation",
+      "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/SegEarth-OV",
+      "model": {
+        "type": "SegEarthSegmentation",
+        "clip_type": "CLIP",
+        "vit_type": "ViT-B/16",
+        "model_type": "SegEarth",
+        "ignore_residual": true,
+        "feature_up": true,
+        "feature_up_cfg": {
+          "model_name": "jbu_one",
+          "model_path": "simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt"
+        },
+        "cls_token_lambda": -0.3,
+        "prob_thd": 0.0,
+        "bg_idx": 0
+      },
+      "word_file": "words/SegEarth-OV/landcoverai.txt",
+      "word_sha256": "d0b3f117853593ffd6b71848408354dc8a1a68442028918661409cc46c0be936",
+      "word_origin": "one locked canonical dataset class per line; no alias tuning",
+      "resize": {
+        "scale": [
+          448,
+          448
+        ],
+        "keep_ratio": true
+      },
+      "native_protocol_config": false,
+      "config_origin": "fixed transfer",
+      "parser": "native comma-space",
+      "full_flags": {},
+      "prediction_map": null
+    },
+    "source_commit": "3e22a969b32c6d751bdbba64a88a0b670e630f55",
+    "checkpoint_manifest": {
+      "weights": {
+        "ViT-B-16.pt": {
+          "url": "https://openaipublic.azureedge.net/clip/models/5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f/ViT-B-16.pt",
+          "sha256": "5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f",
+          "bytes": 350837078
+        },
+        "dino_vitbase8_pretrain.pth": {
+          "url": "https://dl.fbaipublicfiles.com/dino/dino_vitbase8_pretrain/dino_vitbase8_pretrain.pth",
+          "sha256": "575f0efc4838938314afa09897a62ed2b87919928b5edcd133abb907328995eb",
+          "bytes": 343279349
+        },
+        "b16_fullcc2.5b.pt": {
+          "url": "https://dl.fbaipublicfiles.com/MMPT/metaclip/b16_fullcc2.5b.pt",
+          "sha256": "512ea0fb9f2cf88d027e96e4674247a1a91a96af18abc2e2fcdb8008c551e04b",
+          "bytes": 1795798327
+        },
+        "sam2_hiera_large.pt": {
+          "url": "https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt",
+          "sha256": "7442e4e9b732a508f80e141e7c2913437a3610ee0c77381a66658c3a445df87b",
+          "bytes": 897952466
+        },
+        "xclip_jbu_one_million_aid.ckpt": {
+          "url": "https://raw.githubusercontent.com/likyoo/SegEarth-OV/3e22a969b32c6d751bdbba64a88a0b670e630f55/simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt",
+          "sha256": "cabc594d0042535f3413ac89d5f0b8b3173aecf18e2e469fb91b015ea4de49d8",
+          "bytes": 5690776
+        }
+      },
+      "dependencies": {
+        "dino": {
+          "url": "https://github.com/facebookresearch/dino.git",
+          "commit": "7c446df5b9f45747937fb0d72314eb9f7b66930a",
+          "archive_sha256": "3c65181860269457eed8367f313a5a6d695951dd985750a940722de2175a05ff"
+        },
+        "sam2": {
+          "url": "https://github.com/facebookresearch/sam2.git",
+          "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+          "archive_sha256": "fe93082a71a885a427894b1eab76341768781b6b58a298a0717e03862097d137"
+        },
+        "SimFeatUp": {
+          "url": "https://github.com/likyoo/SimFeatUp.git",
+          "commit": "78a0ba70b1d6ea7283684a88c98ce338af4593ca",
+          "archive_sha256": "4aec32fbc5140c048042545726a74a049c80590a57eeba74d64fd81b1d20665a"
+        }
+      }
+    },
+    "runtime": {
+      "packages": {
+        "torch": "2.4.0",
+        "torchvision": "0.19.0",
+        "mmcv": "2.2.0",
+        "mmengine": "0.10.7",
+        "mmsegmentation": "1.2.2",
+        "numpy": "1.26.4",
+        "transformers": "4.44.2",
+        "timm": "1.0.9"
+      },
+      "compatibility": {
+        "operation": "MMCV version-guard upper bound 2.2.0 -> 2.2.1 only",
+        "before_sha256": "6800b7c849b11fbfac8e0ef481601659e2621d9a2d7ed335c24c18d6453d0ba9",
+        "after_sha256": "b03255d861c75871be63ae4488720b8d6c0f373bbaa497a09cc168f853ef5048"
+      }
+    },
+    "sample_manifest_sha256": "0e752e8426a9ae24fce26d56ddeeadf98c9a5172338cc3dcfdb4f17dbd2d8431"
+  },
+  "execution_repairs": null,
+  "images": [
+    {
+      "key": "M-33-20-D-c-4-2_101",
+      "original_shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        287.26917901076376,
+        287.2429930139333,
+        286.8212959729135,
+        287.3858609236777,
+        286.9744470808655,
+        286.4566941279918,
+        286.5533339791
+      ],
+      "median_ms": 286.9744470808655,
+      "peak_allocated_bytes": 1204863488,
+      "peak_reserved_bytes": 1629487104
+    },
+    {
+      "key": "M-33-7-A-d-3-2_259",
+      "original_shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        286.13870800472796,
+        286.1345198471099,
+        285.8977038413286,
+        286.0089580062777,
+        286.096571944654,
+        286.3909830339253,
+        286.4544061012566
+      ],
+      "median_ms": 286.1345198471099,
+      "peak_allocated_bytes": 1204863488,
+      "peak_reserved_bytes": 1629487104
+    },
+    {
+      "key": "M-34-56-A-b-1-4_14",
+      "original_shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        286.4778679795563,
+        286.45265009254217,
+        286.37115587480366,
+        286.44086397252977,
+        286.4442318677902,
+        286.5279938559979,
+        286.4760209340602
+      ],
+      "median_ms": 286.45265009254217,
+      "peak_allocated_bytes": 1204863488,
+      "peak_reserved_bytes": 1629487104
+    },
+    {
+      "key": "M-34-68-B-a-1-3_239",
+      "original_shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        286.6182450670749,
+        286.66404797695577,
+        286.44038713537157,
+        286.19215707294643,
+        286.04660113342106,
+        286.04878089390695,
+        287.5078890938312
+      ],
+      "median_ms": 286.44038713537157,
+      "peak_allocated_bytes": 1204863488,
+      "peak_reserved_bytes": 1629487104
+    },
+    {
+      "key": "N-33-139-C-d-2-2_185",
+      "original_shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        286.7643649224192,
+        286.1877118702978,
+        285.67788004875183,
+        285.6738141272217,
+        285.70882393978536,
+        286.0606659669429,
+        286.08375508338213
+      ],
+      "median_ms": 286.0606659669429,
+      "peak_allocated_bytes": 1204863488,
+      "peak_reserved_bytes": 1629487104
+    },
+    {
+      "key": "N-34-140-A-b-4-2_1",
+      "original_shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        286.6144059225917,
+        286.6629029158503,
+        286.5697538945824,
+        286.74583486281335,
+        286.27601102925837,
+        286.7462120484561,
+        286.75811807624996
+      ],
+      "median_ms": 286.6629029158503,
+      "peak_allocated_bytes": 1204863488,
+      "peak_reserved_bytes": 1629487104
+    },
+    {
+      "key": "N-34-97-D-c-2-4_75",
+      "original_shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        286.637564888224,
+        286.5704339928925,
+        286.64254606701434,
+        286.51157789863646,
+        286.2999171484262,
+        286.2941750790924,
+        286.43457195721567
+      ],
+      "median_ms": 286.51157789863646,
+      "peak_allocated_bytes": 1204863488,
+      "peak_reserved_bytes": 1629487104
+    }
+  ],
+  "median_ms": 286.4544061012566,
+  "includes": "BGR conversion/official resize/preprocess/native inference/postprocess; CorrCLIP includes online SAM2",
+  "excludes": "disk decode, model/text initialization, metric/target loading"
+}

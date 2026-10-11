@@ -1,0 +1,238 @@
+{
+  "status": "complete",
+  "datasets": {
+    "PEARL/vaihingen": {
+      "vaihingen": 26.1222
+    },
+    "PEARL/udd5": {
+      "udd5": 43.3762
+    },
+    "PEARL/vdd": {
+      "vdd": 37.9121
+    },
+    "PEARL/oem": {
+      "oem": 27.707
+    },
+    "PEARL/potsdam": {
+      "potsdam": 31.5545
+    },
+    "PEARL/loveda": {
+      "P": 47.5212,
+      "D": 29.6031
+    },
+    "PEARL/landcoverai": {
+      "landcoverai": 30.9757
+    },
+    "PEARL/flair1": {
+      "flair1": 19.3884
+    },
+    "PEARL/voc20": {
+      "voc20": 86.9143
+    },
+    "PEARL/voc21": {
+      "voc21": 64.0821
+    },
+    "PEARL/ade150": {
+      "ade150": 19.3537
+    },
+    "PEARL/context59": {
+      "context59": 38.7213
+    },
+    "PEARL/context60": {
+      "context60": 36.5263
+    },
+    "PEARL/coco_object81": {
+      "coco_object81": 38.6592
+    },
+    "PEARL/coco_stuff171": {
+      "coco_stuff171": 26.3142
+    },
+    "GLA-CLIP/vaihingen": {
+      "vaihingen": 28.5356
+    },
+    "GLA-CLIP/udd5": {
+      "udd5": 47.7428
+    },
+    "GLA-CLIP/vdd": {
+      "vdd": 37.8462
+    },
+    "GLA-CLIP/oem": {
+      "oem": 30.7688
+    },
+    "GLA-CLIP/potsdam": {
+      "potsdam": 34.8473
+    },
+    "GLA-CLIP/loveda": {
+      "P": 50.6544,
+      "D": 31.083
+    },
+    "GLA-CLIP/landcoverai": {
+      "landcoverai": 31.8306
+    },
+    "GLA-CLIP/flair1": {
+      "flair1": 19.4995
+    },
+    "GLA-CLIP/voc20": {
+      "voc20": 84.2087
+    },
+    "GLA-CLIP/voc21": {
+      "voc21": 66.2608
+    },
+    "GLA-CLIP/ade150": {
+      "ade150": 20.0191
+    },
+    "GLA-CLIP/context59": {
+      "context59": 40.067
+    },
+    "GLA-CLIP/context60": {
+      "context60": 37.6621
+    },
+    "GLA-CLIP/coco_object81": {
+      "coco_object81": 39.0724
+    },
+    "GLA-CLIP/coco_stuff171": {
+      "coco_stuff171": 26.9368
+    },
+    "PTC/vaihingen": {
+      "vaihingen": 25.8137
+    },
+    "PTC/vdd": {
+      "vdd": 41.1191
+    },
+    "PTC/oem": {
+      "oem": 29.4806
+    },
+    "PTC/potsdam": {
+      "potsdam": 33.6962
+    },
+    "PTC/flair1": {
+      "flair1": 20.7257
+    },
+    "PTC/udd5": {
+      "udd5": 39.8159
+    },
+    "PTC/loveda": {
+      "P": 50.6271,
+      "D": 31.1501
+    },
+    "PTC/landcoverai": {
+      "landcoverai": 33.0437
+    },
+    "PTC/voc20": {
+      "voc20": 82.7334
+    },
+    "PTC/voc21": {
+      "voc21": 67.1752
+    },
+    "PTC/ade150": {
+      "ade150": 20.909
+    },
+    "PTC/context59": {
+      "context59": 40.5982
+    },
+    "PTC/context60": {
+      "context60": 37.7346
+    },
+    "PTC/coco_object81": {
+      "coco_object81": 39.6947
+    },
+    "PTC/coco_stuff171": {
+      "coco_stuff171": 27.4517
+    },
+    "CorrCLIP/vaihingen": {
+      "vaihingen": 25.0724
+    },
+    "CorrCLIP/udd5": {
+      "udd5": 40.0991
+    },
+    "CorrCLIP/vdd": {
+      "vdd": 37.127
+    },
+    "CorrCLIP/oem": {
+      "oem": 24.4936
+    },
+    "CorrCLIP/potsdam": {
+      "potsdam": 32.2386
+    },
+    "CorrCLIP/loveda": {
+      "P": 43.7985,
+      "D": 26.6162
+    },
+    "CorrCLIP/landcoverai": {
+      "landcoverai": 30.8354
+    },
+    "CorrCLIP/flair1": {
+      "flair1": 20.3994
+    },
+    "CorrCLIP/voc20": {
+      "voc20": 87.5405
+    },
+    "CorrCLIP/voc21": {
+      "voc21": 73.9381
+    },
+    "CorrCLIP/ade150": {
+      "ade150": 26.4301
+    },
+    "CorrCLIP/context59": {
+      "context59": 47.7036
+    },
+    "CorrCLIP/context60": {
+      "context60": 45.1164
+    },
+    "CorrCLIP/coco_object81": {
+      "coco_object81": 44.6265
+    },
+    "CorrCLIP/coco_stuff171": {
+      "coco_stuff171": 31.8365
+    },
+    "SegEarth-OV/udd5": {
+      "udd5": 50.5568
+    },
+    "SegEarth-OV/vaihingen": {
+      "vaihingen": 29.2379
+    },
+    "SegEarth-OV/vdd": {
+      "vdd": 44.8106
+    },
+    "SegEarth-OV/oem": {
+      "oem": 35.6405
+    },
+    "SegEarth-OV/potsdam": {
+      "potsdam": 48.1943
+    },
+    "SegEarth-OV/loveda": {
+      "P": 53.4885,
+      "D": 36.8928
+    },
+    "SegEarth-OV/landcoverai": {
+      "landcoverai": 32.7043
+    },
+    "SegEarth-OV/flair1": {
+      "flair1": 18.2782
+    },
+    "SegEarth-OV/voc20": {
+      "voc20": 73.0056
+    },
+    "SegEarth-OV/voc21": {
+      "voc21": 57.1139
+    },
+    "SegEarth-OV/ade150": {
+      "ade150": 17.8261
+    },
+    "SegEarth-OV/context59": {
+      "context59": 35.5333
+    },
+    "SegEarth-OV/context60": {
+      "context60": 32.6773
+    },
+    "SegEarth-OV/coco_object81": {
+      "coco_object81": 31.2886
+    },
+    "SegEarth-OV/coco_stuff171": {
+      "coco_stuff171": 23.3325
+    }
+  },
+  "failures": {},
+  "protocol_images_per_method": 45200,
+  "total_protocol_images": 226000
+}
