@@ -6,23 +6,23 @@ Status: running. Only verified complete protocols receive scores.
 
 |Protocol|Images|Geometry best measured|Strong verified local VIP|PEARL|GLA-CLIP|PTC|CorrCLIP|SegEarth-OV|
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-|vdd|80|60.4352|52.5765|37.9121|37.8462|41.1191|37.1270|pending|
-|potsdam|504|56.1934|44.8995|31.5545|34.8473|33.6962|pending|pending|
-|udd5|40|55.8266|44.9713|43.3762|47.7428|39.8159|40.0991|pending|
-|vaihingen|113|58.8562|49.1039|26.1222|28.5356|25.8137|25.0724|pending|
-|oem|384|45.1052|35.0388|27.7070|30.7688|29.4806|24.4936|pending|
-|loveda P|1669|69.6117|56.3110|47.5212|50.6544|50.6271|pending|pending|
-|loveda D|1669|45.3171|36.1457|29.6031|31.0830|31.1501|pending|pending|
-|landcoverai|1602|65.5400|54.9420|30.9757|31.8306|33.0437|pending|pending|
-|flair1|15700|43.6579|36.6074|19.3884|19.4995|20.7257|pending|pending|
-|voc20|1449|92.7936|92.5051|86.9143|84.2087|82.7334|pending|pending|
-|voc21|1449|75.8586|73.2591|64.0821|66.2608|67.1752|pending|pending|
-|ade150|2000|31.3398|29.4630|19.3537|20.0191|20.9090|pending|pending|
-|context59|5105|46.3075|45.9359|38.7213|40.0670|40.5982|pending|pending|
-|context60|5105|44.7613|42.5987|36.5263|37.6621|37.7346|pending|pending|
-|coco_object81|5000|50.3999|48.9955|38.6592|39.0724|39.6947|pending|pending|
-|coco_stuff171|5000|33.7661|33.4940|26.3142|26.9368|27.4517|pending|pending|
-|Eight remote mean|20092|53.8665|44.2856|30.8299|32.7692|31.8556|pending|pending|
+|vdd|80|60.4352|52.5765|37.9121|37.8462|41.1191|37.1270|44.8106|
+|potsdam|504|56.1934|44.8995|31.5545|34.8473|33.6962|32.2386|48.1943|
+|udd5|40|55.8266|44.9713|43.3762|47.7428|39.8159|40.0991|50.5568|
+|vaihingen|113|58.8562|49.1039|26.1222|28.5356|25.8137|25.0724|29.2379|
+|oem|384|45.1052|35.0388|27.7070|30.7688|29.4806|24.4936|35.6405|
+|loveda P|1669|69.6117|56.3110|47.5212|50.6544|50.6271|43.7985|53.4885|
+|loveda D|1669|45.3171|36.1457|29.6031|31.0830|31.1501|26.6162|36.8928|
+|landcoverai|1602|65.5400|54.9420|30.9757|31.8306|33.0437|30.8354|32.7043|
+|flair1|15700|43.6579|36.6074|19.3884|19.4995|20.7257|20.3994|pending|
+|voc20|1449|92.7936|92.5051|86.9143|84.2087|82.7334|87.5405|pending|
+|voc21|1449|75.8586|73.2591|64.0821|66.2608|67.1752|73.9381|pending|
+|ade150|2000|31.3398|29.4630|19.3537|20.0191|20.9090|26.4301|pending|
+|context59|5105|46.3075|45.9359|38.7213|40.0670|40.5982|47.7036|pending|
+|context60|5105|44.7613|42.5987|36.5263|37.6621|37.7346|45.1164|pending|
+|coco_object81|5000|50.3999|48.9955|38.6592|39.0724|39.6947|44.6265|pending|
+|coco_stuff171|5000|33.7661|33.4940|26.3142|26.9368|27.4517|31.8365|pending|
+|Eight remote mean|20092|53.8665|44.2856|30.8299|32.7692|31.8556|29.6102|pending|
 
 ## Standalone whole-image cost
 
@@ -73,6 +73,21 @@ Status: running. Only verified complete protocols receive scores.
 |PTC|coco_object81|293.69|10622.90|131.46|2.234|True|
 |PTC|coco_stuff171|253.39|1123.31|185.87|1.363|True|
 |PTC|flair1|238.56|713.16|111.14|2.146|False|
+|CorrCLIP|vdd|1313.54|6838.17|190.85|6.882|False|
+|CorrCLIP|potsdam|341.75|2608.44|104.11|3.282|False|
+|CorrCLIP|voc20|194.92|2604.48|58.16|3.351|True|
+|CorrCLIP|voc21|196.22|2604.70|59.50|3.298|True|
+|CorrCLIP|ade150|394.60|2606.23|113.98|3.462|True|
+|CorrCLIP|context60|217.07|2604.52|112.06|1.937|True|
+|CorrCLIP|udd5|1184.18|6837.51|191.15|6.195|False|
+|CorrCLIP|oem|359.23|2609.09|105.38|3.409|False|
+|CorrCLIP|vaihingen|358.41|2608.90|108.55|3.302|False|
+|CorrCLIP|landcoverai|259.63|2605.62|102.71|2.528|False|
+|CorrCLIP|loveda|335.25|3557.50|105.86|3.167|False|
+|CorrCLIP|context59|217.71|2604.89|111.84|1.947|True|
+|CorrCLIP|coco_object81|242.16|2605.48|131.46|1.842|True|
+|CorrCLIP|coco_stuff171|244.81|2605.46|185.87|1.317|True|
+|CorrCLIP|flair1|278.40|2605.63|111.14|2.505|False|
 
 Previous Geometry/VIP costs are retained below as historical full-method measurements. VIP timing uses its previous same-text bank, which can differ from the strongest accuracy reference. New baselines use the same seven VIP image keys; no matched-backbone/operator claim follows.
 
@@ -105,15 +120,4 @@ Runtime uses a dedicated Torch2.4/MMCV2.2 environment and an explicitly recorded
 
 PTC originally failed on rectangular UDD5 crops (width grid used height) and on LoveDA all-masked proxy-attention rows (softmax of all negative infinity). An isolated source copy corrects the width index and uses self-Value only on empty attention rows. Vocabulary, calibration, thresholds and finite attention rows are unchanged. Originally finite image predictions replay exactly in the image-only validation. These are local execution-repaired results, not unmodified published baseline scores. Completed original shards are preserved; merged execution_variants record each source variant. Failed attempts and logs remain in place; partial failed prefixes without a per-image checkpoint are recomputed only in new attempt directories. Exact source diffs, hashes and image-only evidence are in [source_repairs.json](training_free_baselines_full_20261011/source_repairs.json).
 
-## Incomplete jobs
-
-- CorrCLIP/smoke/flair1/0: Exited before complete verified coverage: /data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/flair1/smoke/s0.log
-- CorrCLIP/evaluate/flair1/0: Skipped because image-only smoke failed
-- CorrCLIP/evaluate/flair1/1: Skipped because image-only smoke failed
-- CorrCLIP/evaluate/flair1/2: Skipped because image-only smoke failed
-- CorrCLIP/evaluate/flair1/3: Skipped because image-only smoke failed
-- CorrCLIP/evaluate/flair1/4: Skipped because image-only smoke failed
-- CorrCLIP/evaluate/flair1/5: Skipped because image-only smoke failed
-- CorrCLIP/evaluate/flair1/6: Skipped because image-only smoke failed
-- CorrCLIP/evaluate/flair1/7: Skipped because image-only smoke failed
-- CorrCLIP/cost/flair1/0: Skipped because image-only smoke failed
+CorrCLIP native online SAM2 cannot open FLAIR multi-band TIFF with PIL. The isolated decoder compatibility patch falls back to rasterio uint8 RGB bands 1,2,3 only when PIL raises UnidentifiedImageError, matching the frozen input RGB loader. SAM2 and segmentation operators/settings are unchanged. Image-only validation confirms finite FLAIR output and exact native-image prediction replay. Source diffs and evidence are also in source_repairs.json.

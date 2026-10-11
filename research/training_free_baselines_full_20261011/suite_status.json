@@ -2,99 +2,99 @@
   "status": "running",
   "active": [
     {
-      "method": "CorrCLIP",
-      "dataset": "potsdam",
+      "method": "SegEarth-OV",
+      "dataset": "flair1",
       "phase": "evaluate",
       "shard": 0,
-      "shards": 1,
+      "shards": 8,
       "gpu": 0,
-      "session": "gtf11_corrclip_evaluate_potsdam_0",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/potsdam/evaluate/s0",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/potsdam/evaluate/s0.log",
+      "session": "gtf11_segearthov_evaluate_flair1_0",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s0",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s0.log",
       "attempt": 0
     },
     {
-      "method": "CorrCLIP",
-      "dataset": "loveda",
-      "phase": "evaluate",
-      "shard": 3,
-      "shards": 8,
-      "gpu": 2,
-      "session": "gtf11_corrclip_evaluate_loveda_3",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s3",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s3.log",
-      "attempt": 0
-    },
-    {
-      "method": "CorrCLIP",
-      "dataset": "loveda",
-      "phase": "evaluate",
-      "shard": 4,
-      "shards": 8,
-      "gpu": 1,
-      "session": "gtf11_corrclip_evaluate_loveda_4",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s4",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s4.log",
-      "attempt": 0
-    },
-    {
-      "method": "CorrCLIP",
-      "dataset": "loveda",
-      "phase": "evaluate",
-      "shard": 5,
-      "shards": 8,
-      "gpu": 7,
-      "session": "gtf11_corrclip_evaluate_loveda_5",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s5",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s5.log",
-      "attempt": 0
-    },
-    {
-      "method": "CorrCLIP",
-      "dataset": "loveda",
-      "phase": "evaluate",
-      "shard": 6,
-      "shards": 8,
-      "gpu": 3,
-      "session": "gtf11_corrclip_evaluate_loveda_6",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s6",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s6.log",
-      "attempt": 0
-    },
-    {
-      "method": "CorrCLIP",
-      "dataset": "loveda",
-      "phase": "evaluate",
-      "shard": 7,
-      "shards": 8,
-      "gpu": 4,
-      "session": "gtf11_corrclip_evaluate_loveda_7",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s7",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s7.log",
-      "attempt": 0
-    },
-    {
-      "method": "CorrCLIP",
-      "dataset": "landcoverai",
-      "phase": "evaluate",
-      "shard": 0,
-      "shards": 8,
-      "gpu": 5,
-      "session": "gtf11_corrclip_evaluate_landcoverai_0",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/landcoverai/evaluate/s0",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/landcoverai/evaluate/s0.log",
-      "attempt": 0
-    },
-    {
-      "method": "CorrCLIP",
-      "dataset": "landcoverai",
+      "method": "SegEarth-OV",
+      "dataset": "flair1",
       "phase": "evaluate",
       "shard": 1,
       "shards": 8,
+      "gpu": 1,
+      "session": "gtf11_segearthov_evaluate_flair1_1",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s1",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s1.log",
+      "attempt": 0
+    },
+    {
+      "method": "SegEarth-OV",
+      "dataset": "flair1",
+      "phase": "evaluate",
+      "shard": 2,
+      "shards": 8,
+      "gpu": 2,
+      "session": "gtf11_segearthov_evaluate_flair1_2",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s2",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s2.log",
+      "attempt": 0
+    },
+    {
+      "method": "SegEarth-OV",
+      "dataset": "flair1",
+      "phase": "evaluate",
+      "shard": 3,
+      "shards": 8,
+      "gpu": 3,
+      "session": "gtf11_segearthov_evaluate_flair1_3",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s3",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s3.log",
+      "attempt": 0
+    },
+    {
+      "method": "SegEarth-OV",
+      "dataset": "flair1",
+      "phase": "evaluate",
+      "shard": 4,
+      "shards": 8,
+      "gpu": 4,
+      "session": "gtf11_segearthov_evaluate_flair1_4",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s4",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s4.log",
+      "attempt": 0
+    },
+    {
+      "method": "SegEarth-OV",
+      "dataset": "flair1",
+      "phase": "evaluate",
+      "shard": 5,
+      "shards": 8,
+      "gpu": 5,
+      "session": "gtf11_segearthov_evaluate_flair1_5",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s5",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s5.log",
+      "attempt": 0
+    },
+    {
+      "method": "SegEarth-OV",
+      "dataset": "flair1",
+      "phase": "evaluate",
+      "shard": 6,
+      "shards": 8,
       "gpu": 6,
-      "session": "gtf11_corrclip_evaluate_landcoverai_1",
-      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/landcoverai/evaluate/s1",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/landcoverai/evaluate/s1.log",
+      "session": "gtf11_segearthov_evaluate_flair1_6",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s6",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s6.log",
+      "attempt": 0
+    },
+    {
+      "method": "SegEarth-OV",
+      "dataset": "flair1",
+      "phase": "evaluate",
+      "shard": 7,
+      "shards": 8,
+      "gpu": 7,
+      "session": "gtf11_segearthov_evaluate_flair1_7",
+      "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s7",
+      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/evaluate/s7.log",
       "attempt": 0
     }
   ],
@@ -464,42 +464,139 @@
     "CorrCLIP/evaluate/oem/0",
     "CorrCLIP/evaluate/loveda/0",
     "CorrCLIP/evaluate/loveda/1",
-    "CorrCLIP/evaluate/loveda/2"
+    "CorrCLIP/evaluate/loveda/2",
+    "CorrCLIP/evaluate/potsdam/0",
+    "CorrCLIP/evaluate/loveda/3",
+    "CorrCLIP/evaluate/loveda/4",
+    "CorrCLIP/evaluate/loveda/5",
+    "CorrCLIP/evaluate/loveda/6",
+    "CorrCLIP/evaluate/loveda/7",
+    "CorrCLIP/evaluate/landcoverai/0",
+    "CorrCLIP/evaluate/landcoverai/1",
+    "CorrCLIP/smoke/flair1/0",
+    "CorrCLIP/evaluate/voc20/0",
+    "CorrCLIP/evaluate/landcoverai/2",
+    "CorrCLIP/evaluate/landcoverai/3",
+    "CorrCLIP/evaluate/landcoverai/4",
+    "CorrCLIP/evaluate/landcoverai/5",
+    "CorrCLIP/evaluate/landcoverai/6",
+    "CorrCLIP/evaluate/landcoverai/7",
+    "CorrCLIP/evaluate/flair1/0",
+    "CorrCLIP/evaluate/flair1/1",
+    "CorrCLIP/evaluate/voc20/1",
+    "CorrCLIP/evaluate/flair1/2",
+    "CorrCLIP/evaluate/flair1/3",
+    "CorrCLIP/evaluate/flair1/4",
+    "CorrCLIP/evaluate/flair1/5",
+    "CorrCLIP/evaluate/flair1/6",
+    "CorrCLIP/evaluate/flair1/7",
+    "CorrCLIP/evaluate/voc20/2",
+    "CorrCLIP/evaluate/voc20/3",
+    "CorrCLIP/evaluate/voc20/4",
+    "CorrCLIP/evaluate/voc20/5",
+    "CorrCLIP/evaluate/voc20/6",
+    "CorrCLIP/evaluate/voc20/7",
+    "CorrCLIP/evaluate/voc21/0",
+    "CorrCLIP/evaluate/voc21/1",
+    "CorrCLIP/evaluate/voc21/2",
+    "CorrCLIP/evaluate/voc21/3",
+    "CorrCLIP/evaluate/voc21/4",
+    "CorrCLIP/evaluate/voc21/5",
+    "CorrCLIP/evaluate/voc21/6",
+    "CorrCLIP/evaluate/voc21/7",
+    "CorrCLIP/evaluate/ade150/0",
+    "CorrCLIP/evaluate/ade150/1",
+    "CorrCLIP/evaluate/ade150/2",
+    "CorrCLIP/evaluate/ade150/3",
+    "CorrCLIP/evaluate/ade150/4",
+    "CorrCLIP/evaluate/ade150/5",
+    "CorrCLIP/evaluate/ade150/6",
+    "CorrCLIP/evaluate/ade150/7",
+    "CorrCLIP/evaluate/context59/0",
+    "CorrCLIP/evaluate/context59/1",
+    "CorrCLIP/evaluate/context59/2",
+    "CorrCLIP/evaluate/context59/3",
+    "CorrCLIP/evaluate/context59/4",
+    "CorrCLIP/evaluate/context59/5",
+    "CorrCLIP/evaluate/context59/6",
+    "CorrCLIP/evaluate/context59/7",
+    "CorrCLIP/evaluate/context60/0",
+    "CorrCLIP/evaluate/context60/1",
+    "CorrCLIP/evaluate/context60/2",
+    "CorrCLIP/evaluate/context60/3",
+    "CorrCLIP/evaluate/context60/4",
+    "CorrCLIP/evaluate/context60/5",
+    "CorrCLIP/evaluate/context60/6",
+    "CorrCLIP/evaluate/context60/7",
+    "CorrCLIP/evaluate/coco_object81/0",
+    "CorrCLIP/evaluate/coco_object81/1",
+    "CorrCLIP/evaluate/coco_object81/2",
+    "CorrCLIP/evaluate/coco_object81/3",
+    "CorrCLIP/evaluate/coco_object81/4",
+    "CorrCLIP/evaluate/coco_object81/5",
+    "CorrCLIP/evaluate/coco_object81/6",
+    "CorrCLIP/evaluate/coco_object81/7",
+    "CorrCLIP/evaluate/coco_stuff171/0",
+    "CorrCLIP/evaluate/coco_stuff171/1",
+    "CorrCLIP/evaluate/coco_stuff171/2",
+    "CorrCLIP/evaluate/coco_stuff171/3",
+    "CorrCLIP/cost/potsdam/0",
+    "CorrCLIP/evaluate/coco_stuff171/4",
+    "CorrCLIP/evaluate/coco_stuff171/5",
+    "CorrCLIP/evaluate/coco_stuff171/6",
+    "CorrCLIP/evaluate/coco_stuff171/7",
+    "CorrCLIP/cost/vaihingen/0",
+    "CorrCLIP/cost/oem/0",
+    "CorrCLIP/cost/vdd/0",
+    "CorrCLIP/cost/udd5/0",
+    "CorrCLIP/cost/loveda/0",
+    "CorrCLIP/cost/landcoverai/0",
+    "CorrCLIP/cost/flair1/0",
+    "CorrCLIP/cost/voc20/0",
+    "CorrCLIP/cost/voc21/0",
+    "CorrCLIP/cost/ade150/0",
+    "CorrCLIP/cost/context59/0",
+    "CorrCLIP/cost/context60/0",
+    "CorrCLIP/cost/coco_object81/0",
+    "CorrCLIP/cost/coco_stuff171/0",
+    "SegEarth-OV/smoke/vdd/0",
+    "SegEarth-OV/smoke/potsdam/0",
+    "SegEarth-OV/smoke/udd5/0",
+    "SegEarth-OV/smoke/vaihingen/0",
+    "SegEarth-OV/smoke/oem/0",
+    "SegEarth-OV/smoke/loveda/0",
+    "SegEarth-OV/smoke/landcoverai/0",
+    "SegEarth-OV/smoke/flair1/0",
+    "SegEarth-OV/smoke/voc20/0",
+    "SegEarth-OV/smoke/voc21/0",
+    "SegEarth-OV/smoke/ade150/0",
+    "SegEarth-OV/smoke/context59/0",
+    "SegEarth-OV/smoke/context60/0",
+    "SegEarth-OV/smoke/coco_object81/0",
+    "SegEarth-OV/smoke/coco_stuff171/0",
+    "SegEarth-OV/evaluate/udd5/0",
+    "SegEarth-OV/evaluate/vaihingen/0",
+    "SegEarth-OV/evaluate/vdd/0",
+    "SegEarth-OV/evaluate/oem/0",
+    "SegEarth-OV/evaluate/loveda/0",
+    "SegEarth-OV/evaluate/loveda/1",
+    "SegEarth-OV/evaluate/loveda/2",
+    "SegEarth-OV/evaluate/potsdam/0",
+    "SegEarth-OV/evaluate/loveda/3",
+    "SegEarth-OV/evaluate/loveda/4",
+    "SegEarth-OV/evaluate/loveda/5",
+    "SegEarth-OV/evaluate/landcoverai/0",
+    "SegEarth-OV/evaluate/landcoverai/1",
+    "SegEarth-OV/evaluate/landcoverai/2",
+    "SegEarth-OV/evaluate/loveda/6",
+    "SegEarth-OV/evaluate/landcoverai/3",
+    "SegEarth-OV/evaluate/landcoverai/4",
+    "SegEarth-OV/evaluate/loveda/7",
+    "SegEarth-OV/evaluate/landcoverai/5",
+    "SegEarth-OV/evaluate/landcoverai/6",
+    "SegEarth-OV/evaluate/landcoverai/7"
   ],
-  "failures": {
-    "CorrCLIP/smoke/flair1/0": {
-      "error": "Exited before complete verified coverage: /data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/flair1/smoke/s0.log",
-      "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/flair1/smoke/s0.log",
-      "tail": "EoMT is not installed\nEntitySeg is not installed\n{\"method\": \"CorrCLIP\", \"dataset\": \"flair1\", \"phase\": \"smoke\", \"status\": \"running\", \"processed\": 0, \"total\": 1}\nTraceback (most recent call last):\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 301, in <module>\n    main(parser.parse_args())\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 269, in main\n    predictions={p:predict(m,image,row,dict(config,\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 269, in <dictcomp>\n    predictions={p:predict(m,image,row,dict(config,\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/torch/utils/_contextlib.py\", line 116, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 177, in predict\n    result = model.predict(data['inputs'], data['data_samples'])[0]\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1/corrclip_segmentor.py\", line 190, in predict\n    instance_masks = [self.generate_mask(data_sample.img_path) for data_sample in data_samples]\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1/corrclip_segmentor.py\", line 190, in <listcomp>\n    instance_masks = [self.generate_mask(data_sample.img_path) for data_sample in data_samples]\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1/corrclip_segmentor.py\", line 330, in generate_mask\n    image = Image.open(img_path).convert(\"RGB\")\n            ^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/PIL/Image.py\", line 3715, in open\n    raise UnidentifiedImageError(msg)\nPIL.UnidentifiedImageError: cannot identify image file '/data/test/datasets/FLAIR1_target_20260922/extracted/flair_1_aerial_test/D012_2019/Z10_UU/img/IMG_062613.tif'\n"
-    },
-    "CorrCLIP/evaluate/flair1/0": {
-      "error": "Skipped because image-only smoke failed"
-    },
-    "CorrCLIP/evaluate/flair1/1": {
-      "error": "Skipped because image-only smoke failed"
-    },
-    "CorrCLIP/evaluate/flair1/2": {
-      "error": "Skipped because image-only smoke failed"
-    },
-    "CorrCLIP/evaluate/flair1/3": {
-      "error": "Skipped because image-only smoke failed"
-    },
-    "CorrCLIP/evaluate/flair1/4": {
-      "error": "Skipped because image-only smoke failed"
-    },
-    "CorrCLIP/evaluate/flair1/5": {
-      "error": "Skipped because image-only smoke failed"
-    },
-    "CorrCLIP/evaluate/flair1/6": {
-      "error": "Skipped because image-only smoke failed"
-    },
-    "CorrCLIP/evaluate/flair1/7": {
-      "error": "Skipped because image-only smoke failed"
-    },
-    "CorrCLIP/cost/flair1/0": {
-      "error": "Skipped because image-only smoke failed"
-    }
-  },
+  "failures": {},
   "merged": {
     "PEARL/vaihingen": {
       "vaihingen": 26.1222
@@ -650,543 +747,564 @@
     },
     "CorrCLIP/oem": {
       "oem": 24.4936
+    },
+    "CorrCLIP/potsdam": {
+      "potsdam": 32.2386
+    },
+    "CorrCLIP/loveda": {
+      "P": 43.7985,
+      "D": 26.6162
+    },
+    "CorrCLIP/landcoverai": {
+      "landcoverai": 30.8354
+    },
+    "CorrCLIP/flair1": {
+      "flair1": 20.3994
+    },
+    "CorrCLIP/voc20": {
+      "voc20": 87.5405
+    },
+    "CorrCLIP/voc21": {
+      "voc21": 73.9381
+    },
+    "CorrCLIP/ade150": {
+      "ade150": 26.4301
+    },
+    "CorrCLIP/context59": {
+      "context59": 47.7036
+    },
+    "CorrCLIP/context60": {
+      "context60": 45.1164
+    },
+    "CorrCLIP/coco_object81": {
+      "coco_object81": 44.6265
+    },
+    "CorrCLIP/coco_stuff171": {
+      "coco_stuff171": 31.8365
+    },
+    "SegEarth-OV/udd5": {
+      "udd5": 50.5568
+    },
+    "SegEarth-OV/vaihingen": {
+      "vaihingen": 29.2379
+    },
+    "SegEarth-OV/vdd": {
+      "vdd": 44.8106
+    },
+    "SegEarth-OV/oem": {
+      "oem": 35.6405
+    },
+    "SegEarth-OV/potsdam": {
+      "potsdam": 48.1943
+    },
+    "SegEarth-OV/loveda": {
+      "P": 53.4885,
+      "D": 36.8928
+    },
+    "SegEarth-OV/landcoverai": {
+      "landcoverai": 32.7043
     }
   },
   "pending": [
     {
-      "method": "CorrCLIP",
-      "dataset": "landcoverai",
-      "phase": "evaluate",
-      "shard": 2,
-      "shards": 8
-    },
-    {
-      "method": "CorrCLIP",
-      "dataset": "landcoverai",
-      "phase": "evaluate",
-      "shard": 3,
-      "shards": 8
-    },
-    {
-      "method": "CorrCLIP",
-      "dataset": "landcoverai",
-      "phase": "evaluate",
-      "shard": 4,
-      "shards": 8
-    },
-    {
-      "method": "CorrCLIP",
-      "dataset": "landcoverai",
-      "phase": "evaluate",
-      "shard": 5,
-      "shards": 8
-    },
-    {
-      "method": "CorrCLIP",
-      "dataset": "landcoverai",
-      "phase": "evaluate",
-      "shard": 6,
-      "shards": 8
-    },
-    {
-      "method": "CorrCLIP",
-      "dataset": "landcoverai",
-      "phase": "evaluate",
-      "shard": 7,
-      "shards": 8
-    },
-    {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "voc20",
       "phase": "evaluate",
       "shard": 0,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "voc20",
       "phase": "evaluate",
       "shard": 1,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "voc20",
       "phase": "evaluate",
       "shard": 2,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "voc20",
       "phase": "evaluate",
       "shard": 3,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "voc20",
       "phase": "evaluate",
       "shard": 4,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "voc20",
       "phase": "evaluate",
       "shard": 5,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "voc20",
       "phase": "evaluate",
       "shard": 6,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "voc20",
       "phase": "evaluate",
       "shard": 7,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "voc21",
       "phase": "evaluate",
       "shard": 0,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "voc21",
       "phase": "evaluate",
       "shard": 1,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "voc21",
       "phase": "evaluate",
       "shard": 2,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "voc21",
       "phase": "evaluate",
       "shard": 3,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "voc21",
       "phase": "evaluate",
       "shard": 4,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "voc21",
       "phase": "evaluate",
       "shard": 5,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "voc21",
       "phase": "evaluate",
       "shard": 6,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "voc21",
       "phase": "evaluate",
       "shard": 7,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "ade150",
       "phase": "evaluate",
       "shard": 0,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "ade150",
       "phase": "evaluate",
       "shard": 1,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "ade150",
       "phase": "evaluate",
       "shard": 2,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "ade150",
       "phase": "evaluate",
       "shard": 3,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "ade150",
       "phase": "evaluate",
       "shard": 4,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "ade150",
       "phase": "evaluate",
       "shard": 5,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "ade150",
       "phase": "evaluate",
       "shard": 6,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "ade150",
       "phase": "evaluate",
       "shard": 7,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "context59",
       "phase": "evaluate",
       "shard": 0,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "context59",
       "phase": "evaluate",
       "shard": 1,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "context59",
       "phase": "evaluate",
       "shard": 2,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "context59",
       "phase": "evaluate",
       "shard": 3,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "context59",
       "phase": "evaluate",
       "shard": 4,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "context59",
       "phase": "evaluate",
       "shard": 5,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "context59",
       "phase": "evaluate",
       "shard": 6,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "context59",
       "phase": "evaluate",
       "shard": 7,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "context60",
       "phase": "evaluate",
       "shard": 0,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "context60",
       "phase": "evaluate",
       "shard": 1,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "context60",
       "phase": "evaluate",
       "shard": 2,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "context60",
       "phase": "evaluate",
       "shard": 3,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "context60",
       "phase": "evaluate",
       "shard": 4,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "context60",
       "phase": "evaluate",
       "shard": 5,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "context60",
       "phase": "evaluate",
       "shard": 6,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "context60",
       "phase": "evaluate",
       "shard": 7,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "coco_object81",
       "phase": "evaluate",
       "shard": 0,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "coco_object81",
       "phase": "evaluate",
       "shard": 1,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "coco_object81",
       "phase": "evaluate",
       "shard": 2,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "coco_object81",
       "phase": "evaluate",
       "shard": 3,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "coco_object81",
       "phase": "evaluate",
       "shard": 4,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "coco_object81",
       "phase": "evaluate",
       "shard": 5,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "coco_object81",
       "phase": "evaluate",
       "shard": 6,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "coco_object81",
       "phase": "evaluate",
       "shard": 7,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "coco_stuff171",
       "phase": "evaluate",
       "shard": 0,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "coco_stuff171",
       "phase": "evaluate",
       "shard": 1,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "coco_stuff171",
       "phase": "evaluate",
       "shard": 2,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "coco_stuff171",
       "phase": "evaluate",
       "shard": 3,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "coco_stuff171",
       "phase": "evaluate",
       "shard": 4,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "coco_stuff171",
       "phase": "evaluate",
       "shard": 5,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "coco_stuff171",
       "phase": "evaluate",
       "shard": 6,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "coco_stuff171",
       "phase": "evaluate",
       "shard": 7,
       "shards": 8
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "vdd",
       "phase": "cost",
       "shard": 0,
       "shards": 1
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "potsdam",
       "phase": "cost",
       "shard": 0,
       "shards": 1
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "udd5",
       "phase": "cost",
       "shard": 0,
       "shards": 1
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "vaihingen",
       "phase": "cost",
       "shard": 0,
       "shards": 1
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "oem",
       "phase": "cost",
       "shard": 0,
       "shards": 1
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "loveda",
       "phase": "cost",
       "shard": 0,
       "shards": 1
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "landcoverai",
       "phase": "cost",
       "shard": 0,
       "shards": 1
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
+      "dataset": "flair1",
+      "phase": "cost",
+      "shard": 0,
+      "shards": 1
+    },
+    {
+      "method": "SegEarth-OV",
       "dataset": "voc20",
       "phase": "cost",
       "shard": 0,
       "shards": 1
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "voc21",
       "phase": "cost",
       "shard": 0,
       "shards": 1
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "ade150",
       "phase": "cost",
       "shard": 0,
       "shards": 1
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "context59",
       "phase": "cost",
       "shard": 0,
       "shards": 1
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "context60",
       "phase": "cost",
       "shard": 0,
       "shards": 1
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "coco_object81",
       "phase": "cost",
       "shard": 0,
       "shards": 1
     },
     {
-      "method": "CorrCLIP",
+      "method": "SegEarth-OV",
       "dataset": "coco_stuff171",
       "phase": "cost",
       "shard": 0,
       "shards": 1
     }
   ],
-  "current_method": "CorrCLIP",
+  "current_method": "SegEarth-OV",
   "completed_outputs": {
     "PTC/evaluate/flair1/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/flair1/evaluate/s0",
     "PTC/evaluate/flair1/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/PTC/flair1/evaluate/s1",
@@ -1298,7 +1416,137 @@
     "CorrCLIP/evaluate/oem/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/oem/evaluate/s0",
     "CorrCLIP/evaluate/loveda/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s0",
     "CorrCLIP/evaluate/loveda/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s1",
-    "CorrCLIP/evaluate/loveda/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s2"
+    "CorrCLIP/evaluate/loveda/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s2",
+    "CorrCLIP/evaluate/potsdam/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/potsdam/evaluate/s0",
+    "CorrCLIP/evaluate/loveda/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s3",
+    "CorrCLIP/evaluate/loveda/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s4",
+    "CorrCLIP/evaluate/loveda/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s5",
+    "CorrCLIP/evaluate/loveda/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s6",
+    "CorrCLIP/evaluate/loveda/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/evaluate/s7",
+    "CorrCLIP/evaluate/landcoverai/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/landcoverai/evaluate/s0",
+    "CorrCLIP/evaluate/landcoverai/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/landcoverai/evaluate/s1",
+    "CorrCLIP/smoke/flair1/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/flair1/smoke/s0_attempt1",
+    "CorrCLIP/evaluate/voc20/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/voc20/evaluate/s0",
+    "CorrCLIP/evaluate/landcoverai/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/landcoverai/evaluate/s2",
+    "CorrCLIP/evaluate/landcoverai/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/landcoverai/evaluate/s3",
+    "CorrCLIP/evaluate/landcoverai/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/landcoverai/evaluate/s4",
+    "CorrCLIP/evaluate/landcoverai/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/landcoverai/evaluate/s5",
+    "CorrCLIP/evaluate/landcoverai/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/landcoverai/evaluate/s6",
+    "CorrCLIP/evaluate/landcoverai/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/landcoverai/evaluate/s7",
+    "CorrCLIP/evaluate/flair1/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/flair1/evaluate/s0_attempt1",
+    "CorrCLIP/evaluate/flair1/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/flair1/evaluate/s1_attempt1",
+    "CorrCLIP/evaluate/voc20/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/voc20/evaluate/s1",
+    "CorrCLIP/evaluate/flair1/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/flair1/evaluate/s2_attempt1",
+    "CorrCLIP/evaluate/flair1/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/flair1/evaluate/s3_attempt1",
+    "CorrCLIP/evaluate/flair1/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/flair1/evaluate/s4_attempt1",
+    "CorrCLIP/evaluate/flair1/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/flair1/evaluate/s5_attempt1",
+    "CorrCLIP/evaluate/flair1/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/flair1/evaluate/s6_attempt1",
+    "CorrCLIP/evaluate/flair1/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/flair1/evaluate/s7_attempt1",
+    "CorrCLIP/evaluate/voc20/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/voc20/evaluate/s2",
+    "CorrCLIP/evaluate/voc20/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/voc20/evaluate/s3",
+    "CorrCLIP/evaluate/voc20/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/voc20/evaluate/s4",
+    "CorrCLIP/evaluate/voc20/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/voc20/evaluate/s5",
+    "CorrCLIP/evaluate/voc20/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/voc20/evaluate/s6",
+    "CorrCLIP/evaluate/voc20/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/voc20/evaluate/s7",
+    "CorrCLIP/evaluate/voc21/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/voc21/evaluate/s0",
+    "CorrCLIP/evaluate/voc21/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/voc21/evaluate/s1",
+    "CorrCLIP/evaluate/voc21/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/voc21/evaluate/s2",
+    "CorrCLIP/evaluate/voc21/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/voc21/evaluate/s3",
+    "CorrCLIP/evaluate/voc21/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/voc21/evaluate/s4",
+    "CorrCLIP/evaluate/voc21/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/voc21/evaluate/s5",
+    "CorrCLIP/evaluate/voc21/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/voc21/evaluate/s6",
+    "CorrCLIP/evaluate/voc21/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/voc21/evaluate/s7",
+    "CorrCLIP/evaluate/ade150/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/ade150/evaluate/s0",
+    "CorrCLIP/evaluate/ade150/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/ade150/evaluate/s1",
+    "CorrCLIP/evaluate/ade150/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/ade150/evaluate/s2",
+    "CorrCLIP/evaluate/ade150/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/ade150/evaluate/s3",
+    "CorrCLIP/evaluate/ade150/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/ade150/evaluate/s4",
+    "CorrCLIP/evaluate/ade150/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/ade150/evaluate/s5",
+    "CorrCLIP/evaluate/ade150/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/ade150/evaluate/s6",
+    "CorrCLIP/evaluate/ade150/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/ade150/evaluate/s7",
+    "CorrCLIP/evaluate/context59/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/context59/evaluate/s0",
+    "CorrCLIP/evaluate/context59/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/context59/evaluate/s1",
+    "CorrCLIP/evaluate/context59/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/context59/evaluate/s2",
+    "CorrCLIP/evaluate/context59/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/context59/evaluate/s3",
+    "CorrCLIP/evaluate/context59/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/context59/evaluate/s4",
+    "CorrCLIP/evaluate/context59/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/context59/evaluate/s5",
+    "CorrCLIP/evaluate/context59/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/context59/evaluate/s6",
+    "CorrCLIP/evaluate/context59/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/context59/evaluate/s7",
+    "CorrCLIP/evaluate/context60/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/context60/evaluate/s0",
+    "CorrCLIP/evaluate/context60/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/context60/evaluate/s1",
+    "CorrCLIP/evaluate/context60/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/context60/evaluate/s2",
+    "CorrCLIP/evaluate/context60/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/context60/evaluate/s3",
+    "CorrCLIP/evaluate/context60/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/context60/evaluate/s4",
+    "CorrCLIP/evaluate/context60/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/context60/evaluate/s5",
+    "CorrCLIP/evaluate/context60/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/context60/evaluate/s6",
+    "CorrCLIP/evaluate/context60/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/context60/evaluate/s7",
+    "CorrCLIP/evaluate/coco_object81/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/coco_object81/evaluate/s0",
+    "CorrCLIP/evaluate/coco_object81/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/coco_object81/evaluate/s1",
+    "CorrCLIP/evaluate/coco_object81/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/coco_object81/evaluate/s2",
+    "CorrCLIP/evaluate/coco_object81/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/coco_object81/evaluate/s3",
+    "CorrCLIP/evaluate/coco_object81/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/coco_object81/evaluate/s4",
+    "CorrCLIP/evaluate/coco_object81/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/coco_object81/evaluate/s5",
+    "CorrCLIP/evaluate/coco_object81/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/coco_object81/evaluate/s6",
+    "CorrCLIP/evaluate/coco_object81/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/coco_object81/evaluate/s7",
+    "CorrCLIP/evaluate/coco_stuff171/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/coco_stuff171/evaluate/s0",
+    "CorrCLIP/evaluate/coco_stuff171/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/coco_stuff171/evaluate/s1",
+    "CorrCLIP/evaluate/coco_stuff171/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/coco_stuff171/evaluate/s2",
+    "CorrCLIP/evaluate/coco_stuff171/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/coco_stuff171/evaluate/s3",
+    "CorrCLIP/cost/potsdam/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/potsdam/cost/s0",
+    "CorrCLIP/evaluate/coco_stuff171/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/coco_stuff171/evaluate/s4",
+    "CorrCLIP/evaluate/coco_stuff171/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/coco_stuff171/evaluate/s5",
+    "CorrCLIP/evaluate/coco_stuff171/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/coco_stuff171/evaluate/s6",
+    "CorrCLIP/evaluate/coco_stuff171/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/coco_stuff171/evaluate/s7",
+    "CorrCLIP/cost/vaihingen/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/vaihingen/cost/s0",
+    "CorrCLIP/cost/oem/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/oem/cost/s0",
+    "CorrCLIP/cost/vdd/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/vdd/cost/s0",
+    "CorrCLIP/cost/udd5/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/udd5/cost/s0",
+    "CorrCLIP/cost/loveda/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/loveda/cost/s0",
+    "CorrCLIP/cost/landcoverai/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/landcoverai/cost/s0",
+    "CorrCLIP/cost/flair1/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/flair1/cost/s0_attempt1",
+    "CorrCLIP/cost/voc20/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/voc20/cost/s0",
+    "CorrCLIP/cost/voc21/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/voc21/cost/s0",
+    "CorrCLIP/cost/ade150/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/ade150/cost/s0",
+    "CorrCLIP/cost/context59/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/context59/cost/s0",
+    "CorrCLIP/cost/context60/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/context60/cost/s0",
+    "CorrCLIP/cost/coco_object81/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/coco_object81/cost/s0",
+    "CorrCLIP/cost/coco_stuff171/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/coco_stuff171/cost/s0",
+    "SegEarth-OV/smoke/vdd/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/vdd/smoke/s0",
+    "SegEarth-OV/smoke/potsdam/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/potsdam/smoke/s0",
+    "SegEarth-OV/smoke/udd5/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/udd5/smoke/s0",
+    "SegEarth-OV/smoke/vaihingen/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/vaihingen/smoke/s0",
+    "SegEarth-OV/smoke/oem/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/oem/smoke/s0",
+    "SegEarth-OV/smoke/loveda/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/loveda/smoke/s0",
+    "SegEarth-OV/smoke/landcoverai/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/landcoverai/smoke/s0",
+    "SegEarth-OV/smoke/flair1/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/flair1/smoke/s0",
+    "SegEarth-OV/smoke/voc20/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/voc20/smoke/s0",
+    "SegEarth-OV/smoke/voc21/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/voc21/smoke/s0",
+    "SegEarth-OV/smoke/ade150/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/ade150/smoke/s0",
+    "SegEarth-OV/smoke/context59/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/context59/smoke/s0",
+    "SegEarth-OV/smoke/context60/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/context60/smoke/s0",
+    "SegEarth-OV/smoke/coco_object81/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/coco_object81/smoke/s0",
+    "SegEarth-OV/smoke/coco_stuff171/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/coco_stuff171/smoke/s0",
+    "SegEarth-OV/evaluate/udd5/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/udd5/evaluate/s0",
+    "SegEarth-OV/evaluate/vaihingen/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/vaihingen/evaluate/s0",
+    "SegEarth-OV/evaluate/vdd/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/vdd/evaluate/s0",
+    "SegEarth-OV/evaluate/oem/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/oem/evaluate/s0",
+    "SegEarth-OV/evaluate/loveda/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/loveda/evaluate/s0",
+    "SegEarth-OV/evaluate/loveda/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/loveda/evaluate/s1",
+    "SegEarth-OV/evaluate/loveda/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/loveda/evaluate/s2",
+    "SegEarth-OV/evaluate/potsdam/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/potsdam/evaluate/s0",
+    "SegEarth-OV/evaluate/loveda/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/loveda/evaluate/s3",
+    "SegEarth-OV/evaluate/loveda/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/loveda/evaluate/s4",
+    "SegEarth-OV/evaluate/loveda/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/loveda/evaluate/s5",
+    "SegEarth-OV/evaluate/landcoverai/0": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/landcoverai/evaluate/s0",
+    "SegEarth-OV/evaluate/landcoverai/1": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/landcoverai/evaluate/s1",
+    "SegEarth-OV/evaluate/landcoverai/2": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/landcoverai/evaluate/s2",
+    "SegEarth-OV/evaluate/loveda/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/loveda/evaluate/s6",
+    "SegEarth-OV/evaluate/landcoverai/3": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/landcoverai/evaluate/s3",
+    "SegEarth-OV/evaluate/landcoverai/4": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/landcoverai/evaluate/s4",
+    "SegEarth-OV/evaluate/loveda/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/loveda/evaluate/s7",
+    "SegEarth-OV/evaluate/landcoverai/5": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/landcoverai/evaluate/s5",
+    "SegEarth-OV/evaluate/landcoverai/6": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/landcoverai/evaluate/s6",
+    "SegEarth-OV/evaluate/landcoverai/7": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/SegEarth-OV/landcoverai/evaluate/s7"
   },
   "attempts": {
     "PTC/smoke/udd5/0": 1,
@@ -1312,7 +1560,17 @@
     "PTC/evaluate/loveda/1": 1,
     "PTC/evaluate/loveda/5": 1,
     "PTC/evaluate/landcoverai/3": 1,
-    "PTC/evaluate/landcoverai/7": 1
+    "PTC/evaluate/landcoverai/7": 1,
+    "CorrCLIP/smoke/flair1/0": 1,
+    "CorrCLIP/evaluate/flair1/0": 1,
+    "CorrCLIP/evaluate/flair1/1": 1,
+    "CorrCLIP/evaluate/flair1/2": 1,
+    "CorrCLIP/evaluate/flair1/3": 1,
+    "CorrCLIP/evaluate/flair1/4": 1,
+    "CorrCLIP/evaluate/flair1/5": 1,
+    "CorrCLIP/evaluate/flair1/6": 1,
+    "CorrCLIP/evaluate/flair1/7": 1,
+    "CorrCLIP/cost/flair1/0": 1
   },
   "failure_history": [
     {
@@ -1418,6 +1676,78 @@
         "tail": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/mmengine/optim/optimizer/zero_optimizer.py:11: DeprecationWarning: `TorchScript` support for functional optimizers is deprecated and will be removed in a future PyTorch release. Consider using the `torch.compile` optimizer instead.\n  from torch.distributed.optim import \\\n{\"method\": \"PTC\", \"dataset\": \"landcoverai\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 0, \"total\": 200}\n{\"method\": \"PTC\", \"dataset\": \"landcoverai\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 10, \"total\": 200}\n{\"method\": \"PTC\", \"dataset\": \"landcoverai\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 20, \"total\": 200}\n{\"method\": \"PTC\", \"dataset\": \"landcoverai\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 30, \"total\": 200}\n{\"method\": \"PTC\", \"dataset\": \"landcoverai\", \"phase\": \"evaluate\", \"status\": \"running\", \"processed\": 40, \"total\": 200}\nTraceback (most recent call last):\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 288, in <module>\n    main(parser.parse_args())\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in main\n    predictions={p:predict(m,image,row,dict(config,\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 256, in <dictcomp>\n    predictions={p:predict(m,image,row,dict(config,\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/torch/utils/_contextlib.py\", line 116, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 170, in predict\n    raise FloatingPointError('Non-finite native output: '+row['key'])\nFloatingPointError: Non-finite native output: M-34-32-B-b-1-3_0\n"
       },
       "recovered_with": "ptc-empty-row-self-value-and-rectangular-grid-v1"
+    },
+    {
+      "key": "CorrCLIP/smoke/flair1/0",
+      "failure": {
+        "error": "Exited before complete verified coverage: /data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/flair1/smoke/s0.log",
+        "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/CorrCLIP/flair1/smoke/s0.log",
+        "tail": "EoMT is not installed\nEntitySeg is not installed\n{\"method\": \"CorrCLIP\", \"dataset\": \"flair1\", \"phase\": \"smoke\", \"status\": \"running\", \"processed\": 0, \"total\": 1}\nTraceback (most recent call last):\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 301, in <module>\n    main(parser.parse_args())\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 269, in main\n    predictions={p:predict(m,image,row,dict(config,\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 269, in <dictcomp>\n    predictions={p:predict(m,image,row,dict(config,\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/torch/utils/_contextlib.py\", line 116, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts/eval_training_free_baseline.py\", line 177, in predict\n    result = model.predict(data['inputs'], data['data_samples'])[0]\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1/corrclip_segmentor.py\", line 190, in predict\n    instance_masks = [self.generate_mask(data_sample.img_path) for data_sample in data_samples]\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1/corrclip_segmentor.py\", line 190, in <listcomp>\n    instance_masks = [self.generate_mask(data_sample.img_path) for data_sample in data_samples]\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1/corrclip_segmentor.py\", line 330, in generate_mask\n    image = Image.open(img_path).convert(\"RGB\")\n            ^^^^^^^^^^^^^^^^^^^^\n  File \"/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/.baseline_env_20261011/lib/python3.11/site-packages/PIL/Image.py\", line 3715, in open\n    raise UnidentifiedImageError(msg)\nPIL.UnidentifiedImageError: cannot identify image file '/data/test/datasets/FLAIR1_target_20260922/extracted/flair_1_aerial_test/D012_2019/Z10_UU/img/IMG_062613.tif'\n"
+      },
+      "recovered_with": "corrclip-native-sam2-tiff-rgb-reader-v1"
+    },
+    {
+      "key": "CorrCLIP/evaluate/flair1/0",
+      "failure": {
+        "error": "Skipped because image-only smoke failed"
+      },
+      "recovered_with": "corrclip-native-sam2-tiff-rgb-reader-v1"
+    },
+    {
+      "key": "CorrCLIP/evaluate/flair1/1",
+      "failure": {
+        "error": "Skipped because image-only smoke failed"
+      },
+      "recovered_with": "corrclip-native-sam2-tiff-rgb-reader-v1"
+    },
+    {
+      "key": "CorrCLIP/evaluate/flair1/2",
+      "failure": {
+        "error": "Skipped because image-only smoke failed"
+      },
+      "recovered_with": "corrclip-native-sam2-tiff-rgb-reader-v1"
+    },
+    {
+      "key": "CorrCLIP/evaluate/flair1/3",
+      "failure": {
+        "error": "Skipped because image-only smoke failed"
+      },
+      "recovered_with": "corrclip-native-sam2-tiff-rgb-reader-v1"
+    },
+    {
+      "key": "CorrCLIP/evaluate/flair1/4",
+      "failure": {
+        "error": "Skipped because image-only smoke failed"
+      },
+      "recovered_with": "corrclip-native-sam2-tiff-rgb-reader-v1"
+    },
+    {
+      "key": "CorrCLIP/evaluate/flair1/5",
+      "failure": {
+        "error": "Skipped because image-only smoke failed"
+      },
+      "recovered_with": "corrclip-native-sam2-tiff-rgb-reader-v1"
+    },
+    {
+      "key": "CorrCLIP/evaluate/flair1/6",
+      "failure": {
+        "error": "Skipped because image-only smoke failed"
+      },
+      "recovered_with": "corrclip-native-sam2-tiff-rgb-reader-v1"
+    },
+    {
+      "key": "CorrCLIP/evaluate/flair1/7",
+      "failure": {
+        "error": "Skipped because image-only smoke failed"
+      },
+      "recovered_with": "corrclip-native-sam2-tiff-rgb-reader-v1"
+    },
+    {
+      "key": "CorrCLIP/cost/flair1/0",
+      "failure": {
+        "error": "Skipped because image-only smoke failed"
+      },
+      "recovered_with": "corrclip-native-sam2-tiff-rgb-reader-v1"
     }
   ]
 }
