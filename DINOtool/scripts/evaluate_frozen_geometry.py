@@ -16,7 +16,7 @@ def main(args):
     output=Path(args.output)
     if output.exists():raise RuntimeError('Use a new output file.')
     model=FrozenGeometry(args.config,checkpoint_dir=args.checkpoint_dir,dinov3_repo=args.dinov3_repo,
-        upstream_root=args.upstream_root,text_cache=args.text_cache,compact=not args.reference,device=args.device)
+        upstream_root=args.upstream_root,text_cache=args.text_cache,compact=not args.reference,device=args.device,efficient=args.efficient)
     config=model.config
     args.dataset=config['dataset'];args.mode='full'
     entry=dict(config,banks={'original':next(iter(model.vocabulary['banks'].values()))})
@@ -36,7 +36,7 @@ def main(args):
     save(output,dict(status='complete',dataset=args.dataset,processed_images=len(samples),
         total_images=len(validation),sample_keys=[s.key for s in samples],
         full_coverage=args.num_shards==1 and len(samples)==len(validation),
-        config=config,text_cache_identity=model.cache_identity,compact=not args.reference,
+        config=config,text_cache_identity=model.cache_identity,compact=not args.reference,efficient=args.efficient,
         metrics={p:summary(cm,names[p],ignored[p]) for p,cm in matrices.items()},wall_seconds=time.perf_counter()-started))
 
 
@@ -45,6 +45,7 @@ if __name__=='__main__':
     for key in ('config','data-root','checkpoint-dir','dinov3-repo','upstream-root','text-cache','output'):
         p.add_argument('--'+key,required=True)
     p.add_argument('--device',default='cuda');p.add_argument('--reference',action='store_true')
+    p.add_argument('--efficient',action='store_true',help='Opt in to the paired-verified efficient execution backend.')
     p.add_argument('--num-shards',type=int,default=1);p.add_argument('--shard-index',type=int,default=0)
     p.add_argument('--sample-seed',type=int,default=20260923);p.add_argument('--vdd-ontology',default='official')
     main(p.parse_args())

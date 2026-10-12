@@ -80,7 +80,8 @@ class StaticReader:
         self.blend = torch.from_numpy(hann_blend_window(512)).to(next(iter(banks.values())).features.device)
 
     @torch.inference_mode()
-    def probabilities(self, source, profile, cache, *, wide_scorer=None):
+    def probabilities(self, source, profile, cache, *, wide_scorer=None, dense_writer=None,
+                      local_scorers=None, output_finalizer=None):
         import eval_development_readout as base
         from eval_geometry_vip_reliability import sample_broad
         bank = self.banks[profile.bank]
@@ -104,7 +105,7 @@ class StaticReader:
                 key = ('local', profile.bank, profile.strength, profile.background_rule, i)
                 if key not in cache:
                     alias = tile['features'][profile.strength].float() @ self.text[profile.bank].T
-                    local = self.scorers[profile.bank].uniform_reference(alias)
+                    local = (self.scorers if local_scorers is None else local_scorers)[profile.bank].uniform_reference(alias)
                     if profile.background_rule == 'union_max' and self.background is not None:
                         local[:, self.background] = alias[:, self.members[profile.bank]].amax(-1)
                     if profile.background_rule == 'residual_max':
@@ -121,9 +122,14 @@ class StaticReader:
                     local = local.clone()
                     local[:, self.background] = self.residual_readers[profile.bank].score(cosine, foreground.argmax(-1)) / profile.temperature
                 logits = local.double() + profile.coupling * (tile['operator'].double() @ (wide.double() - local.double()))
-                dense = F.interpolate(logits.T.reshape(1, bank.class_count, 32, 32), (512, 512), mode='bilinear', align_corners=False)[0]
                 ah, aw = min(512, h - top), min(512, w - left)
-                accumulator.add(dense[:, :ah, :aw].softmax(0).float(), self.blend[:ah, :aw], left, top)
+                if dense_writer is None:
+                    dense = F.interpolate(logits.T.reshape(1, bank.class_count, 32, 32), (512, 512), mode='bilinear', align_corners=False)[0]
+                    accumulator.add(dense[:, :ah, :aw].softmax(0).float(), self.blend[:ah, :aw], left, top)
+                else:
+                    dense_writer(accumulator, logits, bank.class_count, ah, aw, self.blend, left, top)
+            if output_finalizer is not None:
+                return output_finalizer(accumulator.probabilities / accumulator.normalizer[None],source['output_size'])
             probability = F.interpolate((accumulator.probabilities / accumulator.normalizer[None])[None],
                 source['output_size'], mode='bilinear', align_corners=False)[0]
         if not bool(torch.isfinite(probability).all()):

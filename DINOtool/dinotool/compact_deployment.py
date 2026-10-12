@@ -62,13 +62,14 @@ class CompactGeometry:
 
 
 @torch.inference_mode()
-def compact_observations(image, geometry, vip, strengths, *, wide_policy='long448'):
+def compact_observations(image, geometry, vip, strengths, *, wide_policy='long448', reconstruction=None):
     import eval_development_readout as base
     from .bounded_physical_coupling import geometry_windows, resize_geometry
     from .gear_ov import _crop_at
     from .alias_action_capacity import reconstruction_operator
     from eval_rival_fine_full import tile_coordinates
     from .natural_wide_resolution import replace_wide
+    solve = reconstruction_operator if reconstruction is None else reconstruction
     # Use the original RGB resizing, crop order and reconstruction solver.
     local, resized = [], resize_geometry(image)
     h, w = resized.shape[-2:]
@@ -76,7 +77,7 @@ def compact_observations(image, geometry, vip, strengths, *, wide_policy='long44
         prepared = geometry.prepare_image(_crop_at(resized, top, left, 512).to(geometry.device))
         coordinates = tile_coordinates(top, left, geometry.device)
         valid = (coordinates[:, 0] < h) & (coordinates[:, 1] < w)
-        operator, _ = reconstruction_operator(prepared.geometry_patch_conditional[0], valid)
+        operator, _ = solve(prepared.geometry_patch_conditional[0], valid)
         with geometry.backbone._autocast():
             features = {s: geometry.project(prepared, s)[0] for s in dict.fromkeys(strengths)}
         local.append(dict(top=top, left=left, features=features, operator=operator))

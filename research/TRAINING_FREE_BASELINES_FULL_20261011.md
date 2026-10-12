@@ -4,7 +4,7 @@ Authors native official config where provided; fixed untuned transfer elsewhere.
 
 Status: complete. Only verified complete protocols receive scores.
 
-|Protocol|Images|Geometry best measured|Strong verified local VIP|PEARL|GLA-CLIP|PTC|CorrCLIP|SegEarth-OV|
+|Protocol|Images|Geometry frozen reference|Strong verified local VIP|PEARL|GLA-CLIP|PTC|CorrCLIP|SegEarth-OV|
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 |vdd|80|60.4352|52.5765|37.9121|37.8462|41.1191|37.1270|44.8106|
 |potsdam|504|56.1934|44.8995|31.5545|34.8473|33.6962|32.2386|48.1943|
@@ -52,6 +52,19 @@ A800; seven fixed RGB images per protocol, two warmups and seven synchronized re
 LoveDA P/D costs are separated by readout; their images are counted once in the 45,200 total. VOC20/21 and PC59/60 share photographs. UDD5 is the established 40-image five-class protocol. Median latency reduction across the 15 protocols is 6.08% versus the already compact backend. Several small-class protocols have peak-memory increases of about 4–24 MiB; both backends remain available. The original vocabulary, coefficients, visual view budget and numerical dtypes are retained. These are execution savings with unchanged accuracy, not a new model-selection result.
 
 Detailed execution changes and per-class replay: [EFFICIENT_GEOMETRY_20261012.md](EFFICIENT_GEOMETRY_20261012.md). Machine-readable comparisons: [comparison_summary.json](efficient_geometry_20261012/comparison_summary.json). Per-image timing/memory records: [cost/](efficient_geometry_20261012/cost/).
+
+## PC59/PC60 alias and scalar follow-up
+
+The preceding accuracy/cost tables retain the model frozen for the five-method benchmark and its execution-only replay. The later targeted search changes only aliases/templates and existing scalar parameters; it preserves the visual weights, model equations, image views and residual ontology. Both frozen choices completed all 5,105 images and independent cost jobs. The development subset and full validation were previously viewed; this is exploratory labeled development. The original negative comparisons remain recorded below.
+
+|Protocol|Images|Before tuning|After tuning|CorrCLIP|After minus CorrCLIP|After ms|After MiB|CorrCLIP ms|CorrCLIP MiB|
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+|context59|5105|46.3075|49.6965|47.7036|+1.9929|181.90|2482.71|217.71|2604.89|
+|context60|5105|44.7613|45.9656|45.1164|+0.8492|187.69|2552.63|217.07|2604.52|
+
+All scored target counts and unique coverage match the retained references; development confusion matrices replay exactly after freezing the choices. Costs use the same seven fixed image keys and include all online inference; CorrCLIP costs remain historical native MetaCLIP+online-SAM2 measurements. Compared with the earlier efficient Geometry snapshot, PC59/PC60 peak memory increases by about151/143 MiB because the selected word banks differ.
+
+Full settings, per-class gains/losses and selected words: [CONTEXT_CORRCLIP_TUNING_20261012.md](CONTEXT_CORRCLIP_TUNING_20261012.md). Portable YAMLs: [configs/](context_corrclip_tuning_20261012/configs/); exact alias banks: [vocabularies/](context_corrclip_tuning_20261012/vocabularies/).
 
 ## Standalone whole-image cost
 

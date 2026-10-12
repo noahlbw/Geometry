@@ -23,11 +23,13 @@ from .compact_deployment import CompactGeometry,compact_observations,CachedWideS
 class FrozenGeometry:
     """No search or labels; explicit frozen profile and optional compact execution."""
     @torch.inference_mode()
-    def __init__(self,config_path,*,checkpoint_dir,dinov3_repo,upstream_root,text_cache,device='cuda',compact=True):
+    def __init__(self,config_path,*,checkpoint_dir,dinov3_repo,upstream_root,text_cache,device='cuda',compact=True,efficient=False):
         config_path=Path(config_path)
         self.config=yaml.safe_load(config_path.read_text(encoding='utf-8'))
         self.vocabulary=json.loads((config_path.parent/self.config['vocabulary']).read_text(encoding='utf-8'))
-        c=self.config; self.compact=compact
+        c=self.config; self.compact=compact; self.efficient=efficient
+        if efficient and not compact:
+            raise ValueError('Efficient execution requires the compact backend.')
         import subprocess
         commit=subprocess.check_output(['git','-C',str(upstream_root),'rev-parse','HEAD'],text=True).strip()
         if commit!=c['upstream']['vip_commit']:
@@ -89,9 +91,21 @@ class FrozenGeometry:
         self.reader=StaticReader(banks,queries,c['background_index'],residual)
         self.strengths=self.previous.strengths if self.previous else (self.profile.strength,)
         self.compact_geometry=CompactGeometry(self.geometry);self.wide_scorer=CachedWideScorer()
+        if efficient:
+            self.enable_efficient()
         if compact:
             offload_text_towers(self.geometry,self.vip,release=True)
         self.cache_identity=hashlib.sha256(json.dumps(identity,sort_keys=True).encode()).hexdigest()
+
+    def enable_efficient(self, *, grouped=True):
+        from .efficient_deployment import EfficientGeometry, EfficientVIPObserver, GroupedWideScorer, GroupedLocalScorer
+        if self.previous:
+            raise ValueError('Efficient backend currently requires an explicit frozen StaticProfile.')
+        self.efficient=True
+        self.compact_geometry=EfficientGeometry(self.geometry)
+        self.vip.__class__=EfficientVIPObserver
+        self.wide_scorer=GroupedWideScorer() if grouped else CachedWideScorer()
+        self.efficient_local_scorers={k:GroupedLocalScorer(v) for k,v in self.banks.items()} if grouped else self.reader.scorers
 
     @torch.inference_mode()
     def predict(self,image,*,protocol=None):
@@ -106,20 +120,32 @@ class FrozenGeometry:
             if not hasattr(self,'foreground_reader'):
                 bs,qs=foreground_banks(self.banks,self.queries)
                 self.foreground_reader=StaticReader(bs,qs,None,None)
+                from .efficient_deployment import GroupedLocalScorer
+                self.foreground_local_scorers={k:GroupedLocalScorer(v) for k,v in bs.items()}
             reader=self.foreground_reader; background=None
         elif protocol not in (None,'D'):
             raise ValueError('Unknown prediction protocol.')
         if self.compact:
-            source=compact_observations(image,self.compact_geometry,self.vip,self.strengths,wide_policy=self.profile.wide_policy)
+            from .efficient_deployment import reconstruction, write_dense, restore_and_finalize
+            source=compact_observations(image,self.compact_geometry,self.vip,self.strengths,wide_policy=self.profile.wide_policy,
+                reconstruction=reconstruction if self.efficient else None)
             probability=(self.previous.predict_observations(source,return_probability=True,wide_scorer=self.wide_scorer,return_prediction=False)[2]
-                if self.previous else reader.probabilities(source,self.profile,{},wide_scorer=self.wide_scorer))
+                if self.previous else reader.probabilities(source,self.profile,{},wide_scorer=self.wide_scorer,
+                    dense_writer=write_dense if self.efficient else None,
+                    local_scorers=(self.foreground_local_scorers if protocol=='P' else self.efficient_local_scorers) if self.efficient else None,
+                    output_finalizer=(lambda normalized,size:restore_and_finalize(normalized,size,self.config['background_bias'],
+                        self.config['background_threshold'],background)) if self.efficient else None))
         else:
             old=base.projected;base.projected=projected
             try:source=base.observations(image,self.geometry,self.vip,self.strengths,wide_policy=self.profile.wide_policy)
             finally:base.projected=old
             probability=self.previous.predict_observations(source,return_probability=True)[2] if self.previous else reader.probabilities(source,self.profile,{})
         c=self.config
+        if isinstance(probability,np.ndarray):return probability
         if probability.shape[0]>256:raise ValueError('PNG/byte prediction requires at most256 classes.')
+        if self.efficient:
+            from .efficient_deployment import finalize
+            return finalize(probability,c['background_bias'],c['background_threshold'],background)
         probability=biased_probabilities(probability,c['background_bias'] if background is not None else 0.,background)
         confidence,prediction=probability.max(0)
         if background is not None:

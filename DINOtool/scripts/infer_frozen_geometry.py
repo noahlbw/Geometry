@@ -10,7 +10,7 @@ from dinotool.frozen_deployment import FrozenGeometry
 
 def main(args):
     model=FrozenGeometry(args.config,checkpoint_dir=args.checkpoint_dir,dinov3_repo=args.dinov3_repo,
-        upstream_root=args.upstream_root,text_cache=args.text_cache,compact=not args.reference,device=args.device)
+        upstream_root=args.upstream_root,text_cache=args.text_cache,compact=not args.reference,device=args.device,efficient=args.efficient)
     array=np.asarray(Image.open(args.input).convert('RGB')).copy()
     image=torch.from_numpy(array).permute(2,0,1).float()/255
     prediction=model.predict(image)
@@ -18,7 +18,7 @@ def main(args):
     if output.exists():raise RuntimeError('Preserve existing prediction.')
     output.parent.mkdir(parents=True,exist_ok=True);Image.fromarray(prediction).save(output)
     print(json.dumps(dict(output=str(output),shape=list(prediction.shape),cache_identity=model.cache_identity,
-        compact=not args.reference,target_masks_loaded=False)))
+        compact=not args.reference,efficient=args.efficient,target_masks_loaded=False)))
 
 
 if __name__=='__main__':
@@ -26,4 +26,5 @@ if __name__=='__main__':
     for name in ('config','checkpoint-dir','dinov3-repo','upstream-root','text-cache','input','output'):
         parser.add_argument('--'+name,required=True)
     parser.add_argument('--device',default='cuda');parser.add_argument('--reference',action='store_true')
+    parser.add_argument('--efficient',action='store_true',help='Opt in to the paired-verified efficient execution backend.')
     main(parser.parse_args())

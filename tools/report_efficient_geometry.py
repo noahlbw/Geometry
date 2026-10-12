@@ -80,6 +80,43 @@ def baseline_cost_section(dataset_order, references):
         'Per-image timing/memory records: [cost/](efficient_geometry_20261012/cost/).']
     data=dict(status='complete',protocols=15,protocol_images=total,standalone_costs=15,
         changed_prediction_pixels=0,source='efficient_geometry_20261012/comparison_summary.json',rows=published)
+    followup=ROOT/'research/context_corrclip_tuning_20261012/comparison_summary.json'
+    if followup.exists():
+        trial=read(followup)
+        if trial['status']=='complete':
+            lines+=['','## PC59/PC60 alias and scalar follow-up','',
+                'The preceding accuracy/cost tables retain the model frozen for the five-method benchmark '
+                'and its execution-only replay. The later targeted search changes only aliases/templates '
+                'and existing scalar parameters; it preserves the visual weights, model equations, '
+                'image views and residual ontology. Both frozen choices completed all 5,105 images and '
+                'independent cost jobs. The development subset and full validation were previously viewed; '
+                'this is exploratory labeled development. The original negative comparisons remain recorded below.', '',
+                '|Protocol|Images|Before tuning|After tuning|CorrCLIP|After minus CorrCLIP|After ms|After MiB|CorrCLIP ms|CorrCLIP MiB|',
+                '|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|']
+            later={}
+            for d,c in trial['comparisons'].items():
+                full=c['full']
+                if full['processed_images']!=5105 or not all(full[f] for f in ('coverage_verified','per_image_sums_verified','scored_target_counts_match','development_replay_verified')):
+                    raise RuntimeError('Unverified PC follow-up '+d)
+                corr=read(ROOT/'research/training_free_baselines_full_20261011/CorrCLIP'/d/'cost.json')
+                peak=max(r['peak_allocated_bytes'] for r in corr['images'])/1048576
+                cost=c['cost']
+                lines.append(f'|{d}|5105|{c["previous"]:.4f}|{c["tuned"]:.4f}|{c["corrclip"]:.4f}|'
+                    f'{c["delta_corrclip_pp"]:+.4f}|{cost["median_ms"]:.2f}|{cost["peak_allocated_mib"]:.2f}|{corr["median_ms"]:.2f}|{peak:.2f}|')
+                later[d]={k:c[k] for k in ('previous','tuned','corrclip','delta_corrclip_pp','delta_previous_pp','beats_corrclip','improves_incumbent','retained_recommendation')}
+                later[d].update(median_ms=cost['median_ms'],peak_allocated_mib=cost['peak_allocated_mib'],
+                    profile=c['selection']['profile'],config=f'context_corrclip_tuning_20261012/configs/{d}.yaml')
+            lines+=['',
+                'All scored target counts and unique coverage match the retained references; development '
+                'confusion matrices replay exactly after freezing the choices. Costs use the same seven '
+                'fixed image keys and include all online inference; CorrCLIP costs remain historical native '
+                'MetaCLIP+online-SAM2 measurements. Compared with the earlier efficient Geometry snapshot, '
+                'PC59/PC60 peak memory increases by about151/143 MiB because the selected word banks differ.', '',
+                'Full settings, per-class gains/losses and selected words: '
+                '[CONTEXT_CORRCLIP_TUNING_20261012.md](CONTEXT_CORRCLIP_TUNING_20261012.md). '
+                'Portable YAMLs: [configs/](context_corrclip_tuning_20261012/configs/); '
+                'exact alias banks: [vocabularies/](context_corrclip_tuning_20261012/vocabularies/).']
+            data['pc_alias_scalar_followup']=later
     return lines,data
 
 
@@ -96,6 +133,8 @@ def update_baseline_report():
     before=body.split(start,1)[0] if start in body else body.split(end,1)[0]
     after=body[body.index(end):]
     target.write_text(before.rstrip()+'\n'+'\n'.join(lines)+'\n\n'+after,encoding='utf-8')
+    body=target.read_text(encoding='utf-8').replace('|Geometry best measured|','|Geometry frozen reference|')
+    target.write_text(body,encoding='utf-8')
     summary['latest_geometry_execution']=data
     summary_path.write_text(json.dumps(summary,indent=2)+'\n',encoding='utf-8')
 

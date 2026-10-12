@@ -292,7 +292,7 @@ def collect(client,sftp):
     source_path=WORKSPACE/'research/vip_kev_same_vocabulary_20261010/comparison_summary.json'
     old=read(source_path)['comparisons'] if source_path.exists() else {}
     references={}
-    lines+=['|Protocol|Images|Geometry best measured|Strong verified local VIP|'+ '|'.join(METHODS)+'|',
+    lines+=['|Protocol|Images|Geometry frozen reference|Strong verified local VIP|'+ '|'.join(METHODS)+'|',
             '|---|---:|---:|---:|'+ '|'.join('---:' for _ in METHODS)+'|']
     for d in protocol['dataset_order']:
         for p in ('P','D') if d=='loveda' else (d,):

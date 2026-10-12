@@ -391090,6 +391090,54 @@
         "changed_prediction_pixels": 0,
         "exact_historical_confusion": true
       }
+    },
+    "pc_alias_scalar_followup": {
+      "context59": {
+        "previous": 46.3075,
+        "tuned": 49.6965,
+        "corrclip": 47.7036,
+        "delta_corrclip_pp": 1.9928999999999988,
+        "delta_previous_pp": 3.389000000000003,
+        "beats_corrclip": true,
+        "improves_incumbent": true,
+        "retained_recommendation": "trial",
+        "median_ms": 181.90144491381943,
+        "peak_allocated_mib": 2482.70947265625,
+        "profile": {
+          "bank": "mix_012c5eabe1c2bb3d147f",
+          "strength": 2.5,
+          "coupling": 0.75,
+          "temperature": 0.08,
+          "tau": 1,
+          "tem": 0.3,
+          "wide_policy": "natural_short336_cap672",
+          "background_rule": "retained"
+        },
+        "config": "context_corrclip_tuning_20261012/configs/context59.yaml"
+      },
+      "context60": {
+        "previous": 44.7613,
+        "tuned": 45.9656,
+        "corrclip": 45.1164,
+        "delta_corrclip_pp": 0.8492000000000033,
+        "delta_previous_pp": 1.2043000000000035,
+        "beats_corrclip": true,
+        "improves_incumbent": true,
+        "retained_recommendation": "trial",
+        "median_ms": 187.6864309888333,
+        "peak_allocated_mib": 2552.63330078125,
+        "profile": {
+          "bank": "mix_1ec4f4d7abb136201636",
+          "strength": 2,
+          "coupling": 0.875,
+          "temperature": 0.06,
+          "tau": 1,
+          "tem": 0.3,
+          "wide_policy": "natural_short336_cap672",
+          "background_rule": "residual_max"
+        },
+        "config": "context_corrclip_tuning_20261012/configs/context60.yaml"
+      }
     }
   }
 }

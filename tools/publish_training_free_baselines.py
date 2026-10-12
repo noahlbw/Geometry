@@ -25,6 +25,18 @@ def main():
         files += list(efficient.glob('*.json'))
         for folder in ('cost','merged','profile','smoke'):
             files += list((efficient/folder).glob('*.json'))
+    context=WORKSPACE/'research/context_corrclip_tuning_20261012'
+    if (context/'comparison_summary.json').exists():
+        files += [WORKSPACE/'research/CONTEXT_CORRCLIP_TUNING_20261012.md',context/'README.md',
+            WORKSPACE/'tools/context_corrclip_tuning_experiment.py']
+        files += list(context.rglob('*.json'))+list((context/'configs').glob('*.yaml'))
+        for relative in ('dinotool/efficient_deployment.py','dinotool/compact_deployment.py',
+            'dinotool/natural_static_search.py','dinotool/frozen_deployment.py',
+            'scripts/infer_frozen_geometry.py','scripts/evaluate_frozen_geometry.py',
+            'scripts/eval_efficient_geometry.py','scripts/run_efficient_geometry.py',
+            'scripts/eval_curated_variable_natural.py','scripts/eval_context_corrclip_tuning.py',
+            'scripts/run_context_corrclip_tuning.py','tests/test_efficient_deployment.py'):
+            files.append(WORKSPACE/'DINOtool'/relative)
     for source in files:
         relative=source.relative_to(WORKSPACE);target=repo/relative
         target.parent.mkdir(parents=True,exist_ok=True)
