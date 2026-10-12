@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "protocols": 15,
+  "protocol_images": 45200,
+  "datasets": [
+    "vdd",
+    "potsdam",
+    "voc20",
+    "voc21",
+    "ade150",
+    "context60",
+    "udd5",
+    "oem",
+    "vaihingen",
+    "landcoverai",
+    "loveda",
+    "context59",
+    "coco_object81",
+    "coco_stuff171",
+    "flair1"
+  ],
+  "paired_full_evaluations": true,
+  "standalone_costs": 15
+}

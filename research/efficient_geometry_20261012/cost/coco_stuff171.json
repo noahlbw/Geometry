@@ -1,0 +1,338 @@
+{
+  "status": "complete",
+  "dataset": "coco_stuff171",
+  "costs": {
+    "compact": {
+      "median_ms": 299.55389513634145,
+      "peak_allocated_mib": 3399.5576171875,
+      "images": [
+        {
+          "key": "000000000139",
+          "protocol": "coco_stuff171",
+          "shape": [
+            426,
+            640
+          ],
+          "milliseconds": [
+            299.51955401338637,
+            300.1721859909594,
+            298.9653069525957,
+            299.9946940690279,
+            299.1759539581835,
+            301.1561802122742,
+            301.2591681908816
+          ],
+          "peak_allocated_mib": 3302.9248046875,
+          "peak_reserved_mib": 4270.0
+        },
+        {
+          "key": "000000097994",
+          "protocol": "coco_stuff171",
+          "shape": [
+            427,
+            640
+          ],
+          "milliseconds": [
+            300.11195805855095,
+            299.7572151944041,
+            299.9927010387182,
+            301.9142020493746,
+            299.97252696193755,
+            301.2917160522193,
+            301.69696314260364
+          ],
+          "peak_allocated_mib": 3306.693359375,
+          "peak_reserved_mib": 4270.0
+        },
+        {
+          "key": "000000190140",
+          "protocol": "coco_stuff171",
+          "shape": [
+            428,
+            640
+          ],
+          "milliseconds": [
+            299.7289998456836,
+            299.55389513634145,
+            299.9336770735681,
+            299.91632304154336,
+            300.38243206217885,
+            299.1664761211723,
+            299.3473799433559
+          ],
+          "peak_allocated_mib": 3306.86962890625,
+          "peak_reserved_mib": 4974.0
+        },
+        {
+          "key": "000000289586",
+          "protocol": "coco_stuff171",
+          "shape": [
+            640,
+            426
+          ],
+          "milliseconds": [
+            298.9257969893515,
+            301.8088338430971,
+            299.1916809696704,
+            298.2376411091536,
+            299.8575330711901,
+            298.71190106496215,
+            298.76448097638786
+          ],
+          "peak_allocated_mib": 3302.9248046875,
+          "peak_reserved_mib": 4974.0
+        },
+        {
+          "key": "000000384527",
+          "protocol": "coco_stuff171",
+          "shape": [
+            480,
+            640
+          ],
+          "milliseconds": [
+            257.1833480615169,
+            256.61711604334414,
+            258.25177296064794,
+            257.3909549973905,
+            257.79147702269256,
+            258.6514020804316,
+            257.8827408142388
+          ],
+          "peak_allocated_mib": 3399.5576171875,
+          "peak_reserved_mib": 5762.0
+        },
+        {
+          "key": "000000480985",
+          "protocol": "coco_stuff171",
+          "shape": [
+            500,
+            375
+          ],
+          "milliseconds": [
+            256.32678996771574,
+            255.3280780557543,
+            258.36182408966124,
+            256.8558291532099,
+            256.4777750521898,
+            256.32353289984167,
+            256.51764310896397
+          ],
+          "peak_allocated_mib": 3321.47607421875,
+          "peak_reserved_mib": 5762.0
+        },
+        {
+          "key": "000000581781",
+          "protocol": "coco_stuff171",
+          "shape": [
+            478,
+            640
+          ],
+          "milliseconds": [
+            301.31866899318993,
+            301.1478178668767,
+            300.20394711755216,
+            300.21202797070146,
+            305.7551379315555,
+            299.58255705423653,
+            300.17689103260636
+          ],
+          "peak_allocated_mib": 3398.64208984375,
+          "peak_reserved_mib": 5762.0
+        }
+      ]
+    },
+    "efficient": {
+      "median_ms": 201.9433220848441,
+      "peak_allocated_mib": 3025.52880859375,
+      "images": [
+        {
+          "key": "000000000139",
+          "protocol": "coco_stuff171",
+          "shape": [
+            426,
+            640
+          ],
+          "milliseconds": [
+            202.69233407452703,
+            200.90319495648146,
+            201.86609588563442,
+            200.99129900336266,
+            203.10978195630014,
+            203.00409384071827,
+            202.4698860477656
+          ],
+          "peak_allocated_mib": 2994.86279296875,
+          "peak_reserved_mib": 3928.0
+        },
+        {
+          "key": "000000097994",
+          "protocol": "coco_stuff171",
+          "shape": [
+            427,
+            640
+          ],
+          "milliseconds": [
+            203.32820317707956,
+            202.2549870889634,
+            202.01485394500196,
+            201.38885104097426,
+            202.25792191922665,
+            201.52288698591292,
+            203.20209208875895
+          ],
+          "peak_allocated_mib": 2996.2978515625,
+          "peak_reserved_mib": 3928.0
+        },
+        {
+          "key": "000000190140",
+          "protocol": "coco_stuff171",
+          "shape": [
+            428,
+            640
+          ],
+          "milliseconds": [
+            201.9433220848441,
+            204.89666890352964,
+            202.72036804817617,
+            203.5428429953754,
+            202.4480861146003,
+            203.7099259905517,
+            203.36965518072248
+          ],
+          "peak_allocated_mib": 2996.11767578125,
+          "peak_reserved_mib": 4632.0
+        },
+        {
+          "key": "000000289586",
+          "protocol": "coco_stuff171",
+          "shape": [
+            640,
+            426
+          ],
+          "milliseconds": [
+            202.24769599735737,
+            201.51609485037625,
+            201.4397932216525,
+            200.88333101011813,
+            202.00174790807068,
+            201.07527100481093,
+            200.74799098074436
+          ],
+          "peak_allocated_mib": 2994.86279296875,
+          "peak_reserved_mib": 4632.0
+        },
+        {
+          "key": "000000384527",
+          "protocol": "coco_stuff171",
+          "shape": [
+            480,
+            640
+          ],
+          "milliseconds": [
+            180.39698107168078,
+            182.49153112992644,
+            181.2536579091102,
+            180.66001497209072,
+            182.05221905373037,
+            181.4867681823671,
+            181.08499492518604
+          ],
+          "peak_allocated_mib": 3024.78564453125,
+          "peak_reserved_mib": 5420.0
+        },
+        {
+          "key": "000000480985",
+          "protocol": "coco_stuff171",
+          "shape": [
+            500,
+            375
+          ],
+          "milliseconds": [
+            179.4877741485834,
+            179.8977069556713,
+            179.4477349612862,
+            178.65853500552475,
+            179.88828802481294,
+            180.1376729272306,
+            179.68145688064396
+          ],
+          "peak_allocated_mib": 3024.78564453125,
+          "peak_reserved_mib": 5422.0
+        },
+        {
+          "key": "000000581781",
+          "protocol": "coco_stuff171",
+          "shape": [
+            478,
+            640
+          ],
+          "milliseconds": [
+            203.5956501495093,
+            203.1575320288539,
+            202.77419709600508,
+            202.49291509389877,
+            203.00880493596196,
+            203.47289112396538,
+            205.13419900089502
+          ],
+          "peak_allocated_mib": 3025.52880859375,
+          "peak_reserved_mib": 5422.0
+        }
+      ]
+    }
+  },
+  "changed_pixels": {
+    "compact": 0,
+    "efficient": 0
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "coco_stuff171",
+    "family": "natural",
+    "total_images": 5000,
+    "background_index": null,
+    "vocabulary": "../vocabularies/coco_stuff171.json",
+    "profile": {
+      "bank": "official_segmentation",
+      "strength": 1.0,
+      "coupling": 0.5,
+      "temperature": 0.05,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "natural_short336_cap672",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.0,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": true
+    }
+  },
+  "cache_identity": "2678df586caa178e99ad8c597587c4bef63db06a90b24395077b504dd2ad38b5",
+  "target_masks_loaded": false,
+  "sources": {
+    "dinotool/efficient_deployment.py": "b0b832afe4012beb0b1c7960d93810b4e8a4eaba93327402a91fd6ca19a5407c",
+    "dinotool/frozen_deployment.py": "a0500d0c61ba39b37ea70e679011de96d6ec42bf6cb1f7b35a6d13ebfca1b4c1",
+    "dinotool/natural_static_search.py": "43e00fbd73717dd4024a746a7510694cc99852a49d84e504b9f0235ee2380286",
+    "dinotool/compact_deployment.py": "d04994ef5ce33773998b07fa0e7762e3dd4d6dddc38b19c61dc8e38c89a81a8c"
+  },
+  "timing": "Whole RGB input through CPU IDs; excludes decode/init/offline search. Two warmups, seven repeats for cost/profile."
+}

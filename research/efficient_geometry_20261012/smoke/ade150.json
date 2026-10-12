@@ -1,0 +1,346 @@
+{
+  "status": "complete",
+  "dataset": "ade150",
+  "costs": {
+    "compact": {
+      "median_ms": 252.44857999496162,
+      "peak_allocated_mib": 3295.380859375,
+      "images": [
+        {
+          "key": "ADE_val_00000001",
+          "protocol": "ade150",
+          "shape": [
+            512,
+            683
+          ],
+          "milliseconds": [
+            261.9760518427938
+          ],
+          "peak_allocated_mib": 3248.8828125,
+          "peak_reserved_mib": 4034.0
+        },
+        {
+          "key": "ADE_val_00000334",
+          "protocol": "ade150",
+          "shape": [
+            320,
+            240
+          ],
+          "milliseconds": [
+            250.39540999569
+          ],
+          "peak_allocated_mib": 3154.25390625,
+          "peak_reserved_mib": 4034.0
+        },
+        {
+          "key": "ADE_val_00000667",
+          "protocol": "ade150",
+          "shape": [
+            234,
+            350
+          ],
+          "milliseconds": [
+            293.9183700364083
+          ],
+          "peak_allocated_mib": 3130.42626953125,
+          "peak_reserved_mib": 4342.0
+        },
+        {
+          "key": "ADE_val_00001000",
+          "protocol": "ade150",
+          "shape": [
+            200,
+            250
+          ],
+          "milliseconds": [
+            252.44857999496162
+          ],
+          "peak_allocated_mib": 3172.8837890625,
+          "peak_reserved_mib": 5078.0
+        },
+        {
+          "key": "ADE_val_00001333",
+          "protocol": "ade150",
+          "shape": [
+            512,
+            683
+          ],
+          "milliseconds": [
+            254.70914295874536
+          ],
+          "peak_allocated_mib": 3248.8828125,
+          "peak_reserved_mib": 5078.0
+        },
+        {
+          "key": "ADE_val_00001666",
+          "protocol": "ade150",
+          "shape": [
+            256,
+            256
+          ],
+          "milliseconds": [
+            211.90141118131578
+          ],
+          "peak_allocated_mib": 3295.380859375,
+          "peak_reserved_mib": 5998.0
+        },
+        {
+          "key": "ADE_val_00002000",
+          "protocol": "ade150",
+          "shape": [
+            300,
+            400
+          ],
+          "milliseconds": [
+            252.28820298798382
+          ],
+          "peak_allocated_mib": 3154.25390625,
+          "peak_reserved_mib": 5998.0
+        }
+      ]
+    },
+    "efficient_scalar": {
+      "median_ms": 253.03167407400906,
+      "peak_allocated_mib": 2999.529296875,
+      "images": [
+        {
+          "key": "ADE_val_00000001",
+          "protocol": "ade150",
+          "shape": [
+            512,
+            683
+          ],
+          "milliseconds": [
+            254.3627149425447
+          ],
+          "peak_allocated_mib": 2953.40234375,
+          "peak_reserved_mib": 3734.0
+        },
+        {
+          "key": "ADE_val_00000334",
+          "protocol": "ade150",
+          "shape": [
+            320,
+            240
+          ],
+          "milliseconds": [
+            250.76463888399303
+          ],
+          "peak_allocated_mib": 2896.2734375,
+          "peak_reserved_mib": 3734.0
+        },
+        {
+          "key": "ADE_val_00000667",
+          "protocol": "ade150",
+          "shape": [
+            234,
+            350
+          ],
+          "milliseconds": [
+            293.7110729981214
+          ],
+          "peak_allocated_mib": 2871.3203125,
+          "peak_reserved_mib": 3734.0
+        },
+        {
+          "key": "ADE_val_00001000",
+          "protocol": "ade150",
+          "shape": [
+            200,
+            250
+          ],
+          "milliseconds": [
+            251.3156181667
+          ],
+          "peak_allocated_mib": 2914.5126953125,
+          "peak_reserved_mib": 4470.0
+        },
+        {
+          "key": "ADE_val_00001333",
+          "protocol": "ade150",
+          "shape": [
+            512,
+            683
+          ],
+          "milliseconds": [
+            254.6068849042058
+          ],
+          "peak_allocated_mib": 2953.40234375,
+          "peak_reserved_mib": 4470.0
+        },
+        {
+          "key": "ADE_val_00001666",
+          "protocol": "ade150",
+          "shape": [
+            256,
+            256
+          ],
+          "milliseconds": [
+            213.78182899206877
+          ],
+          "peak_allocated_mib": 2999.529296875,
+          "peak_reserved_mib": 5390.0
+        },
+        {
+          "key": "ADE_val_00002000",
+          "protocol": "ade150",
+          "shape": [
+            300,
+            400
+          ],
+          "milliseconds": [
+            253.03167407400906
+          ],
+          "peak_allocated_mib": 2896.2734375,
+          "peak_reserved_mib": 5390.0
+        }
+      ]
+    },
+    "efficient": {
+      "median_ms": 216.55532205477357,
+      "peak_allocated_mib": 2999.46630859375,
+      "images": [
+        {
+          "key": "ADE_val_00000001",
+          "protocol": "ade150",
+          "shape": [
+            512,
+            683
+          ],
+          "milliseconds": [
+            218.61547115258873
+          ],
+          "peak_allocated_mib": 2953.33935546875,
+          "peak_reserved_mib": 3734.0
+        },
+        {
+          "key": "ADE_val_00000334",
+          "protocol": "ade150",
+          "shape": [
+            320,
+            240
+          ],
+          "milliseconds": [
+            214.54512211494148
+          ],
+          "peak_allocated_mib": 2896.21044921875,
+          "peak_reserved_mib": 3734.0
+        },
+        {
+          "key": "ADE_val_00000667",
+          "protocol": "ade150",
+          "shape": [
+            234,
+            350
+          ],
+          "milliseconds": [
+            238.06803114712238
+          ],
+          "peak_allocated_mib": 2871.25732421875,
+          "peak_reserved_mib": 3734.0
+        },
+        {
+          "key": "ADE_val_00001000",
+          "protocol": "ade150",
+          "shape": [
+            200,
+            250
+          ],
+          "milliseconds": [
+            216.55532205477357
+          ],
+          "peak_allocated_mib": 2914.44970703125,
+          "peak_reserved_mib": 4470.0
+        },
+        {
+          "key": "ADE_val_00001333",
+          "protocol": "ade150",
+          "shape": [
+            512,
+            683
+          ],
+          "milliseconds": [
+            217.38138003274798
+          ],
+          "peak_allocated_mib": 2953.33935546875,
+          "peak_reserved_mib": 4470.0
+        },
+        {
+          "key": "ADE_val_00001666",
+          "protocol": "ade150",
+          "shape": [
+            256,
+            256
+          ],
+          "milliseconds": [
+            196.25909603200853
+          ],
+          "peak_allocated_mib": 2999.46630859375,
+          "peak_reserved_mib": 5390.0
+        },
+        {
+          "key": "ADE_val_00002000",
+          "protocol": "ade150",
+          "shape": [
+            300,
+            400
+          ],
+          "milliseconds": [
+            213.7589449994266
+          ],
+          "peak_allocated_mib": 2896.21044921875,
+          "peak_reserved_mib": 5390.0
+        }
+      ]
+    }
+  },
+  "changed_pixels": {
+    "compact": 0,
+    "efficient_scalar": 0,
+    "efficient": 0
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "ade150",
+    "family": "natural",
+    "total_images": 2000,
+    "background_index": null,
+    "vocabulary": "../vocabularies/ade150.json",
+    "profile": {
+      "bank": "semantic_segmentation",
+      "strength": "original",
+      "coupling": 0.25,
+      "temperature": 0.14,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "natural_short336_cap672",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.0,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": true
+    }
+  },
+  "cache_identity": "4516dd620581caf4b2fb91f600234254ce97fbf51b2f8c3ebca43a199c674ea0",
+  "target_masks_loaded": false,
+  "timing": "Whole RGB input through CPU IDs; excludes decode/init/offline search. Two warmups, seven repeats for cost/profile."
+}

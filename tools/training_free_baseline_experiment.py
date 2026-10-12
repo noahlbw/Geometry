@@ -329,6 +329,9 @@ def collect(client,sftp):
     vip_mean=mean([references[d+'__'+('D' if d=='loveda' else d)]['vip'] for d in rs])
     means=[f"{mean([scores[m][d]['D' if d=='loveda' else d]['mean_iou_percent'] for d in rs]):.4f}" if all(d in scores[m] for d in rs) else 'pending' for m in METHODS]
     lines.append(f'|Eight remote mean|20092|{our_mean:.4f}|{vip_mean:.4f}|'+ '|'.join(means)+'|')
+    from report_efficient_geometry import baseline_cost_section
+    latest_lines,latest_geometry=baseline_cost_section(protocol['dataset_order'],references)
+    lines+=latest_lines
     lines+=['','## Standalone whole-image cost','',
         '|Method|Protocol|Median ms|Peak allocated MiB|Prior same-text VIP ms|Ratio|Native config|',
         '|---|---|---:|---:|---:|---:|---|']
@@ -403,7 +406,8 @@ def collect(client,sftp):
     report=WORKSPACE/'research/TRAINING_FREE_BASELINES_FULL_20261011.md'
     report.write_text('\n'.join(lines)+'\n',encoding='utf-8')
     write(LOCAL/'comparison_summary.json',dict(status=state.get('status','preparing'),methods=scores,previous_references=references,
-        completed_protocols=sum(len(v) for v in scores.values()),expected_protocols=75,costs=costs,execution_repairs=repairs))
+        completed_protocols=sum(len(v) for v in scores.values()),expected_protocols=75,costs=costs,execution_repairs=repairs,
+        latest_geometry_execution=latest_geometry))
     print(str(report))
 
 

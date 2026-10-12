@@ -1,0 +1,338 @@
+{
+  "status": "complete",
+  "dataset": "vaihingen",
+  "costs": {
+    "compact": {
+      "median_ms": 209.3657529912889,
+      "peak_allocated_mib": 2183.005859375,
+      "images": [
+        {
+          "key": "top_mosaic_09cm_area10_y00_x00.tif",
+          "protocol": "vaihingen",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            209.11183999851346,
+            207.88972708396614,
+            208.62361206673086,
+            209.19163012877107,
+            209.71067599020898,
+            208.6187379900366,
+            208.08677887544036
+          ],
+          "peak_allocated_mib": 2183.005859375,
+          "peak_reserved_mib": 2428.0
+        },
+        {
+          "key": "top_mosaic_09cm_area16_y00_x00.tif",
+          "protocol": "vaihingen",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            207.76613987982273,
+            209.73571203649044,
+            210.33262205310166,
+            210.87758499197662,
+            214.5016749855131,
+            212.13278803043067,
+            209.14337900467217
+          ],
+          "peak_allocated_mib": 2183.005859375,
+          "peak_reserved_mib": 2428.0
+        },
+        {
+          "key": "top_mosaic_09cm_area24_y00_x01.tif",
+          "protocol": "vaihingen",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            211.38438093475997,
+            210.51484299823642,
+            209.791021887213,
+            208.51339492946863,
+            210.6346059590578,
+            209.90235707722604,
+            209.46460985578597
+          ],
+          "peak_allocated_mib": 2183.005859375,
+          "peak_reserved_mib": 2428.0
+        },
+        {
+          "key": "top_mosaic_09cm_area2_y00_x00.tif",
+          "protocol": "vaihingen",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            210.25151386857033,
+            211.23088500462472,
+            210.9748008660972,
+            209.26439808681607,
+            208.69814907200634,
+            209.21398303471506,
+            209.67434905469418
+          ],
+          "peak_allocated_mib": 2183.005859375,
+          "peak_reserved_mib": 2428.0
+        },
+        {
+          "key": "top_mosaic_09cm_area33_y01_x01.tif",
+          "protocol": "vaihingen",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            208.4854980930686,
+            209.2419657856226,
+            209.43073485977948,
+            210.4095001704991,
+            209.3657529912889,
+            209.63294291868806,
+            209.23947100527585
+          ],
+          "peak_allocated_mib": 2183.005859375,
+          "peak_reserved_mib": 2428.0
+        },
+        {
+          "key": "top_mosaic_09cm_area38_y02_x02.tif",
+          "protocol": "vaihingen",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            209.51161696575582,
+            209.56450700759888,
+            208.37576291523874,
+            209.26208700984716,
+            211.87666291370988,
+            211.56715508550406,
+            210.13123006559908
+          ],
+          "peak_allocated_mib": 2183.005859375,
+          "peak_reserved_mib": 2428.0
+        },
+        {
+          "key": "top_mosaic_09cm_area8_y02_x01.tif",
+          "protocol": "vaihingen",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            208.13970500603318,
+            207.79810403473675,
+            208.0282778479159,
+            208.96489406004548,
+            208.38433597236872,
+            209.0543198864907,
+            207.76440599001944
+          ],
+          "peak_allocated_mib": 2183.005859375,
+          "peak_reserved_mib": 2428.0
+        }
+      ]
+    },
+    "efficient": {
+      "median_ms": 205.12529904954135,
+      "peak_allocated_mib": 2187.01123046875,
+      "images": [
+        {
+          "key": "top_mosaic_09cm_area10_y00_x00.tif",
+          "protocol": "vaihingen",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            203.0830350704491,
+            204.85478197224438,
+            204.93890810757875,
+            206.70719910413027,
+            205.4483180399984,
+            206.76719304174185,
+            206.4985348843038
+          ],
+          "peak_allocated_mib": 2187.01123046875,
+          "peak_reserved_mib": 2428.0
+        },
+        {
+          "key": "top_mosaic_09cm_area16_y00_x00.tif",
+          "protocol": "vaihingen",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            206.58012991771102,
+            205.33435698598623,
+            204.44603799842298,
+            205.18688904121518,
+            205.94105194322765,
+            207.4964481871575,
+            204.64035402983427
+          ],
+          "peak_allocated_mib": 2187.01123046875,
+          "peak_reserved_mib": 2428.0
+        },
+        {
+          "key": "top_mosaic_09cm_area24_y00_x01.tif",
+          "protocol": "vaihingen",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            203.28940893523395,
+            203.76603701151907,
+            204.1683499701321,
+            204.60402802564204,
+            205.88219305500388,
+            205.12529904954135,
+            205.2288691047579
+          ],
+          "peak_allocated_mib": 2187.01123046875,
+          "peak_reserved_mib": 2428.0
+        },
+        {
+          "key": "top_mosaic_09cm_area2_y00_x00.tif",
+          "protocol": "vaihingen",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            205.9817910194397,
+            206.32651122286916,
+            205.0648909062147,
+            205.17519698478281,
+            205.38319507613778,
+            203.63237406127155,
+            204.33754799887538
+          ],
+          "peak_allocated_mib": 2187.01123046875,
+          "peak_reserved_mib": 2428.0
+        },
+        {
+          "key": "top_mosaic_09cm_area33_y01_x01.tif",
+          "protocol": "vaihingen",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            205.01211984083056,
+            205.33311902545393,
+            204.94747906923294,
+            205.29923820868134,
+            203.9442139212042,
+            205.10258409194648,
+            203.78177193924785
+          ],
+          "peak_allocated_mib": 2187.01123046875,
+          "peak_reserved_mib": 2428.0
+        },
+        {
+          "key": "top_mosaic_09cm_area38_y02_x02.tif",
+          "protocol": "vaihingen",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            206.03292295709252,
+            206.38177683576941,
+            204.2362808715552,
+            204.57902899943292,
+            206.34478912688792,
+            206.32209512405097,
+            203.87357706204057
+          ],
+          "peak_allocated_mib": 2187.01123046875,
+          "peak_reserved_mib": 2428.0
+        },
+        {
+          "key": "top_mosaic_09cm_area8_y02_x01.tif",
+          "protocol": "vaihingen",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            204.11289506591856,
+            205.6694768834859,
+            205.91038698330522,
+            205.1547090522945,
+            203.7416670937091,
+            205.08312503807247,
+            203.40610900893807
+          ],
+          "peak_allocated_mib": 2187.01123046875,
+          "peak_reserved_mib": 2428.0
+        }
+      ]
+    }
+  },
+  "changed_pixels": {
+    "compact": 0,
+    "efficient": 0
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "vaihingen",
+    "family": "remote_sensing",
+    "total_images": 113,
+    "background_index": null,
+    "vocabulary": "../vocabularies/vaihingen.json",
+    "profile": {
+      "bank": "kev40_imagenet",
+      "strength": "original",
+      "coupling": 0.25,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.0,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": true
+    }
+  },
+  "cache_identity": "e7be4d13aca30e7424be10c37a458e489a82ec1a1de142866a9cbda40349745a",
+  "target_masks_loaded": false,
+  "sources": {
+    "dinotool/efficient_deployment.py": "b0b832afe4012beb0b1c7960d93810b4e8a4eaba93327402a91fd6ca19a5407c",
+    "dinotool/frozen_deployment.py": "a0500d0c61ba39b37ea70e679011de96d6ec42bf6cb1f7b35a6d13ebfca1b4c1",
+    "dinotool/natural_static_search.py": "43e00fbd73717dd4024a746a7510694cc99852a49d84e504b9f0235ee2380286",
+    "dinotool/compact_deployment.py": "d04994ef5ce33773998b07fa0e7762e3dd4d6dddc38b19c61dc8e38c89a81a8c"
+  },
+  "timing": "Whole RGB input through CPU IDs; excludes decode/init/offline search. Two warmups, seven repeats for cost/profile."
+}

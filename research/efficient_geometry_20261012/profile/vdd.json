@@ -1,0 +1,472 @@
+{
+  "status": "complete",
+  "dataset": "vdd",
+  "costs": {
+    "compact": {
+      "median_ms": 334.60884005762637,
+      "peak_allocated_mib": 2847.791015625,
+      "images": [
+        {
+          "key": "DJI_0007.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            359.88404718227684,
+            359.4167169649154,
+            339.895524084568,
+            344.73972604610026,
+            347.14008402079344,
+            341.13204712048173,
+            340.2433739975095
+          ],
+          "peak_allocated_mib": 2847.791015625,
+          "peak_reserved_mib": 3304.0
+        },
+        {
+          "key": "DJI_0390.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            342.89069194346666,
+            336.7911819368601,
+            339.9670599028468,
+            343.6376489698887,
+            349.9832588713616,
+            346.40779113397,
+            345.0252639595419
+          ],
+          "peak_allocated_mib": 2847.791015625,
+          "peak_reserved_mib": 3304.0
+        },
+        {
+          "key": "DJI_0552.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            350.12981412000954,
+            347.2823610063642,
+            345.0341201387346,
+            348.58828503638506,
+            347.6607738994062,
+            347.2837070003152,
+            332.8032640274614
+          ],
+          "peak_allocated_mib": 2847.791015625,
+          "peak_reserved_mib": 3304.0
+        },
+        {
+          "key": "DJI_0819.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            331.26582903787494,
+            329.6332268510014,
+            331.1360429506749,
+            329.45894496515393,
+            332.81611604616046,
+            328.97599693387747,
+            331.5391889773309
+          ],
+          "peak_allocated_mib": 2847.791015625,
+          "peak_reserved_mib": 3304.0
+        },
+        {
+          "key": "DJI_10054.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            334.2768461443484,
+            331.7514171358198,
+            331.36991085484624,
+            333.03848817013204,
+            332.9740040935576,
+            335.4501579888165,
+            333.06725416332483
+          ],
+          "peak_allocated_mib": 2847.791015625,
+          "peak_reserved_mib": 3304.0
+        },
+        {
+          "key": "DJI_10397.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            336.2112110480666,
+            333.2297191955149,
+            331.91913389600813,
+            334.60884005762637,
+            335.08787397295237,
+            337.6176320016384,
+            332.2729591745883
+          ],
+          "peak_allocated_mib": 2847.791015625,
+          "peak_reserved_mib": 3304.0
+        },
+        {
+          "key": "DJI_10708.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            333.7375018745661,
+            334.3765630852431,
+            334.1306580696255,
+            334.21912183985114,
+            331.07159519568086,
+            334.0635150671005,
+            331.6898378543556
+          ],
+          "peak_allocated_mib": 2847.791015625,
+          "peak_reserved_mib": 3304.0
+        }
+      ]
+    },
+    "efficient_scalar": {
+      "median_ms": 329.28418810479343,
+      "peak_allocated_mib": 2622.03076171875,
+      "images": [
+        {
+          "key": "DJI_0007.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            325.45344484969974,
+            331.49333903566003,
+            330.0776109099388,
+            331.172983860597,
+            331.9488759152591,
+            333.4771099034697,
+            332.4266269337386
+          ],
+          "peak_allocated_mib": 2622.03076171875,
+          "peak_reserved_mib": 2922.0
+        },
+        {
+          "key": "DJI_0390.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            334.3292570207268,
+            332.07507501356304,
+            333.27766391448677,
+            333.31797318533063,
+            335.6448740232736,
+            334.6336670219898,
+            334.4729938544333
+          ],
+          "peak_allocated_mib": 2622.03076171875,
+          "peak_reserved_mib": 2922.0
+        },
+        {
+          "key": "DJI_0552.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            333.5273389238864,
+            332.19482912681997,
+            333.6943360045552,
+            331.64407894946635,
+            329.86552198417485,
+            333.0178780015558,
+            333.6645760573447
+          ],
+          "peak_allocated_mib": 2622.03076171875,
+          "peak_reserved_mib": 2922.0
+        },
+        {
+          "key": "DJI_0819.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            329.28418810479343,
+            327.76640402153134,
+            331.29739901050925,
+            330.818705027923,
+            331.4885669387877,
+            334.67517397366464,
+            327.45562214404345
+          ],
+          "peak_allocated_mib": 2622.03076171875,
+          "peak_reserved_mib": 2922.0
+        },
+        {
+          "key": "DJI_10054.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            313.3621229790151,
+            313.23377694934607,
+            313.67421615868807,
+            313.31084086559713,
+            313.63374390639365,
+            312.5514129642397,
+            313.09118401259184
+          ],
+          "peak_allocated_mib": 2622.03076171875,
+          "peak_reserved_mib": 2922.0
+        },
+        {
+          "key": "DJI_10397.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            310.1600909139961,
+            313.0691549740732,
+            310.1006490178406,
+            310.9697781037539,
+            311.821494018659,
+            313.6910239700228,
+            312.73198197595775
+          ],
+          "peak_allocated_mib": 2622.03076171875,
+          "peak_reserved_mib": 2922.0
+        },
+        {
+          "key": "DJI_10708.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            310.8030119910836,
+            311.2732139416039,
+            311.0191368032247,
+            316.5186829864979,
+            311.20809097774327,
+            310.61802385374904,
+            309.329017996788
+          ],
+          "peak_allocated_mib": 2622.03076171875,
+          "peak_reserved_mib": 2922.0
+        }
+      ]
+    },
+    "efficient": {
+      "median_ms": 303.9003759622574,
+      "peak_allocated_mib": 2622.03125,
+      "images": [
+        {
+          "key": "DJI_0007.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            312.38710996694863,
+            310.6493779923767,
+            303.9003759622574,
+            304.51350193470716,
+            306.43387394957244,
+            308.066810015589,
+            305.199570953846
+          ],
+          "peak_allocated_mib": 2622.03125,
+          "peak_reserved_mib": 2922.0
+        },
+        {
+          "key": "DJI_0390.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            300.92953192070127,
+            301.99887906201184,
+            301.7008430324495,
+            302.6084960438311,
+            301.9371109548956,
+            302.21071490086615,
+            302.13550198823214
+          ],
+          "peak_allocated_mib": 2622.03125,
+          "peak_reserved_mib": 2922.0
+        },
+        {
+          "key": "DJI_0552.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            303.7757589481771,
+            305.320599116385,
+            303.23042115196586,
+            306.43333098851144,
+            305.6191420182586,
+            305.19134015776217,
+            304.9491960555315
+          ],
+          "peak_allocated_mib": 2622.03125,
+          "peak_reserved_mib": 2922.0
+        },
+        {
+          "key": "DJI_0819.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            304.4384350068867,
+            305.15972012653947,
+            304.4954421930015,
+            305.7832431513816,
+            304.26107393577695,
+            306.68672011233866,
+            307.14078107848763
+          ],
+          "peak_allocated_mib": 2622.03125,
+          "peak_reserved_mib": 2922.0
+        },
+        {
+          "key": "DJI_10054.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            301.21199996210635,
+            302.83103603869677,
+            302.0774610340595,
+            301.8837959971279,
+            302.1875489503145,
+            301.8992440775037,
+            301.5384878963232
+          ],
+          "peak_allocated_mib": 2622.03125,
+          "peak_reserved_mib": 2922.0
+        },
+        {
+          "key": "DJI_10397.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            304.3238378595561,
+            306.2315999995917,
+            305.89022883214056,
+            305.4913750384003,
+            304.18007588014007,
+            303.85576211847365,
+            304.2581179179251
+          ],
+          "peak_allocated_mib": 2622.03125,
+          "peak_reserved_mib": 2922.0
+        },
+        {
+          "key": "DJI_10708.JPG",
+          "protocol": "vdd",
+          "shape": [
+            3000,
+            4000
+          ],
+          "milliseconds": [
+            301.3808571267873,
+            301.85873806476593,
+            302.2004410158843,
+            301.6916271299124,
+            301.1255220044404,
+            302.546574966982,
+            302.57828114554286
+          ],
+          "peak_allocated_mib": 2622.03125,
+          "peak_reserved_mib": 2922.0
+        }
+      ]
+    }
+  },
+  "changed_pixels": {
+    "compact": 0,
+    "efficient_scalar": 0,
+    "efficient": 0
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "vdd",
+    "family": "remote_sensing",
+    "total_images": 80,
+    "background_index": 0,
+    "vocabulary": "../vocabularies/vdd.json",
+    "profile": {
+      "bank": "official_imagenet",
+      "strength": "original",
+      "coupling": 1.0,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 0.3,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.0,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": true
+    }
+  },
+  "cache_identity": "c650eb44930462f9a5025431afb09d1ad39787dc62255d56ca3c068a5c751bcf",
+  "target_masks_loaded": false,
+  "timing": "Whole RGB input through CPU IDs; excludes decode/init/offline search. Two warmups, seven repeats for cost/profile."
+}

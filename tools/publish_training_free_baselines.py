@@ -18,6 +18,13 @@ def main():
     root=WORKSPACE/'research/training_free_baselines_full_20261011'
     # No datasets, pretrained weights, features, credentials or third-party code.
     files+=list(root.rglob('*.json'))+list((root/'words').rglob('*.txt'))
+    efficient=WORKSPACE/'research/efficient_geometry_20261012'
+    if (efficient/'comparison_summary.json').exists():
+        files += [WORKSPACE/'tools/report_efficient_geometry.py',
+            WORKSPACE/'research/EFFICIENT_GEOMETRY_20261012.md']
+        files += list(efficient.glob('*.json'))
+        for folder in ('cost','merged','profile','smoke'):
+            files += list((efficient/folder).glob('*.json'))
     for source in files:
         relative=source.relative_to(WORKSPACE);target=repo/relative
         target.parent.mkdir(parents=True,exist_ok=True)

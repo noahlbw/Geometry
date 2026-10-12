@@ -1,0 +1,338 @@
+{
+  "status": "complete",
+  "dataset": "oem",
+  "costs": {
+    "compact": {
+      "median_ms": 210.82365908659995,
+      "peak_allocated_mib": 2227.7265625,
+      "images": [
+        {
+          "key": "aachen/images/aachen_11.tif",
+          "protocol": "oem",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            208.822371205315,
+            209.9391119554639,
+            209.4635129906237,
+            208.77818297594786,
+            209.4030419830233,
+            210.66261711530387,
+            211.07106190174818
+          ],
+          "peak_allocated_mib": 2227.7265625,
+          "peak_reserved_mib": 2444.0
+        },
+        {
+          "key": "chiclayo/images/chiclayo_49.tif",
+          "protocol": "oem",
+          "shape": [
+            1024,
+            1024
+          ],
+          "milliseconds": [
+            209.4330908730626,
+            211.04654693044722,
+            210.82365908659995,
+            209.92723992094398,
+            210.4628540109843,
+            211.38776512816548,
+            211.62864193320274
+          ],
+          "peak_allocated_mib": 2227.7265625,
+          "peak_reserved_mib": 2444.0
+        },
+        {
+          "key": "duesseldorf/images/duesseldorf_35.tif",
+          "protocol": "oem",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            210.89637815020978,
+            208.76386715099216,
+            208.9986929204315,
+            209.3148911371827,
+            208.6932531092316,
+            209.96490912511945,
+            209.78141599334776
+          ],
+          "peak_allocated_mib": 2227.7265625,
+          "peak_reserved_mib": 2444.0
+        },
+        {
+          "key": "lubuskie/images/lubuskie_8.tif",
+          "protocol": "oem",
+          "shape": [
+            1024,
+            1024
+          ],
+          "milliseconds": [
+            212.14708499610424,
+            210.00806102529168,
+            211.05440915562212,
+            210.30794200487435,
+            210.77620005235076,
+            210.06052987650037,
+            212.07020920701325
+          ],
+          "peak_allocated_mib": 2227.7265625,
+          "peak_reserved_mib": 2444.0
+        },
+        {
+          "key": "piura/images/piura_48.tif",
+          "protocol": "oem",
+          "shape": [
+            1024,
+            1024
+          ],
+          "milliseconds": [
+            211.35755395516753,
+            211.31523605436087,
+            213.58501398935914,
+            211.2752180546522,
+            211.5635611116886,
+            210.56731301359832,
+            212.07725093699992
+          ],
+          "peak_allocated_mib": 2227.7265625,
+          "peak_reserved_mib": 2444.0
+        },
+        {
+          "key": "tokyo/images/tokyo_12.tif",
+          "protocol": "oem",
+          "shape": [
+            1024,
+            1024
+          ],
+          "milliseconds": [
+            211.61580691114068,
+            209.8164139315486,
+            211.40154683962464,
+            212.18892093747854,
+            213.99387996643782,
+            211.30573586560786,
+            210.8904637861997
+          ],
+          "peak_allocated_mib": 2227.7265625,
+          "peak_reserved_mib": 2444.0
+        },
+        {
+          "key": "zanzibar/images/zanzibar_99.tif",
+          "protocol": "oem",
+          "shape": [
+            1024,
+            1024
+          ],
+          "milliseconds": [
+            211.01789292879403,
+            210.39897110313177,
+            211.14888787269592,
+            211.38084097765386,
+            210.6302878819406,
+            210.30665887519717,
+            211.63318096660078
+          ],
+          "peak_allocated_mib": 2227.7265625,
+          "peak_reserved_mib": 2444.0
+        }
+      ]
+    },
+    "efficient": {
+      "median_ms": 201.2732019647956,
+      "peak_allocated_mib": 2231.7265625,
+      "images": [
+        {
+          "key": "aachen/images/aachen_11.tif",
+          "protocol": "oem",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            199.62290511466563,
+            199.8949048575014,
+            200.86518302559853,
+            202.1859281230718,
+            199.60671290755272,
+            201.2732019647956,
+            200.45039313845336
+          ],
+          "peak_allocated_mib": 2231.7265625,
+          "peak_reserved_mib": 2444.0
+        },
+        {
+          "key": "chiclayo/images/chiclayo_49.tif",
+          "protocol": "oem",
+          "shape": [
+            1024,
+            1024
+          ],
+          "milliseconds": [
+            201.94512302987278,
+            201.10626285895705,
+            199.82239697128534,
+            202.13370118290186,
+            201.49572216905653,
+            201.67938503436744,
+            202.00105011463165
+          ],
+          "peak_allocated_mib": 2231.7265625,
+          "peak_reserved_mib": 2444.0
+        },
+        {
+          "key": "duesseldorf/images/duesseldorf_35.tif",
+          "protocol": "oem",
+          "shape": [
+            1000,
+            1000
+          ],
+          "milliseconds": [
+            200.18866495229304,
+            199.90891800262034,
+            201.81551296263933,
+            200.96590602770448,
+            200.8930949959904,
+            199.77670605294406,
+            201.84688409790397
+          ],
+          "peak_allocated_mib": 2231.7265625,
+          "peak_reserved_mib": 2444.0
+        },
+        {
+          "key": "lubuskie/images/lubuskie_8.tif",
+          "protocol": "oem",
+          "shape": [
+            1024,
+            1024
+          ],
+          "milliseconds": [
+            200.47214906662703,
+            201.44876092672348,
+            201.08457701280713,
+            203.66601506248116,
+            201.36539707891643,
+            202.8357379604131,
+            201.63988298736513
+          ],
+          "peak_allocated_mib": 2231.7265625,
+          "peak_reserved_mib": 2444.0
+        },
+        {
+          "key": "piura/images/piura_48.tif",
+          "protocol": "oem",
+          "shape": [
+            1024,
+            1024
+          ],
+          "milliseconds": [
+            200.13422495685518,
+            202.1717031020671,
+            200.32702991738915,
+            199.88419790752232,
+            202.03531999140978,
+            202.9226280283183,
+            202.96138199046254
+          ],
+          "peak_allocated_mib": 2231.7265625,
+          "peak_reserved_mib": 2444.0
+        },
+        {
+          "key": "tokyo/images/tokyo_12.tif",
+          "protocol": "oem",
+          "shape": [
+            1024,
+            1024
+          ],
+          "milliseconds": [
+            204.06592916697264,
+            201.7136279027909,
+            200.45324391685426,
+            201.8254790455103,
+            201.391575159505,
+            202.95807090587914,
+            203.00665707327425
+          ],
+          "peak_allocated_mib": 2231.7265625,
+          "peak_reserved_mib": 2444.0
+        },
+        {
+          "key": "zanzibar/images/zanzibar_99.tif",
+          "protocol": "oem",
+          "shape": [
+            1024,
+            1024
+          ],
+          "milliseconds": [
+            201.06131117790937,
+            200.71334089152515,
+            200.8462049998343,
+            200.82696294412017,
+            201.6676131170243,
+            199.8972010333091,
+            199.68489790335298
+          ],
+          "peak_allocated_mib": 2231.7265625,
+          "peak_reserved_mib": 2444.0
+        }
+      ]
+    }
+  },
+  "changed_pixels": {
+    "compact": 0,
+    "efficient": 0
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "oem",
+    "family": "remote_sensing",
+    "total_images": 384,
+    "background_index": null,
+    "vocabulary": "../vocabularies/oem.json",
+    "profile": {
+      "bank": "original",
+      "strength": 1.0,
+      "coupling": 0.25,
+      "temperature": 0.03,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.0,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": true
+    }
+  },
+  "cache_identity": "adacc439f1f4c6f052edbd50a305b418c33bce7662c3c9883db8e2c643d6b8a1",
+  "target_masks_loaded": false,
+  "sources": {
+    "dinotool/efficient_deployment.py": "b0b832afe4012beb0b1c7960d93810b4e8a4eaba93327402a91fd6ca19a5407c",
+    "dinotool/frozen_deployment.py": "a0500d0c61ba39b37ea70e679011de96d6ec42bf6cb1f7b35a6d13ebfca1b4c1",
+    "dinotool/natural_static_search.py": "43e00fbd73717dd4024a746a7510694cc99852a49d84e504b9f0235ee2380286",
+    "dinotool/compact_deployment.py": "d04994ef5ce33773998b07fa0e7762e3dd4d6dddc38b19c61dc8e38c89a81a8c"
+  },
+  "timing": "Whole RGB input through CPU IDs; excludes decode/init/offline search. Two warmups, seven repeats for cost/profile."
+}

@@ -1,0 +1,346 @@
+{
+  "status": "complete",
+  "dataset": "voc21",
+  "costs": {
+    "compact": {
+      "median_ms": 172.8862440213561,
+      "peak_allocated_mib": 2156.0654296875,
+      "images": [
+        {
+          "key": "2007_000033",
+          "protocol": "voc21",
+          "shape": [
+            366,
+            500
+          ],
+          "milliseconds": [
+            200.5651779472828
+          ],
+          "peak_allocated_mib": 2156.0654296875,
+          "peak_reserved_mib": 2352.0
+        },
+        {
+          "key": "2007_007498",
+          "protocol": "voc21",
+          "shape": [
+            376,
+            500
+          ],
+          "milliseconds": [
+            172.2868571523577
+          ],
+          "peak_allocated_mib": 2156.0654296875,
+          "peak_reserved_mib": 2352.0
+        },
+        {
+          "key": "2008_003856",
+          "protocol": "voc21",
+          "shape": [
+            375,
+            500
+          ],
+          "milliseconds": [
+            174.92547212168574
+          ],
+          "peak_allocated_mib": 2156.0654296875,
+          "peak_reserved_mib": 2352.0
+        },
+        {
+          "key": "2009_001644",
+          "protocol": "voc21",
+          "shape": [
+            375,
+            500
+          ],
+          "milliseconds": [
+            171.35557718575
+          ],
+          "peak_allocated_mib": 2156.0654296875,
+          "peak_reserved_mib": 2352.0
+        },
+        {
+          "key": "2010_000552",
+          "protocol": "voc21",
+          "shape": [
+            375,
+            500
+          ],
+          "milliseconds": [
+            173.4501807950437
+          ],
+          "peak_allocated_mib": 2156.0654296875,
+          "peak_reserved_mib": 2352.0
+        },
+        {
+          "key": "2010_005180",
+          "protocol": "voc21",
+          "shape": [
+            375,
+            500
+          ],
+          "milliseconds": [
+            172.8862440213561
+          ],
+          "peak_allocated_mib": 2156.0654296875,
+          "peak_reserved_mib": 2352.0
+        },
+        {
+          "key": "2011_003271",
+          "protocol": "voc21",
+          "shape": [
+            500,
+            500
+          ],
+          "milliseconds": [
+            149.99471697956324
+          ],
+          "peak_allocated_mib": 2156.0654296875,
+          "peak_reserved_mib": 2352.0
+        }
+      ]
+    },
+    "efficient_scalar": {
+      "median_ms": 169.16365316137671,
+      "peak_allocated_mib": 2160.0654296875,
+      "images": [
+        {
+          "key": "2007_000033",
+          "protocol": "voc21",
+          "shape": [
+            366,
+            500
+          ],
+          "milliseconds": [
+            196.38944300822914
+          ],
+          "peak_allocated_mib": 2160.0654296875,
+          "peak_reserved_mib": 2352.0
+        },
+        {
+          "key": "2007_007498",
+          "protocol": "voc21",
+          "shape": [
+            376,
+            500
+          ],
+          "milliseconds": [
+            168.9785721246153
+          ],
+          "peak_allocated_mib": 2160.0654296875,
+          "peak_reserved_mib": 2352.0
+        },
+        {
+          "key": "2008_003856",
+          "protocol": "voc21",
+          "shape": [
+            375,
+            500
+          ],
+          "milliseconds": [
+            169.16365316137671
+          ],
+          "peak_allocated_mib": 2160.0654296875,
+          "peak_reserved_mib": 2352.0
+        },
+        {
+          "key": "2009_001644",
+          "protocol": "voc21",
+          "shape": [
+            375,
+            500
+          ],
+          "milliseconds": [
+            170.8347648382187
+          ],
+          "peak_allocated_mib": 2160.0654296875,
+          "peak_reserved_mib": 2352.0
+        },
+        {
+          "key": "2010_000552",
+          "protocol": "voc21",
+          "shape": [
+            375,
+            500
+          ],
+          "milliseconds": [
+            171.12606181763113
+          ],
+          "peak_allocated_mib": 2160.0654296875,
+          "peak_reserved_mib": 2352.0
+        },
+        {
+          "key": "2010_005180",
+          "protocol": "voc21",
+          "shape": [
+            375,
+            500
+          ],
+          "milliseconds": [
+            168.37723599746823
+          ],
+          "peak_allocated_mib": 2160.0654296875,
+          "peak_reserved_mib": 2352.0
+        },
+        {
+          "key": "2011_003271",
+          "protocol": "voc21",
+          "shape": [
+            500,
+            500
+          ],
+          "milliseconds": [
+            147.20733603462577
+          ],
+          "peak_allocated_mib": 2160.0654296875,
+          "peak_reserved_mib": 2352.0
+        }
+      ]
+    },
+    "efficient": {
+      "median_ms": 166.6137450374663,
+      "peak_allocated_mib": 2160.06201171875,
+      "images": [
+        {
+          "key": "2007_000033",
+          "protocol": "voc21",
+          "shape": [
+            366,
+            500
+          ],
+          "milliseconds": [
+            188.43374215066433
+          ],
+          "peak_allocated_mib": 2160.06201171875,
+          "peak_reserved_mib": 2352.0
+        },
+        {
+          "key": "2007_007498",
+          "protocol": "voc21",
+          "shape": [
+            376,
+            500
+          ],
+          "milliseconds": [
+            167.19717299565673
+          ],
+          "peak_allocated_mib": 2160.06201171875,
+          "peak_reserved_mib": 2352.0
+        },
+        {
+          "key": "2008_003856",
+          "protocol": "voc21",
+          "shape": [
+            375,
+            500
+          ],
+          "milliseconds": [
+            166.6137450374663
+          ],
+          "peak_allocated_mib": 2160.06201171875,
+          "peak_reserved_mib": 2352.0
+        },
+        {
+          "key": "2009_001644",
+          "protocol": "voc21",
+          "shape": [
+            375,
+            500
+          ],
+          "milliseconds": [
+            166.36058408766985
+          ],
+          "peak_allocated_mib": 2160.06201171875,
+          "peak_reserved_mib": 2352.0
+        },
+        {
+          "key": "2010_000552",
+          "protocol": "voc21",
+          "shape": [
+            375,
+            500
+          ],
+          "milliseconds": [
+            166.47789301350713
+          ],
+          "peak_allocated_mib": 2160.06201171875,
+          "peak_reserved_mib": 2352.0
+        },
+        {
+          "key": "2010_005180",
+          "protocol": "voc21",
+          "shape": [
+            375,
+            500
+          ],
+          "milliseconds": [
+            167.35985199920833
+          ],
+          "peak_allocated_mib": 2160.06201171875,
+          "peak_reserved_mib": 2352.0
+        },
+        {
+          "key": "2011_003271",
+          "protocol": "voc21",
+          "shape": [
+            500,
+            500
+          ],
+          "milliseconds": [
+            146.88492706045508
+          ],
+          "peak_allocated_mib": 2160.06201171875,
+          "peak_reserved_mib": 2352.0
+        }
+      ]
+    }
+  },
+  "changed_pixels": {
+    "compact": 0,
+    "efficient_scalar": 0,
+    "efficient": 0
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "voc21",
+    "family": "natural",
+    "total_images": 1449,
+    "background_index": 0,
+    "vocabulary": "../vocabularies/voc21.json",
+    "profile": {
+      "bank": "official_segmentation",
+      "strength": 1.0,
+      "coupling": 0.75,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 0.3,
+      "wide_policy": "natural_short336_cap672",
+      "background_rule": "union_max"
+    },
+    "background_bias": -0.25,
+    "background_threshold": 0.15,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "curated_variable_refine_natural_20261010",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": true
+    }
+  },
+  "cache_identity": "c2f6fa149b02474cd24e8ace1ba18e0de51b6f351f691a9efc9c3fbc88d34197",
+  "target_masks_loaded": false,
+  "timing": "Whole RGB input through CPU IDs; excludes decode/init/offline search. Two warmups, seven repeats for cost/profile."
+}

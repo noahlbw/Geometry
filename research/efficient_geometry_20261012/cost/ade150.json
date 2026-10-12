@@ -1,0 +1,338 @@
+{
+  "status": "complete",
+  "dataset": "ade150",
+  "costs": {
+    "compact": {
+      "median_ms": 254.33080713264644,
+      "peak_allocated_mib": 3295.380859375,
+      "images": [
+        {
+          "key": "ADE_val_00000001",
+          "protocol": "ade150",
+          "shape": [
+            512,
+            683
+          ],
+          "milliseconds": [
+            254.33080713264644,
+            253.89841315336525,
+            254.20689908787608,
+            256.3487929292023,
+            254.69763902947307,
+            253.9176819846034,
+            254.74474998191
+          ],
+          "peak_allocated_mib": 3248.8828125,
+          "peak_reserved_mib": 4034.0
+        },
+        {
+          "key": "ADE_val_00000334",
+          "protocol": "ade150",
+          "shape": [
+            320,
+            240
+          ],
+          "milliseconds": [
+            250.45013311319053,
+            250.63928100280464,
+            250.85945590399206,
+            250.48982305452228,
+            250.48271100968122,
+            250.45111286453903,
+            251.01827504113317
+          ],
+          "peak_allocated_mib": 3154.25390625,
+          "peak_reserved_mib": 4034.0
+        },
+        {
+          "key": "ADE_val_00000667",
+          "protocol": "ade150",
+          "shape": [
+            234,
+            350
+          ],
+          "milliseconds": [
+            291.9547299388796,
+            293.4436311479658,
+            292.4852641299367,
+            292.01673110947013,
+            293.53592498227954,
+            293.71448792517185,
+            293.44352311454713
+          ],
+          "peak_allocated_mib": 3130.42626953125,
+          "peak_reserved_mib": 4342.0
+        },
+        {
+          "key": "ADE_val_00001000",
+          "protocol": "ade150",
+          "shape": [
+            200,
+            250
+          ],
+          "milliseconds": [
+            249.35646308586,
+            252.84456205554307,
+            253.6580259911716,
+            254.18968894518912,
+            253.68290883488953,
+            255.75966318137944,
+            254.72890492528677
+          ],
+          "peak_allocated_mib": 3172.8837890625,
+          "peak_reserved_mib": 5078.0
+        },
+        {
+          "key": "ADE_val_00001333",
+          "protocol": "ade150",
+          "shape": [
+            512,
+            683
+          ],
+          "milliseconds": [
+            264.79200809262693,
+            263.58117582276464,
+            264.83815908432007,
+            264.7361590061337,
+            263.121240073815,
+            263.19294003769755,
+            264.0800380613655
+          ],
+          "peak_allocated_mib": 3248.8828125,
+          "peak_reserved_mib": 5078.0
+        },
+        {
+          "key": "ADE_val_00001666",
+          "protocol": "ade150",
+          "shape": [
+            256,
+            256
+          ],
+          "milliseconds": [
+            212.0322159025818,
+            212.00923109427094,
+            212.04414800740778,
+            211.32878796197474,
+            211.52426884509623,
+            211.6546391043812,
+            211.8366619106382
+          ],
+          "peak_allocated_mib": 3295.380859375,
+          "peak_reserved_mib": 5998.0
+        },
+        {
+          "key": "ADE_val_00002000",
+          "protocol": "ade150",
+          "shape": [
+            300,
+            400
+          ],
+          "milliseconds": [
+            253.34637379273772,
+            253.64141701720655,
+            255.66686294041574,
+            258.34007700905204,
+            262.24824297241867,
+            262.6451491378248,
+            261.5346540696919
+          ],
+          "peak_allocated_mib": 3154.25390625,
+          "peak_reserved_mib": 5998.0
+        }
+      ]
+    },
+    "efficient": {
+      "median_ms": 181.7956119775772,
+      "peak_allocated_mib": 3047.72705078125,
+      "images": [
+        {
+          "key": "ADE_val_00000001",
+          "protocol": "ade150",
+          "shape": [
+            512,
+            683
+          ],
+          "milliseconds": [
+            192.09817121736705,
+            191.48219097405672,
+            191.2142219953239,
+            190.65229804255068,
+            191.337910015136,
+            189.78851311840117,
+            189.61991695687175
+          ],
+          "peak_allocated_mib": 2896.220703125,
+          "peak_reserved_mib": 3734.0
+        },
+        {
+          "key": "ADE_val_00000334",
+          "protocol": "ade150",
+          "shape": [
+            320,
+            240
+          ],
+          "milliseconds": [
+            187.33980786055326,
+            187.25620093755424,
+            187.0829970575869,
+            187.73552495986223,
+            187.0713869575411,
+            180.78399286605418,
+            179.34519494883716
+          ],
+          "peak_allocated_mib": 2896.220703125,
+          "peak_reserved_mib": 3734.0
+        },
+        {
+          "key": "ADE_val_00000667",
+          "protocol": "ade150",
+          "shape": [
+            234,
+            350
+          ],
+          "milliseconds": [
+            203.15960911102593,
+            202.64805085025728,
+            201.98701205663383,
+            202.03973492607474,
+            201.6818451229483,
+            201.95268606767058,
+            202.57554203271866
+          ],
+          "peak_allocated_mib": 2871.267578125,
+          "peak_reserved_mib": 3734.0
+        },
+        {
+          "key": "ADE_val_00001000",
+          "protocol": "ade150",
+          "shape": [
+            200,
+            250
+          ],
+          "milliseconds": [
+            179.37150388024747,
+            179.5509981457144,
+            179.44414587691426,
+            179.29750005714595,
+            179.29872404783964,
+            179.6782601159066,
+            179.50900993309915
+          ],
+          "peak_allocated_mib": 2914.4599609375,
+          "peak_reserved_mib": 4470.0
+        },
+        {
+          "key": "ADE_val_00001333",
+          "protocol": "ade150",
+          "shape": [
+            512,
+            683
+          ],
+          "milliseconds": [
+            181.7956119775772,
+            179.9367570783943,
+            184.43523510359228,
+            182.73862800560892,
+            182.2431089822203,
+            182.31332092545927,
+            182.70408292301
+          ],
+          "peak_allocated_mib": 2896.220703125,
+          "peak_reserved_mib": 4470.0
+        },
+        {
+          "key": "ADE_val_00001666",
+          "protocol": "ade150",
+          "shape": [
+            256,
+            256
+          ],
+          "milliseconds": [
+            158.4374369122088,
+            159.09212408587337,
+            159.19482498429716,
+            159.48958904482424,
+            158.63025095313787,
+            158.49204920232296,
+            159.33103300631046
+          ],
+          "peak_allocated_mib": 3047.72705078125,
+          "peak_reserved_mib": 5390.0
+        },
+        {
+          "key": "ADE_val_00002000",
+          "protocol": "ade150",
+          "shape": [
+            300,
+            400
+          ],
+          "milliseconds": [
+            180.24482880719006,
+            179.8545189667493,
+            178.9734410122037,
+            178.812864003703,
+            179.669942939654,
+            180.0208119675517,
+            179.86314184963703
+          ],
+          "peak_allocated_mib": 2896.220703125,
+          "peak_reserved_mib": 5392.0
+        }
+      ]
+    }
+  },
+  "changed_pixels": {
+    "compact": 0,
+    "efficient": 0
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "ade150",
+    "family": "natural",
+    "total_images": 2000,
+    "background_index": null,
+    "vocabulary": "../vocabularies/ade150.json",
+    "profile": {
+      "bank": "semantic_segmentation",
+      "strength": "original",
+      "coupling": 0.25,
+      "temperature": 0.14,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "natural_short336_cap672",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.0,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": true
+    }
+  },
+  "cache_identity": "4516dd620581caf4b2fb91f600234254ce97fbf51b2f8c3ebca43a199c674ea0",
+  "target_masks_loaded": false,
+  "sources": {
+    "dinotool/efficient_deployment.py": "b0b832afe4012beb0b1c7960d93810b4e8a4eaba93327402a91fd6ca19a5407c",
+    "dinotool/frozen_deployment.py": "a0500d0c61ba39b37ea70e679011de96d6ec42bf6cb1f7b35a6d13ebfca1b4c1",
+    "dinotool/natural_static_search.py": "43e00fbd73717dd4024a746a7510694cc99852a49d84e504b9f0235ee2380286",
+    "dinotool/compact_deployment.py": "d04994ef5ce33773998b07fa0e7762e3dd4d6dddc38b19c61dc8e38c89a81a8c"
+  },
+  "timing": "Whole RGB input through CPU IDs; excludes decode/init/offline search. Two warmups, seven repeats for cost/profile."
+}

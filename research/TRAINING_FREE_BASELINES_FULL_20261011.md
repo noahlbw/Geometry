@@ -24,6 +24,35 @@ Status: complete. Only verified complete protocols receive scores.
 |coco_stuff171|5000|33.7661|33.4940|26.3142|26.9368|27.4517|31.8365|23.3325|
 |Eight remote mean|20092|53.8665|44.2856|30.8299|32.7692|31.8556|29.6102|37.0394|
 
+## Latest Geometry whole-image cost (2026-10-12)
+
+All 15 protocols / 45,200 protocol images completed paired compact-versus-efficient full evaluation. Zero prediction pixels changed; both backends exactly reproduce the retained historical aggregate confusion matrices and all mIoU/per-class scores. Unique coverage, per-image confusion sums and scored target counts are verified. The following current costs accompany the Geometry accuracy column above.
+
+A800; seven fixed RGB images per protocol, two warmups and seven synchronized repeats per image. Latency is the median over measured repetitions; memory is peak CUDA allocated MiB over those images. Whole-image inference includes resize, all visual forwards/readouts, reconstruction, original-resolution restoration and CPU class IDs. Decode, initialization, offline vocabulary selection and labeled development are excluded. Geometry uses Torch 2.6/CUDA 12.4; the five native baselines retain their separately recorded Torch 2.4 environment. VIP costs are historical same-text measurements on the same image keys, rather than a simultaneous remeasurement; its timing bank may differ from the strongest VIP accuracy reference.
+
+|Protocol|Images|Geometry mIoU|Compact ms|Efficient ms|Compact MiB|Efficient MiB|Prior VIP ms|Prior VIP MiB|Efficient/VIP time|
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+|vdd|80|60.4352|330.05|309.98|2847.79|2622.03|190.85|2332.93|1.624|
+|potsdam|504|56.1934|214.37|208.24|2155.97|2159.85|104.11|1739.21|2.000|
+|udd5|40|55.8266|306.73|303.05|2677.54|2256.33|191.15|2147.02|1.585|
+|vaihingen|113|58.8562|209.37|205.13|2183.01|2187.01|108.55|1747.82|1.890|
+|oem|384|45.1052|210.82|201.27|2227.73|2231.73|105.38|1810.02|1.910|
+|loveda P|1669|69.6117|214.19|207.31|2275.92|2279.92|105.86|1811.12|1.958|
+|loveda D|1669|45.3171|215.10|207.03|2275.92|2279.92|105.86|1811.12|1.956|
+|landcoverai|1602|65.5400|202.28|193.48|2199.02|2203.02|102.71|1762.63|1.884|
+|flair1|15700|43.6579|218.65|204.19|2266.69|2270.68|111.14|1868.40|1.837|
+|voc20|1449|92.7936|166.32|156.35|2201.84|2218.72|58.16|1743.14|2.688|
+|voc21|1449|75.8586|164.24|153.29|2156.07|2179.69|59.50|1745.57|2.576|
+|ade150|2000|31.3398|254.33|181.80|3295.38|3047.73|113.98|2174.80|1.595|
+|context59|5105|46.3075|219.14|181.78|2424.23|2332.21|111.84|1804.30|1.625|
+|context60|5105|44.7613|218.93|185.16|2479.30|2409.49|112.06|1811.42|1.652|
+|coco_object81|5000|50.3999|237.41|186.78|2700.11|2620.25|131.46|1944.13|1.421|
+|coco_stuff171|5000|33.7661|299.55|201.94|3399.56|3025.53|185.87|2187.17|1.086|
+
+LoveDA P/D costs are separated by readout; their images are counted once in the 45,200 total. VOC20/21 and PC59/60 share photographs. UDD5 is the established 40-image five-class protocol. Median latency reduction across the 15 protocols is 6.08% versus the already compact backend. Several small-class protocols have peak-memory increases of about 4–24 MiB; both backends remain available. The original vocabulary, coefficients, visual view budget and numerical dtypes are retained. These are execution savings with unchanged accuracy, not a new model-selection result.
+
+Detailed execution changes and per-class replay: [EFFICIENT_GEOMETRY_20261012.md](EFFICIENT_GEOMETRY_20261012.md). Machine-readable comparisons: [comparison_summary.json](efficient_geometry_20261012/comparison_summary.json). Per-image timing/memory records: [cost/](efficient_geometry_20261012/cost/).
+
 ## Standalone whole-image cost
 
 |Method|Protocol|Median ms|Peak allocated MiB|Prior same-text VIP ms|Ratio|Native config|

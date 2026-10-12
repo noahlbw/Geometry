@@ -1,0 +1,360 @@
+{
+  "status": "complete",
+  "dataset": "vaihingen",
+  "processed_images": 113,
+  "sample_keys": [
+    "top_mosaic_09cm_area10_y00_x00.tif",
+    "top_mosaic_09cm_area10_y00_x01.tif",
+    "top_mosaic_09cm_area10_y01_x00.tif",
+    "top_mosaic_09cm_area10_y01_x01.tif",
+    "top_mosaic_09cm_area10_y02_x00.tif",
+    "top_mosaic_09cm_area10_y02_x01.tif",
+    "top_mosaic_09cm_area12_y00_x00.tif",
+    "top_mosaic_09cm_area12_y00_x01.tif",
+    "top_mosaic_09cm_area12_y01_x00.tif",
+    "top_mosaic_09cm_area12_y01_x01.tif",
+    "top_mosaic_09cm_area12_y02_x00.tif",
+    "top_mosaic_09cm_area12_y02_x01.tif",
+    "top_mosaic_09cm_area14_y00_x00.tif",
+    "top_mosaic_09cm_area14_y00_x01.tif",
+    "top_mosaic_09cm_area14_y01_x00.tif",
+    "top_mosaic_09cm_area14_y01_x01.tif",
+    "top_mosaic_09cm_area14_y02_x00.tif",
+    "top_mosaic_09cm_area14_y02_x01.tif",
+    "top_mosaic_09cm_area16_y00_x00.tif",
+    "top_mosaic_09cm_area16_y00_x01.tif",
+    "top_mosaic_09cm_area16_y01_x00.tif",
+    "top_mosaic_09cm_area16_y01_x01.tif",
+    "top_mosaic_09cm_area16_y02_x00.tif",
+    "top_mosaic_09cm_area16_y02_x01.tif",
+    "top_mosaic_09cm_area20_y00_x00.tif",
+    "top_mosaic_09cm_area20_y00_x01.tif",
+    "top_mosaic_09cm_area20_y01_x00.tif",
+    "top_mosaic_09cm_area20_y01_x01.tif",
+    "top_mosaic_09cm_area20_y02_x00.tif",
+    "top_mosaic_09cm_area20_y02_x01.tif",
+    "top_mosaic_09cm_area22_y00_x00.tif",
+    "top_mosaic_09cm_area22_y00_x01.tif",
+    "top_mosaic_09cm_area22_y01_x00.tif",
+    "top_mosaic_09cm_area22_y01_x01.tif",
+    "top_mosaic_09cm_area22_y02_x00.tif",
+    "top_mosaic_09cm_area22_y02_x01.tif",
+    "top_mosaic_09cm_area24_y00_x00.tif",
+    "top_mosaic_09cm_area24_y00_x01.tif",
+    "top_mosaic_09cm_area24_y01_x00.tif",
+    "top_mosaic_09cm_area24_y01_x01.tif",
+    "top_mosaic_09cm_area24_y02_x00.tif",
+    "top_mosaic_09cm_area24_y02_x01.tif",
+    "top_mosaic_09cm_area27_y00_x00.tif",
+    "top_mosaic_09cm_area27_y00_x01.tif",
+    "top_mosaic_09cm_area27_y01_x00.tif",
+    "top_mosaic_09cm_area27_y01_x01.tif",
+    "top_mosaic_09cm_area27_y02_x00.tif",
+    "top_mosaic_09cm_area27_y02_x01.tif",
+    "top_mosaic_09cm_area27_y03_x00.tif",
+    "top_mosaic_09cm_area27_y03_x01.tif",
+    "top_mosaic_09cm_area29_y00_x00.tif",
+    "top_mosaic_09cm_area29_y00_x01.tif",
+    "top_mosaic_09cm_area29_y01_x00.tif",
+    "top_mosaic_09cm_area29_y01_x01.tif",
+    "top_mosaic_09cm_area29_y02_x00.tif",
+    "top_mosaic_09cm_area29_y02_x01.tif",
+    "top_mosaic_09cm_area2_y00_x00.tif",
+    "top_mosaic_09cm_area2_y00_x01.tif",
+    "top_mosaic_09cm_area2_y00_x02.tif",
+    "top_mosaic_09cm_area2_y01_x00.tif",
+    "top_mosaic_09cm_area2_y01_x01.tif",
+    "top_mosaic_09cm_area2_y01_x02.tif",
+    "top_mosaic_09cm_area2_y02_x00.tif",
+    "top_mosaic_09cm_area2_y02_x01.tif",
+    "top_mosaic_09cm_area2_y02_x02.tif",
+    "top_mosaic_09cm_area31_y00_x00.tif",
+    "top_mosaic_09cm_area31_y00_x01.tif",
+    "top_mosaic_09cm_area31_y01_x00.tif",
+    "top_mosaic_09cm_area31_y01_x01.tif",
+    "top_mosaic_09cm_area31_y02_x00.tif",
+    "top_mosaic_09cm_area31_y02_x01.tif",
+    "top_mosaic_09cm_area33_y00_x00.tif",
+    "top_mosaic_09cm_area33_y00_x01.tif",
+    "top_mosaic_09cm_area33_y01_x00.tif",
+    "top_mosaic_09cm_area33_y01_x01.tif",
+    "top_mosaic_09cm_area33_y02_x00.tif",
+    "top_mosaic_09cm_area33_y02_x01.tif",
+    "top_mosaic_09cm_area35_y00_x00.tif",
+    "top_mosaic_09cm_area35_y00_x01.tif",
+    "top_mosaic_09cm_area35_y00_x02.tif",
+    "top_mosaic_09cm_area35_y01_x00.tif",
+    "top_mosaic_09cm_area35_y01_x01.tif",
+    "top_mosaic_09cm_area35_y01_x02.tif",
+    "top_mosaic_09cm_area38_y00_x00.tif",
+    "top_mosaic_09cm_area38_y00_x01.tif",
+    "top_mosaic_09cm_area38_y00_x02.tif",
+    "top_mosaic_09cm_area38_y00_x03.tif",
+    "top_mosaic_09cm_area38_y01_x00.tif",
+    "top_mosaic_09cm_area38_y01_x01.tif",
+    "top_mosaic_09cm_area38_y01_x02.tif",
+    "top_mosaic_09cm_area38_y01_x03.tif",
+    "top_mosaic_09cm_area38_y02_x00.tif",
+    "top_mosaic_09cm_area38_y02_x01.tif",
+    "top_mosaic_09cm_area38_y02_x02.tif",
+    "top_mosaic_09cm_area38_y02_x03.tif",
+    "top_mosaic_09cm_area4_y00_x00.tif",
+    "top_mosaic_09cm_area4_y00_x01.tif",
+    "top_mosaic_09cm_area4_y01_x00.tif",
+    "top_mosaic_09cm_area4_y01_x01.tif",
+    "top_mosaic_09cm_area4_y02_x00.tif",
+    "top_mosaic_09cm_area4_y02_x01.tif",
+    "top_mosaic_09cm_area6_y00_x00.tif",
+    "top_mosaic_09cm_area6_y00_x01.tif",
+    "top_mosaic_09cm_area6_y01_x00.tif",
+    "top_mosaic_09cm_area6_y01_x01.tif",
+    "top_mosaic_09cm_area6_y02_x00.tif",
+    "top_mosaic_09cm_area6_y02_x01.tif",
+    "top_mosaic_09cm_area8_y00_x00.tif",
+    "top_mosaic_09cm_area8_y00_x01.tif",
+    "top_mosaic_09cm_area8_y01_x00.tif",
+    "top_mosaic_09cm_area8_y01_x01.tif",
+    "top_mosaic_09cm_area8_y02_x00.tif",
+    "top_mosaic_09cm_area8_y02_x01.tif"
+  ],
+  "coverage_verified": true,
+  "scored_target_counts_match": true,
+  "per_image_sums_verified": true,
+  "metrics": {
+    "compact": {
+      "vaihingen": {
+        "mean_iou_percent": 58.8562,
+        "pixel_accuracy_percent": 77.6286,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 66.0449,
+            "target_pixels": 31877366,
+            "predicted_pixels": 34658811,
+            "precision_percent": 76.3586,
+            "recall_percent": 83.0212,
+            "predicted_area_percent": 30.9366
+          },
+          {
+            "name": "building",
+            "iou_percent": 72.7879,
+            "target_pixels": 29513079,
+            "predicted_pixels": 37192643,
+            "precision_percent": 75.553,
+            "recall_percent": 95.2126,
+            "predicted_area_percent": 33.1983
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 40.6235,
+            "target_pixels": 24006993,
+            "predicted_pixels": 12717934,
+            "precision_percent": 83.4188,
+            "recall_percent": 44.1919,
+            "predicted_area_percent": 11.3521
+          },
+          {
+            "name": "tree",
+            "iou_percent": 69.5008,
+            "target_pixels": 25171696,
+            "predicted_pixels": 24981638,
+            "precision_percent": 82.3184,
+            "recall_percent": 81.6969,
+            "predicted_area_percent": 22.2987
+          },
+          {
+            "name": "car",
+            "iou_percent": 45.3241,
+            "target_pixels": 1462487,
+            "predicted_pixels": 2480595,
+            "precision_percent": 49.576,
+            "recall_percent": 84.0882,
+            "predicted_area_percent": 2.2142
+          }
+        ],
+        "confusion_matrix": [
+          [
+            26464976,
+            3329845,
+            155203,
+            901570,
+            1025772
+          ],
+          [
+            994290,
+            28100160,
+            251236,
+            152027,
+            15366
+          ],
+          [
+            5441622,
+            4455698,
+            10609154,
+            3356172,
+            144347
+          ],
+          [
+            1600326,
+            1239629,
+            1701916,
+            20564494,
+            65331
+          ],
+          [
+            157597,
+            67311,
+            425,
+            7375,
+            1229779
+          ]
+        ],
+        "ignored_pixels": 0,
+        "unscored_prediction_classes": 0
+      }
+    },
+    "efficient": {
+      "vaihingen": {
+        "mean_iou_percent": 58.8562,
+        "pixel_accuracy_percent": 77.6286,
+        "per_class": [
+          {
+            "name": "impervious surface",
+            "iou_percent": 66.0449,
+            "target_pixels": 31877366,
+            "predicted_pixels": 34658811,
+            "precision_percent": 76.3586,
+            "recall_percent": 83.0212,
+            "predicted_area_percent": 30.9366
+          },
+          {
+            "name": "building",
+            "iou_percent": 72.7879,
+            "target_pixels": 29513079,
+            "predicted_pixels": 37192643,
+            "precision_percent": 75.553,
+            "recall_percent": 95.2126,
+            "predicted_area_percent": 33.1983
+          },
+          {
+            "name": "low vegetation",
+            "iou_percent": 40.6235,
+            "target_pixels": 24006993,
+            "predicted_pixels": 12717934,
+            "precision_percent": 83.4188,
+            "recall_percent": 44.1919,
+            "predicted_area_percent": 11.3521
+          },
+          {
+            "name": "tree",
+            "iou_percent": 69.5008,
+            "target_pixels": 25171696,
+            "predicted_pixels": 24981638,
+            "precision_percent": 82.3184,
+            "recall_percent": 81.6969,
+            "predicted_area_percent": 22.2987
+          },
+          {
+            "name": "car",
+            "iou_percent": 45.3241,
+            "target_pixels": 1462487,
+            "predicted_pixels": 2480595,
+            "precision_percent": 49.576,
+            "recall_percent": 84.0882,
+            "predicted_area_percent": 2.2142
+          }
+        ],
+        "confusion_matrix": [
+          [
+            26464976,
+            3329845,
+            155203,
+            901570,
+            1025772
+          ],
+          [
+            994290,
+            28100160,
+            251236,
+            152027,
+            15366
+          ],
+          [
+            5441622,
+            4455698,
+            10609154,
+            3356172,
+            144347
+          ],
+          [
+            1600326,
+            1239629,
+            1701916,
+            20564494,
+            65331
+          ],
+          [
+            157597,
+            67311,
+            425,
+            7375,
+            1229779
+          ]
+        ],
+        "ignored_pixels": 0,
+        "unscored_prediction_classes": 0
+      }
+    }
+  },
+  "exact_historical_confusion": {
+    "compact__vaihingen": true,
+    "efficient__vaihingen": true
+  },
+  "changed_pixels": {
+    "vaihingen": 0
+  },
+  "changed_keys": [],
+  "config": {
+    "schema": 1,
+    "dataset": "vaihingen",
+    "family": "remote_sensing",
+    "total_images": 113,
+    "background_index": null,
+    "vocabulary": "../vocabularies/vaihingen.json",
+    "profile": {
+      "bank": "kev40_imagenet",
+      "strength": "original",
+      "coupling": 0.25,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.0,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": true
+    }
+  },
+  "cache_identity": "e7be4d13aca30e7424be10c37a458e489a82ec1a1de142866a9cbda40349745a",
+  "aggregate_wall_seconds": 52.67412975104526
+}

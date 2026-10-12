@@ -1,0 +1,338 @@
+{
+  "status": "complete",
+  "dataset": "landcoverai",
+  "costs": {
+    "compact": {
+      "median_ms": 202.28077797219157,
+      "peak_allocated_mib": 2199.0166015625,
+      "images": [
+        {
+          "key": "M-33-20-D-c-4-2_101",
+          "protocol": "landcoverai",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            200.6249539554119,
+            201.44818001426756,
+            199.84063901938498,
+            200.91883395798504,
+            200.6533571984619,
+            200.6098588462919,
+            199.24552296288311
+          ],
+          "peak_allocated_mib": 2199.0166015625,
+          "peak_reserved_mib": 2432.0
+        },
+        {
+          "key": "M-33-7-A-d-3-2_259",
+          "protocol": "landcoverai",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            201.7557241488248,
+            200.80840098671615,
+            201.2018880341202,
+            201.52260293252766,
+            203.34664196707308,
+            201.27965486608446,
+            201.66390598751605
+          ],
+          "peak_allocated_mib": 2199.0166015625,
+          "peak_reserved_mib": 2432.0
+        },
+        {
+          "key": "M-34-56-A-b-1-4_14",
+          "protocol": "landcoverai",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            202.2763080894947,
+            201.92662812769413,
+            201.36373303830624,
+            201.42659614793956,
+            201.66499493643641,
+            201.2594521511346,
+            201.0164789389819
+          ],
+          "peak_allocated_mib": 2199.0166015625,
+          "peak_reserved_mib": 2432.0
+        },
+        {
+          "key": "M-34-68-B-a-1-3_239",
+          "protocol": "landcoverai",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            202.28077797219157,
+            201.5360170044005,
+            202.6771621312946,
+            202.86899502389133,
+            203.6767741665244,
+            202.43629696778953,
+            202.07446813583374
+          ],
+          "peak_allocated_mib": 2199.0166015625,
+          "peak_reserved_mib": 2432.0
+        },
+        {
+          "key": "N-33-139-C-d-2-2_185",
+          "protocol": "landcoverai",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            202.65033980831504,
+            200.28211502358317,
+            205.5837488733232,
+            204.81828995980322,
+            202.48787407763302,
+            203.5042429342866,
+            204.58436687476933
+          ],
+          "peak_allocated_mib": 2199.0166015625,
+          "peak_reserved_mib": 2432.0
+        },
+        {
+          "key": "N-34-140-A-b-4-2_1",
+          "protocol": "landcoverai",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            203.60198710113764,
+            202.13144086301327,
+            203.2172130420804,
+            213.62427901476622,
+            209.9896678701043,
+            209.24569014459848,
+            210.1009041070938
+          ],
+          "peak_allocated_mib": 2199.0166015625,
+          "peak_reserved_mib": 2432.0
+        },
+        {
+          "key": "N-34-97-D-c-2-4_75",
+          "protocol": "landcoverai",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            210.90646996162832,
+            211.0420069657266,
+            208.10153195634484,
+            203.6073908675462,
+            204.69443406909704,
+            202.73840706795454,
+            203.16752302460372
+          ],
+          "peak_allocated_mib": 2199.0166015625,
+          "peak_reserved_mib": 2432.0
+        }
+      ]
+    },
+    "efficient": {
+      "median_ms": 193.47702711820602,
+      "peak_allocated_mib": 2203.01708984375,
+      "images": [
+        {
+          "key": "M-33-20-D-c-4-2_101",
+          "protocol": "landcoverai",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            194.71189891919494,
+            194.4386619143188,
+            193.69758618995547,
+            192.8792749531567,
+            194.47639910504222,
+            192.96364299952984,
+            193.33228492178023
+          ],
+          "peak_allocated_mib": 2203.01708984375,
+          "peak_reserved_mib": 2432.0
+        },
+        {
+          "key": "M-33-7-A-d-3-2_259",
+          "protocol": "landcoverai",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            195.94656792469323,
+            195.8753641229123,
+            196.92481611855328,
+            202.62982696294785,
+            201.84910506941378,
+            201.1829949915409,
+            201.13315619528294
+          ],
+          "peak_allocated_mib": 2203.01708984375,
+          "peak_reserved_mib": 2432.0
+        },
+        {
+          "key": "M-34-56-A-b-1-4_14",
+          "protocol": "landcoverai",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            201.92540995776653,
+            202.0852300338447,
+            203.2764710020274,
+            202.32332521118224,
+            201.86187303625047,
+            201.78469689562917,
+            202.63989106751978
+          ],
+          "peak_allocated_mib": 2203.01708984375,
+          "peak_reserved_mib": 2432.0
+        },
+        {
+          "key": "M-34-68-B-a-1-3_239",
+          "protocol": "landcoverai",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            201.51358214206994,
+            201.4777131844312,
+            201.62720000371337,
+            201.96369313634932,
+            199.80469695292413,
+            194.16545913554728,
+            191.2341951392591
+          ],
+          "peak_allocated_mib": 2203.01708984375,
+          "peak_reserved_mib": 2432.0
+        },
+        {
+          "key": "N-33-139-C-d-2-2_185",
+          "protocol": "landcoverai",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            190.9336899407208,
+            190.78195001929998,
+            191.60939985886216,
+            190.22115087136626,
+            190.4374009463936,
+            189.87352587282658,
+            190.1714000850916
+          ],
+          "peak_allocated_mib": 2203.01708984375,
+          "peak_reserved_mib": 2432.0
+        },
+        {
+          "key": "N-34-140-A-b-4-2_1",
+          "protocol": "landcoverai",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            191.08877098187804,
+            191.3738080766052,
+            192.07557500340044,
+            192.80047505162656,
+            191.75463519059122,
+            192.1724951826036,
+            191.1713588051498
+          ],
+          "peak_allocated_mib": 2203.01708984375,
+          "peak_reserved_mib": 2432.0
+        },
+        {
+          "key": "N-34-97-D-c-2-4_75",
+          "protocol": "landcoverai",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            190.38859591819346,
+            190.00876904465258,
+            193.34504497237504,
+            191.9177088420838,
+            192.79510295018554,
+            193.47702711820602,
+            191.5000220760703
+          ],
+          "peak_allocated_mib": 2203.01708984375,
+          "peak_reserved_mib": 2432.0
+        }
+      ]
+    }
+  },
+  "changed_pixels": {
+    "compact": 0,
+    "efficient": 0
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "landcoverai",
+    "family": "remote_sensing",
+    "total_images": 1602,
+    "background_index": 0,
+    "vocabulary": "../vocabularies/landcoverai.json",
+    "profile": {
+      "bank": "original_imagenet",
+      "strength": 2.0,
+      "coupling": 0.5,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.3,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": true
+    }
+  },
+  "cache_identity": "0c02c5fb5e372f2f82b8f68fc5be04202530af8935b8bc06e2f27c5e944cbc05",
+  "target_masks_loaded": false,
+  "sources": {
+    "dinotool/efficient_deployment.py": "b0b832afe4012beb0b1c7960d93810b4e8a4eaba93327402a91fd6ca19a5407c",
+    "dinotool/frozen_deployment.py": "a0500d0c61ba39b37ea70e679011de96d6ec42bf6cb1f7b35a6d13ebfca1b4c1",
+    "dinotool/natural_static_search.py": "43e00fbd73717dd4024a746a7510694cc99852a49d84e504b9f0235ee2380286",
+    "dinotool/compact_deployment.py": "d04994ef5ce33773998b07fa0e7762e3dd4d6dddc38b19c61dc8e38c89a81a8c"
+  },
+  "timing": "Whole RGB input through CPU IDs; excludes decode/init/offline search. Two warmups, seven repeats for cost/profile."
+}

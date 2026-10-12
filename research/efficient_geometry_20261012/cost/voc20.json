@@ -1,0 +1,338 @@
+{
+  "status": "complete",
+  "dataset": "voc20",
+  "costs": {
+    "compact": {
+      "median_ms": 166.32475703954697,
+      "peak_allocated_mib": 2201.8408203125,
+      "images": [
+        {
+          "key": "2007_000033",
+          "protocol": "voc20",
+          "shape": [
+            366,
+            500
+          ],
+          "milliseconds": [
+            208.19859416224062,
+            211.29131712950766,
+            207.01669598929584,
+            208.15008110366762,
+            208.3062380552292,
+            207.51364203169942,
+            209.35731404460967
+          ],
+          "peak_allocated_mib": 2201.8408203125,
+          "peak_reserved_mib": 2438.0
+        },
+        {
+          "key": "2007_007498",
+          "protocol": "voc20",
+          "shape": [
+            376,
+            500
+          ],
+          "milliseconds": [
+            166.15761211141944,
+            166.88063903711736,
+            166.2614040542394,
+            165.57269194163382,
+            167.10239998064935,
+            167.91346203535795,
+            166.21429403312504
+          ],
+          "peak_allocated_mib": 2201.8408203125,
+          "peak_reserved_mib": 2438.0
+        },
+        {
+          "key": "2008_003856",
+          "protocol": "voc20",
+          "shape": [
+            375,
+            500
+          ],
+          "milliseconds": [
+            167.30256006121635,
+            165.74428789317608,
+            166.41392605379224,
+            165.15702893957496,
+            166.56350018456578,
+            166.53323592618108,
+            166.7184829711914
+          ],
+          "peak_allocated_mib": 2201.8408203125,
+          "peak_reserved_mib": 2438.0
+        },
+        {
+          "key": "2009_001644",
+          "protocol": "voc20",
+          "shape": [
+            375,
+            500
+          ],
+          "milliseconds": [
+            166.42137011513114,
+            166.23381921090186,
+            166.21831618249416,
+            165.98309110850096,
+            166.19619401171803,
+            167.4865479581058,
+            167.8397881332785
+          ],
+          "peak_allocated_mib": 2201.8408203125,
+          "peak_reserved_mib": 2438.0
+        },
+        {
+          "key": "2010_000552",
+          "protocol": "voc20",
+          "shape": [
+            375,
+            500
+          ],
+          "milliseconds": [
+            165.65539804287255,
+            165.2188568841666,
+            168.0328520014882,
+            166.33788403123617,
+            165.55300913751125,
+            166.78162990137935,
+            165.5465851072222
+          ],
+          "peak_allocated_mib": 2201.8408203125,
+          "peak_reserved_mib": 2438.0
+        },
+        {
+          "key": "2010_005180",
+          "protocol": "voc20",
+          "shape": [
+            375,
+            500
+          ],
+          "milliseconds": [
+            166.59852699376643,
+            165.86439893580973,
+            166.5471950545907,
+            166.32475703954697,
+            170.12045090086758,
+            166.06878605671227,
+            166.02271306328475
+          ],
+          "peak_allocated_mib": 2201.8408203125,
+          "peak_reserved_mib": 2438.0
+        },
+        {
+          "key": "2011_003271",
+          "protocol": "voc20",
+          "shape": [
+            500,
+            500
+          ],
+          "milliseconds": [
+            143.65286496467888,
+            143.3889060281217,
+            143.95091007463634,
+            143.45607301220298,
+            143.86598602868617,
+            144.03839618898928,
+            143.9913371577859
+          ],
+          "peak_allocated_mib": 2201.8408203125,
+          "peak_reserved_mib": 2438.0
+        }
+      ]
+    },
+    "efficient": {
+      "median_ms": 156.35422593913972,
+      "peak_allocated_mib": 2218.71728515625,
+      "images": [
+        {
+          "key": "2007_000033",
+          "protocol": "voc20",
+          "shape": [
+            366,
+            500
+          ],
+          "milliseconds": [
+            178.63898887299,
+            178.14008612185717,
+            178.0792879872024,
+            178.71740786358714,
+            179.37447293661535,
+            180.2336669061333,
+            178.17403515800834
+          ],
+          "peak_allocated_mib": 2205.8447265625,
+          "peak_reserved_mib": 2438.0
+        },
+        {
+          "key": "2007_007498",
+          "protocol": "voc20",
+          "shape": [
+            376,
+            500
+          ],
+          "milliseconds": [
+            157.0791390258819,
+            158.44759298488498,
+            158.6654440034181,
+            156.34240000508726,
+            155.43013182468712,
+            156.66951495222747,
+            156.92741400562227
+          ],
+          "peak_allocated_mib": 2205.8447265625,
+          "peak_reserved_mib": 2438.0
+        },
+        {
+          "key": "2008_003856",
+          "protocol": "voc20",
+          "shape": [
+            375,
+            500
+          ],
+          "milliseconds": [
+            157.53671084530652,
+            156.03821096010506,
+            157.53789991140366,
+            156.33161598816514,
+            157.45399612933397,
+            155.25416610762477,
+            157.54664898850024
+          ],
+          "peak_allocated_mib": 2205.8447265625,
+          "peak_reserved_mib": 2438.0
+        },
+        {
+          "key": "2009_001644",
+          "protocol": "voc20",
+          "shape": [
+            375,
+            500
+          ],
+          "milliseconds": [
+            158.7900009471923,
+            156.68576094321907,
+            156.35422593913972,
+            155.87846818380058,
+            159.47840199805796,
+            158.1158679910004,
+            157.6799659524113
+          ],
+          "peak_allocated_mib": 2205.8447265625,
+          "peak_reserved_mib": 2438.0
+        },
+        {
+          "key": "2010_000552",
+          "protocol": "voc20",
+          "shape": [
+            375,
+            500
+          ],
+          "milliseconds": [
+            157.0551171898842,
+            155.7308549527079,
+            180.4234660230577,
+            225.79006501473486,
+            153.80884101614356,
+            155.0262300297618,
+            153.82009907625616
+          ],
+          "peak_allocated_mib": 2205.8447265625,
+          "peak_reserved_mib": 2438.0
+        },
+        {
+          "key": "2010_005180",
+          "protocol": "voc20",
+          "shape": [
+            375,
+            500
+          ],
+          "milliseconds": [
+            152.76020299643278,
+            153.01455790176988,
+            153.20279588922858,
+            153.68752903304994,
+            153.54384598322213,
+            153.2448830548674,
+            153.41859799809754
+          ],
+          "peak_allocated_mib": 2205.8447265625,
+          "peak_reserved_mib": 2438.0
+        },
+        {
+          "key": "2011_003271",
+          "protocol": "voc20",
+          "shape": [
+            500,
+            500
+          ],
+          "milliseconds": [
+            133.5134080145508,
+            132.36793293617666,
+            132.36982212401927,
+            133.95791500806808,
+            131.98851491324604,
+            132.64674902893603,
+            132.2907682042569
+          ],
+          "peak_allocated_mib": 2218.71728515625,
+          "peak_reserved_mib": 2438.0
+        }
+      ]
+    }
+  },
+  "changed_pixels": {
+    "compact": 0,
+    "efficient": 0
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "voc20",
+    "family": "natural",
+    "total_images": 1449,
+    "background_index": null,
+    "vocabulary": "../vocabularies/voc20.json",
+    "profile": {
+      "bank": "semantic_imagenet",
+      "strength": 2.0,
+      "coupling": 1.0,
+      "temperature": 0.1,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "natural_short336_cap672",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.0,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "curated_variable_refine_natural_20261010",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": true
+    }
+  },
+  "cache_identity": "04d8d0665b3c7ee19f8acd0375467433fa8333520e961d1de02a16dbfe8fa10c",
+  "target_masks_loaded": false,
+  "sources": {
+    "dinotool/efficient_deployment.py": "b0b832afe4012beb0b1c7960d93810b4e8a4eaba93327402a91fd6ca19a5407c",
+    "dinotool/frozen_deployment.py": "a0500d0c61ba39b37ea70e679011de96d6ec42bf6cb1f7b35a6d13ebfca1b4c1",
+    "dinotool/natural_static_search.py": "43e00fbd73717dd4024a746a7510694cc99852a49d84e504b9f0235ee2380286",
+    "dinotool/compact_deployment.py": "d04994ef5ce33773998b07fa0e7762e3dd4d6dddc38b19c61dc8e38c89a81a8c"
+  },
+  "timing": "Whole RGB input through CPU IDs; excludes decode/init/offline search. Two warmups, seven repeats for cost/profile."
+}

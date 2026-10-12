@@ -1,0 +1,338 @@
+{
+  "status": "complete",
+  "dataset": "flair1",
+  "costs": {
+    "compact": {
+      "median_ms": 218.64572493359447,
+      "peak_allocated_mib": 2266.68505859375,
+      "images": [
+        {
+          "key": "D012_2019/Z10_UU/img/IMG_062613.tif",
+          "protocol": "flair1",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            217.032290995121,
+            218.27082592062652,
+            217.9058138281107,
+            217.72544202394783,
+            217.61037805117667,
+            217.5122278276831,
+            217.82706887461245
+          ],
+          "peak_allocated_mib": 2266.68505859375,
+          "peak_reserved_mib": 2532.0
+        },
+        {
+          "key": "D026_2020/Z13_UU/img/IMG_065054.tif",
+          "protocol": "flair1",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            221.52277501299977,
+            220.81730281934142,
+            219.95625901035964,
+            220.3502811025828,
+            221.5739639941603,
+            221.8749460298568,
+            220.60743696056306
+          ],
+          "peak_allocated_mib": 2266.68505859375,
+          "peak_reserved_mib": 2532.0
+        },
+        {
+          "key": "D064_2021/Z30_NU/img/IMG_067471.tif",
+          "protocol": "flair1",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            217.39301388151944,
+            218.4042709413916,
+            217.1820499934256,
+            215.81098902970552,
+            216.09440282918513,
+            217.77765196748078,
+            215.84007097408175
+          ],
+          "peak_allocated_mib": 2266.68505859375,
+          "peak_reserved_mib": 2532.0
+        },
+        {
+          "key": "D071_2020/Z12_UA/img/IMG_070462.tif",
+          "protocol": "flair1",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            225.30609089881182,
+            229.886137181893,
+            231.3342411071062,
+            229.6757788863033,
+            228.95521600730717,
+            229.6977830119431,
+            225.5165029782802
+          ],
+          "peak_allocated_mib": 2266.68505859375,
+          "peak_reserved_mib": 2532.0
+        },
+        {
+          "key": "D076_2019/Z15_UU/img/IMG_072654.tif",
+          "protocol": "flair1",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            216.17839904502034,
+            217.2653079032898,
+            216.94261813536286,
+            219.5880189538002,
+            218.31729402765632,
+            215.41050705127418,
+            216.8084611184895
+          ],
+          "peak_allocated_mib": 2266.68505859375,
+          "peak_reserved_mib": 2532.0
+        },
+        {
+          "key": "D083_2020/Z5_AU/img/IMG_074795.tif",
+          "protocol": "flair1",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            218.2760110590607,
+            219.24592298455536,
+            218.87208218686283,
+            220.0254590716213,
+            217.8217398468405,
+            217.67025394365191,
+            219.0737510100007
+          ],
+          "peak_allocated_mib": 2266.68505859375,
+          "peak_reserved_mib": 2532.0
+        },
+        {
+          "key": "D085_2019/Z9_NF/img/IMG_076387.tif",
+          "protocol": "flair1",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            218.92198384739459,
+            218.76891097053885,
+            219.0924920141697,
+            219.80705694295466,
+            218.6244409531355,
+            218.64572493359447,
+            219.97851505875587
+          ],
+          "peak_allocated_mib": 2266.68505859375,
+          "peak_reserved_mib": 2532.0
+        }
+      ]
+    },
+    "efficient": {
+      "median_ms": 204.18896805495024,
+      "peak_allocated_mib": 2270.68408203125,
+      "images": [
+        {
+          "key": "D012_2019/Z10_UU/img/IMG_062613.tif",
+          "protocol": "flair1",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            204.44561005569994,
+            204.73689096979797,
+            203.02109606564045,
+            205.06200497038662,
+            203.21309799328446,
+            202.3468418046832,
+            203.0966649763286
+          ],
+          "peak_allocated_mib": 2270.68408203125,
+          "peak_reserved_mib": 2532.0
+        },
+        {
+          "key": "D026_2020/Z13_UU/img/IMG_065054.tif",
+          "protocol": "flair1",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            203.640331979841,
+            205.0477098673582,
+            204.1415839921683,
+            205.4075060877949,
+            205.45875211246312,
+            204.18896805495024,
+            203.0146319884807
+          ],
+          "peak_allocated_mib": 2270.68408203125,
+          "peak_reserved_mib": 2532.0
+        },
+        {
+          "key": "D064_2021/Z30_NU/img/IMG_067471.tif",
+          "protocol": "flair1",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            205.4538440424949,
+            203.79965496249497,
+            203.95582704804838,
+            204.88012512214482,
+            206.00220514461398,
+            205.4746220819652,
+            203.278403962031
+          ],
+          "peak_allocated_mib": 2270.68408203125,
+          "peak_reserved_mib": 2532.0
+        },
+        {
+          "key": "D071_2020/Z12_UA/img/IMG_070462.tif",
+          "protocol": "flair1",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            203.07562313973904,
+            203.1634170562029,
+            203.8476171437651,
+            203.277591150254,
+            203.69683811441064,
+            203.60220386646688,
+            202.06981315277517
+          ],
+          "peak_allocated_mib": 2270.68408203125,
+          "peak_reserved_mib": 2532.0
+        },
+        {
+          "key": "D076_2019/Z15_UU/img/IMG_072654.tif",
+          "protocol": "flair1",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            203.6957200616598,
+            202.3551920428872,
+            205.65519598312676,
+            206.01466996595263,
+            203.81158799864352,
+            206.11769892275333,
+            204.71089403145015
+          ],
+          "peak_allocated_mib": 2270.68408203125,
+          "peak_reserved_mib": 2532.0
+        },
+        {
+          "key": "D083_2020/Z5_AU/img/IMG_074795.tif",
+          "protocol": "flair1",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            205.99982817657292,
+            204.90936585702002,
+            203.79132800735533,
+            203.82034708745778,
+            203.3956500235945,
+            204.47116112336516,
+            204.56112478859723
+          ],
+          "peak_allocated_mib": 2270.68408203125,
+          "peak_reserved_mib": 2532.0
+        },
+        {
+          "key": "D085_2019/Z9_NF/img/IMG_076387.tif",
+          "protocol": "flair1",
+          "shape": [
+            512,
+            512
+          ],
+          "milliseconds": [
+            204.84822615981102,
+            204.4101390056312,
+            204.38999985344708,
+            204.79272701777518,
+            204.16626194491982,
+            206.1033109202981,
+            205.38989594206214
+          ],
+          "peak_allocated_mib": 2270.68408203125,
+          "peak_reserved_mib": 2532.0
+        }
+      ]
+    }
+  },
+  "changed_pixels": {
+    "compact": 0,
+    "efficient": 0
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "flair1",
+    "family": "remote_sensing",
+    "total_images": 15700,
+    "background_index": null,
+    "vocabulary": "../vocabularies/flair1.json",
+    "profile": {
+      "bank": "original",
+      "strength": "original",
+      "coupling": 0.25,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.0,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": true
+    }
+  },
+  "cache_identity": "804ac72c16ed9bd8d4e863664f2d070b602db2cabb6daef89aa5fc2cc2f2f2af",
+  "target_masks_loaded": false,
+  "sources": {
+    "dinotool/efficient_deployment.py": "b0b832afe4012beb0b1c7960d93810b4e8a4eaba93327402a91fd6ca19a5407c",
+    "dinotool/frozen_deployment.py": "a0500d0c61ba39b37ea70e679011de96d6ec42bf6cb1f7b35a6d13ebfca1b4c1",
+    "dinotool/natural_static_search.py": "43e00fbd73717dd4024a746a7510694cc99852a49d84e504b9f0235ee2380286",
+    "dinotool/compact_deployment.py": "d04994ef5ce33773998b07fa0e7762e3dd4d6dddc38b19c61dc8e38c89a81a8c"
+  },
+  "timing": "Whole RGB input through CPU IDs; excludes decode/init/offline search. Two warmups, seven repeats for cost/profile."
+}
