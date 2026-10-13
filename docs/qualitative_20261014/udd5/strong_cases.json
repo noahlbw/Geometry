@@ -1,22 +1,22 @@
 {
   "dataset": "udd5",
   "candidate_count": 16,
-  "selection_rule": "top four Geov2 mIoU minus strongest of VIP-wide/PEARL/PTC",
+  "selection_rule": "top four Geov2 mIoU minus strongest of official VIP/PEARL/PTC",
   "rows": [
     {
       "key": "000161.JPG",
       "metrics": {
-        "vip": 16.34501284229585,
+        "official_vip": 40.37858964201171,
         "pearl": 35.63466751035295,
         "ptc": 18.37984734264225,
         "geov2": 63.663734773263656
       },
-      "geov2_margin": 28.029067262910708
+      "geov2_margin": 23.285145131251944
     },
     {
       "key": "001461.JPG",
       "metrics": {
-        "vip": 5.567500361689815,
+        "official_vip": 30.023650942754625,
         "pearl": 30.923749845913918,
         "ptc": 9.5343072175925,
         "geov2": 52.44883788586948
@@ -24,24 +24,24 @@
       "geov2_margin": 21.525088039955563
     },
     {
-      "key": "DJI_0303.JPG",
-      "metrics": {
-        "vip": 24.91785535009763,
-        "pearl": 37.56055609206002,
-        "ptc": 39.57991018914032,
-        "geov2": 54.3412982434652
-      },
-      "geov2_margin": 14.761388054324875
-    },
-    {
       "key": "DJI_0511.JPG",
       "metrics": {
-        "vip": 14.995635685098529,
+        "official_vip": 38.29038664237795,
         "pearl": 38.17120628837039,
         "ptc": 35.24117893241362,
         "geov2": 50.514627500904496
       },
-      "geov2_margin": 12.343421212534103
+      "geov2_margin": 12.224240858526542
+    },
+    {
+      "key": "DJI_0460.JPG",
+      "metrics": {
+        "official_vip": 35.89006237959567,
+        "pearl": 42.499090973049356,
+        "ptc": 46.33998706385679,
+        "geov2": 58.316941172200956
+      },
+      "geov2_margin": 11.976954108344167
     }
   ]
 }

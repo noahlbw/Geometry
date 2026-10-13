@@ -1,0 +1,185 @@
+{
+  "implementation": "vip-official-5bd25ee-qualitative",
+  "upstream_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+  "dataset": "voc21",
+  "classes": [
+    "background",
+    "aeroplane",
+    "bicycle",
+    "bird",
+    "boat",
+    "bottle",
+    "bus",
+    "car",
+    "cat",
+    "chair",
+    "cow",
+    "diningtable",
+    "dog",
+    "horse",
+    "motorbike",
+    "person",
+    "pottedplant",
+    "sheep",
+    "sofa",
+    "train",
+    "tvmonitor"
+  ],
+  "alias_counts": [
+    56,
+    1,
+    1,
+    1,
+    1,
+    3,
+    3,
+    1,
+    1,
+    6,
+    4,
+    2,
+    1,
+    2,
+    2,
+    21,
+    4,
+    2,
+    3,
+    1,
+    3
+  ],
+  "vocabulary_path": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee/configs/cls_voc21.txt",
+  "sample_keys": [
+    "2008_005445",
+    "2008_007513",
+    "2010_002480",
+    "2007_007203",
+    "2008_006325",
+    "2008_008392",
+    "2010_003820",
+    "2007_000862",
+    "2011_002592",
+    "2008_007828",
+    "2007_000676",
+    "2010_005606",
+    "2011_001812",
+    "2008_003733",
+    "2008_008268",
+    "2010_002228"
+  ],
+  "settings": {
+    "tau": 3.0,
+    "tem": 0.3,
+    "prob_thd": 0.28,
+    "background": true,
+    "bg_idx": 0,
+    "resize": "scale=(2048,336), keep_ratio=True",
+    "slide_crop": 336,
+    "slide_stride": 112,
+    "logit_scale": 40.0
+  },
+  "checkpoint_manifest": {
+    "dinotxt": {
+      "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+      "bytes": 2253936683,
+      "mtime_ns": 1789834446340889779
+    },
+    "lvd1689m": {
+      "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+      "bytes": 1213050671,
+      "mtime_ns": 1789833314101759062
+    },
+    "sat493m": {
+      "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+      "bytes": 1213059235,
+      "mtime_ns": 1789833891171431405
+    },
+    "bpe": {
+      "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+      "bytes": 1356917,
+      "mtime_ns": 1787032172000000000
+    }
+  },
+  "rows": [
+    {
+      "key": "2008_005445",
+      "stem": "01_2008_005445",
+      "miou": 30.537159712398555
+    },
+    {
+      "key": "2008_007513",
+      "stem": "02_2008_007513",
+      "miou": 61.3315749602641
+    },
+    {
+      "key": "2010_002480",
+      "stem": "03_2010_002480",
+      "miou": 94.47952639725928
+    },
+    {
+      "key": "2007_007203",
+      "stem": "04_2007_007203",
+      "miou": 46.53995133707529
+    },
+    {
+      "key": "2008_006325",
+      "stem": "05_2008_006325",
+      "miou": 84.83760729550232
+    },
+    {
+      "key": "2008_008392",
+      "stem": "06_2008_008392",
+      "miou": 86.8755130976176
+    },
+    {
+      "key": "2010_003820",
+      "stem": "07_2010_003820",
+      "miou": 50.67520816793174
+    },
+    {
+      "key": "2007_000862",
+      "stem": "08_2007_000862",
+      "miou": 43.97260684040792
+    },
+    {
+      "key": "2011_002592",
+      "stem": "09_2011_002592",
+      "miou": 39.31424931643761
+    },
+    {
+      "key": "2008_007828",
+      "stem": "10_2008_007828",
+      "miou": 72.55237682875726
+    },
+    {
+      "key": "2007_000676",
+      "stem": "11_2007_000676",
+      "miou": 91.27511627804975
+    },
+    {
+      "key": "2010_005606",
+      "stem": "12_2010_005606",
+      "miou": 60.87421375197161
+    },
+    {
+      "key": "2011_001812",
+      "stem": "13_2011_001812",
+      "miou": 35.6009856870521
+    },
+    {
+      "key": "2008_003733",
+      "stem": "14_2008_003733",
+      "miou": 67.894201917438
+    },
+    {
+      "key": "2008_008268",
+      "stem": "15_2008_008268",
+      "miou": 57.705792414139324
+    },
+    {
+      "key": "2010_002228",
+      "stem": "16_2010_002228",
+      "miou": 36.11543607842284
+    }
+  ]
+}

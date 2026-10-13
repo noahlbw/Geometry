@@ -1,0 +1,153 @@
+{
+  "implementation": "vip-official-5bd25ee-qualitative",
+  "upstream_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+  "dataset": "udd5",
+  "classes": [
+    "vegetation",
+    "building",
+    "road",
+    "vehicle",
+    "other"
+  ],
+  "alias_counts": [
+    20,
+    20,
+    20,
+    20,
+    20
+  ],
+  "vocabulary_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/configs/hero_udd5_vip20.json",
+  "sample_keys": [
+    "DJI_00528.JPG",
+    "0119_3img2031.JPG",
+    "DJI_0460.JPG",
+    "DJI_0532.JPG",
+    "DJI_0469.JPG",
+    "000161.JPG",
+    "DJI_0511.JPG",
+    "DJI_00591.JPG",
+    "DJI_0316.JPG",
+    "001461.JPG",
+    "DJI_0520.JPG",
+    "DJI_0406.JPG",
+    "DJI_0303.JPG",
+    "0119_5img3001.JPG",
+    "DJI_0415.JPG",
+    "DJI_0431.JPG"
+  ],
+  "settings": {
+    "tau": 4.0,
+    "tem": 1.0,
+    "prob_thd": 0.0,
+    "background": false,
+    "bg_idx": 0,
+    "resize_long_edge": 448,
+    "slide_crop": 336,
+    "slide_stride": 112,
+    "logit_scale": 40.0
+  },
+  "checkpoint_manifest": {
+    "dinotxt": {
+      "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+      "bytes": 2253936683,
+      "mtime_ns": 1789834446340889779
+    },
+    "lvd1689m": {
+      "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+      "bytes": 1213050671,
+      "mtime_ns": 1789833314101759062
+    },
+    "sat493m": {
+      "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+      "bytes": 1213059235,
+      "mtime_ns": 1789833891171431405
+    },
+    "bpe": {
+      "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+      "bytes": 1356917,
+      "mtime_ns": 1787032172000000000
+    }
+  },
+  "rows": [
+    {
+      "key": "DJI_00528.JPG",
+      "stem": "01_DJI_00528-JPG",
+      "miou": 47.224152243475224
+    },
+    {
+      "key": "0119_3img2031.JPG",
+      "stem": "02_0119_3img2031-JPG",
+      "miou": 25.390801229712167
+    },
+    {
+      "key": "DJI_0460.JPG",
+      "stem": "03_DJI_0460-JPG",
+      "miou": 35.89006237959567
+    },
+    {
+      "key": "DJI_0532.JPG",
+      "stem": "04_DJI_0532-JPG",
+      "miou": 30.30586973904462
+    },
+    {
+      "key": "DJI_0469.JPG",
+      "stem": "05_DJI_0469-JPG",
+      "miou": 40.038647992697385
+    },
+    {
+      "key": "000161.JPG",
+      "stem": "06_000161-JPG",
+      "miou": 40.37858964201171
+    },
+    {
+      "key": "DJI_0511.JPG",
+      "stem": "07_DJI_0511-JPG",
+      "miou": 38.29038664237795
+    },
+    {
+      "key": "DJI_00591.JPG",
+      "stem": "08_DJI_00591-JPG",
+      "miou": 28.312526834617113
+    },
+    {
+      "key": "DJI_0316.JPG",
+      "stem": "09_DJI_0316-JPG",
+      "miou": 33.96089719935042
+    },
+    {
+      "key": "001461.JPG",
+      "stem": "10_001461-JPG",
+      "miou": 30.023650942754625
+    },
+    {
+      "key": "DJI_0520.JPG",
+      "stem": "11_DJI_0520-JPG",
+      "miou": 34.55729677953251
+    },
+    {
+      "key": "DJI_0406.JPG",
+      "stem": "12_DJI_0406-JPG",
+      "miou": 30.82596873913401
+    },
+    {
+      "key": "DJI_0303.JPG",
+      "stem": "13_DJI_0303-JPG",
+      "miou": 55.64240093391082
+    },
+    {
+      "key": "0119_5img3001.JPG",
+      "stem": "14_0119_5img3001-JPG",
+      "miou": 33.80204535627362
+    },
+    {
+      "key": "DJI_0415.JPG",
+      "stem": "15_DJI_0415-JPG",
+      "miou": 44.88413691433693
+    },
+    {
+      "key": "DJI_0431.JPG",
+      "stem": "16_DJI_0431-JPG",
+      "miou": 41.28722927963322
+    }
+  ]
+}
