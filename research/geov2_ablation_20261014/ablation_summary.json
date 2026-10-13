@@ -1,0 +1,447 @@
+{
+  "protocol": "Four fixed development images sets; 16 images per dataset; 24 slots; beta=0.5; temperature=0.1.",
+  "datasets": [
+    "vdd",
+    "potsdam",
+    "ade150",
+    "voc20"
+  ],
+  "methods": [
+    "Geov2_VIPWide",
+    "Raw32",
+    "QuerySlot_Raw",
+    "DonorBefore",
+    "Geov2_Full",
+    "Geov2_NoAlias_Canonical",
+    "Geov2_EqualFusion",
+    "Geov2_ShuffledQuery"
+  ],
+  "rows": [
+    {
+      "dataset": "vdd",
+      "method": "Geov2_VIPWide",
+      "images": 16,
+      "miou_percent": 62.2716,
+      "delta_vs_full_pp": 0.8033000000000001,
+      "delta_vs_vipwide_pp": 0.0
+    },
+    {
+      "dataset": "vdd",
+      "method": "Raw32",
+      "images": 16,
+      "miou_percent": 60.984,
+      "delta_vs_full_pp": -0.4842999999999975,
+      "delta_vs_vipwide_pp": -1.2875999999999976
+    },
+    {
+      "dataset": "vdd",
+      "method": "QuerySlot_Raw",
+      "images": 16,
+      "miou_percent": 61.3598,
+      "delta_vs_full_pp": -0.10849999999999937,
+      "delta_vs_vipwide_pp": -0.9117999999999995
+    },
+    {
+      "dataset": "vdd",
+      "method": "DonorBefore",
+      "images": 16,
+      "miou_percent": 62.2255,
+      "delta_vs_full_pp": 0.7571999999999974,
+      "delta_vs_vipwide_pp": -0.046100000000002694
+    },
+    {
+      "dataset": "vdd",
+      "method": "Geov2_Full",
+      "images": 16,
+      "miou_percent": 61.4683,
+      "delta_vs_full_pp": 0.0,
+      "delta_vs_vipwide_pp": -0.8033000000000001
+    },
+    {
+      "dataset": "vdd",
+      "method": "Geov2_NoAlias_Canonical",
+      "images": 16,
+      "miou_percent": 37.8678,
+      "delta_vs_full_pp": -23.600499999999997,
+      "delta_vs_vipwide_pp": -24.403799999999997
+    },
+    {
+      "dataset": "vdd",
+      "method": "Geov2_EqualFusion",
+      "images": 16,
+      "miou_percent": 61.159,
+      "delta_vs_full_pp": -0.30930000000000035,
+      "delta_vs_vipwide_pp": -1.1126000000000005
+    },
+    {
+      "dataset": "vdd",
+      "method": "Geov2_ShuffledQuery",
+      "images": 16,
+      "miou_percent": 55.5686,
+      "delta_vs_full_pp": -5.899699999999996,
+      "delta_vs_vipwide_pp": -6.702999999999996
+    },
+    {
+      "dataset": "potsdam",
+      "method": "Geov2_VIPWide",
+      "images": 16,
+      "miou_percent": 52.2582,
+      "delta_vs_full_pp": 1.3265999999999991,
+      "delta_vs_vipwide_pp": 0.0
+    },
+    {
+      "dataset": "potsdam",
+      "method": "Raw32",
+      "images": 16,
+      "miou_percent": 51.4823,
+      "delta_vs_full_pp": 0.5506999999999991,
+      "delta_vs_vipwide_pp": -0.7759
+    },
+    {
+      "dataset": "potsdam",
+      "method": "QuerySlot_Raw",
+      "images": 16,
+      "miou_percent": 50.9304,
+      "delta_vs_full_pp": -0.0012000000000043087,
+      "delta_vs_vipwide_pp": -1.3278000000000034
+    },
+    {
+      "dataset": "potsdam",
+      "method": "DonorBefore",
+      "images": 16,
+      "miou_percent": 52.2582,
+      "delta_vs_full_pp": 1.3265999999999991,
+      "delta_vs_vipwide_pp": 0.0
+    },
+    {
+      "dataset": "potsdam",
+      "method": "Geov2_Full",
+      "images": 16,
+      "miou_percent": 50.9316,
+      "delta_vs_full_pp": 0.0,
+      "delta_vs_vipwide_pp": -1.3265999999999991
+    },
+    {
+      "dataset": "potsdam",
+      "method": "Geov2_NoAlias_Canonical",
+      "images": 16,
+      "miou_percent": 41.9412,
+      "delta_vs_full_pp": -8.990400000000001,
+      "delta_vs_vipwide_pp": -10.317
+    },
+    {
+      "dataset": "potsdam",
+      "method": "Geov2_EqualFusion",
+      "images": 16,
+      "miou_percent": 52.3219,
+      "delta_vs_full_pp": 1.3902999999999963,
+      "delta_vs_vipwide_pp": 0.0636999999999972
+    },
+    {
+      "dataset": "potsdam",
+      "method": "Geov2_ShuffledQuery",
+      "images": 16,
+      "miou_percent": 48.2695,
+      "delta_vs_full_pp": -2.6621000000000024,
+      "delta_vs_vipwide_pp": -3.9887000000000015
+    },
+    {
+      "dataset": "ade150",
+      "method": "Geov2_VIPWide",
+      "images": 16,
+      "miou_percent": 20.9862,
+      "delta_vs_full_pp": 0.06619999999999848,
+      "delta_vs_vipwide_pp": 0.0
+    },
+    {
+      "dataset": "ade150",
+      "method": "Raw32",
+      "images": 16,
+      "miou_percent": 20.614,
+      "delta_vs_full_pp": -0.30600000000000094,
+      "delta_vs_vipwide_pp": -0.3721999999999994
+    },
+    {
+      "dataset": "ade150",
+      "method": "QuerySlot_Raw",
+      "images": 16,
+      "miou_percent": 20.7428,
+      "delta_vs_full_pp": -0.1772000000000027,
+      "delta_vs_vipwide_pp": -0.24340000000000117
+    },
+    {
+      "dataset": "ade150",
+      "method": "DonorBefore",
+      "images": 16,
+      "miou_percent": 21.2813,
+      "delta_vs_full_pp": 0.36129999999999995,
+      "delta_vs_vipwide_pp": 0.2951000000000015
+    },
+    {
+      "dataset": "ade150",
+      "method": "Geov2_Full",
+      "images": 16,
+      "miou_percent": 20.92,
+      "delta_vs_full_pp": 0.0,
+      "delta_vs_vipwide_pp": -0.06619999999999848
+    },
+    {
+      "dataset": "ade150",
+      "method": "Geov2_NoAlias_Canonical",
+      "images": 16,
+      "miou_percent": 21.5039,
+      "delta_vs_full_pp": 0.5838999999999999,
+      "delta_vs_vipwide_pp": 0.5177000000000014
+    },
+    {
+      "dataset": "ade150",
+      "method": "Geov2_EqualFusion",
+      "images": 16,
+      "miou_percent": 22.6186,
+      "delta_vs_full_pp": 1.698599999999999,
+      "delta_vs_vipwide_pp": 1.6324000000000005
+    },
+    {
+      "dataset": "ade150",
+      "method": "Geov2_ShuffledQuery",
+      "images": 16,
+      "miou_percent": 20.122,
+      "delta_vs_full_pp": -0.7980000000000018,
+      "delta_vs_vipwide_pp": -0.8642000000000003
+    },
+    {
+      "dataset": "voc20",
+      "method": "Geov2_VIPWide",
+      "images": 16,
+      "miou_percent": 88.0115,
+      "delta_vs_full_pp": -9.597899999999996,
+      "delta_vs_vipwide_pp": 0.0
+    },
+    {
+      "dataset": "voc20",
+      "method": "Raw32",
+      "images": 16,
+      "miou_percent": 96.0922,
+      "delta_vs_full_pp": -1.5171999999999883,
+      "delta_vs_vipwide_pp": 8.080700000000007
+    },
+    {
+      "dataset": "voc20",
+      "method": "QuerySlot_Raw",
+      "images": 16,
+      "miou_percent": 97.6098,
+      "delta_vs_full_pp": 0.0004000000000132786,
+      "delta_vs_vipwide_pp": 9.598300000000009
+    },
+    {
+      "dataset": "voc20",
+      "method": "DonorBefore",
+      "images": 16,
+      "miou_percent": 88.0115,
+      "delta_vs_full_pp": -9.597899999999996,
+      "delta_vs_vipwide_pp": 0.0
+    },
+    {
+      "dataset": "voc20",
+      "method": "Geov2_Full",
+      "images": 16,
+      "miou_percent": 97.6094,
+      "delta_vs_full_pp": 0.0,
+      "delta_vs_vipwide_pp": 9.597899999999996
+    },
+    {
+      "dataset": "voc20",
+      "method": "Geov2_NoAlias_Canonical",
+      "images": 16,
+      "miou_percent": 81.5827,
+      "delta_vs_full_pp": -16.02669999999999,
+      "delta_vs_vipwide_pp": -6.428799999999995
+    },
+    {
+      "dataset": "voc20",
+      "method": "Geov2_EqualFusion",
+      "images": 16,
+      "miou_percent": 97.3822,
+      "delta_vs_full_pp": -0.2271999999999963,
+      "delta_vs_vipwide_pp": 9.3707
+    },
+    {
+      "dataset": "voc20",
+      "method": "Geov2_ShuffledQuery",
+      "images": 16,
+      "miou_percent": 88.9303,
+      "delta_vs_full_pp": -8.679099999999991,
+      "delta_vs_vipwide_pp": 0.9188000000000045
+    }
+  ],
+  "macro": {
+    "Geov2_VIPWide": {
+      "miou_percent": 55.881874999999994,
+      "values": [
+        62.2716,
+        52.2582,
+        20.9862,
+        88.0115
+      ],
+      "delta_vs_full_pp": -1.8504500000000093
+    },
+    "Raw32": {
+      "miou_percent": 57.293125,
+      "values": [
+        60.984,
+        51.4823,
+        20.614,
+        96.0922
+      ],
+      "delta_vs_full_pp": -0.4391999999999996
+    },
+    "QuerySlot_Raw": {
+      "miou_percent": 57.6607,
+      "values": [
+        61.3598,
+        50.9304,
+        20.7428,
+        97.6098
+      ],
+      "delta_vs_full_pp": -0.07162500000000449
+    },
+    "DonorBefore": {
+      "miou_percent": 55.944125,
+      "values": [
+        62.2255,
+        52.2582,
+        21.2813,
+        88.0115
+      ],
+      "delta_vs_full_pp": -1.7882000000000033
+    },
+    "Geov2_Full": {
+      "miou_percent": 57.732325,
+      "values": [
+        61.4683,
+        50.9316,
+        20.92,
+        97.6094
+      ],
+      "delta_vs_full_pp": 0.0
+    },
+    "Geov2_NoAlias_Canonical": {
+      "miou_percent": 45.7239,
+      "values": [
+        37.8678,
+        41.9412,
+        21.5039,
+        81.5827
+      ],
+      "delta_vs_full_pp": -12.008425000000003
+    },
+    "Geov2_EqualFusion": {
+      "miou_percent": 58.370425,
+      "values": [
+        61.159,
+        52.3219,
+        22.6186,
+        97.3822
+      ],
+      "delta_vs_full_pp": 0.6380999999999943
+    },
+    "Geov2_ShuffledQuery": {
+      "miou_percent": 53.2226,
+      "values": [
+        55.5686,
+        48.2695,
+        20.122,
+        88.9303
+      ],
+      "delta_vs_full_pp": -4.509725000000003
+    }
+  },
+  "bootstrap": {
+    "replicates": 3000,
+    "seed": 20261014,
+    "ci95": {
+      "Geov2_VIPWide": [
+        50.07916013134519,
+        58.44826977903052
+      ],
+      "Raw32": [
+        51.33400813265314,
+        58.79007632085022
+      ],
+      "QuerySlot_Raw": [
+        51.53492767878253,
+        59.1871442479331
+      ],
+      "DonorBefore": [
+        50.128689605035454,
+        58.514051913340076
+      ],
+      "Geov2_Full": [
+        51.61179994161175,
+        59.309724119284134
+      ],
+      "Geov2_NoAlias_Canonical": [
+        39.34615589053953,
+        49.41966383211754
+      ],
+      "Geov2_EqualFusion": [
+        53.76451334306548,
+        60.43606119795268
+      ],
+      "Geov2_ShuffledQuery": [
+        47.66221326634215,
+        56.46735569180753
+      ]
+    },
+    "delta_vs_full_ci95": {
+      "Geov2_VIPWide": [
+        -3.5398654598723214,
+        0.774584516208199
+      ],
+      "Raw32": [
+        -1.3264529846952664,
+        0.5705354668051364
+      ],
+      "QuerySlot_Raw": [
+        -0.27036308249270996,
+        0.08987095785670224
+      ],
+      "DonorBefore": [
+        -3.4580135823085802,
+        0.8498646649038883
+      ],
+      "Geov2_NoAlias_Canonical": [
+        -17.458062754795645,
+        -4.90038129200597
+      ],
+      "Geov2_EqualFusion": [
+        0.18478054545219932,
+        3.977121114721056
+      ],
+      "Geov2_ShuffledQuery": [
+        -6.834075416522076,
+        0.4047646430876188
+      ]
+    }
+  },
+  "external_vip_reference": {
+    "source": "research/TRAINING_FREE_BASELINES_FULL_20261011.md",
+    "label": "Strong verified local VIP / external VIP reference (full validation)",
+    "values": {
+      "vdd": 52.5765,
+      "potsdam": 44.8995,
+      "ade150": 29.463,
+      "voc20": 92.5051
+    },
+    "note": "This is a separate full-validation baseline. It is not the Geov2_VIPWide row and was not used to select the ablation."
+  },
+  "interpretation": {
+    "alias": "Geov2_NoAlias_Canonical keeps one canonical phrase per class; the full row uses the frozen retained alias bank.",
+    "query_slot": "QuerySlot_Raw routes a local Geometry tile into the shared wide slot bank.",
+    "donor_before": "DonorBefore changes only the local response order for the original-strength path.",
+    "raw32": "Raw32 is the un-routed 32-slot whole-image memory control.",
+    "equal_fusion": "Geov2_EqualFusion is literal 0.5*(L+W) logit fusion and bypasses H.",
+    "shuffle": "Geov2_ShuffledQuery rolls each local query token sequence before routing; the slot bank and token multiset are unchanged.",
+    "vip": "Geov2_VIPWide is an internal endpoint. VIP is an external baseline, not a component of Geov2."
+  }
+}

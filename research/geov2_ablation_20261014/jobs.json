@@ -1,0 +1,26 @@
+[
+  {
+    "dataset": "vdd",
+    "gpu": 0,
+    "session": "gva14_vdd",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_ablation_20261014/vdd"
+  },
+  {
+    "dataset": "potsdam",
+    "gpu": 1,
+    "session": "gva14_potsdam",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_ablation_20261014/potsdam"
+  },
+  {
+    "dataset": "ade150",
+    "gpu": 2,
+    "session": "gva14_ade150",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_ablation_20261014/ade150"
+  },
+  {
+    "dataset": "voc20",
+    "gpu": 3,
+    "session": "gva14_voc20",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_ablation_20261014/voc20"
+  }
+]

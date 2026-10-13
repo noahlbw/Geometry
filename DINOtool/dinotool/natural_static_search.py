@@ -81,7 +81,17 @@ class StaticReader:
 
     @torch.inference_mode()
     def probabilities(self, source, profile, cache, *, wide_scorer=None, dense_writer=None,
-                      local_scorers=None, output_finalizer=None):
+                      local_scorers=None, output_finalizer=None, fusion='coupled'):
+        """Render frozen local/wide observations with one declared fusion rule.
+
+        ``fusion='coupled'`` is the published Geometry writeback
+        ``L + g H(W-L)``.  ``local``/``wide`` expose endpoint controls and
+        ``equal_mean`` is the literal 0.5/0.5 logit fusion used in the
+        ablation.  The default keeps every existing caller bit-for-bit on its
+        original branch.
+        """
+        if fusion not in ('coupled', 'local', 'wide', 'equal_mean'):
+            raise ValueError('Unknown frozen fusion rule.')
         import eval_development_readout as base
         from eval_geometry_vip_reliability import sample_broad
         bank = self.banks[profile.bank]
@@ -124,7 +134,14 @@ class StaticReader:
                     cosine = tile['features'][profile.strength].float() @ self.residual_text.T
                     local = local.clone()
                     local[:, self.background] = self.residual_readers[profile.bank].score(cosine, foreground.argmax(-1)) / profile.temperature
-                logits = local.double() + profile.coupling * (tile['operator'].double() @ (wide.double() - local.double()))
+                if fusion == 'local':
+                    logits = local
+                elif fusion == 'wide':
+                    logits = wide
+                elif fusion == 'equal_mean':
+                    logits = .5 * (local.double() + wide.double())
+                else:
+                    logits = local.double() + profile.coupling * (tile['operator'].double() @ (wide.double() - local.double()))
                 ah, aw = min(512, h - top), min(512, w - left)
                 if dense_writer is None:
                     dense = F.interpolate(logits.T.reshape(1, bank.class_count, 32, 32), (512, 512), mode='bilinear', align_corners=False)[0]
