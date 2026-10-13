@@ -356,6 +356,14 @@
       "delta_vs_full_pp": -4.509725000000003
     }
   },
+  "component_gains_pp": {
+    "Raw32 vs Geov2_VIPWide": 1.4112500000000097,
+    "QuerySlot routing vs Raw32": 0.3675749999999951,
+    "DonorBefore vs QuerySlot_Raw": 0.07162500000000449,
+    "retained aliases vs canonical only": 12.008425000000003,
+    "structure writer vs equal fusion": -0.6380999999999943,
+    "correct query alignment vs shuffled": 4.509725000000003
+  },
   "bootstrap": {
     "replicates": 3000,
     "seed": 20261014,

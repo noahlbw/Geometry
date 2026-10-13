@@ -13,6 +13,17 @@
 
 | Equal-domain macro | 55.8819 | 57.2931 | 57.6607 | 55.9441 | 57.7323 | 45.7239 | 58.3704 | 53.2226 |
 
+## Direct component gains (equal-domain macro)
+
+| Comparison | Gain (pp) |
+|---|---:|
+| Raw32 vs Geov2_VIPWide | +1.4113 |
+| QuerySlot routing vs Raw32 | +0.3676 |
+| DonorBefore vs QuerySlot_Raw | +0.0716 |
+| retained aliases vs canonical only | +12.0084 |
+| structure writer vs equal fusion | -0.6381 |
+| correct query alignment vs shuffled | +4.5097 |
+
 ## Component deltas
 
 | Variant | Δ vs Geov2 full (pp) | 95% paired bootstrap CI |

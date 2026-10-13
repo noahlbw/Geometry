@@ -62,8 +62,17 @@ def main():
         macro[m] = dict(miou_percent=float(np.mean(vals)), values=vals,
                         delta_vs_full_pp=float(np.mean(vals) - np.mean([next(r['miou_percent'] for r in rows if r['dataset'] == d and r['method'] == 'Geov2_Full') for d in DATASETS])))
     ci, delta_ci = bootstrap(arrays, METHODS)
+    component_gains = {
+        'Raw32 vs Geov2_VIPWide': macro['Raw32']['miou_percent'] - macro['Geov2_VIPWide']['miou_percent'],
+        'QuerySlot routing vs Raw32': macro['QuerySlot_Raw']['miou_percent'] - macro['Raw32']['miou_percent'],
+        'DonorBefore vs QuerySlot_Raw': macro['Geov2_Full']['miou_percent'] - macro['QuerySlot_Raw']['miou_percent'],
+        'retained aliases vs canonical only': macro['Geov2_Full']['miou_percent'] - macro['Geov2_NoAlias_Canonical']['miou_percent'],
+        'structure writer vs equal fusion': macro['Geov2_Full']['miou_percent'] - macro['Geov2_EqualFusion']['miou_percent'],
+        'correct query alignment vs shuffled': macro['Geov2_Full']['miou_percent'] - macro['Geov2_ShuffledQuery']['miou_percent'],
+    }
     summary = dict(protocol='Four fixed development images sets; 16 images per dataset; 24 slots; beta=0.5; temperature=0.1.',
                     datasets=list(DATASETS), methods=list(METHODS), rows=rows, macro=macro,
+                    component_gains_pp=component_gains,
                     bootstrap=dict(replicates=3000, seed=20261014, ci95=ci,
                                   delta_vs_full_ci95=delta_ci),
                     external_vip_reference=dict(source='research/TRAINING_FREE_BASELINES_FULL_20261011.md',
@@ -94,6 +103,11 @@ def main():
         vals = [next(r['miou_percent'] for r in rows if r['dataset'] == d and r['method'] == m) for m in METHODS]
         lines.append('| ' + d + ' | ' + ' | '.join(f'{v:.4f}' for v in vals) + ' |')
     lines += ['', '| Equal-domain macro | ' + ' | '.join(f"{macro[m]['miou_percent']:.4f}" for m in METHODS) + ' |',
+              '', '## Direct component gains (equal-domain macro)', '',
+              '| Comparison | Gain (pp) |', '|---|---:|']
+    for label, gain in component_gains.items():
+        lines.append(f'| {label} | {gain:+.4f} |')
+    lines += [
               '', '## Component deltas', '',
               '| Variant | Δ vs Geov2 full (pp) | 95% paired bootstrap CI |', '|---|---:|---:|']
     for m in METHODS:
