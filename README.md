@@ -29,6 +29,7 @@ python DINOtool/scripts/evaluate_frozen_geometry.py --help
 | 环境、模型入口、数据与复现要求 | [复现说明](docs/REPRODUCIBILITY.md) |
 | 历史报告和筛词代码的完整索引 | [实验与源码索引](docs/EXPERIMENT_INDEX.md) |
 | 完整终版原始分析 | [最终模型报告](research/CVPR_FINAL_MODEL_20261009.md) |
+| UDD5／VOC21 强优势定性对比 | [定性对比页](docs/QUALITATIVE_COMPARISONS_20261014.md) |
 | 词表、模板、参数与选择标准 | [protocol.json](research/alias_finalization_20261009/protocol.json) |
 | 最终策略和比较来源 | [final_model.json](research/alias_finalization_20261009/final_model.json) |
 
