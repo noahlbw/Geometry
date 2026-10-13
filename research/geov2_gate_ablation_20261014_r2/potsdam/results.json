@@ -1,0 +1,1276 @@
+{
+  "status": "complete",
+  "dataset": "potsdam",
+  "processed_images": 16,
+  "total_images": 16,
+  "sample_keys": [
+    "top_potsdam_2_13_RGB_y00_x01.tif",
+    "top_potsdam_2_13_RGB_y05_x02.tif",
+    "top_potsdam_2_14_RGB_y04_x03.tif",
+    "top_potsdam_3_13_RGB_y04_x03.tif",
+    "top_potsdam_3_14_RGB_y03_x04.tif",
+    "top_potsdam_4_13_RGB_y03_x04.tif",
+    "top_potsdam_4_14_RGB_y02_x05.tif",
+    "top_potsdam_4_15_RGB_y02_x05.tif",
+    "top_potsdam_5_13_RGB_y02_x01.tif",
+    "top_potsdam_5_14_RGB_y02_x01.tif",
+    "top_potsdam_5_15_RGB_y01_x02.tif",
+    "top_potsdam_6_13_RGB_y01_x02.tif",
+    "top_potsdam_6_14_RGB_y00_x03.tif",
+    "top_potsdam_6_15_RGB_y00_x03.tif",
+    "top_potsdam_6_15_RGB_y05_x04.tif",
+    "top_potsdam_7_13_RGB_y05_x04.tif"
+  ],
+  "protocol": "potsdam",
+  "capacity": 24,
+  "query_temperature": 0.1,
+  "beta": 0.5,
+  "methods": [
+    "Geov2_VIPWide",
+    "Raw32",
+    "QuerySlot_Raw",
+    "DonorBefore",
+    "Geov2_Full",
+    "Geov2_Target",
+    "Geov2_FixedG2",
+    "Geov2_AdaptiveGate",
+    "Geov2_NoAlias_Canonical",
+    "Geov2_EqualFusion",
+    "Geov2_ShuffledQuery"
+  ],
+  "metrics": {
+    "Geov2_VIPWide": {
+      "mean_iou_percent": 52.2582,
+      "pixel_accuracy_percent": 74.9163,
+      "per_class": [
+        {
+          "name": "impervious surface",
+          "iou_percent": 62.3673,
+          "target_pixels": 4853535,
+          "predicted_pixels": 4376538,
+          "precision_percent": 81.0089,
+          "recall_percent": 73.0475,
+          "predicted_area_percent": 27.3534
+        },
+        {
+          "name": "building",
+          "iou_percent": 72.1483,
+          "target_pixels": 4621020,
+          "predicted_pixels": 4855636,
+          "precision_percent": 81.796,
+          "recall_percent": 85.9489,
+          "predicted_area_percent": 30.3477
+        },
+        {
+          "name": "low vegetation",
+          "iou_percent": 57.3278,
+          "target_pixels": 3336089,
+          "predicted_pixels": 3149338,
+          "precision_percent": 75.0376,
+          "recall_percent": 70.8371,
+          "predicted_area_percent": 19.6834
+        },
+        {
+          "name": "tree",
+          "iou_percent": 62.9424,
+          "target_pixels": 2026893,
+          "predicted_pixels": 2301849,
+          "precision_percent": 72.6431,
+          "recall_percent": 82.4974,
+          "predicted_area_percent": 14.3866
+        },
+        {
+          "name": "car",
+          "iou_percent": 47.6291,
+          "target_pixels": 287368,
+          "predicted_pixels": 547935,
+          "precision_percent": 49.183,
+          "recall_percent": 93.7791,
+          "predicted_area_percent": 3.4246
+        },
+        {
+          "name": "clutter",
+          "iou_percent": 11.1345,
+          "target_pixels": 875095,
+          "predicted_pixels": 768704,
+          "precision_percent": 21.4245,
+          "recall_percent": 18.8198,
+          "predicted_area_percent": 4.8044
+        }
+      ],
+      "confusion_matrix": [
+        [
+          3545385,
+          470908,
+          115716,
+          93222,
+          170083,
+          458221
+        ],
+        [
+          48242,
+          3971718,
+          479476,
+          48632,
+          22505,
+          50447
+        ],
+        [
+          314694,
+          132885,
+          2363189,
+          413389,
+          47518,
+          64414
+        ],
+        [
+          156492,
+          20200,
+          117081,
+          1672134,
+          30055,
+          30931
+        ],
+        [
+          17850,
+          17,
+          0,
+          10,
+          269491,
+          0
+        ],
+        [
+          293875,
+          259908,
+          73876,
+          74462,
+          8283,
+          164691
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0
+    },
+    "Raw32": {
+      "mean_iou_percent": 51.4833,
+      "pixel_accuracy_percent": 74.5836,
+      "per_class": [
+        {
+          "name": "impervious surface",
+          "iou_percent": 61.3421,
+          "target_pixels": 4853535,
+          "predicted_pixels": 4216300,
+          "precision_percent": 81.786,
+          "recall_percent": 71.0481,
+          "predicted_area_percent": 26.3519
+        },
+        {
+          "name": "building",
+          "iou_percent": 72.6161,
+          "target_pixels": 4621020,
+          "predicted_pixels": 4910738,
+          "precision_percent": 81.6541,
+          "recall_percent": 86.7735,
+          "predicted_area_percent": 30.6921
+        },
+        {
+          "name": "low vegetation",
+          "iou_percent": 57.0209,
+          "target_pixels": 3336089,
+          "predicted_pixels": 3107097,
+          "precision_percent": 75.3047,
+          "recall_percent": 70.1357,
+          "predicted_area_percent": 19.4194
+        },
+        {
+          "name": "tree",
+          "iou_percent": 63.224,
+          "target_pixels": 2026893,
+          "predicted_pixels": 2382833,
+          "precision_percent": 71.683,
+          "recall_percent": 84.2711,
+          "predicted_area_percent": 14.8927
+        },
+        {
+          "name": "car",
+          "iou_percent": 44.3516,
+          "target_pixels": 287368,
+          "predicted_pixels": 596474,
+          "precision_percent": 45.5272,
+          "recall_percent": 94.4983,
+          "predicted_area_percent": 3.728
+        },
+        {
+          "name": "clutter",
+          "iou_percent": 10.345,
+          "target_pixels": 875095,
+          "predicted_pixels": 786558,
+          "precision_percent": 19.8055,
+          "recall_percent": 17.8017,
+          "predicted_area_percent": 4.916
+        }
+      ],
+      "confusion_matrix": [
+        [
+          3448343,
+          487933,
+          135889,
+          101965,
+          202268,
+          477137
+        ],
+        [
+          25107,
+          4009819,
+          468353,
+          54270,
+          22142,
+          41329
+        ],
+        [
+          273906,
+          143098,
+          2339791,
+          441211,
+          51394,
+          86689
+        ],
+        [
+          139829,
+          20225,
+          92755,
+          1708085,
+          40378,
+          25621
+        ],
+        [
+          15786,
+          15,
+          0,
+          9,
+          271558,
+          0
+        ],
+        [
+          313329,
+          249648,
+          70309,
+          77293,
+          8734,
+          155782
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0
+    },
+    "QuerySlot_Raw": {
+      "mean_iou_percent": 50.932,
+      "pixel_accuracy_percent": 74.1892,
+      "per_class": [
+        {
+          "name": "impervious surface",
+          "iou_percent": 60.6951,
+          "target_pixels": 4853535,
+          "predicted_pixels": 4314183,
+          "precision_percent": 80.2627,
+          "recall_percent": 71.3434,
+          "predicted_area_percent": 26.9636
+        },
+        {
+          "name": "building",
+          "iou_percent": 72.0977,
+          "target_pixels": 4621020,
+          "predicted_pixels": 5079163,
+          "precision_percent": 80.0081,
+          "recall_percent": 87.9404,
+          "predicted_area_percent": 31.7448
+        },
+        {
+          "name": "low vegetation",
+          "iou_percent": 57.1463,
+          "target_pixels": 3336089,
+          "predicted_pixels": 2959218,
+          "precision_percent": 77.3613,
+          "recall_percent": 68.622,
+          "predicted_area_percent": 18.4951
+        },
+        {
+          "name": "tree",
+          "iou_percent": 63.5196,
+          "target_pixels": 2026893,
+          "predicted_pixels": 2298740,
+          "precision_percent": 73.0967,
+          "recall_percent": 82.9004,
+          "predicted_area_percent": 14.3671
+        },
+        {
+          "name": "car",
+          "iou_percent": 45.5353,
+          "target_pixels": 287368,
+          "predicted_pixels": 584473,
+          "precision_percent": 46.6716,
+          "recall_percent": 94.9246,
+          "predicted_area_percent": 3.653
+        },
+        {
+          "name": "clutter",
+          "iou_percent": 6.598,
+          "target_pixels": 875095,
+          "predicted_pixels": 764223,
+          "precision_percent": 13.2771,
+          "recall_percent": 11.595,
+          "predicted_area_percent": 4.7764
+        }
+      ],
+      "confusion_matrix": [
+        [
+          3462678,
+          542040,
+          95681,
+          88878,
+          200253,
+          464005
+        ],
+        [
+          35657,
+          4063744,
+          436995,
+          35402,
+          10213,
+          39009
+        ],
+        [
+          286532,
+          159443,
+          2289290,
+          427833,
+          52278,
+          120713
+        ],
+        [
+          161676,
+          24431,
+          82113,
+          1680303,
+          39341,
+          39029
+        ],
+        [
+          14524,
+          53,
+          0,
+          8,
+          272783,
+          0
+        ],
+        [
+          353116,
+          289452,
+          55139,
+          66316,
+          9605,
+          101467
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0
+    },
+    "DonorBefore": {
+      "mean_iou_percent": 52.2582,
+      "pixel_accuracy_percent": 74.9163,
+      "per_class": [
+        {
+          "name": "impervious surface",
+          "iou_percent": 62.3673,
+          "target_pixels": 4853535,
+          "predicted_pixels": 4376538,
+          "precision_percent": 81.0089,
+          "recall_percent": 73.0475,
+          "predicted_area_percent": 27.3534
+        },
+        {
+          "name": "building",
+          "iou_percent": 72.1483,
+          "target_pixels": 4621020,
+          "predicted_pixels": 4855636,
+          "precision_percent": 81.796,
+          "recall_percent": 85.9489,
+          "predicted_area_percent": 30.3477
+        },
+        {
+          "name": "low vegetation",
+          "iou_percent": 57.3278,
+          "target_pixels": 3336089,
+          "predicted_pixels": 3149338,
+          "precision_percent": 75.0376,
+          "recall_percent": 70.8371,
+          "predicted_area_percent": 19.6834
+        },
+        {
+          "name": "tree",
+          "iou_percent": 62.9424,
+          "target_pixels": 2026893,
+          "predicted_pixels": 2301849,
+          "precision_percent": 72.6431,
+          "recall_percent": 82.4974,
+          "predicted_area_percent": 14.3866
+        },
+        {
+          "name": "car",
+          "iou_percent": 47.6291,
+          "target_pixels": 287368,
+          "predicted_pixels": 547935,
+          "precision_percent": 49.183,
+          "recall_percent": 93.7791,
+          "predicted_area_percent": 3.4246
+        },
+        {
+          "name": "clutter",
+          "iou_percent": 11.1345,
+          "target_pixels": 875095,
+          "predicted_pixels": 768704,
+          "precision_percent": 21.4245,
+          "recall_percent": 18.8198,
+          "predicted_area_percent": 4.8044
+        }
+      ],
+      "confusion_matrix": [
+        [
+          3545385,
+          470908,
+          115716,
+          93222,
+          170083,
+          458221
+        ],
+        [
+          48242,
+          3971718,
+          479476,
+          48632,
+          22505,
+          50447
+        ],
+        [
+          314694,
+          132885,
+          2363189,
+          413389,
+          47518,
+          64414
+        ],
+        [
+          156492,
+          20200,
+          117081,
+          1672134,
+          30055,
+          30931
+        ],
+        [
+          17850,
+          17,
+          0,
+          10,
+          269491,
+          0
+        ],
+        [
+          293875,
+          259908,
+          73876,
+          74462,
+          8283,
+          164691
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0
+    },
+    "Geov2_Full": {
+      "mean_iou_percent": 50.9296,
+      "pixel_accuracy_percent": 74.1878,
+      "per_class": [
+        {
+          "name": "impervious surface",
+          "iou_percent": 60.6918,
+          "target_pixels": 4853535,
+          "predicted_pixels": 4313988,
+          "precision_percent": 80.2619,
+          "recall_percent": 71.3395,
+          "predicted_area_percent": 26.9624
+        },
+        {
+          "name": "building",
+          "iou_percent": 72.0965,
+          "target_pixels": 4621020,
+          "predicted_pixels": 5079396,
+          "precision_percent": 80.0056,
+          "recall_percent": 87.9416,
+          "predicted_area_percent": 31.7462
+        },
+        {
+          "name": "low vegetation",
+          "iou_percent": 57.1455,
+          "target_pixels": 3336089,
+          "predicted_pixels": 2959328,
+          "precision_percent": 77.3592,
+          "recall_percent": 68.6226,
+          "predicted_area_percent": 18.4958
+        },
+        {
+          "name": "tree",
+          "iou_percent": 63.5186,
+          "target_pixels": 2026893,
+          "predicted_pixels": 2298778,
+          "precision_percent": 73.0954,
+          "recall_percent": 82.9003,
+          "predicted_area_percent": 14.3674
+        },
+        {
+          "name": "car",
+          "iou_percent": 45.5322,
+          "target_pixels": 287368,
+          "predicted_pixels": 584457,
+          "precision_percent": 46.6698,
+          "recall_percent": 94.9184,
+          "predicted_area_percent": 3.6529
+        },
+        {
+          "name": "clutter",
+          "iou_percent": 6.5933,
+          "target_pixels": 875095,
+          "predicted_pixels": 764053,
+          "precision_percent": 13.2699,
+          "recall_percent": 11.5861,
+          "predicted_area_percent": 4.7753
+        }
+      ],
+      "confusion_matrix": [
+        [
+          3462489,
+          542236,
+          95704,
+          88871,
+          200249,
+          463986
+        ],
+        [
+          35564,
+          4063801,
+          437025,
+          35402,
+          10230,
+          38998
+        ],
+        [
+          286519,
+          159436,
+          2289311,
+          427875,
+          52274,
+          120674
+        ],
+        [
+          161705,
+          24420,
+          82123,
+          1680301,
+          39338,
+          39006
+        ],
+        [
+          14541,
+          54,
+          0,
+          8,
+          272765,
+          0
+        ],
+        [
+          353170,
+          289449,
+          55165,
+          66321,
+          9601,
+          101389
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0
+    },
+    "Geov2_Target": {
+      "mean_iou_percent": 50.9296,
+      "pixel_accuracy_percent": 74.1878,
+      "per_class": [
+        {
+          "name": "impervious surface",
+          "iou_percent": 60.6918,
+          "target_pixels": 4853535,
+          "predicted_pixels": 4313988,
+          "precision_percent": 80.2619,
+          "recall_percent": 71.3395,
+          "predicted_area_percent": 26.9624
+        },
+        {
+          "name": "building",
+          "iou_percent": 72.0965,
+          "target_pixels": 4621020,
+          "predicted_pixels": 5079396,
+          "precision_percent": 80.0056,
+          "recall_percent": 87.9416,
+          "predicted_area_percent": 31.7462
+        },
+        {
+          "name": "low vegetation",
+          "iou_percent": 57.1455,
+          "target_pixels": 3336089,
+          "predicted_pixels": 2959328,
+          "precision_percent": 77.3592,
+          "recall_percent": 68.6226,
+          "predicted_area_percent": 18.4958
+        },
+        {
+          "name": "tree",
+          "iou_percent": 63.5186,
+          "target_pixels": 2026893,
+          "predicted_pixels": 2298778,
+          "precision_percent": 73.0954,
+          "recall_percent": 82.9003,
+          "predicted_area_percent": 14.3674
+        },
+        {
+          "name": "car",
+          "iou_percent": 45.5322,
+          "target_pixels": 287368,
+          "predicted_pixels": 584457,
+          "precision_percent": 46.6698,
+          "recall_percent": 94.9184,
+          "predicted_area_percent": 3.6529
+        },
+        {
+          "name": "clutter",
+          "iou_percent": 6.5933,
+          "target_pixels": 875095,
+          "predicted_pixels": 764053,
+          "precision_percent": 13.2699,
+          "recall_percent": 11.5861,
+          "predicted_area_percent": 4.7753
+        }
+      ],
+      "confusion_matrix": [
+        [
+          3462489,
+          542236,
+          95704,
+          88871,
+          200249,
+          463986
+        ],
+        [
+          35564,
+          4063801,
+          437025,
+          35402,
+          10230,
+          38998
+        ],
+        [
+          286519,
+          159436,
+          2289311,
+          427875,
+          52274,
+          120674
+        ],
+        [
+          161705,
+          24420,
+          82123,
+          1680301,
+          39338,
+          39006
+        ],
+        [
+          14541,
+          54,
+          0,
+          8,
+          272765,
+          0
+        ],
+        [
+          353170,
+          289449,
+          55165,
+          66321,
+          9601,
+          101389
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0
+    },
+    "Geov2_FixedG2": {
+      "mean_iou_percent": 52.6104,
+      "pixel_accuracy_percent": 77.4576,
+      "per_class": [
+        {
+          "name": "impervious surface",
+          "iou_percent": 67.4314,
+          "target_pixels": 4853535,
+          "predicted_pixels": 5559760,
+          "precision_percent": 75.4323,
+          "recall_percent": 86.4082,
+          "predicted_area_percent": 34.7485
+        },
+        {
+          "name": "building",
+          "iou_percent": 73.2908,
+          "target_pixels": 4621020,
+          "predicted_pixels": 4923488,
+          "precision_percent": 81.9888,
+          "recall_percent": 87.3554,
+          "predicted_area_percent": 30.7718
+        },
+        {
+          "name": "low vegetation",
+          "iou_percent": 60.601,
+          "target_pixels": 3336089,
+          "predicted_pixels": 3254668,
+          "precision_percent": 76.4118,
+          "recall_percent": 74.5469,
+          "predicted_area_percent": 20.3417
+        },
+        {
+          "name": "tree",
+          "iou_percent": 60.9903,
+          "target_pixels": 2026893,
+          "predicted_pixels": 1821109,
+          "precision_percent": 80.0498,
+          "recall_percent": 71.9226,
+          "predicted_area_percent": 11.3819
+        },
+        {
+          "name": "car",
+          "iou_percent": 51.5888,
+          "target_pixels": 287368,
+          "predicted_pixels": 301383,
+          "precision_percent": 66.4815,
+          "recall_percent": 69.7238,
+          "predicted_area_percent": 1.8836
+        },
+        {
+          "name": "clutter",
+          "iou_percent": 1.7598,
+          "target_pixels": 875095,
+          "predicted_pixels": 139592,
+          "precision_percent": 12.5709,
+          "recall_percent": 2.0053,
+          "predicted_area_percent": 0.8724
+        }
+      ],
+      "confusion_matrix": [
+        [
+          4193854,
+          406724,
+          87922,
+          47300,
+          56911,
+          60824
+        ],
+        [
+          86011,
+          4036711,
+          451224,
+          21025,
+          1972,
+          24077
+        ],
+        [
+          412369,
+          167325,
+          2486950,
+          221261,
+          20089,
+          28095
+        ],
+        [
+          341881,
+          27033,
+          171703,
+          1457794,
+          19434,
+          9048
+        ],
+        [
+          86950,
+          46,
+          0,
+          8,
+          200364,
+          0
+        ],
+        [
+          438695,
+          285649,
+          56869,
+          73721,
+          2613,
+          17548
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0
+    },
+    "Geov2_AdaptiveGate": {
+      "mean_iou_percent": 50.9271,
+      "pixel_accuracy_percent": 74.1678,
+      "per_class": [
+        {
+          "name": "impervious surface",
+          "iou_percent": 60.7237,
+          "target_pixels": 4853535,
+          "predicted_pixels": 4291543,
+          "precision_percent": 80.5105,
+          "recall_percent": 71.1882,
+          "predicted_area_percent": 26.8221
+        },
+        {
+          "name": "building",
+          "iou_percent": 72.096,
+          "target_pixels": 4621020,
+          "predicted_pixels": 5076548,
+          "precision_percent": 80.0266,
+          "recall_percent": 87.9155,
+          "predicted_area_percent": 31.7284
+        },
+        {
+          "name": "low vegetation",
+          "iou_percent": 56.9757,
+          "target_pixels": 3336089,
+          "predicted_pixels": 2946888,
+          "precision_percent": 77.3854,
+          "recall_percent": 68.3573,
+          "predicted_area_percent": 18.4181
+        },
+        {
+          "name": "tree",
+          "iou_percent": 63.5304,
+          "target_pixels": 2026893,
+          "predicted_pixels": 2315111,
+          "precision_percent": 72.862,
+          "recall_percent": 83.2228,
+          "predicted_area_percent": 14.4694
+        },
+        {
+          "name": "car",
+          "iou_percent": 45.2173,
+          "target_pixels": 287368,
+          "predicted_pixels": 590311,
+          "precision_percent": 46.2958,
+          "recall_percent": 95.1007,
+          "predicted_area_percent": 3.6894
+        },
+        {
+          "name": "clutter",
+          "iou_percent": 7.0195,
+          "target_pixels": 875095,
+          "predicted_pixels": 779599,
+          "precision_percent": 13.9216,
+          "recall_percent": 12.4024,
+          "predicted_area_percent": 4.8725
+        }
+      ],
+      "confusion_matrix": [
+        [
+          3455142,
+          542215,
+          95431,
+          90098,
+          202892,
+          467757
+        ],
+        [
+          33865,
+          4062591,
+          436341,
+          35935,
+          11660,
+          40628
+        ],
+        [
+          284842,
+          158789,
+          2280462,
+          436104,
+          52749,
+          123143
+        ],
+        [
+          157112,
+          24136,
+          79727,
+          1686837,
+          39543,
+          39538
+        ],
+        [
+          14019,
+          52,
+          0,
+          8,
+          273289,
+          0
+        ],
+        [
+          346563,
+          288765,
+          54927,
+          66129,
+          10178,
+          108533
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0
+    },
+    "Geov2_NoAlias_Canonical": {
+      "mean_iou_percent": 41.9422,
+      "pixel_accuracy_percent": 66.9729,
+      "per_class": [
+        {
+          "name": "impervious surface",
+          "iou_percent": 47.2776,
+          "target_pixels": 4853535,
+          "predicted_pixels": 3287337,
+          "precision_percent": 79.496,
+          "recall_percent": 53.8433,
+          "predicted_area_percent": 20.5459
+        },
+        {
+          "name": "building",
+          "iou_percent": 68.0295,
+          "target_pixels": 4621020,
+          "predicted_pixels": 5594086,
+          "precision_percent": 73.9308,
+          "recall_percent": 89.4987,
+          "predicted_area_percent": 34.963
+        },
+        {
+          "name": "low vegetation",
+          "iou_percent": 49.8926,
+          "target_pixels": 3336089,
+          "predicted_pixels": 2530370,
+          "precision_percent": 77.1699,
+          "recall_percent": 58.5321,
+          "predicted_area_percent": 15.8148
+        },
+        {
+          "name": "tree",
+          "iou_percent": 60.6996,
+          "target_pixels": 2026893,
+          "predicted_pixels": 2397731,
+          "precision_percent": 69.7023,
+          "recall_percent": 82.4549,
+          "predicted_area_percent": 14.9858
+        },
+        {
+          "name": "car",
+          "iou_percent": 22.3082,
+          "target_pixels": 287368,
+          "predicted_pixels": 1261890,
+          "precision_percent": 22.3929,
+          "recall_percent": 98.3318,
+          "predicted_area_percent": 7.8868
+        },
+        {
+          "name": "clutter",
+          "iou_percent": 3.446,
+          "target_pixels": 875095,
+          "predicted_pixels": 928586,
+          "precision_percent": 6.4705,
+          "recall_percent": 6.866,
+          "predicted_area_percent": 5.8037
+        }
+      ],
+      "confusion_matrix": [
+        [
+          2613302,
+          822672,
+          89645,
+          101771,
+          647479,
+          578666
+        ],
+        [
+          4081,
+          4135753,
+          418615,
+          19190,
+          13055,
+          30326
+        ],
+        [
+          198342,
+          252311,
+          1952684,
+          547043,
+          169645,
+          216064
+        ],
+        [
+          102158,
+          48429,
+          40978,
+          1671273,
+          120609,
+          43446
+        ],
+        [
+          4614,
+          180,
+          0,
+          0,
+          282574,
+          0
+        ],
+        [
+          364840,
+          334741,
+          28448,
+          58454,
+          28528,
+          60084
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0
+    },
+    "Geov2_EqualFusion": {
+      "mean_iou_percent": 52.3331,
+      "pixel_accuracy_percent": 77.2419,
+      "per_class": [
+        {
+          "name": "impervious surface",
+          "iou_percent": 67.1465,
+          "target_pixels": 4853535,
+          "predicted_pixels": 5584644,
+          "precision_percent": 75.0854,
+          "recall_percent": 86.3958,
+          "predicted_area_percent": 34.904
+        },
+        {
+          "name": "building",
+          "iou_percent": 72.8014,
+          "target_pixels": 4621020,
+          "predicted_pixels": 4898066,
+          "precision_percent": 81.8772,
+          "recall_percent": 86.786,
+          "predicted_area_percent": 30.6129
+        },
+        {
+          "name": "low vegetation",
+          "iou_percent": 60.1265,
+          "target_pixels": 3336089,
+          "predicted_pixels": 3288643,
+          "precision_percent": 75.6405,
+          "recall_percent": 74.5647,
+          "predicted_area_percent": 20.554
+        },
+        {
+          "name": "tree",
+          "iou_percent": 60.8264,
+          "target_pixels": 2026893,
+          "predicted_pixels": 1807709,
+          "precision_percent": 80.2281,
+          "recall_percent": 71.5524,
+          "predicted_area_percent": 11.2982
+        },
+        {
+          "name": "car",
+          "iou_percent": 50.7921,
+          "target_pixels": 287368,
+          "predicted_pixels": 290193,
+          "precision_percent": 67.0392,
+          "recall_percent": 67.6982,
+          "predicted_area_percent": 1.8137
+        },
+        {
+          "name": "clutter",
+          "iou_percent": 2.3055,
+          "target_pixels": 875095,
+          "predicted_pixels": 130745,
+          "precision_percent": 17.3368,
+          "recall_percent": 2.5902,
+          "predicted_area_percent": 0.8172
+        }
+      ],
+      "confusion_matrix": [
+        [
+          4193252,
+          397652,
+          108714,
+          40818,
+          52429,
+          60670
+        ],
+        [
+          106709,
+          4010400,
+          454134,
+          24265,
+          2358,
+          23154
+        ],
+        [
+          411341,
+          179835,
+          2487545,
+          220235,
+          19196,
+          17937
+        ],
+        [
+          341174,
+          29840,
+          180208,
+          1450290,
+          19064,
+          6317
+        ],
+        [
+          92799,
+          26,
+          0,
+          0,
+          194543,
+          0
+        ],
+        [
+          439369,
+          280313,
+          58042,
+          72101,
+          2603,
+          22667
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0
+    },
+    "Geov2_ShuffledQuery": {
+      "mean_iou_percent": 48.2705,
+      "pixel_accuracy_percent": 71.5344,
+      "per_class": [
+        {
+          "name": "impervious surface",
+          "iou_percent": 56.569,
+          "target_pixels": 4853535,
+          "predicted_pixels": 4304193,
+          "precision_percent": 76.8721,
+          "recall_percent": 68.1714,
+          "predicted_area_percent": 26.9012
+        },
+        {
+          "name": "building",
+          "iou_percent": 67.0882,
+          "target_pixels": 4621020,
+          "predicted_pixels": 5277777,
+          "precision_percent": 75.3064,
+          "recall_percent": 86.0092,
+          "predicted_area_percent": 32.9861
+        },
+        {
+          "name": "low vegetation",
+          "iou_percent": 55.4543,
+          "target_pixels": 3336089,
+          "predicted_pixels": 2847392,
+          "precision_percent": 77.4672,
+          "recall_percent": 66.1192,
+          "predicted_area_percent": 17.7962
+        },
+        {
+          "name": "tree",
+          "iou_percent": 62.3963,
+          "target_pixels": 2026893,
+          "predicted_pixels": 2168952,
+          "precision_percent": 74.328,
+          "recall_percent": 79.5374,
+          "predicted_area_percent": 13.5559
+        },
+        {
+          "name": "car",
+          "iou_percent": 43.2706,
+          "target_pixels": 287368,
+          "predicted_pixels": 595556,
+          "precision_percent": 44.7751,
+          "recall_percent": 92.7943,
+          "predicted_area_percent": 3.7222
+        },
+        {
+          "name": "clutter",
+          "iou_percent": 4.8446,
+          "target_pixels": 875095,
+          "predicted_pixels": 806130,
+          "precision_percent": 9.6368,
+          "recall_percent": 8.8773,
+          "predicted_area_percent": 5.0383
+        }
+      ],
+      "confusion_matrix": [
+        [
+          3308723,
+          770272,
+          56836,
+          70650,
+          210192,
+          436862
+        ],
+        [
+          103992,
+          3974504,
+          434355,
+          48848,
+          8548,
+          50773
+        ],
+        [
+          331470,
+          186804,
+          2205796,
+          371798,
+          61512,
+          178709
+        ],
+        [
+          199572,
+          34653,
+          80664,
+          1612138,
+          37765,
+          62101
+        ],
+        [
+          20631,
+          68,
+          0,
+          8,
+          266661,
+          0
+        ],
+        [
+          339805,
+          311476,
+          69741,
+          65510,
+          10878,
+          77685
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0
+    }
+  },
+  "external_baseline_note": "Geov2_VIPWide is the internal VIP-wide endpoint. Official VIP full reproduction is an external baseline and is reported separately."
+}

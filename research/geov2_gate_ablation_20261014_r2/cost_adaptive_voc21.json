@@ -1,0 +1,423 @@
+{
+  "dataset": "voc21",
+  "model": "Geov2-v0.2-adaptive-writeback",
+  "config": {
+    "wide_long": 448,
+    "local_long": 896,
+    "window": 512,
+    "feature_temperature": 0.1,
+    "spatial_sigma": 0.25,
+    "alias_temperature": 0.07,
+    "correction_lambda": 1.0,
+    "gate_mode": "adaptive",
+    "writeback_gain": 1.0,
+    "gate_min": 0.5,
+    "gate_max": 2.0,
+    "gate_temperature": 0.25,
+    "gate_adaptation": 0.75,
+    "solve_chunk": 32,
+    "output_rows": 64,
+    "output_classes": 16
+  },
+  "text_identity": {
+    "bank": {
+      "classes": [
+        {
+          "name": "background",
+          "synonyms": [
+            "sky",
+            "cloudy sky",
+            "blue sky",
+            "the sky above",
+            "clear sky",
+            "skyline",
+            "atmosphere",
+            "wall",
+            "brick wall",
+            "stone wall",
+            "trees",
+            "tree",
+            "forest",
+            "wood",
+            "wooden",
+            "lumber",
+            "timber",
+            "wooden plank",
+            "grass",
+            "field",
+            "soil",
+            "meadow",
+            "lawn",
+            "road",
+            "roadway",
+            "water",
+            "body of water",
+            "river",
+            "lake",
+            "pond",
+            "ocean",
+            "sea",
+            "green water",
+            "blue water",
+            "mountain",
+            "sands",
+            "desk",
+            "bed",
+            "building",
+            "buildings",
+            "facade",
+            "frontage",
+            "cloud",
+            "lamp",
+            "door",
+            "window",
+            "wardrobe",
+            "ceiling",
+            "shelf",
+            "shelves",
+            "curtain",
+            "stair",
+            "floor",
+            "hill",
+            "rail",
+            "fence"
+          ]
+        },
+        {
+          "name": "aeroplane",
+          "synonyms": [
+            "plane"
+          ]
+        },
+        {
+          "name": "bicycle",
+          "synonyms": [
+            "bicycle"
+          ]
+        },
+        {
+          "name": "bird",
+          "synonyms": [
+            "bird"
+          ]
+        },
+        {
+          "name": "boat",
+          "synonyms": [
+            "boat"
+          ]
+        },
+        {
+          "name": "bottle",
+          "synonyms": [
+            "bottle",
+            "wine bottle",
+            "water bottle"
+          ]
+        },
+        {
+          "name": "bus",
+          "synonyms": [
+            "bus",
+            "red bus",
+            "double-decker bus"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car"
+          ]
+        },
+        {
+          "name": "cat",
+          "synonyms": [
+            "cat"
+          ]
+        },
+        {
+          "name": "chair",
+          "synonyms": [
+            "chair",
+            "armchair",
+            "desk chair",
+            "wooden chair",
+            "dining chair",
+            "kitchen chair"
+          ]
+        },
+        {
+          "name": "cow",
+          "synonyms": [
+            "cow",
+            "cattle",
+            "bull",
+            "calf"
+          ]
+        },
+        {
+          "name": "diningtable",
+          "synonyms": [
+            "table",
+            "desk"
+          ]
+        },
+        {
+          "name": "dog",
+          "synonyms": [
+            "dog"
+          ]
+        },
+        {
+          "name": "horse",
+          "synonyms": [
+            "horse",
+            "wild horse"
+          ]
+        },
+        {
+          "name": "motorbike",
+          "synonyms": [
+            "motorcycle",
+            "motorbike"
+          ]
+        },
+        {
+          "name": "person",
+          "synonyms": [
+            "person",
+            "people",
+            "people in shirt",
+            "people in jeans",
+            "people in dress",
+            "people in sweater",
+            "people in skirt",
+            "people in jacket",
+            "people in hat",
+            "human in hat",
+            "human in jeans",
+            "human in sweater",
+            "human in skirt",
+            "human in jacket",
+            "human",
+            "crowd",
+            "child",
+            "boy",
+            "girl",
+            "man",
+            "women"
+          ]
+        },
+        {
+          "name": "pottedplant",
+          "synonyms": [
+            "potted plant",
+            "plant in a pot",
+            "houseplant",
+            "flowerpot"
+          ]
+        },
+        {
+          "name": "sheep",
+          "synonyms": [
+            "sheep",
+            "lamb"
+          ]
+        },
+        {
+          "name": "sofa",
+          "synonyms": [
+            "sofa",
+            "fabric sofa",
+            "settee"
+          ]
+        },
+        {
+          "name": "train",
+          "synonyms": [
+            "train"
+          ]
+        },
+        {
+          "name": "tvmonitor",
+          "synonyms": [
+            "tv monitor",
+            "monitor",
+            "computer monitor"
+          ]
+        }
+      ],
+      "template": "ImageNet80"
+    },
+    "source": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/kev_alias_search_20261009/text_cache/voc21.pt",
+    "source_template_storage_dtype": "torch.float16",
+    "encoding": "cached normalized prompt vectors -> FP32 template normalization/mean/normalization",
+    "checkpoints": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "union_classes": [
+      0
+    ],
+    "extra_residual_concepts": false
+  },
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "visual_parameter_dtype": "torch.float32",
+  "text_tower_on_gpu": false,
+  "sample_protocol": "official",
+  "total_images": 1449,
+  "num_shards": 1,
+  "shard_index": 0,
+  "status": "complete",
+  "images": [
+    {
+      "key": "2007_000033",
+      "shape": [
+        366,
+        500
+      ],
+      "milliseconds": [
+        140.99492086097598,
+        140.605126041919,
+        140.91966999694705,
+        141.02503517642617,
+        139.9704460054636,
+        140.2304512448609,
+        140.73611702769995
+      ],
+      "peak_allocated_mib": 1632.75244140625,
+      "peak_reserved_mib": 1686.0
+    },
+    {
+      "key": "2007_007498",
+      "shape": [
+        376,
+        500
+      ],
+      "milliseconds": [
+        140.9625201486051,
+        140.66052623093128,
+        140.980688855052,
+        140.75935678556561,
+        140.44523937627673,
+        140.10714227333665,
+        140.22275898605585
+      ],
+      "peak_allocated_mib": 1632.8017578125,
+      "peak_reserved_mib": 1686.0
+    },
+    {
+      "key": "2008_003856",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        140.65638789907098,
+        139.86560003831983,
+        141.54725102707744,
+        141.02218765765429,
+        140.65523212775588,
+        140.2567089535296,
+        140.4052907600999
+      ],
+      "peak_allocated_mib": 1632.75732421875,
+      "peak_reserved_mib": 1686.0
+    },
+    {
+      "key": "2009_001644",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        145.0346391648054,
+        145.64550016075373,
+        146.25280303880572,
+        144.59126815199852,
+        146.97054401040077,
+        146.30958577618003,
+        145.9185928106308
+      ],
+      "peak_allocated_mib": 1632.75732421875,
+      "peak_reserved_mib": 1686.0
+    },
+    {
+      "key": "2010_000552",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        145.34213114529848,
+        144.60770832374692,
+        145.17646515741944,
+        145.41434310376644,
+        147.7867062203586,
+        145.3544870018959,
+        147.29036390781403
+      ],
+      "peak_allocated_mib": 1632.75732421875,
+      "peak_reserved_mib": 1686.0
+    },
+    {
+      "key": "2010_005180",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        145.42140206322074,
+        144.81429336592555,
+        144.50381183996797,
+        144.91877611726522,
+        145.17807122319937,
+        145.87797923013568,
+        145.87667305022478
+      ],
+      "peak_allocated_mib": 1632.75732421875,
+      "peak_reserved_mib": 1686.0
+    },
+    {
+      "key": "2011_003271",
+      "shape": [
+        500,
+        500
+      ],
+      "milliseconds": [
+        141.65514567866921,
+        140.9058216959238,
+        141.10808121040463,
+        141.555059235543,
+        142.7425011061132,
+        142.36261509358883,
+        141.8932261876762
+      ],
+      "peak_allocated_mib": 1634.4775390625,
+      "peak_reserved_mib": 1750.0
+    }
+  ],
+  "median_ms": 141.65514567866921,
+  "peak_allocated_mib": 1634.4775390625,
+  "peak_reserved_mib": 1750.0,
+  "target_masks_loaded": false,
+  "timing": "Whole CPU RGB tensor -> CPU IDs; excludes decode/init/text cache; same historical seven keys, two warmups, seven repeats."
+}

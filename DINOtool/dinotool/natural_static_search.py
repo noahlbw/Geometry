@@ -84,13 +84,15 @@ class StaticReader:
                       local_scorers=None, output_finalizer=None, fusion='coupled'):
         """Render frozen local/wide observations with one declared fusion rule.
 
-        ``fusion='coupled'`` is the published Geometry writeback
-        ``L + g H(W-L)``.  ``local``/``wide`` expose endpoint controls and
-        ``equal_mean`` is the literal 0.5/0.5 logit fusion used in the
-        ablation.  The default keeps every existing caller bit-for-bit on its
-        original branch.
+        ``fusion='coupled'`` is the fixed structure target
+        ``Z* = L + g H(W-L)``.  ``fusion='adaptive'`` applies the released
+        image-only step ``Z = L + g(x)(Z*-L)``.  ``fixed_g2`` is the
+        over-relaxed control used for the VOC21 analysis.  ``local``/``wide``
+        expose endpoint controls and ``equal_mean`` is the literal 0.5/0.5
+        logit fusion used in the ablation.
         """
-        if fusion not in ('coupled', 'local', 'wide', 'equal_mean'):
+        if fusion not in ('coupled', 'adaptive', 'fixed_g2', 'target',
+                          'local', 'wide', 'equal_mean'):
             raise ValueError('Unknown frozen fusion rule.')
         import eval_development_readout as base
         from eval_geometry_vip_reliability import sample_broad
@@ -141,7 +143,17 @@ class StaticReader:
                 elif fusion == 'equal_mean':
                     logits = .5 * (local.double() + wide.double())
                 else:
-                    logits = local.double() + profile.coupling * (tile['operator'].double() @ (wide.double() - local.double()))
+                    target = local.double() + profile.coupling * (tile['operator'].double() @ (wide.double() - local.double()))
+                    if fusion == 'target' or fusion == 'coupled':
+                        logits = target
+                    elif fusion == 'fixed_g2':
+                        logits = local.double() + 2. * (target - local.double())
+                    else:
+                        from .geov2 import adaptive_writeback_gain
+                        gain = adaptive_writeback_gain(local, wide, target.float(),
+                                                       g_min=.5, g_max=2.,
+                                                       temperature=.25).double()
+                        logits = local.double() + gain[:, None] * (target - local.double())
                 ah, aw = min(512, h - top), min(512, w - left)
                 if dense_writer is None:
                     dense = F.interpolate(logits.T.reshape(1, bank.class_count, 32, 32), (512, 512), mode='bilinear', align_corners=False)[0]

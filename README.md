@@ -59,3 +59,5 @@ VIP为本地、明确修复全mask attention行后的实现测量，不是认证
 `DINOtool/dinotool`保存实现，`DINOtool/scripts`保存评测／诊断／统计脚本，`DINOtool/tests`保存测试；`research`保存相关原始报告、冻结配置、汇总混淆矩阵和计时证据。`RELEASE_MANIFEST.json`列出快照内容。
 
 权重、数据集、二进制文本缓存和本机SSH管理配置不纳入Git。本轮39份逐图TP／target／predicted统计NPZ随实验公开，不含RGB或mask。第三方实现与checkpoint遵循各自上游条件，来源见[复现与归属](docs/REPRODUCIBILITY.md)。
+
+2026-10-14更新：Geov2 最终写回固定为结构锚定目标后的自适应 gate：先求 Z*，再用无标签的有界 g(x) 走向 Z*。等权融合、固定 g=1、固定 g=2 和乱序 query 均作为同观测控制；四域 16 图 gate 屏幕与 A800 gate 开销见 [Geov2 gate 决策与消融](research/geov2_gate_ablation_20261014_r2/GEOV2_GATE_DECISION_20261014.md)。

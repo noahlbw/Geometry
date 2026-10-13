@@ -1,0 +1,241 @@
+{
+  "dataset": "vdd",
+  "model": "Geov2-v0.2-adaptive-writeback",
+  "config": {
+    "wide_long": 448,
+    "local_long": 896,
+    "window": 512,
+    "feature_temperature": 0.1,
+    "spatial_sigma": 0.25,
+    "alias_temperature": 0.07,
+    "correction_lambda": 1.0,
+    "gate_mode": "adaptive",
+    "writeback_gain": 1.0,
+    "gate_min": 0.5,
+    "gate_max": 2.0,
+    "gate_temperature": 0.25,
+    "gate_adaptation": 0.75,
+    "solve_chunk": 32,
+    "output_rows": 64,
+    "output_classes": 16
+  },
+  "text_identity": {
+    "bank": {
+      "classes": [
+        {
+          "name": "other",
+          "synonyms": [
+            "surface",
+            "other"
+          ]
+        },
+        {
+          "name": "wall",
+          "synonyms": [
+            "facade"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road"
+          ]
+        },
+        {
+          "name": "vegetation",
+          "synonyms": [
+            "grassland",
+            "forest area"
+          ]
+        },
+        {
+          "name": "vehicle",
+          "synonyms": [
+            "vehicle"
+          ]
+        },
+        {
+          "name": "roof",
+          "synonyms": [
+            "roof"
+          ]
+        },
+        {
+          "name": "water",
+          "synonyms": [
+            "water"
+          ]
+        }
+      ],
+      "template": "ImageNet80"
+    },
+    "source": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/kev_alias_search_20261009/text_cache/vdd.pt",
+    "source_template_storage_dtype": "torch.float16",
+    "encoding": "cached normalized prompt vectors -> FP32 template normalization/mean/normalization",
+    "checkpoints": {
+      "dinotxt": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_dinotxt_vision_head_and_text_encoder-a442d8f5.pth",
+        "bytes": 2253936683,
+        "mtime_ns": 1789834446340889779
+      },
+      "lvd1689m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        "bytes": 1213050671,
+        "mtime_ns": 1789833314101759062
+      },
+      "sat493m": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth",
+        "bytes": 1213059235,
+        "mtime_ns": 1789833891171431405
+      },
+      "bpe": {
+        "path": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "mtime_ns": 1787032172000000000
+      }
+    },
+    "union_classes": [],
+    "extra_residual_concepts": false
+  },
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "visual_parameter_dtype": "torch.float32",
+  "text_tower_on_gpu": false,
+  "sample_protocol": "official",
+  "total_images": 80,
+  "num_shards": 1,
+  "shard_index": 0,
+  "status": "complete",
+  "images": [
+    {
+      "key": "DJI_0007.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        164.4546422176063,
+        163.5523079894483,
+        164.20980216935277,
+        163.66317821666598,
+        163.6149538680911,
+        163.22812903672457,
+        163.22524566203356
+      ],
+      "peak_allocated_mib": 1632.16357421875,
+      "peak_reserved_mib": 1686.0
+    },
+    {
+      "key": "DJI_0390.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        164.34699203819036,
+        165.23292800411582,
+        164.02772301808,
+        164.40381528809667,
+        163.56836119666696,
+        163.87205198407173,
+        163.52851688861847
+      ],
+      "peak_allocated_mib": 1632.16357421875,
+      "peak_reserved_mib": 1686.0
+    },
+    {
+      "key": "DJI_0552.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        163.31386426463723,
+        163.28270500525832,
+        163.2010219618678,
+        163.48260594531894,
+        166.194265242666,
+        163.30913128331304,
+        164.01832085102797
+      ],
+      "peak_allocated_mib": 1632.16357421875,
+      "peak_reserved_mib": 1686.0
+    },
+    {
+      "key": "DJI_0819.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        162.96087903901935,
+        162.97947382554412,
+        163.15483301877975,
+        163.64602465182543,
+        163.56158396229148,
+        163.58425887301564,
+        163.658844307065
+      ],
+      "peak_allocated_mib": 1632.16357421875,
+      "peak_reserved_mib": 1686.0
+    },
+    {
+      "key": "DJI_10054.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        162.4367949552834,
+        161.78216133266687,
+        162.74170763790607,
+        161.21541382744908,
+        161.98719572275877,
+        161.64177795872092,
+        163.37697207927704
+      ],
+      "peak_allocated_mib": 1632.16357421875,
+      "peak_reserved_mib": 1686.0
+    },
+    {
+      "key": "DJI_10397.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        163.17752795293927,
+        163.15591614693403,
+        162.9924662411213,
+        164.3342450261116,
+        163.40799955651164,
+        164.409295655787,
+        162.73422306403518
+      ],
+      "peak_allocated_mib": 1632.16357421875,
+      "peak_reserved_mib": 1686.0
+    },
+    {
+      "key": "DJI_10708.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        160.73034796863794,
+        159.61629478260875,
+        160.02246597781777,
+        159.5559660345316,
+        160.11806018650532,
+        159.97347561642528,
+        159.3298828229308
+      ],
+      "peak_allocated_mib": 1632.16357421875,
+      "peak_reserved_mib": 1686.0
+    }
+  ],
+  "median_ms": 163.30913128331304,
+  "peak_allocated_mib": 1632.16357421875,
+  "peak_reserved_mib": 1686.0,
+  "target_masks_loaded": false,
+  "timing": "Whole CPU RGB tensor -> CPU IDs; excludes decode/init/text cache; same historical seven keys, two warmups, seven repeats."
+}

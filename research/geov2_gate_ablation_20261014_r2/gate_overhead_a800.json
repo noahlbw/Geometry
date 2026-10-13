@@ -1,0 +1,12 @@
+{
+  "device": "NVIDIA A800-SXM4-80GB",
+  "patches": 1024,
+  "classes": 21,
+  "repeats": 100,
+  "median_ms": 0.42117807269096375,
+  "p95_ms": 0.446572482585907,
+  "peak_allocated_mib": 0.50390625,
+  "gain_min": 0.5987340211868286,
+  "gain_max": 1.3997081518173218,
+  "operation": "adaptive gate plus final elementwise writeback; excludes encoder and Z* solve"
+}

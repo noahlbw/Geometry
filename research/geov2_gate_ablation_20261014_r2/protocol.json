@@ -1,0 +1,232 @@
+{
+  "implementation": "geov2-component-ablation-20261014",
+  "datasets": {
+    "vdd": {
+      "loader": {
+        "dataset": "vdd",
+        "data_root": "/data/test/datasets/VDD Release Version/VDD",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/kev_alias_search_20261009",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/vdd.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "official_imagenet",
+        "strength": "original",
+        "coupling": 1.0,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 0.3,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "sample_keys": [
+        "DJI_0018.JPG",
+        "DJI_0325.JPG",
+        "DJI_0360.JPG",
+        "DJI_0445.JPG",
+        "DJI_0467.JPG",
+        "DJI_0552.JPG",
+        "DJI_0744.JPG",
+        "DJI_0798.JPG",
+        "DJI_0916.JPG",
+        "DJI_10024.JPG",
+        "DJI_10054.JPG",
+        "DJI_10233.JPG",
+        "DJI_10345.JPG",
+        "DJI_10596.JPG",
+        "DJI_10624.JPG",
+        "DJI_10697.JPG"
+      ],
+      "background_bias": 0.0,
+      "background_threshold": 0.0,
+      "reference_config": "artifacts\\geometry_github\\configs\\frozen_20261010\\vdd.yaml",
+      "excluded_screen_keys": [
+        "DJI_0007.JPG",
+        "DJI_0365.JPG",
+        "DJI_0519.JPG",
+        "DJI_0763.JPG",
+        "DJI_10018.JPG",
+        "DJI_10176.JPG",
+        "DJI_10553.JPG",
+        "DJI_10708.JPG"
+      ]
+    },
+    "potsdam": {
+      "loader": {
+        "dataset": "potsdam",
+        "data_root": "/data/test/datasets/Potsdam/preprocessed_RGB",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/kev_alias_search_20261009",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/potsdam.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "official_imagenet",
+        "strength": 3.0,
+        "coupling": 0.5,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "sample_keys": [
+        "top_potsdam_2_13_RGB_y00_x01.tif",
+        "top_potsdam_2_13_RGB_y05_x02.tif",
+        "top_potsdam_2_14_RGB_y04_x03.tif",
+        "top_potsdam_3_13_RGB_y04_x03.tif",
+        "top_potsdam_3_14_RGB_y03_x04.tif",
+        "top_potsdam_4_13_RGB_y03_x04.tif",
+        "top_potsdam_4_14_RGB_y02_x05.tif",
+        "top_potsdam_4_15_RGB_y02_x05.tif",
+        "top_potsdam_5_13_RGB_y02_x01.tif",
+        "top_potsdam_5_14_RGB_y02_x01.tif",
+        "top_potsdam_5_15_RGB_y01_x02.tif",
+        "top_potsdam_6_13_RGB_y01_x02.tif",
+        "top_potsdam_6_14_RGB_y00_x03.tif",
+        "top_potsdam_6_15_RGB_y00_x03.tif",
+        "top_potsdam_6_15_RGB_y05_x04.tif",
+        "top_potsdam_7_13_RGB_y05_x04.tif"
+      ],
+      "background_bias": 0.0,
+      "background_threshold": 0.2,
+      "reference_config": "artifacts\\geometry_github\\configs\\frozen_20261010\\potsdam.yaml",
+      "excluded_screen_keys": [
+        "top_potsdam_2_13_RGB_y00_x00.tif",
+        "top_potsdam_2_14_RGB_y05_x05.tif",
+        "top_potsdam_3_14_RGB_y05_x05.tif",
+        "top_potsdam_4_14_RGB_y05_x05.tif",
+        "top_potsdam_5_13_RGB_y05_x05.tif",
+        "top_potsdam_5_15_RGB_y05_x05.tif",
+        "top_potsdam_6_14_RGB_y05_x05.tif",
+        "top_potsdam_7_13_RGB_y05_x05.tif"
+      ]
+    },
+    "ade150": {
+      "loader": {
+        "dataset": "ade150",
+        "data_root": "/data/test/datasets/VIP_natural/ADEChallengeData2016",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/kev_alias_search_20261009",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/ade150.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "semantic_segmentation",
+        "strength": "original",
+        "coupling": 0.25,
+        "temperature": 0.14,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "natural_short336_cap672",
+        "background_rule": "retained"
+      },
+      "sample_keys": [
+        "ADE_val_00000002",
+        "ADE_val_00000127",
+        "ADE_val_00000252",
+        "ADE_val_00000394",
+        "ADE_val_00000520",
+        "ADE_val_00000662",
+        "ADE_val_00000787",
+        "ADE_val_00000929",
+        "ADE_val_00001055",
+        "ADE_val_00001197",
+        "ADE_val_00001322",
+        "ADE_val_00001464",
+        "ADE_val_00001590",
+        "ADE_val_00001732",
+        "ADE_val_00001857",
+        "ADE_val_00001999"
+      ],
+      "background_bias": 0.0,
+      "background_threshold": 0.0,
+      "reference_config": "artifacts\\geometry_github\\configs\\frozen_20261010\\ade150.yaml",
+      "excluded_screen_keys": [
+        "ADE_val_00000001",
+        "ADE_val_00000286",
+        "ADE_val_00000572",
+        "ADE_val_00000857",
+        "ADE_val_00001143",
+        "ADE_val_00001428",
+        "ADE_val_00001714",
+        "ADE_val_00002000"
+      ]
+    },
+    "voc20": {
+      "loader": {
+        "dataset": "voc20",
+        "data_root": "/data/test/datasets/VIP_natural/VOCdevkit/VOC2012",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/kev_alias_search_20261009",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/voc20.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "official_segmentation",
+        "strength": 1.0,
+        "coupling": 1.0,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "natural_short336_cap672",
+        "background_rule": "retained"
+      },
+      "sample_keys": [
+        "2007_000042",
+        "2007_002824",
+        "2007_005689",
+        "2007_009084",
+        "2008_001040",
+        "2008_003782",
+        "2008_006341",
+        "2009_000619",
+        "2009_002317",
+        "2009_003938",
+        "2010_000335",
+        "2010_002232",
+        "2010_004165",
+        "2011_000054",
+        "2011_001546",
+        "2011_003256"
+      ],
+      "background_bias": 0.0,
+      "background_threshold": 0.0,
+      "reference_config": "artifacts\\geometry_github\\configs\\frozen_20261010\\voc20.yaml",
+      "excluded_screen_keys": [
+        "2007_000033",
+        "2007_006364",
+        "2008_001992",
+        "2008_008268",
+        "2009_003378",
+        "2010_001752",
+        "2010_005871",
+        "2011_003271"
+      ]
+    }
+  },
+  "methods": [
+    "OfficialVIP",
+    "Raw32",
+    "QuerySlot_Raw",
+    "DonorBefore",
+    "Geov2_Full",
+    "Geov2_NoAlias_Canonical",
+    "Geov2_EqualFusion",
+    "Geov2_ShuffledQuery"
+  ],
+  "note": "Fixed 16 development images per dataset; OfficialVIP is an external endpoint, not a Geov2 component."
+}

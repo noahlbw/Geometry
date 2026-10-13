@@ -1,0 +1,363 @@
+{
+  "protocol": "Four fixed 16-image development sets; shared backbone, alias bank, 24 slots, beta=.5, temperature=.1.",
+  "methods": [
+    "Geov2_VIPWide",
+    "Raw32",
+    "QuerySlot_Raw",
+    "DonorBefore",
+    "Geov2_Full",
+    "Geov2_Target",
+    "Geov2_FixedG2",
+    "Geov2_AdaptiveGate",
+    "Geov2_NoAlias_Canonical",
+    "Geov2_EqualFusion",
+    "Geov2_ShuffledQuery"
+  ],
+  "rows": [
+    {
+      "dataset": "vdd",
+      "method": "Geov2_VIPWide",
+      "images": 16,
+      "miou_percent": 62.2716
+    },
+    {
+      "dataset": "vdd",
+      "method": "Raw32",
+      "images": 16,
+      "miou_percent": 60.989
+    },
+    {
+      "dataset": "vdd",
+      "method": "QuerySlot_Raw",
+      "images": 16,
+      "miou_percent": 61.3613
+    },
+    {
+      "dataset": "vdd",
+      "method": "DonorBefore",
+      "images": 16,
+      "miou_percent": 62.2255
+    },
+    {
+      "dataset": "vdd",
+      "method": "Geov2_Full",
+      "images": 16,
+      "miou_percent": 61.4631
+    },
+    {
+      "dataset": "vdd",
+      "method": "Geov2_Target",
+      "images": 16,
+      "miou_percent": 61.4631
+    },
+    {
+      "dataset": "vdd",
+      "method": "Geov2_FixedG2",
+      "images": 16,
+      "miou_percent": 59.8281
+    },
+    {
+      "dataset": "vdd",
+      "method": "Geov2_AdaptiveGate",
+      "images": 16,
+      "miou_percent": 61.6014
+    },
+    {
+      "dataset": "vdd",
+      "method": "Geov2_NoAlias_Canonical",
+      "images": 16,
+      "miou_percent": 37.8676
+    },
+    {
+      "dataset": "vdd",
+      "method": "Geov2_EqualFusion",
+      "images": 16,
+      "miou_percent": 61.1622
+    },
+    {
+      "dataset": "vdd",
+      "method": "Geov2_ShuffledQuery",
+      "images": 16,
+      "miou_percent": 55.5703
+    },
+    {
+      "dataset": "potsdam",
+      "method": "Geov2_VIPWide",
+      "images": 16,
+      "miou_percent": 52.2582
+    },
+    {
+      "dataset": "potsdam",
+      "method": "Raw32",
+      "images": 16,
+      "miou_percent": 51.4833
+    },
+    {
+      "dataset": "potsdam",
+      "method": "QuerySlot_Raw",
+      "images": 16,
+      "miou_percent": 50.932
+    },
+    {
+      "dataset": "potsdam",
+      "method": "DonorBefore",
+      "images": 16,
+      "miou_percent": 52.2582
+    },
+    {
+      "dataset": "potsdam",
+      "method": "Geov2_Full",
+      "images": 16,
+      "miou_percent": 50.9296
+    },
+    {
+      "dataset": "potsdam",
+      "method": "Geov2_Target",
+      "images": 16,
+      "miou_percent": 50.9296
+    },
+    {
+      "dataset": "potsdam",
+      "method": "Geov2_FixedG2",
+      "images": 16,
+      "miou_percent": 52.6104
+    },
+    {
+      "dataset": "potsdam",
+      "method": "Geov2_AdaptiveGate",
+      "images": 16,
+      "miou_percent": 50.9271
+    },
+    {
+      "dataset": "potsdam",
+      "method": "Geov2_NoAlias_Canonical",
+      "images": 16,
+      "miou_percent": 41.9422
+    },
+    {
+      "dataset": "potsdam",
+      "method": "Geov2_EqualFusion",
+      "images": 16,
+      "miou_percent": 52.3331
+    },
+    {
+      "dataset": "potsdam",
+      "method": "Geov2_ShuffledQuery",
+      "images": 16,
+      "miou_percent": 48.2705
+    },
+    {
+      "dataset": "ade150",
+      "method": "Geov2_VIPWide",
+      "images": 16,
+      "miou_percent": 20.9862
+    },
+    {
+      "dataset": "ade150",
+      "method": "Raw32",
+      "images": 16,
+      "miou_percent": 20.6131
+    },
+    {
+      "dataset": "ade150",
+      "method": "QuerySlot_Raw",
+      "images": 16,
+      "miou_percent": 20.7421
+    },
+    {
+      "dataset": "ade150",
+      "method": "DonorBefore",
+      "images": 16,
+      "miou_percent": 21.2813
+    },
+    {
+      "dataset": "ade150",
+      "method": "Geov2_Full",
+      "images": 16,
+      "miou_percent": 20.9202
+    },
+    {
+      "dataset": "ade150",
+      "method": "Geov2_Target",
+      "images": 16,
+      "miou_percent": 20.9202
+    },
+    {
+      "dataset": "ade150",
+      "method": "Geov2_FixedG2",
+      "images": 16,
+      "miou_percent": 23.2339
+    },
+    {
+      "dataset": "ade150",
+      "method": "Geov2_AdaptiveGate",
+      "images": 16,
+      "miou_percent": 20.7692
+    },
+    {
+      "dataset": "ade150",
+      "method": "Geov2_NoAlias_Canonical",
+      "images": 16,
+      "miou_percent": 21.5046
+    },
+    {
+      "dataset": "ade150",
+      "method": "Geov2_EqualFusion",
+      "images": 16,
+      "miou_percent": 22.6201
+    },
+    {
+      "dataset": "ade150",
+      "method": "Geov2_ShuffledQuery",
+      "images": 16,
+      "miou_percent": 20.1257
+    },
+    {
+      "dataset": "voc20",
+      "method": "Geov2_VIPWide",
+      "images": 16,
+      "miou_percent": 88.0115
+    },
+    {
+      "dataset": "voc20",
+      "method": "Raw32",
+      "images": 16,
+      "miou_percent": 96.0814
+    },
+    {
+      "dataset": "voc20",
+      "method": "QuerySlot_Raw",
+      "images": 16,
+      "miou_percent": 97.6089
+    },
+    {
+      "dataset": "voc20",
+      "method": "DonorBefore",
+      "images": 16,
+      "miou_percent": 88.0115
+    },
+    {
+      "dataset": "voc20",
+      "method": "Geov2_Full",
+      "images": 16,
+      "miou_percent": 97.609
+    },
+    {
+      "dataset": "voc20",
+      "method": "Geov2_Target",
+      "images": 16,
+      "miou_percent": 97.609
+    },
+    {
+      "dataset": "voc20",
+      "method": "Geov2_FixedG2",
+      "images": 16,
+      "miou_percent": 78.6806
+    },
+    {
+      "dataset": "voc20",
+      "method": "Geov2_AdaptiveGate",
+      "images": 16,
+      "miou_percent": 97.4065
+    },
+    {
+      "dataset": "voc20",
+      "method": "Geov2_NoAlias_Canonical",
+      "images": 16,
+      "miou_percent": 81.5719
+    },
+    {
+      "dataset": "voc20",
+      "method": "Geov2_EqualFusion",
+      "images": 16,
+      "miou_percent": 97.3835
+    },
+    {
+      "dataset": "voc20",
+      "method": "Geov2_ShuffledQuery",
+      "images": 16,
+      "miou_percent": 88.936
+    }
+  ],
+  "macro_miou_percent": {
+    "Geov2_VIPWide": 55.881874999999994,
+    "Raw32": 57.2917,
+    "QuerySlot_Raw": 57.661075000000004,
+    "DonorBefore": 55.944125,
+    "Geov2_Full": 57.730475,
+    "Geov2_Target": 57.730475,
+    "Geov2_FixedG2": 53.58825,
+    "Geov2_AdaptiveGate": 57.676050000000004,
+    "Geov2_NoAlias_Canonical": 45.721575,
+    "Geov2_EqualFusion": 58.374725,
+    "Geov2_ShuffledQuery": 53.225625
+  },
+  "delta_vs_adaptive_gate_pp": {
+    "Geov2_VIPWide": -1.7941750000000098,
+    "Raw32": -0.38435000000000485,
+    "QuerySlot_Raw": -0.014974999999999739,
+    "DonorBefore": -1.731925000000004,
+    "Geov2_Full": 0.05442499999999484,
+    "Geov2_Target": 0.05442499999999484,
+    "Geov2_FixedG2": -4.087800000000001,
+    "Geov2_AdaptiveGate": 0.0,
+    "Geov2_NoAlias_Canonical": -11.954475000000002,
+    "Geov2_EqualFusion": 0.6986749999999944,
+    "Geov2_ShuffledQuery": -4.450425000000003
+  },
+  "paired_bootstrap_delta_ci95": {
+    "Geov2_VIPWide": [
+      -3.499058025179848,
+      0.8491675184037617
+    ],
+    "Raw32": [
+      -1.316893328830647,
+      0.6650649804714831
+    ],
+    "QuerySlot_Raw": [
+      -0.2483186870515297,
+      0.19768655485818035
+    ],
+    "DonorBefore": [
+      -3.422231248388155,
+      0.9498347727779677
+    ],
+    "Geov2_Full": [
+      -0.13296408501270277,
+      0.2669442947287639
+    ],
+    "Geov2_Target": [
+      -0.13296408501270277,
+      0.2669442947287639
+    ],
+    "Geov2_FixedG2": [
+      -7.540267167519986,
+      0.4396427275990711
+    ],
+    "Geov2_NoAlias_Canonical": [
+      -17.3514781039287,
+      -4.800988597335034
+    ],
+    "Geov2_EqualFusion": [
+      0.22316350002992547,
+      4.034101033542523
+    ],
+    "Geov2_ShuffledQuery": [
+      -6.827959728151626,
+      0.45921765105324563
+    ]
+  },
+  "external_vip_reference": {
+    "vdd": 52.5765,
+    "potsdam": 44.8995,
+    "ade150": 29.463,
+    "voc20": 92.5051
+  },
+  "interpretation": {
+    "target": "Z* is the exact structure-anchored quadratic solution before the second-stage step.",
+    "fixed_g2": "Z=L+2(Z*-L), the declared over-relaxation control.",
+    "adaptive": "Z=L+g(x)(Z*-L), where g(x) uses only local/wide margins and structural support.",
+    "equal_fusion": "0.5(L+W), a matched fusion control that bypasses the writer.",
+    "final": "The released Geov2 model uses adaptive structure writeback; fixed and equal fusion remain controls."
+  }
+}
