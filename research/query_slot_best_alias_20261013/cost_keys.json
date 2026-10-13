@@ -1,0 +1,137 @@
+{
+  "vdd": [
+    "DJI_0007.JPG",
+    "DJI_0390.JPG",
+    "DJI_0552.JPG",
+    "DJI_0819.JPG",
+    "DJI_10054.JPG",
+    "DJI_10397.JPG",
+    "DJI_10708.JPG"
+  ],
+  "potsdam": [
+    "top_potsdam_2_13_RGB_y00_x00.tif",
+    "top_potsdam_3_13_RGB_y01_x05.tif",
+    "top_potsdam_4_13_RGB_y03_x05.tif",
+    "top_potsdam_4_15_RGB_y05_x05.tif",
+    "top_potsdam_5_15_RGB_y01_x05.tif",
+    "top_potsdam_6_14_RGB_y03_x05.tif",
+    "top_potsdam_7_13_RGB_y05_x05.tif"
+  ],
+  "voc20": [
+    "2007_000033",
+    "2007_007498",
+    "2008_003856",
+    "2009_001644",
+    "2010_000552",
+    "2010_005180",
+    "2011_003271"
+  ],
+  "voc21": [
+    "2007_000033",
+    "2007_007498",
+    "2008_003856",
+    "2009_001644",
+    "2010_000552",
+    "2010_005180",
+    "2011_003271"
+  ],
+  "ade150": [
+    "ADE_val_00000001",
+    "ADE_val_00000334",
+    "ADE_val_00000667",
+    "ADE_val_00001000",
+    "ADE_val_00001333",
+    "ADE_val_00001666",
+    "ADE_val_00002000"
+  ],
+  "context60": [
+    "2008_000002",
+    "2008_003295",
+    "2008_006665",
+    "2009_001279",
+    "2009_004601",
+    "2010_002691",
+    "2010_006086"
+  ],
+  "udd5": [
+    "000061.JPG",
+    "001461.JPG",
+    "DJI_00528.JPG",
+    "DJI_0373_heda.JPG",
+    "DJI_0451.JPG",
+    "DJI_0511.JPG",
+    "DJI_0707.JPG"
+  ],
+  "oem": [
+    "aachen/images/aachen_11.tif",
+    "chiclayo/images/chiclayo_49.tif",
+    "duesseldorf/images/duesseldorf_35.tif",
+    "lubuskie/images/lubuskie_8.tif",
+    "piura/images/piura_48.tif",
+    "tokyo/images/tokyo_12.tif",
+    "zanzibar/images/zanzibar_99.tif"
+  ],
+  "vaihingen": [
+    "top_mosaic_09cm_area10_y00_x00.tif",
+    "top_mosaic_09cm_area16_y00_x00.tif",
+    "top_mosaic_09cm_area24_y00_x01.tif",
+    "top_mosaic_09cm_area2_y00_x00.tif",
+    "top_mosaic_09cm_area33_y01_x01.tif",
+    "top_mosaic_09cm_area38_y02_x02.tif",
+    "top_mosaic_09cm_area8_y02_x01.tif"
+  ],
+  "landcoverai": [
+    "M-33-20-D-c-4-2_101",
+    "M-33-7-A-d-3-2_259",
+    "M-34-56-A-b-1-4_14",
+    "M-34-68-B-a-1-3_239",
+    "N-33-139-C-d-2-2_185",
+    "N-34-140-A-b-4-2_1",
+    "N-34-97-D-c-2-4_75"
+  ],
+  "loveda": [
+    "2909.png",
+    "3039.png",
+    "3538.png",
+    "3887.png",
+    "3699.png",
+    "3200.png",
+    "3229.png"
+  ],
+  "context59": [
+    "2008_000002",
+    "2008_003295",
+    "2008_006665",
+    "2009_001279",
+    "2009_004601",
+    "2010_002691",
+    "2010_006086"
+  ],
+  "coco_object81": [
+    "000000000139",
+    "000000097994",
+    "000000190140",
+    "000000289586",
+    "000000384527",
+    "000000480985",
+    "000000581781"
+  ],
+  "coco_stuff171": [
+    "000000000139",
+    "000000097994",
+    "000000190140",
+    "000000289586",
+    "000000384527",
+    "000000480985",
+    "000000581781"
+  ],
+  "flair1": [
+    "D012_2019/Z10_UU/img/IMG_062613.tif",
+    "D026_2020/Z13_UU/img/IMG_065054.tif",
+    "D064_2021/Z30_NU/img/IMG_067471.tif",
+    "D071_2020/Z12_UA/img/IMG_070462.tif",
+    "D076_2019/Z15_UU/img/IMG_072654.tif",
+    "D083_2020/Z5_AU/img/IMG_074795.tif",
+    "D085_2019/Z9_NF/img/IMG_076387.tif"
+  ]
+}

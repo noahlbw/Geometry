@@ -1,0 +1,211 @@
+{
+  "dataset": "oem",
+  "banks": {
+    "original": {
+      "classes": [
+        {
+          "name": "bareland",
+          "synonyms": [
+            "bareland",
+            "bare land",
+            "bare soil",
+            "barren land",
+            "exposed earth",
+            "exposed ground",
+            "unvegetated ground",
+            "dry soil",
+            "sandy ground",
+            "rocky ground",
+            "cleared land",
+            "dirt field",
+            "soil patch",
+            "construction ground",
+            "excavation site",
+            "brown earth",
+            "gravel ground",
+            "sparse bareland",
+            "wasteland",
+            "open bare ground"
+          ]
+        },
+        {
+          "name": "rangeland",
+          "synonyms": [
+            "rangeland",
+            "range land",
+            "grassland",
+            "open grass",
+            "grazing land",
+            "pasture",
+            "pastureland",
+            "meadow",
+            "open meadow",
+            "short grass",
+            "natural grassland",
+            "dry grassland",
+            "green grassland",
+            "scrub grassland",
+            "sparse vegetation",
+            "low vegetation",
+            "herbaceous cover",
+            "grazing field",
+            "open vegetated land",
+            "uncultivated grassland"
+          ]
+        },
+        {
+          "name": "developed space",
+          "synonyms": [
+            "developed space",
+            "developed land",
+            "built-up land",
+            "urban surface",
+            "impervious surface",
+            "paved surface",
+            "hardscape",
+            "urban area",
+            "developed area",
+            "settlement surface",
+            "industrial ground",
+            "commercial ground",
+            "parking lot",
+            "parking area",
+            "courtyard",
+            "concrete surface",
+            "asphalt surface",
+            "urban open space",
+            "built environment",
+            "man-made surface"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road",
+            "roads",
+            "street",
+            "streets",
+            "roadway",
+            "paved road",
+            "paved roadway",
+            "asphalt road",
+            "highway",
+            "urban road",
+            "rural road",
+            "narrow road",
+            "wide road",
+            "road network",
+            "transportation corridor",
+            "traffic lane",
+            "road intersection",
+            "road junction",
+            "linear pavement",
+            "winding road"
+          ]
+        },
+        {
+          "name": "tree",
+          "synonyms": [
+            "tree",
+            "trees",
+            "forest",
+            "woodland",
+            "wooded area",
+            "tree canopy",
+            "dense tree canopy",
+            "sparse trees",
+            "tree cluster",
+            "grove",
+            "urban trees",
+            "roadside trees",
+            "evergreen forest",
+            "deciduous forest",
+            "green canopy",
+            "forest patch",
+            "tall vegetation",
+            "tree covered land",
+            "plantation forest",
+            "dense woodland"
+          ]
+        },
+        {
+          "name": "water",
+          "synonyms": [
+            "water",
+            "water body",
+            "river",
+            "rivers",
+            "lake",
+            "lakes",
+            "pond",
+            "ponds",
+            "reservoir",
+            "canal",
+            "stream",
+            "blue water",
+            "dark water",
+            "inland water",
+            "open water",
+            "narrow waterway",
+            "river channel",
+            "shoreline water",
+            "artificial pond",
+            "surface water"
+          ]
+        },
+        {
+          "name": "agriculture land",
+          "synonyms": [
+            "agriculture land",
+            "agricultural land",
+            "farmland",
+            "cropland",
+            "cultivated field",
+            "crop field",
+            "agricultural field",
+            "farm field",
+            "paddy field",
+            "rice field",
+            "plantation",
+            "orchard",
+            "rectangular farmland",
+            "striped cropland",
+            "cultivated parcel",
+            "agricultural parcel",
+            "harvested field",
+            "irrigated field",
+            "large crop field",
+            "row crops"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building",
+            "buildings",
+            "rooftop",
+            "rooftops",
+            "roof",
+            "house",
+            "houses",
+            "residential building",
+            "industrial building",
+            "apartment block",
+            "warehouse roof",
+            "urban structure",
+            "constructed structure",
+            "bright roof",
+            "dark roof",
+            "rectangular rooftop",
+            "dense building cluster",
+            "detached house",
+            "large building",
+            "small building"
+          ]
+        }
+      ],
+      "template": "RS6"
+    }
+  },
+  "residual": null
+}

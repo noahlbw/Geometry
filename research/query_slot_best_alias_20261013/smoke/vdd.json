@@ -1,0 +1,91 @@
+{
+  "status": "complete",
+  "dataset": "vdd",
+  "config": {
+    "schema": 1,
+    "dataset": "vdd",
+    "family": "remote_sensing",
+    "total_images": 80,
+    "background_index": 0,
+    "vocabulary": "../vocabularies/vdd.json",
+    "profile": {
+      "bank": "official_imagenet",
+      "strength": "original",
+      "coupling": 1.0,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 0.3,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.0,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "c650eb44930462f9a5025431afb09d1ad39787dc62255d56ca3c068a5c751bcf",
+  "query_slot_capacity": 24,
+  "query_slot_beta": 0.5,
+  "query_slot_temperature": 0.1,
+  "both_modules_active": true,
+  "donor_before_strength": "original",
+  "alias_source": {
+    "config": "research\\efficient_geometry_20261012\\configs\\vdd.yaml",
+    "vocabulary": "research/efficient_geometry_20261012/vocabularies/vdd.json",
+    "selection": "existing retained best, previously labeled development; no new search"
+  },
+  "original_profile": {
+    "bank": "official_imagenet",
+    "strength": "original",
+    "coupling": 1.0,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 0.3,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "costs": {
+    "vdd": {
+      "median_ms": 590.8396933227777,
+      "peak_allocated_mib": 2643.88671875,
+      "peak_reserved_mib": 3254.0
+    }
+  },
+  "images": [
+    {
+      "key": "DJI_0007.JPG",
+      "protocol": "vdd",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        590.8396933227777
+      ],
+      "peak_allocated_mib": 2643.88671875,
+      "peak_reserved_mib": 3254.0
+    }
+  ],
+  "target_masks_loaded": false,
+  "boundary": "CPU RGB to CPU uint8 original-size IDs; decode/init/offline text excluded. Two warmups, seven synchronized repeats, seven fixed inputs."
+}

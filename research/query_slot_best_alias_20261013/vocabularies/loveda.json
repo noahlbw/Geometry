@@ -1,0 +1,186 @@
+{
+  "dataset": "loveda",
+  "banks": {
+    "original": {
+      "classes": [
+        {
+          "name": "background",
+          "synonyms": [
+            "background",
+            "other area",
+            "miscellaneous surface",
+            "unclassified terrain",
+            "unknown region",
+            "mixed land cover",
+            "surrounding land",
+            "open space",
+            "open ground",
+            "empty area",
+            "urban ground",
+            "rural ground",
+            "land parcel",
+            "shaded area",
+            "natural surface",
+            "artificial surface",
+            "non target area",
+            "remaining area",
+            "general terrain",
+            "mixed scene"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building",
+            "buildings",
+            "structure",
+            "structures",
+            "house",
+            "houses",
+            "roof",
+            "roofs",
+            "apartment",
+            "office building",
+            "warehouse",
+            "commercial building",
+            "residential area",
+            "urban block",
+            "construction",
+            "built-up area",
+            "property",
+            "facility",
+            "man-made structure",
+            "city building"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road",
+            "roads",
+            "street",
+            "streets",
+            "highway",
+            "path",
+            "lane",
+            "roadway",
+            "pavement",
+            "asphalt",
+            "transportation route",
+            "traffic route",
+            "intersection",
+            "junction",
+            "bridge approach",
+            "urban street",
+            "rural path",
+            "linear feature",
+            "access way",
+            "drive"
+          ]
+        },
+        {
+          "name": "water",
+          "synonyms": [
+            "water",
+            "water body",
+            "river",
+            "lake",
+            "pond",
+            "stream",
+            "canal",
+            "reservoir",
+            "shoreline",
+            "wetland",
+            "blue area",
+            "dark surface",
+            "waterway",
+            "drainage channel",
+            "flooded area",
+            "aquatic area",
+            "open water",
+            "coastal water",
+            "reflective surface",
+            "water feature"
+          ]
+        },
+        {
+          "name": "barren",
+          "synonyms": [
+            "barren",
+            "bare land",
+            "bare ground",
+            "bare soil",
+            "dirt",
+            "earth",
+            "sand",
+            "rock",
+            "gravel",
+            "dry land",
+            "open land",
+            "construction site",
+            "excavation",
+            "cleared area",
+            "vacant land",
+            "exposed terrain",
+            "soil patch",
+            "wasteland",
+            "undeveloped land",
+            "brown ground"
+          ]
+        },
+        {
+          "name": "tree",
+          "synonyms": [
+            "tree",
+            "trees",
+            "forest",
+            "woodland",
+            "vegetation",
+            "green area",
+            "canopy",
+            "shrubs",
+            "bush",
+            "park",
+            "grove",
+            "plantation",
+            "natural area",
+            "wooded land",
+            "tall vegetation",
+            "foliage",
+            "tree cover",
+            "leafy area",
+            "green space",
+            "forested region"
+          ]
+        },
+        {
+          "name": "farm",
+          "synonyms": [
+            "farm",
+            "farmland",
+            "agriculture",
+            "agricultural land",
+            "crop field",
+            "field",
+            "crops",
+            "cultivated land",
+            "plantation",
+            "orchard",
+            "rural land",
+            "crop area",
+            "paddy field",
+            "harvested field",
+            "irrigation area",
+            "agricultural zone",
+            "food production area",
+            "tilled land",
+            "growing crops",
+            "cultivated parcel"
+          ]
+        }
+      ],
+      "template": "RS6"
+    }
+  },
+  "residual": null
+}

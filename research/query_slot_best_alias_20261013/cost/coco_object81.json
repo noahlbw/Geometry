@@ -1,0 +1,211 @@
+{
+  "status": "complete",
+  "dataset": "coco_object81",
+  "config": {
+    "schema": 1,
+    "dataset": "coco_object81",
+    "family": "natural",
+    "total_images": 5000,
+    "background_index": 0,
+    "vocabulary": "../vocabularies/coco_object81.json",
+    "profile": {
+      "bank": "official_imagenet",
+      "strength": "original",
+      "coupling": 0.5,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "natural_short336_cap672",
+      "background_rule": "retained"
+    },
+    "background_bias": -4.0,
+    "background_threshold": 0.05,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "6a90ffd1b6a13475e7f2f7fe1a97a770f4387919f3b689f3816af73ca2c7bd3c",
+  "query_slot_capacity": 24,
+  "query_slot_beta": 0.5,
+  "query_slot_temperature": 0.1,
+  "both_modules_active": true,
+  "donor_before_strength": "original",
+  "alias_source": {
+    "config": "research\\efficient_geometry_20261012\\configs\\coco_object81.yaml",
+    "vocabulary": "research/efficient_geometry_20261012/vocabularies/coco_object81.json",
+    "selection": "existing retained best, previously labeled development; no new search"
+  },
+  "original_profile": {
+    "bank": "official_imagenet",
+    "strength": 1.0,
+    "coupling": 0.5,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "natural_short336_cap672",
+    "background_rule": "retained"
+  },
+  "costs": {
+    "coco_object81": {
+      "median_ms": 151.16212097927928,
+      "peak_allocated_mib": 2722.18701171875,
+      "peak_reserved_mib": 4168.0
+    }
+  },
+  "images": [
+    {
+      "key": "000000000139",
+      "protocol": "coco_object81",
+      "shape": [
+        426,
+        640
+      ],
+      "milliseconds": [
+        151.20100416243076,
+        151.23209822922945,
+        151.76786296069622,
+        150.69396793842316,
+        151.13980416208506,
+        151.04228910058737,
+        150.84173996001482
+      ],
+      "peak_allocated_mib": 2651.0751953125,
+      "peak_reserved_mib": 3604.0
+    },
+    {
+      "key": "000000097994",
+      "protocol": "coco_object81",
+      "shape": [
+        427,
+        640
+      ],
+      "milliseconds": [
+        150.3136968240142,
+        150.19103372469544,
+        150.7551888935268,
+        150.48318775370717,
+        152.03961823135614,
+        150.33168578520417,
+        150.02907207235694
+      ],
+      "peak_allocated_mib": 2651.2802734375,
+      "peak_reserved_mib": 3604.0
+    },
+    {
+      "key": "000000190140",
+      "protocol": "coco_object81",
+      "shape": [
+        428,
+        640
+      ],
+      "milliseconds": [
+        151.18040703237057,
+        150.85122687742114,
+        151.46565716713667,
+        151.16212097927928,
+        151.79945761337876,
+        152.5540412403643,
+        151.80086297914386
+      ],
+      "peak_allocated_mib": 2651.48193359375,
+      "peak_reserved_mib": 3604.0
+    },
+    {
+      "key": "000000289586",
+      "protocol": "coco_object81",
+      "shape": [
+        640,
+        426
+      ],
+      "milliseconds": [
+        150.07171407341957,
+        150.37367586046457,
+        149.87534889951348,
+        150.05612699314952,
+        150.11562313884497,
+        150.19931783899665,
+        151.17028076201677
+      ],
+      "peak_allocated_mib": 2625.265625,
+      "peak_reserved_mib": 3604.0
+    },
+    {
+      "key": "000000384527",
+      "protocol": "coco_object81",
+      "shape": [
+        480,
+        640
+      ],
+      "milliseconds": [
+        151.44695108756423,
+        151.25273587182164,
+        151.4661400578916,
+        152.26789005100727,
+        151.6397139057517,
+        151.93952526897192,
+        151.2502902187407
+      ],
+      "peak_allocated_mib": 2722.18701171875,
+      "peak_reserved_mib": 4168.0
+    },
+    {
+      "key": "000000480985",
+      "protocol": "coco_object81",
+      "shape": [
+        500,
+        375
+      ],
+      "milliseconds": [
+        149.72798619419336,
+        149.9601132236421,
+        149.88230960443616,
+        150.42542200535536,
+        150.96255810931325,
+        149.8773698695004,
+        150.11231089010835
+      ],
+      "peak_allocated_mib": 2653.126953125,
+      "peak_reserved_mib": 4168.0
+    },
+    {
+      "key": "000000581781",
+      "protocol": "coco_object81",
+      "shape": [
+        478,
+        640
+      ],
+      "milliseconds": [
+        151.74764906987548,
+        151.82918217033148,
+        152.34893327578902,
+        151.66145516559482,
+        152.37128315493464,
+        152.47987722977996,
+        152.13934099301696
+      ],
+      "peak_allocated_mib": 2719.78564453125,
+      "peak_reserved_mib": 4168.0
+    }
+  ],
+  "target_masks_loaded": false,
+  "boundary": "CPU RGB to CPU uint8 original-size IDs; decode/init/offline text excluded. Two warmups, seven synchronized repeats, seven fixed inputs."
+}

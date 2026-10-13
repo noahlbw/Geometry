@@ -91,6 +91,8 @@ class StaticReader:
         original_broad = cache[wkey]
         broad = original_broad
         if profile.background_rule.startswith('residual_'):
+            if isinstance(broad,dict):
+                raise ValueError('Tile-specific context does not support the protected residual reader.')
             if self.residual_text is None or self.background is None:
                 raise ValueError('Residual ontology required.')
             rkey = ('residual_wide',)
@@ -113,7 +115,8 @@ class StaticReader:
                     cache[key] = local
                 local = cache[key] / profile.temperature
                 top, left = tile['top'], tile['left']
-                wide = sample_broad(broad, top, left, h, w).reshape_as(local)
+                tile_broad = broad[top,left] if isinstance(broad,dict) else broad
+                wide = (tile_broad if tile_broad.ndim==2 else sample_broad(tile_broad, top, left, h, w)).reshape_as(local)
                 if profile.background_rule == 'residual_protected':
                     previous = sample_broad(original_broad, top, left, h, w).reshape_as(local)
                     foreground = local.double() + profile.coupling * (tile['operator'].double() @ (previous.double() - local.double()))

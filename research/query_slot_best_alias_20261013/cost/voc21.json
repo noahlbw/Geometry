@@ -1,0 +1,211 @@
+{
+  "status": "complete",
+  "dataset": "voc21",
+  "config": {
+    "schema": 1,
+    "dataset": "voc21",
+    "family": "natural",
+    "total_images": 1449,
+    "background_index": 0,
+    "vocabulary": "../vocabularies/voc21.json",
+    "profile": {
+      "bank": "official_segmentation",
+      "strength": "original",
+      "coupling": 0.75,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 0.3,
+      "wide_policy": "natural_short336_cap672",
+      "background_rule": "union_max"
+    },
+    "background_bias": -0.25,
+    "background_threshold": 0.15,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "curated_variable_refine_natural_20261010",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "c2f6fa149b02474cd24e8ace1ba18e0de51b6f351f691a9efc9c3fbc88d34197",
+  "query_slot_capacity": 24,
+  "query_slot_beta": 0.5,
+  "query_slot_temperature": 0.1,
+  "both_modules_active": true,
+  "donor_before_strength": "original",
+  "alias_source": {
+    "config": "research\\efficient_geometry_20261012\\configs\\voc21.yaml",
+    "vocabulary": "research/efficient_geometry_20261012/vocabularies/voc21.json",
+    "selection": "existing retained best, previously labeled development; no new search"
+  },
+  "original_profile": {
+    "bank": "official_segmentation",
+    "strength": 1.0,
+    "coupling": 0.75,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 0.3,
+    "wide_policy": "natural_short336_cap672",
+    "background_rule": "union_max"
+  },
+  "costs": {
+    "voc21": {
+      "median_ms": 139.9871469475329,
+      "peak_allocated_mib": 2247.24365234375,
+      "peak_reserved_mib": 2958.0
+    }
+  },
+  "images": [
+    {
+      "key": "2007_000033",
+      "protocol": "voc21",
+      "shape": [
+        366,
+        500
+      ],
+      "milliseconds": [
+        153.75677729025483,
+        150.25848289951682,
+        139.82108002528548,
+        139.72310489043593,
+        139.81390511617064,
+        139.7332986816764,
+        140.71038831025362
+      ],
+      "peak_allocated_mib": 2171.23974609375,
+      "peak_reserved_mib": 2840.0
+    },
+    {
+      "key": "2007_007498",
+      "protocol": "voc21",
+      "shape": [
+        376,
+        500
+      ],
+      "milliseconds": [
+        139.72626812756062,
+        139.67650709673762,
+        138.86490231379867,
+        139.51350701972842,
+        139.9756376631558,
+        139.23063408583403,
+        140.14611206948757
+      ],
+      "peak_allocated_mib": 2175.92431640625,
+      "peak_reserved_mib": 2890.0
+    },
+    {
+      "key": "2008_003856",
+      "protocol": "voc21",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        139.9871469475329,
+        139.94146464392543,
+        140.36733005195856,
+        141.1236678250134,
+        140.1712098158896,
+        140.72039304301143,
+        140.12140966951847
+      ],
+      "peak_allocated_mib": 2175.30224609375,
+      "peak_reserved_mib": 2890.0
+    },
+    {
+      "key": "2009_001644",
+      "protocol": "voc21",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        139.27894504740834,
+        139.74132481962442,
+        139.18249821290374,
+        139.17697872966528,
+        138.84375989437103,
+        139.667937066406,
+        139.93406994268298
+      ],
+      "peak_allocated_mib": 2175.30224609375,
+      "peak_reserved_mib": 2890.0
+    },
+    {
+      "key": "2010_000552",
+      "protocol": "voc21",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        139.60416289046407,
+        139.58793366327882,
+        139.27568076178432,
+        140.19853994250298,
+        139.50990699231625,
+        139.34563705697656,
+        140.83945378661156
+      ],
+      "peak_allocated_mib": 2175.30224609375,
+      "peak_reserved_mib": 2890.0
+    },
+    {
+      "key": "2010_005180",
+      "protocol": "voc21",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        140.08060982450843,
+        140.21892426535487,
+        140.01622330397367,
+        139.31533228605986,
+        140.99921006709337,
+        140.441772993654,
+        140.92379016801715
+      ],
+      "peak_allocated_mib": 2175.30224609375,
+      "peak_reserved_mib": 2890.0
+    },
+    {
+      "key": "2011_003271",
+      "protocol": "voc21",
+      "shape": [
+        500,
+        500
+      ],
+      "milliseconds": [
+        141.71298407018185,
+        141.29783492535353,
+        141.8948438949883,
+        143.00818089395761,
+        141.50834316387773,
+        140.7596948556602,
+        141.18442917242646
+      ],
+      "peak_allocated_mib": 2247.24365234375,
+      "peak_reserved_mib": 2958.0
+    }
+  ],
+  "target_masks_loaded": false,
+  "boundary": "CPU RGB to CPU uint8 original-size IDs; decode/init/offline text excluded. Two warmups, seven synchronized repeats, seven fixed inputs."
+}

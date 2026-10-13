@@ -1,0 +1,211 @@
+{
+  "status": "complete",
+  "dataset": "landcoverai",
+  "config": {
+    "schema": 1,
+    "dataset": "landcoverai",
+    "family": "remote_sensing",
+    "total_images": 1602,
+    "background_index": 0,
+    "vocabulary": "../vocabularies/landcoverai.json",
+    "profile": {
+      "bank": "original_imagenet",
+      "strength": "original",
+      "coupling": 0.5,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.3,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "0c02c5fb5e372f2f82b8f68fc5be04202530af8935b8bc06e2f27c5e944cbc05",
+  "query_slot_capacity": 24,
+  "query_slot_beta": 0.5,
+  "query_slot_temperature": 0.1,
+  "both_modules_active": true,
+  "donor_before_strength": "original",
+  "alias_source": {
+    "config": "research\\efficient_geometry_20261012\\configs\\landcoverai.yaml",
+    "vocabulary": "research/efficient_geometry_20261012/vocabularies/landcoverai.json",
+    "selection": "existing retained best, previously labeled development; no new search"
+  },
+  "original_profile": {
+    "bank": "original_imagenet",
+    "strength": 2.0,
+    "coupling": 0.5,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "costs": {
+    "landcoverai": {
+      "median_ms": 144.90762818604708,
+      "peak_allocated_mib": 2159.30126953125,
+      "peak_reserved_mib": 2752.0
+    }
+  },
+  "images": [
+    {
+      "key": "M-33-20-D-c-4-2_101",
+      "protocol": "landcoverai",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        146.62523567676544,
+        144.18086502701044,
+        147.05180190503597,
+        143.6893017962575,
+        144.44041904062033,
+        145.04729583859444,
+        144.14542727172375
+      ],
+      "peak_allocated_mib": 2159.30126953125,
+      "peak_reserved_mib": 2752.0
+    },
+    {
+      "key": "M-33-7-A-d-3-2_259",
+      "protocol": "landcoverai",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        144.50458390638232,
+        146.82163204997778,
+        144.00294795632362,
+        145.4310342669487,
+        144.50121857225895,
+        145.33433970063925,
+        144.575665704906
+      ],
+      "peak_allocated_mib": 2159.30126953125,
+      "peak_reserved_mib": 2752.0
+    },
+    {
+      "key": "M-34-56-A-b-1-4_14",
+      "protocol": "landcoverai",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        143.64468399435282,
+        145.55147709324956,
+        148.8408143632114,
+        146.71411085873842,
+        146.73104509711266,
+        145.64108615741134,
+        143.4732680208981
+      ],
+      "peak_allocated_mib": 2159.30126953125,
+      "peak_reserved_mib": 2752.0
+    },
+    {
+      "key": "M-34-68-B-a-1-3_239",
+      "protocol": "landcoverai",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        144.73073417320848,
+        145.77938336879015,
+        144.88989021629095,
+        145.0426778756082,
+        143.7048721127212,
+        144.3912130780518,
+        144.90762818604708
+      ],
+      "peak_allocated_mib": 2159.30126953125,
+      "peak_reserved_mib": 2752.0
+    },
+    {
+      "key": "N-33-139-C-d-2-2_185",
+      "protocol": "landcoverai",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        143.2806458324194,
+        143.59400421380997,
+        143.06410308927298,
+        142.8228672593832,
+        143.08520825579762,
+        143.14218889921904,
+        142.93701574206352
+      ],
+      "peak_allocated_mib": 2159.30126953125,
+      "peak_reserved_mib": 2752.0
+    },
+    {
+      "key": "N-34-140-A-b-4-2_1",
+      "protocol": "landcoverai",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        145.15989972278476,
+        146.1923960596323,
+        145.4941830597818,
+        145.60461603105068,
+        145.76141815632582,
+        145.6668172031641,
+        145.76679281890392
+      ],
+      "peak_allocated_mib": 2159.30126953125,
+      "peak_reserved_mib": 2752.0
+    },
+    {
+      "key": "N-34-97-D-c-2-4_75",
+      "protocol": "landcoverai",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        145.01459803432226,
+        145.96444182097912,
+        144.69336112961173,
+        145.03807527944446,
+        144.79510998353362,
+        145.5038171261549,
+        143.66466691717505
+      ],
+      "peak_allocated_mib": 2159.30126953125,
+      "peak_reserved_mib": 2752.0
+    }
+  ],
+  "target_masks_loaded": false,
+  "boundary": "CPU RGB to CPU uint8 original-size IDs; decode/init/offline text excluded. Two warmups, seven synchronized repeats, seven fixed inputs."
+}

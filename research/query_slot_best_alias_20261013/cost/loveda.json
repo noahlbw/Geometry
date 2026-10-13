@@ -1,0 +1,349 @@
+{
+  "status": "complete",
+  "dataset": "loveda",
+  "config": {
+    "schema": 1,
+    "dataset": "loveda",
+    "family": "remote_sensing",
+    "total_images": 1669,
+    "background_index": 0,
+    "vocabulary": "../vocabularies/loveda.json",
+    "profile": {
+      "bank": "original",
+      "strength": "original",
+      "coupling": 0.25,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.2,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "be50aed47cdd59aa1be01ac1b11edf5e4400375f3d575c0a00c11e05257dcda8",
+  "query_slot_capacity": 24,
+  "query_slot_beta": 0.5,
+  "query_slot_temperature": 0.1,
+  "both_modules_active": true,
+  "donor_before_strength": "original",
+  "alias_source": {
+    "config": "research\\efficient_geometry_20261012\\configs\\loveda.yaml",
+    "vocabulary": "research/efficient_geometry_20261012/vocabularies/loveda.json",
+    "selection": "existing retained best, previously labeled development; no new search"
+  },
+  "original_profile": {
+    "bank": "original",
+    "strength": "original",
+    "coupling": 0.25,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "costs": {
+    "P": {
+      "median_ms": 147.31712685897946,
+      "peak_allocated_mib": 2187.568359375,
+      "peak_reserved_mib": 2778.0
+    },
+    "D": {
+      "median_ms": 147.8278166614473,
+      "peak_allocated_mib": 2187.568359375,
+      "peak_reserved_mib": 2778.0
+    }
+  },
+  "images": [
+    {
+      "key": "2909.png",
+      "protocol": "P",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        146.8324069865048,
+        146.8656649813056,
+        145.87377617135644,
+        147.03081222251058,
+        147.06182572990656,
+        146.98951411992311,
+        146.59610064700246
+      ],
+      "peak_allocated_mib": 2186.47412109375,
+      "peak_reserved_mib": 2776.0
+    },
+    {
+      "key": "2909.png",
+      "protocol": "D",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        147.4624159745872,
+        148.23518926277757,
+        146.96069294586778,
+        147.98378013074398,
+        147.4322248250246,
+        147.8278166614473,
+        148.24624685570598
+      ],
+      "peak_allocated_mib": 2187.568359375,
+      "peak_reserved_mib": 2778.0
+    },
+    {
+      "key": "3039.png",
+      "protocol": "P",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        149.92012409493327,
+        149.73788475617766,
+        147.70201686769724,
+        149.1918689571321,
+        148.61679263412952,
+        146.54541993513703,
+        147.16495433822274
+      ],
+      "peak_allocated_mib": 2187.568359375,
+      "peak_reserved_mib": 2778.0
+    },
+    {
+      "key": "3039.png",
+      "protocol": "D",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        150.14233067631721,
+        147.87916978821158,
+        147.62447588145733,
+        147.90348708629608,
+        146.33290888741612,
+        147.55456103011966,
+        150.189861189574
+      ],
+      "peak_allocated_mib": 2187.568359375,
+      "peak_reserved_mib": 2778.0
+    },
+    {
+      "key": "3538.png",
+      "protocol": "P",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        148.10222573578358,
+        147.26348593831062,
+        146.3908297009766,
+        148.05364003404975,
+        148.1272280216217,
+        148.96190632134676,
+        147.44157809764147
+      ],
+      "peak_allocated_mib": 2187.568359375,
+      "peak_reserved_mib": 2778.0
+    },
+    {
+      "key": "3538.png",
+      "protocol": "D",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        146.96018816903234,
+        146.5521603822708,
+        149.02251912280917,
+        149.8156269080937,
+        152.1230610087514,
+        148.16577127203345,
+        146.35712606832385
+      ],
+      "peak_allocated_mib": 2187.568359375,
+      "peak_reserved_mib": 2778.0
+    },
+    {
+      "key": "3887.png",
+      "protocol": "P",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        147.8013228625059,
+        149.75609723478556,
+        151.75774414092302,
+        148.49049411714077,
+        150.59309685602784,
+        149.9591078609228,
+        149.58086283877492
+      ],
+      "peak_allocated_mib": 2187.568359375,
+      "peak_reserved_mib": 2778.0
+    },
+    {
+      "key": "3887.png",
+      "protocol": "D",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        150.49019921571016,
+        150.59332083910704,
+        150.82214400172234,
+        148.9141946658492,
+        150.24969493970275,
+        149.13837611675262,
+        148.14112894237041
+      ],
+      "peak_allocated_mib": 2187.568359375,
+      "peak_reserved_mib": 2778.0
+    },
+    {
+      "key": "3699.png",
+      "protocol": "P",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        146.9583990983665,
+        145.67008195444942,
+        145.46602917835116,
+        150.2386392094195,
+        146.82937134057283,
+        147.1680519171059,
+        146.3166233152151
+      ],
+      "peak_allocated_mib": 2187.568359375,
+      "peak_reserved_mib": 2778.0
+    },
+    {
+      "key": "3699.png",
+      "protocol": "D",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        147.81520701944828,
+        145.90051490813494,
+        146.19593508541584,
+        146.9468236900866,
+        148.08766171336174,
+        145.55521309375763,
+        146.31674904376268
+      ],
+      "peak_allocated_mib": 2187.568359375,
+      "peak_reserved_mib": 2778.0
+    },
+    {
+      "key": "3200.png",
+      "protocol": "P",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        149.1456269286573,
+        146.3572671636939,
+        148.12537468969822,
+        145.90283203870058,
+        147.31712685897946,
+        148.94257578998804,
+        145.9577619098127
+      ],
+      "peak_allocated_mib": 2187.568359375,
+      "peak_reserved_mib": 2778.0
+    },
+    {
+      "key": "3200.png",
+      "protocol": "D",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        147.0456742681563,
+        149.45307187736034,
+        149.198560975492,
+        147.02641917392612,
+        146.93521382287145,
+        150.18432587385178,
+        146.61876391619444
+      ],
+      "peak_allocated_mib": 2187.568359375,
+      "peak_reserved_mib": 2778.0
+    },
+    {
+      "key": "3229.png",
+      "protocol": "P",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        149.58737371489406,
+        146.8862141482532,
+        148.3658431097865,
+        146.43958443775773,
+        147.7020876482129,
+        146.70522883534431,
+        146.4619981124997
+      ],
+      "peak_allocated_mib": 2187.568359375,
+      "peak_reserved_mib": 2778.0
+    },
+    {
+      "key": "3229.png",
+      "protocol": "D",
+      "shape": [
+        1024,
+        1024
+      ],
+      "milliseconds": [
+        146.99902711436152,
+        146.20656613260508,
+        148.3105979859829,
+        145.380730740726,
+        146.7180708423257,
+        149.6962020173669,
+        146.21497271582484
+      ],
+      "peak_allocated_mib": 2187.568359375,
+      "peak_reserved_mib": 2778.0
+    }
+  ],
+  "target_masks_loaded": false,
+  "boundary": "CPU RGB to CPU uint8 original-size IDs; decode/init/offline text excluded. Two warmups, seven synchronized repeats, seven fixed inputs."
+}

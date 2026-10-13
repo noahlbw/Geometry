@@ -1,0 +1,211 @@
+{
+  "status": "complete",
+  "dataset": "vaihingen",
+  "config": {
+    "schema": 1,
+    "dataset": "vaihingen",
+    "family": "remote_sensing",
+    "total_images": 113,
+    "background_index": null,
+    "vocabulary": "../vocabularies/vaihingen.json",
+    "profile": {
+      "bank": "kev40_imagenet",
+      "strength": "original",
+      "coupling": 0.25,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.0,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "e7be4d13aca30e7424be10c37a458e489a82ec1a1de142866a9cbda40349745a",
+  "query_slot_capacity": 24,
+  "query_slot_beta": 0.5,
+  "query_slot_temperature": 0.1,
+  "both_modules_active": true,
+  "donor_before_strength": "original",
+  "alias_source": {
+    "config": "research\\efficient_geometry_20261012\\configs\\vaihingen.yaml",
+    "vocabulary": "research/efficient_geometry_20261012/vocabularies/vaihingen.json",
+    "selection": "existing retained best, previously labeled development; no new search"
+  },
+  "original_profile": {
+    "bank": "kev40_imagenet",
+    "strength": "original",
+    "coupling": 0.25,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "costs": {
+    "vaihingen": {
+      "median_ms": 153.1954570673406,
+      "peak_allocated_mib": 2153.599609375,
+      "peak_reserved_mib": 2750.0
+    }
+  },
+  "images": [
+    {
+      "key": "top_mosaic_09cm_area10_y00_x00.tif",
+      "protocol": "vaihingen",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        152.7420780621469,
+        152.44221687316895,
+        153.1954570673406,
+        153.430107049644,
+        152.62003615498543,
+        153.36800832301378,
+        150.91915102675557
+      ],
+      "peak_allocated_mib": 2153.599609375,
+      "peak_reserved_mib": 2750.0
+    },
+    {
+      "key": "top_mosaic_09cm_area16_y00_x00.tif",
+      "protocol": "vaihingen",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        153.2573727890849,
+        157.1102412417531,
+        154.9616870470345,
+        153.58467679470778,
+        153.90210272744298,
+        152.2882510907948,
+        162.97617089003325
+      ],
+      "peak_allocated_mib": 2153.599609375,
+      "peak_reserved_mib": 2750.0
+    },
+    {
+      "key": "top_mosaic_09cm_area24_y00_x01.tif",
+      "protocol": "vaihingen",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        151.95687022060156,
+        152.84258918836713,
+        151.8023400567472,
+        154.33202916756272,
+        152.75725675746799,
+        153.71786104515195,
+        153.57046900317073
+      ],
+      "peak_allocated_mib": 2153.599609375,
+      "peak_reserved_mib": 2750.0
+    },
+    {
+      "key": "top_mosaic_09cm_area2_y00_x00.tif",
+      "protocol": "vaihingen",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        152.25887531414628,
+        154.58212606608868,
+        153.47947599366307,
+        151.31502924486995,
+        152.2754579782486,
+        152.91023580357432,
+        153.18934991955757
+      ],
+      "peak_allocated_mib": 2153.599609375,
+      "peak_reserved_mib": 2750.0
+    },
+    {
+      "key": "top_mosaic_09cm_area33_y01_x01.tif",
+      "protocol": "vaihingen",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        156.59730276092887,
+        153.60211906954646,
+        151.29070496186614,
+        152.3375348187983,
+        154.0930517949164,
+        152.8064450249076,
+        155.38248512893915
+      ],
+      "peak_allocated_mib": 2153.599609375,
+      "peak_reserved_mib": 2750.0
+    },
+    {
+      "key": "top_mosaic_09cm_area38_y02_x02.tif",
+      "protocol": "vaihingen",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        152.37584803253412,
+        153.45936780795455,
+        152.27266727015376,
+        152.29382505640388,
+        154.50682304799557,
+        153.4513933584094,
+        152.14489540085196
+      ],
+      "peak_allocated_mib": 2153.599609375,
+      "peak_reserved_mib": 2750.0
+    },
+    {
+      "key": "top_mosaic_09cm_area8_y02_x01.tif",
+      "protocol": "vaihingen",
+      "shape": [
+        1000,
+        1000
+      ],
+      "milliseconds": [
+        154.13341904059052,
+        157.5713949277997,
+        154.83360504731536,
+        151.86066925525665,
+        152.7213379740715,
+        153.31031428650022,
+        152.7373781427741
+      ],
+      "peak_allocated_mib": 2153.599609375,
+      "peak_reserved_mib": 2750.0
+    }
+  ],
+  "target_masks_loaded": false,
+  "boundary": "CPU RGB to CPU uint8 original-size IDs; decode/init/offline text excluded. Two warmups, seven synchronized repeats, seven fixed inputs."
+}

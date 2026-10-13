@@ -62,17 +62,14 @@ class CompactGeometry:
 
 
 @torch.inference_mode()
-def compact_observations(image, geometry, vip, strengths, *, wide_policy='long448', reconstruction=None):
-    import eval_development_readout as base
-    from .bounded_physical_coupling import geometry_windows, resize_geometry
+def _iter_local_observations(resized, image_size, geometry, strengths, *, reconstruction=None, include_raw=False):
+    """Yield local rows one at a time for readers that consume raw queries online."""
+    from .bounded_physical_coupling import geometry_windows
     from .gear_ov import _crop_at
     from .alias_action_capacity import reconstruction_operator
     from eval_rival_fine_full import tile_coordinates
-    from .natural_wide_resolution import replace_wide
     solve = reconstruction_operator if reconstruction is None else reconstruction
-    # Use the original RGB resizing, crop order and reconstruction solver.
-    local, resized = [], resize_geometry(image)
-    h, w = resized.shape[-2:]
+    h, w = image_size
     for top, left in geometry_windows(h, w):
         prepared = geometry.prepare_image(_crop_at(resized, top, left, 512).to(geometry.device))
         coordinates = tile_coordinates(top, left, geometry.device)
@@ -80,9 +77,32 @@ def compact_observations(image, geometry, vip, strengths, *, wide_policy='long44
         operator, _ = solve(prepared.geometry_patch_conditional[0], valid)
         with geometry.backbone._autocast():
             features = {s: geometry.project(prepared, s)[0] for s in dict.fromkeys(strengths)}
-        local.append(dict(top=top, left=left, features=features, operator=operator))
+        row = dict(top=top, left=left, features=features, operator=operator)
+        if include_raw:
+            # Preserve the patch-token query used by optional whole-image
+            # memory routers.  The default deployment keeps this disabled so
+            # the existing source footprint and arithmetic are unchanged.
+            row['raw'] = prepared.backbone_tokens[:, prepared.prefix_tokens:].detach()
+        yield row
         del prepared
-    source = dict(local=local, size=(h, w), output_size=tuple(image.shape[-2:]))
+
+
+@torch.inference_mode()
+def local_observations(image, geometry, strengths, *, reconstruction=None, include_raw=False):
+    from .bounded_physical_coupling import resize_geometry
+    # Use the original RGB resizing, crop order and reconstruction solver.
+    resized = resize_geometry(image)
+    h, w = resized.shape[-2:]
+    local = list(_iter_local_observations(resized, (h, w), geometry, strengths,
+                                          reconstruction=reconstruction, include_raw=include_raw))
+    return dict(local=local, size=(h, w), output_size=tuple(image.shape[-2:]))
+
+
+@torch.inference_mode()
+def compact_observations(image, geometry, vip, strengths, *, wide_policy='long448', reconstruction=None):
+    from .natural_wide_resolution import replace_wide
+    source = local_observations(image, geometry, strengths, reconstruction=reconstruction)
+    local = source['local']
     if wide_policy == 'natural_short336_cap672':
         return replace_wide(source, image, vip)
     if wide_policy != 'long448':

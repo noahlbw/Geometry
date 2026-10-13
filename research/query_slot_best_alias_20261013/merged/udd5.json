@@ -1,0 +1,203 @@
+{
+  "status": "complete",
+  "dataset": "udd5",
+  "processed_images": 40,
+  "sample_keys": [
+    "000061.JPG",
+    "000161.JPG",
+    "000261.JPG",
+    "000361.JPG",
+    "001261.JPG",
+    "001361.JPG",
+    "001461.JPG",
+    "001561.JPG",
+    "0119_3img2031.JPG",
+    "0119_4img1001.JPG",
+    "0119_4img3041.JPG",
+    "0119_5img3001.JPG",
+    "DJI_0031.JPG",
+    "DJI_00528.JPG",
+    "DJI_00581.JPG",
+    "DJI_00591.JPG",
+    "DJI_0291.JPG",
+    "DJI_0303.JPG",
+    "DJI_0316.JPG",
+    "DJI_0373_heda.JPG",
+    "DJI_0388.JPG",
+    "DJI_0397.JPG",
+    "DJI_0406.JPG",
+    "DJI_0415.JPG",
+    "DJI_0431.JPG",
+    "DJI_0442.JPG",
+    "DJI_0451.JPG",
+    "DJI_0460.JPG",
+    "DJI_0469.JPG",
+    "DJI_0479_heda.JPG",
+    "DJI_0490.JPG",
+    "DJI_0499_heda.JPG",
+    "DJI_0511.JPG",
+    "DJI_0520.JPG",
+    "DJI_0532.JPG",
+    "DJI_0539_heda.JPG",
+    "DJI_0553_heda.JPG",
+    "DJI_0563_heda.JPG",
+    "DJI_0627.JPG",
+    "DJI_0707.JPG"
+  ],
+  "coverage_verified": true,
+  "scored_target_counts_match": true,
+  "per_image_sums_verified": true,
+  "metrics": {
+    "udd5": {
+      "mean_iou_percent": 55.2575,
+      "pixel_accuracy_percent": 79.6713,
+      "per_class": [
+        {
+          "name": "vegetation",
+          "iou_percent": 79.2199,
+          "target_pixels": 130310444,
+          "predicted_pixels": 124668911,
+          "precision_percent": 90.4055,
+          "recall_percent": 86.4916,
+          "predicted_area_percent": 28.3366
+        },
+        {
+          "name": "building",
+          "iou_percent": 84.6038,
+          "target_pixels": 172720634,
+          "predicted_pixels": 194588172,
+          "precision_percent": 86.5096,
+          "recall_percent": 97.4622,
+          "predicted_area_percent": 44.229
+        },
+        {
+          "name": "road",
+          "iou_percent": 36.4962,
+          "target_pixels": 58998894,
+          "predicted_pixels": 27377862,
+          "precision_percent": 84.3577,
+          "recall_percent": 39.1454,
+          "predicted_area_percent": 6.2229
+        },
+        {
+          "name": "vehicle",
+          "iou_percent": 38.9064,
+          "target_pixels": 3521806,
+          "predicted_pixels": 4061342,
+          "precision_percent": 52.2972,
+          "recall_percent": 60.3091,
+          "predicted_area_percent": 0.9231
+        },
+        {
+          "name": "other",
+          "iou_percent": 37.0609,
+          "target_pixels": 74404702,
+          "predicted_pixels": 89260193,
+          "precision_percent": 49.5793,
+          "recall_percent": 59.4782,
+          "predicted_area_percent": 20.2884
+        }
+      ],
+      "confusion_matrix": [
+        [
+          112707572,
+          6102812,
+          923482,
+          43781,
+          10532797
+        ],
+        [
+          564184,
+          168337404,
+          11298,
+          19363,
+          3788385
+        ],
+        [
+          1581609,
+          3900738,
+          23095336,
+          713555,
+          29707656
+        ],
+        [
+          53896,
+          97956,
+          269177,
+          2123970,
+          976807
+        ],
+        [
+          9761650,
+          16149262,
+          3078569,
+          1160673,
+          44254548
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0,
+      "non_residual_mean_iou_percent": 59.8066
+    }
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "udd5",
+    "family": "remote_sensing",
+    "total_images": 40,
+    "background_index": 4,
+    "vocabulary": "../vocabularies/udd5.json",
+    "profile": {
+      "bank": "kev60_segmentation",
+      "strength": "original",
+      "coupling": 0.5,
+      "temperature": 0.05,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": -1.0,
+    "background_threshold": 0.3,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "15e63a2df50f5b7eb8444e66f7250e35be165973a9df28ab6bceb610bf975050",
+  "original_profile": {
+    "bank": "kev60_segmentation",
+    "strength": "original",
+    "coupling": 0.5,
+    "temperature": 0.05,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "alias_source": {
+    "config": "research\\efficient_geometry_20261012\\configs\\udd5.yaml",
+    "vocabulary": "research/efficient_geometry_20261012/vocabularies/udd5.json",
+    "selection": "existing retained best, previously labeled development; no new search"
+  },
+  "both_modules_active": true,
+  "aggregate_wall_seconds": 22.295732552185655
+}

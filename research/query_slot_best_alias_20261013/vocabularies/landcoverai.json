@@ -1,0 +1,136 @@
+{
+  "dataset": "landcoverai",
+  "banks": {
+    "original_imagenet": {
+      "classes": [
+        {
+          "name": "background",
+          "synonyms": [
+            "background",
+            "other land cover",
+            "unclassified land",
+            "other surface",
+            "open ground",
+            "grass",
+            "grassland",
+            "farmland",
+            "crop field",
+            "agricultural land",
+            "bare ground",
+            "bare soil",
+            "meadow",
+            "lawn",
+            "open field",
+            "uncultivated land",
+            "shrubland",
+            "sandy ground",
+            "rural open space",
+            "mixed terrain"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building",
+            "buildings",
+            "house",
+            "houses",
+            "residential building",
+            "commercial building",
+            "industrial building",
+            "warehouse",
+            "apartment building",
+            "roofed structure",
+            "building roof",
+            "house roof",
+            "rooftop",
+            "construction",
+            "man made structure",
+            "urban building",
+            "rural building",
+            "farm building",
+            "building wall",
+            "roof"
+          ]
+        },
+        {
+          "name": "woodland",
+          "synonyms": [
+            "woodland",
+            "forest",
+            "dense forest",
+            "tree cover",
+            "tree canopy",
+            "wooded area",
+            "trees",
+            "forest canopy",
+            "broadleaf forest",
+            "coniferous forest",
+            "deciduous forest",
+            "evergreen forest",
+            "mixed forest",
+            "dense tree canopy",
+            "forest trees",
+            "wooded land",
+            "tree crowns",
+            "timberland",
+            "continuous forest",
+            "woodland vegetation"
+          ]
+        },
+        {
+          "name": "water",
+          "synonyms": [
+            "water",
+            "water body",
+            "river",
+            "lake",
+            "pond",
+            "stream",
+            "canal",
+            "reservoir",
+            "open water",
+            "surface water",
+            "fresh water",
+            "flowing water",
+            "standing water",
+            "river water",
+            "lake water",
+            "water surface",
+            "inland water",
+            "aquatic area",
+            "natural water body",
+            "watercourse"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road",
+            "roads",
+            "street",
+            "roadway",
+            "asphalt road",
+            "paved road",
+            "highway",
+            "rural road",
+            "urban road",
+            "road surface",
+            "transportation road",
+            "vehicle road",
+            "traffic lane",
+            "road network",
+            "country road",
+            "unpaved road",
+            "gravel road",
+            "tarmac road",
+            "pavement road",
+            "driving road"
+          ]
+        }
+      ],
+      "template": "ImageNet80"
+    }
+  },
+  "residual": null
+}

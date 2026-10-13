@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "datasets": [
+    "vdd",
+    "potsdam",
+    "voc20",
+    "voc21",
+    "ade150",
+    "context60",
+    "udd5",
+    "oem",
+    "vaihingen",
+    "landcoverai",
+    "loveda",
+    "context59",
+    "coco_object81",
+    "coco_stuff171",
+    "flair1"
+  ],
+  "source_images": 45200,
+  "both_modules_active": true,
+  "full_miou": true,
+  "standalone_costs": true
+}

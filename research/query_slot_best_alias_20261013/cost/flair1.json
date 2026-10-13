@@ -1,0 +1,211 @@
+{
+  "status": "complete",
+  "dataset": "flair1",
+  "config": {
+    "schema": 1,
+    "dataset": "flair1",
+    "family": "remote_sensing",
+    "total_images": 15700,
+    "background_index": null,
+    "vocabulary": "../vocabularies/flair1.json",
+    "profile": {
+      "bank": "original",
+      "strength": "original",
+      "coupling": 0.25,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.0,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "804ac72c16ed9bd8d4e863664f2d070b602db2cabb6daef89aa5fc2cc2f2f2af",
+  "query_slot_capacity": 24,
+  "query_slot_beta": 0.5,
+  "query_slot_temperature": 0.1,
+  "both_modules_active": true,
+  "donor_before_strength": "original",
+  "alias_source": {
+    "config": "research\\efficient_geometry_20261012\\configs\\flair1.yaml",
+    "vocabulary": "research/efficient_geometry_20261012/vocabularies/flair1.json",
+    "selection": "existing retained best, previously labeled development; no new search"
+  },
+  "original_profile": {
+    "bank": "original",
+    "strength": "original",
+    "coupling": 0.25,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "costs": {
+    "flair1": {
+      "median_ms": 153.12669472768903,
+      "peak_allocated_mib": 2183.50439453125,
+      "peak_reserved_mib": 2868.0
+    }
+  },
+  "images": [
+    {
+      "key": "D012_2019/Z10_UU/img/IMG_062613.tif",
+      "protocol": "flair1",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        151.89566602930427,
+        151.95459220558405,
+        152.2825537249446,
+        153.12114590778947,
+        151.33484778925776,
+        153.12669472768903,
+        152.02184906229377
+      ],
+      "peak_allocated_mib": 2183.50439453125,
+      "peak_reserved_mib": 2868.0
+    },
+    {
+      "key": "D026_2020/Z13_UU/img/IMG_065054.tif",
+      "protocol": "flair1",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        152.25356817245483,
+        152.49526035040617,
+        152.43295906111598,
+        151.58829372376204,
+        151.40311885625124,
+        153.8294367492199,
+        152.21763122826815
+      ],
+      "peak_allocated_mib": 2183.50439453125,
+      "peak_reserved_mib": 2868.0
+    },
+    {
+      "key": "D064_2021/Z30_NU/img/IMG_067471.tif",
+      "protocol": "flair1",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        153.6297108978033,
+        153.77555787563324,
+        155.2751623094082,
+        154.18291883543134,
+        153.95256085321307,
+        153.96969392895699,
+        154.68949126079679
+      ],
+      "peak_allocated_mib": 2183.50439453125,
+      "peak_reserved_mib": 2868.0
+    },
+    {
+      "key": "D071_2020/Z12_UA/img/IMG_070462.tif",
+      "protocol": "flair1",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        154.5991338789463,
+        154.47096480056643,
+        153.02648907527328,
+        150.10570315644145,
+        150.34162625670433,
+        151.79271018132567,
+        150.8172620087862
+      ],
+      "peak_allocated_mib": 2183.50439453125,
+      "peak_reserved_mib": 2868.0
+    },
+    {
+      "key": "D076_2019/Z15_UU/img/IMG_072654.tif",
+      "protocol": "flair1",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        150.45623993501067,
+        150.5398377776146,
+        151.00552886724472,
+        149.54443695023656,
+        149.83926573768258,
+        151.25065064057708,
+        149.84336216002703
+      ],
+      "peak_allocated_mib": 2183.50439453125,
+      "peak_reserved_mib": 2868.0
+    },
+    {
+      "key": "D083_2020/Z5_AU/img/IMG_074795.tif",
+      "protocol": "flair1",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        155.51959676668048,
+        157.53678418695927,
+        160.81682685762644,
+        161.5536310710013,
+        161.81559208780527,
+        167.5789006985724,
+        168.48038276657462
+      ],
+      "peak_allocated_mib": 2183.50439453125,
+      "peak_reserved_mib": 2868.0
+    },
+    {
+      "key": "D085_2019/Z9_NF/img/IMG_076387.tif",
+      "protocol": "flair1",
+      "shape": [
+        512,
+        512
+      ],
+      "milliseconds": [
+        163.1261808797717,
+        162.05245116725564,
+        162.41972474381328,
+        167.27661900222301,
+        165.59387976303697,
+        161.43692890182137,
+        153.32940872758627
+      ],
+      "peak_allocated_mib": 2183.50439453125,
+      "peak_reserved_mib": 2868.0
+    }
+  ],
+  "target_masks_loaded": false,
+  "boundary": "CPU RGB to CPU uint8 original-size IDs; decode/init/offline text excluded. Two warmups, seven synchronized repeats, seven fixed inputs."
+}

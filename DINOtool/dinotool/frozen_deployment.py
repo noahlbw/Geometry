@@ -21,13 +21,25 @@ from .compact_deployment import CompactGeometry,compact_observations,CachedWideS
 
 
 class FrozenGeometry:
-    """No search or labels; explicit frozen profile and optional compact execution."""
+    """No search or labels; explicit frozen profile and selectable wide branch.
+
+    ``wide_branch='vip'`` preserves the incumbent crop-based reader.  The
+    compact ``raw32`` and ``query_slot`` branches are opt-in at this API and
+    CLI level; changing the wide branch must never happen implicitly.
+    """
     @torch.inference_mode()
-    def __init__(self,config_path,*,checkpoint_dir,dinov3_repo,upstream_root,text_cache,device='cuda',compact=True,efficient=False):
+    def __init__(self,config_path,*,checkpoint_dir,dinov3_repo,upstream_root,text_cache,device='cuda',compact=True,efficient=False,
+                 wide_branch='vip', query_slot_capacity=24):
         config_path=Path(config_path)
         self.config=yaml.safe_load(config_path.read_text(encoding='utf-8'))
         self.vocabulary=json.loads((config_path.parent/self.config['vocabulary']).read_text(encoding='utf-8'))
         c=self.config; self.compact=compact; self.efficient=efficient
+        if wide_branch not in ('vip', 'raw32', 'query_slot'):
+            raise ValueError('wide_branch must be vip, raw32, or query_slot.')
+        if query_slot_capacity < 1:
+            raise ValueError('query_slot_capacity must be positive.')
+        if wide_branch == 'query_slot' and not compact:
+            raise ValueError('query_slot wide_branch requires compact=True.')
         if efficient and not compact:
             raise ValueError('Efficient execution requires the compact backend.')
         import subprocess
@@ -91,10 +103,16 @@ class FrozenGeometry:
         self.reader=StaticReader(banks,queries,c['background_index'],residual)
         self.strengths=self.previous.strengths if self.previous else (self.profile.strength,)
         self.compact_geometry=CompactGeometry(self.geometry);self.wide_scorer=CachedWideScorer()
+        self.wide_branch='vip'
+        self.local_branch='geometry'
         if efficient:
             self.enable_efficient()
         if compact:
             offload_text_towers(self.geometry,self.vip,release=True)
+        if wide_branch == 'raw32':
+            self.enable_context_memory()
+        elif wide_branch == 'query_slot':
+            self.enable_query_slot(capacity=query_slot_capacity)
         self.cache_identity=hashlib.sha256(json.dumps(identity,sort_keys=True).encode()).hexdigest()
 
     def enable_efficient(self, *, grouped=True):
@@ -102,10 +120,81 @@ class FrozenGeometry:
         if self.previous:
             raise ValueError('Efficient backend currently requires an explicit frozen StaticProfile.')
         self.efficient=True
-        self.compact_geometry=EfficientGeometry(self.geometry)
+        if hasattr(self, 'query_slot_observer'):
+            from .response_geometry_deployment import EfficientResponseGeometry
+            self.compact_geometry=EfficientResponseGeometry(self.geometry)
+        else:
+            self.compact_geometry=EfficientGeometry(self.geometry)
         self.vip.__class__=EfficientVIPObserver
         self.wide_scorer=GroupedWideScorer() if grouped else CachedWideScorer()
         self.efficient_local_scorers={k:GroupedLocalScorer(v) for k,v in self.banks.items()} if grouped else self.reader.scorers
+        if hasattr(self,'context_memory'):
+            from .context_memory_observer import CompactContextScorer
+            from .view_disjoint_deployment import ViewDisjointScorer
+            self.wide_scorer=ViewDisjointScorer() if getattr(self,'context_memory_donors','all')=='outside' else CompactContextScorer()
+        elif hasattr(self, 'query_slot_observer'):
+            from .context_memory_observer import CompactContextScorer
+            self.wide_scorer=CompactContextScorer()
+
+    def enable_context_memory(self, config=None, *, donor_view='all', context_depth='both', context_mode='memory'):
+        """Select raw32 whole-image memory, optionally excluding own-view donors.
+
+        Outside donors retain their original full-memory probability; removed
+        probability returns to query self in both blocks or only the last.
+        """
+        from .context_memory_observer import ContextMemoryObserver, ContextMemoryConfig, CompactContextScorer
+        if hasattr(self, 'query_slot_observer'):
+            raise ValueError('Context memory and query-slot routing are mutually exclusive deployment modes.')
+        if not self.compact or self.previous or self.reader.residual_features is not None:
+            raise ValueError('Context memory requires compact StaticProfile without a protected residual reader.')
+        if donor_view not in ('all','outside') or context_depth not in ('both','final'):
+            raise ValueError('Use all/outside donor_view and both/final context_depth.')
+        if context_mode not in ('memory','response_before'):
+            raise ValueError('Use memory or response_before context_mode.')
+        if context_mode == 'response_before' and (donor_view != 'all' or context_depth != 'both'):
+            raise ValueError('response_before currently requires all donors and both blocks.')
+        self.context_memory = ContextMemoryObserver(self.vip.backbone,
+            ContextMemoryConfig(capacity=32, temperature=.1, iterations=5, center=False, hard=False)
+            if config is None else config)
+        self.context_memory_donors,self.context_memory_depth,self.context_memory_mode = donor_view,context_depth,context_mode
+        self.wide_branch='raw32'
+        self.local_branch='geometry'
+        from .view_disjoint_deployment import ViewDisjointScorer
+        self.wide_scorer = ViewDisjointScorer() if donor_view=='outside' else CompactContextScorer()
+        return self
+
+    def enable_query_slot(self, config=None, *, beta=.5, temperature=.1, capacity=24):
+        """Use local Geometry tokens to route a single whole-image slot bank.
+
+        The wide image is encoded once by the existing frozen context observer.
+        Each local Geometry tile then chooses a different mixture of the shared
+        semantic slots.  ``ResponseGeometry`` applies the tested DonorBefore
+        local ordering for the original strength; numeric strength profiles
+        retain the incumbent Geometry projection.
+        """
+        from .context_memory_observer import ContextMemoryConfig, ContextMemoryObserver, CompactContextScorer
+        from .response_geometry_deployment import ResponseGeometry, EfficientResponseGeometry
+        if hasattr(self, 'context_memory'):
+            raise ValueError('Context memory and query-slot routing are mutually exclusive deployment modes.')
+        if not self.compact or self.previous:
+            raise ValueError('Query-slot routing requires a compact StaticProfile.')
+        if not 0 <= beta <= 1 or temperature <= 0:
+            raise ValueError('beta must be in [0,1] and temperature must be positive.')
+        if config is None and capacity < 1:
+            raise ValueError('capacity must be positive.')
+        self.query_slot_observer = ContextMemoryObserver(
+            self.vip.backbone,
+            ContextMemoryConfig(capacity=int(capacity), temperature=.1, iterations=5, center=False, hard=False)
+            if config is None else config,
+        )
+        self.query_slot_capacity = int(self.query_slot_observer.config.capacity)
+        self.query_slot_beta = float(beta)
+        self.query_slot_temperature = float(temperature)
+        self.compact_geometry = (EfficientResponseGeometry if self.efficient else ResponseGeometry)(self.geometry)
+        self.wide_scorer = CompactContextScorer()
+        self.wide_branch='query_slot'
+        self.local_branch='donor_before'
+        return self
 
     @torch.inference_mode()
     def predict(self,image,*,protocol=None):
@@ -127,8 +216,30 @@ class FrozenGeometry:
             raise ValueError('Unknown prediction protocol.')
         if self.compact:
             from .efficient_deployment import reconstruction, write_dense, restore_and_finalize
-            source=compact_observations(image,self.compact_geometry,self.vip,self.strengths,wide_policy=self.profile.wide_policy,
-                reconstruction=reconstruction if self.efficient else None)
+            observation_function=compact_observations
+            wide_observer=self.vip
+            observation_options={}
+            if hasattr(self, 'query_slot_observer'):
+                from .query_slot_memory import query_slot_wide_observations
+                observation_function = query_slot_wide_observations
+                wide_observer = self.query_slot_observer
+                observation_options.update(
+                    temperature=self.query_slot_temperature,
+                    beta=self.query_slot_beta,
+                )
+            elif hasattr(self,'context_memory'):
+                from .context_memory_deployment import context_memory_observations
+                observation_function=context_memory_observations
+                wide_observer=self.context_memory
+                if getattr(self,'context_memory_mode','memory') == 'response_before':
+                    from .context_memory_deployment import response_before_observations
+                    observation_function=response_before_observations
+                if getattr(self,'context_memory_donors','all')=='outside':
+                    from .view_disjoint_deployment import view_disjoint_observations
+                    observation_function=view_disjoint_observations
+                    observation_options['final_only']=self.context_memory_depth=='final'
+            source=observation_function(image,self.compact_geometry,wide_observer,self.strengths,wide_policy=self.profile.wide_policy,
+                reconstruction=reconstruction if self.efficient else None,**observation_options)
             probability=(self.previous.predict_observations(source,return_probability=True,wide_scorer=self.wide_scorer,return_prediction=False)[2]
                 if self.previous else reader.probabilities(source,self.profile,{},wide_scorer=self.wide_scorer,
                     dense_writer=write_dense if self.efficient else None,

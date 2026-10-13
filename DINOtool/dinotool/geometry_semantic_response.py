@@ -69,11 +69,17 @@ def semantic_block(block, current, relation, prefix, mode, *, trace=False):
                 if mode == 'query_response' else self_attended(native, value, prefix))
     increment = project_increment(block, current, attended)
     diagnostics = {}
+    increment_norm = float(increment[:, prefix:].float().norm(dim=-1).mean()) if trace else None
     if mode == 'before':
         mixed = transport(relation, increment[:, prefix:])
         mixed_all = torch.cat((increment[:, :prefix].float(), mixed), dim=1)
         after = current.float()+mixed_all
+        # Release the transport temporaries before the frozen MLP allocates its
+        # normalized input and output.  DonorBefore is inference-only, so the
+        # old tensors are not needed after ``after`` has been formed.
+        del increment, mixed, mixed_all, current
         result = after+block.ls2(block.mlp(block.norm2(after)))
+        del after
     elif mode == 'self':
         after = current+increment
         result = after+block.ls2(block.mlp(block.norm2(after)))
@@ -102,7 +108,7 @@ def semantic_block(block, current, relation, prefix, mode, *, trace=False):
     else:
         raise ValueError('Unknown semantic response mode.')
     if trace:
-        diagnostics['attention_increment_norm'] = float(increment[:, prefix:].float().norm(dim=-1).mean())
+        diagnostics['attention_increment_norm'] = increment_norm
         diagnostics['native_patch_mass'] = float(native[..., prefix:, prefix:].float().sum(-1).mean())
         diagnostics['output_norm'] = float(result[:, prefix:].float().norm(dim=-1).mean())
     return result, diagnostics

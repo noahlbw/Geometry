@@ -1,5 +1,7 @@
 # Geometry: frozen structure-guided open-vocabulary segmentation
 
+2026-10-13更新：发布 **QuerySlot＋DonorBefore 完整模型实现及15数据集／16协议全量对比**。见[模型与复现说明](docs/QUERY_SLOT_DONOR_BEFORE_20261013.md)、[精度／耗时／显存对比表](research/query_slot_best_alias_20261013/REPORT.md)、[机器可读结果](research/query_slot_best_alias_20261013/RESULTS.csv)。采用此前带标签开发搜索保留的最佳alias，两个模块全部实际执行：7个协议精度提升、9个下降；耗时比旧Efficient记录减少3.65%–29.79%，显存有升有降。局部strength统一为`original`，因此部分协议同时改变了局部路径；不将全部差值归于宽视野替换。2026-10-09论文冻结主表仍单独保留。
+
 2026-10-12更新：五个公开方法的全部 **75 项全量评测＋75 项耗时／显存测试已完成**，覆盖 226,000 次协议图像评测。见[复现协议与运行说明](docs/BASELINE_BENCHMARK_20261011.md)、[完整对比表](research/TRAINING_FREE_BASELINES_FULL_20261011.md)和[核验证据](research/training_free_baselines_full_20261011/verification.json)。CorrCLIP 在 PC59／PC60 上超过当前 Geometry 历史参考；保留这些结果及资源、配置与选择协议的差异。
 
 2026-10-10更新：新增当前Kev开发选择后的冻结模型、15协议的实际alias与YAML，以及无需历史实验缓存的[独立推理／评测入口](docs/DEPLOYMENT_20261010.md)。原2026-10-09模型和实验记录保留在下面，不能将两版结果混用。最新精度见[Kev完整结果](research/KEV_ALIAS_SEARCH_20261009.md)和[相同词表VIP对照](research/VIP_KEV_SAME_VOCABULARY_20261010.md)，执行优化与验证见[效率报告](research/COMPACT_DEPLOYMENT_20261010.md)。
@@ -55,4 +57,4 @@ VIP为本地、明确修复全mask attention行后的实现测量，不是认证
 
 `DINOtool/dinotool`保存实现，`DINOtool/scripts`保存评测／诊断／统计脚本，`DINOtool/tests`保存测试；`research`保存相关原始报告、冻结配置、汇总混淆矩阵和计时证据。`RELEASE_MANIFEST.json`列出快照内容。
 
-权重、数据集、二进制文本缓存、逐图NPZ和本机SSH管理配置不纳入Git。第三方实现与checkpoint遵循各自上游条件，来源见[复现与归属](docs/REPRODUCIBILITY.md)。
+权重、数据集、二进制文本缓存和本机SSH管理配置不纳入Git。本轮39份逐图TP／target／predicted统计NPZ随实验公开，不含RGB或mask。第三方实现与checkpoint遵循各自上游条件，来源见[复现与归属](docs/REPRODUCIBILITY.md)。

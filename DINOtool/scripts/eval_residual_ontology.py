@@ -30,8 +30,10 @@ def residual_wide(source,text):
             raw=torch.einsum('bnd,mtd->bnmt',crop['features'],text.float()).mean(-1)[0]*VIPSettings().logit_scale
         top,left,ah,aw=(crop[k] for k in ('top','left','ah','aw'))
         for mode in maps:
-            reduced=residual_score(raw,mode,1.).reshape(1,1,21,21)
-            dense=F.interpolate(reduced,(336,336),mode='bilinear',align_corners=False)[0].float()
+            grid=crop.get('grid_hw',(21,21))
+            output=crop.get('output_hw',(336,336))
+            reduced=residual_score(raw,mode,1.).reshape(1,1,*grid)
+            dense=F.interpolate(reduced,output,mode='bilinear',align_corners=False)[0].float()
             maps[mode][:,top:top+ah,left:left+aw]+=dense[:,:ah,:aw]
         count[top:top+ah,left:left+aw]+=1
     return {mode:value/count[None] for mode,value in maps.items()}

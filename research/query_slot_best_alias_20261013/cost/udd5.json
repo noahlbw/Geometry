@@ -1,0 +1,211 @@
+{
+  "status": "complete",
+  "dataset": "udd5",
+  "config": {
+    "schema": 1,
+    "dataset": "udd5",
+    "family": "remote_sensing",
+    "total_images": 40,
+    "background_index": 4,
+    "vocabulary": "../vocabularies/udd5.json",
+    "profile": {
+      "bank": "kev60_segmentation",
+      "strength": "original",
+      "coupling": 0.5,
+      "temperature": 0.05,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": -1.0,
+    "background_threshold": 0.3,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "15e63a2df50f5b7eb8444e66f7250e35be165973a9df28ab6bceb610bf975050",
+  "query_slot_capacity": 24,
+  "query_slot_beta": 0.5,
+  "query_slot_temperature": 0.1,
+  "both_modules_active": true,
+  "donor_before_strength": "original",
+  "alias_source": {
+    "config": "research\\efficient_geometry_20261012\\configs\\udd5.yaml",
+    "vocabulary": "research/efficient_geometry_20261012/vocabularies/udd5.json",
+    "selection": "existing retained best, previously labeled development; no new search"
+  },
+  "original_profile": {
+    "bank": "kev60_segmentation",
+    "strength": "original",
+    "coupling": 0.5,
+    "temperature": 0.05,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "costs": {
+    "udd5": {
+      "median_ms": 291.9863946735859,
+      "peak_allocated_mib": 2276.7861328125,
+      "peak_reserved_mib": 3150.0
+    }
+  },
+  "images": [
+    {
+      "key": "000061.JPG",
+      "protocol": "udd5",
+      "shape": [
+        2160,
+        4096
+      ],
+      "milliseconds": [
+        197.82525300979614,
+        196.69729424640536,
+        197.54900503903627,
+        196.29633706063032,
+        198.18581733852625,
+        197.70611682906747,
+        198.2956943102181
+      ],
+      "peak_allocated_mib": 2169.67138671875,
+      "peak_reserved_mib": 2920.0
+    },
+    {
+      "key": "001461.JPG",
+      "protocol": "udd5",
+      "shape": [
+        2160,
+        4096
+      ],
+      "milliseconds": [
+        199.21100931242108,
+        198.17715138196945,
+        198.01588682457805,
+        197.8594190441072,
+        198.78107402473688,
+        198.02918890491128,
+        198.388219345361
+      ],
+      "peak_allocated_mib": 2169.67138671875,
+      "peak_reserved_mib": 2920.0
+    },
+    {
+      "key": "DJI_00528.JPG",
+      "protocol": "udd5",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        290.2746950276196,
+        290.79929180443287,
+        291.9540819711983,
+        291.33689124137163,
+        290.867218747735,
+        291.63722693920135,
+        291.80273739621043
+      ],
+      "peak_allocated_mib": 2276.7861328125,
+      "peak_reserved_mib": 3150.0
+    },
+    {
+      "key": "DJI_0373_heda.JPG",
+      "protocol": "udd5",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        292.4242173321545,
+        292.9792287759483,
+        292.5873617641628,
+        291.9863946735859,
+        292.6911870017648,
+        292.91374888271093,
+        293.5759127140045
+      ],
+      "peak_allocated_mib": 2276.7861328125,
+      "peak_reserved_mib": 3150.0
+    },
+    {
+      "key": "DJI_0451.JPG",
+      "protocol": "udd5",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        293.593215290457,
+        293.54726104065776,
+        293.9356090500951,
+        293.70334884151816,
+        293.3669718913734,
+        294.89052202552557,
+        293.5542119666934
+      ],
+      "peak_allocated_mib": 2276.7861328125,
+      "peak_reserved_mib": 3150.0
+    },
+    {
+      "key": "DJI_0511.JPG",
+      "protocol": "udd5",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        291.36427538469434,
+        292.0967820100486,
+        294.1337749361992,
+        291.36070935055614,
+        291.2172502838075,
+        292.0211381278932,
+        292.25682094693184
+      ],
+      "peak_allocated_mib": 2276.7861328125,
+      "peak_reserved_mib": 3150.0
+    },
+    {
+      "key": "DJI_0707.JPG",
+      "protocol": "udd5",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        293.8581258058548,
+        292.5825952552259,
+        293.2668048888445,
+        294.39663607627153,
+        292.259088717401,
+        293.47575874999166,
+        293.0619250983
+      ],
+      "peak_allocated_mib": 2276.7861328125,
+      "peak_reserved_mib": 3150.0
+    }
+  ],
+  "target_masks_loaded": false,
+  "boundary": "CPU RGB to CPU uint8 original-size IDs; decode/init/offline text excluded. Two warmups, seven synchronized repeats, seven fixed inputs."
+}

@@ -1,0 +1,16 @@
+﻿dataset,bank,alias_total,alias_min,alias_max,old_strength,new_strength,residual_concepts,vocabulary
+vdd,official_imagenet,9,1,2,original,original,0,research/efficient_geometry_20261012/vocabularies/vdd.json
+potsdam,official_imagenet,11,1,4,3.0,original,0,research/efficient_geometry_20261012/vocabularies/potsdam.json
+voc20,semantic_imagenet,107,3,18,2.0,original,0,research/efficient_geometry_20261012/vocabularies/voc20.json
+voc21,official_segmentation,119,1,56,1.0,original,0,research/efficient_geometry_20261012/vocabularies/voc21.json
+ade150,semantic_segmentation,433,1,18,original,original,0,research/efficient_geometry_20261012/vocabularies/ade150.json
+context60,mix_f6f525631e7f743d226c,264,1,21,2.0,original,401,research/efficient_geometry_20261012/vocabularies/context60.json
+udd5,kev60_segmentation,31,1,20,original,original,0,research/efficient_geometry_20261012/vocabularies/udd5.json
+oem,original,160,20,20,1.0,original,0,research/efficient_geometry_20261012/vocabularies/oem.json
+vaihingen,kev40_imagenet,69,8,17,original,original,0,research/efficient_geometry_20261012/vocabularies/vaihingen.json
+landcoverai,original_imagenet,100,20,20,2.0,original,0,research/efficient_geometry_20261012/vocabularies/landcoverai.json
+loveda,original,140,20,20,original,original,0,research/efficient_geometry_20261012/vocabularies/loveda.json
+context59,official_segmentation,144,1,16,3.0,original,0,research/efficient_geometry_20261012/vocabularies/context59.json
+coco_object81,official_imagenet,156,1,32,1.0,original,0,research/efficient_geometry_20261012/vocabularies/coco_object81.json
+coco_stuff171,official_segmentation,409,1,15,1.0,original,0,research/efficient_geometry_20261012/vocabularies/coco_stuff171.json
+flair1,original,240,20,20,original,original,0,research/efficient_geometry_20261012/vocabularies/flair1.json

@@ -13,6 +13,7 @@ venv/
 *.ckpt
 *.safetensors
 *.npz
+!research/query_slot_best_alias_20261013/full/*.npz
 *.npy
 *.log
 datasets/
