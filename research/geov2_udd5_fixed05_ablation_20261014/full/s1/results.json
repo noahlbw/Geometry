@@ -1,0 +1,864 @@
+{
+  "status": "complete",
+  "dataset": "udd5",
+  "g0": 0.5,
+  "profile": {
+    "bank": "kev60_segmentation",
+    "strength": "original",
+    "coupling": 0.5,
+    "temperature": 0.05,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "udd5",
+    "family": "remote_sensing",
+    "total_images": 40,
+    "background_index": 4,
+    "vocabulary": "../vocabularies/udd5.json",
+    "profile": {
+      "bank": "kev60_segmentation",
+      "strength": "original",
+      "coupling": 0.5,
+      "temperature": 0.05,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": -1.0,
+    "background_threshold": 0.3,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "alias_counts": {
+    "retained": [
+      7,
+      1,
+      2,
+      1,
+      20
+    ],
+    "normalized": [
+      7,
+      1,
+      2,
+      1,
+      20
+    ],
+    "canonical": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "canonical_fg": [
+      1,
+      1,
+      1,
+      1,
+      20
+    ],
+    "pool": [
+      20,
+      20,
+      20,
+      20,
+      20
+    ]
+  },
+  "methods": [
+    "Full",
+    "NoDonorBefore",
+    "NoQueryRouting",
+    "NoDonorNoRouting",
+    "ShuffledQuery",
+    "CanonicalForeground",
+    "CanonicalAll",
+    "UnscreenedAliases",
+    "WideCountNormalized",
+    "EqualLogitFusion",
+    "LocalOnly",
+    "WideOnly",
+    "Raw24CoordinateGrid",
+    "Raw32CoordinateGrid",
+    "LegacyGeometryVIPWide",
+    "LegacyDonorVIPWide"
+  ],
+  "arms": {
+    "Full": [
+      "full",
+      "retained",
+      "coupled"
+    ],
+    "NoDonorBefore": [
+      "no_donor",
+      "retained",
+      "coupled"
+    ],
+    "NoQueryRouting": [
+      "no_route",
+      "retained",
+      "coupled"
+    ],
+    "NoDonorNoRouting": [
+      "neither",
+      "retained",
+      "coupled"
+    ],
+    "ShuffledQuery": [
+      "shuffled",
+      "retained",
+      "coupled"
+    ],
+    "CanonicalForeground": [
+      "full",
+      "canonical_fg",
+      "coupled"
+    ],
+    "CanonicalAll": [
+      "full",
+      "canonical",
+      "coupled"
+    ],
+    "UnscreenedAliases": [
+      "full",
+      "pool",
+      "coupled"
+    ],
+    "WideCountNormalized": [
+      "full",
+      "normalized",
+      "coupled"
+    ],
+    "EqualLogitFusion": [
+      "full",
+      "retained",
+      "equal_mean"
+    ],
+    "LocalOnly": [
+      "full",
+      "retained",
+      "local"
+    ],
+    "WideOnly": [
+      "full",
+      "retained",
+      "wide"
+    ],
+    "Raw24CoordinateGrid": [
+      "raw24",
+      "retained",
+      "coupled"
+    ],
+    "Raw32CoordinateGrid": [
+      "raw32",
+      "retained",
+      "coupled"
+    ],
+    "LegacyGeometryVIPWide": [
+      "legacy_geometry",
+      "retained",
+      "coupled"
+    ],
+    "LegacyDonorVIPWide": [
+      "legacy_donor",
+      "retained",
+      "coupled"
+    ]
+  },
+  "cache_identity": "15e63a2df50f5b7eb8444e66f7250e35be165973a9df28ab6bceb610bf975050",
+  "adaptive_gain_enabled": false,
+  "processed_images": 10,
+  "global_sample_count": 40,
+  "sample_keys": [
+    "000161.JPG",
+    "001361.JPG",
+    "0119_4img1001.JPG",
+    "DJI_00528.JPG",
+    "DJI_0303.JPG",
+    "DJI_0397.JPG",
+    "DJI_0442.JPG",
+    "DJI_0479_heda.JPG",
+    "DJI_0520.JPG",
+    "DJI_0563_heda.JPG"
+  ],
+  "shard_index": 1,
+  "num_shards": 4,
+  "class_names": [
+    "vegetation",
+    "building",
+    "road",
+    "vehicle",
+    "other"
+  ],
+  "metrics": {
+    "Full": {
+      "mean_iou_percent": 54.337180374957526,
+      "confusion_matrix": [
+        [
+          30115224,
+          978957,
+          380803,
+          21513,
+          2778908
+        ],
+        [
+          90601,
+          34327307,
+          1147,
+          1180,
+          733160
+        ],
+        [
+          352737,
+          922812,
+          7725067,
+          81266,
+          8746603
+        ],
+        [
+          40995,
+          15459,
+          161821,
+          402729,
+          246908
+        ],
+        [
+          1615589,
+          5880412,
+          1146686,
+          295088,
+          12926148
+        ]
+      ]
+    },
+    "NoDonorBefore": {
+      "mean_iou_percent": 54.08566690884242,
+      "confusion_matrix": [
+        [
+          29904126,
+          1016950,
+          375479,
+          24456,
+          2954394
+        ],
+        [
+          95795,
+          34261758,
+          71,
+          1115,
+          794656
+        ],
+        [
+          357752,
+          1192741,
+          7650797,
+          95971,
+          8531224
+        ],
+        [
+          37627,
+          14141,
+          155908,
+          416135,
+          244101
+        ],
+        [
+          1580520,
+          5984781,
+          1073021,
+          303169,
+          12922432
+        ]
+      ]
+    },
+    "NoQueryRouting": {
+      "mean_iou_percent": 55.133385747562905,
+      "confusion_matrix": [
+        [
+          30310992,
+          943991,
+          421175,
+          23200,
+          2576047
+        ],
+        [
+          96491,
+          34222547,
+          1356,
+          1342,
+          831659
+        ],
+        [
+          375190,
+          784809,
+          7944095,
+          106044,
+          8618347
+        ],
+        [
+          41936,
+          13565,
+          172436,
+          457659,
+          182316
+        ],
+        [
+          1720606,
+          5623201,
+          1215013,
+          359138,
+          12945965
+        ]
+      ]
+    },
+    "NoDonorNoRouting": {
+      "mean_iou_percent": 54.79055176287088,
+      "confusion_matrix": [
+        [
+          30088309,
+          980055,
+          415390,
+          27343,
+          2764308
+        ],
+        [
+          101844,
+          34094377,
+          345,
+          1367,
+          955462
+        ],
+        [
+          381948,
+          1016984,
+          7898664,
+          117217,
+          8413672
+        ],
+        [
+          38475,
+          12258,
+          164558,
+          464114,
+          188507
+        ],
+        [
+          1677439,
+          5714903,
+          1139628,
+          366794,
+          12965159
+        ]
+      ]
+    },
+    "ShuffledQuery": {
+      "mean_iou_percent": 51.07337812973041,
+      "confusion_matrix": [
+        [
+          29455193,
+          1240111,
+          427582,
+          21741,
+          3130778
+        ],
+        [
+          83849,
+          34152211,
+          20,
+          1068,
+          916247
+        ],
+        [
+          322670,
+          1271205,
+          7349838,
+          64202,
+          8820570
+        ],
+        [
+          36407,
+          17507,
+          160127,
+          370243,
+          283628
+        ],
+        [
+          1531703,
+          8260437,
+          923705,
+          252835,
+          10895243
+        ]
+      ]
+    },
+    "CanonicalForeground": {
+      "mean_iou_percent": 47.940740963255216,
+      "confusion_matrix": [
+        [
+          19147502,
+          2372960,
+          1716884,
+          23905,
+          11014154
+        ],
+        [
+          23167,
+          34463430,
+          5489,
+          1436,
+          659873
+        ],
+        [
+          15184,
+          1539747,
+          9875582,
+          78374,
+          6319598
+        ],
+        [
+          2077,
+          17025,
+          245287,
+          404474,
+          199049
+        ],
+        [
+          295924,
+          6426248,
+          2054621,
+          309926,
+          12777204
+        ]
+      ]
+    },
+    "CanonicalAll": {
+      "mean_iou_percent": 48.20927771630953,
+      "confusion_matrix": [
+        [
+          20103537,
+          2837536,
+          2174769,
+          26778,
+          9132785
+        ],
+        [
+          22859,
+          34713804,
+          17777,
+          2750,
+          396205
+        ],
+        [
+          26129,
+          3501793,
+          12052477,
+          130502,
+          2117584
+        ],
+        [
+          227,
+          21296,
+          254708,
+          456501,
+          135180
+        ],
+        [
+          396535,
+          7415564,
+          3142253,
+          503667,
+          10405904
+        ]
+      ]
+    },
+    "UnscreenedAliases": {
+      "mean_iou_percent": 54.313631120311555,
+      "confusion_matrix": [
+        [
+          24748104,
+          1823092,
+          2739352,
+          26890,
+          4937967
+        ],
+        [
+          37725,
+          34816814,
+          102681,
+          9529,
+          186646
+        ],
+        [
+          47313,
+          399361,
+          15793185,
+          160859,
+          1427767
+        ],
+        [
+          2125,
+          21492,
+          237313,
+          530272,
+          76710
+        ],
+        [
+          563244,
+          7491856,
+          4369997,
+          702027,
+          8736799
+        ]
+      ]
+    },
+    "WideCountNormalized": {
+      "mean_iou_percent": 47.17045993276899,
+      "confusion_matrix": [
+        [
+          27388218,
+          2852590,
+          614100,
+          88994,
+          3331503
+        ],
+        [
+          30101,
+          34975347,
+          4119,
+          10513,
+          133315
+        ],
+        [
+          148046,
+          6252763,
+          8250610,
+          409636,
+          2767430
+        ],
+        [
+          20208,
+          30490,
+          145697,
+          589210,
+          82307
+        ],
+        [
+          934250,
+          9667732,
+          1600335,
+          1205682,
+          8455924
+        ]
+      ]
+    },
+    "EqualLogitFusion": {
+      "mean_iou_percent": 44.46442494595308,
+      "confusion_matrix": [
+        [
+          30708524,
+          645051,
+          145109,
+          54,
+          2776667
+        ],
+        [
+          145842,
+          29769636,
+          0,
+          0,
+          5237917
+        ],
+        [
+          700712,
+          109608,
+          4644746,
+          1772,
+          12371647
+        ],
+        [
+          55878,
+          6904,
+          112095,
+          36140,
+          656895
+        ],
+        [
+          1919736,
+          4354115,
+          128998,
+          10144,
+          15450930
+        ]
+      ]
+    },
+    "LocalOnly": {
+      "mean_iou_percent": 49.782801889052514,
+      "confusion_matrix": [
+        [
+          27068131,
+          1439225,
+          757392,
+          133503,
+          4877154
+        ],
+        [
+          46131,
+          34328990,
+          8101,
+          31931,
+          738242
+        ],
+        [
+          118903,
+          4524684,
+          9308113,
+          484325,
+          3392460
+        ],
+        [
+          22535,
+          21053,
+          133695,
+          619440,
+          71189
+        ],
+        [
+          861310,
+          6709670,
+          2165978,
+          1391159,
+          10735806
+        ]
+      ]
+    },
+    "WideOnly": {
+      "mean_iou_percent": 27.364391076239325,
+      "confusion_matrix": [
+        [
+          27293455,
+          15090,
+          286,
+          0,
+          6966574
+        ],
+        [
+          93837,
+          9304966,
+          0,
+          0,
+          25754592
+        ],
+        [
+          430049,
+          0,
+          961127,
+          0,
+          16437309
+        ],
+        [
+          8678,
+          6,
+          1101,
+          0,
+          858127
+        ],
+        [
+          1043284,
+          54699,
+          2940,
+          0,
+          20763000
+        ]
+      ]
+    },
+    "Raw24CoordinateGrid": {
+      "mean_iou_percent": 55.29781192123271,
+      "confusion_matrix": [
+        [
+          30380080,
+          880391,
+          412801,
+          22925,
+          2579208
+        ],
+        [
+          104355,
+          34133160,
+          1326,
+          1134,
+          913420
+        ],
+        [
+          375216,
+          728850,
+          7946185,
+          101266,
+          8676968
+        ],
+        [
+          42825,
+          14168,
+          169642,
+          450972,
+          190305
+        ],
+        [
+          1733463,
+          5463068,
+          1210171,
+          344582,
+          13112639
+        ]
+      ]
+    },
+    "Raw32CoordinateGrid": {
+      "mean_iou_percent": 55.35084980055518,
+      "confusion_matrix": [
+        [
+          30433934,
+          876328,
+          414569,
+          22774,
+          2527800
+        ],
+        [
+          104524,
+          34134449,
+          1465,
+          1120,
+          911837
+        ],
+        [
+          375424,
+          729639,
+          7958157,
+          103001,
+          8662264
+        ],
+        [
+          43819,
+          13876,
+          165675,
+          453121,
+          191421
+        ],
+        [
+          1734470,
+          5476766,
+          1227487,
+          344293,
+          13080907
+        ]
+      ]
+    },
+    "LegacyGeometryVIPWide": {
+      "mean_iou_percent": 55.770610371301885,
+      "confusion_matrix": [
+        [
+          30309899,
+          916611,
+          397011,
+          24754,
+          2627130
+        ],
+        [
+          104778,
+          34015686,
+          45,
+          934,
+          1031952
+        ],
+        [
+          380317,
+          861792,
+          7907913,
+          114599,
+          8563864
+        ],
+        [
+          40434,
+          12974,
+          145459,
+          480936,
+          188109
+        ],
+        [
+          1711710,
+          5386691,
+          1026334,
+          341646,
+          13397542
+        ]
+      ]
+    },
+    "LegacyDonorVIPWide": {
+      "mean_iou_percent": 56.04844500495757,
+      "confusion_matrix": [
+        [
+          30505238,
+          884945,
+          405512,
+          21663,
+          2458047
+        ],
+        [
+          100067,
+          34155580,
+          64,
+          855,
+          896829
+        ],
+        [
+          370507,
+          662169,
+          7967204,
+          101428,
+          8727177
+        ],
+        [
+          43948,
+          13950,
+          152319,
+          470341,
+          187354
+        ],
+        [
+          1756511,
+          5316405,
+          1098202,
+          333732,
+          13359073
+        ]
+      ]
+    }
+  },
+  "masks_used_only_for_scoring": true,
+  "wall_seconds": 43.873687509913,
+  "smoke_matches_frozen_predict": null
+}

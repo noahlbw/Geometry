@@ -1,5 +1,7 @@
 # Geometry: frozen structure-guided open-vocabulary segmentation
 
+2026-10-14更新：完成 **UDD5全量40张、固定g0=0.5的部件消融**，见[完整报告、配对区间与成本](research/geov2_udd5_fixed05_ablation_20261014/REPORT_ZH.md)。QuerySlot＋DonorBefore Full为55.2574%、288.20ms／2276.79MiB；DonorBefore贡献+0.4664pp，前景扩词+5.8546pp，结构写回相对等权融合+12.6799pp。关闭query路由反而为55.5846%，Raw32坐标读出为55.7592%，因此不宣称QuerySlot在UDD5上必需。补充同观测H控制表明Full较固定减幅融合高0.5740pp；视觉关系相对纯空间关系的额外收益区间仍跨0。所有词表、配置、逐图统计和独立成本记录均公开，历史主表不混用。
+
 2026-10-14更新：**Geov2 十协议固定写回 g0 全量扫描完成，PC60 替换 LandCover.ai**。最佳 Alias + QuerySlot + DonorBefore 下，统一 g0=0.5 的等协议平均为 **55.8158%**，较等权融合 **+3.1730pp（7/10协议领先）**；逐域最优参考为56.7433%，统一步长代价0.9275pp，VOC21代价最大3.0438pp。全部留一选择及VOC20/21共同留出均选0.5；其他历史任务参数仍非全局统一。见[中文记录与完整步长表](research/geov2_g0_sweep_20261014/REPORT_ZH.md)、[审计与配对区间](research/geov2_g0_sweep_20261014/REPORT.md)、[完整模型说明](docs/GEOV2_FIXED_WRITER_20261014.md)及[四域自适应候选全量消融](research/geov2_full_ablation_20261014/REPORT.md)。三种Alias接口均扫描，逐图统计与可选统一步长配置一并保留；自适应不作为默认最终写回。
 
 2026-10-13更新：发布 **QuerySlot＋DonorBefore 完整模型实现及15数据集／16协议全量对比**。见[模型与复现说明](docs/QUERY_SLOT_DONOR_BEFORE_20261013.md)、[精度／耗时／显存对比表](research/query_slot_best_alias_20261013/REPORT.md)、[机器可读结果](research/query_slot_best_alias_20261013/RESULTS.csv)。采用此前带标签开发搜索保留的最佳alias，两个模块全部实际执行：7个协议精度提升、9个下降；耗时比旧Efficient记录减少3.65%–29.79%，显存有升有降。局部strength统一为`original`，因此部分协议同时改变了局部路径；不将全部差值归于宽视野替换。2026-10-09论文冻结主表仍单独保留。

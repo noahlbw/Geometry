@@ -1,0 +1,293 @@
+{
+  "status": "complete",
+  "g0": 0.5,
+  "methods": [
+    "Full",
+    "EqualLogitFusion",
+    "IsotropicHalfH",
+    "DiagonalH",
+    "SpatialH"
+  ],
+  "sample_keys": [
+    "000061.JPG",
+    "000161.JPG",
+    "000261.JPG",
+    "000361.JPG",
+    "001261.JPG",
+    "001361.JPG",
+    "001461.JPG",
+    "001561.JPG",
+    "0119_3img2031.JPG",
+    "0119_4img1001.JPG",
+    "0119_4img3041.JPG",
+    "0119_5img3001.JPG",
+    "DJI_0031.JPG",
+    "DJI_00528.JPG",
+    "DJI_00581.JPG",
+    "DJI_00591.JPG",
+    "DJI_0291.JPG",
+    "DJI_0303.JPG",
+    "DJI_0316.JPG",
+    "DJI_0373_heda.JPG",
+    "DJI_0388.JPG",
+    "DJI_0397.JPG",
+    "DJI_0406.JPG",
+    "DJI_0415.JPG",
+    "DJI_0431.JPG",
+    "DJI_0442.JPG",
+    "DJI_0451.JPG",
+    "DJI_0460.JPG",
+    "DJI_0469.JPG",
+    "DJI_0479_heda.JPG",
+    "DJI_0490.JPG",
+    "DJI_0499_heda.JPG",
+    "DJI_0511.JPG",
+    "DJI_0520.JPG",
+    "DJI_0532.JPG",
+    "DJI_0539_heda.JPG",
+    "DJI_0553_heda.JPG",
+    "DJI_0563_heda.JPG",
+    "DJI_0627.JPG",
+    "DJI_0707.JPG"
+  ],
+  "class_names": [
+    "vegetation",
+    "building",
+    "road",
+    "vehicle",
+    "other"
+  ],
+  "processed_images": 40,
+  "profile": {
+    "bank": "kev60_segmentation",
+    "strength": "original",
+    "coupling": 0.5,
+    "temperature": 0.05,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "diagnostics": {
+    "patches": 137984,
+    "valid_h_trace": 4326.172985723748,
+    "difference_energy": 3113075.5827693674,
+    "correction_energy": 701636.8139125142
+  },
+  "metrics": {
+    "Full": {
+      "mean_iou_percent": 55.256606480359395,
+      "confusion_matrix": [
+        [
+          112707403,
+          6102972,
+          923428,
+          43745,
+          10532896
+        ],
+        [
+          564193,
+          168336700,
+          11293,
+          19365,
+          3789083
+        ],
+        [
+          1581546,
+          3899822,
+          23094397,
+          713336,
+          29709793
+        ],
+        [
+          53906,
+          97960,
+          269200,
+          2123717,
+          977023
+        ],
+        [
+          9761359,
+          16149132,
+          3078394,
+          1160629,
+          44255188
+        ]
+      ]
+    },
+    "EqualLogitFusion": {
+      "mean_iou_percent": 42.57428731852598,
+      "confusion_matrix": [
+        [
+          113121637,
+          4105386,
+          305574,
+          68,
+          12777779
+        ],
+        [
+          1002166,
+          136964825,
+          1,
+          0,
+          34753642
+        ],
+        [
+          3163979,
+          1127754,
+          12900118,
+          5586,
+          41801457
+        ],
+        [
+          73434,
+          13452,
+          166958,
+          176117,
+          3091845
+        ],
+        [
+          8579811,
+          8370967,
+          689631,
+          63795,
+          56700498
+        ]
+      ]
+    },
+    "IsotropicHalfH": {
+      "mean_iou_percent": 54.68257951519665,
+      "confusion_matrix": [
+        [
+          112818341,
+          6183160,
+          875230,
+          35794,
+          10397919
+        ],
+        [
+          564464,
+          168488870,
+          6775,
+          11754,
+          3648771
+        ],
+        [
+          1717678,
+          3663201,
+          22824804,
+          626931,
+          30166280
+        ],
+        [
+          52921,
+          95699,
+          272448,
+          1942790,
+          1157948
+        ],
+        [
+          10195957,
+          15989827,
+          3121219,
+          1083640,
+          44014059
+        ]
+      ]
+    },
+    "DiagonalH": {
+      "mean_iou_percent": 51.86157041356545,
+      "confusion_matrix": [
+        [
+          102058579,
+          7504926,
+          1957370,
+          339748,
+          18449821
+        ],
+        [
+          239846,
+          169511728,
+          28638,
+          127175,
+          2813247
+        ],
+        [
+          557875,
+          8669484,
+          30386556,
+          3218730,
+          16166249
+        ],
+        [
+          29552,
+          95404,
+          266683,
+          2896226,
+          233941
+        ],
+        [
+          5250483,
+          19573176,
+          6752192,
+          4641192,
+          38187659
+        ]
+      ]
+    },
+    "SpatialH": {
+      "mean_iou_percent": 54.74182514456597,
+      "confusion_matrix": [
+        [
+          111362885,
+          6029693,
+          844403,
+          45969,
+          12027494
+        ],
+        [
+          653498,
+          167317851,
+          12279,
+          12645,
+          4724361
+        ],
+        [
+          1703538,
+          4323800,
+          22318849,
+          505838,
+          30146869
+        ],
+        [
+          58667,
+          104598,
+          252939,
+          1896974,
+          1208628
+        ],
+        [
+          8529762,
+          16560029,
+          2615278,
+          889066,
+          45810567
+        ]
+      ]
+    }
+  },
+  "masks_used_only_for_scoring": true,
+  "observations_shared": true,
+  "protocol": {
+    "status": "declared_before_writer_control_run",
+    "g0": 0.5,
+    "methods": [
+      "Full",
+      "EqualLogitFusion",
+      "IsotropicHalfH",
+      "DiagonalH",
+      "SpatialH"
+    ],
+    "note": "Supplement declared after the primary 16-arm table. Fixed g0=.5; same L/W; replace H by .5I, diag(H), or H built from only the spatial Gaussian A. These are mechanism controls, not new fitted variants or a parameter search."
+  }
+}

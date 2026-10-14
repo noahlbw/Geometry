@@ -1,0 +1,12 @@
+{
+  "status": "declared_before_writer_control_run",
+  "g0": 0.5,
+  "methods": [
+    "Full",
+    "EqualLogitFusion",
+    "IsotropicHalfH",
+    "DiagonalH",
+    "SpatialH"
+  ],
+  "note": "Supplement declared after the primary 16-arm table. Fixed g0=.5; same L/W; replace H by .5I, diag(H), or H built from only the spatial Gaussian A. These are mechanism controls, not new fitted variants or a parameter search."
+}

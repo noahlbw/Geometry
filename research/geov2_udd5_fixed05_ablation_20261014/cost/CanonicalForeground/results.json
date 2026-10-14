@@ -1,0 +1,301 @@
+{
+  "status": "complete",
+  "dataset": "udd5",
+  "g0": 0.5,
+  "profile": {
+    "bank": "kev60_segmentation",
+    "strength": "original",
+    "coupling": 0.5,
+    "temperature": 0.05,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "udd5",
+    "family": "remote_sensing",
+    "total_images": 40,
+    "background_index": 4,
+    "vocabulary": "../vocabularies/udd5.json",
+    "profile": {
+      "bank": "kev60_segmentation",
+      "strength": "original",
+      "coupling": 0.5,
+      "temperature": 0.05,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": -1.0,
+    "background_threshold": 0.3,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "alias_counts": {
+    "retained": [
+      7,
+      1,
+      2,
+      1,
+      20
+    ],
+    "normalized": [
+      7,
+      1,
+      2,
+      1,
+      20
+    ],
+    "canonical_fg": [
+      1,
+      1,
+      1,
+      1,
+      20
+    ]
+  },
+  "methods": [
+    "CanonicalForeground"
+  ],
+  "arms": {
+    "Full": [
+      "full",
+      "retained",
+      "coupled"
+    ],
+    "NoDonorBefore": [
+      "no_donor",
+      "retained",
+      "coupled"
+    ],
+    "NoQueryRouting": [
+      "no_route",
+      "retained",
+      "coupled"
+    ],
+    "NoDonorNoRouting": [
+      "neither",
+      "retained",
+      "coupled"
+    ],
+    "ShuffledQuery": [
+      "shuffled",
+      "retained",
+      "coupled"
+    ],
+    "CanonicalForeground": [
+      "full",
+      "canonical_fg",
+      "coupled"
+    ],
+    "CanonicalAll": [
+      "full",
+      "canonical",
+      "coupled"
+    ],
+    "UnscreenedAliases": [
+      "full",
+      "pool",
+      "coupled"
+    ],
+    "WideCountNormalized": [
+      "full",
+      "normalized",
+      "coupled"
+    ],
+    "EqualLogitFusion": [
+      "full",
+      "retained",
+      "equal_mean"
+    ],
+    "LocalOnly": [
+      "full",
+      "retained",
+      "local"
+    ],
+    "WideOnly": [
+      "full",
+      "retained",
+      "wide"
+    ],
+    "Raw24CoordinateGrid": [
+      "raw24",
+      "retained",
+      "coupled"
+    ],
+    "Raw32CoordinateGrid": [
+      "raw32",
+      "retained",
+      "coupled"
+    ],
+    "LegacyGeometryVIPWide": [
+      "legacy_geometry",
+      "retained",
+      "coupled"
+    ],
+    "LegacyDonorVIPWide": [
+      "legacy_donor",
+      "retained",
+      "coupled"
+    ]
+  },
+  "cache_identity": "15e63a2df50f5b7eb8444e66f7250e35be165973a9df28ab6bceb610bf975050",
+  "adaptive_gain_enabled": false,
+  "images": [
+    {
+      "key": "000061.JPG",
+      "shape": [
+        2160,
+        4096
+      ],
+      "milliseconds": [
+        199.13451233878732,
+        198.92293773591518,
+        200.0786461867392,
+        199.7015723027289,
+        199.2548080161214,
+        199.0336417220533,
+        199.59986303001642
+      ],
+      "peak_allocated_mib": 2169.45068359375,
+      "peak_reserved_mib": 2920.0
+    },
+    {
+      "key": "001461.JPG",
+      "shape": [
+        2160,
+        4096
+      ],
+      "milliseconds": [
+        200.8317969739437,
+        200.16144076362252,
+        200.91680996119976,
+        200.24861907586455,
+        200.1334372907877,
+        200.44264802709222,
+        200.9257646277547
+      ],
+      "peak_allocated_mib": 2169.45068359375,
+      "peak_reserved_mib": 2920.0
+    },
+    {
+      "key": "DJI_00528.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        292.40955086424947,
+        291.13225592300296,
+        293.80561085417867,
+        291.85993410646915,
+        291.19151178747416,
+        292.4352688714862,
+        291.22956469655037
+      ],
+      "peak_allocated_mib": 2276.5654296875,
+      "peak_reserved_mib": 3150.0
+    },
+    {
+      "key": "DJI_0373_heda.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        298.0861710384488,
+        293.66238228976727,
+        293.6380016617477,
+        295.7190996967256,
+        293.99334406480193,
+        294.17552007362247,
+        296.37879179790616
+      ],
+      "peak_allocated_mib": 2276.5654296875,
+      "peak_reserved_mib": 3150.0
+    },
+    {
+      "key": "DJI_0451.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        291.129631921649,
+        294.9512670747936,
+        292.60253021493554,
+        292.79703507199883,
+        292.8810431621969,
+        293.14837977290154,
+        292.97835379838943
+      ],
+      "peak_allocated_mib": 2276.5654296875,
+      "peak_reserved_mib": 3150.0
+    },
+    {
+      "key": "DJI_0511.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        293.74703485518694,
+        293.27873419970274,
+        294.4303387776017,
+        294.31752720847726,
+        293.59804559499025,
+        294.25523430109024,
+        293.5420982539654
+      ],
+      "peak_allocated_mib": 2276.5654296875,
+      "peak_reserved_mib": 3150.0
+    },
+    {
+      "key": "DJI_0707.JPG",
+      "shape": [
+        3000,
+        4000
+      ],
+      "milliseconds": [
+        294.4386559538543,
+        291.54299292713404,
+        294.48687890544534,
+        293.0355751886964,
+        292.4726200290024,
+        293.0321772582829,
+        292.8166398778558
+      ],
+      "peak_allocated_mib": 2276.5654296875,
+      "peak_reserved_mib": 3150.0
+    }
+  ],
+  "median_ms": 292.79703507199883,
+  "peak_allocated_mib": 2276.5654296875,
+  "peak_reserved_mib": 3150.0,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "target_masks_loaded": false,
+  "boundary": "CPU float RGB to original-size CPU uint8 IDs; decode/init/offline text excluded; fresh process per arm; seven fixed images, two warmups and seven synchronized repeats each. Unused H solve skipped for equal fusion."
+}

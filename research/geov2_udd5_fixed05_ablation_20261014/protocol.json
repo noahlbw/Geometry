@@ -1,0 +1,41 @@
+{
+  "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+  "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+  "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+  "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/udd5.yaml",
+  "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/udd5.pt",
+  "data_root": "/data/test/datasets/UDD5/extracted/UDD/UDD5",
+  "total_images": 40,
+  "status": "frozen_before_new_full",
+  "dataset": "udd5",
+  "g0": 0.5,
+  "pool_text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/kev_alias_search_20261009/text_cache/udd5.pt",
+  "cost_keys": [
+    "000061.JPG",
+    "001461.JPG",
+    "DJI_00528.JPG",
+    "DJI_0373_heda.JPG",
+    "DJI_0451.JPG",
+    "DJI_0511.JPG",
+    "DJI_0707.JPG"
+  ],
+  "cost_arms": [
+    "Full",
+    "NoDonorBefore",
+    "NoQueryRouting",
+    "NoDonorNoRouting",
+    "ShuffledQuery",
+    "CanonicalForeground",
+    "CanonicalAll",
+    "UnscreenedAliases",
+    "WideCountNormalized",
+    "EqualLogitFusion",
+    "Raw24CoordinateGrid",
+    "Raw32CoordinateGrid",
+    "LegacyGeometryVIPWide",
+    "LegacyDonorVIPWide"
+  ],
+  "shards": 4,
+  "expected_full_miou": 55.256690918556274,
+  "protocol_note": "All arms keep g0=.5 where H is used. No refitting of aliases, thresholds, temperatures or backgrounds. Previously inspected validation is a development analysis, not independent test evidence. Legacy VIP wide arms are internal historical controls, not native official VIP baselines."
+}
