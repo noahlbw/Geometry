@@ -1,0 +1,20 @@
+{
+  "full_best_g0": 0.5,
+  "full_miou_percent": 49.62086984316373,
+  "selection_rule": "Maximize pooled full-validation mIoU over declared gain grid; ties use smaller gain.",
+  "labeled_validation_used_for_selection": true,
+  "control_best_g0": {
+    "Full": 0.5,
+    "NoDonorBefore": 0.5,
+    "NoQueryRouting": 0.5,
+    "NoDonorNoRouting": 0.5,
+    "ShuffledQuery": 0.5,
+    "CanonicalForeground": 0.5,
+    "WideCountNormalized": 0.5,
+    "Raw24CoordinateGrid": 0.5,
+    "Raw32CoordinateGrid": 0.5,
+    "LegacyDonorVIPWide": 0.5,
+    "UniformBlend": 0.5,
+    "DiagonalH": 3.0
+  }
+}

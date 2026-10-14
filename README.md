@@ -1,5 +1,7 @@
 # Geometry: frozen structure-guided open-vocabulary segmentation
 
+2026-10-14更新：完成 **COCO-Object81全量5,000张、99配置的最佳g0与部件消融**，见[完整报告、全步长表及逐图证据](research/geov2_coco81_bestg_ablation_20261014/REPORT_ZH.md)。扫描8档后Full最佳g0=0.5，mIoU=49.6209%；同g0下QuerySlot净差+0.1448pp、DonorBefore +0.0167pp、前景扩词+0.8407pp。允许各对照重选g0后，不能声称所有主部件均优于替代方案。全部三份已完成0.5消融的事后等域汇总中，四项平均差的区间均高于0，单域不确定性仍保留。Full为153.40ms／2722.19MiB allocated。g0使用已查看验证标签选择，属于开发分析。
+
 2026-10-14更新：完成 **VOC21全量1,449张、固定g0=0.5的QuerySlot复核及13项部件消融**，见[完整报告与逐图证据](research/geov2_voc21_fixed05_ablation_20261014/REPORT_ZH.md)。Full为72.1656%，关闭query路由为71.0325%，净收益+1.1331pp，配对95%区间[+0.8550,+1.4184]；DonorBefore贡献+0.1958pp，保留背景不变的前景扩词+4.0839pp。Full为142.47ms／2247.24MiB allocated。同观测等权融合74.8935%高于固定0.5结构写回，UDD5路由净差也仍保留；不宣称各部件在所有域都获益。词表、背景校准及g0在本轮均未搜索。
 
 2026-10-14更新：完成 **UDD5全量40张、固定g0=0.5的部件消融**，见[完整报告、配对区间与成本](research/geov2_udd5_fixed05_ablation_20261014/REPORT_ZH.md)。QuerySlot＋DonorBefore Full为55.2574%、288.20ms／2276.79MiB；DonorBefore贡献+0.4664pp，前景扩词+5.8546pp，结构写回相对等权融合+12.6799pp。关闭query路由反而为55.5846%，Raw32坐标读出为55.7592%，因此不宣称QuerySlot在UDD5上必需。补充同观测H控制表明Full较固定减幅融合高0.5740pp；视觉关系相对纯空间关系的额外收益区间仍跨0。所有词表、配置、逐图统计和独立成本记录均公开，历史主表不混用。

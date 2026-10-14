@@ -1,0 +1,6 @@
+cd /data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926
+export PYTHONPATH=/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926:/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/scripts:/data/test/code/ovss_cafe_ped_v2_20260919/third_party/DINO_Soars-f6704c1b76137543328567c8f8b49a2dc318824c
+export OMP_NUM_THREADS=4
+export OPENBLAS_NUM_THREADS=4
+export CUDA_VISIBLE_DEVICES=1
+/data/miniconda3/envs/pfu/bin/python -u /data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_coco81_bestg_ablation_20261014/source/eval_geov2_component_gain_sweep.py --experiment /data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_coco81_bestg_ablation_20261014 --mode smoke

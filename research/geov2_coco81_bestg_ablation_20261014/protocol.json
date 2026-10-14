@@ -1,0 +1,63 @@
+{
+  "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+  "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+  "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+  "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/coco_object81.yaml",
+  "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/coco_object81.pt",
+  "data_root": "/data/test/datasets/VIP_natural/COCOObject",
+  "total_images": 5000,
+  "status": "frozen_before_new_full",
+  "dataset": "coco_object81",
+  "component_arms": [
+    "Full",
+    "NoDonorBefore",
+    "NoQueryRouting",
+    "NoDonorNoRouting",
+    "ShuffledQuery",
+    "CanonicalForeground",
+    "WideCountNormalized",
+    "Raw24CoordinateGrid",
+    "Raw32CoordinateGrid",
+    "LegacyDonorVIPWide",
+    "UniformBlend",
+    "DiagonalH"
+  ],
+  "endpoint_arms": [
+    "EqualLogitFusion",
+    "LocalOnly",
+    "WideOnly"
+  ],
+  "gains": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.5,
+    2.0,
+    3.0
+  ],
+  "reference_g0": 0.5,
+  "cost_arms": [
+    "Full",
+    "NoDonorBefore",
+    "NoQueryRouting",
+    "ShuffledQuery",
+    "Raw24CoordinateGrid",
+    "Raw32CoordinateGrid",
+    "LegacyDonorVIPWide"
+  ],
+  "shards": 7,
+  "expected_full_miou": 49.620931090432826,
+  "cost_keys": [
+    "000000000139",
+    "000000097994",
+    "000000190140",
+    "000000289586",
+    "000000384527",
+    "000000480985",
+    "000000581781"
+  ],
+  "rationale": "Independent image source after UDD5 and VOC21: all 5000 COCO-Object81 validation images. Same eight-gain grid for Full and every coupled control. Main ablation uses Full-best gain, supplemented by independently retuned controls. Frozen aliases, routing beta=.5, score/background calibration unchanged. Dataset chosen for multiple-object context and independent source, not from a new cross-dataset component screen.",
+  "limitations": "Validation labels select g0 for all methods; this is a development upper-bound analysis, not an independent held-out evaluation or universal component guarantee. Historical aliases/calibration also used labeled development. Legacy VIP-wide is only an internal branch control. Beta-zero timing retains unused routing computation. UniformBlend uses H=.5I, so alpha=g0/2 and includes extrapolation."
+}

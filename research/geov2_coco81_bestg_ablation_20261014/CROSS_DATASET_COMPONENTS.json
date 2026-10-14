@@ -1,0 +1,102 @@
+{
+  "status": "complete",
+  "post_hoc": true,
+  "g0": 0.5,
+  "domains": 3,
+  "sources": [
+    {
+      "dataset": "udd5",
+      "images": 40,
+      "g0": 0.5,
+      "folder": "geov2_udd5_fixed05_ablation_20261014",
+      "mious": {
+        "Full": 55.25735689173499,
+        "NoQueryRouting": 55.58462832983698,
+        "NoDonorBefore": 54.79098907292384,
+        "CanonicalForeground": 49.40277805037702,
+        "EqualLogitFusion": 42.577461026788605
+      }
+    },
+    {
+      "dataset": "voc21",
+      "images": 1449,
+      "g0": 0.5,
+      "folder": "geov2_voc21_fixed05_ablation_20261014",
+      "mious": {
+        "Full": 72.16558946798472,
+        "NoQueryRouting": 71.03252900415593,
+        "NoDonorBefore": 71.96975815619159,
+        "CanonicalForeground": 68.0817154503041,
+        "EqualLogitFusion": 74.89349134555623
+      }
+    },
+    {
+      "dataset": "coco_object81",
+      "images": 5000,
+      "g0": 0.5,
+      "folder": "geov2_coco81_bestg_ablation_20261014",
+      "mious": {
+        "Full": 49.62086984316373,
+        "NoQueryRouting": 49.47604523391334,
+        "NoDonorBefore": 49.60416102877014,
+        "CanonicalForeground": 48.780147321914406,
+        "EqualLogitFusion": 42.13553086861222
+      }
+    }
+  ],
+  "rows": [
+    {
+      "method": "Full",
+      "equal_domain_mean_miou_percent": 59.01460540096114,
+      "full_minus_arm_pp": 0.0,
+      "paired_95ci_pp": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "method": "NoQueryRouting",
+      "equal_domain_mean_miou_percent": 58.69773418930208,
+      "full_minus_arm_pp": 0.3168712116590555,
+      "paired_95ci_pp": [
+        0.12958352574875978,
+        0.4766876482708189
+      ]
+    },
+    {
+      "method": "NoDonorBefore",
+      "equal_domain_mean_miou_percent": 58.78830275262852,
+      "full_minus_arm_pp": 0.22630264833262004,
+      "paired_95ci_pp": [
+        0.15918686434832435,
+        0.30302296237495707
+      ]
+    },
+    {
+      "method": "CanonicalForeground",
+      "equal_domain_mean_miou_percent": 55.42154694086518,
+      "full_minus_arm_pp": 3.5930584600959605,
+      "paired_95ci_pp": [
+        2.8844825368256,
+        4.328380803845619
+      ]
+    },
+    {
+      "method": "EqualLogitFusion",
+      "equal_domain_mean_miou_percent": 53.20216108031902,
+      "full_minus_arm_pp": 5.812444320642115,
+      "paired_95ci_pp": [
+        4.913362033195758,
+        6.740952380986543
+      ]
+    }
+  ],
+  "bootstrap": {
+    "replicates": 5000,
+    "seed": 20261014,
+    "unit": "image within each dataset",
+    "paired": true,
+    "aggregation": "Recompute pooled mIoU within each dataset; average datasets equally. Resample each dataset independently; use identical image weights across methods within each dataset."
+  },
+  "limitations": "Post-hoc summary of all three completed matched .5 ablations, including negative individual results; not a domain sample, independent test, each-domain claim, or per-dataset-best-g0 table. VOC21 remains the earlier fixed-.5 study although its historical best gain is 1. Historical label selection remains."
+}
