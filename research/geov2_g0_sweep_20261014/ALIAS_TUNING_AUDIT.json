@@ -1,0 +1,945 @@
+{
+  "scope": "Code/provenance audit and arithmetic recombination of existing full-sweep results. No new model, alias, inference, or independent validation.",
+  "current_aliases": [
+    {
+      "dataset": "vdd",
+      "bank": "official_imagenet",
+      "aliases": 9,
+      "counts": [
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "template": "ImageNet80",
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true
+    },
+    {
+      "dataset": "potsdam",
+      "bank": "official_imagenet",
+      "aliases": 11,
+      "counts": [
+        2,
+        1,
+        4,
+        2,
+        1,
+        1
+      ],
+      "template": "ImageNet80",
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true
+    },
+    {
+      "dataset": "udd5",
+      "bank": "kev60_segmentation",
+      "aliases": 31,
+      "counts": [
+        7,
+        1,
+        2,
+        1,
+        20
+      ],
+      "template": "seg_template",
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true
+    },
+    {
+      "dataset": "oem",
+      "bank": "original",
+      "aliases": 160,
+      "counts": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "template": "RS6",
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true
+    },
+    {
+      "dataset": "vaihingen",
+      "bank": "kev40_imagenet",
+      "aliases": 69,
+      "counts": [
+        16,
+        16,
+        17,
+        12,
+        8
+      ],
+      "template": "ImageNet80",
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true
+    },
+    {
+      "dataset": "context60",
+      "bank": "mix_f6f525631e7f743d226c",
+      "aliases": 264,
+      "counts": [
+        1,
+        1,
+        5,
+        6,
+        3,
+        4,
+        1,
+        1,
+        5,
+        3,
+        4,
+        8,
+        6,
+        4,
+        4,
+        3,
+        3,
+        4,
+        8,
+        2,
+        6,
+        3,
+        4,
+        1,
+        3,
+        5,
+        6,
+        2,
+        2,
+        21,
+        4,
+        1,
+        3,
+        2,
+        1,
+        20,
+        2,
+        18,
+        4,
+        3,
+        2,
+        4,
+        3,
+        3,
+        2,
+        4,
+        2,
+        7,
+        1,
+        4,
+        4,
+        2,
+        6,
+        6,
+        4,
+        4,
+        6,
+        9,
+        3,
+        1
+      ],
+      "template": "seg_template",
+      "source_trial": "curated_variable_refine_natural_20261010",
+      "labeled_development": true,
+      "full_validation_viewed": true
+    },
+    {
+      "dataset": "ade150",
+      "bank": "semantic_segmentation",
+      "aliases": 433,
+      "counts": [
+        5,
+        8,
+        9,
+        5,
+        6,
+        6,
+        4,
+        1,
+        4,
+        4,
+        4,
+        5,
+        18,
+        5,
+        5,
+        3,
+        4,
+        5,
+        4,
+        4,
+        4,
+        5,
+        3,
+        5,
+        3,
+        1,
+        4,
+        1,
+        4,
+        1,
+        3,
+        1,
+        4,
+        4,
+        4,
+        5,
+        4,
+        3,
+        3,
+        1,
+        3,
+        1,
+        3,
+        3,
+        3,
+        2,
+        4,
+        3,
+        1,
+        3,
+        3,
+        2,
+        1,
+        2,
+        1,
+        3,
+        3,
+        2,
+        2,
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        3,
+        1,
+        3,
+        2,
+        3,
+        1,
+        5,
+        4,
+        1,
+        4,
+        1,
+        4,
+        1,
+        1,
+        4,
+        4,
+        1,
+        2,
+        4,
+        1,
+        2,
+        3,
+        2,
+        5,
+        4,
+        4,
+        1,
+        5,
+        1,
+        1,
+        5,
+        2,
+        6,
+        4,
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        3,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        2,
+        4,
+        3,
+        1,
+        3,
+        1,
+        2,
+        1,
+        3,
+        1,
+        3,
+        3,
+        1,
+        9,
+        1,
+        3,
+        3,
+        2,
+        4,
+        2,
+        1,
+        1,
+        1,
+        3,
+        1
+      ],
+      "template": "seg_template",
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true
+    },
+    {
+      "dataset": "voc20",
+      "bank": "semantic_imagenet",
+      "aliases": 107,
+      "counts": [
+        4,
+        3,
+        3,
+        4,
+        5,
+        6,
+        4,
+        4,
+        10,
+        7,
+        5,
+        4,
+        4,
+        3,
+        18,
+        5,
+        3,
+        5,
+        4,
+        6
+      ],
+      "template": "ImageNet80",
+      "source_trial": "curated_variable_refine_natural_20261010",
+      "labeled_development": true,
+      "full_validation_viewed": true
+    },
+    {
+      "dataset": "voc21",
+      "bank": "official_segmentation",
+      "aliases": 119,
+      "counts": [
+        56,
+        1,
+        1,
+        1,
+        1,
+        3,
+        3,
+        1,
+        1,
+        6,
+        4,
+        2,
+        1,
+        2,
+        2,
+        21,
+        4,
+        2,
+        3,
+        1,
+        3
+      ],
+      "template": "seg_template",
+      "source_trial": "curated_variable_refine_natural_20261010",
+      "labeled_development": true,
+      "full_validation_viewed": true
+    },
+    {
+      "dataset": "coco_object81",
+      "bank": "official_imagenet",
+      "aliases": 156,
+      "counts": [
+        32,
+        14,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        1,
+        4,
+        2,
+        6,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        2,
+        6,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1
+      ],
+      "template": "ImageNet80",
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true
+    }
+  ],
+  "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+  "vip_source": "https://github.com/MiSsU-HH/VIP",
+  "vip_source_excerpts": [
+    {
+      "path": "configs/cfg_VDD.py",
+      "lines": [
+        [
+          5,
+          "    name_path='./configs/cls_vdd.txt',"
+        ],
+        [
+          6,
+          "    prob_thd=0.35,"
+        ],
+        [
+          7,
+          "    background=True,"
+        ],
+        [
+          8,
+          "    tau=1.0,"
+        ],
+        [
+          9,
+          "    tem=1.0,"
+        ],
+        [
+          18,
+          "    dict(type='Resize', scale=(448, 448), keep_ratio=True),"
+        ],
+        [
+          20,
+          "    # does not need to do resize data transform"
+        ]
+      ]
+    },
+    {
+      "path": "configs/cfg_coco_object.py",
+      "lines": [
+        [
+          5,
+          "    name_path='./configs/cls_coco_object.txt',"
+        ],
+        [
+          7,
+          "    prob_thd=0.13,"
+        ],
+        [
+          8,
+          "    background=True,"
+        ],
+        [
+          9,
+          "    tau=6.0,"
+        ],
+        [
+          10,
+          "    tem=0.3"
+        ],
+        [
+          19,
+          "    dict(type='Resize', scale=(2048, 336), keep_ratio=True),"
+        ],
+        [
+          21,
+          "    # does not need to do resize data transform"
+        ]
+      ]
+    },
+    {
+      "path": "configs/cfg_potsdam.py",
+      "lines": [
+        [
+          5,
+          "    name_path='./configs/cls_potsdam.txt',"
+        ],
+        [
+          6,
+          "    prob_thd=0.25,"
+        ],
+        [
+          7,
+          "    background=True,"
+        ],
+        [
+          9,
+          "    tau=1.0,"
+        ],
+        [
+          10,
+          "    tem=2.0,"
+        ],
+        [
+          19,
+          "    dict(type='Resize', scale=(448, 448), keep_ratio=True),"
+        ],
+        [
+          21,
+          "    # does not need to do resize data transform"
+        ]
+      ]
+    },
+    {
+      "path": "configs/cfg_ade20k.py",
+      "lines": [
+        [
+          5,
+          "    name_path='./configs/cls_ade20k.txt',"
+        ],
+        [
+          7,
+          "    prob_thd=0.07,"
+        ],
+        [
+          8,
+          "    background=True,"
+        ],
+        [
+          9,
+          "    tau=5.0,"
+        ],
+        [
+          10,
+          "    tem=5.0"
+        ],
+        [
+          19,
+          "    dict(type='Resize', scale=(2048, 336), keep_ratio=True),"
+        ]
+      ]
+    },
+    {
+      "path": "configs/cfg_city_scapes.py",
+      "lines": [
+        [
+          5,
+          "    name_path='./configs/cls_city_scapes.txt',"
+        ],
+        [
+          7,
+          "    prob_thd=0.15,  "
+        ],
+        [
+          8,
+          "    tau=2.0,"
+        ],
+        [
+          9,
+          "    tem=10.0"
+        ],
+        [
+          18,
+          "    dict(type='Resize', scale=(2048, 560), keep_ratio=True),"
+        ],
+        [
+          20,
+          "    # does not need to do resize data transform"
+        ]
+      ]
+    },
+    {
+      "path": "configs/cfg_context60.py",
+      "lines": [
+        [
+          5,
+          "    name_path='./configs/cls_context60.txt',"
+        ],
+        [
+          7,
+          "    prob_thd=0.1,"
+        ],
+        [
+          8,
+          "    background=True,"
+        ],
+        [
+          9,
+          "    tau=2.2"
+        ],
+        [
+          18,
+          "    dict(type='Resize', scale=(2048, 336), keep_ratio=True),"
+        ]
+      ]
+    },
+    {
+      "path": "configs/cfg_coco_stuff164k.py",
+      "lines": [
+        [
+          5,
+          "    name_path='./configs/cls_coco_stuff.txt',"
+        ],
+        [
+          7,
+          "    prob_thd=0.05,"
+        ],
+        [
+          8,
+          "    tau=5.0,"
+        ],
+        [
+          9,
+          "    tem=10.0"
+        ],
+        [
+          18,
+          "    dict(type='Resize', scale=(2048, 448), keep_ratio=True),"
+        ]
+      ]
+    },
+    {
+      "path": "configs/cfg_context59.py",
+      "lines": [
+        [
+          5,
+          "    name_path='./configs/cls_context59.txt',"
+        ],
+        [
+          7,
+          "    prob_thd=0.1,"
+        ],
+        [
+          8,
+          "    tau=2.0"
+        ],
+        [
+          17,
+          "    dict(type='Resize', scale=(2048, 336), keep_ratio=True),"
+        ]
+      ]
+    },
+    {
+      "path": "configs/cfg_voc21.py",
+      "lines": [
+        [
+          5,
+          "    name_path='./configs/cls_voc21.txt',"
+        ],
+        [
+          7,
+          "    prob_thd=0.28, "
+        ],
+        [
+          8,
+          "    background=True,"
+        ],
+        [
+          9,
+          "    tau=3.0,"
+        ],
+        [
+          10,
+          "    tem=0.3"
+        ],
+        [
+          19,
+          "    dict(type='Resize', scale=(2048, 336), keep_ratio=True),"
+        ]
+      ]
+    },
+    {
+      "path": "configs/cfg_voc20.py",
+      "lines": [
+        [
+          5,
+          "    name_path='./configs/cls_voc20.txt',"
+        ],
+        [
+          7,
+          "    tau=4.0"
+        ],
+        [
+          16,
+          "    dict(type='Resize', scale=(2048, 336), keep_ratio=True),"
+        ]
+      ]
+    },
+    {
+      "path": "configs/cfg_vaihingen.py",
+      "lines": [
+        [
+          5,
+          "    name_path='./configs/cls_vaihingen.txt',"
+        ],
+        [
+          6,
+          "    prob_thd=0.1,"
+        ],
+        [
+          7,
+          "    background=True,"
+        ],
+        [
+          9,
+          "    tau=1.0,"
+        ],
+        [
+          10,
+          "    tem=10.0,"
+        ],
+        [
+          19,
+          "    dict(type='Resize', scale=(448, 448), keep_ratio=True),"
+        ],
+        [
+          21,
+          "    # does not need to do resize data transform"
+        ]
+      ]
+    },
+    {
+      "path": "configs/cfg_iSAID.py",
+      "lines": [
+        [
+          5,
+          "    name_path='./configs/cls_iSAID.txt',"
+        ],
+        [
+          6,
+          "    prob_thd=0.3,"
+        ],
+        [
+          7,
+          "    background=True"
+        ],
+        [
+          16,
+          "    dict(type='Resize', scale=(448, 448), keep_ratio=True),"
+        ],
+        [
+          18,
+          "    # does not need to do resize data transform"
+        ]
+      ]
+    },
+    {
+      "path": "dinosegmentor.py",
+      "lines": [
+        [
+          39,
+          "                prob_thd=0.0, logit_scale=40, area_thd=None, slide_stride=112, slide_crop=336, bg_idx=0, tau=4.0,"
+        ],
+        [
+          40,
+          "                tem=1.0, text_template='openai_imagenet_template'):"
+        ],
+        [
+          82,
+          "        self.logit_scale = logit_scale"
+        ],
+        [
+          83,
+          "        self.prob_thd = prob_thd"
+        ],
+        [
+          85,
+          "        self.slide_stride = slide_stride"
+        ],
+        [
+          86,
+          "        self.slide_crop = slide_crop"
+        ],
+        [
+          90,
+          "        self.tau = tau"
+        ],
+        [
+          91,
+          "        self.tem = tem"
+        ],
+        [
+          111,
+          "        if self.slide_crop == 0:"
+        ],
+        [
+          140,
+          "            cls_scores = (avg_feat @ text_feat.T).squeeze() / self.tem"
+        ],
+        [
+          142,
+          "            prob_logits = logits * self.logit_scale"
+        ],
+        [
+          151,
+          "                map_logits[j] = (1/self.tau) * torch.logsumexp(self.tau * alias_logits, dim=0)"
+        ],
+        [
+          239,
+          "        if self.slide_crop > 0:"
+        ],
+        [
+          240,
+          "            seg_logits = self.forward_slide(inputs, batch_img_metas, self.slide_stride, self.slide_crop, None)"
+        ],
+        [
+          264,
+          "            seg_pred[seg_logits.max(0, keepdim=True)[0] < self.prob_thd] = low_conf   "
+        ]
+      ]
+    }
+  ],
+  "post_hoc_policy_recombinations": [
+    {
+      "name": "shared_half",
+      "choices": {
+        "vdd": 0.5,
+        "potsdam": 0.5,
+        "udd5": 0.5,
+        "oem": 0.5,
+        "vaihingen": 0.5,
+        "context60": 0.5,
+        "ade150": 0.5,
+        "voc20": 0.5,
+        "voc21": 0.5,
+        "coco_object81": 0.5
+      },
+      "macro_miou": 55.815846462231754
+    },
+    {
+      "name": "voc21_one",
+      "choices": {
+        "vdd": 0.5,
+        "potsdam": 0.5,
+        "udd5": 0.5,
+        "oem": 0.5,
+        "vaihingen": 0.5,
+        "context60": 0.5,
+        "ade150": 0.5,
+        "voc20": 0.5,
+        "voc21": 1,
+        "coco_object81": 0.5
+      },
+      "macro_miou": 56.120229725975626
+    },
+    {
+      "name": "vdd_voc21_one",
+      "choices": {
+        "vdd": 1,
+        "potsdam": 0.5,
+        "udd5": 0.5,
+        "oem": 0.5,
+        "vaihingen": 0.5,
+        "context60": 0.5,
+        "ade150": 0.5,
+        "voc20": 0.5,
+        "voc21": 1,
+        "coco_object81": 0.5
+      },
+      "macro_miou": 56.31437471357035
+    },
+    {
+      "name": "four_exceptions",
+      "choices": {
+        "vdd": 1,
+        "potsdam": 0.5,
+        "udd5": 0.5,
+        "oem": 0.25,
+        "vaihingen": 0.25,
+        "context60": 0.5,
+        "ade150": 0.5,
+        "voc20": 0.5,
+        "voc21": 1,
+        "coco_object81": 0.5
+      },
+      "macro_miou": 56.54165641704354
+    }
+  ]
+}

@@ -361,6 +361,8 @@ def main(args):
         '完整审计、配对区间、逐域留出选择与历史复现差值见 [详细报告](REPORT.md)；机器可读汇总见 SUMMARY.json。','']
     if (root/'G0_ANALYSIS_ZH.md').exists():
         zh.extend(['进一步的关系分析与待验证自适应方案见 [g0因素分析](G0_ANALYSIS_ZH.md)。',''])
+    if (root/'ALIAS_COUPLING_AND_TUNING_ZH.md').exists():
+        zh.extend(['Alias实际用法、论文表述和VIP调参对照见 [Alias与调参口径](ALIAS_COUPLING_AND_TUNING_ZH.md)。',''])
     (root/'REPORT_ZH.md').write_text('\n'.join(zh),encoding='utf-8')
     make_figures(root,protocol,results,analyses)
     print(json.dumps(dict(best_shared_g0=best_g,macro_miou=retained['best_global_macro'],
