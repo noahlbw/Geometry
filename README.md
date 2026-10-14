@@ -32,6 +32,7 @@ python DINOtool/scripts/evaluate_frozen_geometry.py --help
 | 内容 | 文档 |
 | --- | --- |
 | 终版框架、公式、职责与创新边界 | [架构说明](docs/ARCHITECTURE.md) |
+| Geov2 中文完整流程：从双视野输入到结构写回 | [方法全流程](docs/GEOV2_METHOD_ZH_20261014.md) |
 | 筛词／降权尝试、证据与取舍 | [Alias实验综述](docs/ALIAS_STUDY.md) |
 | 全量精度、VIP对比、速度和显存 | [完整实验表](docs/RESULTS.md) |
 | 环境、模型入口、数据与复现要求 | [复现说明](docs/REPRODUCIBILITY.md) |
