@@ -1,0 +1,65 @@
+[
+  {
+    "dataset": "vdd",
+    "gpu": 1,
+    "session": "g2opt15_final_vdd_s0",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/full/shared_slots48/vdd_s0",
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/full/shared_slots48/vdd_s0.log",
+    "shard": 0,
+    "num_shards": 1
+  },
+  {
+    "dataset": "potsdam",
+    "gpu": 2,
+    "session": "g2opt15_final_potsdam_s0",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/full/shared_slots48/potsdam_s0",
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/full/shared_slots48/potsdam_s0.log",
+    "shard": 0,
+    "num_shards": 1
+  },
+  {
+    "dataset": "ade150",
+    "gpu": 3,
+    "session": "g2opt15_final_ade150_s0",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/full/shared_slots48/ade150_s0",
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/full/shared_slots48/ade150_s0.log",
+    "shard": 0,
+    "num_shards": 1
+  },
+  {
+    "dataset": "voc20",
+    "gpu": 4,
+    "session": "g2opt15_final_voc20_s0",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/full/shared_slots48/voc20_s0",
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/full/shared_slots48/voc20_s0.log",
+    "shard": 0,
+    "num_shards": 1
+  },
+  {
+    "dataset": "voc21",
+    "gpu": 5,
+    "session": "g2opt15_final_voc21_s0",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/full/shared_slots48/voc21_s0",
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/full/shared_slots48/voc21_s0.log",
+    "shard": 0,
+    "num_shards": 1
+  },
+  {
+    "dataset": "coco_object81",
+    "gpu": 6,
+    "session": "g2opt15_final_coco_object81_s0",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/full/shared_slots48/coco_object81_s0",
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/full/shared_slots48/coco_object81_s0.log",
+    "shard": 0,
+    "num_shards": 2
+  },
+  {
+    "dataset": "coco_object81",
+    "gpu": 7,
+    "session": "g2opt15_final_coco_object81_s1",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/full/shared_slots48/coco_object81_s1",
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/full/shared_slots48/coco_object81_s1.log",
+    "shard": 1,
+    "num_shards": 2
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "dataset": "ade150",
+  "variant": "optimized48",
+  "processed": 2000,
+  "total": 2000,
+  "wall_seconds": 361.9054187280126
+}

@@ -1,0 +1,171 @@
+{
+  "status": "complete",
+  "dataset": "voc21",
+  "variant": "baseline",
+  "wide_config": null,
+  "gain": 0.75,
+  "profile": {
+    "bank": "official_segmentation",
+    "strength": "original",
+    "coupling": 0.75,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 0.3,
+    "wide_policy": "natural_short336_cap672",
+    "background_rule": "union_max"
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "voc21",
+    "family": "natural",
+    "total_images": 1449,
+    "background_index": 0,
+    "vocabulary": "../vocabularies/voc21.json",
+    "profile": {
+      "bank": "official_segmentation",
+      "strength": "original",
+      "coupling": 0.75,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 0.3,
+      "wide_policy": "natural_short336_cap672",
+      "background_rule": "union_max"
+    },
+    "background_bias": -0.25,
+    "background_threshold": 0.15,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "curated_variable_refine_natural_20261010",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "c2f6fa149b02474cd24e8ace1ba18e0de51b6f351f691a9efc9c3fbc88d34197",
+  "local_path_unchanged": true,
+  "invariants": {},
+  "cpu_threads": 1,
+  "initialization_peak_allocated_mib": 2513.171875,
+  "shared_visual_storage": false,
+  "images": [
+    {
+      "key": "2007_000033",
+      "milliseconds": [
+        162.65702014788985,
+        162.29285905137658,
+        164.20567966997623,
+        162.43219189345837,
+        163.83895091712475,
+        163.22882333770394,
+        164.52119033783674
+      ],
+      "peak_allocated_mib": 2171.23974609375,
+      "peak_reserved_mib": 2380.0
+    },
+    {
+      "key": "2007_007498",
+      "milliseconds": [
+        161.39836981892586,
+        159.83603103086352,
+        162.8324743360281,
+        160.09673615917563,
+        162.61325497180223,
+        161.93337319418788,
+        163.8607122004032
+      ],
+      "peak_allocated_mib": 2175.92431640625,
+      "peak_reserved_mib": 2430.0
+    },
+    {
+      "key": "2008_003856",
+      "milliseconds": [
+        163.10793720185757,
+        161.21340403333306,
+        163.2348010316491,
+        165.04993801936507,
+        159.9782221019268,
+        164.11658190190792,
+        160.78502032905817
+      ],
+      "peak_allocated_mib": 2175.30224609375,
+      "peak_reserved_mib": 2430.0
+    },
+    {
+      "key": "2009_001644",
+      "milliseconds": [
+        164.5288527943194,
+        165.584284812212,
+        159.84602412208915,
+        162.962740752846,
+        161.06365201994777,
+        163.19436905905604,
+        164.7506020963192
+      ],
+      "peak_allocated_mib": 2175.30224609375,
+      "peak_reserved_mib": 2430.0
+    },
+    {
+      "key": "2010_000552",
+      "milliseconds": [
+        162.56171697750688,
+        163.9978587627411,
+        159.95759330689907,
+        160.9534933231771,
+        164.38203863799572,
+        159.36070773750544,
+        161.4696471951902
+      ],
+      "peak_allocated_mib": 2175.30224609375,
+      "peak_reserved_mib": 2430.0
+    },
+    {
+      "key": "2010_005180",
+      "milliseconds": [
+        160.90655699372292,
+        162.71831700578332,
+        163.16821100190282,
+        160.62260093167424,
+        162.43004286661744,
+        161.16408491507173,
+        159.4532923772931
+      ],
+      "peak_allocated_mib": 2175.30224609375,
+      "peak_reserved_mib": 2430.0
+    },
+    {
+      "key": "2011_003271",
+      "milliseconds": [
+        165.11339507997036,
+        165.11109098792076,
+        166.2562396377325,
+        165.1658290065825,
+        165.1071230880916,
+        167.74886567145586,
+        165.9013037569821
+      ],
+      "peak_allocated_mib": 2247.24365234375,
+      "peak_reserved_mib": 2498.0
+    }
+  ],
+  "median_ms": 162.8324743360281,
+  "peak_allocated_mib": 2247.24365234375,
+  "peak_reserved_mib": 2498.0,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "target_masks_loaded": false,
+  "boundary": "CPU RGB to original-size CPU uint8 labels; excludes decode/init/text. Seven fixed images, two warmups, seven synchronized repeats. Fresh process for each variant."
+}

@@ -1,0 +1,7 @@
+{
+  "dataset": "voc21",
+  "variant": "shared_slots48",
+  "processed": 64,
+  "total": 64,
+  "wall_seconds": 10.643717113416642
+}

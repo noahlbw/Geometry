@@ -1,0 +1,7 @@
+{
+  "dataset": "coco_object81",
+  "variant": "shared_slots48",
+  "processed": 64,
+  "total": 64,
+  "wall_seconds": 10.657660122960806
+}

@@ -1,0 +1,183 @@
+{
+  "status": "complete",
+  "dataset": "voc20",
+  "variant": "optimized48",
+  "wide_config": {
+    "shared_backbone": true,
+    "head": "slots",
+    "beta": 0.5,
+    "query_mode": "raw",
+    "direct": true,
+    "solve_dtype": "float64",
+    "wide_long_edge": 0,
+    "capacity": 48,
+    "shared_visual": true,
+    "fast_assignment": true,
+    "regression_ridge": 0.01
+  },
+  "gain": 1.0,
+  "profile": {
+    "bank": "semantic_imagenet",
+    "strength": "original",
+    "coupling": 1.0,
+    "temperature": 0.1,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "natural_short336_cap672",
+    "background_rule": "retained"
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "voc20",
+    "family": "natural",
+    "total_images": 1449,
+    "background_index": null,
+    "vocabulary": "../vocabularies/voc20.json",
+    "profile": {
+      "bank": "semantic_imagenet",
+      "strength": "original",
+      "coupling": 1.0,
+      "temperature": 0.1,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "natural_short336_cap672",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.0,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "curated_variable_refine_natural_20261010",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "04d8d0665b3c7ee19f8acd0375467433fa8333520e961d1de02a16dbfe8fa10c",
+  "local_path_unchanged": true,
+  "invariants": {},
+  "cpu_threads": 1,
+  "initialization_peak_allocated_mib": 1281.05078125,
+  "shared_visual_storage": true,
+  "images": [
+    {
+      "key": "2007_000033",
+      "milliseconds": [
+        168.41929405927658,
+        162.4136450700462,
+        163.4969529695809,
+        161.36717796325684,
+        161.6112249903381,
+        160.87681706994772,
+        163.58658205717802
+      ],
+      "peak_allocated_mib": 1538.2275390625,
+      "peak_reserved_mib": 1678.0
+    },
+    {
+      "key": "2007_007498",
+      "milliseconds": [
+        161.13470029085875,
+        162.1266850270331,
+        161.420953925699,
+        164.27895007655025,
+        161.50498762726784,
+        161.7991770617664,
+        163.1552530452609
+      ],
+      "peak_allocated_mib": 1539.5478515625,
+      "peak_reserved_mib": 1678.0
+    },
+    {
+      "key": "2008_003856",
+      "milliseconds": [
+        161.79270902648568,
+        163.45917712897062,
+        162.85249777138233,
+        162.62669721618295,
+        162.71754493936896,
+        161.7775592021644,
+        163.60697196796536
+      ],
+      "peak_allocated_mib": 1539.4736328125,
+      "peak_reserved_mib": 1678.0
+    },
+    {
+      "key": "2009_001644",
+      "milliseconds": [
+        161.6248399950564,
+        161.34003596380353,
+        165.3014407493174,
+        168.30274602398276,
+        166.28358699381351,
+        163.31018460914493,
+        166.01173998788
+      ],
+      "peak_allocated_mib": 1539.4736328125,
+      "peak_reserved_mib": 1678.0
+    },
+    {
+      "key": "2010_000552",
+      "milliseconds": [
+        167.33805695548654,
+        164.17769202962518,
+        165.02434387803078,
+        162.36202092841268,
+        166.62932373583317,
+        163.01111597567797,
+        164.16093381121755
+      ],
+      "peak_allocated_mib": 1539.4736328125,
+      "peak_reserved_mib": 1678.0
+    },
+    {
+      "key": "2010_005180",
+      "milliseconds": [
+        162.41923300549388,
+        167.7894969470799,
+        163.99424895644188,
+        165.5817897990346,
+        165.41979694738984,
+        166.24746983870864,
+        166.49066004902124
+      ],
+      "peak_allocated_mib": 1539.4736328125,
+      "peak_reserved_mib": 1678.0
+    },
+    {
+      "key": "2011_003271",
+      "milliseconds": [
+        168.40316634625196,
+        167.85039473325014,
+        169.14696199819446,
+        168.52023033425212,
+        170.49868404865265,
+        167.24631329998374,
+        167.07712272182107
+      ],
+      "peak_allocated_mib": 1554.8017578125,
+      "peak_reserved_mib": 1680.0
+    }
+  ],
+  "median_ms": 163.60697196796536,
+  "peak_allocated_mib": 1554.8017578125,
+  "peak_reserved_mib": 1680.0,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "target_masks_loaded": false,
+  "boundary": "CPU RGB to original-size CPU uint8 labels; excludes decode/init/text. Seven fixed images, two warmups, seven synchronized repeats. Fresh process for each variant."
+}

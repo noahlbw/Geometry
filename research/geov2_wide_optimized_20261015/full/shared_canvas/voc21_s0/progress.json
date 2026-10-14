@@ -1,0 +1,7 @@
+{
+  "dataset": "voc21",
+  "variant": "shared_canvas",
+  "processed": 1449,
+  "total": 1449,
+  "wall_seconds": 233.6174440011382
+}

@@ -1,0 +1,7 @@
+{
+  "dataset": "coco_object81",
+  "variant": "shared_fp32",
+  "processed": 64,
+  "total": 64,
+  "wall_seconds": 14.975479496177286
+}

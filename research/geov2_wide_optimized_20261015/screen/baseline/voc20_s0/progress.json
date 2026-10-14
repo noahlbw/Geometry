@@ -1,0 +1,7 @@
+{
+  "dataset": "voc20",
+  "variant": "baseline",
+  "processed": 16,
+  "total": 16,
+  "wall_seconds": 2.885395591147244
+}

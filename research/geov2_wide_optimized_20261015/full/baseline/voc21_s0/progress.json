@@ -1,0 +1,7 @@
+{
+  "dataset": "voc21",
+  "variant": "baseline",
+  "processed": 1449,
+  "total": 1449,
+  "wall_seconds": 598.3676659441553
+}

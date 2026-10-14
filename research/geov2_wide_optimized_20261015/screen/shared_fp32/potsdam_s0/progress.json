@@ -1,0 +1,7 @@
+{
+  "dataset": "potsdam",
+  "variant": "shared_fp32",
+  "processed": 16,
+  "total": 16,
+  "wall_seconds": 4.498823476023972
+}

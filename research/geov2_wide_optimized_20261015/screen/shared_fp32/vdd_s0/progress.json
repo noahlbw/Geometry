@@ -1,0 +1,7 @@
+{
+  "dataset": "vdd",
+  "variant": "shared_fp32",
+  "processed": 16,
+  "total": 16,
+  "wall_seconds": 10.33263294864446
+}

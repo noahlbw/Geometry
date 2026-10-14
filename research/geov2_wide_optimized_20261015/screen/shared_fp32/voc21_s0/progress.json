@@ -1,0 +1,7 @@
+{
+  "dataset": "voc21",
+  "variant": "shared_fp32",
+  "processed": 64,
+  "total": 64,
+  "wall_seconds": 16.499630469828844
+}

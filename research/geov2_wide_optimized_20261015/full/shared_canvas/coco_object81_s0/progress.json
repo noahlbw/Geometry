@@ -1,0 +1,7 @@
+{
+  "dataset": "coco_object81",
+  "variant": "shared_canvas",
+  "processed": 2500,
+  "total": 2500,
+  "wall_seconds": 436.6891956371255
+}

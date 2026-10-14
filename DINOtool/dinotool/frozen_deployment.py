@@ -29,11 +29,14 @@ class FrozenGeometry:
     """
     @torch.inference_mode()
     def __init__(self,config_path,*,checkpoint_dir,dinov3_repo,upstream_root,text_cache,device='cuda',compact=True,efficient=False,
-                 wide_branch='vip', query_slot_capacity=24, writeback='coupled'):
+                 wide_branch='vip', query_slot_capacity=24, writeback='coupled', shared_visual=False):
         config_path=Path(config_path)
         self.config=yaml.safe_load(config_path.read_text(encoding='utf-8'))
         self.vocabulary=json.loads((config_path.parent/self.config['vocabulary']).read_text(encoding='utf-8'))
         c=self.config; self.compact=compact; self.efficient=efficient
+        self.shared_visual=bool(shared_visual)
+        if self.shared_visual and (wide_branch!='query_slot' or not compact or not Path(text_cache).exists()):
+            raise ValueError('Shared visual storage requires compact query_slot and an existing frozen text cache.')
         if writeback not in ('coupled', 'adaptive', 'equal_mean', 'local', 'wide', 'fixed_g2'):
             raise ValueError('Unknown writeback rule.')
         self.writeback = writeback
@@ -56,7 +59,14 @@ class FrozenGeometry:
             root/'dinov3_vitl16_pretrain_sat493m-eadcf0ff.pth',root/'bpe_simple_vocab_16e6.txt.gz')
         visual_only=compact and Path(text_cache).exists()
         self.geometry=GeometryExecution(TCPRSegmenter(DINOTextSegmenter(checkpoints,device=device,visual_only=visual_only),TCPRConfig(**c['geometry'])))
-        self.vip=FiniteVIPObserver(DINOTextSegmenter(checkpoints,device=device,visual_only=visual_only),Path(upstream_root))
+        if self.shared_visual:
+            # QuerySlot only needs a visual backbone/head and its cached text
+            # interface. Reuse the already loaded frozen local visual model;
+            # never construct/cast a second visual model on CUDA.
+            from types import SimpleNamespace
+            self.vip=SimpleNamespace(backbone=self.geometry.backbone,device=self.geometry.device)
+        else:
+            self.vip=FiniteVIPObserver(DINOTextSegmenter(checkpoints,device=device,visual_only=visual_only),Path(upstream_root))
         from .model import checkpoint_manifest
         identity=dict(vocabulary=self.vocabulary,checkpoints=checkpoint_manifest(checkpoints),vip_commit=commit)
         cache=Path(text_cache)
@@ -130,7 +140,8 @@ class FrozenGeometry:
             self.compact_geometry=EfficientResponseGeometry(self.geometry)
         else:
             self.compact_geometry=EfficientGeometry(self.geometry)
-        self.vip.__class__=EfficientVIPObserver
+        if not self.shared_visual:
+            self.vip.__class__=EfficientVIPObserver
         self.wide_scorer=GroupedWideScorer() if grouped else CachedWideScorer()
         self.efficient_local_scorers={k:GroupedLocalScorer(v) for k,v in self.banks.items()} if grouped else self.reader.scorers
         if hasattr(self,'context_memory'):

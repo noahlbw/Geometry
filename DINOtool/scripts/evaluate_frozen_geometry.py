@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import time
 import numpy as np
+import torch
 
 from dinotool.frozen_deployment import FrozenGeometry
 from eval_alias_finalization import load_samples
@@ -13,11 +14,24 @@ from eval_rival_fine_full import save
 
 
 def main(args):
+    if args.cpu_threads is not None:
+        torch.set_num_threads(args.cpu_threads)
+        import cv2
+        cv2.setNumThreads(args.cpu_threads)
+    optimized=args.wide_readout=='optimized48'
+    candidate=args.wide_readout in ('shared_canvas','optimized48')
     output=Path(args.output)
     if output.exists():raise RuntimeError('Use a new output file.')
     model=FrozenGeometry(args.config,checkpoint_dir=args.checkpoint_dir,dinov3_repo=args.dinov3_repo,
         upstream_root=args.upstream_root,text_cache=args.text_cache,compact=not args.reference,device=args.device,efficient=args.efficient,
-        wide_branch=args.wide_branch,query_slot_capacity=args.query_slot_capacity,writeback=args.writeback)
+        wide_branch=args.wide_branch,query_slot_capacity=48 if optimized else args.query_slot_capacity,writeback=args.writeback,
+        shared_visual=optimized)
+    forward=model.predict
+    if candidate:
+        if model.config['dataset']=='loveda':
+            raise ValueError('LoveDA P requires its independent foreground reader and is not included in this optimization.')
+        from dinotool.geov2_wide_optimized import attach_wide_readout
+        forward=attach_wide_readout(model,args.wide_readout)
     config=model.config
     args.dataset=config['dataset'];args.mode='full'
     entry=dict(config,banks={'original':next(iter(model.vocabulary['banks'].values()))})
@@ -28,7 +42,7 @@ def main(args):
     for i,sample in enumerate(samples,1):
         image=images(sample)
         for p,n in names.items():
-            prediction=model.predict(image,protocol=p if args.dataset=='loveda' else None)
+            prediction=forward(image,protocol=p) if args.dataset=='loveda' else forward(image)
             target=masks(sample,p,tuple(image.shape[-2:]))
             matrices[p]+=confusion(prediction,target,len(n))
             ignored[p]+=int(((target<0)|(target>=len(n))).sum())
@@ -40,6 +54,8 @@ def main(args):
         config=config,text_cache_identity=model.cache_identity,compact=not args.reference,efficient=args.efficient,
         wide_branch=model.wide_branch,local_branch=model.local_branch,
         query_slot_capacity=getattr(model, 'query_slot_capacity', None),writeback=model.writeback,
+        wide_readout=args.wide_readout,shared_visual_storage=model.shared_visual,
+        shared_backbone_storage=candidate,
         context_memory=model.wide_branch=='raw32',
         context_memory_donors=args.context_memory_donors if model.wide_branch=='raw32' else None,
         context_memory_depth=args.context_memory_depth if model.wide_branch=='raw32' else None,
@@ -56,6 +72,9 @@ if __name__=='__main__':
         help='Frozen wide donor branch. Defaults to the incumbent VIP reader; raw32/query_slot are explicit experiments.')
     p.add_argument('--query-slot-capacity',type=int,default=24,
         help='QuerySlot codebook size (screened default: 24); supports compact or efficient execution.')
+    p.add_argument('--wide-readout',choices=('incumbent','shared_canvas','optimized48'),default='incumbent',
+        help='incumbent keeps the frozen path; shared_canvas shares backbone storage; optimized48 adds direct 48-slot readout.')
+    p.add_argument('--cpu-threads',type=int)
     p.add_argument('--writeback',choices=('coupled','adaptive','equal_mean','local','wide','fixed_g2'),default='coupled',
         help='Explicit writer selection; preserves coupled as the frozen default.')
     p.add_argument('--context-memory',action='store_true',help='Deprecated alias for --wide-branch raw32.')
@@ -68,6 +87,8 @@ if __name__=='__main__':
     p.add_argument('--num-shards',type=int,default=1);p.add_argument('--shard-index',type=int,default=0)
     p.add_argument('--sample-seed',type=int,default=20260923);p.add_argument('--vdd-ontology',default='official')
     args=p.parse_args()
+    if args.wide_readout in ('shared_canvas','optimized48') and (args.wide_branch!='query_slot' or not args.efficient or args.reference or args.writeback!='coupled'):
+        p.error('--wide-readout shared_canvas/optimized48 requires --wide-branch query_slot --efficient and coupled writeback.')
     if args.context_memory:
         if args.wide_branch is not None:
             p.error('--context-memory cannot be combined with an explicit --wide-branch.')

@@ -1,0 +1,95 @@
+{
+  "status": "complete",
+  "dataset": "vdd",
+  "variant": "baseline",
+  "images": 80,
+  "shards": 1,
+  "mean_iou_percent": 59.97846534045234,
+  "profile": {
+    "bank": "official_imagenet",
+    "strength": "original",
+    "coupling": 1.0,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 0.3,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "wide_config": null,
+  "cache_identity": "c650eb44930462f9a5025431afb09d1ad39787dc62255d56ca3c068a5c751bcf",
+  "class_names": [
+    "other",
+    "wall",
+    "road",
+    "vegetation",
+    "vehicle",
+    "roof",
+    "water"
+  ],
+  "confusion_matrix": [
+    [
+      97872402,
+      3000403,
+      33695599,
+      24775916,
+      1650921,
+      15403792,
+      4188689
+    ],
+    [
+      2572581,
+      15697388,
+      28891,
+      2245268,
+      18646,
+      10407049,
+      91082
+    ],
+    [
+      1491936,
+      7391,
+      49391235,
+      1558539,
+      101384,
+      145451,
+      234
+    ],
+    [
+      24125598,
+      1480655,
+      19254506,
+      293186642,
+      309140,
+      2329090,
+      2176854
+    ],
+    [
+      1035851,
+      12646,
+      1219917,
+      487896,
+      2192742,
+      48955,
+      0
+    ],
+    [
+      3768781,
+      1307724,
+      60860,
+      793064,
+      1213,
+      196062174,
+      7397
+    ],
+    [
+      3271335,
+      258,
+      1848559,
+      457841,
+      0,
+      2295,
+      140213210
+    ]
+  ],
+  "unique_full_coverage_verified": true
+}

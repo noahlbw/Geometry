@@ -1,0 +1,30 @@
+[
+  {
+    "dataset": "vdd",
+    "gpu": 1,
+    "session": "g2opt15_smoke_shared_direct_vdd",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/smoke/shared_direct/vdd_s0",
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/smoke/shared_direct/vdd.log"
+  },
+  {
+    "dataset": "potsdam",
+    "gpu": 2,
+    "session": "g2opt15_smoke_shared_direct_potsdam",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/smoke/shared_direct/potsdam_s0",
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/smoke/shared_direct/potsdam.log"
+  },
+  {
+    "dataset": "ade150",
+    "gpu": 3,
+    "session": "g2opt15_smoke_shared_direct_ade150",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/smoke/shared_direct/ade150_s0",
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/smoke/shared_direct/ade150.log"
+  },
+  {
+    "dataset": "voc20",
+    "gpu": 4,
+    "session": "g2opt15_smoke_shared_direct_voc20",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/smoke/shared_direct/voc20_s0",
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_wide_optimized_20261015/smoke/shared_direct/voc20.log"
+  }
+]

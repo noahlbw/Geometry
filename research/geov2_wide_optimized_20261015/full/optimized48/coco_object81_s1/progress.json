@@ -1,0 +1,7 @@
+{
+  "dataset": "coco_object81",
+  "variant": "optimized48",
+  "processed": 2500,
+  "total": 2500,
+  "wall_seconds": 426.854340957012
+}

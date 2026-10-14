@@ -1,0 +1,79 @@
+{
+  "status": "complete",
+  "dataset": "potsdam",
+  "variant": "baseline",
+  "images": 504,
+  "shards": 1,
+  "mean_iou_percent": 54.43828257605586,
+  "profile": {
+    "bank": "official_imagenet",
+    "strength": "original",
+    "coupling": 0.5,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "wide_config": null,
+  "cache_identity": "1f576476b231c722eb9b522033c51a3d6e947996aac700039b57f5868822faab",
+  "class_names": [
+    "impervious surface",
+    "building",
+    "low vegetation",
+    "tree",
+    "car",
+    "clutter"
+  ],
+  "confusion_matrix": [
+    [
+      133340392,
+      9362098,
+      1523577,
+      2099974,
+      3601582,
+      8686898
+    ],
+    [
+      6780028,
+      107372207,
+      1594890,
+      616611,
+      20538,
+      4169693
+    ],
+    [
+      15915557,
+      5889039,
+      59531863,
+      16143886,
+      553382,
+      7850770
+    ],
+    [
+      9593779,
+      1067940,
+      3663667,
+      67569875,
+      1498614,
+      2494281
+    ],
+    [
+      1902736,
+      22608,
+      225,
+      4255,
+      7960604,
+      12695
+    ],
+    [
+      6852119,
+      5359184,
+      1335153,
+      943718,
+      292610,
+      8372952
+    ]
+  ],
+  "unique_full_coverage_verified": true
+}

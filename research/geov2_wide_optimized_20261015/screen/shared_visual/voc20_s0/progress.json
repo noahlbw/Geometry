@@ -1,0 +1,7 @@
+{
+  "dataset": "voc20",
+  "variant": "shared_visual",
+  "processed": 16,
+  "total": 16,
+  "wall_seconds": 2.7124124551191926
+}

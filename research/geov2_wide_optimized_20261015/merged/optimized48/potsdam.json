@@ -1,0 +1,90 @@
+{
+  "status": "complete",
+  "dataset": "potsdam",
+  "variant": "optimized48",
+  "images": 504,
+  "shards": 1,
+  "mean_iou_percent": 54.48115774911278,
+  "profile": {
+    "bank": "official_imagenet",
+    "strength": "original",
+    "coupling": 0.5,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "wide_config": {
+    "shared_backbone": true,
+    "head": "slots",
+    "beta": 0.5,
+    "query_mode": "raw",
+    "direct": true,
+    "solve_dtype": "float64",
+    "wide_long_edge": 0,
+    "capacity": 48,
+    "shared_visual": true,
+    "fast_assignment": true
+  },
+  "cache_identity": "1f576476b231c722eb9b522033c51a3d6e947996aac700039b57f5868822faab",
+  "class_names": [
+    "impervious surface",
+    "building",
+    "low vegetation",
+    "tree",
+    "car",
+    "clutter"
+  ],
+  "confusion_matrix": [
+    [
+      133231117,
+      9408337,
+      1522419,
+      2120680,
+      3648578,
+      8683390
+    ],
+    [
+      6769488,
+      107344961,
+      1588252,
+      634910,
+      22100,
+      4194256
+    ],
+    [
+      15854234,
+      5881791,
+      59629532,
+      16196444,
+      558979,
+      7763517
+    ],
+    [
+      9512379,
+      1056240,
+      3670993,
+      67691168,
+      1507188,
+      2450188
+    ],
+    [
+      1861122,
+      22021,
+      209,
+      4262,
+      8002975,
+      12534
+    ],
+    [
+      6825211,
+      5355615,
+      1333527,
+      954418,
+      297902,
+      8389063
+    ]
+  ],
+  "unique_full_coverage_verified": true
+}

@@ -1,0 +1,183 @@
+{
+  "status": "complete",
+  "dataset": "potsdam",
+  "variant": "optimized48",
+  "wide_config": {
+    "shared_backbone": true,
+    "head": "slots",
+    "beta": 0.5,
+    "query_mode": "raw",
+    "direct": true,
+    "solve_dtype": "float64",
+    "wide_long_edge": 0,
+    "capacity": 48,
+    "shared_visual": true,
+    "fast_assignment": true,
+    "regression_ridge": 0.01
+  },
+  "gain": 0.5,
+  "profile": {
+    "bank": "official_imagenet",
+    "strength": "original",
+    "coupling": 0.5,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "potsdam",
+    "family": "remote_sensing",
+    "total_images": 504,
+    "background_index": 5,
+    "vocabulary": "../vocabularies/potsdam.json",
+    "profile": {
+      "bank": "official_imagenet",
+      "strength": "original",
+      "coupling": 0.5,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.2,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "1f576476b231c722eb9b522033c51a3d6e947996aac700039b57f5868822faab",
+  "local_path_unchanged": true,
+  "invariants": {},
+  "cpu_threads": 1,
+  "initialization_peak_allocated_mib": 1265.27880859375,
+  "shared_visual_storage": true,
+  "images": [
+    {
+      "key": "top_potsdam_2_13_RGB_y00_x00.tif",
+      "milliseconds": [
+        164.9680631235242,
+        165.88127799332142,
+        163.52574760094285,
+        166.30229586735368,
+        165.14923376962543,
+        165.00158421695232,
+        165.21693812683225
+      ],
+      "peak_allocated_mib": 1497.82861328125,
+      "peak_reserved_mib": 1634.0
+    },
+    {
+      "key": "top_potsdam_3_13_RGB_y01_x05.tif",
+      "milliseconds": [
+        165.20365932956338,
+        164.63166987523437,
+        167.12028859183192,
+        165.03664990887046,
+        164.7584279999137,
+        165.07058031857014,
+        165.2671368792653
+      ],
+      "peak_allocated_mib": 1497.82861328125,
+      "peak_reserved_mib": 1634.0
+    },
+    {
+      "key": "top_potsdam_4_13_RGB_y03_x05.tif",
+      "milliseconds": [
+        166.04097513481975,
+        164.65300973504782,
+        164.00693589821458,
+        165.25046713650227,
+        165.1672306470573,
+        164.92006881162524,
+        164.91395886987448
+      ],
+      "peak_allocated_mib": 1497.82861328125,
+      "peak_reserved_mib": 1634.0
+    },
+    {
+      "key": "top_potsdam_4_15_RGB_y05_x05.tif",
+      "milliseconds": [
+        165.83004081621766,
+        165.3398871421814,
+        164.93210988119245,
+        166.4183521643281,
+        166.08470724895597,
+        167.3084357753396,
+        164.29222421720624
+      ],
+      "peak_allocated_mib": 1497.82861328125,
+      "peak_reserved_mib": 1634.0
+    },
+    {
+      "key": "top_potsdam_5_15_RGB_y01_x05.tif",
+      "milliseconds": [
+        166.189752984792,
+        164.86740484833717,
+        165.34113278612494,
+        165.45472806319594,
+        164.04968313872814,
+        164.54268898814917,
+        164.28246209397912
+      ],
+      "peak_allocated_mib": 1497.82861328125,
+      "peak_reserved_mib": 1634.0
+    },
+    {
+      "key": "top_potsdam_6_14_RGB_y03_x05.tif",
+      "milliseconds": [
+        166.44909279420972,
+        164.58131559193134,
+        165.68959690630436,
+        164.86616805195808,
+        164.97010784223676,
+        165.39043793454766,
+        165.6398712657392
+      ],
+      "peak_allocated_mib": 1497.82861328125,
+      "peak_reserved_mib": 1634.0
+    },
+    {
+      "key": "top_potsdam_7_13_RGB_y05_x05.tif",
+      "milliseconds": [
+        166.54587676748633,
+        166.90929932519794,
+        169.10689463838935,
+        164.62868312373757,
+        164.48909090831876,
+        164.43359199911356,
+        161.5231172181666
+      ],
+      "peak_allocated_mib": 1497.82861328125,
+      "peak_reserved_mib": 1634.0
+    }
+  ],
+  "median_ms": 165.14923376962543,
+  "peak_allocated_mib": 1497.82861328125,
+  "peak_reserved_mib": 1634.0,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "target_masks_loaded": false,
+  "boundary": "CPU RGB to original-size CPU uint8 labels; excludes decode/init/text. Seven fixed images, two warmups, seven synchronized repeats. Fresh process for each variant."
+}

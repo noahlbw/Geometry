@@ -1,0 +1,7 @@
+{
+  "dataset": "ade150",
+  "variant": "shared_fp32",
+  "processed": 16,
+  "total": 16,
+  "wall_seconds": 6.065760106779635
+}
