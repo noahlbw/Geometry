@@ -1,0 +1,251 @@
+{
+  "status": "complete",
+  "dataset": "voc21",
+  "g0": 0.5,
+  "profile": {
+    "bank": "official_segmentation",
+    "strength": "original",
+    "coupling": 0.5,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 0.3,
+    "wide_policy": "natural_short336_cap672",
+    "background_rule": "union_max"
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "voc21",
+    "family": "natural",
+    "total_images": 1449,
+    "background_index": 0,
+    "vocabulary": "../vocabularies/voc21.json",
+    "profile": {
+      "bank": "official_segmentation",
+      "strength": "original",
+      "coupling": 0.75,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 0.3,
+      "wide_policy": "natural_short336_cap672",
+      "background_rule": "union_max"
+    },
+    "background_bias": -0.25,
+    "background_threshold": 0.15,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "curated_variable_refine_natural_20261010",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "alias_counts": {
+    "retained": [
+      56,
+      1,
+      1,
+      1,
+      1,
+      3,
+      3,
+      1,
+      1,
+      6,
+      4,
+      2,
+      1,
+      2,
+      2,
+      21,
+      4,
+      2,
+      3,
+      1,
+      3
+    ],
+    "normalized": [
+      56,
+      1,
+      1,
+      1,
+      1,
+      3,
+      3,
+      1,
+      1,
+      6,
+      4,
+      2,
+      1,
+      2,
+      2,
+      21,
+      4,
+      2,
+      3,
+      1,
+      3
+    ]
+  },
+  "methods": [
+    "ShuffledQuery"
+  ],
+  "arms": {
+    "ShuffledQuery": [
+      "shuffled",
+      "retained",
+      "coupled"
+    ]
+  },
+  "cache_identity": "c2f6fa149b02474cd24e8ace1ba18e0de51b6f351f691a9efc9c3fbc88d34197",
+  "adaptive_gain_enabled": false,
+  "images": [
+    {
+      "key": "2007_000033",
+      "shape": [
+        366,
+        500
+      ],
+      "milliseconds": [
+        140.16123302280903,
+        140.22838324308395,
+        139.96085105463862,
+        139.80594743043184,
+        140.11886809021235,
+        141.23514713719487,
+        140.2715239673853
+      ],
+      "peak_allocated_mib": 2171.23974609375,
+      "peak_reserved_mib": 2840.0
+    },
+    {
+      "key": "2007_007498",
+      "shape": [
+        376,
+        500
+      ],
+      "milliseconds": [
+        139.5679758861661,
+        139.72464529797435,
+        142.23794220015407,
+        139.46207519620657,
+        139.70931386575103,
+        140.0264916010201,
+        139.9923376739025
+      ],
+      "peak_allocated_mib": 2175.92431640625,
+      "peak_reserved_mib": 2890.0
+    },
+    {
+      "key": "2008_003856",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        139.9788949638605,
+        139.44551022723317,
+        139.3343908712268,
+        139.26057796925306,
+        140.53978910669684,
+        140.27153374627233,
+        139.88312100991607
+      ],
+      "peak_allocated_mib": 2175.30224609375,
+      "peak_reserved_mib": 2890.0
+    },
+    {
+      "key": "2009_001644",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        139.39012307673693,
+        139.4253741018474,
+        140.11530624702573,
+        139.32705018669367,
+        140.339529607445,
+        139.29782900959253,
+        139.55906638875604
+      ],
+      "peak_allocated_mib": 2175.30224609375,
+      "peak_reserved_mib": 2890.0
+    },
+    {
+      "key": "2010_000552",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        139.75719502195716,
+        139.701877720654,
+        139.62084986269474,
+        139.37770063057542,
+        139.91143787279725,
+        140.96257975324988,
+        139.89634113386273
+      ],
+      "peak_allocated_mib": 2175.30224609375,
+      "peak_reserved_mib": 2890.0
+    },
+    {
+      "key": "2010_005180",
+      "shape": [
+        375,
+        500
+      ],
+      "milliseconds": [
+        139.6909961476922,
+        139.95702704414725,
+        142.23471004515886,
+        139.98374389484525,
+        140.06816036999226,
+        139.9501347914338,
+        140.23127360269427
+      ],
+      "peak_allocated_mib": 2175.30224609375,
+      "peak_reserved_mib": 2890.0
+    },
+    {
+      "key": "2011_003271",
+      "shape": [
+        500,
+        500
+      ],
+      "milliseconds": [
+        140.80696739256382,
+        141.83563878759742,
+        141.2463141605258,
+        141.80480502545834,
+        141.69485727325082,
+        141.6795956902206,
+        141.49568695575
+      ],
+      "peak_allocated_mib": 2247.24365234375,
+      "peak_reserved_mib": 2958.0
+    }
+  ],
+  "median_ms": 139.9788949638605,
+  "peak_allocated_mib": 2247.24365234375,
+  "peak_reserved_mib": 2958.0,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "target_masks_loaded": false,
+  "boundary": "CPU float RGB to original-size CPU uint8 IDs; decode/init/offline text excluded; fresh process per arm; seven fixed images, two warmups and seven synchronized repeats each. Unused H solve skipped for equal fusion."
+}

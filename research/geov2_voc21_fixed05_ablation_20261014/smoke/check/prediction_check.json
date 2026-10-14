@@ -1,0 +1,9 @@
+{
+  "same_observation_frozen_vs_full_pixels": 0,
+  "shape": [
+    366,
+    500
+  ],
+  "reencoded_vs_full_pixels": 19,
+  "reencoded_changed_fraction": 0.00010382513661202186
+}

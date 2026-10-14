@@ -1,0 +1,49 @@
+{
+  "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+  "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+  "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+  "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/voc21.yaml",
+  "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/voc21.pt",
+  "data_root": "/data/test/datasets/VIP_natural/VOCdevkit/VOC2012",
+  "total_images": 1449,
+  "status": "frozen_before_new_full",
+  "dataset": "voc21",
+  "g0": 0.5,
+  "methods": [
+    "Full",
+    "NoDonorBefore",
+    "NoQueryRouting",
+    "NoDonorNoRouting",
+    "ShuffledQuery",
+    "CanonicalForeground",
+    "WideCountNormalized",
+    "EqualLogitFusion",
+    "LocalOnly",
+    "WideOnly",
+    "Raw24CoordinateGrid",
+    "Raw32CoordinateGrid",
+    "LegacyDonorVIPWide"
+  ],
+  "cost_arms": [
+    "Full",
+    "NoDonorBefore",
+    "NoQueryRouting",
+    "ShuffledQuery",
+    "Raw24CoordinateGrid",
+    "Raw32CoordinateGrid",
+    "LegacyDonorVIPWide"
+  ],
+  "shards": 7,
+  "expected_full_miou": 72.1655669049804,
+  "cost_keys": [
+    "2007_000033",
+    "2007_007498",
+    "2008_003856",
+    "2009_001644",
+    "2010_000552",
+    "2010_005180",
+    "2011_003271"
+  ],
+  "rationale": "Natural-image replication after UDD5; all 1449 validation images, no image selection. Same global g0=.5, frozen official_segmentation aliases, active original DonorBefore, background and score calibration unchanged. No search over datasets/aliases/beta/g0 within this experiment.",
+  "limitations": "Historical aliases/calibration selected with development labels and full validation already inspected. Legacy VIP-wide is an internal branch control, not the native official VIP baseline. Beta-zero routing control retains unused route computations in timing."
+}
