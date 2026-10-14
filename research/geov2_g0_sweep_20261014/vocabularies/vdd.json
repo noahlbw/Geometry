@@ -1,0 +1,55 @@
+{
+  "dataset": "vdd",
+  "banks": {
+    "official_imagenet": {
+      "classes": [
+        {
+          "name": "other",
+          "synonyms": [
+            "surface",
+            "other"
+          ]
+        },
+        {
+          "name": "wall",
+          "synonyms": [
+            "facade"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road"
+          ]
+        },
+        {
+          "name": "vegetation",
+          "synonyms": [
+            "grassland",
+            "forest area"
+          ]
+        },
+        {
+          "name": "vehicle",
+          "synonyms": [
+            "vehicle"
+          ]
+        },
+        {
+          "name": "roof",
+          "synonyms": [
+            "roof"
+          ]
+        },
+        {
+          "name": "water",
+          "synonyms": [
+            "water"
+          ]
+        }
+      ],
+      "template": "ImageNet80"
+    }
+  },
+  "residual": null
+}

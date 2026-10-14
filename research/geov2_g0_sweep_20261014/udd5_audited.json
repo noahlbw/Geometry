@@ -1,0 +1,112 @@
+{
+  "dataset": "udd5",
+  "images": 40,
+  "methods": [
+    "retained__g0",
+    "retained__g0.25",
+    "retained__g0.5",
+    "retained__g0.75",
+    "retained__g1",
+    "retained__g1.5",
+    "retained__g2",
+    "retained__g3",
+    "canonical__g0",
+    "canonical__g0.25",
+    "canonical__g0.5",
+    "canonical__g0.75",
+    "canonical__g1",
+    "canonical__g1.5",
+    "canonical__g2",
+    "canonical__g3",
+    "count_normalized__g0",
+    "count_normalized__g0.25",
+    "count_normalized__g0.5",
+    "count_normalized__g0.75",
+    "count_normalized__g1",
+    "count_normalized__g1.5",
+    "count_normalized__g2",
+    "count_normalized__g3",
+    "retained__equal_mean",
+    "retained__wide",
+    "canonical__equal_mean",
+    "canonical__wide",
+    "count_normalized__equal_mean",
+    "count_normalized__wide"
+  ],
+  "metrics": {
+    "retained__g0": 51.16510317532732,
+    "retained__g0.25": 54.428284166489426,
+    "retained__g0.5": 55.256690918556274,
+    "retained__g0.75": 51.631777971564716,
+    "retained__g1": 43.12124770109748,
+    "retained__g1.5": 30.799123016285524,
+    "retained__g2": 22.337798741466877,
+    "retained__g3": 15.576978092003868,
+    "canonical__g0": 53.138655882564834,
+    "canonical__g0.25": 52.14340768974953,
+    "canonical__g0.5": 49.531453658043446,
+    "canonical__g0.75": 46.2829011705533,
+    "canonical__g1": 42.56999863750546,
+    "canonical__g1.5": 35.78059508940134,
+    "canonical__g2": 30.77832198993051,
+    "canonical__g3": 25.110720690803532,
+    "count_normalized__g0": 51.16510317532732,
+    "count_normalized__g0.25": 49.9052423870837,
+    "count_normalized__g0.5": 48.00608313270377,
+    "count_normalized__g0.75": 45.88856752277568,
+    "count_normalized__g1": 43.727976924146496,
+    "count_normalized__g1.5": 39.9075490280134,
+    "count_normalized__g2": 36.61222237356974,
+    "count_normalized__g3": 31.94776567851655,
+    "retained__equal_mean": 42.574982862966415,
+    "retained__wide": 22.25366105988824,
+    "canonical__equal_mean": 42.29727170294936,
+    "canonical__wide": 29.897047425312838,
+    "count_normalized__equal_mean": 43.358961355629184,
+    "count_normalized__wide": 36.19572298528328
+  },
+  "class_names": [
+    "vegetation",
+    "building",
+    "road",
+    "vehicle",
+    "other"
+  ],
+  "alias_counts": [
+    7.0,
+    1.0,
+    2.0,
+    1.0,
+    20.0
+  ],
+  "alias_mean": 6.2,
+  "alias_count_cv": 1.1693270297027005,
+  "residual_concepts": 0,
+  "diagnostics": {
+    "retained": {
+      "displacement_energy": 3147882.1986215254,
+      "correction_energy": 701627.9277791207,
+      "patches": 139264,
+      "correction_to_displacement_energy": 0.22288887687295522
+    },
+    "canonical": {
+      "displacement_energy": 859300.7994435283,
+      "correction_energy": 161953.39115683277,
+      "patches": 139264,
+      "correction_to_displacement_energy": 0.18847112822624118
+    },
+    "count_normalized": {
+      "displacement_energy": 840529.1695646608,
+      "correction_energy": 159598.88142789627,
+      "patches": 139264,
+      "correction_to_displacement_energy": 0.1898790514439351
+    }
+  },
+  "audit": {
+    "exact_authoritative_split_order": true,
+    "all_shards_complete": true,
+    "per_image_sufficient_statistics_verified": true,
+    "identical_target_support": true,
+    "count_normalized_local_endpoint_identical": true
+  }
+}

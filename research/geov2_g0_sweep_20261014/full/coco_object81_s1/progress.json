@@ -1,0 +1,7 @@
+{
+  "dataset": "coco_object81",
+  "processed": 575,
+  "total": 625,
+  "shard_index": 1,
+  "num_shards": 8
+}

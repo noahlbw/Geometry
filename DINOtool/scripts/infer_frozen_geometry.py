@@ -11,7 +11,7 @@ from dinotool.frozen_deployment import FrozenGeometry
 def main(args):
     model=FrozenGeometry(args.config,checkpoint_dir=args.checkpoint_dir,dinov3_repo=args.dinov3_repo,
         upstream_root=args.upstream_root,text_cache=args.text_cache,compact=not args.reference,device=args.device,efficient=args.efficient,
-        wide_branch=args.wide_branch,query_slot_capacity=args.query_slot_capacity)
+        wide_branch=args.wide_branch,query_slot_capacity=args.query_slot_capacity,writeback=args.writeback)
     array=np.asarray(Image.open(args.input).convert('RGB')).copy()
     image=torch.from_numpy(array).permute(2,0,1).float()/255
     prediction=model.predict(image)
@@ -20,7 +20,7 @@ def main(args):
     output.parent.mkdir(parents=True,exist_ok=True);Image.fromarray(prediction).save(output)
     print(json.dumps(dict(output=str(output),shape=list(prediction.shape),cache_identity=model.cache_identity,
         compact=not args.reference,efficient=args.efficient,wide_branch=model.wide_branch,local_branch=model.local_branch,
-        query_slot_capacity=getattr(model, 'query_slot_capacity', None),
+        query_slot_capacity=getattr(model, 'query_slot_capacity', None),writeback=model.writeback,
         context_memory=model.wide_branch=='raw32',
         context_memory_donors=args.context_memory_donors if model.wide_branch=='raw32' else None,
         context_memory_depth=args.context_memory_depth if model.wide_branch=='raw32' else None,target_masks_loaded=False)))
@@ -36,6 +36,8 @@ if __name__=='__main__':
         help='Frozen wide donor branch. Defaults to the incumbent VIP reader; raw32/query_slot are explicit experiments.')
     parser.add_argument('--query-slot-capacity',type=int,default=24,
         help='QuerySlot codebook size (screened default: 24); supports compact or efficient execution.')
+    parser.add_argument('--writeback',choices=('coupled','adaptive','equal_mean','local','wide','fixed_g2'),default='coupled',
+        help='Explicit writer selection; adaptive is an evaluated candidate, not an automatic replacement of the frozen writer.')
     parser.add_argument('--context-memory',action='store_true',help='Deprecated alias for --wide-branch raw32.')
     parser.add_argument('--context-memory-donors',choices=('all','outside'),default='all',
         help='With --context-memory, use all donors or physical local-view exclusion with removed mass returned to self.')

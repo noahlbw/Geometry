@@ -1,0 +1,7 @@
+{
+  "dataset": "ade150",
+  "processed": 425,
+  "total": 500,
+  "shard_index": 3,
+  "num_shards": 4
+}

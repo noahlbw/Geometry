@@ -1,0 +1,112 @@
+{
+  "dataset": "vaihingen",
+  "images": 113,
+  "methods": [
+    "retained__g0",
+    "retained__g0.25",
+    "retained__g0.5",
+    "retained__g0.75",
+    "retained__g1",
+    "retained__g1.5",
+    "retained__g2",
+    "retained__g3",
+    "canonical__g0",
+    "canonical__g0.25",
+    "canonical__g0.5",
+    "canonical__g0.75",
+    "canonical__g1",
+    "canonical__g1.5",
+    "canonical__g2",
+    "canonical__g3",
+    "count_normalized__g0",
+    "count_normalized__g0.25",
+    "count_normalized__g0.5",
+    "count_normalized__g0.75",
+    "count_normalized__g1",
+    "count_normalized__g1.5",
+    "count_normalized__g2",
+    "count_normalized__g3",
+    "retained__equal_mean",
+    "retained__wide",
+    "canonical__equal_mean",
+    "canonical__wide",
+    "count_normalized__equal_mean",
+    "count_normalized__wide"
+  ],
+  "metrics": {
+    "retained__g0": 58.05833414355532,
+    "retained__g0.25": 58.80183196178894,
+    "retained__g0.5": 57.5554275445416,
+    "retained__g0.75": 54.97315679808332,
+    "retained__g1": 51.82636065673416,
+    "retained__g1.5": 46.364811944740566,
+    "retained__g2": 42.698876818165786,
+    "retained__g3": 38.64618981994398,
+    "canonical__g0": 30.621908085907734,
+    "canonical__g0.25": 31.380812198974684,
+    "canonical__g0.5": 32.32052894586959,
+    "canonical__g0.75": 32.98303778376561,
+    "canonical__g1": 33.08971224004186,
+    "canonical__g1.5": 32.667767652006106,
+    "canonical__g2": 32.039791844034816,
+    "canonical__g3": 30.793717628505163,
+    "count_normalized__g0": 58.05833414355532,
+    "count_normalized__g0.25": 57.46560701408764,
+    "count_normalized__g0.5": 55.83758748399518,
+    "count_normalized__g0.75": 53.87245060228921,
+    "count_normalized__g1": 51.934429477165644,
+    "count_normalized__g1.5": 48.45628441704897,
+    "count_normalized__g2": 45.72710117289948,
+    "count_normalized__g3": 42.20934257449011,
+    "retained__equal_mean": 50.92888143001721,
+    "retained__wide": 42.677711946360795,
+    "canonical__equal_mean": 33.351302991504525,
+    "canonical__wide": 32.23555964873429,
+    "count_normalized__equal_mean": 51.175531517170384,
+    "count_normalized__wide": 44.712979740388484
+  },
+  "class_names": [
+    "impervious surface",
+    "building",
+    "low vegetation",
+    "tree",
+    "car"
+  ],
+  "alias_counts": [
+    16.0,
+    16.0,
+    17.0,
+    12.0,
+    8.0
+  ],
+  "alias_mean": 13.8,
+  "alias_count_cv": 0.24423622530945963,
+  "residual_concepts": 0,
+  "diagnostics": {
+    "retained": {
+      "displacement_energy": 29144638.336805347,
+      "correction_energy": 7029245.747453975,
+      "patches": 462848,
+      "correction_to_displacement_energy": 0.24118486790680405
+    },
+    "canonical": {
+      "displacement_energy": 3340858.219899638,
+      "correction_energy": 717891.7893368839,
+      "patches": 462848,
+      "correction_to_displacement_energy": 0.21488244698945946
+    },
+    "count_normalized": {
+      "displacement_energy": 3098081.3497757837,
+      "correction_energy": 663527.2051952169,
+      "patches": 462848,
+      "correction_to_displacement_energy": 0.2141735901296582
+    }
+  },
+  "audit": {
+    "exact_authoritative_split_order": true,
+    "all_shards_complete": true,
+    "per_image_sufficient_statistics_verified": true,
+    "identical_target_support": true,
+    "count_normalized_local_endpoint_identical": true
+  }
+}

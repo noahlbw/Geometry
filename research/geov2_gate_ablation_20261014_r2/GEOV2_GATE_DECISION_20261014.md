@@ -1,3 +1,5 @@
+> 2026-10-14 更正：此页为早期 16 图候选筛选历史，不代表当前最终模型。当前 QuerySlot + DonorBefore 路径保留固定写回；其历史 H 使用未加 degree 权重的 Euclidean 二次目标和 FP64 Cholesky。文中 degree-weighted FP32 目标及约163ms/1632MiB的 native-wide 测量属于另一候选实现，不可用于 QuerySlot 主模型或与其全量精度拼接。自适应在 StaticReader 中作用于 T=L+g0 H(W−L)，仅当 g0=1 时 T 才等于该二次目标的 Z*。参见 [当前固定写回说明](../../docs/GEOV2_FIXED_WRITER_20261014.md)。
+
 # Geov2 structure writeback and adaptive gate decision
 
 Geov2 keeps structure writeback as the final reader. The equal-logit mean is a matched control, while the adaptive branch changes only the step taken after the same structure-anchored target has been solved.

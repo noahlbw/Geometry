@@ -55,6 +55,20 @@ def test_adaptive_writer_is_exact_noop_when_views_agree():
     torch.testing.assert_close(gain, torch.ones(9))
 
 
+def test_margin_control_can_amplify_an_unsupported_correction():
+    local = torch.tensor([[1., .9], [2., .1]])
+    wide = torch.tensor([[2., .1], [1., .9]])
+    # No structural displacement: full gate must stay at one even when the
+    # wide margin is larger. Removing support exposes that distinction.
+    target = local.clone()
+    full = adaptive_writeback_gain(local, wide, target)
+    margin = adaptive_writeback_gain(local, wide, target, variant='margin')
+    torch.testing.assert_close(full, torch.ones(2))
+    assert margin[0] > 1 and margin[1] < 1
+    support = adaptive_writeback_gain(local, wide, local + .5*(wide-local), variant='support')
+    torch.testing.assert_close(support, torch.full((2,), 1.375), atol=1e-6, rtol=1e-6)
+
+
 def test_alias_mean_is_count_normalized_and_background_is_union():
     text = torch.tensor([[1.,0.],[1.,0.],[0.,1.]])
     query = torch.tensor([[1.,0.],[0.,1.]])

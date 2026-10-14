@@ -1,7 +1,9 @@
-"""Geov2 v0.2: one frozen encoder, native wide observation, gated writeback.
+"""Native-wide candidate: one frozen encoder and gated writeback.
 
 All parameters are global. Text vectors are prepared offline; image inference
 uses a single visual model. Dense structure is restricted to <=1024 patches.
+The evaluated QuerySlot/DonorBefore model uses FrozenGeometry/StaticReader
+with historical fixed FP64 writeback; this module is a separate candidate.
 """
 from dataclasses import dataclass, asdict
 import math
@@ -22,8 +24,8 @@ class Geov2Config:
     correction_lambda: float = 1.
     # The solver first computes the structure-anchored target Z*.  The
     # second stage controls how far the prediction moves from L towards Z*.
-    # ``adaptive`` is the released setting; ``fixed`` is kept for matched
-    # ablations and reproduces the old scalar-gain writer.
+    # ``adaptive`` is this native-wide candidate's default; ``fixed`` is kept
+    # for its matched ablations. Neither changes StaticReader's fixed default.
     gate_mode: str = 'adaptive'
     writeback_gain: float = 1.
     gate_min: float = .5
@@ -83,20 +85,27 @@ def _normalized_margin(logits, eps=1e-6):
 
 
 def adaptive_writeback_gain(local, wide, target, *, g_min=.5, g_max=2.,
-                            temperature=.25, adaptation=.75, eps=1e-6):
+                            temperature=.25, adaptation=.75, eps=1e-6,
+                            variant='full'):
     """Compute an image-only step size for ``Z=L+g(Z*-L)``.
 
-    ``target`` is the solution of the structure-anchored quadratic objective.
+    ``target`` is the supplied fixed writer target.  In structure_writeback it
+    is the unrelaxed quadratic optimum; the historical StaticReader supplies
+    L + g0 H(W-L), which is already relaxed if g0 != 1.
     The gate uses only quantities available at inference: how much the target
     correction agrees with the raw wide-minus-local displacement, and whether
     the wide branch is more decisive than the local branch.  A zero
     disagreement is an exact no-op and receives gain one.  The result is one
-    scalar per local patch, so it adds O(N*C) arithmetic and no dense tensor.
+    scalar per local patch, so it adds O(N*C) arithmetic and no N-by-N tensor.
+    ``margin`` removes the support factor (r=1); ``support`` removes the
+    signed margin comparison (q=1), giving an amplification-only control.
     """
     if g_min < 0 or g_max < g_min:
         raise ValueError('Require 0 <= g_min <= g_max.')
     if temperature <= 0:
         raise ValueError('Gate temperature must be positive.')
+    if variant not in ('full', 'margin', 'support'):
+        raise ValueError("variant must be 'full', 'margin', or 'support'.")
     displacement = wide.float() - local.float()
     correction = target.float() - local.float()
     energy = displacement.square().sum(-1)
@@ -108,6 +117,10 @@ def adaptive_writeback_gain(local, wide, target, *, g_min=.5, g_max=2.,
     local_margin = _normalized_margin(local.float(), eps)
     wide_margin = _normalized_margin(wide.float(), eps)
     wide_advantage = 2. * torch.sigmoid((wide_margin - local_margin) / temperature) - 1.
+    if variant == 'margin':
+        support = torch.ones_like(support)
+    elif variant == 'support':
+        wide_advantage = torch.ones_like(wide_advantage)
     if adaptation < 0:
         raise ValueError('Gate adaptation must be non-negative.')
     # Center the gate at the exact fixed-target writer (g=1).  This makes the
@@ -122,7 +135,7 @@ def adaptive_writeback_gain(local, wide, target, *, g_min=.5, g_max=2.,
 
 
 def structure_writeback(local, wide, symmetric, degree, config=Geov2Config()):
-    """Return ``(Z, Z*, g)`` for the released two-stage writer.
+    """Return ``(Z, Z*, g)`` for the native-wide candidate's two-stage writer.
 
     First solve for ``Z*`` under the quadratic structure objective.  Then take
     a fixed or adaptive step towards that target.  ``gate_mode='target'`` is a

@@ -1,0 +1,1460 @@
+{
+  "status": "complete",
+  "dataset": "vaihingen",
+  "processed_images": 113,
+  "global_sample_count": 113,
+  "sample_keys": [
+    "top_mosaic_09cm_area10_y00_x00.tif",
+    "top_mosaic_09cm_area10_y00_x01.tif",
+    "top_mosaic_09cm_area10_y01_x00.tif",
+    "top_mosaic_09cm_area10_y01_x01.tif",
+    "top_mosaic_09cm_area10_y02_x00.tif",
+    "top_mosaic_09cm_area10_y02_x01.tif",
+    "top_mosaic_09cm_area12_y00_x00.tif",
+    "top_mosaic_09cm_area12_y00_x01.tif",
+    "top_mosaic_09cm_area12_y01_x00.tif",
+    "top_mosaic_09cm_area12_y01_x01.tif",
+    "top_mosaic_09cm_area12_y02_x00.tif",
+    "top_mosaic_09cm_area12_y02_x01.tif",
+    "top_mosaic_09cm_area14_y00_x00.tif",
+    "top_mosaic_09cm_area14_y00_x01.tif",
+    "top_mosaic_09cm_area14_y01_x00.tif",
+    "top_mosaic_09cm_area14_y01_x01.tif",
+    "top_mosaic_09cm_area14_y02_x00.tif",
+    "top_mosaic_09cm_area14_y02_x01.tif",
+    "top_mosaic_09cm_area16_y00_x00.tif",
+    "top_mosaic_09cm_area16_y00_x01.tif",
+    "top_mosaic_09cm_area16_y01_x00.tif",
+    "top_mosaic_09cm_area16_y01_x01.tif",
+    "top_mosaic_09cm_area16_y02_x00.tif",
+    "top_mosaic_09cm_area16_y02_x01.tif",
+    "top_mosaic_09cm_area20_y00_x00.tif",
+    "top_mosaic_09cm_area20_y00_x01.tif",
+    "top_mosaic_09cm_area20_y01_x00.tif",
+    "top_mosaic_09cm_area20_y01_x01.tif",
+    "top_mosaic_09cm_area20_y02_x00.tif",
+    "top_mosaic_09cm_area20_y02_x01.tif",
+    "top_mosaic_09cm_area22_y00_x00.tif",
+    "top_mosaic_09cm_area22_y00_x01.tif",
+    "top_mosaic_09cm_area22_y01_x00.tif",
+    "top_mosaic_09cm_area22_y01_x01.tif",
+    "top_mosaic_09cm_area22_y02_x00.tif",
+    "top_mosaic_09cm_area22_y02_x01.tif",
+    "top_mosaic_09cm_area24_y00_x00.tif",
+    "top_mosaic_09cm_area24_y00_x01.tif",
+    "top_mosaic_09cm_area24_y01_x00.tif",
+    "top_mosaic_09cm_area24_y01_x01.tif",
+    "top_mosaic_09cm_area24_y02_x00.tif",
+    "top_mosaic_09cm_area24_y02_x01.tif",
+    "top_mosaic_09cm_area27_y00_x00.tif",
+    "top_mosaic_09cm_area27_y00_x01.tif",
+    "top_mosaic_09cm_area27_y01_x00.tif",
+    "top_mosaic_09cm_area27_y01_x01.tif",
+    "top_mosaic_09cm_area27_y02_x00.tif",
+    "top_mosaic_09cm_area27_y02_x01.tif",
+    "top_mosaic_09cm_area27_y03_x00.tif",
+    "top_mosaic_09cm_area27_y03_x01.tif",
+    "top_mosaic_09cm_area29_y00_x00.tif",
+    "top_mosaic_09cm_area29_y00_x01.tif",
+    "top_mosaic_09cm_area29_y01_x00.tif",
+    "top_mosaic_09cm_area29_y01_x01.tif",
+    "top_mosaic_09cm_area29_y02_x00.tif",
+    "top_mosaic_09cm_area29_y02_x01.tif",
+    "top_mosaic_09cm_area2_y00_x00.tif",
+    "top_mosaic_09cm_area2_y00_x01.tif",
+    "top_mosaic_09cm_area2_y00_x02.tif",
+    "top_mosaic_09cm_area2_y01_x00.tif",
+    "top_mosaic_09cm_area2_y01_x01.tif",
+    "top_mosaic_09cm_area2_y01_x02.tif",
+    "top_mosaic_09cm_area2_y02_x00.tif",
+    "top_mosaic_09cm_area2_y02_x01.tif",
+    "top_mosaic_09cm_area2_y02_x02.tif",
+    "top_mosaic_09cm_area31_y00_x00.tif",
+    "top_mosaic_09cm_area31_y00_x01.tif",
+    "top_mosaic_09cm_area31_y01_x00.tif",
+    "top_mosaic_09cm_area31_y01_x01.tif",
+    "top_mosaic_09cm_area31_y02_x00.tif",
+    "top_mosaic_09cm_area31_y02_x01.tif",
+    "top_mosaic_09cm_area33_y00_x00.tif",
+    "top_mosaic_09cm_area33_y00_x01.tif",
+    "top_mosaic_09cm_area33_y01_x00.tif",
+    "top_mosaic_09cm_area33_y01_x01.tif",
+    "top_mosaic_09cm_area33_y02_x00.tif",
+    "top_mosaic_09cm_area33_y02_x01.tif",
+    "top_mosaic_09cm_area35_y00_x00.tif",
+    "top_mosaic_09cm_area35_y00_x01.tif",
+    "top_mosaic_09cm_area35_y00_x02.tif",
+    "top_mosaic_09cm_area35_y01_x00.tif",
+    "top_mosaic_09cm_area35_y01_x01.tif",
+    "top_mosaic_09cm_area35_y01_x02.tif",
+    "top_mosaic_09cm_area38_y00_x00.tif",
+    "top_mosaic_09cm_area38_y00_x01.tif",
+    "top_mosaic_09cm_area38_y00_x02.tif",
+    "top_mosaic_09cm_area38_y00_x03.tif",
+    "top_mosaic_09cm_area38_y01_x00.tif",
+    "top_mosaic_09cm_area38_y01_x01.tif",
+    "top_mosaic_09cm_area38_y01_x02.tif",
+    "top_mosaic_09cm_area38_y01_x03.tif",
+    "top_mosaic_09cm_area38_y02_x00.tif",
+    "top_mosaic_09cm_area38_y02_x01.tif",
+    "top_mosaic_09cm_area38_y02_x02.tif",
+    "top_mosaic_09cm_area38_y02_x03.tif",
+    "top_mosaic_09cm_area4_y00_x00.tif",
+    "top_mosaic_09cm_area4_y00_x01.tif",
+    "top_mosaic_09cm_area4_y01_x00.tif",
+    "top_mosaic_09cm_area4_y01_x01.tif",
+    "top_mosaic_09cm_area4_y02_x00.tif",
+    "top_mosaic_09cm_area4_y02_x01.tif",
+    "top_mosaic_09cm_area6_y00_x00.tif",
+    "top_mosaic_09cm_area6_y00_x01.tif",
+    "top_mosaic_09cm_area6_y01_x00.tif",
+    "top_mosaic_09cm_area6_y01_x01.tif",
+    "top_mosaic_09cm_area6_y02_x00.tif",
+    "top_mosaic_09cm_area6_y02_x01.tif",
+    "top_mosaic_09cm_area8_y00_x00.tif",
+    "top_mosaic_09cm_area8_y00_x01.tif",
+    "top_mosaic_09cm_area8_y01_x00.tif",
+    "top_mosaic_09cm_area8_y01_x01.tif",
+    "top_mosaic_09cm_area8_y02_x00.tif",
+    "top_mosaic_09cm_area8_y02_x01.tif"
+  ],
+  "shard_index": 0,
+  "num_shards": 1,
+  "methods": [
+    "retained__g0",
+    "retained__g0.25",
+    "retained__g0.5",
+    "retained__g0.75",
+    "retained__g1",
+    "retained__g1.5",
+    "retained__g2",
+    "retained__g3",
+    "canonical__g0",
+    "canonical__g0.25",
+    "canonical__g0.5",
+    "canonical__g0.75",
+    "canonical__g1",
+    "canonical__g1.5",
+    "canonical__g2",
+    "canonical__g3",
+    "count_normalized__g0",
+    "count_normalized__g0.25",
+    "count_normalized__g0.5",
+    "count_normalized__g0.75",
+    "count_normalized__g1",
+    "count_normalized__g1.5",
+    "count_normalized__g2",
+    "count_normalized__g3",
+    "retained__equal_mean",
+    "retained__wide",
+    "canonical__equal_mean",
+    "canonical__wide",
+    "count_normalized__equal_mean",
+    "count_normalized__wide"
+  ],
+  "gains": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.5,
+    2.0,
+    3.0
+  ],
+  "alias_modes": [
+    "retained",
+    "canonical",
+    "count_normalized"
+  ],
+  "profile": {
+    "bank": "kev40_imagenet",
+    "strength": "original",
+    "coupling": 0.25,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "vaihingen",
+    "family": "remote_sensing",
+    "total_images": 113,
+    "background_index": null,
+    "vocabulary": "../vocabularies/vaihingen.json",
+    "profile": {
+      "bank": "kev40_imagenet",
+      "strength": "original",
+      "coupling": 0.25,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.0,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "e7be4d13aca30e7424be10c37a458e489a82ec1a1de142866a9cbda40349745a",
+  "class_names": [
+    "impervious surface",
+    "building",
+    "low vegetation",
+    "tree",
+    "car"
+  ],
+  "diagnostics": {
+    "retained": {
+      "displacement_energy": 29144638.336805347,
+      "correction_energy": 7029245.747453975,
+      "patches": 462848
+    },
+    "canonical": {
+      "displacement_energy": 3340858.219899638,
+      "correction_energy": 717891.7893368839,
+      "patches": 462848
+    },
+    "count_normalized": {
+      "displacement_energy": 3098081.3497757837,
+      "correction_energy": 663527.2051952169,
+      "patches": 462848
+    }
+  },
+  "alias_counts": [
+    16,
+    16,
+    17,
+    12,
+    8
+  ],
+  "residual_concepts": 0,
+  "metrics": {
+    "retained__g0": {
+      "mean_iou_percent": 58.05833414355532,
+      "confusion_matrix": [
+        [
+          26907380,
+          2490382,
+          170788,
+          1067391,
+          1241425
+        ],
+        [
+          2124816,
+          26812835,
+          348402,
+          201732,
+          25294
+        ],
+        [
+          6224577,
+          3311971,
+          10369819,
+          3899661,
+          200965
+        ],
+        [
+          1682662,
+          850215,
+          1486844,
+          21075294,
+          76681
+        ],
+        [
+          116382,
+          46359,
+          695,
+          8630,
+          1290421
+        ]
+      ]
+    },
+    "retained__g0.25": {
+      "mean_iou_percent": 58.80183196178894,
+      "confusion_matrix": [
+        [
+          27277038,
+          2898016,
+          93599,
+          801632,
+          807081
+        ],
+        [
+          1035872,
+          28092322,
+          230454,
+          141171,
+          13260
+        ],
+        [
+          6784056,
+          4052841,
+          9416497,
+          3637755,
+          115844
+        ],
+        [
+          1971192,
+          1135711,
+          1224437,
+          20790571,
+          49785
+        ],
+        [
+          231618,
+          57635,
+          241,
+          7509,
+          1165484
+        ]
+      ]
+    },
+    "retained__g0.5": {
+      "mean_iou_percent": 57.5554275445416,
+      "confusion_matrix": [
+        [
+          27371586,
+          3300202,
+          56426,
+          619006,
+          530146
+        ],
+        [
+          574755,
+          28709461,
+          119013,
+          100885,
+          8965
+        ],
+        [
+          7233175,
+          4875543,
+          8529784,
+          3296403,
+          72088
+        ],
+        [
+          2251039,
+          1559221,
+          1022784,
+          20308074,
+          30578
+        ],
+        [
+          399899,
+          73109,
+          109,
+          6490,
+          982880
+        ]
+      ]
+    },
+    "retained__g0.75": {
+      "mean_iou_percent": 54.97315679808332,
+      "confusion_matrix": [
+        [
+          27339322,
+          3658711,
+          39720,
+          494028,
+          345585
+        ],
+        [
+          421688,
+          28959859,
+          51595,
+          72980,
+          6957
+        ],
+        [
+          7419984,
+          5760370,
+          7784120,
+          2997359,
+          45160
+        ],
+        [
+          2493883,
+          2109388,
+          869580,
+          19680509,
+          18336
+        ],
+        [
+          595882,
+          92033,
+          21,
+          5357,
+          769194
+        ]
+      ]
+    },
+    "retained__g1": {
+      "mean_iou_percent": 51.82636065673416,
+      "confusion_matrix": [
+        [
+          27212332,
+          3999418,
+          30034,
+          409356,
+          226226
+        ],
+        [
+          357072,
+          29074609,
+          20452,
+          54977,
+          5969
+        ],
+        [
+          7417500,
+          6635313,
+          7178296,
+          2746938,
+          28946
+        ],
+        [
+          2707543,
+          2723770,
+          759712,
+          18969914,
+          10757
+        ],
+        [
+          782021,
+          109601,
+          0,
+          4414,
+          566451
+        ]
+      ]
+    },
+    "retained__g1.5": {
+      "mean_iou_percent": 46.364811944740566,
+      "confusion_matrix": [
+        [
+          26820838,
+          4612420,
+          19894,
+          316873,
+          107341
+        ],
+        [
+          287197,
+          29184285,
+          1583,
+          36534,
+          3480
+        ],
+        [
+          7146805,
+          8209159,
+          6269882,
+          2366139,
+          15008
+        ],
+        [
+          3023825,
+          3918039,
+          639579,
+          17585659,
+          4594
+        ],
+        [
+          1031641,
+          131597,
+          0,
+          2998,
+          296251
+        ]
+      ]
+    },
+    "retained__g2": {
+      "mean_iou_percent": 42.698876818165786,
+      "confusion_matrix": [
+        [
+          26436958,
+          5103695,
+          15849,
+          266371,
+          54493
+        ],
+        [
+          255749,
+          29228856,
+          144,
+          27288,
+          1042
+        ],
+        [
+          6842239,
+          9357356,
+          5666567,
+          2132479,
+          8352
+        ],
+        [
+          3267777,
+          4961717,
+          580053,
+          16360260,
+          1889
+        ],
+        [
+          1151797,
+          144975,
+          0,
+          2015,
+          163700
+        ]
+      ]
+    },
+    "retained__g3": {
+      "mean_iou_percent": 38.64618981994398,
+      "confusion_matrix": [
+        [
+          25806784,
+          5817189,
+          14341,
+          217503,
+          21549
+        ],
+        [
+          224976,
+          29268706,
+          41,
+          19356,
+          0
+        ],
+        [
+          6422030,
+          10722016,
+          4979812,
+          1879425,
+          3710
+        ],
+        [
+          3658250,
+          6439713,
+          535487,
+          14538133,
+          113
+        ],
+        [
+          1225480,
+          166711,
+          0,
+          1193,
+          69103
+        ]
+      ]
+    },
+    "canonical__g0": {
+      "mean_iou_percent": 30.621908085907734,
+      "confusion_matrix": [
+        [
+          29178970,
+          1455369,
+          25485,
+          340157,
+          877385
+        ],
+        [
+          19023695,
+          10365201,
+          72817,
+          40538,
+          10828
+        ],
+        [
+          20676578,
+          808888,
+          1109419,
+          1323176,
+          88932
+        ],
+        [
+          11675092,
+          126131,
+          246267,
+          13113194,
+          11012
+        ],
+        [
+          621396,
+          40232,
+          32,
+          3616,
+          797211
+        ]
+      ]
+    },
+    "canonical__g0.25": {
+      "mean_iou_percent": 31.380812198974684,
+      "confusion_matrix": [
+        [
+          29187195,
+          1538621,
+          8362,
+          274743,
+          868445
+        ],
+        [
+          16576199,
+          12858108,
+          38945,
+          30929,
+          8898
+        ],
+        [
+          21201588,
+          816479,
+          402791,
+          1474361,
+          111774
+        ],
+        [
+          11487276,
+          125129,
+          50118,
+          13499443,
+          9730
+        ],
+        [
+          695484,
+          41647,
+          0,
+          2986,
+          722370
+        ]
+      ]
+    },
+    "canonical__g0.5": {
+      "mean_iou_percent": 32.32052894586959,
+      "confusion_matrix": [
+        [
+          29065229,
+          1688261,
+          2579,
+          240191,
+          881106
+        ],
+        [
+          14120214,
+          15343170,
+          17989,
+          23686,
+          8020
+        ],
+        [
+          21294223,
+          871754,
+          140498,
+          1549326,
+          151192
+        ],
+        [
+          11325780,
+          132904,
+          7714,
+          13694921,
+          10377
+        ],
+        [
+          764362,
+          40114,
+          0,
+          2651,
+          655360
+        ]
+      ]
+    },
+    "canonical__g0.75": {
+      "mean_iou_percent": 32.98303778376561,
+      "confusion_matrix": [
+        [
+          28837788,
+          1890490,
+          925,
+          230035,
+          918128
+        ],
+        [
+          12058536,
+          17421016,
+          6429,
+          19655,
+          7443
+        ],
+        [
+          21172731,
+          953077,
+          45484,
+          1649298,
+          186403
+        ],
+        [
+          11246150,
+          150006,
+          420,
+          13762329,
+          12791
+        ],
+        [
+          822166,
+          42741,
+          0,
+          2403,
+          595177
+        ]
+      ]
+    },
+    "canonical__g1": {
+      "mean_iou_percent": 33.08971224004186,
+      "confusion_matrix": [
+        [
+          28502673,
+          2145765,
+          233,
+          236453,
+          992242
+        ],
+        [
+          10709345,
+          18777483,
+          1515,
+          17919,
+          6817
+        ],
+        [
+          20945213,
+          1042351,
+          13451,
+          1777175,
+          228803
+        ],
+        [
+          11210978,
+          178027,
+          0,
+          13766450,
+          16241
+        ],
+        [
+          868073,
+          49048,
+          0,
+          2186,
+          543180
+        ]
+      ]
+    },
+    "canonical__g1.5": {
+      "mean_iou_percent": 32.667767652006106,
+      "confusion_matrix": [
+        [
+          27719195,
+          2688553,
+          0,
+          278471,
+          1191147
+        ],
+        [
+          9157750,
+          20334202,
+          20,
+          15625,
+          5482
+        ],
+        [
+          20377105,
+          1272780,
+          1349,
+          2048326,
+          307433
+        ],
+        [
+          11171009,
+          252633,
+          0,
+          13722495,
+          25559
+        ],
+        [
+          930852,
+          63399,
+          0,
+          2087,
+          466149
+        ]
+      ]
+    },
+    "canonical__g2": {
+      "mean_iou_percent": 32.039791844034816,
+      "confusion_matrix": [
+        [
+          26914704,
+          3229294,
+          0,
+          332434,
+          1400934
+        ],
+        [
+          8290402,
+          21201680,
+          0,
+          15791,
+          5206
+        ],
+        [
+          19765616,
+          1533174,
+          113,
+          2345259,
+          362831
+        ],
+        [
+          11135841,
+          347749,
+          0,
+          13651198,
+          36908
+        ],
+        [
+          957418,
+          85718,
+          0,
+          2289,
+          417062
+        ]
+      ]
+    },
+    "canonical__g3": {
+      "mean_iou_percent": 30.793717628505163,
+      "confusion_matrix": [
+        [
+          25442040,
+          4142429,
+          0,
+          433521,
+          1859376
+        ],
+        [
+          7340952,
+          22143532,
+          0,
+          16933,
+          11662
+        ],
+        [
+          18625308,
+          2058703,
+          0,
+          2883222,
+          439760
+        ],
+        [
+          11061349,
+          553108,
+          0,
+          13491559,
+          65680
+        ],
+        [
+          970173,
+          128784,
+          0,
+          2955,
+          360575
+        ]
+      ]
+    },
+    "count_normalized__g0": {
+      "mean_iou_percent": 58.05833414355532,
+      "confusion_matrix": [
+        [
+          26907380,
+          2490382,
+          170788,
+          1067391,
+          1241425
+        ],
+        [
+          2124816,
+          26812835,
+          348402,
+          201732,
+          25294
+        ],
+        [
+          6224577,
+          3311971,
+          10369819,
+          3899661,
+          200965
+        ],
+        [
+          1682662,
+          850215,
+          1486844,
+          21075294,
+          76681
+        ],
+        [
+          116382,
+          46359,
+          695,
+          8630,
+          1290421
+        ]
+      ]
+    },
+    "count_normalized__g0.25": {
+      "mean_iou_percent": 57.46560701408764,
+      "confusion_matrix": [
+        [
+          26875055,
+          2863470,
+          77370,
+          907641,
+          1153830
+        ],
+        [
+          1031176,
+          28077311,
+          222090,
+          161771,
+          20731
+        ],
+        [
+          6635594,
+          3989876,
+          8902190,
+          4227761,
+          251572
+        ],
+        [
+          1744816,
+          1054007,
+          959520,
+          21314976,
+          98377
+        ],
+        [
+          149199,
+          41295,
+          141,
+          6905,
+          1264947
+        ]
+      ]
+    },
+    "count_normalized__g0.5": {
+      "mean_iou_percent": 55.83758748399518,
+      "confusion_matrix": [
+        [
+          26714473,
+          3242202,
+          39626,
+          791206,
+          1089859
+        ],
+        [
+          564640,
+          28687760,
+          108665,
+          132200,
+          19814
+        ],
+        [
+          6872712,
+          4723153,
+          7683781,
+          4387775,
+          339572
+        ],
+        [
+          1788466,
+          1329048,
+          646777,
+          21270194,
+          137211
+        ],
+        [
+          192395,
+          47245,
+          6,
+          5737,
+          1217104
+        ]
+      ]
+    },
+    "count_normalized__g0.75": {
+      "mean_iou_percent": 53.87245060228921,
+      "confusion_matrix": [
+        [
+          26505924,
+          3580711,
+          24559,
+          710080,
+          1056092
+        ],
+        [
+          409396,
+          28924828,
+          45007,
+          109962,
+          23886
+        ],
+        [
+          6834368,
+          5496092,
+          6765940,
+          4474036,
+          436557
+        ],
+        [
+          1820656,
+          1649012,
+          460987,
+          21049956,
+          191085
+        ],
+        [
+          244772,
+          53777,
+          0,
+          4850,
+          1159088
+        ]
+      ]
+    },
+    "count_normalized__g1": {
+      "mean_iou_percent": 51.934429477165644,
+      "confusion_matrix": [
+        [
+          26257419,
+          3901311,
+          16431,
+          650388,
+          1051817
+        ],
+        [
+          346890,
+          29027438,
+          16007,
+          93321,
+          29423
+        ],
+        [
+          6623456,
+          6250700,
+          6095195,
+          4500497,
+          537145
+        ],
+        [
+          1846130,
+          1988705,
+          360799,
+          20726592,
+          249470
+        ],
+        [
+          299872,
+          61931,
+          0,
+          4285,
+          1096399
+        ]
+      ]
+    },
+    "count_normalized__g1.5": {
+      "mean_iou_percent": 48.45628441704897,
+      "confusion_matrix": [
+        [
+          25701174,
+          4479329,
+          9087,
+          582587,
+          1105189
+        ],
+        [
+          275166,
+          29126842,
+          953,
+          70753,
+          39365
+        ],
+        [
+          6074944,
+          7570654,
+          5179614,
+          4466549,
+          715232
+        ],
+        [
+          1879374,
+          2663156,
+          266771,
+          19973271,
+          389124
+        ],
+        [
+          419770,
+          79214,
+          0,
+          3587,
+          959916
+        ]
+      ]
+    },
+    "count_normalized__g2": {
+      "mean_iou_percent": 45.72710117289948,
+      "confusion_matrix": [
+        [
+          25160513,
+          4938084,
+          6120,
+          554445,
+          1218204
+        ],
+        [
+          239874,
+          29162977,
+          21,
+          60383,
+          49824
+        ],
+        [
+          5605632,
+          8469895,
+          4641521,
+          4404130,
+          885815
+        ],
+        [
+          1918691,
+          3240421,
+          219255,
+          19250707,
+          542622
+        ],
+        [
+          530164,
+          95345,
+          0,
+          3265,
+          833713
+        ]
+      ]
+    },
+    "count_normalized__g3": {
+      "mean_iou_percent": 42.20934257449011,
+      "confusion_matrix": [
+        [
+          24211914,
+          5574785,
+          5853,
+          523952,
+          1560862
+        ],
+        [
+          204073,
+          29191630,
+          20,
+          49278,
+          68078
+        ],
+        [
+          5000647,
+          9465276,
+          4084613,
+          4269424,
+          1187033
+        ],
+        [
+          2002656,
+          4092316,
+          181020,
+          18051642,
+          844062
+        ],
+        [
+          660544,
+          120000,
+          0,
+          3304,
+          678639
+        ]
+      ]
+    },
+    "retained__equal_mean": {
+      "mean_iou_percent": 50.92888143001721,
+      "confusion_matrix": [
+        [
+          27189753,
+          4070267,
+          28599,
+          374874,
+          213873
+        ],
+        [
+          368892,
+          29076459,
+          12776,
+          49342,
+          5610
+        ],
+        [
+          7434342,
+          6659458,
+          7167797,
+          2719195,
+          26201
+        ],
+        [
+          2781636,
+          2692638,
+          748223,
+          18939535,
+          9664
+        ],
+        [
+          853907,
+          114155,
+          0,
+          4037,
+          490388
+        ]
+      ]
+    },
+    "retained__wide": {
+      "mean_iou_percent": 42.677711946360795,
+      "confusion_matrix": [
+        [
+          26368871,
+          5156417,
+          23480,
+          254594,
+          74004
+        ],
+        [
+          295585,
+          29193608,
+          72,
+          23223,
+          591
+        ],
+        [
+          6946293,
+          9135278,
+          5766259,
+          2150895,
+          8268
+        ],
+        [
+          3512305,
+          4635247,
+          605315,
+          16417475,
+          1354
+        ],
+        [
+          1153358,
+          149637,
+          0,
+          1758,
+          157734
+        ]
+      ]
+    },
+    "canonical__equal_mean": {
+      "mean_iou_percent": 33.351302991504525,
+      "confusion_matrix": [
+        [
+          28582963,
+          2095467,
+          0,
+          226200,
+          972736
+        ],
+        [
+          10432553,
+          19060216,
+          133,
+          13894,
+          6283
+        ],
+        [
+          20958814,
+          1041812,
+          1111,
+          1775717,
+          229539
+        ],
+        [
+          10970317,
+          185038,
+          0,
+          14000003,
+          16338
+        ],
+        [
+          890142,
+          52156,
+          0,
+          2554,
+          517635
+        ]
+      ]
+    },
+    "canonical__wide": {
+      "mean_iou_percent": 32.23555964873429,
+      "confusion_matrix": [
+        [
+          26810646,
+          3250689,
+          0,
+          360488,
+          1455543
+        ],
+        [
+          8048493,
+          21444288,
+          0,
+          15302,
+          4996
+        ],
+        [
+          19501342,
+          1653034,
+          0,
+          2452373,
+          400244
+        ],
+        [
+          10704475,
+          387109,
+          0,
+          14034711,
+          45401
+        ],
+        [
+          958306,
+          99288,
+          0,
+          3774,
+          401119
+        ]
+      ]
+    },
+    "count_normalized__equal_mean": {
+      "mean_iou_percent": 51.175531517170384,
+      "confusion_matrix": [
+        [
+          26209715,
+          3971447,
+          15504,
+          615462,
+          1065238
+        ],
+        [
+          357020,
+          29025133,
+          8759,
+          92610,
+          29557
+        ],
+        [
+          6583893,
+          6285935,
+          6035729,
+          4546885,
+          554551
+        ],
+        [
+          1912419,
+          2024050,
+          349717,
+          20622347,
+          263163
+        ],
+        [
+          367871,
+          69436,
+          0,
+          4272,
+          1020908
+        ]
+      ]
+    },
+    "count_normalized__wide": {
+      "mean_iou_percent": 44.712979740388484,
+      "confusion_matrix": [
+        [
+          24942628,
+          4973992,
+          8942,
+          553314,
+          1398490
+        ],
+        [
+          273819,
+          29117944,
+          28,
+          63476,
+          57812
+        ],
+        [
+          5610088,
+          8272545,
+          4652301,
+          4455768,
+          1016291
+        ],
+        [
+          2112024,
+          3169999,
+          226226,
+          19072215,
+          591232
+        ],
+        [
+          611280,
+          102132,
+          0,
+          4236,
+          744839
+        ]
+      ]
+    }
+  },
+  "masks_used_only_for_scoring": true,
+  "both_modules_active": true,
+  "wall_seconds": 63.317503072787076
+}

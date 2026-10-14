@@ -1,0 +1,2959 @@
+{
+  "status": "complete",
+  "datasets": {
+    "vdd": {
+      "dataset": "vdd",
+      "images": 80,
+      "methods": [
+        "retained__g0",
+        "retained__g0.25",
+        "retained__g0.5",
+        "retained__g0.75",
+        "retained__g1",
+        "retained__g1.5",
+        "retained__g2",
+        "retained__g3",
+        "canonical__g0",
+        "canonical__g0.25",
+        "canonical__g0.5",
+        "canonical__g0.75",
+        "canonical__g1",
+        "canonical__g1.5",
+        "canonical__g2",
+        "canonical__g3",
+        "count_normalized__g0",
+        "count_normalized__g0.25",
+        "count_normalized__g0.5",
+        "count_normalized__g0.75",
+        "count_normalized__g1",
+        "count_normalized__g1.5",
+        "count_normalized__g2",
+        "count_normalized__g3",
+        "retained__equal_mean",
+        "retained__wide",
+        "canonical__equal_mean",
+        "canonical__wide",
+        "count_normalized__equal_mean",
+        "count_normalized__wide"
+      ],
+      "metrics": {
+        "retained__g0": 50.94341715650362,
+        "retained__g0.25": 54.889814891335085,
+        "retained__g0.5": 58.03667418445573,
+        "retained__g0.75": 59.545697929058605,
+        "retained__g1": 59.97812406040286,
+        "retained__g1.5": 58.99071241517662,
+        "retained__g2": 57.90780038254512,
+        "retained__g3": 55.64045819094288,
+        "canonical__g0": 40.04215113274624,
+        "canonical__g0.25": 40.675230115600606,
+        "canonical__g0.5": 40.66138265579685,
+        "canonical__g0.75": 39.54562827367353,
+        "canonical__g1": 38.49202657494027,
+        "canonical__g1.5": 36.946131788657496,
+        "canonical__g2": 36.01168924209395,
+        "canonical__g3": 34.655190073219,
+        "count_normalized__g0": 50.94341715650362,
+        "count_normalized__g0.25": 53.15502085193904,
+        "count_normalized__g0.5": 53.25956463207727,
+        "count_normalized__g0.75": 52.43365398029378,
+        "count_normalized__g1": 51.30338519200445,
+        "count_normalized__g1.5": 49.24884948897227,
+        "count_normalized__g2": 47.94628085064655,
+        "count_normalized__g3": 46.19625726425731,
+        "retained__equal_mean": 59.59181615520406,
+        "retained__wide": 57.06481460479499,
+        "canonical__equal_mean": 38.387060294926656,
+        "canonical__wide": 35.942365008446885,
+        "count_normalized__equal_mean": 51.131551625654446,
+        "count_normalized__wide": 47.61813574179799
+      },
+      "class_names": [
+        "other",
+        "wall",
+        "road",
+        "vegetation",
+        "vehicle",
+        "roof",
+        "water"
+      ],
+      "alias_counts": [
+        2.0,
+        1.0,
+        1.0,
+        2.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "alias_mean": 1.2857142857142858,
+      "alias_count_cv": 0.35136418446315326,
+      "residual_concepts": 0,
+      "diagnostics": {
+        "retained": {
+          "displacement_energy": 3785319.855022157,
+          "correction_energy": 839633.1209263859,
+          "patches": 327680,
+          "correction_to_displacement_energy": 0.22181299152630554
+        },
+        "canonical": {
+          "displacement_energy": 2301008.2421383774,
+          "correction_energy": 485718.3494429105,
+          "patches": 327680,
+          "correction_to_displacement_energy": 0.2110893566341691
+        },
+        "count_normalized": {
+          "displacement_energy": 2716226.052165671,
+          "correction_energy": 583097.5495420651,
+          "patches": 327680,
+          "correction_to_displacement_energy": 0.21467195231308395
+        }
+      },
+      "audit": {
+        "exact_authoritative_split_order": true,
+        "all_shards_complete": true,
+        "per_image_sufficient_statistics_verified": true,
+        "identical_target_support": true,
+        "count_normalized_local_endpoint_identical": true
+      }
+    },
+    "potsdam": {
+      "dataset": "potsdam",
+      "images": 504,
+      "methods": [
+        "retained__g0",
+        "retained__g0.25",
+        "retained__g0.5",
+        "retained__g0.75",
+        "retained__g1",
+        "retained__g1.5",
+        "retained__g2",
+        "retained__g3",
+        "canonical__g0",
+        "canonical__g0.25",
+        "canonical__g0.5",
+        "canonical__g0.75",
+        "canonical__g1",
+        "canonical__g1.5",
+        "canonical__g2",
+        "canonical__g3",
+        "count_normalized__g0",
+        "count_normalized__g0.25",
+        "count_normalized__g0.5",
+        "count_normalized__g0.75",
+        "count_normalized__g1",
+        "count_normalized__g1.5",
+        "count_normalized__g2",
+        "count_normalized__g3",
+        "retained__equal_mean",
+        "retained__wide",
+        "canonical__equal_mean",
+        "canonical__wide",
+        "count_normalized__equal_mean",
+        "count_normalized__wide"
+      ],
+      "metrics": {
+        "retained__g0": 38.28736023932598,
+        "retained__g0.25": 48.76786903551903,
+        "retained__g0.5": 54.43845378951523,
+        "retained__g0.75": 54.47242565326456,
+        "retained__g1": 51.86436746786743,
+        "retained__g1.5": 46.39007634402915,
+        "retained__g2": 42.673427478724605,
+        "retained__g3": 38.434953370355565,
+        "canonical__g0": 38.740296854669424,
+        "canonical__g0.25": 42.667763125310884,
+        "canonical__g0.5": 43.672327008924114,
+        "canonical__g0.75": 43.23348620153933,
+        "canonical__g1": 42.36100912648049,
+        "canonical__g1.5": 40.595361347892236,
+        "canonical__g2": 38.93600346833288,
+        "canonical__g3": 36.68767751266079,
+        "count_normalized__g0": 38.28736023932598,
+        "count_normalized__g0.25": 43.056918865460304,
+        "count_normalized__g0.5": 45.09337271172487,
+        "count_normalized__g0.75": 45.72675618016049,
+        "count_normalized__g1": 45.489799510129075,
+        "count_normalized__g1.5": 44.34942095224337,
+        "count_normalized__g2": 43.03438097640051,
+        "count_normalized__g3": 40.972912332456765,
+        "retained__equal_mean": 51.564229240340396,
+        "retained__wide": 42.761887854806,
+        "canonical__equal_mean": 42.65163326091284,
+        "canonical__wide": 39.316096479534615,
+        "count_normalized__equal_mean": 45.706161922350724,
+        "count_normalized__wide": 43.13501372289847
+      },
+      "class_names": [
+        "impervious surface",
+        "building",
+        "low vegetation",
+        "tree",
+        "car",
+        "clutter"
+      ],
+      "alias_counts": [
+        2.0,
+        1.0,
+        4.0,
+        2.0,
+        1.0,
+        1.0
+      ],
+      "alias_mean": 1.8333333333333333,
+      "alias_count_cv": 0.5821022034029862,
+      "residual_concepts": 0,
+      "diagnostics": {
+        "retained": {
+          "displacement_energy": 38978686.66297092,
+          "correction_energy": 9033935.240098594,
+          "patches": 2064384,
+          "correction_to_displacement_energy": 0.23176602429451978
+        },
+        "canonical": {
+          "displacement_energy": 21974123.40996922,
+          "correction_energy": 4891180.132950466,
+          "patches": 2064384,
+          "correction_to_displacement_energy": 0.22258817981933401
+        },
+        "count_normalized": {
+          "displacement_energy": 23155102.510512047,
+          "correction_energy": 5193133.6203409685,
+          "patches": 2064384,
+          "correction_to_displacement_energy": 0.2242759935087037
+        }
+      },
+      "audit": {
+        "exact_authoritative_split_order": true,
+        "all_shards_complete": true,
+        "per_image_sufficient_statistics_verified": true,
+        "identical_target_support": true,
+        "count_normalized_local_endpoint_identical": true
+      }
+    },
+    "udd5": {
+      "dataset": "udd5",
+      "images": 40,
+      "methods": [
+        "retained__g0",
+        "retained__g0.25",
+        "retained__g0.5",
+        "retained__g0.75",
+        "retained__g1",
+        "retained__g1.5",
+        "retained__g2",
+        "retained__g3",
+        "canonical__g0",
+        "canonical__g0.25",
+        "canonical__g0.5",
+        "canonical__g0.75",
+        "canonical__g1",
+        "canonical__g1.5",
+        "canonical__g2",
+        "canonical__g3",
+        "count_normalized__g0",
+        "count_normalized__g0.25",
+        "count_normalized__g0.5",
+        "count_normalized__g0.75",
+        "count_normalized__g1",
+        "count_normalized__g1.5",
+        "count_normalized__g2",
+        "count_normalized__g3",
+        "retained__equal_mean",
+        "retained__wide",
+        "canonical__equal_mean",
+        "canonical__wide",
+        "count_normalized__equal_mean",
+        "count_normalized__wide"
+      ],
+      "metrics": {
+        "retained__g0": 51.16510317532732,
+        "retained__g0.25": 54.428284166489426,
+        "retained__g0.5": 55.256690918556274,
+        "retained__g0.75": 51.631777971564716,
+        "retained__g1": 43.12124770109748,
+        "retained__g1.5": 30.799123016285524,
+        "retained__g2": 22.337798741466877,
+        "retained__g3": 15.576978092003868,
+        "canonical__g0": 53.138655882564834,
+        "canonical__g0.25": 52.14340768974953,
+        "canonical__g0.5": 49.531453658043446,
+        "canonical__g0.75": 46.2829011705533,
+        "canonical__g1": 42.56999863750546,
+        "canonical__g1.5": 35.78059508940134,
+        "canonical__g2": 30.77832198993051,
+        "canonical__g3": 25.110720690803532,
+        "count_normalized__g0": 51.16510317532732,
+        "count_normalized__g0.25": 49.9052423870837,
+        "count_normalized__g0.5": 48.00608313270377,
+        "count_normalized__g0.75": 45.88856752277568,
+        "count_normalized__g1": 43.727976924146496,
+        "count_normalized__g1.5": 39.9075490280134,
+        "count_normalized__g2": 36.61222237356974,
+        "count_normalized__g3": 31.94776567851655,
+        "retained__equal_mean": 42.574982862966415,
+        "retained__wide": 22.25366105988824,
+        "canonical__equal_mean": 42.29727170294936,
+        "canonical__wide": 29.897047425312838,
+        "count_normalized__equal_mean": 43.358961355629184,
+        "count_normalized__wide": 36.19572298528328
+      },
+      "class_names": [
+        "vegetation",
+        "building",
+        "road",
+        "vehicle",
+        "other"
+      ],
+      "alias_counts": [
+        7.0,
+        1.0,
+        2.0,
+        1.0,
+        20.0
+      ],
+      "alias_mean": 6.2,
+      "alias_count_cv": 1.1693270297027005,
+      "residual_concepts": 0,
+      "diagnostics": {
+        "retained": {
+          "displacement_energy": 3147882.1986215254,
+          "correction_energy": 701627.9277791207,
+          "patches": 139264,
+          "correction_to_displacement_energy": 0.22288887687295522
+        },
+        "canonical": {
+          "displacement_energy": 859300.7994435283,
+          "correction_energy": 161953.39115683277,
+          "patches": 139264,
+          "correction_to_displacement_energy": 0.18847112822624118
+        },
+        "count_normalized": {
+          "displacement_energy": 840529.1695646608,
+          "correction_energy": 159598.88142789627,
+          "patches": 139264,
+          "correction_to_displacement_energy": 0.1898790514439351
+        }
+      },
+      "audit": {
+        "exact_authoritative_split_order": true,
+        "all_shards_complete": true,
+        "per_image_sufficient_statistics_verified": true,
+        "identical_target_support": true,
+        "count_normalized_local_endpoint_identical": true
+      }
+    },
+    "oem": {
+      "dataset": "oem",
+      "images": 384,
+      "methods": [
+        "retained__g0",
+        "retained__g0.25",
+        "retained__g0.5",
+        "retained__g0.75",
+        "retained__g1",
+        "retained__g1.5",
+        "retained__g2",
+        "retained__g3",
+        "canonical__g0",
+        "canonical__g0.25",
+        "canonical__g0.5",
+        "canonical__g0.75",
+        "canonical__g1",
+        "canonical__g1.5",
+        "canonical__g2",
+        "canonical__g3",
+        "count_normalized__g0",
+        "count_normalized__g0.25",
+        "count_normalized__g0.5",
+        "count_normalized__g0.75",
+        "count_normalized__g1",
+        "count_normalized__g1.5",
+        "count_normalized__g2",
+        "count_normalized__g3",
+        "retained__equal_mean",
+        "retained__wide",
+        "canonical__equal_mean",
+        "canonical__wide",
+        "count_normalized__equal_mean",
+        "count_normalized__wide"
+      ],
+      "metrics": {
+        "retained__g0": 44.29471493129559,
+        "retained__g0.25": 44.73544999117129,
+        "retained__g0.5": 43.7090373736867,
+        "retained__g0.75": 41.85385395858741,
+        "retained__g1": 39.455014182540374,
+        "retained__g1.5": 34.07121327461626,
+        "retained__g2": 29.668372661649023,
+        "retained__g3": 24.02783758861635,
+        "canonical__g0": 34.688725666258115,
+        "canonical__g0.25": 35.7316857627687,
+        "canonical__g0.5": 34.60287596520183,
+        "canonical__g0.75": 32.55719775007916,
+        "canonical__g1": 30.24114535543947,
+        "canonical__g1.5": 25.236216802747286,
+        "canonical__g2": 21.702250403453434,
+        "canonical__g3": 17.4652106802209,
+        "count_normalized__g0": 44.29471493129559,
+        "count_normalized__g0.25": 44.73544999117129,
+        "count_normalized__g0.5": 43.709037420830015,
+        "count_normalized__g0.75": 41.853853925395704,
+        "count_normalized__g1": 39.455013754803055,
+        "count_normalized__g1.5": 34.07121400891229,
+        "count_normalized__g2": 29.668372623958163,
+        "count_normalized__g3": 24.02783762495617,
+        "retained__equal_mean": 38.702238024916355,
+        "retained__wide": 28.775122467160543,
+        "canonical__equal_mean": 29.940181690712997,
+        "canonical__wide": 20.949795896573853,
+        "count_normalized__equal_mean": 38.7022392613893,
+        "count_normalized__wide": 28.77512025817286
+      },
+      "class_names": [
+        "bareland",
+        "rangeland",
+        "developed space",
+        "road",
+        "tree",
+        "water",
+        "agriculture land",
+        "building"
+      ],
+      "alias_counts": [
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "alias_mean": 20.0,
+      "alias_count_cv": 0.0,
+      "residual_concepts": 0,
+      "diagnostics": {
+        "retained": {
+          "displacement_energy": 42808208.111762844,
+          "correction_energy": 8639003.299228894,
+          "patches": 1572864,
+          "correction_to_displacement_energy": 0.20180716923900086
+        },
+        "canonical": {
+          "displacement_energy": 68270150.95588318,
+          "correction_energy": 16321764.176016431,
+          "patches": 1572864,
+          "correction_to_displacement_energy": 0.2390761401210862
+        },
+        "count_normalized": {
+          "displacement_energy": 40329150.657149285,
+          "correction_energy": 9284687.333319759,
+          "patches": 1572864,
+          "correction_to_displacement_energy": 0.23022273422646036
+        }
+      },
+      "audit": {
+        "exact_authoritative_split_order": true,
+        "all_shards_complete": true,
+        "per_image_sufficient_statistics_verified": true,
+        "identical_target_support": true,
+        "count_normalized_local_endpoint_identical": true
+      }
+    },
+    "vaihingen": {
+      "dataset": "vaihingen",
+      "images": 113,
+      "methods": [
+        "retained__g0",
+        "retained__g0.25",
+        "retained__g0.5",
+        "retained__g0.75",
+        "retained__g1",
+        "retained__g1.5",
+        "retained__g2",
+        "retained__g3",
+        "canonical__g0",
+        "canonical__g0.25",
+        "canonical__g0.5",
+        "canonical__g0.75",
+        "canonical__g1",
+        "canonical__g1.5",
+        "canonical__g2",
+        "canonical__g3",
+        "count_normalized__g0",
+        "count_normalized__g0.25",
+        "count_normalized__g0.5",
+        "count_normalized__g0.75",
+        "count_normalized__g1",
+        "count_normalized__g1.5",
+        "count_normalized__g2",
+        "count_normalized__g3",
+        "retained__equal_mean",
+        "retained__wide",
+        "canonical__equal_mean",
+        "canonical__wide",
+        "count_normalized__equal_mean",
+        "count_normalized__wide"
+      ],
+      "metrics": {
+        "retained__g0": 58.05833414355532,
+        "retained__g0.25": 58.80183196178894,
+        "retained__g0.5": 57.5554275445416,
+        "retained__g0.75": 54.97315679808332,
+        "retained__g1": 51.82636065673416,
+        "retained__g1.5": 46.364811944740566,
+        "retained__g2": 42.698876818165786,
+        "retained__g3": 38.64618981994398,
+        "canonical__g0": 30.621908085907734,
+        "canonical__g0.25": 31.380812198974684,
+        "canonical__g0.5": 32.32052894586959,
+        "canonical__g0.75": 32.98303778376561,
+        "canonical__g1": 33.08971224004186,
+        "canonical__g1.5": 32.667767652006106,
+        "canonical__g2": 32.039791844034816,
+        "canonical__g3": 30.793717628505163,
+        "count_normalized__g0": 58.05833414355532,
+        "count_normalized__g0.25": 57.46560701408764,
+        "count_normalized__g0.5": 55.83758748399518,
+        "count_normalized__g0.75": 53.87245060228921,
+        "count_normalized__g1": 51.934429477165644,
+        "count_normalized__g1.5": 48.45628441704897,
+        "count_normalized__g2": 45.72710117289948,
+        "count_normalized__g3": 42.20934257449011,
+        "retained__equal_mean": 50.92888143001721,
+        "retained__wide": 42.677711946360795,
+        "canonical__equal_mean": 33.351302991504525,
+        "canonical__wide": 32.23555964873429,
+        "count_normalized__equal_mean": 51.175531517170384,
+        "count_normalized__wide": 44.712979740388484
+      },
+      "class_names": [
+        "impervious surface",
+        "building",
+        "low vegetation",
+        "tree",
+        "car"
+      ],
+      "alias_counts": [
+        16.0,
+        16.0,
+        17.0,
+        12.0,
+        8.0
+      ],
+      "alias_mean": 13.8,
+      "alias_count_cv": 0.24423622530945963,
+      "residual_concepts": 0,
+      "diagnostics": {
+        "retained": {
+          "displacement_energy": 29144638.336805347,
+          "correction_energy": 7029245.747453975,
+          "patches": 462848,
+          "correction_to_displacement_energy": 0.24118486790680405
+        },
+        "canonical": {
+          "displacement_energy": 3340858.219899638,
+          "correction_energy": 717891.7893368839,
+          "patches": 462848,
+          "correction_to_displacement_energy": 0.21488244698945946
+        },
+        "count_normalized": {
+          "displacement_energy": 3098081.3497757837,
+          "correction_energy": 663527.2051952169,
+          "patches": 462848,
+          "correction_to_displacement_energy": 0.2141735901296582
+        }
+      },
+      "audit": {
+        "exact_authoritative_split_order": true,
+        "all_shards_complete": true,
+        "per_image_sufficient_statistics_verified": true,
+        "identical_target_support": true,
+        "count_normalized_local_endpoint_identical": true
+      }
+    },
+    "context60": {
+      "dataset": "context60",
+      "images": 5105,
+      "methods": [
+        "retained__g0",
+        "retained__g0.25",
+        "retained__g0.5",
+        "retained__g0.75",
+        "retained__g1",
+        "retained__g1.5",
+        "retained__g2",
+        "retained__g3",
+        "canonical__g0",
+        "canonical__g0.25",
+        "canonical__g0.5",
+        "canonical__g0.75",
+        "canonical__g1",
+        "canonical__g1.5",
+        "canonical__g2",
+        "canonical__g3",
+        "count_normalized__g0",
+        "count_normalized__g0.25",
+        "count_normalized__g0.5",
+        "count_normalized__g0.75",
+        "count_normalized__g1",
+        "count_normalized__g1.5",
+        "count_normalized__g2",
+        "count_normalized__g3",
+        "retained__equal_mean",
+        "retained__wide",
+        "canonical__equal_mean",
+        "canonical__wide",
+        "count_normalized__equal_mean",
+        "count_normalized__wide"
+      ],
+      "metrics": {
+        "retained__g0": 31.65890647692101,
+        "retained__g0.25": 40.67466382160517,
+        "retained__g0.5": 44.14056438617347,
+        "retained__g0.75": 44.5928946688257,
+        "retained__g1": 44.078767215435946,
+        "retained__g1.5": 42.57432217399935,
+        "retained__g2": 40.889305631988634,
+        "retained__g3": 37.42947723360722,
+        "canonical__g0": 32.097255262696486,
+        "canonical__g0.25": 38.2242960796807,
+        "canonical__g0.5": 39.64193973405891,
+        "canonical__g0.75": 39.263216555729144,
+        "canonical__g1": 38.567721284489615,
+        "canonical__g1.5": 37.34075791024175,
+        "canonical__g2": 36.48344745003717,
+        "canonical__g3": 35.24191196969551,
+        "count_normalized__g0": 31.65890647692101,
+        "count_normalized__g0.25": 36.95618953054287,
+        "count_normalized__g0.5": 38.24726614304297,
+        "count_normalized__g0.75": 38.13558905430575,
+        "count_normalized__g1": 37.64862798223446,
+        "count_normalized__g1.5": 36.58598539155275,
+        "count_normalized__g2": 35.72267067468668,
+        "count_normalized__g3": 34.545118800789226,
+        "retained__equal_mean": 44.0181029390391,
+        "retained__wide": 40.82933475264031,
+        "canonical__equal_mean": 38.51564484063707,
+        "canonical__wide": 36.35830423578941,
+        "count_normalized__equal_mean": 37.67783785113939,
+        "count_normalized__wide": 35.7152845527451
+      },
+      "class_names": [
+        "background",
+        "aeroplane",
+        "bag",
+        "bed",
+        "bedclothes",
+        "bench",
+        "bicycle",
+        "bird",
+        "boat",
+        "book",
+        "bottle",
+        "building",
+        "bus",
+        "cabinet",
+        "car",
+        "cat",
+        "ceiling",
+        "chair",
+        "cloth",
+        "computer",
+        "cow",
+        "cup",
+        "curtain",
+        "dog",
+        "door",
+        "fence",
+        "floor",
+        "flower",
+        "food",
+        "grass",
+        "ground",
+        "horse",
+        "keyboard",
+        "light",
+        "motorbike",
+        "mountain",
+        "mouse",
+        "person",
+        "plate",
+        "platform",
+        "pottedplant",
+        "road",
+        "rock",
+        "sheep",
+        "shelves",
+        "sidewalk",
+        "sign",
+        "sky",
+        "snow",
+        "sofa",
+        "table",
+        "track",
+        "train",
+        "tree",
+        "truck",
+        "tvmonitor",
+        "wall",
+        "water",
+        "window",
+        "wood"
+      ],
+      "alias_counts": [
+        1.0,
+        1.0,
+        5.0,
+        6.0,
+        3.0,
+        4.0,
+        1.0,
+        1.0,
+        5.0,
+        3.0,
+        4.0,
+        8.0,
+        6.0,
+        4.0,
+        4.0,
+        3.0,
+        3.0,
+        4.0,
+        8.0,
+        2.0,
+        6.0,
+        3.0,
+        4.0,
+        1.0,
+        3.0,
+        5.0,
+        6.0,
+        2.0,
+        2.0,
+        21.0,
+        4.0,
+        1.0,
+        3.0,
+        2.0,
+        1.0,
+        20.0,
+        2.0,
+        18.0,
+        4.0,
+        3.0,
+        2.0,
+        4.0,
+        3.0,
+        3.0,
+        2.0,
+        4.0,
+        2.0,
+        7.0,
+        1.0,
+        4.0,
+        4.0,
+        2.0,
+        6.0,
+        6.0,
+        4.0,
+        4.0,
+        6.0,
+        9.0,
+        3.0,
+        1.0
+      ],
+      "alias_mean": 4.4,
+      "alias_count_cv": 0.9073847626216877,
+      "residual_concepts": 401,
+      "diagnostics": {
+        "retained": {
+          "displacement_energy": 3936163758.3033166,
+          "correction_energy": 929828598.7185372,
+          "patches": 20692992,
+          "correction_to_displacement_energy": 0.23622711244090613
+        },
+        "canonical": {
+          "displacement_energy": 1047966190.1142457,
+          "correction_energy": 226827298.56812617,
+          "patches": 20692992,
+          "correction_to_displacement_energy": 0.21644524480641714
+        },
+        "count_normalized": {
+          "displacement_energy": 994190087.7738156,
+          "correction_energy": 216233434.04936317,
+          "patches": 20692992,
+          "correction_to_displacement_energy": 0.2174970729526702
+        }
+      },
+      "audit": {
+        "exact_authoritative_split_order": true,
+        "all_shards_complete": true,
+        "per_image_sufficient_statistics_verified": true,
+        "identical_target_support": true,
+        "count_normalized_local_endpoint_identical": true
+      }
+    },
+    "ade150": {
+      "dataset": "ade150",
+      "images": 2000,
+      "methods": [
+        "retained__g0",
+        "retained__g0.25",
+        "retained__g0.5",
+        "retained__g0.75",
+        "retained__g1",
+        "retained__g1.5",
+        "retained__g2",
+        "retained__g3",
+        "canonical__g0",
+        "canonical__g0.25",
+        "canonical__g0.5",
+        "canonical__g0.75",
+        "canonical__g1",
+        "canonical__g1.5",
+        "canonical__g2",
+        "canonical__g3",
+        "count_normalized__g0",
+        "count_normalized__g0.25",
+        "count_normalized__g0.5",
+        "count_normalized__g0.75",
+        "count_normalized__g1",
+        "count_normalized__g1.5",
+        "count_normalized__g2",
+        "count_normalized__g3",
+        "retained__equal_mean",
+        "retained__wide",
+        "canonical__equal_mean",
+        "canonical__wide",
+        "count_normalized__equal_mean",
+        "count_normalized__wide"
+      ],
+      "metrics": {
+        "retained__g0": 27.847134542462253,
+        "retained__g0.25": 31.485097025323878,
+        "retained__g0.5": 30.701437519620008,
+        "retained__g0.75": 29.68121808100015,
+        "retained__g1": 28.87686227488867,
+        "retained__g1.5": 27.537874703950564,
+        "retained__g2": 26.611178206581208,
+        "retained__g3": 25.353327988922608,
+        "canonical__g0": 28.099020573947097,
+        "canonical__g0.25": 29.599074456106127,
+        "canonical__g0.5": 29.10977403587662,
+        "canonical__g0.75": 28.506400664930215,
+        "canonical__g1": 27.966983093678767,
+        "canonical__g1.5": 27.15235641271625,
+        "canonical__g2": 26.612323298402778,
+        "canonical__g3": 25.970528823741528,
+        "count_normalized__g0": 27.847134542462253,
+        "count_normalized__g0.25": 29.526580747885994,
+        "count_normalized__g0.5": 29.039993383636908,
+        "count_normalized__g0.75": 28.34702024197206,
+        "count_normalized__g1": 27.805059191297392,
+        "count_normalized__g1.5": 26.989883835389232,
+        "count_normalized__g2": 26.445031818113847,
+        "count_normalized__g3": 25.780396136072653,
+        "retained__equal_mean": 28.849169958994786,
+        "retained__wide": 26.634679665768203,
+        "canonical__equal_mean": 27.851192560756406,
+        "canonical__wide": 26.558044199036914,
+        "count_normalized__equal_mean": 27.69747686487648,
+        "count_normalized__wide": 26.40596958294944
+      },
+      "class_names": [
+        "wall",
+        "building",
+        "sky",
+        "floor",
+        "tree",
+        "ceiling",
+        "road",
+        "bed",
+        "windowpane",
+        "grass",
+        "cabinet",
+        "sidewalk",
+        "person",
+        "earth",
+        "door",
+        "table",
+        "mountain",
+        "plant",
+        "curtain",
+        "chair",
+        "car",
+        "water",
+        "painting",
+        "sofa",
+        "shelf",
+        "house",
+        "sea",
+        "mirror",
+        "rug",
+        "field",
+        "armchair",
+        "seat",
+        "fence",
+        "desk",
+        "rock",
+        "wardrobe",
+        "lamp",
+        "bathtub",
+        "railing",
+        "cushion",
+        "base",
+        "box",
+        "column",
+        "signboard",
+        "chest of drawers",
+        "counter",
+        "sand",
+        "sink",
+        "skyscraper",
+        "fireplace",
+        "refrigerator",
+        "grandstand",
+        "path",
+        "stairs",
+        "runway",
+        "case",
+        "pool table",
+        "pillow",
+        "screen door",
+        "stairway",
+        "river",
+        "bridge",
+        "bookcase",
+        "blind",
+        "coffee table",
+        "toilet",
+        "flower",
+        "book",
+        "hill",
+        "bench",
+        "countertop",
+        "stove",
+        "palm",
+        "kitchen island",
+        "computer",
+        "swivel chair",
+        "boat",
+        "bar",
+        "arcade machine",
+        "hovel",
+        "bus",
+        "towel",
+        "light",
+        "truck",
+        "tower",
+        "chandelier",
+        "awning",
+        "streetlight",
+        "booth",
+        "television receiver",
+        "airplane",
+        "dirt track",
+        "apparel",
+        "pole",
+        "land",
+        "bannister",
+        "escalator",
+        "ottoman",
+        "bottle",
+        "buffet",
+        "poster",
+        "stage",
+        "van",
+        "ship",
+        "fountain",
+        "conveyer belt",
+        "canopy",
+        "washer",
+        "plaything",
+        "swimming pool",
+        "stool",
+        "barrel",
+        "basket",
+        "waterfall",
+        "tent",
+        "bag",
+        "minibike",
+        "cradle",
+        "oven",
+        "ball",
+        "food",
+        "step",
+        "tank",
+        "trade name",
+        "microwave",
+        "pot",
+        "animal",
+        "bicycle",
+        "lake",
+        "dishwasher",
+        "screen",
+        "blanket",
+        "sculpture",
+        "hood",
+        "sconce",
+        "vase",
+        "traffic light",
+        "tray",
+        "ashcan",
+        "fan",
+        "pier",
+        "crt screen",
+        "plate",
+        "monitor",
+        "bulletin board",
+        "shower",
+        "radiator",
+        "glass",
+        "clock",
+        "flag"
+      ],
+      "alias_counts": [
+        5.0,
+        8.0,
+        9.0,
+        5.0,
+        6.0,
+        6.0,
+        4.0,
+        1.0,
+        4.0,
+        4.0,
+        4.0,
+        5.0,
+        18.0,
+        5.0,
+        5.0,
+        3.0,
+        4.0,
+        5.0,
+        4.0,
+        4.0,
+        4.0,
+        5.0,
+        3.0,
+        5.0,
+        3.0,
+        1.0,
+        4.0,
+        1.0,
+        4.0,
+        1.0,
+        3.0,
+        1.0,
+        4.0,
+        4.0,
+        4.0,
+        5.0,
+        4.0,
+        3.0,
+        3.0,
+        1.0,
+        3.0,
+        1.0,
+        3.0,
+        3.0,
+        3.0,
+        2.0,
+        4.0,
+        3.0,
+        1.0,
+        3.0,
+        3.0,
+        2.0,
+        1.0,
+        2.0,
+        1.0,
+        3.0,
+        3.0,
+        2.0,
+        2.0,
+        2.0,
+        4.0,
+        1.0,
+        1.0,
+        1.0,
+        2.0,
+        3.0,
+        1.0,
+        3.0,
+        2.0,
+        3.0,
+        1.0,
+        5.0,
+        4.0,
+        1.0,
+        4.0,
+        1.0,
+        4.0,
+        1.0,
+        1.0,
+        4.0,
+        4.0,
+        1.0,
+        2.0,
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        2.0,
+        5.0,
+        4.0,
+        4.0,
+        1.0,
+        5.0,
+        1.0,
+        1.0,
+        5.0,
+        2.0,
+        6.0,
+        4.0,
+        3.0,
+        3.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        3.0,
+        2.0,
+        2.0,
+        2.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        1.0,
+        2.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        2.0,
+        3.0,
+        2.0,
+        4.0,
+        3.0,
+        1.0,
+        3.0,
+        1.0,
+        2.0,
+        1.0,
+        3.0,
+        1.0,
+        3.0,
+        3.0,
+        1.0,
+        9.0,
+        1.0,
+        3.0,
+        3.0,
+        2.0,
+        4.0,
+        2.0,
+        1.0,
+        1.0,
+        1.0,
+        3.0,
+        1.0
+      ],
+      "alias_mean": 2.8866666666666667,
+      "alias_count_cv": 0.7060367634130645,
+      "residual_concepts": 0,
+      "diagnostics": {
+        "retained": {
+          "displacement_energy": 3586561300.0462136,
+          "correction_energy": 870690395.5319319,
+          "patches": 8120320,
+          "correction_to_displacement_energy": 0.2427646769959607
+        },
+        "canonical": {
+          "displacement_energy": 1293715667.2084305,
+          "correction_energy": 303013560.2648537,
+          "patches": 8120320,
+          "correction_to_displacement_energy": 0.2342195954994454
+        },
+        "count_normalized": {
+          "displacement_energy": 1238808490.8651638,
+          "correction_energy": 290044115.7596953,
+          "patches": 8120320,
+          "correction_to_displacement_energy": 0.23413152064943724
+        }
+      },
+      "audit": {
+        "exact_authoritative_split_order": true,
+        "all_shards_complete": true,
+        "per_image_sufficient_statistics_verified": true,
+        "identical_target_support": true,
+        "count_normalized_local_endpoint_identical": true
+      }
+    },
+    "voc20": {
+      "dataset": "voc20",
+      "images": 1449,
+      "methods": [
+        "retained__g0",
+        "retained__g0.25",
+        "retained__g0.5",
+        "retained__g0.75",
+        "retained__g1",
+        "retained__g1.5",
+        "retained__g2",
+        "retained__g3",
+        "canonical__g0",
+        "canonical__g0.25",
+        "canonical__g0.5",
+        "canonical__g0.75",
+        "canonical__g1",
+        "canonical__g1.5",
+        "canonical__g2",
+        "canonical__g3",
+        "count_normalized__g0",
+        "count_normalized__g0.25",
+        "count_normalized__g0.5",
+        "count_normalized__g0.75",
+        "count_normalized__g1",
+        "count_normalized__g1.5",
+        "count_normalized__g2",
+        "count_normalized__g3",
+        "retained__equal_mean",
+        "retained__wide",
+        "canonical__equal_mean",
+        "canonical__wide",
+        "count_normalized__equal_mean",
+        "count_normalized__wide"
+      ],
+      "metrics": {
+        "retained__g0": 83.08689630603553,
+        "retained__g0.25": 90.93074548522333,
+        "retained__g0.5": 92.5336809103553,
+        "retained__g0.75": 93.09599287954343,
+        "retained__g1": 93.28045727448774,
+        "retained__g1.5": 93.21385920519869,
+        "retained__g2": 93.01804509751632,
+        "retained__g3": 92.58514280276546,
+        "canonical__g0": 85.40724172093913,
+        "canonical__g0.25": 87.50845763445835,
+        "canonical__g0.5": 87.25519730642006,
+        "canonical__g0.75": 86.83252252408721,
+        "canonical__g1": 86.44641367666796,
+        "canonical__g1.5": 85.86859027677647,
+        "canonical__g2": 85.46712780006025,
+        "canonical__g3": 84.92278073102378,
+        "count_normalized__g0": 83.08689630603553,
+        "count_normalized__g0.25": 87.33631710407353,
+        "count_normalized__g0.5": 88.17046849382484,
+        "count_normalized__g0.75": 88.29080248677087,
+        "count_normalized__g1": 88.22767978145161,
+        "count_normalized__g1.5": 87.96479573543147,
+        "count_normalized__g2": 87.78944427823652,
+        "count_normalized__g3": 87.56721473852197,
+        "retained__equal_mean": 93.169852713049,
+        "retained__wide": 92.80692737261023,
+        "canonical__equal_mean": 86.33281736033828,
+        "canonical__wide": 85.30186983112777,
+        "count_normalized__equal_mean": 88.19630230367856,
+        "count_normalized__wide": 87.77429392381426
+      },
+      "class_names": [
+        "aeroplane",
+        "bicycle",
+        "bird",
+        "boat",
+        "bottle",
+        "bus",
+        "car",
+        "cat",
+        "chair",
+        "cow",
+        "diningtable",
+        "dog",
+        "horse",
+        "motorbike",
+        "person",
+        "pottedplant",
+        "sheep",
+        "sofa",
+        "train",
+        "tvmonitor"
+      ],
+      "alias_counts": [
+        4.0,
+        3.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        4.0,
+        4.0,
+        10.0,
+        7.0,
+        5.0,
+        4.0,
+        4.0,
+        3.0,
+        18.0,
+        5.0,
+        3.0,
+        5.0,
+        4.0,
+        6.0
+      ],
+      "alias_mean": 5.35,
+      "alias_count_cv": 0.6207042959745919,
+      "residual_concepts": 0,
+      "diagnostics": {
+        "retained": {
+          "displacement_energy": 694179507.3820491,
+          "correction_energy": 169315021.5647217,
+          "patches": 5863424,
+          "correction_to_displacement_energy": 0.24390668373841434
+        },
+        "canonical": {
+          "displacement_energy": 152912491.6437776,
+          "correction_energy": 35794714.76229273,
+          "patches": 5863424,
+          "correction_to_displacement_energy": 0.23408626971875848
+        },
+        "count_normalized": {
+          "displacement_energy": 139235507.75948483,
+          "correction_energy": 32540117.715758182,
+          "patches": 5863424,
+          "correction_to_displacement_energy": 0.23370559880435043
+        }
+      },
+      "audit": {
+        "exact_authoritative_split_order": true,
+        "all_shards_complete": true,
+        "per_image_sufficient_statistics_verified": true,
+        "identical_target_support": true,
+        "count_normalized_local_endpoint_identical": true
+      }
+    },
+    "voc21": {
+      "dataset": "voc21",
+      "images": 1449,
+      "methods": [
+        "retained__g0",
+        "retained__g0.25",
+        "retained__g0.5",
+        "retained__g0.75",
+        "retained__g1",
+        "retained__g1.5",
+        "retained__g2",
+        "retained__g3",
+        "canonical__g0",
+        "canonical__g0.25",
+        "canonical__g0.5",
+        "canonical__g0.75",
+        "canonical__g1",
+        "canonical__g1.5",
+        "canonical__g2",
+        "canonical__g3",
+        "count_normalized__g0",
+        "count_normalized__g0.25",
+        "count_normalized__g0.5",
+        "count_normalized__g0.75",
+        "count_normalized__g1",
+        "count_normalized__g1.5",
+        "count_normalized__g2",
+        "count_normalized__g3",
+        "retained__equal_mean",
+        "retained__wide",
+        "canonical__equal_mean",
+        "canonical__wide",
+        "count_normalized__equal_mean",
+        "count_normalized__wide"
+      ],
+      "metrics": {
+        "retained__g0": 41.46983286449327,
+        "retained__g0.25": 61.46692429988422,
+        "retained__g0.5": 72.1655669049804,
+        "retained__g0.75": 74.68806566925659,
+        "retained__g1": 75.20939954241919,
+        "retained__g1.5": 74.50998509661967,
+        "retained__g2": 70.93057421253985,
+        "retained__g3": 61.227712017245814,
+        "canonical__g0": 47.84660679251482,
+        "canonical__g0.25": 61.80627793050998,
+        "canonical__g0.5": 61.73751993399922,
+        "canonical__g0.75": 56.98747037279733,
+        "canonical__g1": 51.608661417129234,
+        "canonical__g1.5": 42.66898298045437,
+        "canonical__g2": 37.165354898736936,
+        "canonical__g3": 31.176783929785813,
+        "count_normalized__g0": 41.46983286449327,
+        "count_normalized__g0.25": 57.055692308565476,
+        "count_normalized__g0.5": 59.85078306798673,
+        "count_normalized__g0.75": 57.21026102437825,
+        "count_normalized__g1": 52.97112550017331,
+        "count_normalized__g1.5": 44.966313330711614,
+        "count_normalized__g2": 39.07955352234915,
+        "count_normalized__g3": 32.34838593709837,
+        "retained__equal_mean": 74.892937817459,
+        "retained__wide": 70.99901969224658,
+        "canonical__equal_mean": 51.34993265265513,
+        "canonical__wide": 37.07217401620197,
+        "count_normalized__equal_mean": 52.68916650606619,
+        "count_normalized__wide": 39.014915263076865
+      },
+      "class_names": [
+        "background",
+        "aeroplane",
+        "bicycle",
+        "bird",
+        "boat",
+        "bottle",
+        "bus",
+        "car",
+        "cat",
+        "chair",
+        "cow",
+        "diningtable",
+        "dog",
+        "horse",
+        "motorbike",
+        "person",
+        "pottedplant",
+        "sheep",
+        "sofa",
+        "train",
+        "tvmonitor"
+      ],
+      "alias_counts": [
+        56.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        3.0,
+        3.0,
+        1.0,
+        1.0,
+        6.0,
+        4.0,
+        2.0,
+        1.0,
+        2.0,
+        2.0,
+        21.0,
+        4.0,
+        2.0,
+        3.0,
+        1.0,
+        3.0
+      ],
+      "alias_mean": 5.666666666666667,
+      "alias_count_cv": 2.1199800407570133,
+      "residual_concepts": 0,
+      "diagnostics": {
+        "retained": {
+          "displacement_energy": 359385703.3808954,
+          "correction_energy": 85100133.08666003,
+          "patches": 5863424,
+          "correction_to_displacement_energy": 0.23679331783676033
+        },
+        "canonical": {
+          "displacement_energy": 109728509.851607,
+          "correction_energy": 23936484.7180227,
+          "patches": 5863424,
+          "correction_to_displacement_energy": 0.21814280309095208
+        },
+        "count_normalized": {
+          "displacement_energy": 100818333.2276806,
+          "correction_energy": 21958818.140170164,
+          "patches": 5863424,
+          "correction_to_displacement_energy": 0.2178058041346509
+        }
+      },
+      "audit": {
+        "exact_authoritative_split_order": true,
+        "all_shards_complete": true,
+        "per_image_sufficient_statistics_verified": true,
+        "identical_target_support": true,
+        "count_normalized_local_endpoint_identical": true
+      }
+    },
+    "coco_object81": {
+      "dataset": "coco_object81",
+      "images": 5000,
+      "methods": [
+        "retained__g0",
+        "retained__g0.25",
+        "retained__g0.5",
+        "retained__g0.75",
+        "retained__g1",
+        "retained__g1.5",
+        "retained__g2",
+        "retained__g3",
+        "canonical__g0",
+        "canonical__g0.25",
+        "canonical__g0.5",
+        "canonical__g0.75",
+        "canonical__g1",
+        "canonical__g1.5",
+        "canonical__g2",
+        "canonical__g3",
+        "count_normalized__g0",
+        "count_normalized__g0.25",
+        "count_normalized__g0.5",
+        "count_normalized__g0.75",
+        "count_normalized__g1",
+        "count_normalized__g1.5",
+        "count_normalized__g2",
+        "count_normalized__g3",
+        "retained__equal_mean",
+        "retained__wide",
+        "canonical__equal_mean",
+        "canonical__wide",
+        "count_normalized__equal_mean",
+        "count_normalized__wide"
+      ],
+      "metrics": {
+        "retained__g0": 33.45903366866192,
+        "retained__g0.25": 46.62428375881984,
+        "retained__g0.5": 49.620931090432826,
+        "retained__g0.75": 46.7790650758754,
+        "retained__g1": 42.31941561323261,
+        "retained__g1.5": 38.43516872070925,
+        "retained__g2": 38.593001720158654,
+        "retained__g3": 38.306761272014135,
+        "canonical__g0": 33.276495328126174,
+        "canonical__g0.25": 46.340490593432996,
+        "canonical__g0.5": 48.77459487726459,
+        "canonical__g0.75": 45.35932072370913,
+        "canonical__g1": 40.257154014181474,
+        "canonical__g1.5": 32.19083981152141,
+        "canonical__g2": 27.47044849553597,
+        "canonical__g3": 23.29780282337669,
+        "count_normalized__g0": 33.45903366866192,
+        "count_normalized__g0.25": 46.43138145946823,
+        "count_normalized__g0.5": 48.442627259054014,
+        "count_normalized__g0.75": 44.78259924124684,
+        "count_normalized__g1": 39.69771340189272,
+        "count_normalized__g1.5": 31.88547474383941,
+        "count_normalized__g2": 27.442076560999485,
+        "count_normalized__g3": 23.62598820950908,
+        "retained__equal_mean": 42.136045704555016,
+        "retained__wide": 38.680908175391515,
+        "canonical__equal_mean": 39.96507251337441,
+        "canonical__wide": 27.156853193489106,
+        "count_normalized__equal_mean": 39.39569516494906,
+        "count_normalized__wide": 27.107265654814842
+      },
+      "class_names": [
+        "background",
+        "person",
+        "bicycle",
+        "car",
+        "motorcycle",
+        "airplane",
+        "bus",
+        "train",
+        "truck",
+        "boat",
+        "traffic light",
+        "fire hydrant",
+        "stop sign",
+        "parking meter",
+        "bench",
+        "bird",
+        "cat",
+        "dog",
+        "horse",
+        "sheep",
+        "cow",
+        "elephant",
+        "bear",
+        "zebra",
+        "giraffe",
+        "backpack",
+        "umbrella",
+        "handbag",
+        "tie",
+        "suitcase",
+        "frisbee",
+        "skis",
+        "snowboard",
+        "sports ball",
+        "kite",
+        "baseball bat",
+        "baseball glove",
+        "skateboard",
+        "surfboard",
+        "tennis racket",
+        "bottle",
+        "wine glass",
+        "cup",
+        "fork",
+        "knife",
+        "spoon",
+        "bowl",
+        "banana",
+        "apple",
+        "sandwich",
+        "orange",
+        "broccoli",
+        "carrot",
+        "hot dog",
+        "pizza",
+        "donut",
+        "cake",
+        "chair",
+        "couch",
+        "potted plant",
+        "bed",
+        "dining table",
+        "toilet",
+        "tv",
+        "laptop",
+        "mouse",
+        "remote",
+        "keyboard",
+        "cell phone",
+        "microwave",
+        "oven",
+        "toaster",
+        "sink",
+        "refrigerator",
+        "book",
+        "clock",
+        "vase",
+        "scissors",
+        "teddy bear",
+        "hair drier",
+        "toothbrush"
+      ],
+      "alias_counts": [
+        32.0,
+        14.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        2.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        3.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        3.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        2.0,
+        3.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        4.0,
+        1.0,
+        4.0,
+        2.0,
+        6.0,
+        1.0,
+        1.0,
+        2.0,
+        1.0,
+        1.0,
+        1.0,
+        3.0,
+        1.0,
+        1.0,
+        2.0,
+        6.0,
+        1.0,
+        1.0,
+        3.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "alias_mean": 1.9259259259259258,
+      "alias_count_cv": 1.9594634575363021,
+      "residual_concepts": 0,
+      "diagnostics": {
+        "retained": {
+          "displacement_energy": 2184665526.6147113,
+          "correction_energy": 500881825.019023,
+          "patches": 20027392,
+          "correction_to_displacement_energy": 0.22927162941742102
+        },
+        "canonical": {
+          "displacement_energy": 1135142605.4420776,
+          "correction_energy": 244275972.36764044,
+          "patches": 20027392,
+          "correction_to_displacement_energy": 0.215194083277764
+        },
+        "count_normalized": {
+          "displacement_energy": 1119676128.8332274,
+          "correction_energy": 240960683.28669444,
+          "patches": 20027392,
+          "correction_to_displacement_energy": 0.21520569839940282
+        }
+      },
+      "audit": {
+        "exact_authoritative_split_order": true,
+        "all_shards_complete": true,
+        "per_image_sufficient_statistics_verified": true,
+        "identical_target_support": true,
+        "count_normalized_local_endpoint_identical": true
+      }
+    }
+  },
+  "analyses": {
+    "retained": {
+      "macro_curve": [
+        46.027073350458174,
+        53.28049644371602,
+        55.815846462231754,
+        55.131414868506,
+        53.00100159891065,
+        49.28871468953257,
+        46.53283809513361,
+        42.72288383764179
+      ],
+      "best_global_g0": 0.5,
+      "best_global_macro": 55.815846462231754,
+      "per_dataset_oracle_macro": 56.743330218667325,
+      "global_regret_pp": 0.9274837564355707,
+      "per_dataset": {
+        "vdd": {
+          "best_g0": 1,
+          "best_miou": 59.97812406040286,
+          "global_miou": 58.03667418445573,
+          "global_regret_pp": 1.9414498759471357
+        },
+        "potsdam": {
+          "best_g0": 0.75,
+          "best_miou": 54.47242565326456,
+          "global_miou": 54.43845378951523,
+          "global_regret_pp": 0.033971863749329145
+        },
+        "udd5": {
+          "best_g0": 0.5,
+          "best_miou": 55.256690918556274,
+          "global_miou": 55.256690918556274,
+          "global_regret_pp": 0.0
+        },
+        "oem": {
+          "best_g0": 0.25,
+          "best_miou": 44.73544999117129,
+          "global_miou": 43.7090373736867,
+          "global_regret_pp": 1.0264126174845956
+        },
+        "vaihingen": {
+          "best_g0": 0.25,
+          "best_miou": 58.80183196178894,
+          "global_miou": 57.5554275445416,
+          "global_regret_pp": 1.2464044172473407
+        },
+        "context60": {
+          "best_g0": 0.75,
+          "best_miou": 44.5928946688257,
+          "global_miou": 44.14056438617347,
+          "global_regret_pp": 0.45233028265222686
+        },
+        "ade150": {
+          "best_g0": 0.25,
+          "best_miou": 31.485097025323878,
+          "global_miou": 30.701437519620008,
+          "global_regret_pp": 0.78365950570387
+        },
+        "voc20": {
+          "best_g0": 1,
+          "best_miou": 93.28045727448774,
+          "global_miou": 92.5336809103553,
+          "global_regret_pp": 0.7467763641324439
+        },
+        "voc21": {
+          "best_g0": 1,
+          "best_miou": 75.20939954241919,
+          "global_miou": 72.1655669049804,
+          "global_regret_pp": 3.043832637438797
+        },
+        "coco_object81": {
+          "best_g0": 0.5,
+          "best_miou": 49.620931090432826,
+          "global_miou": 49.620931090432826,
+          "global_regret_pp": 0.0
+        }
+      },
+      "lodo": [
+        {
+          "dataset": "vdd",
+          "g0": 0.5,
+          "miou": 58.03667418445573,
+          "regret_pp": 1.9414498759471357
+        },
+        {
+          "dataset": "potsdam",
+          "g0": 0.5,
+          "miou": 54.43845378951523,
+          "regret_pp": 0.033971863749329145
+        },
+        {
+          "dataset": "udd5",
+          "g0": 0.5,
+          "miou": 55.256690918556274,
+          "regret_pp": 0.0
+        },
+        {
+          "dataset": "oem",
+          "g0": 0.5,
+          "miou": 43.7090373736867,
+          "regret_pp": 1.0264126174845956
+        },
+        {
+          "dataset": "vaihingen",
+          "g0": 0.5,
+          "miou": 57.5554275445416,
+          "regret_pp": 1.2464044172473407
+        },
+        {
+          "dataset": "context60",
+          "g0": 0.5,
+          "miou": 44.14056438617347,
+          "regret_pp": 0.45233028265222686
+        },
+        {
+          "dataset": "ade150",
+          "g0": 0.5,
+          "miou": 30.701437519620008,
+          "regret_pp": 0.78365950570387
+        },
+        {
+          "dataset": "voc20",
+          "g0": 0.5,
+          "miou": 92.5336809103553,
+          "regret_pp": 0.7467763641324439
+        },
+        {
+          "dataset": "voc21",
+          "g0": 0.5,
+          "miou": 72.1655669049804,
+          "regret_pp": 3.043832637438797
+        },
+        {
+          "dataset": "coco_object81",
+          "g0": 0.5,
+          "miou": 49.620931090432826,
+          "regret_pp": 0.0
+        }
+      ],
+      "lodo_macro": 55.815846462231754,
+      "grouped_lodo": [
+        {
+          "dataset": "vdd",
+          "heldout_group": [
+            "vdd"
+          ],
+          "g0": 0.5,
+          "miou": 58.03667418445573,
+          "regret_pp": 1.9414498759471357
+        },
+        {
+          "dataset": "potsdam",
+          "heldout_group": [
+            "potsdam"
+          ],
+          "g0": 0.5,
+          "miou": 54.43845378951523,
+          "regret_pp": 0.033971863749329145
+        },
+        {
+          "dataset": "udd5",
+          "heldout_group": [
+            "udd5"
+          ],
+          "g0": 0.5,
+          "miou": 55.256690918556274,
+          "regret_pp": 0.0
+        },
+        {
+          "dataset": "oem",
+          "heldout_group": [
+            "oem"
+          ],
+          "g0": 0.5,
+          "miou": 43.7090373736867,
+          "regret_pp": 1.0264126174845956
+        },
+        {
+          "dataset": "vaihingen",
+          "heldout_group": [
+            "vaihingen"
+          ],
+          "g0": 0.5,
+          "miou": 57.5554275445416,
+          "regret_pp": 1.2464044172473407
+        },
+        {
+          "dataset": "context60",
+          "heldout_group": [
+            "context60"
+          ],
+          "g0": 0.5,
+          "miou": 44.14056438617347,
+          "regret_pp": 0.45233028265222686
+        },
+        {
+          "dataset": "ade150",
+          "heldout_group": [
+            "ade150"
+          ],
+          "g0": 0.5,
+          "miou": 30.701437519620008,
+          "regret_pp": 0.78365950570387
+        },
+        {
+          "dataset": "coco_object81",
+          "heldout_group": [
+            "coco_object81"
+          ],
+          "g0": 0.5,
+          "miou": 49.620931090432826,
+          "regret_pp": 0.0
+        },
+        {
+          "dataset": "voc20",
+          "heldout_group": [
+            "voc20",
+            "voc21"
+          ],
+          "g0": 0.5,
+          "miou": 92.5336809103553,
+          "regret_pp": 0.7467763641324439
+        },
+        {
+          "dataset": "voc21",
+          "heldout_group": [
+            "voc20",
+            "voc21"
+          ],
+          "g0": 0.5,
+          "miou": 72.1655669049804,
+          "regret_pp": 3.043832637438797
+        }
+      ],
+      "grouped_lodo_macro": 55.815846462231754,
+      "nine_group_macro_curve": [
+        44.2213743243686,
+        50.734014393845165,
+        52.86764896829441,
+        51.935791045628875,
+        49.5294541756281,
+        45.447247193824055,
+        42.59489681070089,
+        38.92471232960136
+      ],
+      "nine_group_best_g0": 0.5,
+      "nine_group_best_macro": 52.86764896829441,
+      "groups": {
+        "remote_sensing": {
+          "datasets": [
+            "vdd",
+            "potsdam",
+            "udd5",
+            "oem",
+            "vaihingen"
+          ],
+          "curve": [
+            48.54978592920156,
+            52.32465000926076,
+            53.7992567621511,
+            52.49538246211173,
+            49.24902281372846,
+            43.32318739896963,
+            39.057255216510285,
+            34.46528341237253
+          ],
+          "best_g0": 0.5,
+          "best_macro": 53.7992567621511
+        },
+        "natural": {
+          "datasets": [
+            "context60",
+            "ade150",
+            "voc20",
+            "voc21",
+            "coco_object81"
+          ],
+          "curve": [
+            43.5043607717148,
+            54.236342878171286,
+            57.8324361623124,
+            57.767447274900256,
+            56.75298038409282,
+            55.254241980095514,
+            54.00842097375694,
+            50.98048426291105
+          ],
+          "best_g0": 0.5,
+          "best_macro": 57.8324361623124
+        }
+      }
+    },
+    "canonical": {
+      "macro_curve": [
+        42.39583573003701,
+        46.60774955865925,
+        46.73075941214553,
+        45.15511820208639,
+        43.16008254205546,
+        39.644760007241466,
+        37.266675889061865,
+        34.53223248630327
+      ],
+      "best_global_g0": 0.5,
+      "best_global_macro": 46.73075941214553,
+      "per_dataset_oracle_macro": 47.363795564229804,
+      "global_regret_pp": 0.6330361520842729,
+      "per_dataset": {
+        "vdd": {
+          "best_g0": 0.25,
+          "best_miou": 40.675230115600606,
+          "global_miou": 40.66138265579685,
+          "global_regret_pp": 0.013847459803756124
+        },
+        "potsdam": {
+          "best_g0": 0.5,
+          "best_miou": 43.672327008924114,
+          "global_miou": 43.672327008924114,
+          "global_regret_pp": 0.0
+        },
+        "udd5": {
+          "best_g0": 0,
+          "best_miou": 53.138655882564834,
+          "global_miou": 49.531453658043446,
+          "global_regret_pp": 3.6072022245213873
+        },
+        "oem": {
+          "best_g0": 0.25,
+          "best_miou": 35.7316857627687,
+          "global_miou": 34.60287596520183,
+          "global_regret_pp": 1.1288097975668663
+        },
+        "vaihingen": {
+          "best_g0": 1,
+          "best_miou": 33.08971224004186,
+          "global_miou": 32.32052894586959,
+          "global_regret_pp": 0.7691832941722723
+        },
+        "context60": {
+          "best_g0": 0.5,
+          "best_miou": 39.64193973405891,
+          "global_miou": 39.64193973405891,
+          "global_regret_pp": 0.0
+        },
+        "ade150": {
+          "best_g0": 0.25,
+          "best_miou": 29.599074456106127,
+          "global_miou": 29.10977403587662,
+          "global_regret_pp": 0.48930042022950815
+        },
+        "voc20": {
+          "best_g0": 0.25,
+          "best_miou": 87.50845763445835,
+          "global_miou": 87.25519730642006,
+          "global_regret_pp": 0.25326032803829435
+        },
+        "voc21": {
+          "best_g0": 0.25,
+          "best_miou": 61.80627793050998,
+          "global_miou": 61.73751993399922,
+          "global_regret_pp": 0.06875799651076164
+        },
+        "coco_object81": {
+          "best_g0": 0.5,
+          "best_miou": 48.77459487726459,
+          "global_miou": 48.77459487726459,
+          "global_regret_pp": 0.0
+        }
+      },
+      "lodo": [
+        {
+          "dataset": "vdd",
+          "g0": 0.5,
+          "miou": 40.66138265579685,
+          "regret_pp": 0.013847459803756124
+        },
+        {
+          "dataset": "potsdam",
+          "g0": 0.5,
+          "miou": 43.672327008924114,
+          "regret_pp": 0.0
+        },
+        {
+          "dataset": "udd5",
+          "g0": 0.5,
+          "miou": 49.531453658043446,
+          "regret_pp": 3.6072022245213873
+        },
+        {
+          "dataset": "oem",
+          "g0": 0.5,
+          "miou": 34.60287596520183,
+          "regret_pp": 1.1288097975668663
+        },
+        {
+          "dataset": "vaihingen",
+          "g0": 0.5,
+          "miou": 32.32052894586959,
+          "regret_pp": 0.7691832941722723
+        },
+        {
+          "dataset": "context60",
+          "g0": 0.25,
+          "miou": 38.2242960796807,
+          "regret_pp": 1.4176436543782103
+        },
+        {
+          "dataset": "ade150",
+          "g0": 0.5,
+          "miou": 29.10977403587662,
+          "regret_pp": 0.48930042022950815
+        },
+        {
+          "dataset": "voc20",
+          "g0": 0.5,
+          "miou": 87.25519730642006,
+          "regret_pp": 0.25326032803829435
+        },
+        {
+          "dataset": "voc21",
+          "g0": 0.5,
+          "miou": 61.73751993399922,
+          "regret_pp": 0.06875799651076164
+        },
+        {
+          "dataset": "coco_object81",
+          "g0": 0.25,
+          "miou": 46.340490593432996,
+          "regret_pp": 2.4341042838315943
+        }
+      ],
+      "lodo_macro": 46.345584618324544,
+      "grouped_lodo": [
+        {
+          "dataset": "vdd",
+          "heldout_group": [
+            "vdd"
+          ],
+          "g0": 0.5,
+          "miou": 40.66138265579685,
+          "regret_pp": 0.013847459803756124
+        },
+        {
+          "dataset": "potsdam",
+          "heldout_group": [
+            "potsdam"
+          ],
+          "g0": 0.5,
+          "miou": 43.672327008924114,
+          "regret_pp": 0.0
+        },
+        {
+          "dataset": "udd5",
+          "heldout_group": [
+            "udd5"
+          ],
+          "g0": 0.5,
+          "miou": 49.531453658043446,
+          "regret_pp": 3.6072022245213873
+        },
+        {
+          "dataset": "oem",
+          "heldout_group": [
+            "oem"
+          ],
+          "g0": 0.5,
+          "miou": 34.60287596520183,
+          "regret_pp": 1.1288097975668663
+        },
+        {
+          "dataset": "vaihingen",
+          "heldout_group": [
+            "vaihingen"
+          ],
+          "g0": 0.5,
+          "miou": 32.32052894586959,
+          "regret_pp": 0.7691832941722723
+        },
+        {
+          "dataset": "context60",
+          "heldout_group": [
+            "context60"
+          ],
+          "g0": 0.25,
+          "miou": 38.2242960796807,
+          "regret_pp": 1.4176436543782103
+        },
+        {
+          "dataset": "ade150",
+          "heldout_group": [
+            "ade150"
+          ],
+          "g0": 0.5,
+          "miou": 29.10977403587662,
+          "regret_pp": 0.48930042022950815
+        },
+        {
+          "dataset": "coco_object81",
+          "heldout_group": [
+            "coco_object81"
+          ],
+          "g0": 0.25,
+          "miou": 46.340490593432996,
+          "regret_pp": 2.4341042838315943
+        },
+        {
+          "dataset": "voc20",
+          "heldout_group": [
+            "voc20",
+            "voc21"
+          ],
+          "g0": 0.5,
+          "miou": 87.25519730642006,
+          "regret_pp": 0.25326032803829435
+        },
+        {
+          "dataset": "voc21",
+          "heldout_group": [
+            "voc20",
+            "voc21"
+          ],
+          "g0": 0.5,
+          "miou": 61.73751993399922,
+          "regret_pp": 0.06875799651076164
+        }
+      ],
+      "grouped_lodo_macro": 46.34558461832454,
+      "nine_group_macro_curve": [
+        39.70349256040478,
+        43.49112531156759,
+        43.645692833471735,
+        42.1823539524913,
+        40.285920874850675,
+        36.908757049311035,
+        34.594501949024455,
+        31.919171392514208
+      ],
+      "nine_group_best_g0": 0.5,
+      "nine_group_best_macro": 43.645692833471735,
+      "groups": {
+        "remote_sensing": {
+          "datasets": [
+            "vdd",
+            "potsdam",
+            "udd5",
+            "oem",
+            "vaihingen"
+          ],
+          "curve": [
+            39.44634752442927,
+            40.51977977848088,
+            40.15771364676717,
+            38.92045023592219,
+            37.350778386881515,
+            34.24521453614089,
+            31.893611389569116,
+            28.94250331708188
+          ],
+          "best_g0": 0.25,
+          "best_macro": 40.51977977848088
+        },
+        "natural": {
+          "datasets": [
+            "context60",
+            "ade150",
+            "voc20",
+            "voc21",
+            "coco_object81"
+          ],
+          "curve": [
+            45.34532393564474,
+            52.69571933883763,
+            53.30380517752387,
+            51.38978616825061,
+            48.96938669722941,
+            45.044305478342054,
+            42.63974038855462,
+            40.12196165552466
+          ],
+          "best_g0": 0.5,
+          "best_macro": 53.30380517752387
+        }
+      }
+    },
+    "count_normalized": {
+      "macro_curve": [
+        46.027073350458174,
+        50.56244002602781,
+        50.96567837288766,
+        49.65415542595887,
+        47.82608107152982,
+        44.44257709321148,
+        41.94671348518601,
+        38.92212192966683
+      ],
+      "best_global_g0": 0.5,
+      "best_global_macro": 50.96567837288766,
+      "per_dataset_oracle_macro": 51.73032678270323,
+      "global_regret_pp": 0.764648409815571,
+      "per_dataset": {
+        "vdd": {
+          "best_g0": 0.5,
+          "best_miou": 53.25956463207727,
+          "global_miou": 53.25956463207727,
+          "global_regret_pp": 0.0
+        },
+        "potsdam": {
+          "best_g0": 0.75,
+          "best_miou": 45.72675618016049,
+          "global_miou": 45.09337271172487,
+          "global_regret_pp": 0.6333834684356248
+        },
+        "udd5": {
+          "best_g0": 0,
+          "best_miou": 51.16510317532732,
+          "global_miou": 48.00608313270377,
+          "global_regret_pp": 3.1590200426235455
+        },
+        "oem": {
+          "best_g0": 0.25,
+          "best_miou": 44.73544999117129,
+          "global_miou": 43.709037420830015,
+          "global_regret_pp": 1.0264125703412788
+        },
+        "vaihingen": {
+          "best_g0": 0,
+          "best_miou": 58.05833414355532,
+          "global_miou": 55.83758748399518,
+          "global_regret_pp": 2.2207466595601417
+        },
+        "context60": {
+          "best_g0": 0.5,
+          "best_miou": 38.24726614304297,
+          "global_miou": 38.24726614304297,
+          "global_regret_pp": 0.0
+        },
+        "ade150": {
+          "best_g0": 0.25,
+          "best_miou": 29.526580747885994,
+          "global_miou": 29.039993383636908,
+          "global_regret_pp": 0.4865873642490861
+        },
+        "voc20": {
+          "best_g0": 0.75,
+          "best_miou": 88.29080248677087,
+          "global_miou": 88.17046849382484,
+          "global_regret_pp": 0.12033399294602987
+        },
+        "voc21": {
+          "best_g0": 0.5,
+          "best_miou": 59.85078306798673,
+          "global_miou": 59.85078306798673,
+          "global_regret_pp": 0.0
+        },
+        "coco_object81": {
+          "best_g0": 0.5,
+          "best_miou": 48.442627259054014,
+          "global_miou": 48.442627259054014,
+          "global_regret_pp": 0.0
+        }
+      },
+      "lodo": [
+        {
+          "dataset": "vdd",
+          "g0": 0.5,
+          "miou": 53.25956463207727,
+          "regret_pp": 0.0
+        },
+        {
+          "dataset": "potsdam",
+          "g0": 0.5,
+          "miou": 45.09337271172487,
+          "regret_pp": 0.6333834684356248
+        },
+        {
+          "dataset": "udd5",
+          "g0": 0.5,
+          "miou": 48.00608313270377,
+          "regret_pp": 3.1590200426235455
+        },
+        {
+          "dataset": "oem",
+          "g0": 0.5,
+          "miou": 43.709037420830015,
+          "regret_pp": 1.0264125703412788
+        },
+        {
+          "dataset": "vaihingen",
+          "g0": 0.5,
+          "miou": 55.83758748399518,
+          "regret_pp": 2.2207466595601417
+        },
+        {
+          "dataset": "context60",
+          "g0": 0.5,
+          "miou": 38.24726614304297,
+          "regret_pp": 0.0
+        },
+        {
+          "dataset": "ade150",
+          "g0": 0.5,
+          "miou": 29.039993383636908,
+          "regret_pp": 0.4865873642490861
+        },
+        {
+          "dataset": "voc20",
+          "g0": 0.5,
+          "miou": 88.17046849382484,
+          "regret_pp": 0.12033399294602987
+        },
+        {
+          "dataset": "voc21",
+          "g0": 0.5,
+          "miou": 59.85078306798673,
+          "regret_pp": 0.0
+        },
+        {
+          "dataset": "coco_object81",
+          "g0": 0.5,
+          "miou": 48.442627259054014,
+          "regret_pp": 0.0
+        }
+      ],
+      "lodo_macro": 50.96567837288766,
+      "grouped_lodo": [
+        {
+          "dataset": "vdd",
+          "heldout_group": [
+            "vdd"
+          ],
+          "g0": 0.5,
+          "miou": 53.25956463207727,
+          "regret_pp": 0.0
+        },
+        {
+          "dataset": "potsdam",
+          "heldout_group": [
+            "potsdam"
+          ],
+          "g0": 0.5,
+          "miou": 45.09337271172487,
+          "regret_pp": 0.6333834684356248
+        },
+        {
+          "dataset": "udd5",
+          "heldout_group": [
+            "udd5"
+          ],
+          "g0": 0.5,
+          "miou": 48.00608313270377,
+          "regret_pp": 3.1590200426235455
+        },
+        {
+          "dataset": "oem",
+          "heldout_group": [
+            "oem"
+          ],
+          "g0": 0.5,
+          "miou": 43.709037420830015,
+          "regret_pp": 1.0264125703412788
+        },
+        {
+          "dataset": "vaihingen",
+          "heldout_group": [
+            "vaihingen"
+          ],
+          "g0": 0.5,
+          "miou": 55.83758748399518,
+          "regret_pp": 2.2207466595601417
+        },
+        {
+          "dataset": "context60",
+          "heldout_group": [
+            "context60"
+          ],
+          "g0": 0.5,
+          "miou": 38.24726614304297,
+          "regret_pp": 0.0
+        },
+        {
+          "dataset": "ade150",
+          "heldout_group": [
+            "ade150"
+          ],
+          "g0": 0.5,
+          "miou": 29.039993383636908,
+          "regret_pp": 0.4865873642490861
+        },
+        {
+          "dataset": "coco_object81",
+          "heldout_group": [
+            "coco_object81"
+          ],
+          "g0": 0.5,
+          "miou": 48.442627259054014,
+          "regret_pp": 0.0
+        },
+        {
+          "dataset": "voc20",
+          "heldout_group": [
+            "voc20",
+            "voc21"
+          ],
+          "g0": 0.5,
+          "miou": 88.17046849382484,
+          "regret_pp": 0.12033399294602987
+        },
+        {
+          "dataset": "voc21",
+          "heldout_group": [
+            "voc20",
+            "voc21"
+          ],
+          "g0": 0.5,
+          "miou": 59.85078306798673,
+          "regret_pp": 0.0
+        }
+      ],
+      "grouped_lodo_macro": 50.96567837288766,
+      "nine_group_macro_curve": [
+        44.2213743243686,
+        48.15871061710651,
+        48.405128660885644,
+        47.0878913893349,
+        45.29571200827619,
+        41.995579599893695,
+        39.55918177239637,
+        36.584824328762004
+      ],
+      "nine_group_best_g0": 0.5,
+      "nine_group_best_macro": 48.405128660885644,
+      "groups": {
+        "remote_sensing": {
+          "datasets": [
+            "vdd",
+            "potsdam",
+            "udd5",
+            "oem",
+            "vaihingen"
+          ],
+          "curve": [
+            48.54978592920156,
+            49.663647821948395,
+            49.181129076266224,
+            47.95505644218297,
+            46.38212097164974,
+            43.206663579038064,
+            40.59767159949489,
+            37.070823094935385
+          ],
+          "best_g0": 0.25,
+          "best_macro": 49.663647821948395
+        },
+        "natural": {
+          "datasets": [
+            "context60",
+            "ade150",
+            "voc20",
+            "voc21",
+            "coco_object81"
+          ],
+          "curve": [
+            43.5043607717148,
+            51.46123223010723,
+            52.750227669509094,
+            51.35325440973476,
+            49.27004117140989,
+            45.678490607384894,
+            43.29575537087714,
+            40.77342076439827
+          ],
+          "best_g0": 0.5,
+          "best_macro": 52.750227669509094
+        }
+      }
+    }
+  },
+  "macro_controls": {
+    "retained": {
+      "g0": 46.027073350458174,
+      "wide": 46.34840675916674,
+      "equal_mean": 52.642825684654134
+    },
+    "canonical": {
+      "g0": 42.39583573003701,
+      "wide": 37.07881099342477,
+      "equal_mean": 43.064210986876766
+    },
+    "count_normalized": {
+      "g0": 46.027073350458174,
+      "wide": 41.645470142594164,
+      "equal_mean": 47.57309243729037
+    }
+  },
+  "retained_global_vs_equal_fusion": {
+    "wins": 7,
+    "protocols": 10,
+    "lower_protocols": [
+      "vdd",
+      "voc20",
+      "voc21"
+    ],
+    "mean_difference_pp": 3.1730207775776194
+  },
+  "historical_reproduction": {
+    "vdd": {
+      "g0": 1.0,
+      "historical_miou": 59.981018599860505,
+      "sweep_miou": 59.97812406040286,
+      "difference_pp": -0.0028945394576425088,
+      "identical_split_and_target_support": true
+    },
+    "potsdam": {
+      "g0": 0.5,
+      "historical_miou": 54.43901628670279,
+      "sweep_miou": 54.43845378951523,
+      "difference_pp": -0.0005624971875590745,
+      "identical_split_and_target_support": true
+    },
+    "udd5": {
+      "g0": 0.5,
+      "historical_miou": 55.25745303120145,
+      "sweep_miou": 55.256690918556274,
+      "difference_pp": -0.0007621126451766713,
+      "identical_split_and_target_support": true
+    },
+    "oem": {
+      "g0": 0.25,
+      "historical_miou": 44.73549557199646,
+      "sweep_miou": 44.73544999117129,
+      "difference_pp": -4.5580825165814076e-05,
+      "identical_split_and_target_support": true
+    },
+    "vaihingen": {
+      "g0": 0.25,
+      "historical_miou": 58.802068530250416,
+      "sweep_miou": 58.80183196178894,
+      "difference_pp": -0.0002365684614744623,
+      "identical_split_and_target_support": true
+    },
+    "context60": {
+      "g0": 0.75,
+      "historical_miou": 44.59267320588001,
+      "sweep_miou": 44.5928946688257,
+      "difference_pp": 0.00022146294568869962,
+      "identical_split_and_target_support": true
+    },
+    "ade150": {
+      "g0": 0.25,
+      "historical_miou": 31.485211656728634,
+      "sweep_miou": 31.485097025323878,
+      "difference_pp": -0.00011463140475598266,
+      "identical_split_and_target_support": true
+    },
+    "voc20": {
+      "g0": 1.0,
+      "historical_miou": 93.28042622874445,
+      "sweep_miou": 93.28045727448774,
+      "difference_pp": 3.1045743298818707e-05,
+      "identical_split_and_target_support": true
+    },
+    "voc21": {
+      "g0": 0.75,
+      "historical_miou": 74.68822709090996,
+      "sweep_miou": 74.68806566925659,
+      "difference_pp": -0.00016142165337384995,
+      "identical_split_and_target_support": true
+    },
+    "coco_object81": {
+      "g0": 0.5,
+      "historical_miou": 49.62093121065086,
+      "sweep_miou": 49.620931090432826,
+      "difference_pp": -1.2021803286188515e-07,
+      "identical_split_and_target_support": true
+    }
+  },
+  "paired_conditional_intervals": {
+    "retained__g0.75": {
+      "reference": "retained__g0.5",
+      "control": "retained__g0.75",
+      "repetitions": 2000,
+      "macro_difference_pp": 0.6844315937257651,
+      "macro_ci95_pp": [
+        0.5276098618279832,
+        0.8685479573694493
+      ],
+      "datasets": {
+        "vdd": {
+          "difference_pp": -1.509023744602878,
+          "ci95_pp": [
+            -2.193825311742557,
+            -0.8553074192634315
+          ]
+        },
+        "potsdam": {
+          "difference_pp": -0.033971863749329145,
+          "ci95_pp": [
+            -0.4673052824070448,
+            0.4026355467878098
+          ]
+        },
+        "udd5": {
+          "difference_pp": 3.6249129469915573,
+          "ci95_pp": [
+            2.51740689650919,
+            4.766547431025271
+          ]
+        },
+        "oem": {
+          "difference_pp": 1.8551834150992903,
+          "ci95_pp": [
+            1.5142503984153488,
+            2.173219416107761
+          ]
+        },
+        "vaihingen": {
+          "difference_pp": 2.5822707464582777,
+          "ci95_pp": [
+            2.123067919201808,
+            3.0795170224580244
+          ]
+        },
+        "context60": {
+          "difference_pp": -0.45233028265222686,
+          "ci95_pp": [
+            -0.6184032512150244,
+            -0.2899132660015966
+          ]
+        },
+        "ade150": {
+          "difference_pp": 1.0202194386198578,
+          "ci95_pp": [
+            0.7556402671015338,
+            1.2602790784894522
+          ]
+        },
+        "voc20": {
+          "difference_pp": -0.56231196918813,
+          "ci95_pp": [
+            -0.7711762058537076,
+            -0.3739769808190435
+          ]
+        },
+        "voc21": {
+          "difference_pp": -2.522498764276193,
+          "ci95_pp": [
+            -3.042241073212535,
+            -1.9958041064076304
+          ]
+        },
+        "coco_object81": {
+          "difference_pp": 2.841866014557425,
+          "ci95_pp": [
+            2.438778236271501,
+            3.375150632604134
+          ]
+        }
+      },
+      "note": "Conditional on inspected gain candidates and existing development profiles; no correction for selecting the best g0. VOC20/VOC21 use paired shared image resamples. Other domains resampled independently."
+    },
+    "retained__equal_mean": {
+      "reference": "retained__g0.5",
+      "control": "retained__equal_mean",
+      "repetitions": 2000,
+      "macro_difference_pp": 3.1730207775776194,
+      "macro_ci95_pp": [
+        2.8310976851915375,
+        3.542520395038638
+      ],
+      "datasets": {
+        "vdd": {
+          "difference_pp": -1.5551419707483305,
+          "ci95_pp": [
+            -2.780028793783849,
+            -0.2980524235934452
+          ]
+        },
+        "potsdam": {
+          "difference_pp": 2.8742245491748335,
+          "ci95_pp": [
+            2.017464423862397,
+            3.7345063466787525
+          ]
+        },
+        "udd5": {
+          "difference_pp": 12.681708055589858,
+          "ci95_pp": [
+            10.090115284059923,
+            15.278144356004
+          ]
+        },
+        "oem": {
+          "difference_pp": 5.006799348770343,
+          "ci95_pp": [
+            4.3266529914542975,
+            5.641145358749203
+          ]
+        },
+        "vaihingen": {
+          "difference_pp": 6.626546114524388,
+          "ci95_pp": [
+            5.778426623143897,
+            7.61885466756927
+          ]
+        },
+        "context60": {
+          "difference_pp": 0.1224614471343699,
+          "ci95_pp": [
+            -0.16948499900096134,
+            0.42083192458922936
+          ]
+        },
+        "ade150": {
+          "difference_pp": 1.8522675606252221,
+          "ci95_pp": [
+            1.4582084849797061,
+            2.2352063886132707
+          ]
+        },
+        "voc20": {
+          "difference_pp": -0.6361718026936956,
+          "ci95_pp": [
+            -0.9599323595483256,
+            -0.32204024321008284
+          ]
+        },
+        "voc21": {
+          "difference_pp": -2.727370912478605,
+          "ci95_pp": [
+            -3.4361054653186054,
+            -1.998647880827534
+          ]
+        },
+        "coco_object81": {
+          "difference_pp": 7.48488538587781,
+          "ci95_pp": [
+            6.885939235607392,
+            8.236599451432149
+          ]
+        }
+      },
+      "note": "Conditional on inspected gain candidates and existing development profiles; no correction for selecting the best g0. VOC20/VOC21 use paired shared image resamples. Other domains resampled independently."
+    }
+  },
+  "descriptive_correlations": {
+    "n": 10,
+    "spearman_optimal_g0": {
+      "wide_minus_local_pp": 0.8191500733197464,
+      "mean_alias_count": -0.4439668336313129,
+      "alias_count_cv": 0.31890575373516844,
+      "correction_energy_ratio": 0.09379580992210836
+    },
+    "covariates": {
+      "wide_minus_local_pp": [
+        6.1213974482913684,
+        4.474527615480021,
+        -28.911442115439076,
+        -15.519592464135044,
+        -15.380622197194526,
+        9.170428275719296,
+        -1.21245487669405,
+        9.720031066574705,
+        29.529186827753307,
+        5.221874506729598
+      ],
+      "mean_alias_count": [
+        1.2857142857142858,
+        1.8333333333333333,
+        6.2,
+        20.0,
+        13.8,
+        4.4,
+        2.8866666666666667,
+        5.35,
+        5.666666666666667,
+        1.9259259259259258
+      ],
+      "alias_count_cv": [
+        0.35136418446315326,
+        0.5821022034029862,
+        1.1693270297027005,
+        0.0,
+        0.24423622530945963,
+        0.9073847626216877,
+        0.7060367634130645,
+        0.6207042959745919,
+        2.1199800407570133,
+        1.9594634575363021
+      ],
+      "correction_energy_ratio": [
+        0.22181299152630554,
+        0.23176602429451978,
+        0.22288887687295522,
+        0.20180716923900086,
+        0.24118486790680405,
+        0.23622711244090613,
+        0.2427646769959607,
+        0.24390668373841434,
+        0.23679331783676033,
+        0.22927162941742102
+      ]
+    }
+  },
+  "protocol_images": 16124,
+  "interpretation": "Best values are development selections, not independent-test estimates. LODO only holds out g0 selection: aliases, calibration and other frozen task settings previously used labels. VOC20/VOC21 share images.",
+  "averaging": "Equal-protocol mean of aggregate dataset mIoU; never mean image IoU.",
+  "gain_tie_break": "Smallest gain in the ascending frozen menu."
+}

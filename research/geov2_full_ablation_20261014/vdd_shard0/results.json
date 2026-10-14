@@ -1,0 +1,2170 @@
+{
+  "status": "complete",
+  "dataset": "vdd",
+  "shard": 0,
+  "shards": 1,
+  "processed_images": 80,
+  "total_images": 80,
+  "global_sample_count": 80,
+  "sample_keys": [
+    "DJI_0007.JPG",
+    "DJI_0018.JPG",
+    "DJI_0023.JPG",
+    "DJI_0024.JPG",
+    "DJI_0031.JPG",
+    "DJI_0325.JPG",
+    "DJI_0328.JPG",
+    "DJI_0335.JPG",
+    "DJI_0348.JPG",
+    "DJI_0352.JPG",
+    "DJI_0360.JPG",
+    "DJI_0365.JPG",
+    "DJI_0374.JPG",
+    "DJI_0390.JPG",
+    "DJI_0410.JPG",
+    "DJI_0420.JPG",
+    "DJI_0445.JPG",
+    "DJI_0458.JPG",
+    "DJI_0462.JPG",
+    "DJI_0466.JPG",
+    "DJI_0467.JPG",
+    "DJI_0470.JPG",
+    "DJI_0519.JPG",
+    "DJI_0521.JPG",
+    "DJI_0529.JPG",
+    "DJI_0537.JPG",
+    "DJI_0552.JPG",
+    "DJI_0568.JPG",
+    "DJI_0690.JPG",
+    "DJI_0716.JPG",
+    "DJI_0734.JPG",
+    "DJI_0744.JPG",
+    "DJI_0759.JPG",
+    "DJI_0763.JPG",
+    "DJI_0783.JPG",
+    "DJI_0787.JPG",
+    "DJI_0788.JPG",
+    "DJI_0798.JPG",
+    "DJI_0804.JPG",
+    "DJI_0819.JPG",
+    "DJI_0826.JPG",
+    "DJI_0916.JPG",
+    "DJI_0923.JPG",
+    "DJI_0967.JPG",
+    "DJI_10007.JPG",
+    "DJI_10018.JPG",
+    "DJI_10019.JPG",
+    "DJI_10024.JPG",
+    "DJI_10028.JPG",
+    "DJI_10035.JPG",
+    "DJI_10038.JPG",
+    "DJI_10051.JPG",
+    "DJI_10054.JPG",
+    "DJI_10070.JPG",
+    "DJI_10076.JPG",
+    "DJI_10079.JPG",
+    "DJI_10176.JPG",
+    "DJI_10230.JPG",
+    "DJI_10233.JPG",
+    "DJI_10292.JPG",
+    "DJI_10298.JPG",
+    "DJI_10321.JPG",
+    "DJI_10345.JPG",
+    "DJI_10386.JPG",
+    "DJI_10390.JPG",
+    "DJI_10397.JPG",
+    "DJI_10541.JPG",
+    "DJI_10553.JPG",
+    "DJI_10596.JPG",
+    "DJI_10599.JPG",
+    "DJI_10603.JPG",
+    "DJI_10609.JPG",
+    "DJI_10613.JPG",
+    "DJI_10624.JPG",
+    "DJI_10630.JPG",
+    "DJI_10654.JPG",
+    "DJI_10658.JPG",
+    "DJI_10671.JPG",
+    "DJI_10697.JPG",
+    "DJI_10708.JPG"
+  ],
+  "protocol": "vdd",
+  "capacity": 24,
+  "query_temperature": 0.1,
+  "beta": 0.5,
+  "methods": [
+    "VIPWide",
+    "Raw24Slots",
+    "QuerySlot_Raw",
+    "DonorBefore",
+    "LocalEndpoint",
+    "WideEndpoint",
+    "EqualFusion",
+    "Geov2_FixedTarget",
+    "Geov2_AdaptiveGate",
+    "AdaptiveMarginOnly",
+    "AdaptiveSupportOnly",
+    "AdaptiveShuffledGate",
+    "AdaptiveConstantGate",
+    "Geov2_CanonicalOnly",
+    "Geov2_ShuffledQuery"
+  ],
+  "metrics": {
+    "VIPWide": {
+      "mean_iou_percent": 60.4352,
+      "pixel_accuracy_percent": 81.5945,
+      "per_class": [
+        {
+          "name": "other",
+          "iou_percent": 45.3164,
+          "target_pixels": 180587722,
+          "predicted_pixels": 182835039,
+          "precision_percent": 61.986,
+          "recall_percent": 62.7574,
+          "predicted_area_percent": 19.0453
+        },
+        {
+          "name": "wall",
+          "iou_percent": 48.0048,
+          "target_pixels": 31060905,
+          "predicted_pixels": 24666982,
+          "precision_percent": 73.2766,
+          "recall_percent": 58.1925,
+          "predicted_area_percent": 2.5695
+        },
+        {
+          "name": "road",
+          "iou_percent": 49.7305,
+          "target_pixels": 52696170,
+          "predicted_pixels": 93093825,
+          "precision_percent": 52.0139,
+          "recall_percent": 91.8885,
+          "predicted_area_percent": 9.6973
+        },
+        {
+          "name": "vegetation",
+          "iou_percent": 79.4081,
+          "target_pixels": 342862485,
+          "predicted_pixels": 317153255,
+          "precision_percent": 92.1102,
+          "recall_percent": 85.2034,
+          "predicted_area_percent": 33.0368
+        },
+        {
+          "name": "vehicle",
+          "iou_percent": 36.7663,
+          "target_pixels": 4998007,
+          "predicted_pixels": 5293048,
+          "precision_percent": 52.2667,
+          "recall_percent": 55.3521,
+          "predicted_area_percent": 0.5514
+        },
+        {
+          "name": "roof",
+          "iou_percent": 82.538,
+          "target_pixels": 202001213,
+          "predicted_pixels": 207894414,
+          "precision_percent": 89.152,
+          "recall_percent": 91.7529,
+          "predicted_area_percent": 21.6557
+        },
+        {
+          "name": "water",
+          "iou_percent": 81.2826,
+          "target_pixels": 145793498,
+          "predicted_pixels": 129063437,
+          "precision_percent": 95.4872,
+          "recall_percent": 84.5299,
+          "predicted_area_percent": 13.4441
+        }
+      ],
+      "confusion_matrix": [
+        [
+          113332104,
+          3787433,
+          25371487,
+          20537791,
+          2100423,
+          11812921,
+          3645563
+        ],
+        [
+          2787587,
+          18075123,
+          15167,
+          1644676,
+          1118,
+          8456418,
+          80816
+        ],
+        [
+          2593250,
+          11933,
+          48421709,
+          1424230,
+          149166,
+          95882,
+          0
+        ],
+        [
+          28626609,
+          891588,
+          16698195,
+          292130557,
+          272445,
+          2149261,
+          2093830
+        ],
+        [
+          826248,
+          14486,
+          908871,
+          445697,
+          2766502,
+          36203,
+          0
+        ],
+        [
+          14109401,
+          1886121,
+          49356,
+          606717,
+          3394,
+          185342026,
+          4198
+        ],
+        [
+          20559840,
+          298,
+          1629040,
+          363587,
+          0,
+          1703,
+          123239030
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0,
+      "non_residual_mean_iou_percent": 62.955
+    },
+    "Raw24Slots": {
+      "mean_iou_percent": 60.3145,
+      "pixel_accuracy_percent": 82.5769,
+      "per_class": [
+        {
+          "name": "other",
+          "iou_percent": 43.5949,
+          "target_pixels": 180587722,
+          "predicted_pixels": 124919910,
+          "precision_percent": 74.2484,
+          "recall_percent": 51.3607,
+          "predicted_area_percent": 13.0125
+        },
+        {
+          "name": "wall",
+          "iou_percent": 46.2215,
+          "target_pixels": 31060905,
+          "predicted_pixels": 25787887,
+          "precision_percent": 69.6848,
+          "recall_percent": 57.8549,
+          "predicted_area_percent": 2.6862
+        },
+        {
+          "name": "road",
+          "iou_percent": 44.5523,
+          "target_pixels": 52696170,
+          "predicted_pixels": 109028389,
+          "precision_percent": 45.7174,
+          "recall_percent": 94.5893,
+          "predicted_area_percent": 11.3571
+        },
+        {
+          "name": "vegetation",
+          "iou_percent": 79.4955,
+          "target_pixels": 342862485,
+          "predicted_pixels": 326670265,
+          "precision_percent": 90.7718,
+          "recall_percent": 86.485,
+          "predicted_area_percent": 34.0282
+        },
+        {
+          "name": "vehicle",
+          "iou_percent": 33.0449,
+          "target_pixels": 4998007,
+          "predicted_pixels": 6490110,
+          "precision_percent": 43.9646,
+          "recall_percent": 57.0898,
+          "predicted_area_percent": 0.6761
+        },
+        {
+          "name": "roof",
+          "iou_percent": 84.9094,
+          "target_pixels": 202001213,
+          "predicted_pixels": 222431701,
+          "precision_percent": 87.6212,
+          "recall_percent": 96.4832,
+          "predicted_area_percent": 23.17
+        },
+        {
+          "name": "water",
+          "iou_percent": 90.383,
+          "target_pixels": 145793498,
+          "predicted_pixels": 144671738,
+          "precision_percent": 95.3167,
+          "recall_percent": 94.5833,
+          "predicted_area_percent": 15.07
+        }
+      ],
+      "confusion_matrix": [
+        [
+          92751061,
+          4400902,
+          35786087,
+          24916096,
+          2946003,
+          15553396,
+          4234177
+        ],
+        [
+          1702709,
+          17970247,
+          38997,
+          1994523,
+          13927,
+          9221633,
+          118869
+        ],
+        [
+          1011831,
+          14203,
+          49844951,
+          1512115,
+          169566,
+          143504,
+          0
+        ],
+        [
+          18869362,
+          1463188,
+          20520204,
+          296524557,
+          505269,
+          2568104,
+          2411801
+        ],
+        [
+          516948,
+          16717,
+          1090947,
+          475785,
+          2853352,
+          44258,
+          0
+        ],
+        [
+          4291305,
+          1922258,
+          75116,
+          802648,
+          1993,
+          194897324,
+          10569
+        ],
+        [
+          5776694,
+          372,
+          1672087,
+          444541,
+          0,
+          3482,
+          137896322
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0,
+      "non_residual_mean_iou_percent": 63.1011
+    },
+    "QuerySlot_Raw": {
+      "mean_iou_percent": 59.8332,
+      "pixel_accuracy_percent": 82.6005,
+      "per_class": [
+        {
+          "name": "other",
+          "iou_percent": 44.7706,
+          "target_pixels": 180587722,
+          "predicted_pixels": 133234136,
+          "precision_percent": 72.8418,
+          "recall_percent": 53.7412,
+          "predicted_area_percent": 13.8786
+        },
+        {
+          "name": "wall",
+          "iou_percent": 42.368,
+          "target_pixels": 31060905,
+          "predicted_pixels": 22533694,
+          "precision_percent": 70.7806,
+          "recall_percent": 51.3491,
+          "predicted_area_percent": 2.3473
+        },
+        {
+          "name": "road",
+          "iou_percent": 45.0945,
+          "target_pixels": 52696170,
+          "predicted_pixels": 105988934,
+          "precision_percent": 46.5316,
+          "recall_percent": 93.5901,
+          "predicted_area_percent": 11.0405
+        },
+        {
+          "name": "vegetation",
+          "iou_percent": 78.2603,
+          "target_pixels": 342862485,
+          "predicted_pixels": 322734128,
+          "precision_percent": 90.5426,
+          "recall_percent": 85.2272,
+          "predicted_area_percent": 33.6181
+        },
+        {
+          "name": "vehicle",
+          "iou_percent": 31.1252,
+          "target_pixels": 4998007,
+          "predicted_pixels": 4649171,
+          "precision_percent": 49.2551,
+          "recall_percent": 45.8173,
+          "predicted_area_percent": 0.4843
+        },
+        {
+          "name": "roof",
+          "iou_percent": 85.0377,
+          "target_pixels": 202001213,
+          "predicted_pixels": 224109343,
+          "precision_percent": 87.3803,
+          "recall_percent": 96.9437,
+          "predicted_area_percent": 23.3447
+        },
+        {
+          "name": "water",
+          "iou_percent": 92.1761,
+          "target_pixels": 145793498,
+          "predicted_pixels": 146750594,
+          "precision_percent": 95.616,
+          "recall_percent": 96.2437,
+          "predicted_area_percent": 15.2865
+        }
+      ],
+      "confusion_matrix": [
+        [
+          97050094,
+          3407022,
+          33748750,
+          24920091,
+          1825779,
+          15452243,
+          4183743
+        ],
+        [
+          2420778,
+          15949486,
+          28105,
+          2303882,
+          14670,
+          10249048,
+          94936
+        ],
+        [
+          1512262,
+          11723,
+          49318377,
+          1574133,
+          131004,
+          148354,
+          317
+        ],
+        [
+          24336519,
+          1625958,
+          19776350,
+          292212011,
+          386333,
+          2380193,
+          2145121
+        ],
+        [
+          970589,
+          13638,
+          1200759,
+          472704,
+          2289953,
+          50364,
+          0
+        ],
+        [
+          3786589,
+          1525604,
+          64876,
+          785756,
+          1432,
+          195827471,
+          9485
+        ],
+        [
+          3157305,
+          263,
+          1851717,
+          465551,
+          0,
+          1670,
+          140316992
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0,
+      "non_residual_mean_iou_percent": 62.3436
+    },
+    "DonorBefore": {
+      "mean_iou_percent": 60.4278,
+      "pixel_accuracy_percent": 81.6538,
+      "per_class": [
+        {
+          "name": "other",
+          "iou_percent": 45.4666,
+          "target_pixels": 180587722,
+          "predicted_pixels": 184460563,
+          "precision_percent": 61.8552,
+          "recall_percent": 63.1817,
+          "predicted_area_percent": 19.2146
+        },
+        {
+          "name": "wall",
+          "iou_percent": 48.0002,
+          "target_pixels": 31060905,
+          "predicted_pixels": 23659294,
+          "precision_percent": 75.0113,
+          "recall_percent": 57.1366,
+          "predicted_area_percent": 2.4645
+        },
+        {
+          "name": "road",
+          "iou_percent": 50.0501,
+          "target_pixels": 52696170,
+          "predicted_pixels": 92799937,
+          "precision_percent": 52.2964,
+          "recall_percent": 92.096,
+          "predicted_area_percent": 9.6667
+        },
+        {
+          "name": "vegetation",
+          "iou_percent": 79.7301,
+          "target_pixels": 342862485,
+          "predicted_pixels": 317586825,
+          "precision_percent": 92.2526,
+          "recall_percent": 85.4517,
+          "predicted_area_percent": 33.082
+        },
+        {
+          "name": "vehicle",
+          "iou_percent": 36.4369,
+          "target_pixels": 4998007,
+          "predicted_pixels": 4981032,
+          "precision_percent": 53.5031,
+          "recall_percent": 53.3214,
+          "predicted_area_percent": 0.5189
+        },
+        {
+          "name": "roof",
+          "iou_percent": 82.2823,
+          "target_pixels": 202001213,
+          "predicted_pixels": 207697113,
+          "precision_percent": 89.0422,
+          "recall_percent": 91.5529,
+          "predicted_area_percent": 21.6351
+        },
+        {
+          "name": "water",
+          "iou_percent": 81.0283,
+          "target_pixels": 145793498,
+          "predicted_pixels": 128815236,
+          "precision_percent": 95.4195,
+          "recall_percent": 84.3075,
+          "predicted_area_percent": 13.4183
+        }
+      ],
+      "confusion_matrix": [
+        [
+          114098443,
+          3475654,
+          25341688,
+          20185724,
+          1949342,
+          11843515,
+          3693356
+        ],
+        [
+          2945661,
+          17747147,
+          16651,
+          1594201,
+          2636,
+          8675858,
+          78751
+        ],
+        [
+          2523700,
+          8087,
+          48531062,
+          1408785,
+          128973,
+          95563,
+          0
+        ],
+        [
+          28341572,
+          768281,
+          16306770,
+          292981964,
+          232841,
+          2106402,
+          2124655
+        ],
+        [
+          902420,
+          13894,
+          925679,
+          455676,
+          2665009,
+          35329,
+          0
+        ],
+        [
+          14756047,
+          1645936,
+          46180,
+          609196,
+          2231,
+          184938038,
+          3585
+        ],
+        [
+          20892720,
+          295,
+          1631907,
+          351279,
+          0,
+          2408,
+          122914889
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0,
+      "non_residual_mean_iou_percent": 62.9213
+    },
+    "LocalEndpoint": {
+      "mean_iou_percent": 50.9434,
+      "pixel_accuracy_percent": 72.1072,
+      "per_class": [
+        {
+          "name": "other",
+          "iou_percent": 22.8091,
+          "target_pixels": 180587722,
+          "predicted_pixels": 127745147,
+          "precision_percent": 44.8284,
+          "recall_percent": 31.7109,
+          "predicted_area_percent": 13.3068
+        },
+        {
+          "name": "wall",
+          "iou_percent": 44.8997,
+          "target_pixels": 31060905,
+          "predicted_pixels": 24218313,
+          "precision_percent": 70.7284,
+          "recall_percent": 55.1472,
+          "predicted_area_percent": 2.5227
+        },
+        {
+          "name": "road",
+          "iou_percent": 31.8677,
+          "target_pixels": 52696170,
+          "predicted_pixels": 161696465,
+          "precision_percent": 32.0421,
+          "recall_percent": 98.3202,
+          "predicted_area_percent": 16.8434
+        },
+        {
+          "name": "vegetation",
+          "iou_percent": 70.5765,
+          "target_pixels": 342862485,
+          "predicted_pixels": 267814341,
+          "precision_percent": 94.3449,
+          "recall_percent": 73.694,
+          "predicted_area_percent": 27.8973
+        },
+        {
+          "name": "vehicle",
+          "iou_percent": 35.6438,
+          "target_pixels": 4998007,
+          "predicted_pixels": 7581972,
+          "precision_percent": 43.5995,
+          "recall_percent": 66.1404,
+          "predicted_area_percent": 0.7898
+        },
+        {
+          "name": "roof",
+          "iou_percent": 77.4554,
+          "target_pixels": 202001213,
+          "predicted_pixels": 241930247,
+          "precision_percent": 80.0918,
+          "recall_percent": 95.9234,
+          "predicted_area_percent": 25.2011
+        },
+        {
+          "name": "water",
+          "iou_percent": 73.3518,
+          "target_pixels": 145793498,
+          "predicted_pixels": 129013515,
+          "precision_percent": 90.1312,
+          "recall_percent": 79.7576,
+          "predicted_area_percent": 13.4389
+        }
+      ],
+      "confusion_matrix": [
+        [
+          57266050,
+          3834572,
+          67246804,
+          12959507,
+          3311590,
+          29613172,
+          6356027
+        ],
+        [
+          902373,
+          17129222,
+          480842,
+          867082,
+          41500,
+          11474574,
+          165312
+        ],
+        [
+          162894,
+          30823,
+          51811005,
+          247231,
+          158506,
+          284928,
+          783
+        ],
+        [
+          36268108,
+          1890926,
+          39246946,
+          252669142,
+          746127,
+          6162971,
+          5878265
+        ],
+        [
+          43195,
+          9097,
+          1204462,
+          283708,
+          3305702,
+          149163,
+          2680
+        ],
+        [
+          5609193,
+          1320382,
+          301574,
+          656114,
+          18547,
+          193766384,
+          329019
+        ],
+        [
+          27493334,
+          3291,
+          1404832,
+          131557,
+          0,
+          479055,
+          116281429
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0,
+      "non_residual_mean_iou_percent": 55.6325
+    },
+    "WideEndpoint": {
+      "mean_iou_percent": 57.0595,
+      "pixel_accuracy_percent": 82.8493,
+      "per_class": [
+        {
+          "name": "other",
+          "iou_percent": 48.1163,
+          "target_pixels": 180587722,
+          "predicted_pixels": 159995648,
+          "precision_percent": 69.152,
+          "recall_percent": 61.2667,
+          "predicted_area_percent": 16.6662
+        },
+        {
+          "name": "wall",
+          "iou_percent": 36.6904,
+          "target_pixels": 31060905,
+          "predicted_pixels": 21781437,
+          "precision_percent": 65.1194,
+          "recall_percent": 45.6649,
+          "predicted_area_percent": 2.2689
+        },
+        {
+          "name": "road",
+          "iou_percent": 48.6577,
+          "target_pixels": 52696170,
+          "predicted_pixels": 84656768,
+          "precision_percent": 53.1056,
+          "recall_percent": 85.3146,
+          "predicted_area_percent": 8.8184
+        },
+        {
+          "name": "vegetation",
+          "iou_percent": 77.0308,
+          "target_pixels": 342862485,
+          "predicted_pixels": 334860806,
+          "precision_percent": 88.0651,
+          "recall_percent": 86.0098,
+          "predicted_area_percent": 34.8813
+        },
+        {
+          "name": "vehicle",
+          "iou_percent": 10.8722,
+          "target_pixels": 4998007,
+          "predicted_pixels": 3097565,
+          "precision_percent": 25.6285,
+          "recall_percent": 15.8835,
+          "predicted_area_percent": 0.3227
+        },
+        {
+          "name": "roof",
+          "iou_percent": 85.417,
+          "target_pixels": 202001213,
+          "predicted_pixels": 212171113,
+          "precision_percent": 89.9269,
+          "recall_percent": 94.4543,
+          "predicted_area_percent": 22.1012
+        },
+        {
+          "name": "water",
+          "iou_percent": 92.6321,
+          "target_pixels": 145793498,
+          "predicted_pixels": 143436663,
+          "precision_percent": 96.9653,
+          "recall_percent": 95.3978,
+          "predicted_area_percent": 14.9413
+        }
+      ],
+      "confusion_matrix": [
+        [
+          110640144,
+          3181228,
+          21020534,
+          30995513,
+          1396798,
+          10063317,
+          3290188
+        ],
+        [
+          4300953,
+          14183935,
+          6544,
+          2869326,
+          36328,
+          9631535,
+          32284
+        ],
+        [
+          4310419,
+          687,
+          44957516,
+          3145637,
+          202010,
+          77544,
+          2357
+        ],
+        [
+          27202291,
+          1687014,
+          15799240,
+          294895457,
+          668569,
+          1584683,
+          1025231
+        ],
+        [
+          2381752,
+          9562,
+          1099781,
+          697899,
+          793860,
+          15153,
+          0
+        ],
+        [
+          7290508,
+          2719011,
+          30745,
+          1159216,
+          0,
+          190798881,
+          2852
+        ],
+        [
+          3869581,
+          0,
+          1742408,
+          1097758,
+          0,
+          0,
+          139083751
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0,
+      "non_residual_mean_iou_percent": 58.5501
+    },
+    "EqualFusion": {
+      "mean_iou_percent": 59.5929,
+      "pixel_accuracy_percent": 82.767,
+      "per_class": [
+        {
+          "name": "other",
+          "iou_percent": 45.4049,
+          "target_pixels": 180587722,
+          "predicted_pixels": 133734211,
+          "precision_percent": 73.3932,
+          "recall_percent": 54.3513,
+          "predicted_area_percent": 13.9306
+        },
+        {
+          "name": "wall",
+          "iou_percent": 42.3918,
+          "target_pixels": 31060905,
+          "predicted_pixels": 21461400,
+          "precision_percent": 72.8589,
+          "recall_percent": 50.3416,
+          "predicted_area_percent": 2.2356
+        },
+        {
+          "name": "road",
+          "iou_percent": 44.963,
+          "target_pixels": 52696170,
+          "predicted_pixels": 105945606,
+          "precision_percent": 46.4444,
+          "recall_percent": 93.3764,
+          "predicted_area_percent": 11.036
+        },
+        {
+          "name": "vegetation",
+          "iou_percent": 78.3136,
+          "target_pixels": 342862485,
+          "predicted_pixels": 323782462,
+          "precision_percent": 90.4261,
+          "recall_percent": 85.394,
+          "predicted_area_percent": 33.7273
+        },
+        {
+          "name": "vehicle",
+          "iou_percent": 28.3108,
+          "target_pixels": 4998007,
+          "predicted_pixels": 4250946,
+          "precision_percent": 48.006,
+          "recall_percent": 40.8305,
+          "predicted_area_percent": 0.4428
+        },
+        {
+          "name": "roof",
+          "iou_percent": 85.4476,
+          "target_pixels": 202001213,
+          "predicted_pixels": 224393246,
+          "precision_percent": 87.5549,
+          "recall_percent": 97.2604,
+          "predicted_area_percent": 23.3743
+        },
+        {
+          "name": "water",
+          "iou_percent": 92.3187,
+          "target_pixels": 145793498,
+          "predicted_pixels": 146432129,
+          "precision_percent": 95.7966,
+          "recall_percent": 96.2162,
+          "predicted_area_percent": 15.2533
+        }
+      ],
+      "confusion_matrix": [
+        [
+          98151846,
+          3043562,
+          33516694,
+          25250141,
+          1711074,
+          14937235,
+          3977170
+        ],
+        [
+          2622598,
+          15636545,
+          26875,
+          2216313,
+          27811,
+          10449073,
+          81690
+        ],
+        [
+          1532218,
+          941,
+          49205765,
+          1723035,
+          105763,
+          128405,
+          43
+        ],
+        [
+          23758354,
+          1430816,
+          20071115,
+          292783928,
+          365561,
+          2361443,
+          2091268
+        ],
+        [
+          1147695,
+          12499,
+          1237917,
+          510178,
+          2040711,
+          49007,
+          0
+        ],
+        [
+          3299216,
+          1336765,
+          56783,
+          836180,
+          26,
+          196467281,
+          4962
+        ],
+        [
+          3222284,
+          272,
+          1830457,
+          462687,
+          0,
+          802,
+          140276996
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0,
+      "non_residual_mean_iou_percent": 61.9576
+    },
+    "Geov2_FixedTarget": {
+      "mean_iou_percent": 59.9782,
+      "pixel_accuracy_percent": 82.7714,
+      "per_class": [
+        {
+          "name": "other",
+          "iou_percent": 45.1298,
+          "target_pixels": 180587722,
+          "predicted_pixels": 134146590,
+          "precision_percent": 72.9577,
+          "recall_percent": 54.1954,
+          "predicted_area_percent": 13.9736
+        },
+        {
+          "name": "wall",
+          "iou_percent": 42.582,
+          "target_pixels": 31060905,
+          "predicted_pixels": 21508263,
+          "precision_percent": 72.994,
+          "recall_percent": 50.545,
+          "predicted_area_percent": 2.2404
+        },
+        {
+          "name": "road",
+          "iou_percent": 45.3932,
+          "target_pixels": 52696170,
+          "predicted_pixels": 105501816,
+          "precision_percent": 46.8153,
+          "recall_percent": 93.7279,
+          "predicted_area_percent": 10.9898
+        },
+        {
+          "name": "vegetation",
+          "iou_percent": 78.5634,
+          "target_pixels": 342862485,
+          "predicted_pixels": 323497665,
+          "precision_percent": 90.6287,
+          "recall_percent": 85.51,
+          "predicted_area_percent": 33.6977
+        },
+        {
+          "name": "vehicle",
+          "iou_percent": 30.9733,
+          "target_pixels": 4998007,
+          "predicted_pixels": 4275088,
+          "precision_percent": 51.2961,
+          "recall_percent": 43.8766,
+          "predicted_area_percent": 0.4453
+        },
+        {
+          "name": "roof",
+          "iou_percent": 85.1188,
+          "target_pixels": 202001213,
+          "predicted_pixels": 224398016,
+          "precision_percent": 87.372,
+          "recall_percent": 97.0594,
+          "predicted_area_percent": 23.3748
+        },
+        {
+          "name": "water",
+          "iou_percent": 92.0866,
+          "target_pixels": 145793498,
+          "predicted_pixels": 146672562,
+          "precision_percent": 95.593,
+          "recall_percent": 96.1694,
+          "predicted_area_percent": 15.2784
+        }
+      ],
+      "confusion_matrix": [
+        [
+          97870267,
+          3000606,
+          33696324,
+          24773485,
+          1652233,
+          15405790,
+          4189017
+        ],
+        [
+          2571091,
+          15699740,
+          29046,
+          2245399,
+          18512,
+          10406073,
+          91044
+        ],
+        [
+          1492291,
+          7348,
+          49390993,
+          1558722,
+          101087,
+          145495,
+          234
+        ],
+        [
+          24131123,
+          1480278,
+          19255740,
+          293181684,
+          309083,
+          2328413,
+          2176164
+        ],
+        [
+          1035585,
+          12690,
+          1220048,
+          487873,
+          2192954,
+          48857,
+          0
+        ],
+        [
+          3770269,
+          1307343,
+          60822,
+          793066,
+          1219,
+          196061092,
+          7402
+        ],
+        [
+          3275964,
+          258,
+          1848843,
+          457436,
+          0,
+          2296,
+          140208701
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0,
+      "non_residual_mean_iou_percent": 62.4529
+    },
+    "Geov2_AdaptiveGate": {
+      "mean_iou_percent": 60.1676,
+      "pixel_accuracy_percent": 82.7389,
+      "per_class": [
+        {
+          "name": "other",
+          "iou_percent": 44.855,
+          "target_pixels": 180587722,
+          "predicted_pixels": 132570613,
+          "precision_percent": 73.1466,
+          "recall_percent": 53.6974,
+          "predicted_area_percent": 13.8094
+        },
+        {
+          "name": "wall",
+          "iou_percent": 42.7967,
+          "target_pixels": 31060905,
+          "predicted_pixels": 21487077,
+          "precision_percent": 73.2944,
+          "recall_percent": 50.703,
+          "predicted_area_percent": 2.2382
+        },
+        {
+          "name": "road",
+          "iou_percent": 45.1528,
+          "target_pixels": 52696170,
+          "predicted_pixels": 106646371,
+          "precision_percent": 46.4777,
+          "recall_percent": 94.0615,
+          "predicted_area_percent": 11.109
+        },
+        {
+          "name": "vegetation",
+          "iou_percent": 78.6453,
+          "target_pixels": 342862485,
+          "predicted_pixels": 323085684,
+          "precision_percent": 90.7411,
+          "recall_percent": 85.507,
+          "predicted_area_percent": 33.6548
+        },
+        {
+          "name": "vehicle",
+          "iou_percent": 32.5875,
+          "target_pixels": 4998007,
+          "predicted_pixels": 4501756,
+          "precision_percent": 51.8655,
+          "recall_percent": 46.7158,
+          "predicted_area_percent": 0.4689
+        },
+        {
+          "name": "roof",
+          "iou_percent": 85.0978,
+          "target_pixels": 202001213,
+          "predicted_pixels": 224913332,
+          "precision_percent": 87.2655,
+          "recall_percent": 97.1637,
+          "predicted_area_percent": 23.4285
+        },
+        {
+          "name": "water",
+          "iou_percent": 92.0379,
+          "target_pixels": 145793498,
+          "predicted_pixels": 146795167,
+          "precision_percent": 95.5269,
+          "recall_percent": 96.1832,
+          "predicted_area_percent": 15.2912
+        }
+      ],
+      "confusion_matrix": [
+        [
+          96970912,
+          2991037,
+          34507442,
+          24478735,
+          1733417,
+          15671431,
+          4234748
+        ],
+        [
+          2499735,
+          15748818,
+          31523,
+          2240864,
+          18859,
+          10422391,
+          98715
+        ],
+        [
+          1370711,
+          7753,
+          49566784,
+          1500303,
+          101458,
+          148931,
+          230
+        ],
+        [
+          23899340,
+          1470684,
+          19439148,
+          293171368,
+          311975,
+          2345080,
+          2224890
+        ],
+        [
+          905886,
+          12393,
+          1208971,
+          484956,
+          2334860,
+          50941,
+          0
+        ],
+        [
+          3630701,
+          1256120,
+          62399,
+          771244,
+          1187,
+          196271799,
+          7763
+        ],
+        [
+          3293328,
+          272,
+          1830104,
+          438214,
+          0,
+          2759,
+          140228821
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0,
+      "non_residual_mean_iou_percent": 62.7196
+    },
+    "AdaptiveMarginOnly": {
+      "mean_iou_percent": 60.2947,
+      "pixel_accuracy_percent": 82.6858,
+      "per_class": [
+        {
+          "name": "other",
+          "iou_percent": 44.5401,
+          "target_pixels": 180587722,
+          "predicted_pixels": 130980765,
+          "precision_percent": 73.3008,
+          "recall_percent": 53.1653,
+          "predicted_area_percent": 13.6438
+        },
+        {
+          "name": "wall",
+          "iou_percent": 43.0775,
+          "target_pixels": 31060905,
+          "predicted_pixels": 21509405,
+          "precision_percent": 73.5853,
+          "recall_percent": 50.9572,
+          "predicted_area_percent": 2.2406
+        },
+        {
+          "name": "road",
+          "iou_percent": 44.8572,
+          "target_pixels": 52696170,
+          "predicted_pixels": 107880800,
+          "precision_percent": 46.0926,
+          "recall_percent": 94.3619,
+          "predicted_area_percent": 11.2376
+        },
+        {
+          "name": "vegetation",
+          "iou_percent": 78.7199,
+          "target_pixels": 342862485,
+          "predicted_pixels": 322500920,
+          "precision_percent": 90.874,
+          "recall_percent": 85.4773,
+          "predicted_area_percent": 33.5938
+        },
+        {
+          "name": "vehicle",
+          "iou_percent": 33.8679,
+          "target_pixels": 4998007,
+          "predicted_pixels": 4729916,
+          "precision_percent": 52.033,
+          "recall_percent": 49.242,
+          "predicted_area_percent": 0.4927
+        },
+        {
+          "name": "roof",
+          "iou_percent": 85.0472,
+          "target_pixels": 202001213,
+          "predicted_pixels": 225430607,
+          "precision_percent": 87.1428,
+          "recall_percent": 97.2502,
+          "predicted_area_percent": 23.4824
+        },
+        {
+          "name": "water",
+          "iou_percent": 91.9528,
+          "target_pixels": 145793498,
+          "predicted_pixels": 146967587,
+          "precision_percent": 95.425,
+          "recall_percent": 96.1935,
+          "predicted_area_percent": 15.3091
+        }
+      ],
+      "confusion_matrix": [
+        [
+          96009984,
+          2990329,
+          35364145,
+          24128837,
+          1827525,
+          15958444,
+          4308458
+        ],
+        [
+          2417009,
+          15827760,
+          36261,
+          2216860,
+          19251,
+          10435440,
+          108324
+        ],
+        [
+          1265577,
+          8175,
+          49725092,
+          1440392,
+          103440,
+          153269,
+          225
+        ],
+        [
+          23652957,
+          1463404,
+          19686892,
+          293069428,
+          317466,
+          2377105,
+          2295233
+        ],
+        [
+          794118,
+          12123,
+          1194478,
+          480064,
+          2461117,
+          56107,
+          0
+        ],
+        [
+          3521390,
+          1207329,
+          63864,
+          749504,
+          1117,
+          196446520,
+          11489
+        ],
+        [
+          3319730,
+          285,
+          1810068,
+          415835,
+          0,
+          3722,
+          140243858
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0,
+      "non_residual_mean_iou_percent": 62.9204
+    },
+    "AdaptiveSupportOnly": {
+      "mean_iou_percent": 59.3368,
+      "pixel_accuracy_percent": 83.2343,
+      "per_class": [
+        {
+          "name": "other",
+          "iou_percent": 47.3264,
+          "target_pixels": 180587722,
+          "predicted_pixels": 145678165,
+          "precision_percent": 71.945,
+          "recall_percent": 58.0372,
+          "predicted_area_percent": 15.1748
+        },
+        {
+          "name": "wall",
+          "iou_percent": 40.5651,
+          "target_pixels": 31060905,
+          "predicted_pixels": 21346073,
+          "precision_percent": 70.8511,
+          "recall_percent": 48.6912,
+          "predicted_area_percent": 2.2235
+        },
+        {
+          "name": "road",
+          "iou_percent": 47.7546,
+          "target_pixels": 52696170,
+          "predicted_pixels": 95323822,
+          "precision_percent": 50.1872,
+          "recall_percent": 90.7854,
+          "predicted_area_percent": 9.9296
+        },
+        {
+          "name": "vegetation",
+          "iou_percent": 78.2068,
+          "target_pixels": 342862485,
+          "predicted_pixels": 328619698,
+          "precision_percent": 89.6729,
+          "recall_percent": 85.9478,
+          "predicted_area_percent": 34.2312
+        },
+        {
+          "name": "vehicle",
+          "iou_percent": 22.9869,
+          "target_pixels": 4998007,
+          "predicted_pixels": 3234006,
+          "precision_percent": 47.5759,
+          "recall_percent": 30.7844,
+          "predicted_area_percent": 0.3369
+        },
+        {
+          "name": "roof",
+          "iou_percent": 85.538,
+          "target_pixels": 202001213,
+          "predicted_pixels": 219514756,
+          "precision_percent": 88.5272,
+          "recall_percent": 96.2025,
+          "predicted_area_percent": 22.8661
+        },
+        {
+          "name": "water",
+          "iou_percent": 92.9797,
+          "target_pixels": 145793498,
+          "predicted_pixels": 146283480,
+          "precision_percent": 96.2008,
+          "recall_percent": 96.5241,
+          "predicted_area_percent": 15.2379
+        }
+      ],
+      "confusion_matrix": [
+        [
+          104808088,
+          2936510,
+          27362549,
+          27314839,
+          1310638,
+          12990662,
+          3864436
+        ],
+        [
+          3297440,
+          15123922,
+          10953,
+          2464697,
+          15001,
+          10084742,
+          64150
+        ],
+        [
+          2508299,
+          5108,
+          47840403,
+          2129182,
+          94903,
+          118204,
+          71
+        ],
+        [
+          25780610,
+          1530489,
+          17014428,
+          294682699,
+          273873,
+          1955071,
+          1625315
+        ],
+        [
+          1689035,
+          12756,
+          1178151,
+          544476,
+          1538607,
+          34982,
+          0
+        ],
+        [
+          5020780,
+          1737094,
+          48927,
+          859620,
+          984,
+          194330159,
+          3649
+        ],
+        [
+          2573913,
+          194,
+          1868411,
+          624185,
+          0,
+          936,
+          140725859
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0,
+      "non_residual_mean_iou_percent": 61.3385
+    },
+    "AdaptiveShuffledGate": {
+      "mean_iou_percent": 60.0469,
+      "pixel_accuracy_percent": 82.7197,
+      "per_class": [
+        {
+          "name": "other",
+          "iou_percent": 44.8505,
+          "target_pixels": 180587722,
+          "predicted_pixels": 132650880,
+          "precision_percent": 73.116,
+          "recall_percent": 53.7074,
+          "predicted_area_percent": 13.8178
+        },
+        {
+          "name": "wall",
+          "iou_percent": 42.6816,
+          "target_pixels": 31060905,
+          "predicted_pixels": 21438983,
+          "precision_percent": 73.2533,
+          "recall_percent": 50.5612,
+          "predicted_area_percent": 2.2332
+        },
+        {
+          "name": "road",
+          "iou_percent": 45.1564,
+          "target_pixels": 52696170,
+          "predicted_pixels": 106497237,
+          "precision_percent": 46.5018,
+          "recall_percent": 93.9787,
+          "predicted_area_percent": 11.0935
+        },
+        {
+          "name": "vegetation",
+          "iou_percent": 78.5941,
+          "target_pixels": 342862485,
+          "predicted_pixels": 323221508,
+          "precision_percent": 90.6884,
+          "recall_percent": 85.4933,
+          "predicted_area_percent": 33.6689
+        },
+        {
+          "name": "vehicle",
+          "iou_percent": 31.9453,
+          "target_pixels": 4998007,
+          "predicted_pixels": 4425578,
+          "precision_percent": 51.5537,
+          "recall_percent": 45.6491,
+          "predicted_area_percent": 0.461
+        },
+        {
+          "name": "roof",
+          "iou_percent": 85.0697,
+          "target_pixels": 202001213,
+          "predicted_pixels": 224965187,
+          "precision_percent": 87.2404,
+          "recall_percent": 97.1581,
+          "predicted_area_percent": 23.4339
+        },
+        {
+          "name": "water",
+          "iou_percent": 92.0308,
+          "target_pixels": 145793498,
+          "predicted_pixels": 146800627,
+          "precision_percent": 95.5212,
+          "recall_percent": 96.1811,
+          "predicted_area_percent": 15.2917
+        }
+      ],
+      "confusion_matrix": [
+        [
+          96989033,
+          2982919,
+          34363190,
+          24615073,
+          1711588,
+          15686645,
+          4239274
+        ],
+        [
+          2522907,
+          15704752,
+          30582,
+          2243493,
+          19068,
+          10442283,
+          97820
+        ],
+        [
+          1390437,
+          7648,
+          49523173,
+          1524416,
+          101248,
+          149019,
+          229
+        ],
+        [
+          23890235,
+          1473251,
+          19461195,
+          293124377,
+          310989,
+          2372188,
+          2230250
+        ],
+        [
+          944545,
+          12508,
+          1221138,
+          487159,
+          2281547,
+          51110,
+          0
+        ],
+        [
+          3634528,
+          1257626,
+          62769,
+          777216,
+          1138,
+          196260637,
+          7299
+        ],
+        [
+          3279195,
+          279,
+          1835190,
+          449774,
+          0,
+          3305,
+          140225755
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0,
+      "non_residual_mean_iou_percent": 62.5797
+    },
+    "AdaptiveConstantGate": {
+      "mean_iou_percent": 59.9548,
+      "pixel_accuracy_percent": 82.783,
+      "per_class": [
+        {
+          "name": "other",
+          "iou_percent": 45.1431,
+          "target_pixels": 180587722,
+          "predicted_pixels": 133776752,
+          "precision_percent": 73.0883,
+          "recall_percent": 54.1427,
+          "predicted_area_percent": 13.9351
+        },
+        {
+          "name": "wall",
+          "iou_percent": 42.5134,
+          "target_pixels": 31060905,
+          "predicted_pixels": 21504834,
+          "precision_percent": 72.9183,
+          "recall_percent": 50.4846,
+          "predicted_area_percent": 2.2401
+        },
+        {
+          "name": "road",
+          "iou_percent": 45.3959,
+          "target_pixels": 52696170,
+          "predicted_pixels": 105425216,
+          "precision_percent": 46.8286,
+          "recall_percent": 93.6864,
+          "predicted_area_percent": 10.9818
+        },
+        {
+          "name": "vegetation",
+          "iou_percent": 78.5531,
+          "target_pixels": 342862485,
+          "predicted_pixels": 323862519,
+          "precision_percent": 90.5695,
+          "recall_percent": 85.5505,
+          "predicted_area_percent": 33.7357
+        },
+        {
+          "name": "vehicle",
+          "iou_percent": 30.7814,
+          "target_pixels": 4998007,
+          "predicted_pixels": 4243479,
+          "precision_percent": 51.258,
+          "recall_percent": 43.5198,
+          "predicted_area_percent": 0.442
+        },
+        {
+          "name": "roof",
+          "iou_percent": 85.1103,
+          "target_pixels": 202001213,
+          "predicted_pixels": 224350032,
+          "precision_percent": 87.3761,
+          "recall_percent": 97.0432,
+          "predicted_area_percent": 23.3698
+        },
+        {
+          "name": "water",
+          "iou_percent": 92.1867,
+          "target_pixels": 145793498,
+          "predicted_pixels": 146837168,
+          "precision_percent": 95.5936,
+          "recall_percent": 96.2779,
+          "predicted_area_percent": 15.2955
+        }
+      ],
+      "confusion_matrix": [
+        [
+          97775093,
+          3007927,
+          33699137,
+          24902889,
+          1638559,
+          15371364,
+          4192753
+        ],
+        [
+          2559708,
+          15680966,
+          27891,
+          2256466,
+          18740,
+          10426115,
+          91019
+        ],
+        [
+          1461982,
+          7648,
+          49369119,
+          1611097,
+          100502,
+          145603,
+          219
+        ],
+        [
+          24050609,
+          1483514,
+          19192033,
+          293320727,
+          309332,
+          2327481,
+          2178789
+        ],
+        [
+          1050508,
+          12604,
+          1219735,
+          491175,
+          2175124,
+          48861,
+          0
+        ],
+        [
+          3780462,
+          1311913,
+          61903,
+          809844,
+          1222,
+          196028408,
+          7461
+        ],
+        [
+          3098390,
+          262,
+          1855398,
+          470321,
+          0,
+          2200,
+          140366927
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0,
+      "non_residual_mean_iou_percent": 62.4235
+    },
+    "Geov2_CanonicalOnly": {
+      "mean_iou_percent": 38.4917,
+      "pixel_accuracy_percent": 59.3105,
+      "per_class": [
+        {
+          "name": "other",
+          "iou_percent": 5.417,
+          "target_pixels": 180587722,
+          "predicted_pixels": 14578728,
+          "precision_percent": 68.7911,
+          "recall_percent": 5.5535,
+          "predicted_area_percent": 1.5186
+        },
+        {
+          "name": "wall",
+          "iou_percent": 24.7578,
+          "target_pixels": 31060905,
+          "predicted_pixels": 58595657,
+          "precision_percent": 30.3641,
+          "recall_percent": 57.2812,
+          "predicted_area_percent": 6.1037
+        },
+        {
+          "name": "road",
+          "iou_percent": 17.9427,
+          "target_pixels": 52696170,
+          "predicted_pixels": 288943109,
+          "precision_percent": 17.9875,
+          "recall_percent": 98.629,
+          "predicted_area_percent": 30.0982
+        },
+        {
+          "name": "vegetation",
+          "iou_percent": 39.955,
+          "target_pixels": 342862485,
+          "predicted_pixels": 159413582,
+          "precision_percent": 89.9497,
+          "recall_percent": 41.822,
+          "predicted_area_percent": 16.6056
+        },
+        {
+          "name": "vehicle",
+          "iou_percent": 18.2831,
+          "target_pixels": 4998007,
+          "predicted_pixels": 13456861,
+          "precision_percent": 21.198,
+          "recall_percent": 57.0744,
+          "predicted_area_percent": 1.4018
+        },
+        {
+          "name": "roof",
+          "iou_percent": 74.9316,
+          "target_pixels": 202001213,
+          "predicted_pixels": 264359916,
+          "precision_percent": 75.5655,
+          "recall_percent": 98.8929,
+          "predicted_area_percent": 27.5375
+        },
+        {
+          "name": "water",
+          "iou_percent": 88.1549,
+          "target_pixels": 145793498,
+          "predicted_pixels": 160652147,
+          "precision_percent": 89.3712,
+          "recall_percent": 98.4796,
+          "predicted_area_percent": 16.7346
+        }
+      ],
+      "confusion_matrix": [
+        [
+          10028872,
+          15450576,
+          87405073,
+          15196838,
+          6470434,
+          36763786,
+          9272143
+        ],
+        [
+          0,
+          17792051,
+          922501,
+          436484,
+          69997,
+          11670224,
+          169648
+        ],
+        [
+          0,
+          37229,
+          51973725,
+          148579,
+          211261,
+          302485,
+          22891
+        ],
+        [
+          4541315,
+          23518084,
+          144251076,
+          143392058,
+          3849999,
+          15724538,
+          7585415
+        ],
+        [
+          0,
+          47769,
+          1971254,
+          4325,
+          2852582,
+          121967,
+          110
+        ],
+        [
+          6917,
+          1731109,
+          292863,
+          177798,
+          2586,
+          199764816,
+          25124
+        ],
+        [
+          1624,
+          18839,
+          2126617,
+          57500,
+          2,
+          12100,
+          143576816
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0,
+      "non_residual_mean_iou_percent": 44.0042
+    },
+    "Geov2_ShuffledQuery": {
+      "mean_iou_percent": 55.0863,
+      "pixel_accuracy_percent": 78.3314,
+      "per_class": [
+        {
+          "name": "other",
+          "iou_percent": 39.1502,
+          "target_pixels": 180587722,
+          "predicted_pixels": 165662005,
+          "precision_percent": 58.8053,
+          "recall_percent": 53.945,
+          "predicted_area_percent": 17.2565
+        },
+        {
+          "name": "wall",
+          "iou_percent": 36.3299,
+          "target_pixels": 31060905,
+          "predicted_pixels": 17597238,
+          "precision_percent": 73.6858,
+          "recall_percent": 41.7459,
+          "predicted_area_percent": 1.833
+        },
+        {
+          "name": "road",
+          "iou_percent": 44.5891,
+          "target_pixels": 52696170,
+          "predicted_pixels": 99177417,
+          "precision_percent": 47.224,
+          "recall_percent": 88.8784,
+          "predicted_area_percent": 10.331
+        },
+        {
+          "name": "vegetation",
+          "iou_percent": 70.6758,
+          "target_pixels": 342862485,
+          "predicted_pixels": 296068079,
+          "precision_percent": 89.3636,
+          "recall_percent": 77.1671,
+          "predicted_area_percent": 30.8404
+        },
+        {
+          "name": "vehicle",
+          "iou_percent": 28.286,
+          "target_pixels": 4998007,
+          "predicted_pixels": 2777060,
+          "precision_percent": 61.7322,
+          "recall_percent": 34.3005,
+          "predicted_area_percent": 0.2893
+        },
+        {
+          "name": "roof",
+          "iou_percent": 79.6979,
+          "target_pixels": 202001213,
+          "predicted_pixels": 231929314,
+          "precision_percent": 82.9791,
+          "recall_percent": 95.2731,
+          "predicted_area_percent": 24.1593
+        },
+        {
+          "name": "water",
+          "iou_percent": 86.8754,
+          "target_pixels": 145793498,
+          "predicted_pixels": 146788887,
+          "precision_percent": 92.6615,
+          "recall_percent": 93.2942,
+          "predicted_area_percent": 15.2905
+        }
+      ],
+      "confusion_matrix": [
+        [
+          97418094,
+          2138226,
+          28033758,
+          24578865,
+          851596,
+          22179470,
+          5387713
+        ],
+        [
+          3941943,
+          12966662,
+          39780,
+          2864050,
+          8273,
+          10893920,
+          346277
+        ],
+        [
+          3511739,
+          6969,
+          46835494,
+          1639757,
+          56752,
+          591264,
+          54195
+        ],
+        [
+          45351864,
+          1130191,
+          21332362,
+          264577125,
+          145649,
+          5475637,
+          4849657
+        ],
+        [
+          1422935,
+          12784,
+          986621,
+          525225,
+          1714339,
+          336103,
+          0
+        ],
+        [
+          7019459,
+          1342405,
+          57425,
+          994506,
+          451,
+          192452779,
+          134188
+        ],
+        [
+          6995971,
+          1,
+          1891977,
+          888551,
+          0,
+          141,
+          136016857
+        ]
+      ],
+      "ignored_pixels": 0,
+      "unscored_prediction_classes": 0,
+      "non_residual_mean_iou_percent": 57.7423
+    }
+  },
+  "full_split_note": "Authoritative validation list, sharded before inference; no labels used for writer selection."
+}

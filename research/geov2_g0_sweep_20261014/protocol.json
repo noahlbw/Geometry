@@ -1,0 +1,217 @@
+{
+  "status": "frozen_before_full",
+  "datasets": {
+    "vdd": {
+      "data_root": "/data/test/datasets/VDD Release Version/VDD",
+      "total_images": 80,
+      "family": "remote_sensing",
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/vdd.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/vdd.pt",
+      "frozen_profile": {
+        "bank": "official_imagenet",
+        "strength": "original",
+        "coupling": 1.0,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 0.3,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "vocabulary_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/vocabularies/vdd.json"
+    },
+    "potsdam": {
+      "data_root": "/data/test/datasets/Potsdam/preprocessed_RGB",
+      "total_images": 504,
+      "family": "remote_sensing",
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/potsdam.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/potsdam.pt",
+      "frozen_profile": {
+        "bank": "official_imagenet",
+        "strength": "original",
+        "coupling": 0.5,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "vocabulary_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/vocabularies/potsdam.json"
+    },
+    "udd5": {
+      "data_root": "/data/test/datasets/UDD5/extracted/UDD/UDD5",
+      "total_images": 40,
+      "family": "remote_sensing",
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/udd5.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/udd5.pt",
+      "frozen_profile": {
+        "bank": "kev60_segmentation",
+        "strength": "original",
+        "coupling": 0.5,
+        "temperature": 0.05,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "vocabulary_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/vocabularies/udd5.json"
+    },
+    "oem": {
+      "data_root": "/data/test/datasets/OpenEarthMap_wo_xBD",
+      "total_images": 384,
+      "family": "remote_sensing",
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/oem.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/oem.pt",
+      "frozen_profile": {
+        "bank": "original",
+        "strength": "original",
+        "coupling": 0.25,
+        "temperature": 0.03,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "vocabulary_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/vocabularies/oem.json"
+    },
+    "vaihingen": {
+      "data_root": "/data/test/datasets/Vaihingen/preprocessed_corrected_20261001",
+      "total_images": 113,
+      "family": "remote_sensing",
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/vaihingen.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/vaihingen.pt",
+      "frozen_profile": {
+        "bank": "kev40_imagenet",
+        "strength": "original",
+        "coupling": 0.25,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "vocabulary_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/vocabularies/vaihingen.json"
+    },
+    "context60": {
+      "data_root": "/data/test/datasets/VIP_natural/VOCdevkit/VOC2010",
+      "total_images": 5105,
+      "family": "natural",
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/context60.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/context60.pt",
+      "frozen_profile": {
+        "bank": "mix_f6f525631e7f743d226c",
+        "strength": "original",
+        "coupling": 0.75,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "natural_short336_cap672",
+        "background_rule": "residual_max"
+      },
+      "vocabulary_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/vocabularies/context60.json"
+    },
+    "ade150": {
+      "data_root": "/data/test/datasets/VIP_natural/ADEChallengeData2016",
+      "total_images": 2000,
+      "family": "natural",
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/ade150.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/ade150.pt",
+      "frozen_profile": {
+        "bank": "semantic_segmentation",
+        "strength": "original",
+        "coupling": 0.25,
+        "temperature": 0.14,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "natural_short336_cap672",
+        "background_rule": "retained"
+      },
+      "vocabulary_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/vocabularies/ade150.json"
+    },
+    "voc20": {
+      "data_root": "/data/test/datasets/VIP_natural/VOCdevkit/VOC2012",
+      "total_images": 1449,
+      "family": "natural",
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/voc20.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/voc20.pt",
+      "frozen_profile": {
+        "bank": "semantic_imagenet",
+        "strength": "original",
+        "coupling": 1.0,
+        "temperature": 0.1,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "natural_short336_cap672",
+        "background_rule": "retained"
+      },
+      "vocabulary_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/vocabularies/voc20.json"
+    },
+    "voc21": {
+      "data_root": "/data/test/datasets/VIP_natural/VOCdevkit/VOC2012",
+      "total_images": 1449,
+      "family": "natural",
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/voc21.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/voc21.pt",
+      "frozen_profile": {
+        "bank": "official_segmentation",
+        "strength": "original",
+        "coupling": 0.75,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 0.3,
+        "wide_policy": "natural_short336_cap672",
+        "background_rule": "union_max"
+      },
+      "vocabulary_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/vocabularies/voc21.json"
+    },
+    "coco_object81": {
+      "data_root": "/data/test/datasets/VIP_natural/COCOObject",
+      "total_images": 5000,
+      "family": "natural",
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/coco_object81.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/coco_object81.pt",
+      "frozen_profile": {
+        "bank": "official_imagenet",
+        "strength": "original",
+        "coupling": 0.5,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "natural_short336_cap672",
+        "background_rule": "retained"
+      },
+      "vocabulary_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/vocabularies/coco_object81.json"
+    }
+  },
+  "gains": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1,
+    1.5,
+    2,
+    3
+  ],
+  "alias_modes": [
+    "retained",
+    "canonical",
+    "count_normalized"
+  ],
+  "capacity": 24,
+  "beta": 0.5,
+  "query_temperature": 0.1,
+  "controls": [
+    "equal_mean",
+    "wide"
+  ],
+  "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+  "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+  "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+  "base_configuration": "2026-10-13 retained best aliases, QuerySlot + DonorBefore, original local strength everywhere",
+  "varying_only": "g0 within each alias interface; all other dataset-specific readout/calibration settings frozen",
+  "pc60": "401 residual concepts retained in all three interfaces; residual_max (not residual_protected)",
+  "selection_analysis": "All-data best scalar is descriptive development selection; additionally report leave-one-dataset-out and grouped VOC20/VOC21 holdout.",
+  "averaging": "Equal ten-protocol mIoU; VOC20/VOC21 share images, so report grouped sensitivity as well.",
+  "source": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_g0_sweep_20261014/source",
+  "python": "/data/miniconda3/envs/pfu/bin/python"
+}

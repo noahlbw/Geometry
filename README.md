@@ -1,5 +1,7 @@
 # Geometry: frozen structure-guided open-vocabulary segmentation
 
+2026-10-14更新：**Geov2 十协议固定写回 g0 全量扫描完成，PC60 替换 LandCover.ai**。最佳 Alias + QuerySlot + DonorBefore 下，统一 g0=0.5 的等协议平均为 **55.8158%**，较等权融合 **+3.1730pp（7/10协议领先）**；逐域最优参考为56.7433%，统一步长代价0.9275pp，VOC21代价最大3.0438pp。全部留一选择及VOC20/21共同留出均选0.5；其他历史任务参数仍非全局统一。见[中文记录与完整步长表](research/geov2_g0_sweep_20261014/REPORT_ZH.md)、[审计与配对区间](research/geov2_g0_sweep_20261014/REPORT.md)、[完整模型说明](docs/GEOV2_FIXED_WRITER_20261014.md)及[四域自适应候选全量消融](research/geov2_full_ablation_20261014/REPORT.md)。三种Alias接口均扫描，逐图统计与可选统一步长配置一并保留；自适应不作为默认最终写回。
+
 2026-10-13更新：发布 **QuerySlot＋DonorBefore 完整模型实现及15数据集／16协议全量对比**。见[模型与复现说明](docs/QUERY_SLOT_DONOR_BEFORE_20261013.md)、[精度／耗时／显存对比表](research/query_slot_best_alias_20261013/REPORT.md)、[机器可读结果](research/query_slot_best_alias_20261013/RESULTS.csv)。采用此前带标签开发搜索保留的最佳alias，两个模块全部实际执行：7个协议精度提升、9个下降；耗时比旧Efficient记录减少3.65%–29.79%，显存有升有降。局部strength统一为`original`，因此部分协议同时改变了局部路径；不将全部差值归于宽视野替换。2026-10-09论文冻结主表仍单独保留。
 
 2026-10-12更新：五个公开方法的全部 **75 项全量评测＋75 项耗时／显存测试已完成**，覆盖 226,000 次协议图像评测。见[复现协议与运行说明](docs/BASELINE_BENCHMARK_20261011.md)、[完整对比表](research/TRAINING_FREE_BASELINES_FULL_20261011.md)和[核验证据](research/training_free_baselines_full_20261011/verification.json)。CorrCLIP 在 PC59／PC60 上超过当前 Geometry 历史参考；保留这些结果及资源、配置与选择协议的差异。
@@ -60,4 +62,4 @@ VIP为本地、明确修复全mask attention行后的实现测量，不是认证
 
 权重、数据集、二进制文本缓存和本机SSH管理配置不纳入Git。本轮39份逐图TP／target／predicted统计NPZ随实验公开，不含RGB或mask。第三方实现与checkpoint遵循各自上游条件，来源见[复现与归属](docs/REPRODUCIBILITY.md)。
 
-2026-10-14更新：Geov2 最终写回固定为结构锚定目标后的自适应 gate：先求 Z*，再用无标签的有界 g(x) 走向 Z*。等权融合、固定 g=1、固定 g=2 和乱序 query 均作为同观测控制；四域 16 图 gate 屏幕与 A800 gate 开销见 [Geov2 gate 决策与消融](research/geov2_gate_ablation_20261014_r2/GEOV2_GATE_DECISION_20261014.md)。
+2026-10-14更新：Geov2 保留 **最佳 Alias + QuerySlot + DonorBefore + 固定结构写回 Z=L+g0 H(W−L)**；自适应 gate 为候选消融。已完成的四域全量中，自适应比固定写回的等域平均仅高0.0690pp，因此不宣称其普遍最优。完整流程、实际 FP64 二次目标和 Alias 处理见 [固定写回说明](docs/GEOV2_FIXED_WRITER_20261014.md)。最新十协议 g0 扫描单独记录，PC60 替换 LandCover.ai，不与旧四域不同 strength 的结果混用。

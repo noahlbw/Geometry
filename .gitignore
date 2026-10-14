@@ -24,3 +24,7 @@ tmp/
 third_party/
 .DS_Store
 Thumbs.db
+
+!research/geov2_g0_sweep_20261014/full/*/statistics.npz
+
+!research/geov2_full_ablation_20261014/**/per_image_confusions.npz

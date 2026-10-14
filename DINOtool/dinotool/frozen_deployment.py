@@ -29,11 +29,14 @@ class FrozenGeometry:
     """
     @torch.inference_mode()
     def __init__(self,config_path,*,checkpoint_dir,dinov3_repo,upstream_root,text_cache,device='cuda',compact=True,efficient=False,
-                 wide_branch='vip', query_slot_capacity=24):
+                 wide_branch='vip', query_slot_capacity=24, writeback='coupled'):
         config_path=Path(config_path)
         self.config=yaml.safe_load(config_path.read_text(encoding='utf-8'))
         self.vocabulary=json.loads((config_path.parent/self.config['vocabulary']).read_text(encoding='utf-8'))
         c=self.config; self.compact=compact; self.efficient=efficient
+        if writeback not in ('coupled', 'adaptive', 'equal_mean', 'local', 'wide', 'fixed_g2'):
+            raise ValueError('Unknown writeback rule.')
+        self.writeback = writeback
         if wide_branch not in ('vip', 'raw32', 'query_slot'):
             raise ValueError('wide_branch must be vip, raw32, or query_slot.')
         if query_slot_capacity < 1:
@@ -100,6 +103,8 @@ class FrozenGeometry:
         self.previous=(TaxonomyInference.for_finalization(self.geometry,self.vip,banks,queries,
             ordinary_alias_policy='uniform',family=c['family'],background=c['background_index'],residual_features=residual)
             if self.profile.bank=='__previous_final__' else None)
+        if self.previous and writeback != 'coupled':
+            raise ValueError('Alternate writeback requires an explicit StaticProfile.')
         self.reader=StaticReader(banks,queries,c['background_index'],residual)
         self.strengths=self.previous.strengths if self.previous else (self.profile.strength,)
         self.compact_geometry=CompactGeometry(self.geometry);self.wide_scorer=CachedWideScorer()
@@ -242,7 +247,7 @@ class FrozenGeometry:
                 reconstruction=reconstruction if self.efficient else None,**observation_options)
             probability=(self.previous.predict_observations(source,return_probability=True,wide_scorer=self.wide_scorer,return_prediction=False)[2]
                 if self.previous else reader.probabilities(source,self.profile,{},wide_scorer=self.wide_scorer,
-                    dense_writer=write_dense if self.efficient else None,
+                    fusion=self.writeback, dense_writer=write_dense if self.efficient else None,
                     local_scorers=(self.foreground_local_scorers if protocol=='P' else self.efficient_local_scorers) if self.efficient else None,
                     output_finalizer=(lambda normalized,size:restore_and_finalize(normalized,size,self.config['background_bias'],
                         self.config['background_threshold'],background)) if self.efficient else None))
@@ -250,7 +255,7 @@ class FrozenGeometry:
             old=base.projected;base.projected=projected
             try:source=base.observations(image,self.geometry,self.vip,self.strengths,wide_policy=self.profile.wide_policy)
             finally:base.projected=old
-            probability=self.previous.predict_observations(source,return_probability=True)[2] if self.previous else reader.probabilities(source,self.profile,{})
+            probability=self.previous.predict_observations(source,return_probability=True)[2] if self.previous else reader.probabilities(source,self.profile,{},fusion=self.writeback)
         c=self.config
         if isinstance(probability,np.ndarray):return probability
         if probability.shape[0]>256:raise ValueError('PNG/byte prediction requires at most256 classes.')

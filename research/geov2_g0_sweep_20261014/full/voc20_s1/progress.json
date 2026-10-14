@@ -1,0 +1,7 @@
+{
+  "dataset": "voc20",
+  "processed": 600,
+  "total": 724,
+  "shard_index": 1,
+  "num_shards": 2
+}

@@ -17,7 +17,7 @@ def main(args):
     if output.exists():raise RuntimeError('Use a new output file.')
     model=FrozenGeometry(args.config,checkpoint_dir=args.checkpoint_dir,dinov3_repo=args.dinov3_repo,
         upstream_root=args.upstream_root,text_cache=args.text_cache,compact=not args.reference,device=args.device,efficient=args.efficient,
-        wide_branch=args.wide_branch,query_slot_capacity=args.query_slot_capacity)
+        wide_branch=args.wide_branch,query_slot_capacity=args.query_slot_capacity,writeback=args.writeback)
     config=model.config
     args.dataset=config['dataset'];args.mode='full'
     entry=dict(config,banks={'original':next(iter(model.vocabulary['banks'].values()))})
@@ -39,7 +39,7 @@ def main(args):
         full_coverage=args.num_shards==1 and len(samples)==len(validation),
         config=config,text_cache_identity=model.cache_identity,compact=not args.reference,efficient=args.efficient,
         wide_branch=model.wide_branch,local_branch=model.local_branch,
-        query_slot_capacity=getattr(model, 'query_slot_capacity', None),
+        query_slot_capacity=getattr(model, 'query_slot_capacity', None),writeback=model.writeback,
         context_memory=model.wide_branch=='raw32',
         context_memory_donors=args.context_memory_donors if model.wide_branch=='raw32' else None,
         context_memory_depth=args.context_memory_depth if model.wide_branch=='raw32' else None,
@@ -56,6 +56,8 @@ if __name__=='__main__':
         help='Frozen wide donor branch. Defaults to the incumbent VIP reader; raw32/query_slot are explicit experiments.')
     p.add_argument('--query-slot-capacity',type=int,default=24,
         help='QuerySlot codebook size (screened default: 24); supports compact or efficient execution.')
+    p.add_argument('--writeback',choices=('coupled','adaptive','equal_mean','local','wide','fixed_g2'),default='coupled',
+        help='Explicit writer selection; preserves coupled as the frozen default.')
     p.add_argument('--context-memory',action='store_true',help='Deprecated alias for --wide-branch raw32.')
     p.add_argument('--context-memory-donors',choices=('all','outside'),default='all',
         help='With --context-memory, use all donors or physical local-view exclusion with removed mass returned to self.')

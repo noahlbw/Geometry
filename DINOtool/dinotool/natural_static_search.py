@@ -84,14 +84,18 @@ class StaticReader:
                       local_scorers=None, output_finalizer=None, fusion='coupled'):
         """Render frozen local/wide observations with one declared fusion rule.
 
-        ``fusion='coupled'`` is the fixed structure target
-        ``Z* = L + g H(W-L)``.  ``fusion='adaptive'`` applies the released
-        image-only step ``Z = L + g(x)(Z*-L)``.  ``fixed_g2`` is the
-        over-relaxed control used for the VOC21 analysis.  ``local``/``wide``
+        ``fusion='coupled'`` is the historical fixed writer
+        ``T = L + g0 H(W-L)``.  The unrelaxed quadratic optimum is
+        ``Z* = L + H(W-L)``; T equals Z* only when g0=1.
+        ``fusion='adaptive'`` applies the image-only multiplier
+        ``Z = L + a(x)(T-L)``.  ``fixed_g2`` doubles g0, rather than
+        setting the effective step to two.  ``local``/``wide``
         expose endpoint controls and ``equal_mean`` is the literal 0.5/0.5
         logit fusion used in the ablation.
         """
-        if fusion not in ('coupled', 'adaptive', 'fixed_g2', 'target',
+        if fusion not in ('coupled', 'adaptive', 'adaptive_margin',
+                          'adaptive_support', 'adaptive_shuffled',
+                          'adaptive_constant', 'adaptive_random', 'fixed_g2', 'target',
                           'local', 'wide', 'equal_mean'):
             raise ValueError('Unknown frozen fusion rule.')
         import eval_development_readout as base
@@ -150,9 +154,19 @@ class StaticReader:
                         logits = local.double() + 2. * (target - local.double())
                     else:
                         from .geov2 import adaptive_writeback_gain
+                        variant = 'full' if fusion in ('adaptive', 'adaptive_shuffled', 'adaptive_constant', 'adaptive_random') else fusion.removeprefix('adaptive_')
                         gain = adaptive_writeback_gain(local, wide, target.float(),
                                                        g_min=.5, g_max=2.,
-                                                       temperature=.25).double()
+                                                       temperature=.25,
+                                                       variant=variant).double()
+                        if fusion == 'adaptive_shuffled':
+                            gain = torch.roll(gain, shifts=1, dims=0)
+                        elif fusion == 'adaptive_constant':
+                            gain = gain.mean().expand_as(gain)
+                        elif fusion == 'adaptive_random':
+                            generator = torch.Generator(device=gain.device).manual_seed(20261014)
+                            order = torch.randperm(len(gain), device=gain.device, generator=generator)
+                            gain = gain[order]
                         logits = local.double() + gain[:, None] * (target - local.double())
                 ah, aw = min(512, h - top), min(512, w - left)
                 if dense_writer is None:
