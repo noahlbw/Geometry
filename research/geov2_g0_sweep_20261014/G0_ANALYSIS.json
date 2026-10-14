@@ -1,0 +1,2601 @@
+{
+  "correlations": {
+    "wide_minus_local_pp": 0.8191500733197464,
+    "mean_alias_count": -0.4439668336313129,
+    "alias_count_cv": 0.31890575373516844,
+    "correction_energy_ratio": 0.09379580992210836,
+    "classes": 0.028224401448677588,
+    "local_temperature": 0.22190803540804932,
+    "displacement_energy_per_patch_class": -0.2813874297663251
+  },
+  "endpoint_correlation_leave_one_dataset_out": [
+    0.8072313292229533,
+    0.7971420421953891,
+    0.8924525037622291,
+    0.8244064638872715,
+    0.8244064638872715,
+    0.8058066296105564,
+    0.8244064638872715,
+    0.7728810598943169,
+    0.7728810598943169,
+    0.8144712170257237
+  ],
+  "three_gain_per_dataset_reference_macro": 56.629507778722214,
+  "three_gain_reference_gap_pp": 0.11382243994511043,
+  "class_changes": {
+    "vdd": {
+      "selected_g0": 1,
+      "note": "The selected g0 is the labeled full-split optimum, used for explanation only.",
+      "improved_classes": 5,
+      "decreased_classes": 2,
+      "improved_with_tp_gain": 3,
+      "improved_with_fp_reduction": 4,
+      "per_class": [
+        {
+          "name": "other",
+          "iou_at_half": 37.46821512650133,
+          "iou_at_selected": 45.13328396917357,
+          "delta_iou_pp": 7.665068842672241,
+          "delta_tp": 15344144,
+          "delta_fp": -3411570,
+          "delta_fn": -15344144
+        },
+        {
+          "name": "wall",
+          "iou_at_half": 45.181059456355214,
+          "iou_at_selected": 42.5796152256253,
+          "delta_iou_pp": -2.6014442307299177,
+          "delta_tp": -968236,
+          "delta_fp": -20259,
+          "delta_fn": 968236
+        },
+        {
+          "name": "road",
+          "iou_at_half": 40.04885690266031,
+          "iou_at_selected": 45.39636013975184,
+          "delta_iou_pp": 5.34750323709153,
+          "delta_tp": -1742415,
+          "delta_fp": -18878379,
+          "delta_fn": 1742415
+        },
+        {
+          "name": "vegetation",
+          "iou_at_half": 78.23649646572485,
+          "iou_at_selected": 78.56430472528353,
+          "delta_iou_pp": 0.32780825955867954,
+          "delta_tp": 6975918,
+          "delta_fp": 7352850,
+          "delta_fn": -6975918
+        },
+        {
+          "name": "vehicle",
+          "iou_at_half": 36.56759298894591,
+          "iou_at_selected": 30.965927431516317,
+          "delta_iou_pp": -5.601665557429595,
+          "delta_tp": -747492,
+          "delta_fp": -959760,
+          "delta_fn": 747492
+        },
+        {
+          "name": "roof",
+          "iou_at_half": 82.67358331791905,
+          "iou_at_selected": 85.119058464789,
+          "delta_iou_pp": 2.4454751468699527,
+          "delta_tp": -537600,
+          "delta_fp": -7463716,
+          "delta_fn": 537600
+        },
+        {
+          "name": "water",
+          "iou_at_half": 86.08091503308343,
+          "iou_at_selected": 92.08831846668056,
+          "delta_iou_pp": 6.007403433597133,
+          "delta_tp": 7254618,
+          "delta_fp": -2198103,
+          "delta_fn": -7254618
+        }
+      ]
+    },
+    "potsdam": {
+      "selected_g0": 0.75,
+      "note": "The selected g0 is the labeled full-split optimum, used for explanation only.",
+      "improved_classes": 3,
+      "decreased_classes": 3,
+      "improved_with_tp_gain": 2,
+      "improved_with_fp_reduction": 2,
+      "per_class": [
+        {
+          "name": "impervious surface",
+          "iou_at_half": 66.7839377034968,
+          "iou_at_selected": 66.18255292769123,
+          "delta_iou_pp": -0.6013847758055704,
+          "delta_tp": 4899874,
+          "delta_fp": 9217825,
+          "delta_fn": -4899874
+        },
+        {
+          "name": "building",
+          "iou_at_half": 75.47829175959016,
+          "iou_at_selected": 76.83723540440633,
+          "delta_iou_pp": 1.358943644816165,
+          "delta_tp": 705341,
+          "delta_fp": -1597955,
+          "delta_fn": -705341
+        },
+        {
+          "name": "low vegetation",
+          "iou_at_half": 52.219411332996245,
+          "iou_at_selected": 55.93151453611848,
+          "delta_iou_pp": 3.7121032031222327,
+          "delta_tp": 7103673,
+          "delta_fp": 5134477,
+          "delta_fn": -7103673
+        },
+        {
+          "name": "tree",
+          "iou_at_half": 63.928404809210726,
+          "iou_at_selected": 63.12020564959794,
+          "delta_iou_pp": -0.8081991596127835,
+          "delta_tp": -2720218,
+          "delta_fp": -2956233,
+          "delta_fn": 2720218
+        },
+        {
+          "name": "car",
+          "iou_at_half": 50.16371316312054,
+          "iou_at_selected": 46.464267560518884,
+          "delta_iou_pp": -3.6994456026016564,
+          "delta_tp": -1615358,
+          "delta_fp": -2212993,
+          "delta_fn": 1615358
+        },
+        {
+          "name": "clutter",
+          "iou_at_half": 18.05696396867692,
+          "iou_at_selected": 18.298777841254484,
+          "delta_iou_pp": 0.2418138725775627,
+          "delta_tp": -2373709,
+          "delta_fp": -13584724,
+          "delta_fn": 2373709
+        }
+      ]
+    },
+    "oem": {
+      "selected_g0": 0.25,
+      "note": "The selected g0 is the labeled full-split optimum, used for explanation only.",
+      "improved_classes": 5,
+      "decreased_classes": 3,
+      "improved_with_tp_gain": 4,
+      "improved_with_fp_reduction": 1,
+      "per_class": [
+        {
+          "name": "bareland",
+          "iou_at_half": 11.867892333028367,
+          "iou_at_selected": 11.790295204259563,
+          "delta_iou_pp": -0.07759712876880442,
+          "delta_tp": 5833,
+          "delta_fp": 260059,
+          "delta_fn": -5833
+        },
+        {
+          "name": "rangeland",
+          "iou_at_half": 27.350160657021636,
+          "iou_at_selected": 28.75064188943941,
+          "delta_iou_pp": 1.400481232417775,
+          "delta_tp": 1776191,
+          "delta_fp": 1791530,
+          "delta_fn": -1776191
+        },
+        {
+          "name": "developed space",
+          "iou_at_half": 30.538306382388562,
+          "iou_at_selected": 30.698090667023585,
+          "delta_iou_pp": 0.15978428463502325,
+          "delta_tp": -4131137,
+          "delta_fp": -14230439,
+          "delta_fn": 4131137
+        },
+        {
+          "name": "road",
+          "iou_at_half": 37.022535673076554,
+          "iou_at_selected": 37.411608767721276,
+          "delta_iou_pp": 0.38907309464472206,
+          "delta_tp": 706582,
+          "delta_fp": 1436881,
+          "delta_fn": -706582
+        },
+        {
+          "name": "tree",
+          "iou_at_half": 50.3975227379999,
+          "iou_at_selected": 53.70480674263358,
+          "delta_iou_pp": 3.3072840046336793,
+          "delta_tp": 3526979,
+          "delta_fp": 1816301,
+          "delta_fn": -3526979
+        },
+        {
+          "name": "water",
+          "iou_at_half": 69.93325504612984,
+          "iou_at_selected": 68.77550987084705,
+          "delta_iou_pp": -1.1577451752827983,
+          "delta_tp": -9599,
+          "delta_fp": 168771,
+          "delta_fn": 9599
+        },
+        {
+          "name": "agriculture land",
+          "iou_at_half": 66.54196213929737,
+          "iou_at_selected": 65.59474730354817,
+          "delta_iou_pp": -0.9472148357491932,
+          "delta_tp": -2404868,
+          "delta_fp": -2903392,
+          "delta_fn": 2404868
+        },
+        {
+          "name": "building",
+          "iou_at_half": 56.02066402055131,
+          "iou_at_selected": 61.15789948389777,
+          "delta_iou_pp": 5.137235463346464,
+          "delta_tp": 7049314,
+          "delta_fp": 5140994,
+          "delta_fn": -7049314
+        }
+      ]
+    },
+    "vaihingen": {
+      "selected_g0": 0.25,
+      "note": "The selected g0 is the labeled full-split optimum, used for explanation only.",
+      "improved_classes": 5,
+      "decreased_classes": 0,
+      "improved_with_tp_gain": 3,
+      "improved_with_fp_reduction": 2,
+      "per_class": [
+        {
+          "name": "impervious surface",
+          "iou_at_half": 64.65285977019118,
+          "iou_at_selected": 65.10016777046663,
+          "delta_iou_pp": 0.4473080002754415,
+          "delta_tp": -94548,
+          "delta_fp": -436130,
+          "delta_fn": 94548
+        },
+        {
+          "name": "building",
+          "iou_at_half": 73.01276305369878,
+          "iou_at_selected": 74.59997245685443,
+          "delta_iou_pp": 1.5872094031556543,
+          "delta_tp": -617139,
+          "delta_fp": -1663872,
+          "delta_fn": 617139
+        },
+        {
+          "name": "low vegetation",
+          "iou_at_half": 33.84119823886421,
+          "iou_at_selected": 36.846919304653625,
+          "delta_iou_pp": 3.005721065789416,
+          "delta_tp": 886713,
+          "delta_fp": 350399,
+          "delta_fn": -886713
+        },
+        {
+          "name": "tree",
+          "iou_at_half": 69.56134858370487,
+          "iou_at_selected": 69.8613460060149,
+          "delta_iou_pp": 0.29999742231002813,
+          "delta_tp": 482497,
+          "delta_fp": 565283,
+          "delta_fn": -482497
+        },
+        {
+          "name": "car",
+          "iou_at_half": 46.708968076248986,
+          "iou_at_selected": 47.600754270955136,
+          "delta_iou_pp": 0.8917861947061496,
+          "delta_tp": 182604,
+          "delta_fp": 344193,
+          "delta_fn": -182604
+        }
+      ]
+    },
+    "context60": {
+      "selected_g0": 0.75,
+      "note": "The selected g0 is the labeled full-split optimum, used for explanation only.",
+      "improved_classes": 32,
+      "decreased_classes": 28,
+      "improved_with_tp_gain": 27,
+      "improved_with_fp_reduction": 12,
+      "per_class": [
+        {
+          "name": "background",
+          "iou_at_half": 19.405817655847986,
+          "iou_at_selected": 22.86672657614267,
+          "delta_iou_pp": 3.4609089202946848,
+          "delta_tp": -10234589,
+          "delta_fp": -82643049,
+          "delta_fn": 10234589
+        },
+        {
+          "name": "aeroplane",
+          "iou_at_half": 61.1713744661816,
+          "iou_at_selected": 63.813957490840124,
+          "delta_iou_pp": 2.642583024658528,
+          "delta_tp": 21452,
+          "delta_fp": -539233,
+          "delta_fn": -21452
+        },
+        {
+          "name": "bag",
+          "iou_at_half": 26.77858842504366,
+          "iou_at_selected": 29.09912134620206,
+          "delta_iou_pp": 2.3205329211583994,
+          "delta_tp": 51122,
+          "delta_fp": 7377,
+          "delta_fn": -51122
+        },
+        {
+          "name": "bed",
+          "iou_at_half": 18.15653072962314,
+          "iou_at_selected": 14.568452088819587,
+          "delta_iou_pp": -3.588078640803552,
+          "delta_tp": 285587,
+          "delta_fp": 3686886,
+          "delta_fn": -285587
+        },
+        {
+          "name": "bedclothes",
+          "iou_at_half": 27.04819072867835,
+          "iou_at_selected": 25.31230948462982,
+          "delta_iou_pp": -1.735881244048528,
+          "delta_tp": -262179,
+          "delta_fp": -372321,
+          "delta_fn": 262179
+        },
+        {
+          "name": "bench",
+          "iou_at_half": 24.809444079892735,
+          "iou_at_selected": 23.081893744198613,
+          "delta_iou_pp": -1.7275503356941222,
+          "delta_tp": 31001,
+          "delta_fp": 286919,
+          "delta_fn": -31001
+        },
+        {
+          "name": "bicycle",
+          "iou_at_half": 66.67535767675429,
+          "iou_at_selected": 68.44934388091295,
+          "delta_iou_pp": 1.7739862041586605,
+          "delta_tp": 245498,
+          "delta_fp": 121387,
+          "delta_fn": -245498
+        },
+        {
+          "name": "bird",
+          "iou_at_half": 47.11979700160009,
+          "iou_at_selected": 51.55191165806084,
+          "delta_iou_pp": 4.432114656460747,
+          "delta_tp": -85937,
+          "delta_fp": -1338833,
+          "delta_fn": 85937
+        },
+        {
+          "name": "boat",
+          "iou_at_half": 53.72484004700587,
+          "iou_at_selected": 52.23130481854727,
+          "delta_iou_pp": -1.4935352284585974,
+          "delta_tp": 277002,
+          "delta_fp": 853404,
+          "delta_fn": -277002
+        },
+        {
+          "name": "book",
+          "iou_at_half": 32.84663011677583,
+          "iou_at_selected": 33.06382548008554,
+          "delta_iou_pp": 0.21719536330971323,
+          "delta_tp": 1964,
+          "delta_fp": -3232,
+          "delta_fn": -1964
+        },
+        {
+          "name": "bottle",
+          "iou_at_half": 61.48913087153936,
+          "iou_at_selected": 66.9739506022304,
+          "delta_iou_pp": 5.484819730691044,
+          "delta_tp": 514261,
+          "delta_fp": 237942,
+          "delta_fn": -514261
+        },
+        {
+          "name": "building",
+          "iou_at_half": 27.07028944335151,
+          "iou_at_selected": 33.48889710434307,
+          "delta_iou_pp": 6.418607660991558,
+          "delta_tp": 4261338,
+          "delta_fp": 1819688,
+          "delta_fn": -4261338
+        },
+        {
+          "name": "bus",
+          "iou_at_half": 75.05550433467953,
+          "iou_at_selected": 73.91683741583029,
+          "delta_iou_pp": -1.138666918849239,
+          "delta_tp": 383774,
+          "delta_fp": 731460,
+          "delta_fn": -383774
+        },
+        {
+          "name": "cabinet",
+          "iou_at_half": 27.8144404578814,
+          "iou_at_selected": 33.69408625580246,
+          "delta_iou_pp": 5.879645797921061,
+          "delta_tp": 564814,
+          "delta_fp": 292173,
+          "delta_fn": -564814
+        },
+        {
+          "name": "car",
+          "iou_at_half": 65.72382659999806,
+          "iou_at_selected": 62.2399935328862,
+          "delta_iou_pp": -3.48383306711186,
+          "delta_tp": 640113,
+          "delta_fp": 2573884,
+          "delta_fn": -640113
+        },
+        {
+          "name": "cat",
+          "iou_at_half": 83.42408114788303,
+          "iou_at_selected": 80.26362987873509,
+          "delta_iou_pp": -3.1604512691479414,
+          "delta_tp": 99126,
+          "delta_fp": 1503512,
+          "delta_fn": -99126
+        },
+        {
+          "name": "ceiling",
+          "iou_at_half": 45.199479018451754,
+          "iou_at_selected": 45.39789075815633,
+          "delta_iou_pp": 0.19841173970457504,
+          "delta_tp": 153094,
+          "delta_fp": 298970,
+          "delta_fn": -153094
+        },
+        {
+          "name": "chair",
+          "iou_at_half": 36.920949729552554,
+          "iou_at_selected": 40.79295823401107,
+          "delta_iou_pp": 3.8720085044585133,
+          "delta_tp": 706261,
+          "delta_fp": 247769,
+          "delta_fn": -706261
+        },
+        {
+          "name": "cloth",
+          "iou_at_half": 13.989556291196175,
+          "iou_at_selected": 17.369101557963678,
+          "delta_iou_pp": 3.3795452667675026,
+          "delta_tp": 475776,
+          "delta_fp": 725766,
+          "delta_fn": -475776
+        },
+        {
+          "name": "computer",
+          "iou_at_half": 18.387562595272286,
+          "iou_at_selected": 19.29514351459368,
+          "delta_iou_pp": 0.9075809193213935,
+          "delta_tp": 14715,
+          "delta_fp": -74843,
+          "delta_fn": -14715
+        },
+        {
+          "name": "cow",
+          "iou_at_half": 83.97780792397637,
+          "iou_at_selected": 83.1296149179511,
+          "delta_iou_pp": -0.8481930060252694,
+          "delta_tp": 91444,
+          "delta_fp": 170616,
+          "delta_fn": -91444
+        },
+        {
+          "name": "cup",
+          "iou_at_half": 24.742597749074264,
+          "iou_at_selected": 24.235691758277603,
+          "delta_iou_pp": -0.5069059907966604,
+          "delta_tp": -365,
+          "delta_fp": 21449,
+          "delta_fn": 365
+        },
+        {
+          "name": "curtain",
+          "iou_at_half": 55.334026805927756,
+          "iou_at_selected": 55.559086385294286,
+          "delta_iou_pp": 0.22505957936652976,
+          "delta_tp": 86164,
+          "delta_fp": 136210,
+          "delta_fn": -86164
+        },
+        {
+          "name": "dog",
+          "iou_at_half": 79.95863832077661,
+          "iou_at_selected": 81.46934171262775,
+          "delta_iou_pp": 1.5107033918511377,
+          "delta_tp": -147202,
+          "delta_fp": -811549,
+          "delta_fn": 147202
+        },
+        {
+          "name": "door",
+          "iou_at_half": 23.60562119193728,
+          "iou_at_selected": 24.72311251711601,
+          "delta_iou_pp": 1.1174913251787295,
+          "delta_tp": 98391,
+          "delta_fp": 166158,
+          "delta_fn": -98391
+        },
+        {
+          "name": "fence",
+          "iou_at_half": 37.17663830587359,
+          "iou_at_selected": 35.402151238143105,
+          "delta_iou_pp": -1.7744870677304831,
+          "delta_tp": 369591,
+          "delta_fp": 1881554,
+          "delta_fn": -369591
+        },
+        {
+          "name": "floor",
+          "iou_at_half": 50.80042867514177,
+          "iou_at_selected": 47.29482241611062,
+          "delta_iou_pp": -3.505606259031147,
+          "delta_tp": 1000668,
+          "delta_fp": 5371920,
+          "delta_fn": -1000668
+        },
+        {
+          "name": "flower",
+          "iou_at_half": 26.125389841886786,
+          "iou_at_selected": 26.604571091858958,
+          "delta_iou_pp": 0.4791812499721715,
+          "delta_tp": -19817,
+          "delta_fp": -123478,
+          "delta_fn": 19817
+        },
+        {
+          "name": "food",
+          "iou_at_half": 35.638911582316304,
+          "iou_at_selected": 34.48158804902951,
+          "delta_iou_pp": -1.1573235332867924,
+          "delta_tp": 22479,
+          "delta_fp": 150891,
+          "delta_fn": -22479
+        },
+        {
+          "name": "grass",
+          "iou_at_half": 69.26284782358809,
+          "iou_at_selected": 68.15830141918065,
+          "delta_iou_pp": -1.1045464044074436,
+          "delta_tp": 2997288,
+          "delta_fp": 5431500,
+          "delta_fn": -2997288
+        },
+        {
+          "name": "ground",
+          "iou_at_half": 13.585614960189513,
+          "iou_at_selected": 14.371392219406951,
+          "delta_iou_pp": 0.7857772592174381,
+          "delta_tp": 436370,
+          "delta_fp": -89351,
+          "delta_fn": -436370
+        },
+        {
+          "name": "horse",
+          "iou_at_half": 78.69055672413789,
+          "iou_at_selected": 79.14660783644585,
+          "delta_iou_pp": 0.4560511123079607,
+          "delta_tp": 50436,
+          "delta_fp": 7661,
+          "delta_fn": -50436
+        },
+        {
+          "name": "keyboard",
+          "iou_at_half": 39.09506119777502,
+          "iou_at_selected": 41.329896409987086,
+          "delta_iou_pp": 2.2348352122120687,
+          "delta_tp": 12151,
+          "delta_fp": -920,
+          "delta_fn": -12151
+        },
+        {
+          "name": "light",
+          "iou_at_half": 29.90390762683625,
+          "iou_at_selected": 29.18371667529761,
+          "delta_iou_pp": -0.7201909515386404,
+          "delta_tp": -21794,
+          "delta_fp": -26467,
+          "delta_fn": 21794
+        },
+        {
+          "name": "motorbike",
+          "iou_at_half": 68.97752682971282,
+          "iou_at_selected": 67.63387112952728,
+          "delta_iou_pp": -1.3436557001855363,
+          "delta_tp": -205770,
+          "delta_fp": -77509,
+          "delta_fn": 205770
+        },
+        {
+          "name": "mountain",
+          "iou_at_half": 46.08988180170805,
+          "iou_at_selected": 40.34869819666363,
+          "delta_iou_pp": -5.7411836050444265,
+          "delta_tp": 458111,
+          "delta_fp": 2418493,
+          "delta_fn": -458111
+        },
+        {
+          "name": "mouse",
+          "iou_at_half": 57.415331947670865,
+          "iou_at_selected": 56.75058462437884,
+          "delta_iou_pp": -0.6647473232920262,
+          "delta_tp": -1809,
+          "delta_fp": -2517,
+          "delta_fn": 1809
+        },
+        {
+          "name": "person",
+          "iou_at_half": 66.09178011578952,
+          "iou_at_selected": 76.07734259473104,
+          "delta_iou_pp": 9.985562478941517,
+          "delta_tp": 12851946,
+          "delta_fp": 6354609,
+          "delta_fn": -12851946
+        },
+        {
+          "name": "plate",
+          "iou_at_half": 51.151290267716234,
+          "iou_at_selected": 49.07367331667465,
+          "delta_iou_pp": -2.077616951041584,
+          "delta_tp": 10447,
+          "delta_fp": 83768,
+          "delta_fn": -10447
+        },
+        {
+          "name": "platform",
+          "iou_at_half": 21.901681985470656,
+          "iou_at_selected": 22.17315086337281,
+          "delta_iou_pp": 0.271468877902155,
+          "delta_tp": 26594,
+          "delta_fp": 49184,
+          "delta_fn": -26594
+        },
+        {
+          "name": "pottedplant",
+          "iou_at_half": 45.23269143223839,
+          "iou_at_selected": 47.016437595156795,
+          "delta_iou_pp": 1.7837461629184048,
+          "delta_tp": 256446,
+          "delta_fp": 234169,
+          "delta_fn": -256446
+        },
+        {
+          "name": "road",
+          "iou_at_half": 44.26385445415621,
+          "iou_at_selected": 43.825537360108775,
+          "delta_iou_pp": -0.43831709404743435,
+          "delta_tp": 207578,
+          "delta_fp": 778751,
+          "delta_fn": -207578
+        },
+        {
+          "name": "rock",
+          "iou_at_half": 42.189756710959344,
+          "iou_at_selected": 38.41577218368288,
+          "delta_iou_pp": -3.773984527276461,
+          "delta_tp": -210779,
+          "delta_fp": -74377,
+          "delta_fn": 210779
+        },
+        {
+          "name": "sheep",
+          "iou_at_half": 78.08071379197419,
+          "iou_at_selected": 79.39293250054328,
+          "delta_iou_pp": 1.312218708569091,
+          "delta_tp": 21693,
+          "delta_fp": -92088,
+          "delta_fn": -21693
+        },
+        {
+          "name": "shelves",
+          "iou_at_half": 23.812319660778975,
+          "iou_at_selected": 23.5302915952234,
+          "delta_iou_pp": -0.2820280655555756,
+          "delta_tp": 49461,
+          "delta_fp": 269872,
+          "delta_fn": -49461
+        },
+        {
+          "name": "sidewalk",
+          "iou_at_half": 15.817186029944898,
+          "iou_at_selected": 14.683398664028054,
+          "delta_iou_pp": -1.1337873659168434,
+          "delta_tp": 65394,
+          "delta_fp": 1418726,
+          "delta_fn": -65394
+        },
+        {
+          "name": "sign",
+          "iou_at_half": 35.42769379566496,
+          "iou_at_selected": 36.199298702845475,
+          "delta_iou_pp": 0.7716049071805173,
+          "delta_tp": 10596,
+          "delta_fp": -19831,
+          "delta_fn": -10596
+        },
+        {
+          "name": "sky",
+          "iou_at_half": 67.73605072853131,
+          "iou_at_selected": 75.41466191305638,
+          "delta_iou_pp": 7.678611184525067,
+          "delta_tp": 6362574,
+          "delta_fp": 582309,
+          "delta_fn": -6362574
+        },
+        {
+          "name": "snow",
+          "iou_at_half": 63.521401100567516,
+          "iou_at_selected": 63.75808286149664,
+          "delta_iou_pp": 0.23668176092912319,
+          "delta_tp": -26359,
+          "delta_fp": -67107,
+          "delta_fn": 26359
+        },
+        {
+          "name": "sofa",
+          "iou_at_half": 62.18860542813292,
+          "iou_at_selected": 60.948284779900916,
+          "delta_iou_pp": -1.2403206482320002,
+          "delta_tp": 329668,
+          "delta_fp": 1050283,
+          "delta_fn": -329668
+        },
+        {
+          "name": "table",
+          "iou_at_half": 45.995954160883414,
+          "iou_at_selected": 47.77979264177831,
+          "delta_iou_pp": 1.783838480894893,
+          "delta_tp": 1004538,
+          "delta_fp": 1456923,
+          "delta_fn": -1004538
+        },
+        {
+          "name": "track",
+          "iou_at_half": 21.438282718119034,
+          "iou_at_selected": 10.686193503400371,
+          "delta_iou_pp": -10.752089214718662,
+          "delta_tp": -614743,
+          "delta_fp": -36488,
+          "delta_fn": 614743
+        },
+        {
+          "name": "train",
+          "iou_at_half": 55.34336150645354,
+          "iou_at_selected": 48.62298890476957,
+          "delta_iou_pp": -6.7203726016839695,
+          "delta_tp": 302020,
+          "delta_fp": 3313983,
+          "delta_fn": -302020
+        },
+        {
+          "name": "tree",
+          "iou_at_half": 48.03581517665217,
+          "iou_at_selected": 53.25569257983026,
+          "delta_iou_pp": 5.219877403178089,
+          "delta_tp": 3561749,
+          "delta_fp": 1030425,
+          "delta_fn": -3561749
+        },
+        {
+          "name": "truck",
+          "iou_at_half": 17.217043187068427,
+          "iou_at_selected": 17.058207108795024,
+          "delta_iou_pp": -0.15883607827340285,
+          "delta_tp": 51066,
+          "delta_fp": 314156,
+          "delta_fn": -51066
+        },
+        {
+          "name": "tvmonitor",
+          "iou_at_half": 50.816131164134156,
+          "iou_at_selected": 51.83188417986471,
+          "delta_iou_pp": 1.015753015730553,
+          "delta_tp": 642104,
+          "delta_fp": 1036380,
+          "delta_fn": -642104
+        },
+        {
+          "name": "wall",
+          "iou_at_half": 21.91517895356994,
+          "iou_at_selected": 32.06236915331697,
+          "delta_iou_pp": 10.147190199747033,
+          "delta_tp": 7225020,
+          "delta_fp": 1789031,
+          "delta_fn": -7225020
+        },
+        {
+          "name": "water",
+          "iou_at_half": 77.27477359140096,
+          "iou_at_selected": 77.13110696799923,
+          "delta_iou_pp": -0.1436666234017281,
+          "delta_tp": 595532,
+          "delta_fp": 824322,
+          "delta_fn": -595532
+        },
+        {
+          "name": "window",
+          "iou_at_half": 28.677248398610356,
+          "iou_at_selected": 30.616126615211247,
+          "delta_iou_pp": 1.9388782166008909,
+          "delta_tp": 380273,
+          "delta_fp": 424344,
+          "delta_fn": -380273
+        },
+        {
+          "name": "wood",
+          "iou_at_half": 11.112868085852336,
+          "iou_at_selected": 8.726069523466595,
+          "delta_iou_pp": -2.3867985623857404,
+          "delta_tp": -104515,
+          "delta_fp": -130463,
+          "delta_fn": 104515
+        }
+      ]
+    },
+    "ade150": {
+      "selected_g0": 0.25,
+      "note": "The selected g0 is the labeled full-split optimum, used for explanation only.",
+      "improved_classes": 81,
+      "decreased_classes": 68,
+      "improved_with_tp_gain": 60,
+      "improved_with_fp_reduction": 33,
+      "per_class": [
+        {
+          "name": "wall",
+          "iou_at_half": 38.34616282017817,
+          "iou_at_selected": 37.77572168228571,
+          "delta_iou_pp": -0.570441137892459,
+          "delta_tp": -302596,
+          "delta_fp": 424502,
+          "delta_fn": 302596
+        },
+        {
+          "name": "building",
+          "iou_at_half": 64.8382951814611,
+          "iou_at_selected": 63.95682638965336,
+          "delta_iou_pp": -0.8814687918077482,
+          "delta_tp": -4346790,
+          "delta_fp": -5853285,
+          "delta_fn": 4346790
+        },
+        {
+          "name": "sky",
+          "iou_at_half": 80.94595094457331,
+          "iou_at_selected": 80.12551292312791,
+          "delta_iou_pp": -0.8204380214453977,
+          "delta_tp": -438002,
+          "delta_fp": -130866,
+          "delta_fn": 438002
+        },
+        {
+          "name": "floor",
+          "iou_at_half": 61.06734708416164,
+          "iou_at_selected": 61.04843052836851,
+          "delta_iou_pp": -0.018916555793126122,
+          "delta_tp": -159442,
+          "delta_fp": -249677,
+          "delta_fn": 159442
+        },
+        {
+          "name": "tree",
+          "iou_at_half": 60.60583610115022,
+          "iou_at_selected": 61.78820193705296,
+          "delta_iou_pp": 1.1823658359027434,
+          "delta_tp": 327908,
+          "delta_fp": 61385,
+          "delta_fn": -327908
+        },
+        {
+          "name": "ceiling",
+          "iou_at_half": 53.87448658181225,
+          "iou_at_selected": 55.07673648740798,
+          "delta_iou_pp": 1.2022499055957283,
+          "delta_tp": -42219,
+          "delta_fp": -887180,
+          "delta_fn": 42219
+        },
+        {
+          "name": "road",
+          "iou_at_half": 69.01483962090221,
+          "iou_at_selected": 70.2073500199116,
+          "delta_iou_pp": 1.192510399009393,
+          "delta_tp": 227411,
+          "delta_fp": -67546,
+          "delta_fn": -227411
+        },
+        {
+          "name": "bed",
+          "iou_at_half": 68.67848264469802,
+          "iou_at_selected": 68.89330464162443,
+          "delta_iou_pp": 0.21482199692640336,
+          "delta_tp": 421580,
+          "delta_fp": 566677,
+          "delta_fn": -421580
+        },
+        {
+          "name": "windowpane",
+          "iou_at_half": 45.51380521645441,
+          "iou_at_selected": 43.16631825476914,
+          "delta_iou_pp": -2.34748696168527,
+          "delta_tp": 51669,
+          "delta_fp": 794637,
+          "delta_fn": -51669
+        },
+        {
+          "name": "grass",
+          "iou_at_half": 54.37632414191888,
+          "iou_at_selected": 49.29634804878566,
+          "delta_iou_pp": -5.079976093133219,
+          "delta_tp": -1023770,
+          "delta_fp": -856538,
+          "delta_fn": 1023770
+        },
+        {
+          "name": "cabinet",
+          "iou_at_half": 49.972080568440354,
+          "iou_at_selected": 48.55214860031114,
+          "delta_iou_pp": -1.4199319681292124,
+          "delta_tp": -193145,
+          "delta_fp": -77066,
+          "delta_fn": 193145
+        },
+        {
+          "name": "sidewalk",
+          "iou_at_half": 47.831558039369966,
+          "iou_at_selected": 50.17299888321666,
+          "delta_iou_pp": 2.3414408438466907,
+          "delta_tp": -43987,
+          "delta_fp": -726925,
+          "delta_fn": 43987
+        },
+        {
+          "name": "person",
+          "iou_at_half": 64.42270308811602,
+          "iou_at_selected": 59.482011117943,
+          "delta_iou_pp": -4.94069197017302,
+          "delta_tp": -1146646,
+          "delta_fp": -1047723,
+          "delta_fn": 1146646
+        },
+        {
+          "name": "earth",
+          "iou_at_half": 14.449889271761235,
+          "iou_at_selected": 11.717400030771902,
+          "delta_iou_pp": -2.7324892409893327,
+          "delta_tp": -238149,
+          "delta_fp": -114248,
+          "delta_fn": 238149
+        },
+        {
+          "name": "door",
+          "iou_at_half": 39.73334272664931,
+          "iou_at_selected": 38.29276938509228,
+          "delta_iou_pp": -1.4405733415570339,
+          "delta_tp": -16058,
+          "delta_fp": 291279,
+          "delta_fn": 16058
+        },
+        {
+          "name": "table",
+          "iou_at_half": 40.28167503614874,
+          "iou_at_selected": 41.160168405539906,
+          "delta_iou_pp": 0.8784933693911654,
+          "delta_tp": 2005,
+          "delta_fp": -157925,
+          "delta_fn": -2005
+        },
+        {
+          "name": "mountain",
+          "iou_at_half": 41.90605588904939,
+          "iou_at_selected": 39.120632236604465,
+          "delta_iou_pp": -2.7854236524449263,
+          "delta_tp": -347735,
+          "delta_fp": -411161,
+          "delta_fn": 347735
+        },
+        {
+          "name": "plant",
+          "iou_at_half": 39.885462495011296,
+          "iou_at_selected": 37.76676439017489,
+          "delta_iou_pp": -2.1186981048364046,
+          "delta_tp": -160199,
+          "delta_fp": -20895,
+          "delta_fn": 160199
+        },
+        {
+          "name": "curtain",
+          "iou_at_half": 62.52810664690166,
+          "iou_at_selected": 64.376032342616,
+          "delta_iou_pp": 1.8479256957143377,
+          "delta_tp": -75702,
+          "delta_fp": -314180,
+          "delta_fn": 75702
+        },
+        {
+          "name": "chair",
+          "iou_at_half": 44.05420070927639,
+          "iou_at_selected": 45.07957304161071,
+          "delta_iou_pp": 1.025372332334321,
+          "delta_tp": 63227,
+          "delta_fp": -20416,
+          "delta_fn": -63227
+        },
+        {
+          "name": "car",
+          "iou_at_half": 61.216395032128396,
+          "iou_at_selected": 62.51776103534273,
+          "delta_iou_pp": 1.3013660032143335,
+          "delta_tp": 17082,
+          "delta_fp": -99642,
+          "delta_fn": -17082
+        },
+        {
+          "name": "water",
+          "iou_at_half": 49.23528166942848,
+          "iou_at_selected": 45.978621875880016,
+          "delta_iou_pp": -3.256659793548465,
+          "delta_tp": -248938,
+          "delta_fp": -146471,
+          "delta_fn": 248938
+        },
+        {
+          "name": "painting",
+          "iou_at_half": 26.63623077086362,
+          "iou_at_selected": 29.36484355585229,
+          "delta_iou_pp": 2.7286127849886697,
+          "delta_tp": 167595,
+          "delta_fp": 216157,
+          "delta_fn": -167595
+        },
+        {
+          "name": "sofa",
+          "iou_at_half": 46.15630078174255,
+          "iou_at_selected": 50.093724855654884,
+          "delta_iou_pp": 3.9374240739123323,
+          "delta_tp": -29790,
+          "delta_fp": -546936,
+          "delta_fn": 29790
+        },
+        {
+          "name": "shelf",
+          "iou_at_half": 33.84049151672392,
+          "iou_at_selected": 32.24164595333338,
+          "delta_iou_pp": -1.5988455633905403,
+          "delta_tp": -78702,
+          "delta_fp": -10591,
+          "delta_fn": 78702
+        },
+        {
+          "name": "house",
+          "iou_at_half": 17.301489094589645,
+          "iou_at_selected": 22.69088031529931,
+          "delta_iou_pp": 5.3893912207096655,
+          "delta_tp": 514585,
+          "delta_fp": 1437454,
+          "delta_fn": -514585
+        },
+        {
+          "name": "sea",
+          "iou_at_half": 28.615618008558325,
+          "iou_at_selected": 28.636622221305586,
+          "delta_iou_pp": 0.021004212747261164,
+          "delta_tp": -20501,
+          "delta_fp": -73351,
+          "delta_fn": 20501
+        },
+        {
+          "name": "mirror",
+          "iou_at_half": 28.050685302869823,
+          "iou_at_selected": 32.32744392651734,
+          "delta_iou_pp": 4.276758623647517,
+          "delta_tp": 175406,
+          "delta_fp": 206846,
+          "delta_fn": -175406
+        },
+        {
+          "name": "rug",
+          "iou_at_half": 34.58923337783472,
+          "iou_at_selected": 34.14163913991539,
+          "delta_iou_pp": -0.4475942379193256,
+          "delta_tp": 24294,
+          "delta_fp": 160095,
+          "delta_fn": -24294
+        },
+        {
+          "name": "field",
+          "iou_at_half": 19.78208126460068,
+          "iou_at_selected": 18.352892432791194,
+          "delta_iou_pp": -1.429188831809487,
+          "delta_tp": 326446,
+          "delta_fp": 2086493,
+          "delta_fn": -326446
+        },
+        {
+          "name": "armchair",
+          "iou_at_half": 4.024408534654675,
+          "iou_at_selected": 7.545298904859281,
+          "delta_iou_pp": 3.5208903702046053,
+          "delta_tp": 68098,
+          "delta_fp": 62493,
+          "delta_fn": -68098
+        },
+        {
+          "name": "seat",
+          "iou_at_half": 19.04151063791297,
+          "iou_at_selected": 28.09884214433828,
+          "delta_iou_pp": 9.05733150642531,
+          "delta_tp": 246850,
+          "delta_fp": 290502,
+          "delta_fn": -246850
+        },
+        {
+          "name": "fence",
+          "iou_at_half": 25.648333894976314,
+          "iou_at_selected": 25.92077258581894,
+          "delta_iou_pp": 0.27243869084262684,
+          "delta_tp": 8946,
+          "delta_fp": -5940,
+          "delta_fn": -8946
+        },
+        {
+          "name": "desk",
+          "iou_at_half": 32.13021313313802,
+          "iou_at_selected": 33.1126959319775,
+          "delta_iou_pp": 0.9824827988394773,
+          "delta_tp": -33110,
+          "delta_fp": -174816,
+          "delta_fn": 33110
+        },
+        {
+          "name": "rock",
+          "iou_at_half": 31.781111964864948,
+          "iou_at_selected": 33.48826943551232,
+          "delta_iou_pp": 1.707157470647374,
+          "delta_tp": 38449,
+          "delta_fp": -18473,
+          "delta_fn": -38449
+        },
+        {
+          "name": "wardrobe",
+          "iou_at_half": 50.54057399680168,
+          "iou_at_selected": 47.47162839577177,
+          "delta_iou_pp": -3.0689456010299097,
+          "delta_tp": -174930,
+          "delta_fp": -201897,
+          "delta_fn": 174930
+        },
+        {
+          "name": "lamp",
+          "iou_at_half": 30.111400903700527,
+          "iou_at_selected": 31.17596914010346,
+          "delta_iou_pp": 1.064568236402934,
+          "delta_tp": 20087,
+          "delta_fp": -33200,
+          "delta_fn": -20087
+        },
+        {
+          "name": "bathtub",
+          "iou_at_half": 40.80114935840916,
+          "iou_at_selected": 47.02393148328302,
+          "delta_iou_pp": 6.222782124873859,
+          "delta_tp": -37198,
+          "delta_fp": -374773,
+          "delta_fn": 37198
+        },
+        {
+          "name": "railing",
+          "iou_at_half": 22.206256589563225,
+          "iou_at_selected": 20.548346175394528,
+          "delta_iou_pp": -1.6579104141686969,
+          "delta_tp": 57711,
+          "delta_fp": 568515,
+          "delta_fn": -57711
+        },
+        {
+          "name": "cushion",
+          "iou_at_half": 16.478960132193667,
+          "iou_at_selected": 38.67495311754552,
+          "delta_iou_pp": 22.195992985351854,
+          "delta_tp": 267015,
+          "delta_fp": 30856,
+          "delta_fn": -267015
+        },
+        {
+          "name": "base",
+          "iou_at_half": 2.7163889191446104,
+          "iou_at_selected": 3.2799614326481232,
+          "delta_iou_pp": 0.5635725135035128,
+          "delta_tp": 9738,
+          "delta_fp": 107593,
+          "delta_fn": -9738
+        },
+        {
+          "name": "box",
+          "iou_at_half": 13.259090712556208,
+          "iou_at_selected": 21.102671375405702,
+          "delta_iou_pp": 7.843580662849494,
+          "delta_tp": 94871,
+          "delta_fp": 36943,
+          "delta_fn": -94871
+        },
+        {
+          "name": "column",
+          "iou_at_half": 37.497437695877345,
+          "iou_at_selected": 37.322828250010154,
+          "delta_iou_pp": -0.17460944586719052,
+          "delta_tp": 127878,
+          "delta_fp": 350204,
+          "delta_fn": -127878
+        },
+        {
+          "name": "signboard",
+          "iou_at_half": 25.59382947286006,
+          "iou_at_selected": 27.276056859045465,
+          "delta_iou_pp": 1.682227386185403,
+          "delta_tp": 71414,
+          "delta_fp": 153586,
+          "delta_fn": -71414
+        },
+        {
+          "name": "chest of drawers",
+          "iou_at_half": 31.67212476007941,
+          "iou_at_selected": 30.079375910053884,
+          "delta_iou_pp": -1.5927488500255258,
+          "delta_tp": -7652,
+          "delta_fp": 51752,
+          "delta_fn": 7652
+        },
+        {
+          "name": "counter",
+          "iou_at_half": 38.184961896043056,
+          "iou_at_selected": 36.58376221461446,
+          "delta_iou_pp": -1.6011996814285965,
+          "delta_tp": 17186,
+          "delta_fp": 96794,
+          "delta_fn": -17186
+        },
+        {
+          "name": "sand",
+          "iou_at_half": 43.048708123508085,
+          "iou_at_selected": 40.28334917264425,
+          "delta_iou_pp": -2.7653589508638348,
+          "delta_tp": -4381,
+          "delta_fp": 100879,
+          "delta_fn": 4381
+        },
+        {
+          "name": "sink",
+          "iou_at_half": 35.33574262819735,
+          "iou_at_selected": 39.07409957715436,
+          "delta_iou_pp": 3.738356948957005,
+          "delta_tp": -8111,
+          "delta_fp": -194265,
+          "delta_fn": 8111
+        },
+        {
+          "name": "skyscraper",
+          "iou_at_half": 23.167501775505478,
+          "iou_at_selected": 24.35831406474725,
+          "delta_iou_pp": 1.190812289241773,
+          "delta_tp": 110571,
+          "delta_fp": 391639,
+          "delta_fn": -110571
+        },
+        {
+          "name": "fireplace",
+          "iou_at_half": 50.93609291745882,
+          "iou_at_selected": 50.21407891451727,
+          "delta_iou_pp": -0.7220140029415489,
+          "delta_tp": -4861,
+          "delta_fp": 14075,
+          "delta_fn": 4861
+        },
+        {
+          "name": "refrigerator",
+          "iou_at_half": 59.90290307700452,
+          "iou_at_selected": 63.52115182567736,
+          "delta_iou_pp": 3.6182487486728405,
+          "delta_tp": -18288,
+          "delta_fp": -111648,
+          "delta_fn": 18288
+        },
+        {
+          "name": "grandstand",
+          "iou_at_half": 26.019620581346143,
+          "iou_at_selected": 24.572726821945842,
+          "delta_iou_pp": -1.4468937594003002,
+          "delta_tp": 10618,
+          "delta_fp": 102487,
+          "delta_fn": -10618
+        },
+        {
+          "name": "path",
+          "iou_at_half": 5.575011547464647,
+          "iou_at_selected": 6.105584350937294,
+          "delta_iou_pp": 0.5305728034726469,
+          "delta_tp": 69460,
+          "delta_fp": 1004447,
+          "delta_fn": -69460
+        },
+        {
+          "name": "stairs",
+          "iou_at_half": 30.451171776694554,
+          "iou_at_selected": 32.934394256338315,
+          "delta_iou_pp": 2.4832224796437607,
+          "delta_tp": 53729,
+          "delta_fp": 65768,
+          "delta_fn": -53729
+        },
+        {
+          "name": "runway",
+          "iou_at_half": 34.20368871661626,
+          "iou_at_selected": 40.9904916306485,
+          "delta_iou_pp": 6.786802914032236,
+          "delta_tp": 197485,
+          "delta_fp": 205799,
+          "delta_fn": -197485
+        },
+        {
+          "name": "case",
+          "iou_at_half": 24.81867608011742,
+          "iou_at_selected": 22.87899066981282,
+          "delta_iou_pp": -1.9396854103046017,
+          "delta_tp": -47572,
+          "delta_fp": -6164,
+          "delta_fn": 47572
+        },
+        {
+          "name": "pool table",
+          "iou_at_half": 82.18449814041573,
+          "iou_at_selected": 81.50994170694811,
+          "delta_iou_pp": -0.6745564334676146,
+          "delta_tp": -19536,
+          "delta_fp": -17439,
+          "delta_fn": 19536
+        },
+        {
+          "name": "pillow",
+          "iou_at_half": 27.03137112811352,
+          "iou_at_selected": 31.819199713600316,
+          "delta_iou_pp": 4.787828585486796,
+          "delta_tp": 39892,
+          "delta_fp": -88915,
+          "delta_fn": -39892
+        },
+        {
+          "name": "screen door",
+          "iou_at_half": 0.0,
+          "iou_at_selected": 0.0,
+          "delta_iou_pp": 0.0,
+          "delta_tp": 0,
+          "delta_fp": 37707,
+          "delta_fn": 0
+        },
+        {
+          "name": "stairway",
+          "iou_at_half": 22.92565766265403,
+          "iou_at_selected": 20.00610725912195,
+          "delta_iou_pp": -2.919550403532078,
+          "delta_tp": -500,
+          "delta_fp": 163801,
+          "delta_fn": 500
+        },
+        {
+          "name": "river",
+          "iou_at_half": 14.549163272779731,
+          "iou_at_selected": 16.250696570355405,
+          "delta_iou_pp": 1.7015332975756738,
+          "delta_tp": -6512,
+          "delta_fp": -191037,
+          "delta_fn": 6512
+        },
+        {
+          "name": "bridge",
+          "iou_at_half": 22.131378601645782,
+          "iou_at_selected": 25.19323363678171,
+          "delta_iou_pp": 3.0618550351359275,
+          "delta_tp": 96886,
+          "delta_fp": 262991,
+          "delta_fn": -96886
+        },
+        {
+          "name": "bookcase",
+          "iou_at_half": 13.465358953052663,
+          "iou_at_selected": 15.526799325414068,
+          "delta_iou_pp": 2.061440372361405,
+          "delta_tp": 48427,
+          "delta_fp": 193338,
+          "delta_fn": -48427
+        },
+        {
+          "name": "blind",
+          "iou_at_half": 31.252416186642886,
+          "iou_at_selected": 32.55069088266145,
+          "delta_iou_pp": 1.298274696018563,
+          "delta_tp": 139881,
+          "delta_fp": 346990,
+          "delta_fn": -139881
+        },
+        {
+          "name": "coffee table",
+          "iou_at_half": 50.12667309373809,
+          "iou_at_selected": 49.682581567932324,
+          "delta_iou_pp": -0.44409152580576716,
+          "delta_tp": 27773,
+          "delta_fp": 64672,
+          "delta_fn": -27773
+        },
+        {
+          "name": "toilet",
+          "iou_at_half": 51.17964611972791,
+          "iou_at_selected": 52.78050544704455,
+          "delta_iou_pp": 1.600859327316634,
+          "delta_tp": -1610,
+          "delta_fp": -47773,
+          "delta_fn": 1610
+        },
+        {
+          "name": "flower",
+          "iou_at_half": 6.869829481202092,
+          "iou_at_selected": 13.069032883785429,
+          "delta_iou_pp": 6.199203402583337,
+          "delta_tp": 54022,
+          "delta_fp": 136935,
+          "delta_fn": -54022
+        },
+        {
+          "name": "book",
+          "iou_at_half": 8.946351976377237,
+          "iou_at_selected": 11.172934606178988,
+          "delta_iou_pp": 2.226582629801751,
+          "delta_tp": 13838,
+          "delta_fp": 9932,
+          "delta_fn": -13838
+        },
+        {
+          "name": "hill",
+          "iou_at_half": 5.122493345986282,
+          "iou_at_selected": 5.849903710729786,
+          "delta_iou_pp": 0.7274103647435046,
+          "delta_tp": 47599,
+          "delta_fp": 558683,
+          "delta_fn": -47599
+        },
+        {
+          "name": "bench",
+          "iou_at_half": 42.69620353537875,
+          "iou_at_selected": 40.074744071741286,
+          "delta_iou_pp": -2.621459463637464,
+          "delta_tp": 9431,
+          "delta_fp": 112628,
+          "delta_fn": -9431
+        },
+        {
+          "name": "countertop",
+          "iou_at_half": 16.3417658289134,
+          "iou_at_selected": 17.455973944236952,
+          "delta_iou_pp": 1.114208115323553,
+          "delta_tp": 72123,
+          "delta_fp": 334201,
+          "delta_fn": -72123
+        },
+        {
+          "name": "stove",
+          "iou_at_half": 22.26174001396802,
+          "iou_at_selected": 25.266541465987252,
+          "delta_iou_pp": 3.004801452019233,
+          "delta_tp": -35873,
+          "delta_fp": -454954,
+          "delta_fn": 35873
+        },
+        {
+          "name": "palm",
+          "iou_at_half": 26.095685936762067,
+          "iou_at_selected": 25.676421491678465,
+          "delta_iou_pp": -0.41926444508360206,
+          "delta_tp": 8468,
+          "delta_fp": 53759,
+          "delta_fn": -8468
+        },
+        {
+          "name": "kitchen island",
+          "iou_at_half": 26.28508563126386,
+          "iou_at_selected": 22.236184157932012,
+          "delta_iou_pp": -4.048901473331849,
+          "delta_tp": -15634,
+          "delta_fp": 77327,
+          "delta_fn": 15634
+        },
+        {
+          "name": "computer",
+          "iou_at_half": 41.71913502661321,
+          "iou_at_selected": 41.527908781773064,
+          "delta_iou_pp": -0.19122624484014494,
+          "delta_tp": -18970,
+          "delta_fp": -40203,
+          "delta_fn": 18970
+        },
+        {
+          "name": "swivel chair",
+          "iou_at_half": 2.404327994927492,
+          "iou_at_selected": 9.863998524794704,
+          "delta_iou_pp": 7.459670529867212,
+          "delta_tp": 31785,
+          "delta_fp": 26441,
+          "delta_fn": -31785
+        },
+        {
+          "name": "boat",
+          "iou_at_half": 30.58436299489642,
+          "iou_at_selected": 35.99447108095816,
+          "delta_iou_pp": 5.4101080860617365,
+          "delta_tp": -14077,
+          "delta_fp": -195374,
+          "delta_fn": 14077
+        },
+        {
+          "name": "bar",
+          "iou_at_half": 25.87553219627484,
+          "iou_at_selected": 22.45428831556034,
+          "delta_iou_pp": -3.421243880714499,
+          "delta_tp": 10937,
+          "delta_fp": 227284,
+          "delta_fn": -10937
+        },
+        {
+          "name": "arcade machine",
+          "iou_at_half": 11.181164987818862,
+          "iou_at_selected": 14.943109793694015,
+          "delta_iou_pp": 3.761944805875153,
+          "delta_tp": 10059,
+          "delta_fp": 2110,
+          "delta_fn": -10059
+        },
+        {
+          "name": "hovel",
+          "iou_at_half": 10.326682328506026,
+          "iou_at_selected": 11.824390536704216,
+          "delta_iou_pp": 1.4977082081981905,
+          "delta_tp": -897,
+          "delta_fp": -327629,
+          "delta_fn": 897
+        },
+        {
+          "name": "bus",
+          "iou_at_half": 50.800196672745265,
+          "iou_at_selected": 61.83582637423144,
+          "delta_iou_pp": 11.035629701486172,
+          "delta_tp": -3816,
+          "delta_fp": -149545,
+          "delta_fn": 3816
+        },
+        {
+          "name": "towel",
+          "iou_at_half": 56.955681452147715,
+          "iou_at_selected": 57.981540881662546,
+          "delta_iou_pp": 1.0258594295148313,
+          "delta_tp": 29658,
+          "delta_fp": 41813,
+          "delta_fn": -29658
+        },
+        {
+          "name": "light",
+          "iou_at_half": 1.7103026991946233,
+          "iou_at_selected": 5.606001795383257,
+          "delta_iou_pp": 3.8956990961886335,
+          "delta_tp": 28078,
+          "delta_fp": 121808,
+          "delta_fn": -28078
+        },
+        {
+          "name": "truck",
+          "iou_at_half": 14.437604659370018,
+          "iou_at_selected": 16.12253526329976,
+          "delta_iou_pp": 1.6849306039297414,
+          "delta_tp": -4079,
+          "delta_fp": -113547,
+          "delta_fn": 4079
+        },
+        {
+          "name": "tower",
+          "iou_at_half": 21.49963340164412,
+          "iou_at_selected": 14.56626487299883,
+          "delta_iou_pp": -6.933368528645291,
+          "delta_tp": 49604,
+          "delta_fp": 707985,
+          "delta_fn": -49604
+        },
+        {
+          "name": "chandelier",
+          "iou_at_half": 46.874128474481736,
+          "iou_at_selected": 42.9241603599418,
+          "delta_iou_pp": -3.949968114539935,
+          "delta_tp": 8208,
+          "delta_fp": 86434,
+          "delta_fn": -8208
+        },
+        {
+          "name": "awning",
+          "iou_at_half": 28.856877927457546,
+          "iou_at_selected": 24.165080786596516,
+          "delta_iou_pp": -4.691797140861031,
+          "delta_tp": 15751,
+          "delta_fp": 154799,
+          "delta_fn": -15751
+        },
+        {
+          "name": "streetlight",
+          "iou_at_half": 19.984971185953352,
+          "iou_at_selected": 22.39791100576208,
+          "delta_iou_pp": 2.4129398198087273,
+          "delta_tp": 26173,
+          "delta_fp": 55781,
+          "delta_fn": -26173
+        },
+        {
+          "name": "booth",
+          "iou_at_half": 7.693459545380119,
+          "iou_at_selected": 9.53076912566906,
+          "delta_iou_pp": 1.8373095802889416,
+          "delta_tp": -13122,
+          "delta_fp": -729885,
+          "delta_fn": 13122
+        },
+        {
+          "name": "television receiver",
+          "iou_at_half": 29.651251236023427,
+          "iou_at_selected": 30.04217723838951,
+          "delta_iou_pp": 0.39092600236608277,
+          "delta_tp": -5008,
+          "delta_fp": -30356,
+          "delta_fn": 5008
+        },
+        {
+          "name": "airplane",
+          "iou_at_half": 13.894942402553527,
+          "iou_at_selected": 15.380042576550764,
+          "delta_iou_pp": 1.4851001739972371,
+          "delta_tp": -365,
+          "delta_fp": -162283,
+          "delta_fn": 365
+        },
+        {
+          "name": "dirt track",
+          "iou_at_half": 5.2909092645836715,
+          "iou_at_selected": 2.201628755967425,
+          "delta_iou_pp": -3.0892805086162465,
+          "delta_tp": -443,
+          "delta_fp": 126776,
+          "delta_fn": 443
+        },
+        {
+          "name": "apparel",
+          "iou_at_half": 7.749714960842711,
+          "iou_at_selected": 5.078961057393298,
+          "delta_iou_pp": -2.6707539034494134,
+          "delta_tp": 6467,
+          "delta_fp": 598220,
+          "delta_fn": -6467
+        },
+        {
+          "name": "pole",
+          "iou_at_half": 16.127307901167526,
+          "iou_at_selected": 12.015664793761651,
+          "delta_iou_pp": -4.111643107405875,
+          "delta_tp": 51410,
+          "delta_fp": 629504,
+          "delta_fn": -51410
+        },
+        {
+          "name": "land",
+          "iou_at_half": 2.1738764407543836,
+          "iou_at_selected": 2.756409150060579,
+          "delta_iou_pp": 0.5825327093061956,
+          "delta_tp": 44994,
+          "delta_fp": 1293443,
+          "delta_fn": -44994
+        },
+        {
+          "name": "bannister",
+          "iou_at_half": 14.970915830763941,
+          "iou_at_selected": 16.22406527150033,
+          "delta_iou_pp": 1.2531494407363883,
+          "delta_tp": -12465,
+          "delta_fp": -129839,
+          "delta_fn": 12465
+        },
+        {
+          "name": "escalator",
+          "iou_at_half": 39.59292445739821,
+          "iou_at_selected": 36.69977708612629,
+          "delta_iou_pp": -2.8931473712719225,
+          "delta_tp": -14970,
+          "delta_fp": -9848,
+          "delta_fn": 14970
+        },
+        {
+          "name": "ottoman",
+          "iou_at_half": 37.102028685925646,
+          "iou_at_selected": 38.912137993787454,
+          "delta_iou_pp": 1.8101093078618078,
+          "delta_tp": 2427,
+          "delta_fp": -18337,
+          "delta_fn": -2427
+        },
+        {
+          "name": "bottle",
+          "iou_at_half": 25.055572760744642,
+          "iou_at_selected": 26.99973434283058,
+          "delta_iou_pp": 1.9441615820859361,
+          "delta_tp": 8493,
+          "delta_fp": 10530,
+          "delta_fn": -8493
+        },
+        {
+          "name": "buffet",
+          "iou_at_half": 8.238192220259775,
+          "iou_at_selected": 6.636981019428344,
+          "delta_iou_pp": -1.6012112008314308,
+          "delta_tp": -6978,
+          "delta_fp": 9056,
+          "delta_fn": 6978
+        },
+        {
+          "name": "poster",
+          "iou_at_half": 7.940088381100887,
+          "iou_at_selected": 7.614531359883924,
+          "delta_iou_pp": -0.32555702121696317,
+          "delta_tp": -6722,
+          "delta_fp": 11307,
+          "delta_fn": 6722
+        },
+        {
+          "name": "stage",
+          "iou_at_half": 11.259674609445655,
+          "iou_at_selected": 7.4151904767703405,
+          "delta_iou_pp": -3.8444841326753147,
+          "delta_tp": 9603,
+          "delta_fp": 674111,
+          "delta_fn": -9603
+        },
+        {
+          "name": "van",
+          "iou_at_half": 38.525890935849645,
+          "iou_at_selected": 37.57215885123994,
+          "delta_iou_pp": -0.9537320846097046,
+          "delta_tp": 23711,
+          "delta_fp": 69938,
+          "delta_fn": -23711
+        },
+        {
+          "name": "ship",
+          "iou_at_half": 6.847486269539502,
+          "iou_at_selected": 7.764934410897144,
+          "delta_iou_pp": 0.9174481413576423,
+          "delta_tp": 8067,
+          "delta_fp": 61940,
+          "delta_fn": -8067
+        },
+        {
+          "name": "fountain",
+          "iou_at_half": 36.53297104479704,
+          "iou_at_selected": 36.384205919617735,
+          "delta_iou_pp": -0.14876512517930252,
+          "delta_tp": 16719,
+          "delta_fp": 47760,
+          "delta_fn": -16719
+        },
+        {
+          "name": "conveyer belt",
+          "iou_at_half": 42.740436555417446,
+          "iou_at_selected": 43.47265801683503,
+          "delta_iou_pp": 0.7322214614175806,
+          "delta_tp": 5650,
+          "delta_fp": 7197,
+          "delta_fn": -5650
+        },
+        {
+          "name": "canopy",
+          "iou_at_half": 19.522987661574618,
+          "iou_at_selected": 18.872518541991745,
+          "delta_iou_pp": -0.6504691195828727,
+          "delta_tp": 49967,
+          "delta_fp": 289164,
+          "delta_fn": -49967
+        },
+        {
+          "name": "washer",
+          "iou_at_half": 60.629647691145294,
+          "iou_at_selected": 67.44618198899532,
+          "delta_iou_pp": 6.816534297850026,
+          "delta_tp": 36250,
+          "delta_fp": 5458,
+          "delta_fn": -36250
+        },
+        {
+          "name": "plaything",
+          "iou_at_half": 9.193273304113408,
+          "iou_at_selected": 8.637267394673259,
+          "delta_iou_pp": -0.5560059094401488,
+          "delta_tp": 14467,
+          "delta_fp": 202597,
+          "delta_fn": -14467
+        },
+        {
+          "name": "swimming pool",
+          "iou_at_half": 37.15165681984019,
+          "iou_at_selected": 34.658696328431745,
+          "delta_iou_pp": -2.4929604914084464,
+          "delta_tp": 931,
+          "delta_fp": 42412,
+          "delta_fn": -931
+        },
+        {
+          "name": "stool",
+          "iou_at_half": 20.203074943926755,
+          "iou_at_selected": 24.384085504866032,
+          "delta_iou_pp": 4.181010560939278,
+          "delta_tp": 21259,
+          "delta_fp": 46132,
+          "delta_fn": -21259
+        },
+        {
+          "name": "barrel",
+          "iou_at_half": 39.30917166753296,
+          "iou_at_selected": 33.1181028410425,
+          "delta_iou_pp": -6.191068826490458,
+          "delta_tp": 144,
+          "delta_fp": 4391,
+          "delta_fn": -144
+        },
+        {
+          "name": "basket",
+          "iou_at_half": 38.37645872871375,
+          "iou_at_selected": 35.59735667025195,
+          "delta_iou_pp": -2.7791020584618025,
+          "delta_tp": 25513,
+          "delta_fp": 102030,
+          "delta_fn": -25513
+        },
+        {
+          "name": "waterfall",
+          "iou_at_half": 22.135038668379423,
+          "iou_at_selected": 21.596261765450546,
+          "delta_iou_pp": -0.5387769029288769,
+          "delta_tp": 12049,
+          "delta_fp": 71931,
+          "delta_fn": -12049
+        },
+        {
+          "name": "tent",
+          "iou_at_half": 48.288974222677076,
+          "iou_at_selected": 46.54010332367022,
+          "delta_iou_pp": -1.748870899006853,
+          "delta_tp": -115,
+          "delta_fp": 16790,
+          "delta_fn": 115
+        },
+        {
+          "name": "bag",
+          "iou_at_half": 23.69917706552796,
+          "iou_at_selected": 25.03421773479497,
+          "delta_iou_pp": 1.3350406692670127,
+          "delta_tp": 25272,
+          "delta_fp": 75398,
+          "delta_fn": -25272
+        },
+        {
+          "name": "minibike",
+          "iou_at_half": 67.56311818201934,
+          "iou_at_selected": 67.65090027054762,
+          "delta_iou_pp": 0.08778208852828584,
+          "delta_tp": 6864,
+          "delta_fp": 9853,
+          "delta_fn": -6864
+        },
+        {
+          "name": "cradle",
+          "iou_at_half": 48.615012484394505,
+          "iou_at_selected": 52.90782687492828,
+          "delta_iou_pp": 4.292814390533778,
+          "delta_tp": -7085,
+          "delta_fp": -44587,
+          "delta_fn": 7085
+        },
+        {
+          "name": "oven",
+          "iou_at_half": 36.579319028265644,
+          "iou_at_selected": 29.12088838316792,
+          "delta_iou_pp": -7.4584306450977245,
+          "delta_tp": 6884,
+          "delta_fp": 115583,
+          "delta_fn": -6884
+        },
+        {
+          "name": "ball",
+          "iou_at_half": 20.948894631065173,
+          "iou_at_selected": 16.331805898249325,
+          "delta_iou_pp": -4.617088732815848,
+          "delta_tp": 5564,
+          "delta_fp": 73455,
+          "delta_fn": -5564
+        },
+        {
+          "name": "food",
+          "iou_at_half": 37.218465800956324,
+          "iou_at_selected": 46.16090507273951,
+          "delta_iou_pp": 8.942439271783186,
+          "delta_tp": 87571,
+          "delta_fp": 71123,
+          "delta_fn": -87571
+        },
+        {
+          "name": "step",
+          "iou_at_half": 2.045223045474207,
+          "iou_at_selected": 1.9792968227506582,
+          "delta_iou_pp": -0.06592622272354887,
+          "delta_tp": 204,
+          "delta_fp": 19855,
+          "delta_fn": -204
+        },
+        {
+          "name": "tank",
+          "iou_at_half": 16.055691190043767,
+          "iou_at_selected": 22.1952199029976,
+          "delta_iou_pp": 6.139528712953833,
+          "delta_tp": 64596,
+          "delta_fp": 142385,
+          "delta_fn": -64596
+        },
+        {
+          "name": "trade name",
+          "iou_at_half": 1.2409565002792606,
+          "iou_at_selected": 2.3090753776870043,
+          "delta_iou_pp": 1.0681188774077437,
+          "delta_tp": 4765,
+          "delta_fp": 28294,
+          "delta_fn": -4765
+        },
+        {
+          "name": "microwave",
+          "iou_at_half": 68.81955965513045,
+          "iou_at_selected": 72.34140693095134,
+          "delta_iou_pp": 3.521847275820889,
+          "delta_tp": 8064,
+          "delta_fp": -20457,
+          "delta_fn": -8064
+        },
+        {
+          "name": "pot",
+          "iou_at_half": 37.55649614692638,
+          "iou_at_selected": 36.32664355355893,
+          "delta_iou_pp": -1.229852593367447,
+          "delta_tp": 20296,
+          "delta_fp": 72148,
+          "delta_fn": -20296
+        },
+        {
+          "name": "animal",
+          "iou_at_half": 63.27847733961717,
+          "iou_at_selected": 64.76789801860177,
+          "delta_iou_pp": 1.489420678984601,
+          "delta_tp": 19322,
+          "delta_fp": 15409,
+          "delta_fn": -19322
+        },
+        {
+          "name": "bicycle",
+          "iou_at_half": 46.710420916596355,
+          "iou_at_selected": 47.34900968897533,
+          "delta_iou_pp": 0.6385887723789736,
+          "delta_tp": 6506,
+          "delta_fp": 11215,
+          "delta_fn": -6506
+        },
+        {
+          "name": "lake",
+          "iou_at_half": 3.366054197091184,
+          "iou_at_selected": 4.226611740596442,
+          "delta_iou_pp": 0.8605575435052581,
+          "delta_tp": 29690,
+          "delta_fp": 538720,
+          "delta_fn": -29690
+        },
+        {
+          "name": "dishwasher",
+          "iou_at_half": 36.08736533533269,
+          "iou_at_selected": 42.4294123696995,
+          "delta_iou_pp": 6.342047034366807,
+          "delta_tp": 11411,
+          "delta_fp": 2572,
+          "delta_fn": -11411
+        },
+        {
+          "name": "screen",
+          "iou_at_half": 44.72582882839784,
+          "iou_at_selected": 39.28460634232312,
+          "delta_iou_pp": -5.4412224860747145,
+          "delta_tp": 545,
+          "delta_fp": 73768,
+          "delta_fn": -545
+        },
+        {
+          "name": "blanket",
+          "iou_at_half": 10.615017373311048,
+          "iou_at_selected": 14.119338312603885,
+          "delta_iou_pp": 3.504320939292837,
+          "delta_tp": 18623,
+          "delta_fp": -327251,
+          "delta_fn": -18623
+        },
+        {
+          "name": "sculpture",
+          "iou_at_half": 50.72292927880229,
+          "iou_at_selected": 44.693774483709376,
+          "delta_iou_pp": -6.029154795092914,
+          "delta_tp": 22070,
+          "delta_fp": 69636,
+          "delta_fn": -22070
+        },
+        {
+          "name": "hood",
+          "iou_at_half": 37.45866053503279,
+          "iou_at_selected": 35.043339861712724,
+          "delta_iou_pp": -2.4153206733200676,
+          "delta_tp": 5837,
+          "delta_fp": 42645,
+          "delta_fn": -5837
+        },
+        {
+          "name": "sconce",
+          "iou_at_half": 21.104602204078645,
+          "iou_at_selected": 20.870934692182768,
+          "delta_iou_pp": -0.2336675118958773,
+          "delta_tp": 27304,
+          "delta_fp": 133881,
+          "delta_fn": -27304
+        },
+        {
+          "name": "vase",
+          "iou_at_half": 14.763971228921426,
+          "iou_at_selected": 16.502074399816934,
+          "delta_iou_pp": 1.7381031708955081,
+          "delta_tp": 13800,
+          "delta_fp": 34307,
+          "delta_fn": -13800
+        },
+        {
+          "name": "traffic light",
+          "iou_at_half": 22.125233082706767,
+          "iou_at_selected": 21.092513165497706,
+          "delta_iou_pp": -1.0327199172090609,
+          "delta_tp": -2160,
+          "delta_fp": 10109,
+          "delta_fn": 2160
+        },
+        {
+          "name": "tray",
+          "iou_at_half": 9.507818086936354,
+          "iou_at_selected": 12.813222027831051,
+          "delta_iou_pp": 3.3054039408946974,
+          "delta_tp": 16869,
+          "delta_fp": 78265,
+          "delta_fn": -16869
+        },
+        {
+          "name": "ashcan",
+          "iou_at_half": 11.68232002543915,
+          "iou_at_selected": 15.942141008312426,
+          "delta_iou_pp": 4.259820982873276,
+          "delta_tp": 3100,
+          "delta_fp": -322555,
+          "delta_fn": -3100
+        },
+        {
+          "name": "fan",
+          "iou_at_half": 15.435429792781102,
+          "iou_at_selected": 39.16262868560377,
+          "delta_iou_pp": 23.72719889282267,
+          "delta_tp": 47018,
+          "delta_fp": 16878,
+          "delta_fn": -47018
+        },
+        {
+          "name": "pier",
+          "iou_at_half": 4.176395779829387,
+          "iou_at_selected": 4.097093166310255,
+          "delta_iou_pp": -0.0793026135191317,
+          "delta_tp": -1303,
+          "delta_fp": -12215,
+          "delta_fn": 1303
+        },
+        {
+          "name": "crt screen",
+          "iou_at_half": 0.2858682988749587,
+          "iou_at_selected": 0.29816767300746017,
+          "delta_iou_pp": 0.012299374132501484,
+          "delta_tp": 176,
+          "delta_fp": 47166,
+          "delta_fn": -176
+        },
+        {
+          "name": "plate",
+          "iou_at_half": 42.62110085562218,
+          "iou_at_selected": 38.13299788728084,
+          "delta_iou_pp": -4.4881029683413445,
+          "delta_tp": 3538,
+          "delta_fp": 58193,
+          "delta_fn": -3538
+        },
+        {
+          "name": "monitor",
+          "iou_at_half": 21.4227395297451,
+          "iou_at_selected": 20.10150138657634,
+          "delta_iou_pp": -1.3212381431687596,
+          "delta_tp": -4855,
+          "delta_fp": 20527,
+          "delta_fn": 4855
+        },
+        {
+          "name": "bulletin board",
+          "iou_at_half": 7.554881335957775,
+          "iou_at_selected": 7.353295375821578,
+          "delta_iou_pp": -0.2015859601361969,
+          "delta_tp": 5510,
+          "delta_fp": 83679,
+          "delta_fn": -5510
+        },
+        {
+          "name": "shower",
+          "iou_at_half": 1.1317979698013099,
+          "iou_at_selected": 0.9060877532322101,
+          "delta_iou_pp": -0.22571021656909973,
+          "delta_tp": 1333,
+          "delta_fp": 509570,
+          "delta_fn": -1333
+        },
+        {
+          "name": "radiator",
+          "iou_at_half": 62.8685900662385,
+          "iou_at_selected": 57.57913531700571,
+          "delta_iou_pp": -5.289454749232789,
+          "delta_tp": 11236,
+          "delta_fp": 42328,
+          "delta_fn": -11236
+        },
+        {
+          "name": "glass",
+          "iou_at_half": 2.4472896530808685,
+          "iou_at_selected": 6.355460943609349,
+          "delta_iou_pp": 3.9081712905284802,
+          "delta_tp": 9061,
+          "delta_fp": 2663,
+          "delta_fn": -9061
+        },
+        {
+          "name": "clock",
+          "iou_at_half": 34.69547632494671,
+          "iou_at_selected": 40.31599378200118,
+          "delta_iou_pp": 5.6205174570544685,
+          "delta_tp": 7817,
+          "delta_fp": 4085,
+          "delta_fn": -7817
+        },
+        {
+          "name": "flag",
+          "iou_at_half": 58.31431659860677,
+          "iou_at_selected": 58.047676972757266,
+          "delta_iou_pp": -0.26663962584950696,
+          "delta_tp": 16135,
+          "delta_fp": 28714,
+          "delta_fn": -16135
+        }
+      ]
+    },
+    "voc20": {
+      "selected_g0": 1,
+      "note": "The selected g0 is the labeled full-split optimum, used for explanation only.",
+      "improved_classes": 17,
+      "decreased_classes": 3,
+      "improved_with_tp_gain": 10,
+      "improved_with_fp_reduction": 14,
+      "per_class": [
+        {
+          "name": "aeroplane",
+          "iou_at_half": 98.46774247288485,
+          "iou_at_selected": 99.19607635726615,
+          "delta_iou_pp": 0.7283338843812999,
+          "delta_tp": 1460,
+          "delta_fp": -12852,
+          "delta_fn": -1460
+        },
+        {
+          "name": "bicycle",
+          "iou_at_half": 80.5267953451343,
+          "iou_at_selected": 81.89073511240485,
+          "delta_iou_pp": 1.3639397672705513,
+          "delta_tp": -789,
+          "delta_fp": -17470,
+          "delta_fn": 789
+        },
+        {
+          "name": "bird",
+          "iou_at_half": 99.78505386872887,
+          "iou_at_selected": 99.91963457422816,
+          "delta_iou_pp": 0.1345807054992889,
+          "delta_tp": -318,
+          "delta_fp": -3222,
+          "delta_fn": 318
+        },
+        {
+          "name": "boat",
+          "iou_at_half": 96.74030419210918,
+          "iou_at_selected": 97.66170084171496,
+          "delta_iou_pp": 0.9213966496057822,
+          "delta_tp": 1675,
+          "delta_fp": -11364,
+          "delta_fn": -1675
+        },
+        {
+          "name": "bottle",
+          "iou_at_half": 92.5125311702453,
+          "iou_at_selected": 91.11446667248615,
+          "delta_iou_pp": -1.398064497759151,
+          "delta_tp": -48592,
+          "delta_fp": -22921,
+          "delta_fn": 48592
+        },
+        {
+          "name": "bus",
+          "iou_at_half": 94.44525253595481,
+          "iou_at_selected": 96.8799838394352,
+          "delta_iou_pp": 2.4347313034803904,
+          "delta_tp": 108289,
+          "delta_fp": 1718,
+          "delta_fn": -108289
+        },
+        {
+          "name": "car",
+          "iou_at_half": 93.06711579245864,
+          "iou_at_selected": 96.61207669595409,
+          "delta_iou_pp": 3.5449609034954506,
+          "delta_tp": -6810,
+          "delta_fp": -147831,
+          "delta_fn": 6810
+        },
+        {
+          "name": "cat",
+          "iou_at_half": 98.52290400770387,
+          "iou_at_selected": 99.2187087182662,
+          "delta_iou_pp": 0.695804710562328,
+          "delta_tp": 20423,
+          "delta_fp": -19768,
+          "delta_fn": -20423
+        },
+        {
+          "name": "chair",
+          "iou_at_half": 67.05919989507635,
+          "iou_at_selected": 68.02595191948224,
+          "delta_iou_pp": 0.966752024405892,
+          "delta_tp": 25951,
+          "delta_fp": 6075,
+          "delta_fn": -25951
+        },
+        {
+          "name": "cow",
+          "iou_at_half": 99.56852398785564,
+          "iou_at_selected": 99.6519659204169,
+          "delta_iou_pp": 0.0834419325612572,
+          "delta_tp": 1817,
+          "delta_fp": -669,
+          "delta_fn": -1817
+        },
+        {
+          "name": "diningtable",
+          "iou_at_half": 84.49570202098826,
+          "iou_at_selected": 83.47314025361085,
+          "delta_iou_pp": -1.022561767377411,
+          "delta_tp": -42140,
+          "delta_fp": -11374,
+          "delta_fn": 42140
+        },
+        {
+          "name": "dog",
+          "iou_at_half": 97.08086660483586,
+          "iou_at_selected": 97.7773815786222,
+          "delta_iou_pp": 0.6965149737863356,
+          "delta_tp": -27695,
+          "delta_fp": -65107,
+          "delta_fn": 27695
+        },
+        {
+          "name": "horse",
+          "iou_at_half": 97.41015487908355,
+          "iou_at_selected": 97.58623697421288,
+          "delta_iou_pp": 0.17608209512933115,
+          "delta_tp": -2103,
+          "delta_fp": -7029,
+          "delta_fn": 2103
+        },
+        {
+          "name": "motorbike",
+          "iou_at_half": 86.42435873528568,
+          "iou_at_selected": 88.78255011730819,
+          "delta_iou_pp": 2.358191382022511,
+          "delta_tp": 10577,
+          "delta_fp": -65288,
+          "delta_fn": -10577
+        },
+        {
+          "name": "person",
+          "iou_at_half": 90.41223975387442,
+          "iou_at_selected": 90.97686232292375,
+          "delta_iou_pp": 0.5646225690493338,
+          "delta_tp": 243837,
+          "delta_fp": 186074,
+          "delta_fn": -243837
+        },
+        {
+          "name": "pottedplant",
+          "iou_at_half": 98.40437596425494,
+          "iou_at_selected": 98.38719797669727,
+          "delta_iou_pp": -0.01717798755767319,
+          "delta_tp": -4749,
+          "delta_fp": -4609,
+          "delta_fn": 4749
+        },
+        {
+          "name": "sheep",
+          "iou_at_half": 99.74937149007644,
+          "iou_at_selected": 99.80256045519204,
+          "delta_iou_pp": 0.05318896511559501,
+          "delta_tp": -56,
+          "delta_fp": -1087,
+          "delta_fn": 56
+        },
+        {
+          "name": "sofa",
+          "iou_at_half": 85.13745248741137,
+          "iou_at_selected": 86.91292477190042,
+          "delta_iou_pp": 1.7754722844890551,
+          "delta_tp": -7430,
+          "delta_fp": -90960,
+          "delta_fn": 7430
+        },
+        {
+          "name": "train",
+          "iou_at_half": 98.26915672269874,
+          "iou_at_selected": 98.63819675257244,
+          "delta_iou_pp": 0.36904002987370177,
+          "delta_tp": 13225,
+          "delta_fp": -1391,
+          "delta_fn": -13225
+        },
+        {
+          "name": "tvmonitor",
+          "iou_at_half": 92.5945162804451,
+          "iou_at_selected": 93.10079363506003,
+          "delta_iou_pp": 0.5062773546149231,
+          "delta_tp": 5977,
+          "delta_fp": -3474,
+          "delta_fn": -5977
+        }
+      ]
+    },
+    "voc21": {
+      "selected_g0": 1,
+      "note": "The selected g0 is the labeled full-split optimum, used for explanation only.",
+      "improved_classes": 14,
+      "decreased_classes": 7,
+      "improved_with_tp_gain": 10,
+      "improved_with_fp_reduction": 6,
+      "per_class": [
+        {
+          "name": "background",
+          "iou_at_half": 90.39566408321652,
+          "iou_at_selected": 92.16082785473624,
+          "delta_iou_pp": 1.765163771519724,
+          "delta_tp": -1524906,
+          "delta_fp": -5281270,
+          "delta_fn": 1524906
+        },
+        {
+          "name": "aeroplane",
+          "iou_at_half": 64.36215552350481,
+          "iou_at_selected": 73.5407308958549,
+          "delta_iou_pp": 9.178575372350096,
+          "delta_tp": -2148,
+          "delta_fp": -364295,
+          "delta_fn": 2148
+        },
+        {
+          "name": "bicycle",
+          "iou_at_half": 54.844058789209704,
+          "iou_at_selected": 51.8411062069817,
+          "delta_iou_pp": -3.002952582228005,
+          "delta_tp": 30249,
+          "delta_fp": 133210,
+          "delta_fn": -30249
+        },
+        {
+          "name": "bird",
+          "iou_at_half": 64.34141981394424,
+          "iou_at_selected": 74.46747256943934,
+          "delta_iou_pp": 10.126052755495095,
+          "delta_tp": -68282,
+          "delta_fp": -534708,
+          "delta_fn": 68282
+        },
+        {
+          "name": "boat",
+          "iou_at_half": 63.95437072537567,
+          "iou_at_selected": 69.71768858856404,
+          "delta_iou_pp": 5.763317863188377,
+          "delta_tp": -1544,
+          "delta_fp": -151245,
+          "delta_fn": 1544
+        },
+        {
+          "name": "bottle",
+          "iou_at_half": 60.01014575736572,
+          "iou_at_selected": 69.55418772685807,
+          "delta_iou_pp": 9.544041969492355,
+          "delta_tp": 218051,
+          "delta_fp": 40301,
+          "delta_fn": -218051
+        },
+        {
+          "name": "bus",
+          "iou_at_half": 88.60115940571438,
+          "iou_at_selected": 88.22050212419222,
+          "delta_iou_pp": -0.3806572815221614,
+          "delta_tp": 185124,
+          "delta_fp": 229578,
+          "delta_fn": -185124
+        },
+        {
+          "name": "car",
+          "iou_at_half": 77.2299954635502,
+          "iou_at_selected": 78.3939495426748,
+          "delta_iou_pp": 1.1639540791246077,
+          "delta_tp": 67345,
+          "delta_fp": 27484,
+          "delta_fn": -67345
+        },
+        {
+          "name": "cat",
+          "iou_at_half": 92.83774286166788,
+          "iou_at_selected": 93.03394707384622,
+          "delta_iou_pp": 0.19620421217834405,
+          "delta_tp": 138159,
+          "delta_fp": 136000,
+          "delta_fn": -138159
+        },
+        {
+          "name": "chair",
+          "iou_at_half": 47.973191428354006,
+          "iou_at_selected": 51.054791959859024,
+          "delta_iou_pp": 3.0816005315050177,
+          "delta_tp": 243690,
+          "delta_fp": 333748,
+          "delta_fn": -243690
+        },
+        {
+          "name": "cow",
+          "iou_at_half": 88.81238566143173,
+          "iou_at_selected": 91.60071222972755,
+          "delta_iou_pp": 2.7883265682958154,
+          "delta_tp": 217394,
+          "delta_fp": 144398,
+          "delta_fn": -217394
+        },
+        {
+          "name": "diningtable",
+          "iou_at_half": 39.253354084789635,
+          "iou_at_selected": 45.713785981725486,
+          "delta_iou_pp": 6.460431896935852,
+          "delta_tp": 145741,
+          "delta_fp": -167897,
+          "delta_fn": -145741
+        },
+        {
+          "name": "dog",
+          "iou_at_half": 89.14003734620147,
+          "iou_at_selected": 88.85985368362182,
+          "delta_iou_pp": -0.28018366257964544,
+          "delta_tp": -7296,
+          "delta_fp": 9131,
+          "delta_fn": 7296
+        },
+        {
+          "name": "horse",
+          "iou_at_half": 84.96903017894496,
+          "iou_at_selected": 90.4127986014963,
+          "delta_iou_pp": 5.443768422551344,
+          "delta_tp": 224780,
+          "delta_fp": 85695,
+          "delta_fn": -224780
+        },
+        {
+          "name": "motorbike",
+          "iou_at_half": 81.25713741589583,
+          "iou_at_selected": 80.22297626371373,
+          "delta_iou_pp": -1.0341611521820937,
+          "delta_tp": 97292,
+          "delta_fp": 159454,
+          "delta_fn": -97292
+        },
+        {
+          "name": "person",
+          "iou_at_half": 68.95303801688611,
+          "iou_at_selected": 80.20525978860941,
+          "delta_iou_pp": 11.252221771723299,
+          "delta_tp": 3048947,
+          "delta_fp": 1921323,
+          "delta_fn": -3048947
+        },
+        {
+          "name": "pottedplant",
+          "iou_at_half": 62.04964111644265,
+          "iou_at_selected": 57.402850788451346,
+          "delta_iou_pp": -4.6467903279913045,
+          "delta_tp": -21614,
+          "delta_fp": 82312,
+          "delta_fn": 21614
+        },
+        {
+          "name": "sheep",
+          "iou_at_half": 90.98148215697003,
+          "iou_at_selected": 90.79532900276503,
+          "delta_iou_pp": -0.18615315420500167,
+          "delta_tp": 36807,
+          "delta_fp": 44754,
+          "delta_fn": -36807
+        },
+        {
+          "name": "sofa",
+          "iou_at_half": 68.36734173188027,
+          "iou_at_selected": 68.58966732237202,
+          "delta_iou_pp": 0.22232559049174938,
+          "delta_tp": 181393,
+          "delta_fp": 249851,
+          "delta_fn": -181393
+        },
+        {
+          "name": "train",
+          "iou_at_half": 70.78044446263543,
+          "iou_at_selected": 77.46611963288754,
+          "delta_iou_pp": 6.685675170252111,
+          "delta_tp": 1324,
+          "delta_fp": -453749,
+          "delta_fn": -1324
+        },
+        {
+          "name": "tvmonitor",
+          "iou_at_half": 66.36310898060704,
+          "iou_at_selected": 66.14283255242621,
+          "delta_iou_pp": -0.22027642818082427,
+          "delta_tp": 55070,
+          "delta_fp": 90349,
+          "delta_fn": -55070
+        }
+      ]
+    }
+  },
+  "scope": "Descriptive post-hoc analysis of the frozen full sweep. No new adaptive selector was evaluated."
+}

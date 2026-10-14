@@ -53,3 +53,5 @@ count_normalized 仅去掉宽视野 class LSE 中的 log(alias_count)/tau，所�
 ![平均mIoU曲线](g0_macro_curves.png)
 
 完整审计、配对区间、逐域留出选择与历史复现差值见 [详细报告](REPORT.md)；机器可读汇总见 SUMMARY.json。
+
+进一步的关系分析与待验证自适应方案见 [g0因素分析](G0_ANALYSIS_ZH.md)。
