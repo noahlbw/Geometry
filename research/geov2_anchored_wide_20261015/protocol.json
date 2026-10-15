@@ -1,0 +1,1707 @@
+{
+  "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+  "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+  "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+  "status": "frozen_before_new_evaluation",
+  "architecture": "Geov2 anchored residual wide / matched shared_canvas",
+  "slots": 24,
+  "beta": 0.5,
+  "query_temperature": 0.1,
+  "iterations": 5,
+  "gains": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "primary_arms": [
+    "Coordinate",
+    "Legacy",
+    "Anchored"
+  ],
+  "secondary_arms": [
+    "NoPrior",
+    "NoReference",
+    "AbsoluteMix",
+    "Shuffled"
+  ],
+  "datasets": {
+    "vdd": {
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/vdd.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/vdd.pt",
+      "data_root": "/data/test/datasets/VDD Release Version/VDD",
+      "total_images": 80,
+      "reference_g0": 1.0,
+      "cost_keys": [
+        "DJI_0007.JPG",
+        "DJI_0390.JPG",
+        "DJI_0552.JPG",
+        "DJI_0819.JPG",
+        "DJI_10054.JPG",
+        "DJI_10397.JPG",
+        "DJI_10708.JPG"
+      ],
+      "cells": [
+        {
+          "key": "Coordinate__g0.25",
+          "method": "Coordinate",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g0.5",
+          "method": "Coordinate",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g0.75",
+          "method": "Coordinate",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g1",
+          "method": "Coordinate",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.25",
+          "method": "Legacy",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.5",
+          "method": "Legacy",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.75",
+          "method": "Legacy",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g1",
+          "method": "Legacy",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.25",
+          "method": "Anchored",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.5",
+          "method": "Anchored",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.75",
+          "method": "Anchored",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g1",
+          "method": "Anchored",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "NoPrior__g1",
+          "method": "NoPrior",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "NoReference__g1",
+          "method": "NoReference",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "AbsoluteMix__g1",
+          "method": "AbsoluteMix",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "Shuffled__g1",
+          "method": "Shuffled",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "UniformBlend__a0",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.0
+        },
+        {
+          "key": "UniformBlend__a0.125",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.125
+        },
+        {
+          "key": "UniformBlend__a0.25",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.25
+        },
+        {
+          "key": "UniformBlend__a0.375",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.375
+        },
+        {
+          "key": "UniformBlend__a0.5",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.5
+        },
+        {
+          "key": "UniformBlend__a0.75",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.75
+        },
+        {
+          "key": "UniformBlend__a1",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 1.0
+        }
+      ],
+      "screen_keys": [
+        "DJI_0007.JPG",
+        "DJI_0018.JPG",
+        "DJI_0023.JPG",
+        "DJI_0024.JPG",
+        "DJI_0325.JPG",
+        "DJI_0328.JPG",
+        "DJI_0335.JPG",
+        "DJI_0348.JPG",
+        "DJI_0360.JPG",
+        "DJI_0365.JPG",
+        "DJI_0374.JPG",
+        "DJI_0390.JPG",
+        "DJI_0420.JPG",
+        "DJI_0445.JPG",
+        "DJI_0458.JPG",
+        "DJI_0462.JPG",
+        "DJI_0467.JPG",
+        "DJI_0470.JPG",
+        "DJI_0519.JPG",
+        "DJI_0521.JPG",
+        "DJI_0537.JPG",
+        "DJI_0552.JPG",
+        "DJI_0568.JPG",
+        "DJI_0690.JPG",
+        "DJI_0734.JPG",
+        "DJI_0744.JPG",
+        "DJI_0759.JPG",
+        "DJI_0763.JPG",
+        "DJI_0787.JPG",
+        "DJI_0788.JPG",
+        "DJI_0798.JPG",
+        "DJI_0804.JPG",
+        "DJI_0826.JPG",
+        "DJI_0916.JPG",
+        "DJI_0923.JPG",
+        "DJI_0967.JPG",
+        "DJI_10018.JPG",
+        "DJI_10019.JPG",
+        "DJI_10024.JPG",
+        "DJI_10028.JPG",
+        "DJI_10038.JPG",
+        "DJI_10051.JPG",
+        "DJI_10054.JPG",
+        "DJI_10070.JPG",
+        "DJI_10079.JPG",
+        "DJI_10176.JPG",
+        "DJI_10230.JPG",
+        "DJI_10233.JPG",
+        "DJI_10298.JPG",
+        "DJI_10321.JPG",
+        "DJI_10345.JPG",
+        "DJI_10386.JPG",
+        "DJI_10397.JPG",
+        "DJI_10541.JPG",
+        "DJI_10553.JPG",
+        "DJI_10596.JPG",
+        "DJI_10603.JPG",
+        "DJI_10609.JPG",
+        "DJI_10613.JPG",
+        "DJI_10624.JPG",
+        "DJI_10654.JPG",
+        "DJI_10658.JPG",
+        "DJI_10671.JPG",
+        "DJI_10708.JPG"
+      ]
+    },
+    "potsdam": {
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/potsdam.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/potsdam.pt",
+      "data_root": "/data/test/datasets/Potsdam/preprocessed_RGB",
+      "total_images": 504,
+      "reference_g0": 0.5,
+      "cost_keys": [
+        "top_potsdam_2_13_RGB_y00_x00.tif",
+        "top_potsdam_3_13_RGB_y01_x05.tif",
+        "top_potsdam_4_13_RGB_y03_x05.tif",
+        "top_potsdam_4_15_RGB_y05_x05.tif",
+        "top_potsdam_5_15_RGB_y01_x05.tif",
+        "top_potsdam_6_14_RGB_y03_x05.tif",
+        "top_potsdam_7_13_RGB_y05_x05.tif"
+      ],
+      "cells": [
+        {
+          "key": "Coordinate__g0.25",
+          "method": "Coordinate",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g0.5",
+          "method": "Coordinate",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g0.75",
+          "method": "Coordinate",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g1",
+          "method": "Coordinate",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.25",
+          "method": "Legacy",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.5",
+          "method": "Legacy",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.75",
+          "method": "Legacy",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g1",
+          "method": "Legacy",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.25",
+          "method": "Anchored",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.5",
+          "method": "Anchored",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.75",
+          "method": "Anchored",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g1",
+          "method": "Anchored",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "NoPrior__g0.5",
+          "method": "NoPrior",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "NoReference__g0.5",
+          "method": "NoReference",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "AbsoluteMix__g0.5",
+          "method": "AbsoluteMix",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Shuffled__g0.5",
+          "method": "Shuffled",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "UniformBlend__a0",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.0
+        },
+        {
+          "key": "UniformBlend__a0.125",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.125
+        },
+        {
+          "key": "UniformBlend__a0.25",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.25
+        },
+        {
+          "key": "UniformBlend__a0.375",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.375
+        },
+        {
+          "key": "UniformBlend__a0.5",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.5
+        },
+        {
+          "key": "UniformBlend__a0.75",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.75
+        },
+        {
+          "key": "UniformBlend__a1",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 1.0
+        }
+      ],
+      "screen_keys": [
+        "top_potsdam_2_13_RGB_y00_x00.tif",
+        "top_potsdam_2_13_RGB_y01_x01.tif",
+        "top_potsdam_2_13_RGB_y02_x03.tif",
+        "top_potsdam_2_13_RGB_y03_x05.tif",
+        "top_potsdam_2_13_RGB_y05_x01.tif",
+        "top_potsdam_2_14_RGB_y00_x03.tif",
+        "top_potsdam_2_14_RGB_y01_x05.tif",
+        "top_potsdam_2_14_RGB_y03_x01.tif",
+        "top_potsdam_2_14_RGB_y04_x03.tif",
+        "top_potsdam_2_14_RGB_y05_x05.tif",
+        "top_potsdam_3_13_RGB_y01_x01.tif",
+        "top_potsdam_3_13_RGB_y02_x03.tif",
+        "top_potsdam_3_13_RGB_y03_x05.tif",
+        "top_potsdam_3_13_RGB_y05_x01.tif",
+        "top_potsdam_3_14_RGB_y00_x03.tif",
+        "top_potsdam_3_14_RGB_y01_x05.tif",
+        "top_potsdam_3_14_RGB_y03_x01.tif",
+        "top_potsdam_3_14_RGB_y04_x03.tif",
+        "top_potsdam_3_14_RGB_y05_x05.tif",
+        "top_potsdam_4_13_RGB_y01_x01.tif",
+        "top_potsdam_4_13_RGB_y02_x03.tif",
+        "top_potsdam_4_13_RGB_y03_x05.tif",
+        "top_potsdam_4_13_RGB_y05_x01.tif",
+        "top_potsdam_4_14_RGB_y00_x03.tif",
+        "top_potsdam_4_14_RGB_y01_x05.tif",
+        "top_potsdam_4_14_RGB_y03_x01.tif",
+        "top_potsdam_4_14_RGB_y04_x03.tif",
+        "top_potsdam_4_14_RGB_y05_x05.tif",
+        "top_potsdam_4_15_RGB_y01_x01.tif",
+        "top_potsdam_4_15_RGB_y02_x03.tif",
+        "top_potsdam_4_15_RGB_y03_x05.tif",
+        "top_potsdam_4_15_RGB_y05_x01.tif",
+        "top_potsdam_5_13_RGB_y00_x03.tif",
+        "top_potsdam_5_13_RGB_y01_x05.tif",
+        "top_potsdam_5_13_RGB_y03_x01.tif",
+        "top_potsdam_5_13_RGB_y04_x03.tif",
+        "top_potsdam_5_13_RGB_y05_x05.tif",
+        "top_potsdam_5_14_RGB_y01_x01.tif",
+        "top_potsdam_5_14_RGB_y02_x03.tif",
+        "top_potsdam_5_14_RGB_y03_x05.tif",
+        "top_potsdam_5_14_RGB_y05_x01.tif",
+        "top_potsdam_5_15_RGB_y00_x03.tif",
+        "top_potsdam_5_15_RGB_y01_x05.tif",
+        "top_potsdam_5_15_RGB_y03_x01.tif",
+        "top_potsdam_5_15_RGB_y04_x03.tif",
+        "top_potsdam_5_15_RGB_y05_x05.tif",
+        "top_potsdam_6_13_RGB_y01_x01.tif",
+        "top_potsdam_6_13_RGB_y02_x03.tif",
+        "top_potsdam_6_13_RGB_y03_x05.tif",
+        "top_potsdam_6_13_RGB_y05_x01.tif",
+        "top_potsdam_6_14_RGB_y00_x03.tif",
+        "top_potsdam_6_14_RGB_y01_x05.tif",
+        "top_potsdam_6_14_RGB_y03_x01.tif",
+        "top_potsdam_6_14_RGB_y04_x03.tif",
+        "top_potsdam_6_14_RGB_y05_x05.tif",
+        "top_potsdam_6_15_RGB_y01_x01.tif",
+        "top_potsdam_6_15_RGB_y02_x03.tif",
+        "top_potsdam_6_15_RGB_y03_x05.tif",
+        "top_potsdam_6_15_RGB_y05_x01.tif",
+        "top_potsdam_7_13_RGB_y00_x03.tif",
+        "top_potsdam_7_13_RGB_y01_x05.tif",
+        "top_potsdam_7_13_RGB_y03_x01.tif",
+        "top_potsdam_7_13_RGB_y04_x03.tif",
+        "top_potsdam_7_13_RGB_y05_x05.tif"
+      ]
+    },
+    "udd5": {
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/udd5.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/udd5.pt",
+      "data_root": "/data/test/datasets/UDD5/extracted/UDD/UDD5",
+      "total_images": 40,
+      "reference_g0": 0.5,
+      "cost_keys": [
+        "000061.JPG",
+        "001461.JPG",
+        "DJI_00528.JPG",
+        "DJI_0373_heda.JPG",
+        "DJI_0451.JPG",
+        "DJI_0511.JPG",
+        "DJI_0707.JPG"
+      ],
+      "cells": [
+        {
+          "key": "Coordinate__g0.25",
+          "method": "Coordinate",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g0.5",
+          "method": "Coordinate",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g0.75",
+          "method": "Coordinate",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g1",
+          "method": "Coordinate",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.25",
+          "method": "Legacy",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.5",
+          "method": "Legacy",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.75",
+          "method": "Legacy",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g1",
+          "method": "Legacy",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.25",
+          "method": "Anchored",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.5",
+          "method": "Anchored",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.75",
+          "method": "Anchored",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g1",
+          "method": "Anchored",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "NoPrior__g0.5",
+          "method": "NoPrior",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "NoReference__g0.5",
+          "method": "NoReference",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "AbsoluteMix__g0.5",
+          "method": "AbsoluteMix",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Shuffled__g0.5",
+          "method": "Shuffled",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "UniformBlend__a0",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.0
+        },
+        {
+          "key": "UniformBlend__a0.125",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.125
+        },
+        {
+          "key": "UniformBlend__a0.25",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.25
+        },
+        {
+          "key": "UniformBlend__a0.375",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.375
+        },
+        {
+          "key": "UniformBlend__a0.5",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.5
+        },
+        {
+          "key": "UniformBlend__a0.75",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.75
+        },
+        {
+          "key": "UniformBlend__a1",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 1.0
+        }
+      ],
+      "screen_keys": [
+        "000061.JPG",
+        "000161.JPG",
+        "000261.JPG",
+        "000361.JPG",
+        "001261.JPG",
+        "001361.JPG",
+        "001461.JPG",
+        "001561.JPG",
+        "0119_3img2031.JPG",
+        "0119_4img1001.JPG",
+        "0119_4img3041.JPG",
+        "0119_5img3001.JPG",
+        "DJI_0031.JPG",
+        "DJI_00528.JPG",
+        "DJI_00581.JPG",
+        "DJI_00591.JPG",
+        "DJI_0291.JPG",
+        "DJI_0303.JPG",
+        "DJI_0316.JPG",
+        "DJI_0373_heda.JPG",
+        "DJI_0388.JPG",
+        "DJI_0397.JPG",
+        "DJI_0406.JPG",
+        "DJI_0415.JPG",
+        "DJI_0431.JPG",
+        "DJI_0442.JPG",
+        "DJI_0451.JPG",
+        "DJI_0460.JPG",
+        "DJI_0469.JPG",
+        "DJI_0479_heda.JPG",
+        "DJI_0490.JPG",
+        "DJI_0499_heda.JPG",
+        "DJI_0511.JPG",
+        "DJI_0520.JPG",
+        "DJI_0532.JPG",
+        "DJI_0539_heda.JPG",
+        "DJI_0553_heda.JPG",
+        "DJI_0563_heda.JPG",
+        "DJI_0627.JPG",
+        "DJI_0707.JPG"
+      ]
+    },
+    "oem": {
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/oem.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/oem.pt",
+      "data_root": "/data/test/datasets/OpenEarthMap_wo_xBD",
+      "total_images": 384,
+      "reference_g0": 0.25,
+      "cost_keys": [
+        "aachen/images/aachen_11.tif",
+        "chiclayo/images/chiclayo_49.tif",
+        "duesseldorf/images/duesseldorf_35.tif",
+        "lubuskie/images/lubuskie_8.tif",
+        "piura/images/piura_48.tif",
+        "tokyo/images/tokyo_12.tif",
+        "zanzibar/images/zanzibar_99.tif"
+      ],
+      "cells": [
+        {
+          "key": "Coordinate__g0.25",
+          "method": "Coordinate",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g0.5",
+          "method": "Coordinate",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g0.75",
+          "method": "Coordinate",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g1",
+          "method": "Coordinate",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.25",
+          "method": "Legacy",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.5",
+          "method": "Legacy",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.75",
+          "method": "Legacy",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g1",
+          "method": "Legacy",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.25",
+          "method": "Anchored",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.5",
+          "method": "Anchored",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.75",
+          "method": "Anchored",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g1",
+          "method": "Anchored",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "NoPrior__g0.25",
+          "method": "NoPrior",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "NoReference__g0.25",
+          "method": "NoReference",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "AbsoluteMix__g0.25",
+          "method": "AbsoluteMix",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Shuffled__g0.25",
+          "method": "Shuffled",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "UniformBlend__a0",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.0
+        },
+        {
+          "key": "UniformBlend__a0.125",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.125
+        },
+        {
+          "key": "UniformBlend__a0.25",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.25
+        },
+        {
+          "key": "UniformBlend__a0.375",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.375
+        },
+        {
+          "key": "UniformBlend__a0.5",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.5
+        },
+        {
+          "key": "UniformBlend__a0.75",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.75
+        },
+        {
+          "key": "UniformBlend__a1",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 1.0
+        }
+      ],
+      "screen_keys": [
+        "aachen/images/aachen_11.tif",
+        "aachen/images/aachen_8.tif",
+        "accra/images/accra_14.tif",
+        "accra/images/accra_60.tif",
+        "al_qurnah/images/al_qurnah_55.tif",
+        "austin/images/austin_46.tif",
+        "baybay/images/baybay_64.tif",
+        "bielefeld/images/bielefeld_25.tif",
+        "buenos_aires/images/buenos_aires_22.tif",
+        "chiangmai/images/chiangmai_17.tif",
+        "chiclayo/images/chiclayo_11.tif",
+        "chincha/images/chincha_28.tif",
+        "chisinau/images/chisinau_17.tif",
+        "christchurch/images/christchurch_18.tif",
+        "coxsbazar/images/coxsbazar_35.tif",
+        "coxsbazar/images/coxsbazar_81.tif",
+        "daressalaam/images/daressalaam_128.tif",
+        "daressalaam/images/daressalaam_36.tif",
+        "dhaka/images/dhaka_61.tif",
+        "dolnoslaskie/images/dolnoslaskie_8.tif",
+        "dortmund/images/dortmund_62.tif",
+        "duesseldorf/images/duesseldorf_35.tif",
+        "ica/images/ica_16.tif",
+        "kagera/images/kagera_35.tif",
+        "khartoum/images/khartoum_10.tif",
+        "khartoum/images/khartoum_64.tif",
+        "koeln/images/koeln_15.tif",
+        "koeln/images/koeln_62.tif",
+        "kyoto/images/kyoto_32.tif",
+        "lambayeque/images/lambayeque_17.tif",
+        "lima/images/lima_40.tif",
+        "lohur/images/lohur_27.tif",
+        "mahe/images/mahe_37.tif",
+        "malopolskie/images/malopolskie_22.tif",
+        "mazowieckie/images/mazowieckie_11.tif",
+        "melbourne/images/melbourne_64.tif",
+        "monrovia/images/monrovia_35.tif",
+        "muenster/images/muenster_1.tif",
+        "ngaoundere/images/ngaoundere_19.tif",
+        "ngaoundere/images/ngaoundere_9.tif",
+        "paris/images/paris_34.tif",
+        "pisco/images/pisco_39.tif",
+        "piura/images/piura_48.tif",
+        "pomorskie/images/pomorskie_31.tif",
+        "rio/images/rio_53.tif",
+        "rotterdam/images/rotterdam_12.tif",
+        "san_tome/images/san_tome_32.tif",
+        "santiago/images/santiago_27.tif",
+        "sechura/images/sechura_41.tif",
+        "shanghai/images/shanghai_39.tif",
+        "slaskie/images/slaskie_38.tif",
+        "svaneti/images/svaneti_32.tif",
+        "swietokrzyskie/images/swietokrzyskie_28.tif",
+        "tokyo/images/tokyo_24.tif",
+        "tonga/images/tonga_44.tif",
+        "tyrolw/images/tyrolw_36.tif",
+        "ulaanbaatar/images/ulaanbaatar_18.tif",
+        "vegas/images/vegas_27.tif",
+        "vienna/images/vienna_44.tif",
+        "viru/images/viru_38.tif",
+        "western/images/western_5.tif",
+        "zanzibar/images/zanzibar_109.tif",
+        "zanzibar/images/zanzibar_39.tif",
+        "zanzibar/images/zanzibar_99.tif"
+      ]
+    },
+    "vaihingen": {
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/vaihingen.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/vaihingen.pt",
+      "data_root": "/data/test/datasets/Vaihingen/preprocessed_corrected_20261001",
+      "total_images": 113,
+      "reference_g0": 0.25,
+      "cost_keys": [
+        "top_mosaic_09cm_area10_y00_x00.tif",
+        "top_mosaic_09cm_area16_y00_x00.tif",
+        "top_mosaic_09cm_area24_y00_x01.tif",
+        "top_mosaic_09cm_area2_y00_x00.tif",
+        "top_mosaic_09cm_area33_y01_x01.tif",
+        "top_mosaic_09cm_area38_y02_x02.tif",
+        "top_mosaic_09cm_area8_y02_x01.tif"
+      ],
+      "cells": [
+        {
+          "key": "Coordinate__g0.25",
+          "method": "Coordinate",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g0.5",
+          "method": "Coordinate",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g0.75",
+          "method": "Coordinate",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g1",
+          "method": "Coordinate",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.25",
+          "method": "Legacy",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.5",
+          "method": "Legacy",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.75",
+          "method": "Legacy",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g1",
+          "method": "Legacy",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.25",
+          "method": "Anchored",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.5",
+          "method": "Anchored",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.75",
+          "method": "Anchored",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g1",
+          "method": "Anchored",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "NoPrior__g0.25",
+          "method": "NoPrior",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "NoReference__g0.25",
+          "method": "NoReference",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "AbsoluteMix__g0.25",
+          "method": "AbsoluteMix",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Shuffled__g0.25",
+          "method": "Shuffled",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "UniformBlend__a0",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.0
+        },
+        {
+          "key": "UniformBlend__a0.125",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.125
+        },
+        {
+          "key": "UniformBlend__a0.25",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.25
+        },
+        {
+          "key": "UniformBlend__a0.375",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.375
+        },
+        {
+          "key": "UniformBlend__a0.5",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.5
+        },
+        {
+          "key": "UniformBlend__a0.75",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.75
+        },
+        {
+          "key": "UniformBlend__a1",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 1.0
+        }
+      ],
+      "screen_keys": [
+        "top_mosaic_09cm_area10_y00_x00.tif",
+        "top_mosaic_09cm_area10_y00_x01.tif",
+        "top_mosaic_09cm_area10_y01_x01.tif",
+        "top_mosaic_09cm_area10_y02_x01.tif",
+        "top_mosaic_09cm_area12_y00_x01.tif",
+        "top_mosaic_09cm_area12_y01_x00.tif",
+        "top_mosaic_09cm_area12_y02_x00.tif",
+        "top_mosaic_09cm_area14_y00_x00.tif",
+        "top_mosaic_09cm_area14_y01_x00.tif",
+        "top_mosaic_09cm_area14_y02_x00.tif",
+        "top_mosaic_09cm_area14_y02_x01.tif",
+        "top_mosaic_09cm_area16_y00_x01.tif",
+        "top_mosaic_09cm_area16_y01_x01.tif",
+        "top_mosaic_09cm_area16_y02_x01.tif",
+        "top_mosaic_09cm_area20_y00_x00.tif",
+        "top_mosaic_09cm_area20_y01_x00.tif",
+        "top_mosaic_09cm_area20_y02_x00.tif",
+        "top_mosaic_09cm_area22_y00_x00.tif",
+        "top_mosaic_09cm_area22_y01_x00.tif",
+        "top_mosaic_09cm_area22_y01_x01.tif",
+        "top_mosaic_09cm_area22_y02_x01.tif",
+        "top_mosaic_09cm_area24_y00_x01.tif",
+        "top_mosaic_09cm_area24_y01_x01.tif",
+        "top_mosaic_09cm_area24_y02_x00.tif",
+        "top_mosaic_09cm_area27_y00_x00.tif",
+        "top_mosaic_09cm_area27_y01_x00.tif",
+        "top_mosaic_09cm_area27_y02_x00.tif",
+        "top_mosaic_09cm_area27_y03_x00.tif",
+        "top_mosaic_09cm_area27_y03_x01.tif",
+        "top_mosaic_09cm_area29_y00_x01.tif",
+        "top_mosaic_09cm_area29_y01_x01.tif",
+        "top_mosaic_09cm_area29_y02_x01.tif",
+        "top_mosaic_09cm_area2_y00_x00.tif",
+        "top_mosaic_09cm_area2_y00_x02.tif",
+        "top_mosaic_09cm_area2_y01_x01.tif",
+        "top_mosaic_09cm_area2_y02_x00.tif",
+        "top_mosaic_09cm_area2_y02_x02.tif",
+        "top_mosaic_09cm_area31_y00_x00.tif",
+        "top_mosaic_09cm_area31_y01_x00.tif",
+        "top_mosaic_09cm_area31_y02_x00.tif",
+        "top_mosaic_09cm_area33_y00_x00.tif",
+        "top_mosaic_09cm_area33_y00_x01.tif",
+        "top_mosaic_09cm_area33_y01_x01.tif",
+        "top_mosaic_09cm_area33_y02_x01.tif",
+        "top_mosaic_09cm_area35_y00_x01.tif",
+        "top_mosaic_09cm_area35_y01_x00.tif",
+        "top_mosaic_09cm_area35_y01_x01.tif",
+        "top_mosaic_09cm_area38_y00_x00.tif",
+        "top_mosaic_09cm_area38_y00_x02.tif",
+        "top_mosaic_09cm_area38_y01_x00.tif",
+        "top_mosaic_09cm_area38_y01_x01.tif",
+        "top_mosaic_09cm_area38_y01_x03.tif",
+        "top_mosaic_09cm_area38_y02_x01.tif",
+        "top_mosaic_09cm_area38_y02_x03.tif",
+        "top_mosaic_09cm_area4_y00_x01.tif",
+        "top_mosaic_09cm_area4_y01_x00.tif",
+        "top_mosaic_09cm_area4_y02_x00.tif",
+        "top_mosaic_09cm_area6_y00_x00.tif",
+        "top_mosaic_09cm_area6_y01_x00.tif",
+        "top_mosaic_09cm_area6_y01_x01.tif",
+        "top_mosaic_09cm_area6_y02_x01.tif",
+        "top_mosaic_09cm_area8_y00_x01.tif",
+        "top_mosaic_09cm_area8_y01_x01.tif",
+        "top_mosaic_09cm_area8_y02_x01.tif"
+      ]
+    },
+    "ade150": {
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/ade150.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/ade150.pt",
+      "data_root": "/data/test/datasets/VIP_natural/ADEChallengeData2016",
+      "total_images": 2000,
+      "reference_g0": 0.25,
+      "cost_keys": [
+        "ADE_val_00000001",
+        "ADE_val_00000334",
+        "ADE_val_00000667",
+        "ADE_val_00001000",
+        "ADE_val_00001333",
+        "ADE_val_00001666",
+        "ADE_val_00002000"
+      ],
+      "cells": [
+        {
+          "key": "Coordinate__g0.25",
+          "method": "Coordinate",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g0.5",
+          "method": "Coordinate",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g0.75",
+          "method": "Coordinate",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g1",
+          "method": "Coordinate",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.25",
+          "method": "Legacy",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.5",
+          "method": "Legacy",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.75",
+          "method": "Legacy",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g1",
+          "method": "Legacy",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.25",
+          "method": "Anchored",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.5",
+          "method": "Anchored",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.75",
+          "method": "Anchored",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g1",
+          "method": "Anchored",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "NoPrior__g0.25",
+          "method": "NoPrior",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "NoReference__g0.25",
+          "method": "NoReference",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "AbsoluteMix__g0.25",
+          "method": "AbsoluteMix",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Shuffled__g0.25",
+          "method": "Shuffled",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "UniformBlend__a0",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.0
+        },
+        {
+          "key": "UniformBlend__a0.125",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.125
+        },
+        {
+          "key": "UniformBlend__a0.25",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.25
+        },
+        {
+          "key": "UniformBlend__a0.375",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.375
+        },
+        {
+          "key": "UniformBlend__a0.5",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.5
+        },
+        {
+          "key": "UniformBlend__a0.75",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.75
+        },
+        {
+          "key": "UniformBlend__a1",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 1.0
+        }
+      ],
+      "screen_keys": [
+        "ADE_val_00000001",
+        "ADE_val_00000016",
+        "ADE_val_00000032",
+        "ADE_val_00000048",
+        "ADE_val_00000063",
+        "ADE_val_00000079",
+        "ADE_val_00000095",
+        "ADE_val_00000111",
+        "ADE_val_00000126",
+        "ADE_val_00000142",
+        "ADE_val_00000158",
+        "ADE_val_00000174",
+        "ADE_val_00000189",
+        "ADE_val_00000205",
+        "ADE_val_00000221",
+        "ADE_val_00000237",
+        "ADE_val_00000252",
+        "ADE_val_00000268",
+        "ADE_val_00000284",
+        "ADE_val_00000300",
+        "ADE_val_00000315",
+        "ADE_val_00000331",
+        "ADE_val_00000347",
+        "ADE_val_00000363",
+        "ADE_val_00000378",
+        "ADE_val_00000394",
+        "ADE_val_00000410",
+        "ADE_val_00000425",
+        "ADE_val_00000441",
+        "ADE_val_00000457",
+        "ADE_val_00000473",
+        "ADE_val_00000488",
+        "ADE_val_00000504",
+        "ADE_val_00000520",
+        "ADE_val_00000536",
+        "ADE_val_00000551",
+        "ADE_val_00000567",
+        "ADE_val_00000583",
+        "ADE_val_00000599",
+        "ADE_val_00000614",
+        "ADE_val_00000630",
+        "ADE_val_00000646",
+        "ADE_val_00000662",
+        "ADE_val_00000677",
+        "ADE_val_00000693",
+        "ADE_val_00000709",
+        "ADE_val_00000725",
+        "ADE_val_00000740",
+        "ADE_val_00000756",
+        "ADE_val_00000772",
+        "ADE_val_00000788",
+        "ADE_val_00000803",
+        "ADE_val_00000819",
+        "ADE_val_00000835",
+        "ADE_val_00000850",
+        "ADE_val_00000866",
+        "ADE_val_00000882",
+        "ADE_val_00000898",
+        "ADE_val_00000913",
+        "ADE_val_00000929",
+        "ADE_val_00000945",
+        "ADE_val_00000961",
+        "ADE_val_00000976",
+        "ADE_val_00000992",
+        "ADE_val_00001008",
+        "ADE_val_00001024",
+        "ADE_val_00001039",
+        "ADE_val_00001055",
+        "ADE_val_00001071",
+        "ADE_val_00001087",
+        "ADE_val_00001102",
+        "ADE_val_00001118",
+        "ADE_val_00001134",
+        "ADE_val_00001150",
+        "ADE_val_00001165",
+        "ADE_val_00001181",
+        "ADE_val_00001197",
+        "ADE_val_00001212",
+        "ADE_val_00001228",
+        "ADE_val_00001244",
+        "ADE_val_00001260",
+        "ADE_val_00001275",
+        "ADE_val_00001291",
+        "ADE_val_00001307",
+        "ADE_val_00001323",
+        "ADE_val_00001338",
+        "ADE_val_00001354",
+        "ADE_val_00001370",
+        "ADE_val_00001386",
+        "ADE_val_00001401",
+        "ADE_val_00001417",
+        "ADE_val_00001433",
+        "ADE_val_00001449",
+        "ADE_val_00001464",
+        "ADE_val_00001480",
+        "ADE_val_00001496",
+        "ADE_val_00001512",
+        "ADE_val_00001527",
+        "ADE_val_00001543",
+        "ADE_val_00001559",
+        "ADE_val_00001575",
+        "ADE_val_00001590",
+        "ADE_val_00001606",
+        "ADE_val_00001622",
+        "ADE_val_00001637",
+        "ADE_val_00001653",
+        "ADE_val_00001669",
+        "ADE_val_00001685",
+        "ADE_val_00001700",
+        "ADE_val_00001716",
+        "ADE_val_00001732",
+        "ADE_val_00001748",
+        "ADE_val_00001763",
+        "ADE_val_00001779",
+        "ADE_val_00001795",
+        "ADE_val_00001811",
+        "ADE_val_00001826",
+        "ADE_val_00001842",
+        "ADE_val_00001858",
+        "ADE_val_00001874",
+        "ADE_val_00001889",
+        "ADE_val_00001905",
+        "ADE_val_00001921",
+        "ADE_val_00001937",
+        "ADE_val_00001952",
+        "ADE_val_00001968",
+        "ADE_val_00001984",
+        "ADE_val_00002000"
+      ]
+    },
+    "voc21": {
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/voc21.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/voc21.pt",
+      "data_root": "/data/test/datasets/VIP_natural/VOCdevkit/VOC2012",
+      "total_images": 1449,
+      "reference_g0": 1.0,
+      "cost_keys": [
+        "2007_000033",
+        "2007_007498",
+        "2008_003856",
+        "2009_001644",
+        "2010_000552",
+        "2010_005180",
+        "2011_003271"
+      ],
+      "cells": [
+        {
+          "key": "Coordinate__g0.25",
+          "method": "Coordinate",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g0.5",
+          "method": "Coordinate",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g0.75",
+          "method": "Coordinate",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Coordinate__g1",
+          "method": "Coordinate",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.25",
+          "method": "Legacy",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.5",
+          "method": "Legacy",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g0.75",
+          "method": "Legacy",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Legacy__g1",
+          "method": "Legacy",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.25",
+          "method": "Anchored",
+          "g0": 0.25,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.5",
+          "method": "Anchored",
+          "g0": 0.5,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g0.75",
+          "method": "Anchored",
+          "g0": 0.75,
+          "alpha": null
+        },
+        {
+          "key": "Anchored__g1",
+          "method": "Anchored",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "NoPrior__g1",
+          "method": "NoPrior",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "NoReference__g1",
+          "method": "NoReference",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "AbsoluteMix__g1",
+          "method": "AbsoluteMix",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "Shuffled__g1",
+          "method": "Shuffled",
+          "g0": 1.0,
+          "alpha": null
+        },
+        {
+          "key": "UniformBlend__a0",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.0
+        },
+        {
+          "key": "UniformBlend__a0.125",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.125
+        },
+        {
+          "key": "UniformBlend__a0.25",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.25
+        },
+        {
+          "key": "UniformBlend__a0.375",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.375
+        },
+        {
+          "key": "UniformBlend__a0.5",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.5
+        },
+        {
+          "key": "UniformBlend__a0.75",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.75
+        },
+        {
+          "key": "UniformBlend__a1",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 1.0
+        }
+      ],
+      "screen_keys": [
+        "2007_000033",
+        "2007_000464",
+        "2007_000762",
+        "2007_001239",
+        "2007_001457",
+        "2007_001733",
+        "2007_002266",
+        "2007_002470",
+        "2007_002824",
+        "2007_003131",
+        "2007_003499",
+        "2007_003742",
+        "2007_004112",
+        "2007_004468",
+        "2007_004902",
+        "2007_005331",
+        "2007_005689",
+        "2007_005915",
+        "2007_006348",
+        "2007_006698",
+        "2007_007165",
+        "2007_007477",
+        "2007_007815",
+        "2007_008256",
+        "2007_008708",
+        "2007_009084",
+        "2007_009346",
+        "2007_009684",
+        "2007_009923",
+        "2008_000182",
+        "2008_000391",
+        "2008_000630",
+        "2008_000782",
+        "2008_001040",
+        "2008_001283",
+        "2008_001546",
+        "2008_001895",
+        "2008_002269",
+        "2008_002536",
+        "2008_002904",
+        "2008_003135",
+        "2008_003461",
+        "2008_003777",
+        "2008_004069",
+        "2008_004396",
+        "2008_004659",
+        "2008_005089",
+        "2008_005398",
+        "2008_005680",
+        "2008_006108",
+        "2008_006408",
+        "2008_006835",
+        "2008_007219",
+        "2008_007596",
+        "2008_008051",
+        "2008_008421",
+        "2009_000037",
+        "2009_000205",
+        "2009_000421",
+        "2009_000619",
+        "2009_000731",
+        "2009_000924",
+        "2009_001215",
+        "2009_001433",
+        "2009_001718",
+        "2009_001991",
+        "2009_002165",
+        "2009_002317",
+        "2009_002535",
+        "2009_002618",
+        "2009_002887",
+        "2009_003063",
+        "2009_003269",
+        "2009_003466",
+        "2009_003564",
+        "2009_003773",
+        "2009_003938",
+        "2009_004140",
+        "2009_004507",
+        "2009_004687",
+        "2009_004882",
+        "2009_005089",
+        "2009_005260",
+        "2010_000163",
+        "2010_000335",
+        "2010_000622",
+        "2010_000814",
+        "2010_001000",
+        "2010_001124",
+        "2010_001327",
+        "2010_001563",
+        "2010_001773",
+        "2010_002017",
+        "2010_002232",
+        "2010_002450",
+        "2010_002763",
+        "2010_003123",
+        "2010_003293",
+        "2010_003473",
+        "2010_003716",
+        "2010_003915",
+        "2010_004165",
+        "2010_004382",
+        "2010_004559",
+        "2010_004815",
+        "2010_005021",
+        "2010_005206",
+        "2010_005432",
+        "2010_005664",
+        "2010_005877",
+        "2011_000054",
+        "2011_000248",
+        "2011_000438",
+        "2011_000566",
+        "2011_000789",
+        "2011_001005",
+        "2011_001159",
+        "2011_001346",
+        "2011_001567",
+        "2011_001669",
+        "2011_001794",
+        "2011_002041",
+        "2011_002223",
+        "2011_002371",
+        "2011_002589",
+        "2011_002863",
+        "2011_003030",
+        "2011_003271"
+      ]
+    }
+  },
+  "prediction_target_access": false,
+  "bootstrap_repeats": 2000,
+  "bootstrap_seed": 20261015,
+  "grouping": "Potsdam/Vaihingen original aerial scenes; OEM region path prefix; others images.",
+  "selection": "All seven complete validation sets are declared before evaluation. Screens are integration/development diagnostics, not an architecture search. One proposed candidate; report negative outcomes. Three primary arms have the same four g0 choices; anchored-observation ordinary fusion has seven alpha choices.",
+  "promotion": {
+    "macro_gain": "Positive paired grouped 95% lower bounds versus both Coordinate and Legacy at frozen reference gains",
+    "voc21_noninferiority_margin_pp": -0.2,
+    "remote_sensing": "Nonnegative point gain over Coordinate on both Potsdam and Vaihingen",
+    "latency_ratio_max": 1.05,
+    "peak_allocated_increment_mib_max": 50
+  },
+  "limitations": "Previously inspected validation; historical aliases/calibration used development labels. Full-set scalar selection is development analysis. Group bootstrap is conditional on selected parameters; no untouched-test claim. P spatial mapping matches incumbent sampler, including its padding behavior. Same head/scoring/normalization for all controls. Only local raw query is shuffled by a half-sequence roll, not a multiseed random control. No new adaptive gate.",
+  "formulas": {
+    "e": "(normalize(q_local)-normalize(sample(normalize(raw_global)))) @ centers.T / 0.1",
+    "posterior": "softmax(log(normalize(sample(P))) + e)",
+    "feature": "normalize(sample(semantic) + 0.5*(posterior-prior)@values)",
+    "writer": "L+g0*(I+A.T@A)^(-1)@A.T@A@(W-L)"
+  }
+}

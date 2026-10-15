@@ -1,0 +1,51 @@
+[
+  {
+    "dataset": "vdd",
+    "shard": 0,
+    "shards": 1,
+    "gpu": 1,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/smoke_vdd_s0.log"
+  },
+  {
+    "dataset": "potsdam",
+    "shard": 0,
+    "shards": 1,
+    "gpu": 2,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/smoke_potsdam_s0.log"
+  },
+  {
+    "dataset": "udd5",
+    "shard": 0,
+    "shards": 1,
+    "gpu": 3,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/smoke_udd5_s0.log"
+  },
+  {
+    "dataset": "oem",
+    "shard": 0,
+    "shards": 1,
+    "gpu": 4,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/smoke_oem_s0.log"
+  },
+  {
+    "dataset": "vaihingen",
+    "shard": 0,
+    "shards": 1,
+    "gpu": 5,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/smoke_vaihingen_s0.log"
+  },
+  {
+    "dataset": "ade150",
+    "shard": 0,
+    "shards": 1,
+    "gpu": 6,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/smoke_ade150_s0.log"
+  },
+  {
+    "dataset": "voc21",
+    "shard": 0,
+    "shards": 1,
+    "gpu": 7,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/smoke_voc21_s0.log"
+  }
+]

@@ -1,0 +1,192 @@
+{
+  "status": "complete",
+  "dataset": "vaihingen",
+  "reference_g0": 0.25,
+  "profile": {
+    "bank": "kev40_imagenet",
+    "strength": "original",
+    "coupling": 0.25,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "vaihingen",
+    "family": "remote_sensing",
+    "total_images": 113,
+    "background_index": null,
+    "vocabulary": "../vocabularies/vaihingen.json",
+    "profile": {
+      "bank": "kev40_imagenet",
+      "strength": "original",
+      "coupling": 0.25,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.0,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "e7be4d13aca30e7424be10c37a458e489a82ec1a1de142866a9cbda40349745a",
+  "alias_counts": {
+    "retained": [
+      16,
+      16,
+      17,
+      12,
+      8
+    ],
+    "normalized": [
+      16,
+      16,
+      17,
+      12,
+      8
+    ]
+  },
+  "architecture": "Frozen DonorBefore + matched 24-slot head + anchored residual read + original structural writer",
+  "cells": [
+    {
+      "key": "Coordinate__g0.25",
+      "method": "Coordinate",
+      "g0": 0.25,
+      "alpha": null
+    }
+  ],
+  "cpu_threads": 1,
+  "adaptive_gain_enabled": false,
+  "initialization_peak_allocated_mib": 2513.171875,
+  "images": [
+    {
+      "key": "top_mosaic_09cm_area10_y00_x00.tif",
+      "milliseconds": [
+        177.35877819359303,
+        170.536071062088,
+        173.8771889358759,
+        171.77806003019214,
+        173.87893283739686,
+        175.03999266773462,
+        174.96172664687037
+      ],
+      "peak_allocated_mib": 1571.55908203125,
+      "peak_reserved_mib": 1704.0
+    },
+    {
+      "key": "top_mosaic_09cm_area16_y00_x00.tif",
+      "milliseconds": [
+        174.91050576791167,
+        171.75727616995573,
+        170.28707591816783,
+        175.6796780973673,
+        172.39069566130638,
+        173.09590382501483,
+        173.52469079196453
+      ],
+      "peak_allocated_mib": 1571.55908203125,
+      "peak_reserved_mib": 1704.0
+    },
+    {
+      "key": "top_mosaic_09cm_area24_y00_x01.tif",
+      "milliseconds": [
+        171.03205202147365,
+        170.86772108450532,
+        173.84081427007914,
+        171.77860904484987,
+        173.21044811978936,
+        172.30915511026978,
+        169.76603865623474
+      ],
+      "peak_allocated_mib": 1571.55908203125,
+      "peak_reserved_mib": 1704.0
+    },
+    {
+      "key": "top_mosaic_09cm_area2_y00_x00.tif",
+      "milliseconds": [
+        174.24090905115008,
+        172.71676193922758,
+        172.37458983436227,
+        173.40806312859058,
+        169.38298288732767,
+        171.03208601474762,
+        174.0991068072617
+      ],
+      "peak_allocated_mib": 1571.55908203125,
+      "peak_reserved_mib": 1704.0
+    },
+    {
+      "key": "top_mosaic_09cm_area33_y01_x01.tif",
+      "milliseconds": [
+        172.77980409562588,
+        171.9389413483441,
+        170.21005041897297,
+        175.5073699168861,
+        174.1812899708748,
+        173.2133817858994,
+        174.2062666453421
+      ],
+      "peak_allocated_mib": 1571.55908203125,
+      "peak_reserved_mib": 1704.0
+    },
+    {
+      "key": "top_mosaic_09cm_area38_y02_x02.tif",
+      "milliseconds": [
+        171.62582091987133,
+        174.33918919414282,
+        173.4750121831894,
+        169.8318268172443,
+        173.39822789654136,
+        174.30576402693987,
+        171.62290308624506
+      ],
+      "peak_allocated_mib": 1571.55908203125,
+      "peak_reserved_mib": 1704.0
+    },
+    {
+      "key": "top_mosaic_09cm_area8_y02_x01.tif",
+      "milliseconds": [
+        172.66504792496562,
+        170.72365898638964,
+        170.03940232098103,
+        172.84203600138426,
+        172.2388919442892,
+        173.39884396642447,
+        170.74664309620857
+      ],
+      "peak_allocated_mib": 1571.55908203125,
+      "peak_reserved_mib": 1704.0
+    }
+  ],
+  "median_ms": 172.77980409562588,
+  "peak_allocated_mib": 1571.55908203125,
+  "peak_reserved_mib": 1704.0,
+  "target_masks_loaded": false,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "boundary": "CPU RGB tensor to original-size CPU uint8 labels. Decode/init/offline text excluded. Single mode/fresh process; 7 fixed images, 2 warmups and 7 synchronized repeats. Coordinate skips unused routing."
+}

@@ -1,0 +1,198 @@
+{
+  "status": "complete",
+  "dataset": "oem",
+  "reference_g0": 0.25,
+  "profile": {
+    "bank": "original",
+    "strength": "original",
+    "coupling": 0.25,
+    "temperature": 0.03,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "oem",
+    "family": "remote_sensing",
+    "total_images": 384,
+    "background_index": null,
+    "vocabulary": "../vocabularies/oem.json",
+    "profile": {
+      "bank": "original",
+      "strength": "original",
+      "coupling": 0.25,
+      "temperature": 0.03,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.0,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "adacc439f1f4c6f052edbd50a305b418c33bce7662c3c9883db8e2c643d6b8a1",
+  "alias_counts": {
+    "retained": [
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "normalized": [
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20
+    ]
+  },
+  "architecture": "Frozen DonorBefore + matched 24-slot head + anchored residual read + original structural writer",
+  "cells": [
+    {
+      "key": "Legacy__g0.25",
+      "method": "Legacy",
+      "g0": 0.25,
+      "alpha": null
+    }
+  ],
+  "cpu_threads": 1,
+  "adaptive_gain_enabled": false,
+  "initialization_peak_allocated_mib": 2513.171875,
+  "images": [
+    {
+      "key": "aachen/images/aachen_11.tif",
+      "milliseconds": [
+        169.50045572593808,
+        167.58261993527412,
+        168.2669403962791,
+        168.3486420661211,
+        167.8919792175293,
+        167.60882688686252,
+        168.08855161070824
+      ],
+      "peak_allocated_mib": 1592.3720703125,
+      "peak_reserved_mib": 1722.0
+    },
+    {
+      "key": "chiclayo/images/chiclayo_49.tif",
+      "milliseconds": [
+        170.39854219183326,
+        173.6822589300573,
+        168.77203108742833,
+        167.52806631848216,
+        168.41630171984434,
+        167.81042702496052,
+        168.6198152601719
+      ],
+      "peak_allocated_mib": 1592.3720703125,
+      "peak_reserved_mib": 1722.0
+    },
+    {
+      "key": "duesseldorf/images/duesseldorf_35.tif",
+      "milliseconds": [
+        166.9139456935227,
+        173.24147513136268,
+        173.7475646659732,
+        172.39273013547063,
+        171.4688246138394,
+        172.6934160105884,
+        173.76375989988446
+      ],
+      "peak_allocated_mib": 1592.3720703125,
+      "peak_reserved_mib": 1722.0
+    },
+    {
+      "key": "lubuskie/images/lubuskie_8.tif",
+      "milliseconds": [
+        176.91934434697032,
+        176.56663712114096,
+        175.2272150479257,
+        174.94568694382906,
+        174.2627341300249,
+        174.69969298690557,
+        176.41523480415344
+      ],
+      "peak_allocated_mib": 1592.3720703125,
+      "peak_reserved_mib": 1722.0
+    },
+    {
+      "key": "piura/images/piura_48.tif",
+      "milliseconds": [
+        168.4489380568266,
+        174.55235589295626,
+        171.4543360285461,
+        177.7936788275838,
+        176.86882987618446,
+        170.62797909602523,
+        177.14251298457384
+      ],
+      "peak_allocated_mib": 1592.3720703125,
+      "peak_reserved_mib": 1722.0
+    },
+    {
+      "key": "tokyo/images/tokyo_12.tif",
+      "milliseconds": [
+        170.13901378959417,
+        177.9129863716662,
+        173.51193819195032,
+        172.82209591940045,
+        174.61604112759233,
+        168.2529468089342,
+        177.91568767279387
+      ],
+      "peak_allocated_mib": 1592.3720703125,
+      "peak_reserved_mib": 1722.0
+    },
+    {
+      "key": "zanzibar/images/zanzibar_99.tif",
+      "milliseconds": [
+        173.5195331275463,
+        172.45764285326004,
+        180.50144193693995,
+        174.88209204748273,
+        171.9863871112466,
+        175.331624224782,
+        171.26073082908988
+      ],
+      "peak_allocated_mib": 1592.3720703125,
+      "peak_reserved_mib": 1722.0
+    }
+  ],
+  "median_ms": 172.6934160105884,
+  "peak_allocated_mib": 1592.3720703125,
+  "peak_reserved_mib": 1722.0,
+  "target_masks_loaded": false,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "boundary": "CPU RGB tensor to original-size CPU uint8 labels. Decode/init/offline text excluded. Single mode/fresh process; 7 fixed images, 2 warmups and 7 synchronized repeats. Coordinate skips unused routing."
+}

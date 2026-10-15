@@ -1,0 +1,224 @@
+{
+  "status": "complete",
+  "dataset": "voc21",
+  "reference_g0": 1.0,
+  "profile": {
+    "bank": "official_segmentation",
+    "strength": "original",
+    "coupling": 1.0,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 0.3,
+    "wide_policy": "natural_short336_cap672",
+    "background_rule": "union_max"
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "voc21",
+    "family": "natural",
+    "total_images": 1449,
+    "background_index": 0,
+    "vocabulary": "../vocabularies/voc21.json",
+    "profile": {
+      "bank": "official_segmentation",
+      "strength": "original",
+      "coupling": 0.75,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 0.3,
+      "wide_policy": "natural_short336_cap672",
+      "background_rule": "union_max"
+    },
+    "background_bias": -0.25,
+    "background_threshold": 0.15,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "curated_variable_refine_natural_20261010",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "c2f6fa149b02474cd24e8ace1ba18e0de51b6f351f691a9efc9c3fbc88d34197",
+  "alias_counts": {
+    "retained": [
+      56,
+      1,
+      1,
+      1,
+      1,
+      3,
+      3,
+      1,
+      1,
+      6,
+      4,
+      2,
+      1,
+      2,
+      2,
+      21,
+      4,
+      2,
+      3,
+      1,
+      3
+    ],
+    "normalized": [
+      56,
+      1,
+      1,
+      1,
+      1,
+      3,
+      3,
+      1,
+      1,
+      6,
+      4,
+      2,
+      1,
+      2,
+      2,
+      21,
+      4,
+      2,
+      3,
+      1,
+      3
+    ]
+  },
+  "architecture": "Frozen DonorBefore + matched 24-slot head + anchored residual read + original structural writer",
+  "cells": [
+    {
+      "key": "Coordinate__g1",
+      "method": "Coordinate",
+      "g0": 1.0,
+      "alpha": null
+    }
+  ],
+  "cpu_threads": 1,
+  "adaptive_gain_enabled": false,
+  "initialization_peak_allocated_mib": 2513.171875,
+  "images": [
+    {
+      "key": "2007_000033",
+      "milliseconds": [
+        164.17488967999816,
+        167.22739301621914,
+        162.9066150635481,
+        168.4588249772787,
+        165.3850032016635,
+        164.30689301341772,
+        164.88241497427225
+      ],
+      "peak_allocated_mib": 1592.5537109375,
+      "peak_reserved_mib": 1720.0
+    },
+    {
+      "key": "2007_007498",
+      "milliseconds": [
+        163.19876769557595,
+        162.95941220596433,
+        160.1186878979206,
+        162.66147699207067,
+        163.1994708441198,
+        165.5570431612432,
+        165.11080414056778
+      ],
+      "peak_allocated_mib": 1598.8125,
+      "peak_reserved_mib": 1758.0
+    },
+    {
+      "key": "2008_003856",
+      "milliseconds": [
+        160.98951315507293,
+        164.20447127893567,
+        164.73703598603606,
+        162.1499378234148,
+        163.12917973846197,
+        162.12450806051493,
+        163.0167900584638
+      ],
+      "peak_allocated_mib": 1598.2177734375,
+      "peak_reserved_mib": 1758.0
+    },
+    {
+      "key": "2009_001644",
+      "milliseconds": [
+        162.66599297523499,
+        162.9056129604578,
+        164.13042042404413,
+        159.61885871365666,
+        163.5879031382501,
+        162.71830024197698,
+        161.07021505013108
+      ],
+      "peak_allocated_mib": 1598.2177734375,
+      "peak_reserved_mib": 1758.0
+    },
+    {
+      "key": "2010_000552",
+      "milliseconds": [
+        164.85071694478393,
+        160.74809106066823,
+        162.4717121012509,
+        163.44100190326571,
+        161.98883391916752,
+        164.2518462613225,
+        162.20991499722004
+      ],
+      "peak_allocated_mib": 1598.2177734375,
+      "peak_reserved_mib": 1758.0
+    },
+    {
+      "key": "2010_005180",
+      "milliseconds": [
+        164.35558488592505,
+        161.48368827998638,
+        163.57359383255243,
+        162.1221276000142,
+        161.95576079189777,
+        166.5331688709557,
+        163.4590569883585
+      ],
+      "peak_allocated_mib": 1598.2177734375,
+      "peak_reserved_mib": 1758.0
+    },
+    {
+      "key": "2011_003271",
+      "milliseconds": [
+        169.14424300193787,
+        167.0567076653242,
+        166.33379086852074,
+        167.28149726986885,
+        166.56806133687496,
+        167.80730010941625,
+        167.45958290994167
+      ],
+      "peak_allocated_mib": 1669.3466796875,
+      "peak_reserved_mib": 1810.0
+    }
+  ],
+  "median_ms": 163.4590569883585,
+  "peak_allocated_mib": 1669.3466796875,
+  "peak_reserved_mib": 1810.0,
+  "target_masks_loaded": false,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "boundary": "CPU RGB tensor to original-size CPU uint8 labels. Decode/init/offline text excluded. Single mode/fresh process; 7 fixed images, 2 warmups and 7 synchronized repeats. Coordinate skips unused routing."
+}

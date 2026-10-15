@@ -1,0 +1,128 @@
+[
+  {
+    "dataset": "vdd",
+    "method": "Coordinate",
+    "gpu": 1,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_vdd_Coordinate.log"
+  },
+  {
+    "dataset": "vdd",
+    "method": "Legacy",
+    "gpu": 1,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_vdd_Legacy.log"
+  },
+  {
+    "dataset": "vdd",
+    "method": "Anchored",
+    "gpu": 1,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_vdd_Anchored.log"
+  },
+  {
+    "dataset": "potsdam",
+    "method": "Coordinate",
+    "gpu": 2,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_potsdam_Coordinate.log"
+  },
+  {
+    "dataset": "potsdam",
+    "method": "Legacy",
+    "gpu": 2,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_potsdam_Legacy.log"
+  },
+  {
+    "dataset": "potsdam",
+    "method": "Anchored",
+    "gpu": 2,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_potsdam_Anchored.log"
+  },
+  {
+    "dataset": "udd5",
+    "method": "Coordinate",
+    "gpu": 3,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_udd5_Coordinate.log"
+  },
+  {
+    "dataset": "udd5",
+    "method": "Legacy",
+    "gpu": 3,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_udd5_Legacy.log"
+  },
+  {
+    "dataset": "udd5",
+    "method": "Anchored",
+    "gpu": 3,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_udd5_Anchored.log"
+  },
+  {
+    "dataset": "oem",
+    "method": "Coordinate",
+    "gpu": 4,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_oem_Coordinate.log"
+  },
+  {
+    "dataset": "oem",
+    "method": "Legacy",
+    "gpu": 4,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_oem_Legacy.log"
+  },
+  {
+    "dataset": "oem",
+    "method": "Anchored",
+    "gpu": 4,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_oem_Anchored.log"
+  },
+  {
+    "dataset": "vaihingen",
+    "method": "Coordinate",
+    "gpu": 5,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_vaihingen_Coordinate.log"
+  },
+  {
+    "dataset": "vaihingen",
+    "method": "Legacy",
+    "gpu": 5,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_vaihingen_Legacy.log"
+  },
+  {
+    "dataset": "vaihingen",
+    "method": "Anchored",
+    "gpu": 5,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_vaihingen_Anchored.log"
+  },
+  {
+    "dataset": "ade150",
+    "method": "Coordinate",
+    "gpu": 6,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_ade150_Coordinate.log"
+  },
+  {
+    "dataset": "ade150",
+    "method": "Legacy",
+    "gpu": 6,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_ade150_Legacy.log"
+  },
+  {
+    "dataset": "ade150",
+    "method": "Anchored",
+    "gpu": 6,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_ade150_Anchored.log"
+  },
+  {
+    "dataset": "voc21",
+    "method": "Coordinate",
+    "gpu": 7,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_voc21_Coordinate.log"
+  },
+  {
+    "dataset": "voc21",
+    "method": "Legacy",
+    "gpu": 7,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_voc21_Legacy.log"
+  },
+  {
+    "dataset": "voc21",
+    "method": "Anchored",
+    "gpu": 7,
+    "log": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_wide_20261015/cost_voc21_Anchored.log"
+  }
+]

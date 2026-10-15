@@ -1,0 +1,22 @@
+{
+  "candidate": "spatially anchored residual slot reader",
+  "local_path": "Original DonorBefore unchanged",
+  "global_slots": 24,
+  "beta": 0.5,
+  "temperature": 0.1,
+  "clustering_iterations": 5,
+  "wide_preprocessing": "Inherited frozen per-dataset policy",
+  "aliases": "Inherited label-developed vocabulary; frozen in this experiment",
+  "g0": "Runtime reference overrides and equal four-value scalar scan in protocol.json",
+  "evaluation": "Seven complete validation sets; targets loaded after predictions",
+  "snapshots": "configs/vocabularies copied from previous frozen experiment; protocol runtime g0 overrides take precedence",
+  "defaults_changed": false,
+  "status": "complete",
+  "complete_validation_images": 4570,
+  "configurations_per_image": 23,
+  "configuration_image_evaluations": 105110,
+  "independent_cost_arms": 21,
+  "smoke_datasets": 7,
+  "local_tests_passed": 17,
+  "promotion_decision": "not_promoted"
+}

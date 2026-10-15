@@ -1,0 +1,11 @@
+{
+  "same_observation_deployment_pixels": 0,
+  "local_objects_shared": true,
+  "reader_audit": {
+    "legacy_match": true,
+    "coordinate_beta0_match": true,
+    "shared_local_identity": true,
+    "checked_tiles": 4,
+    "coordinate_mapping": "incumbent _sample_global over padded global lattice"
+  }
+}

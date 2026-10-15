@@ -1,0 +1,235 @@
+{
+  "dataset": "voc21",
+  "banks": {
+    "official_segmentation": {
+      "classes": [
+        {
+          "name": "background",
+          "synonyms": [
+            "sky",
+            "cloudy sky",
+            "blue sky",
+            "the sky above",
+            "clear sky",
+            "skyline",
+            "atmosphere",
+            "wall",
+            "brick wall",
+            "stone wall",
+            "trees",
+            "tree",
+            "forest",
+            "wood",
+            "wooden",
+            "lumber",
+            "timber",
+            "wooden plank",
+            "grass",
+            "field",
+            "soil",
+            "meadow",
+            "lawn",
+            "road",
+            "roadway",
+            "water",
+            "body of water",
+            "river",
+            "lake",
+            "pond",
+            "ocean",
+            "sea",
+            "green water",
+            "blue water",
+            "mountain",
+            "sands",
+            "desk",
+            "bed",
+            "building",
+            "buildings",
+            "facade",
+            "frontage",
+            "cloud",
+            "lamp",
+            "door",
+            "window",
+            "wardrobe",
+            "ceiling",
+            "shelf",
+            "shelves",
+            "curtain",
+            "stair",
+            "floor",
+            "hill",
+            "rail",
+            "fence"
+          ]
+        },
+        {
+          "name": "aeroplane",
+          "synonyms": [
+            "plane"
+          ]
+        },
+        {
+          "name": "bicycle",
+          "synonyms": [
+            "bicycle"
+          ]
+        },
+        {
+          "name": "bird",
+          "synonyms": [
+            "bird"
+          ]
+        },
+        {
+          "name": "boat",
+          "synonyms": [
+            "boat"
+          ]
+        },
+        {
+          "name": "bottle",
+          "synonyms": [
+            "bottle",
+            "wine bottle",
+            "water bottle"
+          ]
+        },
+        {
+          "name": "bus",
+          "synonyms": [
+            "bus",
+            "red bus",
+            "double-decker bus"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car"
+          ]
+        },
+        {
+          "name": "cat",
+          "synonyms": [
+            "cat"
+          ]
+        },
+        {
+          "name": "chair",
+          "synonyms": [
+            "chair",
+            "armchair",
+            "desk chair",
+            "wooden chair",
+            "dining chair",
+            "kitchen chair"
+          ]
+        },
+        {
+          "name": "cow",
+          "synonyms": [
+            "cow",
+            "cattle",
+            "bull",
+            "calf"
+          ]
+        },
+        {
+          "name": "diningtable",
+          "synonyms": [
+            "table",
+            "desk"
+          ]
+        },
+        {
+          "name": "dog",
+          "synonyms": [
+            "dog"
+          ]
+        },
+        {
+          "name": "horse",
+          "synonyms": [
+            "horse",
+            "wild horse"
+          ]
+        },
+        {
+          "name": "motorbike",
+          "synonyms": [
+            "motorcycle",
+            "motorbike"
+          ]
+        },
+        {
+          "name": "person",
+          "synonyms": [
+            "person",
+            "people",
+            "people in shirt",
+            "people in jeans",
+            "people in dress",
+            "people in sweater",
+            "people in skirt",
+            "people in jacket",
+            "people in hat",
+            "human in hat",
+            "human in jeans",
+            "human in sweater",
+            "human in skirt",
+            "human in jacket",
+            "human",
+            "crowd",
+            "child",
+            "boy",
+            "girl",
+            "man",
+            "women"
+          ]
+        },
+        {
+          "name": "pottedplant",
+          "synonyms": [
+            "potted plant",
+            "plant in a pot",
+            "houseplant",
+            "flowerpot"
+          ]
+        },
+        {
+          "name": "sheep",
+          "synonyms": [
+            "sheep",
+            "lamb"
+          ]
+        },
+        {
+          "name": "sofa",
+          "synonyms": [
+            "sofa",
+            "fabric sofa",
+            "settee"
+          ]
+        },
+        {
+          "name": "train",
+          "synonyms": [
+            "train"
+          ]
+        },
+        {
+          "name": "tvmonitor",
+          "synonyms": [
+            "tv monitor",
+            "monitor",
+            "computer monitor"
+          ]
+        }
+      ],
+      "template": "seg_template"
+    }
+  },
+  "residual": null
+}

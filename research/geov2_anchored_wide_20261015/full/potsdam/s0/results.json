@@ -1,0 +1,1961 @@
+{
+  "status": "complete",
+  "dataset": "potsdam",
+  "reference_g0": 0.5,
+  "profile": {
+    "bank": "official_imagenet",
+    "strength": "original",
+    "coupling": 0.5,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "potsdam",
+    "family": "remote_sensing",
+    "total_images": 504,
+    "background_index": 5,
+    "vocabulary": "../vocabularies/potsdam.json",
+    "profile": {
+      "bank": "official_imagenet",
+      "strength": "original",
+      "coupling": 0.5,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.2,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "1f576476b231c722eb9b522033c51a3d6e947996aac700039b57f5868822faab",
+  "alias_counts": {
+    "retained": [
+      2,
+      1,
+      4,
+      2,
+      1,
+      1
+    ],
+    "normalized": [
+      2,
+      1,
+      4,
+      2,
+      1,
+      1
+    ]
+  },
+  "architecture": "Frozen DonorBefore + matched 24-slot head + anchored residual read + original structural writer",
+  "cells": [
+    {
+      "key": "Coordinate__g0.25",
+      "method": "Coordinate",
+      "g0": 0.25,
+      "alpha": null
+    },
+    {
+      "key": "Coordinate__g0.5",
+      "method": "Coordinate",
+      "g0": 0.5,
+      "alpha": null
+    },
+    {
+      "key": "Coordinate__g0.75",
+      "method": "Coordinate",
+      "g0": 0.75,
+      "alpha": null
+    },
+    {
+      "key": "Coordinate__g1",
+      "method": "Coordinate",
+      "g0": 1.0,
+      "alpha": null
+    },
+    {
+      "key": "Legacy__g0.25",
+      "method": "Legacy",
+      "g0": 0.25,
+      "alpha": null
+    },
+    {
+      "key": "Legacy__g0.5",
+      "method": "Legacy",
+      "g0": 0.5,
+      "alpha": null
+    },
+    {
+      "key": "Legacy__g0.75",
+      "method": "Legacy",
+      "g0": 0.75,
+      "alpha": null
+    },
+    {
+      "key": "Legacy__g1",
+      "method": "Legacy",
+      "g0": 1.0,
+      "alpha": null
+    },
+    {
+      "key": "Anchored__g0.25",
+      "method": "Anchored",
+      "g0": 0.25,
+      "alpha": null
+    },
+    {
+      "key": "Anchored__g0.5",
+      "method": "Anchored",
+      "g0": 0.5,
+      "alpha": null
+    },
+    {
+      "key": "Anchored__g0.75",
+      "method": "Anchored",
+      "g0": 0.75,
+      "alpha": null
+    },
+    {
+      "key": "Anchored__g1",
+      "method": "Anchored",
+      "g0": 1.0,
+      "alpha": null
+    },
+    {
+      "key": "NoPrior__g0.5",
+      "method": "NoPrior",
+      "g0": 0.5,
+      "alpha": null
+    },
+    {
+      "key": "NoReference__g0.5",
+      "method": "NoReference",
+      "g0": 0.5,
+      "alpha": null
+    },
+    {
+      "key": "AbsoluteMix__g0.5",
+      "method": "AbsoluteMix",
+      "g0": 0.5,
+      "alpha": null
+    },
+    {
+      "key": "Shuffled__g0.5",
+      "method": "Shuffled",
+      "g0": 0.5,
+      "alpha": null
+    },
+    {
+      "key": "UniformBlend__a0",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 0.0
+    },
+    {
+      "key": "UniformBlend__a0.125",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 0.125
+    },
+    {
+      "key": "UniformBlend__a0.25",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 0.25
+    },
+    {
+      "key": "UniformBlend__a0.375",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 0.375
+    },
+    {
+      "key": "UniformBlend__a0.5",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 0.5
+    },
+    {
+      "key": "UniformBlend__a0.75",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 0.75
+    },
+    {
+      "key": "UniformBlend__a1",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 1.0
+    }
+  ],
+  "cpu_threads": 1,
+  "adaptive_gain_enabled": false,
+  "initialization_peak_allocated_mib": 2513.171875,
+  "processed_images": 504,
+  "global_sample_count": 504,
+  "sample_keys": [
+    "top_potsdam_2_13_RGB_y00_x00.tif",
+    "top_potsdam_2_13_RGB_y00_x01.tif",
+    "top_potsdam_2_13_RGB_y00_x02.tif",
+    "top_potsdam_2_13_RGB_y00_x03.tif",
+    "top_potsdam_2_13_RGB_y00_x04.tif",
+    "top_potsdam_2_13_RGB_y00_x05.tif",
+    "top_potsdam_2_13_RGB_y01_x00.tif",
+    "top_potsdam_2_13_RGB_y01_x01.tif",
+    "top_potsdam_2_13_RGB_y01_x02.tif",
+    "top_potsdam_2_13_RGB_y01_x03.tif",
+    "top_potsdam_2_13_RGB_y01_x04.tif",
+    "top_potsdam_2_13_RGB_y01_x05.tif",
+    "top_potsdam_2_13_RGB_y02_x00.tif",
+    "top_potsdam_2_13_RGB_y02_x01.tif",
+    "top_potsdam_2_13_RGB_y02_x02.tif",
+    "top_potsdam_2_13_RGB_y02_x03.tif",
+    "top_potsdam_2_13_RGB_y02_x04.tif",
+    "top_potsdam_2_13_RGB_y02_x05.tif",
+    "top_potsdam_2_13_RGB_y03_x00.tif",
+    "top_potsdam_2_13_RGB_y03_x01.tif",
+    "top_potsdam_2_13_RGB_y03_x02.tif",
+    "top_potsdam_2_13_RGB_y03_x03.tif",
+    "top_potsdam_2_13_RGB_y03_x04.tif",
+    "top_potsdam_2_13_RGB_y03_x05.tif",
+    "top_potsdam_2_13_RGB_y04_x00.tif",
+    "top_potsdam_2_13_RGB_y04_x01.tif",
+    "top_potsdam_2_13_RGB_y04_x02.tif",
+    "top_potsdam_2_13_RGB_y04_x03.tif",
+    "top_potsdam_2_13_RGB_y04_x04.tif",
+    "top_potsdam_2_13_RGB_y04_x05.tif",
+    "top_potsdam_2_13_RGB_y05_x00.tif",
+    "top_potsdam_2_13_RGB_y05_x01.tif",
+    "top_potsdam_2_13_RGB_y05_x02.tif",
+    "top_potsdam_2_13_RGB_y05_x03.tif",
+    "top_potsdam_2_13_RGB_y05_x04.tif",
+    "top_potsdam_2_13_RGB_y05_x05.tif",
+    "top_potsdam_2_14_RGB_y00_x00.tif",
+    "top_potsdam_2_14_RGB_y00_x01.tif",
+    "top_potsdam_2_14_RGB_y00_x02.tif",
+    "top_potsdam_2_14_RGB_y00_x03.tif",
+    "top_potsdam_2_14_RGB_y00_x04.tif",
+    "top_potsdam_2_14_RGB_y00_x05.tif",
+    "top_potsdam_2_14_RGB_y01_x00.tif",
+    "top_potsdam_2_14_RGB_y01_x01.tif",
+    "top_potsdam_2_14_RGB_y01_x02.tif",
+    "top_potsdam_2_14_RGB_y01_x03.tif",
+    "top_potsdam_2_14_RGB_y01_x04.tif",
+    "top_potsdam_2_14_RGB_y01_x05.tif",
+    "top_potsdam_2_14_RGB_y02_x00.tif",
+    "top_potsdam_2_14_RGB_y02_x01.tif",
+    "top_potsdam_2_14_RGB_y02_x02.tif",
+    "top_potsdam_2_14_RGB_y02_x03.tif",
+    "top_potsdam_2_14_RGB_y02_x04.tif",
+    "top_potsdam_2_14_RGB_y02_x05.tif",
+    "top_potsdam_2_14_RGB_y03_x00.tif",
+    "top_potsdam_2_14_RGB_y03_x01.tif",
+    "top_potsdam_2_14_RGB_y03_x02.tif",
+    "top_potsdam_2_14_RGB_y03_x03.tif",
+    "top_potsdam_2_14_RGB_y03_x04.tif",
+    "top_potsdam_2_14_RGB_y03_x05.tif",
+    "top_potsdam_2_14_RGB_y04_x00.tif",
+    "top_potsdam_2_14_RGB_y04_x01.tif",
+    "top_potsdam_2_14_RGB_y04_x02.tif",
+    "top_potsdam_2_14_RGB_y04_x03.tif",
+    "top_potsdam_2_14_RGB_y04_x04.tif",
+    "top_potsdam_2_14_RGB_y04_x05.tif",
+    "top_potsdam_2_14_RGB_y05_x00.tif",
+    "top_potsdam_2_14_RGB_y05_x01.tif",
+    "top_potsdam_2_14_RGB_y05_x02.tif",
+    "top_potsdam_2_14_RGB_y05_x03.tif",
+    "top_potsdam_2_14_RGB_y05_x04.tif",
+    "top_potsdam_2_14_RGB_y05_x05.tif",
+    "top_potsdam_3_13_RGB_y00_x00.tif",
+    "top_potsdam_3_13_RGB_y00_x01.tif",
+    "top_potsdam_3_13_RGB_y00_x02.tif",
+    "top_potsdam_3_13_RGB_y00_x03.tif",
+    "top_potsdam_3_13_RGB_y00_x04.tif",
+    "top_potsdam_3_13_RGB_y00_x05.tif",
+    "top_potsdam_3_13_RGB_y01_x00.tif",
+    "top_potsdam_3_13_RGB_y01_x01.tif",
+    "top_potsdam_3_13_RGB_y01_x02.tif",
+    "top_potsdam_3_13_RGB_y01_x03.tif",
+    "top_potsdam_3_13_RGB_y01_x04.tif",
+    "top_potsdam_3_13_RGB_y01_x05.tif",
+    "top_potsdam_3_13_RGB_y02_x00.tif",
+    "top_potsdam_3_13_RGB_y02_x01.tif",
+    "top_potsdam_3_13_RGB_y02_x02.tif",
+    "top_potsdam_3_13_RGB_y02_x03.tif",
+    "top_potsdam_3_13_RGB_y02_x04.tif",
+    "top_potsdam_3_13_RGB_y02_x05.tif",
+    "top_potsdam_3_13_RGB_y03_x00.tif",
+    "top_potsdam_3_13_RGB_y03_x01.tif",
+    "top_potsdam_3_13_RGB_y03_x02.tif",
+    "top_potsdam_3_13_RGB_y03_x03.tif",
+    "top_potsdam_3_13_RGB_y03_x04.tif",
+    "top_potsdam_3_13_RGB_y03_x05.tif",
+    "top_potsdam_3_13_RGB_y04_x00.tif",
+    "top_potsdam_3_13_RGB_y04_x01.tif",
+    "top_potsdam_3_13_RGB_y04_x02.tif",
+    "top_potsdam_3_13_RGB_y04_x03.tif",
+    "top_potsdam_3_13_RGB_y04_x04.tif",
+    "top_potsdam_3_13_RGB_y04_x05.tif",
+    "top_potsdam_3_13_RGB_y05_x00.tif",
+    "top_potsdam_3_13_RGB_y05_x01.tif",
+    "top_potsdam_3_13_RGB_y05_x02.tif",
+    "top_potsdam_3_13_RGB_y05_x03.tif",
+    "top_potsdam_3_13_RGB_y05_x04.tif",
+    "top_potsdam_3_13_RGB_y05_x05.tif",
+    "top_potsdam_3_14_RGB_y00_x00.tif",
+    "top_potsdam_3_14_RGB_y00_x01.tif",
+    "top_potsdam_3_14_RGB_y00_x02.tif",
+    "top_potsdam_3_14_RGB_y00_x03.tif",
+    "top_potsdam_3_14_RGB_y00_x04.tif",
+    "top_potsdam_3_14_RGB_y00_x05.tif",
+    "top_potsdam_3_14_RGB_y01_x00.tif",
+    "top_potsdam_3_14_RGB_y01_x01.tif",
+    "top_potsdam_3_14_RGB_y01_x02.tif",
+    "top_potsdam_3_14_RGB_y01_x03.tif",
+    "top_potsdam_3_14_RGB_y01_x04.tif",
+    "top_potsdam_3_14_RGB_y01_x05.tif",
+    "top_potsdam_3_14_RGB_y02_x00.tif",
+    "top_potsdam_3_14_RGB_y02_x01.tif",
+    "top_potsdam_3_14_RGB_y02_x02.tif",
+    "top_potsdam_3_14_RGB_y02_x03.tif",
+    "top_potsdam_3_14_RGB_y02_x04.tif",
+    "top_potsdam_3_14_RGB_y02_x05.tif",
+    "top_potsdam_3_14_RGB_y03_x00.tif",
+    "top_potsdam_3_14_RGB_y03_x01.tif",
+    "top_potsdam_3_14_RGB_y03_x02.tif",
+    "top_potsdam_3_14_RGB_y03_x03.tif",
+    "top_potsdam_3_14_RGB_y03_x04.tif",
+    "top_potsdam_3_14_RGB_y03_x05.tif",
+    "top_potsdam_3_14_RGB_y04_x00.tif",
+    "top_potsdam_3_14_RGB_y04_x01.tif",
+    "top_potsdam_3_14_RGB_y04_x02.tif",
+    "top_potsdam_3_14_RGB_y04_x03.tif",
+    "top_potsdam_3_14_RGB_y04_x04.tif",
+    "top_potsdam_3_14_RGB_y04_x05.tif",
+    "top_potsdam_3_14_RGB_y05_x00.tif",
+    "top_potsdam_3_14_RGB_y05_x01.tif",
+    "top_potsdam_3_14_RGB_y05_x02.tif",
+    "top_potsdam_3_14_RGB_y05_x03.tif",
+    "top_potsdam_3_14_RGB_y05_x04.tif",
+    "top_potsdam_3_14_RGB_y05_x05.tif",
+    "top_potsdam_4_13_RGB_y00_x00.tif",
+    "top_potsdam_4_13_RGB_y00_x01.tif",
+    "top_potsdam_4_13_RGB_y00_x02.tif",
+    "top_potsdam_4_13_RGB_y00_x03.tif",
+    "top_potsdam_4_13_RGB_y00_x04.tif",
+    "top_potsdam_4_13_RGB_y00_x05.tif",
+    "top_potsdam_4_13_RGB_y01_x00.tif",
+    "top_potsdam_4_13_RGB_y01_x01.tif",
+    "top_potsdam_4_13_RGB_y01_x02.tif",
+    "top_potsdam_4_13_RGB_y01_x03.tif",
+    "top_potsdam_4_13_RGB_y01_x04.tif",
+    "top_potsdam_4_13_RGB_y01_x05.tif",
+    "top_potsdam_4_13_RGB_y02_x00.tif",
+    "top_potsdam_4_13_RGB_y02_x01.tif",
+    "top_potsdam_4_13_RGB_y02_x02.tif",
+    "top_potsdam_4_13_RGB_y02_x03.tif",
+    "top_potsdam_4_13_RGB_y02_x04.tif",
+    "top_potsdam_4_13_RGB_y02_x05.tif",
+    "top_potsdam_4_13_RGB_y03_x00.tif",
+    "top_potsdam_4_13_RGB_y03_x01.tif",
+    "top_potsdam_4_13_RGB_y03_x02.tif",
+    "top_potsdam_4_13_RGB_y03_x03.tif",
+    "top_potsdam_4_13_RGB_y03_x04.tif",
+    "top_potsdam_4_13_RGB_y03_x05.tif",
+    "top_potsdam_4_13_RGB_y04_x00.tif",
+    "top_potsdam_4_13_RGB_y04_x01.tif",
+    "top_potsdam_4_13_RGB_y04_x02.tif",
+    "top_potsdam_4_13_RGB_y04_x03.tif",
+    "top_potsdam_4_13_RGB_y04_x04.tif",
+    "top_potsdam_4_13_RGB_y04_x05.tif",
+    "top_potsdam_4_13_RGB_y05_x00.tif",
+    "top_potsdam_4_13_RGB_y05_x01.tif",
+    "top_potsdam_4_13_RGB_y05_x02.tif",
+    "top_potsdam_4_13_RGB_y05_x03.tif",
+    "top_potsdam_4_13_RGB_y05_x04.tif",
+    "top_potsdam_4_13_RGB_y05_x05.tif",
+    "top_potsdam_4_14_RGB_y00_x00.tif",
+    "top_potsdam_4_14_RGB_y00_x01.tif",
+    "top_potsdam_4_14_RGB_y00_x02.tif",
+    "top_potsdam_4_14_RGB_y00_x03.tif",
+    "top_potsdam_4_14_RGB_y00_x04.tif",
+    "top_potsdam_4_14_RGB_y00_x05.tif",
+    "top_potsdam_4_14_RGB_y01_x00.tif",
+    "top_potsdam_4_14_RGB_y01_x01.tif",
+    "top_potsdam_4_14_RGB_y01_x02.tif",
+    "top_potsdam_4_14_RGB_y01_x03.tif",
+    "top_potsdam_4_14_RGB_y01_x04.tif",
+    "top_potsdam_4_14_RGB_y01_x05.tif",
+    "top_potsdam_4_14_RGB_y02_x00.tif",
+    "top_potsdam_4_14_RGB_y02_x01.tif",
+    "top_potsdam_4_14_RGB_y02_x02.tif",
+    "top_potsdam_4_14_RGB_y02_x03.tif",
+    "top_potsdam_4_14_RGB_y02_x04.tif",
+    "top_potsdam_4_14_RGB_y02_x05.tif",
+    "top_potsdam_4_14_RGB_y03_x00.tif",
+    "top_potsdam_4_14_RGB_y03_x01.tif",
+    "top_potsdam_4_14_RGB_y03_x02.tif",
+    "top_potsdam_4_14_RGB_y03_x03.tif",
+    "top_potsdam_4_14_RGB_y03_x04.tif",
+    "top_potsdam_4_14_RGB_y03_x05.tif",
+    "top_potsdam_4_14_RGB_y04_x00.tif",
+    "top_potsdam_4_14_RGB_y04_x01.tif",
+    "top_potsdam_4_14_RGB_y04_x02.tif",
+    "top_potsdam_4_14_RGB_y04_x03.tif",
+    "top_potsdam_4_14_RGB_y04_x04.tif",
+    "top_potsdam_4_14_RGB_y04_x05.tif",
+    "top_potsdam_4_14_RGB_y05_x00.tif",
+    "top_potsdam_4_14_RGB_y05_x01.tif",
+    "top_potsdam_4_14_RGB_y05_x02.tif",
+    "top_potsdam_4_14_RGB_y05_x03.tif",
+    "top_potsdam_4_14_RGB_y05_x04.tif",
+    "top_potsdam_4_14_RGB_y05_x05.tif",
+    "top_potsdam_4_15_RGB_y00_x00.tif",
+    "top_potsdam_4_15_RGB_y00_x01.tif",
+    "top_potsdam_4_15_RGB_y00_x02.tif",
+    "top_potsdam_4_15_RGB_y00_x03.tif",
+    "top_potsdam_4_15_RGB_y00_x04.tif",
+    "top_potsdam_4_15_RGB_y00_x05.tif",
+    "top_potsdam_4_15_RGB_y01_x00.tif",
+    "top_potsdam_4_15_RGB_y01_x01.tif",
+    "top_potsdam_4_15_RGB_y01_x02.tif",
+    "top_potsdam_4_15_RGB_y01_x03.tif",
+    "top_potsdam_4_15_RGB_y01_x04.tif",
+    "top_potsdam_4_15_RGB_y01_x05.tif",
+    "top_potsdam_4_15_RGB_y02_x00.tif",
+    "top_potsdam_4_15_RGB_y02_x01.tif",
+    "top_potsdam_4_15_RGB_y02_x02.tif",
+    "top_potsdam_4_15_RGB_y02_x03.tif",
+    "top_potsdam_4_15_RGB_y02_x04.tif",
+    "top_potsdam_4_15_RGB_y02_x05.tif",
+    "top_potsdam_4_15_RGB_y03_x00.tif",
+    "top_potsdam_4_15_RGB_y03_x01.tif",
+    "top_potsdam_4_15_RGB_y03_x02.tif",
+    "top_potsdam_4_15_RGB_y03_x03.tif",
+    "top_potsdam_4_15_RGB_y03_x04.tif",
+    "top_potsdam_4_15_RGB_y03_x05.tif",
+    "top_potsdam_4_15_RGB_y04_x00.tif",
+    "top_potsdam_4_15_RGB_y04_x01.tif",
+    "top_potsdam_4_15_RGB_y04_x02.tif",
+    "top_potsdam_4_15_RGB_y04_x03.tif",
+    "top_potsdam_4_15_RGB_y04_x04.tif",
+    "top_potsdam_4_15_RGB_y04_x05.tif",
+    "top_potsdam_4_15_RGB_y05_x00.tif",
+    "top_potsdam_4_15_RGB_y05_x01.tif",
+    "top_potsdam_4_15_RGB_y05_x02.tif",
+    "top_potsdam_4_15_RGB_y05_x03.tif",
+    "top_potsdam_4_15_RGB_y05_x04.tif",
+    "top_potsdam_4_15_RGB_y05_x05.tif",
+    "top_potsdam_5_13_RGB_y00_x00.tif",
+    "top_potsdam_5_13_RGB_y00_x01.tif",
+    "top_potsdam_5_13_RGB_y00_x02.tif",
+    "top_potsdam_5_13_RGB_y00_x03.tif",
+    "top_potsdam_5_13_RGB_y00_x04.tif",
+    "top_potsdam_5_13_RGB_y00_x05.tif",
+    "top_potsdam_5_13_RGB_y01_x00.tif",
+    "top_potsdam_5_13_RGB_y01_x01.tif",
+    "top_potsdam_5_13_RGB_y01_x02.tif",
+    "top_potsdam_5_13_RGB_y01_x03.tif",
+    "top_potsdam_5_13_RGB_y01_x04.tif",
+    "top_potsdam_5_13_RGB_y01_x05.tif",
+    "top_potsdam_5_13_RGB_y02_x00.tif",
+    "top_potsdam_5_13_RGB_y02_x01.tif",
+    "top_potsdam_5_13_RGB_y02_x02.tif",
+    "top_potsdam_5_13_RGB_y02_x03.tif",
+    "top_potsdam_5_13_RGB_y02_x04.tif",
+    "top_potsdam_5_13_RGB_y02_x05.tif",
+    "top_potsdam_5_13_RGB_y03_x00.tif",
+    "top_potsdam_5_13_RGB_y03_x01.tif",
+    "top_potsdam_5_13_RGB_y03_x02.tif",
+    "top_potsdam_5_13_RGB_y03_x03.tif",
+    "top_potsdam_5_13_RGB_y03_x04.tif",
+    "top_potsdam_5_13_RGB_y03_x05.tif",
+    "top_potsdam_5_13_RGB_y04_x00.tif",
+    "top_potsdam_5_13_RGB_y04_x01.tif",
+    "top_potsdam_5_13_RGB_y04_x02.tif",
+    "top_potsdam_5_13_RGB_y04_x03.tif",
+    "top_potsdam_5_13_RGB_y04_x04.tif",
+    "top_potsdam_5_13_RGB_y04_x05.tif",
+    "top_potsdam_5_13_RGB_y05_x00.tif",
+    "top_potsdam_5_13_RGB_y05_x01.tif",
+    "top_potsdam_5_13_RGB_y05_x02.tif",
+    "top_potsdam_5_13_RGB_y05_x03.tif",
+    "top_potsdam_5_13_RGB_y05_x04.tif",
+    "top_potsdam_5_13_RGB_y05_x05.tif",
+    "top_potsdam_5_14_RGB_y00_x00.tif",
+    "top_potsdam_5_14_RGB_y00_x01.tif",
+    "top_potsdam_5_14_RGB_y00_x02.tif",
+    "top_potsdam_5_14_RGB_y00_x03.tif",
+    "top_potsdam_5_14_RGB_y00_x04.tif",
+    "top_potsdam_5_14_RGB_y00_x05.tif",
+    "top_potsdam_5_14_RGB_y01_x00.tif",
+    "top_potsdam_5_14_RGB_y01_x01.tif",
+    "top_potsdam_5_14_RGB_y01_x02.tif",
+    "top_potsdam_5_14_RGB_y01_x03.tif",
+    "top_potsdam_5_14_RGB_y01_x04.tif",
+    "top_potsdam_5_14_RGB_y01_x05.tif",
+    "top_potsdam_5_14_RGB_y02_x00.tif",
+    "top_potsdam_5_14_RGB_y02_x01.tif",
+    "top_potsdam_5_14_RGB_y02_x02.tif",
+    "top_potsdam_5_14_RGB_y02_x03.tif",
+    "top_potsdam_5_14_RGB_y02_x04.tif",
+    "top_potsdam_5_14_RGB_y02_x05.tif",
+    "top_potsdam_5_14_RGB_y03_x00.tif",
+    "top_potsdam_5_14_RGB_y03_x01.tif",
+    "top_potsdam_5_14_RGB_y03_x02.tif",
+    "top_potsdam_5_14_RGB_y03_x03.tif",
+    "top_potsdam_5_14_RGB_y03_x04.tif",
+    "top_potsdam_5_14_RGB_y03_x05.tif",
+    "top_potsdam_5_14_RGB_y04_x00.tif",
+    "top_potsdam_5_14_RGB_y04_x01.tif",
+    "top_potsdam_5_14_RGB_y04_x02.tif",
+    "top_potsdam_5_14_RGB_y04_x03.tif",
+    "top_potsdam_5_14_RGB_y04_x04.tif",
+    "top_potsdam_5_14_RGB_y04_x05.tif",
+    "top_potsdam_5_14_RGB_y05_x00.tif",
+    "top_potsdam_5_14_RGB_y05_x01.tif",
+    "top_potsdam_5_14_RGB_y05_x02.tif",
+    "top_potsdam_5_14_RGB_y05_x03.tif",
+    "top_potsdam_5_14_RGB_y05_x04.tif",
+    "top_potsdam_5_14_RGB_y05_x05.tif",
+    "top_potsdam_5_15_RGB_y00_x00.tif",
+    "top_potsdam_5_15_RGB_y00_x01.tif",
+    "top_potsdam_5_15_RGB_y00_x02.tif",
+    "top_potsdam_5_15_RGB_y00_x03.tif",
+    "top_potsdam_5_15_RGB_y00_x04.tif",
+    "top_potsdam_5_15_RGB_y00_x05.tif",
+    "top_potsdam_5_15_RGB_y01_x00.tif",
+    "top_potsdam_5_15_RGB_y01_x01.tif",
+    "top_potsdam_5_15_RGB_y01_x02.tif",
+    "top_potsdam_5_15_RGB_y01_x03.tif",
+    "top_potsdam_5_15_RGB_y01_x04.tif",
+    "top_potsdam_5_15_RGB_y01_x05.tif",
+    "top_potsdam_5_15_RGB_y02_x00.tif",
+    "top_potsdam_5_15_RGB_y02_x01.tif",
+    "top_potsdam_5_15_RGB_y02_x02.tif",
+    "top_potsdam_5_15_RGB_y02_x03.tif",
+    "top_potsdam_5_15_RGB_y02_x04.tif",
+    "top_potsdam_5_15_RGB_y02_x05.tif",
+    "top_potsdam_5_15_RGB_y03_x00.tif",
+    "top_potsdam_5_15_RGB_y03_x01.tif",
+    "top_potsdam_5_15_RGB_y03_x02.tif",
+    "top_potsdam_5_15_RGB_y03_x03.tif",
+    "top_potsdam_5_15_RGB_y03_x04.tif",
+    "top_potsdam_5_15_RGB_y03_x05.tif",
+    "top_potsdam_5_15_RGB_y04_x00.tif",
+    "top_potsdam_5_15_RGB_y04_x01.tif",
+    "top_potsdam_5_15_RGB_y04_x02.tif",
+    "top_potsdam_5_15_RGB_y04_x03.tif",
+    "top_potsdam_5_15_RGB_y04_x04.tif",
+    "top_potsdam_5_15_RGB_y04_x05.tif",
+    "top_potsdam_5_15_RGB_y05_x00.tif",
+    "top_potsdam_5_15_RGB_y05_x01.tif",
+    "top_potsdam_5_15_RGB_y05_x02.tif",
+    "top_potsdam_5_15_RGB_y05_x03.tif",
+    "top_potsdam_5_15_RGB_y05_x04.tif",
+    "top_potsdam_5_15_RGB_y05_x05.tif",
+    "top_potsdam_6_13_RGB_y00_x00.tif",
+    "top_potsdam_6_13_RGB_y00_x01.tif",
+    "top_potsdam_6_13_RGB_y00_x02.tif",
+    "top_potsdam_6_13_RGB_y00_x03.tif",
+    "top_potsdam_6_13_RGB_y00_x04.tif",
+    "top_potsdam_6_13_RGB_y00_x05.tif",
+    "top_potsdam_6_13_RGB_y01_x00.tif",
+    "top_potsdam_6_13_RGB_y01_x01.tif",
+    "top_potsdam_6_13_RGB_y01_x02.tif",
+    "top_potsdam_6_13_RGB_y01_x03.tif",
+    "top_potsdam_6_13_RGB_y01_x04.tif",
+    "top_potsdam_6_13_RGB_y01_x05.tif",
+    "top_potsdam_6_13_RGB_y02_x00.tif",
+    "top_potsdam_6_13_RGB_y02_x01.tif",
+    "top_potsdam_6_13_RGB_y02_x02.tif",
+    "top_potsdam_6_13_RGB_y02_x03.tif",
+    "top_potsdam_6_13_RGB_y02_x04.tif",
+    "top_potsdam_6_13_RGB_y02_x05.tif",
+    "top_potsdam_6_13_RGB_y03_x00.tif",
+    "top_potsdam_6_13_RGB_y03_x01.tif",
+    "top_potsdam_6_13_RGB_y03_x02.tif",
+    "top_potsdam_6_13_RGB_y03_x03.tif",
+    "top_potsdam_6_13_RGB_y03_x04.tif",
+    "top_potsdam_6_13_RGB_y03_x05.tif",
+    "top_potsdam_6_13_RGB_y04_x00.tif",
+    "top_potsdam_6_13_RGB_y04_x01.tif",
+    "top_potsdam_6_13_RGB_y04_x02.tif",
+    "top_potsdam_6_13_RGB_y04_x03.tif",
+    "top_potsdam_6_13_RGB_y04_x04.tif",
+    "top_potsdam_6_13_RGB_y04_x05.tif",
+    "top_potsdam_6_13_RGB_y05_x00.tif",
+    "top_potsdam_6_13_RGB_y05_x01.tif",
+    "top_potsdam_6_13_RGB_y05_x02.tif",
+    "top_potsdam_6_13_RGB_y05_x03.tif",
+    "top_potsdam_6_13_RGB_y05_x04.tif",
+    "top_potsdam_6_13_RGB_y05_x05.tif",
+    "top_potsdam_6_14_RGB_y00_x00.tif",
+    "top_potsdam_6_14_RGB_y00_x01.tif",
+    "top_potsdam_6_14_RGB_y00_x02.tif",
+    "top_potsdam_6_14_RGB_y00_x03.tif",
+    "top_potsdam_6_14_RGB_y00_x04.tif",
+    "top_potsdam_6_14_RGB_y00_x05.tif",
+    "top_potsdam_6_14_RGB_y01_x00.tif",
+    "top_potsdam_6_14_RGB_y01_x01.tif",
+    "top_potsdam_6_14_RGB_y01_x02.tif",
+    "top_potsdam_6_14_RGB_y01_x03.tif",
+    "top_potsdam_6_14_RGB_y01_x04.tif",
+    "top_potsdam_6_14_RGB_y01_x05.tif",
+    "top_potsdam_6_14_RGB_y02_x00.tif",
+    "top_potsdam_6_14_RGB_y02_x01.tif",
+    "top_potsdam_6_14_RGB_y02_x02.tif",
+    "top_potsdam_6_14_RGB_y02_x03.tif",
+    "top_potsdam_6_14_RGB_y02_x04.tif",
+    "top_potsdam_6_14_RGB_y02_x05.tif",
+    "top_potsdam_6_14_RGB_y03_x00.tif",
+    "top_potsdam_6_14_RGB_y03_x01.tif",
+    "top_potsdam_6_14_RGB_y03_x02.tif",
+    "top_potsdam_6_14_RGB_y03_x03.tif",
+    "top_potsdam_6_14_RGB_y03_x04.tif",
+    "top_potsdam_6_14_RGB_y03_x05.tif",
+    "top_potsdam_6_14_RGB_y04_x00.tif",
+    "top_potsdam_6_14_RGB_y04_x01.tif",
+    "top_potsdam_6_14_RGB_y04_x02.tif",
+    "top_potsdam_6_14_RGB_y04_x03.tif",
+    "top_potsdam_6_14_RGB_y04_x04.tif",
+    "top_potsdam_6_14_RGB_y04_x05.tif",
+    "top_potsdam_6_14_RGB_y05_x00.tif",
+    "top_potsdam_6_14_RGB_y05_x01.tif",
+    "top_potsdam_6_14_RGB_y05_x02.tif",
+    "top_potsdam_6_14_RGB_y05_x03.tif",
+    "top_potsdam_6_14_RGB_y05_x04.tif",
+    "top_potsdam_6_14_RGB_y05_x05.tif",
+    "top_potsdam_6_15_RGB_y00_x00.tif",
+    "top_potsdam_6_15_RGB_y00_x01.tif",
+    "top_potsdam_6_15_RGB_y00_x02.tif",
+    "top_potsdam_6_15_RGB_y00_x03.tif",
+    "top_potsdam_6_15_RGB_y00_x04.tif",
+    "top_potsdam_6_15_RGB_y00_x05.tif",
+    "top_potsdam_6_15_RGB_y01_x00.tif",
+    "top_potsdam_6_15_RGB_y01_x01.tif",
+    "top_potsdam_6_15_RGB_y01_x02.tif",
+    "top_potsdam_6_15_RGB_y01_x03.tif",
+    "top_potsdam_6_15_RGB_y01_x04.tif",
+    "top_potsdam_6_15_RGB_y01_x05.tif",
+    "top_potsdam_6_15_RGB_y02_x00.tif",
+    "top_potsdam_6_15_RGB_y02_x01.tif",
+    "top_potsdam_6_15_RGB_y02_x02.tif",
+    "top_potsdam_6_15_RGB_y02_x03.tif",
+    "top_potsdam_6_15_RGB_y02_x04.tif",
+    "top_potsdam_6_15_RGB_y02_x05.tif",
+    "top_potsdam_6_15_RGB_y03_x00.tif",
+    "top_potsdam_6_15_RGB_y03_x01.tif",
+    "top_potsdam_6_15_RGB_y03_x02.tif",
+    "top_potsdam_6_15_RGB_y03_x03.tif",
+    "top_potsdam_6_15_RGB_y03_x04.tif",
+    "top_potsdam_6_15_RGB_y03_x05.tif",
+    "top_potsdam_6_15_RGB_y04_x00.tif",
+    "top_potsdam_6_15_RGB_y04_x01.tif",
+    "top_potsdam_6_15_RGB_y04_x02.tif",
+    "top_potsdam_6_15_RGB_y04_x03.tif",
+    "top_potsdam_6_15_RGB_y04_x04.tif",
+    "top_potsdam_6_15_RGB_y04_x05.tif",
+    "top_potsdam_6_15_RGB_y05_x00.tif",
+    "top_potsdam_6_15_RGB_y05_x01.tif",
+    "top_potsdam_6_15_RGB_y05_x02.tif",
+    "top_potsdam_6_15_RGB_y05_x03.tif",
+    "top_potsdam_6_15_RGB_y05_x04.tif",
+    "top_potsdam_6_15_RGB_y05_x05.tif",
+    "top_potsdam_7_13_RGB_y00_x00.tif",
+    "top_potsdam_7_13_RGB_y00_x01.tif",
+    "top_potsdam_7_13_RGB_y00_x02.tif",
+    "top_potsdam_7_13_RGB_y00_x03.tif",
+    "top_potsdam_7_13_RGB_y00_x04.tif",
+    "top_potsdam_7_13_RGB_y00_x05.tif",
+    "top_potsdam_7_13_RGB_y01_x00.tif",
+    "top_potsdam_7_13_RGB_y01_x01.tif",
+    "top_potsdam_7_13_RGB_y01_x02.tif",
+    "top_potsdam_7_13_RGB_y01_x03.tif",
+    "top_potsdam_7_13_RGB_y01_x04.tif",
+    "top_potsdam_7_13_RGB_y01_x05.tif",
+    "top_potsdam_7_13_RGB_y02_x00.tif",
+    "top_potsdam_7_13_RGB_y02_x01.tif",
+    "top_potsdam_7_13_RGB_y02_x02.tif",
+    "top_potsdam_7_13_RGB_y02_x03.tif",
+    "top_potsdam_7_13_RGB_y02_x04.tif",
+    "top_potsdam_7_13_RGB_y02_x05.tif",
+    "top_potsdam_7_13_RGB_y03_x00.tif",
+    "top_potsdam_7_13_RGB_y03_x01.tif",
+    "top_potsdam_7_13_RGB_y03_x02.tif",
+    "top_potsdam_7_13_RGB_y03_x03.tif",
+    "top_potsdam_7_13_RGB_y03_x04.tif",
+    "top_potsdam_7_13_RGB_y03_x05.tif",
+    "top_potsdam_7_13_RGB_y04_x00.tif",
+    "top_potsdam_7_13_RGB_y04_x01.tif",
+    "top_potsdam_7_13_RGB_y04_x02.tif",
+    "top_potsdam_7_13_RGB_y04_x03.tif",
+    "top_potsdam_7_13_RGB_y04_x04.tif",
+    "top_potsdam_7_13_RGB_y04_x05.tif",
+    "top_potsdam_7_13_RGB_y05_x00.tif",
+    "top_potsdam_7_13_RGB_y05_x01.tif",
+    "top_potsdam_7_13_RGB_y05_x02.tif",
+    "top_potsdam_7_13_RGB_y05_x03.tif",
+    "top_potsdam_7_13_RGB_y05_x04.tif",
+    "top_potsdam_7_13_RGB_y05_x05.tif"
+  ],
+  "shard_index": 0,
+  "num_shards": 1,
+  "class_names": [
+    "impervious surface",
+    "building",
+    "low vegetation",
+    "tree",
+    "car",
+    "clutter"
+  ],
+  "masks_used_only_for_scoring": true,
+  "metrics": {
+    "Coordinate__g0.25": {
+      "mean_iou_percent": 49.05906881718498,
+      "confusion_matrix": [
+        [
+          122729803,
+          10126317,
+          633717,
+          2254455,
+          6209227,
+          16661002
+        ],
+        [
+          3800570,
+          98746696,
+          1460358,
+          700210,
+          43215,
+          15802918
+        ],
+        [
+          11758859,
+          5895796,
+          41488478,
+          16898719,
+          1032754,
+          28809891
+        ],
+        [
+          6830526,
+          1051412,
+          1846177,
+          68072136,
+          1908967,
+          6178938
+        ],
+        [
+          810255,
+          25595,
+          122,
+          3736,
+          9036435,
+          26980
+        ],
+        [
+          5061094,
+          5303679,
+          728317,
+          831372,
+          426383,
+          10804891
+        ]
+      ]
+    },
+    "Coordinate__g0.5": {
+      "mean_iou_percent": 54.86133370211229,
+      "confusion_matrix": [
+        [
+          131746987,
+          9494837,
+          1955521,
+          2305105,
+          4029364,
+          9082707
+        ],
+        [
+          6518380,
+          106483207,
+          1703683,
+          696096,
+          23357,
+          5129244
+        ],
+        [
+          14355303,
+          5706744,
+          63024865,
+          15807949,
+          644267,
+          6345369
+        ],
+        [
+          8551139,
+          977050,
+          4091127,
+          68716135,
+          1545113,
+          2007592
+        ],
+        [
+          1785682,
+          19711,
+          275,
+          4108,
+          8079338,
+          14009
+        ],
+        [
+          6492428,
+          5217539,
+          1732687,
+          1000238,
+          320883,
+          8391961
+        ]
+      ]
+    },
+    "Coordinate__g0.75": {
+      "mean_iou_percent": 55.2080223910156,
+      "confusion_matrix": [
+        [
+          136167874,
+          8756218,
+          3487973,
+          2188288,
+          2618796,
+          5395372
+        ],
+        [
+          8176436,
+          107433431,
+          1992511,
+          678612,
+          10980,
+          2261997
+        ],
+        [
+          15440640,
+          5243457,
+          70289188,
+          12849635,
+          392076,
+          1669501
+        ],
+        [
+          9938829,
+          897056,
+          6673219,
+          66487778,
+          1223027,
+          668247
+        ],
+        [
+          3181034,
+          14849,
+          633,
+          4618,
+          6693094,
+          8895
+        ],
+        [
+          7704902,
+          4933985,
+          3073849,
+          1081583,
+          254652,
+          6106765
+        ]
+      ]
+    },
+    "Coordinate__g1": {
+      "mean_iou_percent": 53.16847327385431,
+      "confusion_matrix": [
+        [
+          138550452,
+          8031528,
+          4921784,
+          2001834,
+          1743664,
+          3365259
+        ],
+        [
+          9578790,
+          106852876,
+          2274421,
+          658508,
+          8034,
+          1181338
+        ],
+        [
+          15620108,
+          4721420,
+          74355726,
+          10475731,
+          244959,
+          466553
+        ],
+        [
+          11017304,
+          808354,
+          9526272,
+          63362385,
+          961114,
+          212727
+        ],
+        [
+          4683494,
+          10175,
+          2105,
+          5711,
+          5196873,
+          4765
+        ],
+        [
+          8591156,
+          4616307,
+          4672380,
+          1092435,
+          216409,
+          3967049
+        ]
+      ]
+    },
+    "Legacy__g0.25": {
+      "mean_iou_percent": 48.776773926378056,
+      "confusion_matrix": [
+        [
+          123843011,
+          10091653,
+          532086,
+          2130470,
+          5956041,
+          16061260
+        ],
+        [
+          3921338,
+          100175353,
+          1403969,
+          656030,
+          42202,
+          14355075
+        ],
+        [
+          12245360,
+          5987048,
+          38415256,
+          16871540,
+          992485,
+          31372808
+        ],
+        [
+          7156275,
+          1095023,
+          1662843,
+          67252705,
+          1902846,
+          6818464
+        ],
+        [
+          826943,
+          27286,
+          86,
+          3885,
+          9019097,
+          25826
+        ],
+        [
+          5217786,
+          5394222,
+          599956,
+          788076,
+          411388,
+          10744308
+        ]
+      ]
+    },
+    "Legacy__g0.5": {
+      "mean_iou_percent": 54.45232437177242,
+      "confusion_matrix": [
+        [
+          133303720,
+          9399706,
+          1537590,
+          2107956,
+          3601167,
+          8664382
+        ],
+        [
+          6747348,
+          107417757,
+          1591907,
+          619239,
+          19847,
+          4157869
+        ],
+        [
+          15909857,
+          5909232,
+          59514686,
+          16214667,
+          544683,
+          7791372
+        ],
+        [
+          9575857,
+          1073568,
+          3656354,
+          67606312,
+          1494536,
+          2481529
+        ],
+        [
+          1900131,
+          21936,
+          204,
+          4333,
+          7964449,
+          12070
+        ],
+        [
+          6853830,
+          5366547,
+          1323926,
+          944767,
+          291982,
+          8374684
+        ]
+      ]
+    },
+    "Legacy__g0.75": {
+      "mean_iou_percent": 54.484948290028576,
+      "confusion_matrix": [
+        [
+          138196759,
+          8593307,
+          2854413,
+          1981508,
+          2131609,
+          4856925
+        ],
+        [
+          8325273,
+          108151604,
+          1813161,
+          570664,
+          7824,
+          1685441
+        ],
+        [
+          18045089,
+          5471217,
+          66583736,
+          13358186,
+          281792,
+          2144477
+        ],
+        [
+          11869699,
+          1024322,
+          6112683,
+          64903771,
+          1102954,
+          874727
+        ],
+        [
+          3519010,
+          18887,
+          598,
+          5306,
+          6352337,
+          6985
+        ],
+        [
+          8390774,
+          5090282,
+          2422046,
+          1047482,
+          216667,
+          5988485
+        ]
+      ]
+    },
+    "Legacy__g1": {
+      "mean_iou_percent": 51.8618354689377,
+      "confusion_matrix": [
+        [
+          140877925,
+          7815552,
+          4170474,
+          1783656,
+          1260871,
+          2706043
+        ],
+        [
+          9787955,
+          107422125,
+          2022235,
+          527290,
+          3744,
+          790618
+        ],
+        [
+          18948970,
+          4903213,
+          70385347,
+          10902385,
+          152219,
+          592363
+        ],
+        [
+          13780017,
+          942990,
+          9015407,
+          61070027,
+          780555,
+          299160
+        ],
+        [
+          5245391,
+          15364,
+          1905,
+          6993,
+          4631232,
+          2238
+        ],
+        [
+          9423584,
+          4749406,
+          4017560,
+          1048625,
+          166927,
+          3749634
+        ]
+      ]
+    },
+    "Anchored__g0.25": {
+      "mean_iou_percent": 48.97598707658872,
+      "confusion_matrix": [
+        [
+          122967568,
+          9998179,
+          607445,
+          2234852,
+          6196421,
+          16610056
+        ],
+        [
+          3898789,
+          98628577,
+          1452535,
+          702123,
+          44192,
+          15827751
+        ],
+        [
+          11761115,
+          5816541,
+          40847146,
+          16791930,
+          1029141,
+          29638624
+        ],
+        [
+          6806662,
+          1056012,
+          1804662,
+          67891931,
+          1905074,
+          6423815
+        ],
+        [
+          787817,
+          25971,
+          119,
+          3952,
+          9057809,
+          27455
+        ],
+        [
+          5085070,
+          5326884,
+          695457,
+          815170,
+          424829,
+          10808326
+        ]
+      ]
+    },
+    "Anchored__g0.5": {
+      "mean_iou_percent": 54.95757826737396,
+      "confusion_matrix": [
+        [
+          132273235,
+          9271846,
+          1823233,
+          2249014,
+          4009165,
+          8988028
+        ],
+        [
+          6768210,
+          106334816,
+          1678823,
+          703379,
+          24216,
+          5044523
+        ],
+        [
+          14489939,
+          5579114,
+          62728395,
+          15731524,
+          635874,
+          6719651
+        ],
+        [
+          8534487,
+          986263,
+          4013759,
+          68645082,
+          1544415,
+          2164150
+        ],
+        [
+          1705495,
+          20449,
+          277,
+          4352,
+          8158543,
+          14007
+        ],
+        [
+          6567447,
+          5267972,
+          1631283,
+          970972,
+          317584,
+          8400478
+        ]
+      ]
+    },
+    "Anchored__g0.75": {
+      "mean_iou_percent": 55.489266791069944,
+      "confusion_matrix": [
+        [
+          136930133,
+          8456126,
+          3270665,
+          2110867,
+          2590661,
+          5256069
+        ],
+        [
+          8533051,
+          107219292,
+          1949751,
+          680125,
+          12906,
+          2158842
+        ],
+        [
+          15726074,
+          5079816,
+          70190775,
+          12723661,
+          379001,
+          1785170
+        ],
+        [
+          9950074,
+          906450,
+          6577548,
+          66485836,
+          1227655,
+          740593
+        ],
+        [
+          3006697,
+          16492,
+          613,
+          4815,
+          6866493,
+          8013
+        ],
+        [
+          7887966,
+          5000950,
+          2923374,
+          1051064,
+          250661,
+          6041721
+        ]
+      ]
+    },
+    "Anchored__g1": {
+      "mean_iou_percent": 53.61765122957157,
+      "confusion_matrix": [
+        [
+          139562170,
+          7662070,
+          4636792,
+          1912765,
+          1709585,
+          3131139
+        ],
+        [
+          10043223,
+          106587471,
+          2203086,
+          654221,
+          7979,
+          1057987
+        ],
+        [
+          15993905,
+          4528348,
+          74355829,
+          10285722,
+          227662,
+          493031
+        ],
+        [
+          11073245,
+          815975,
+          9435472,
+          63357574,
+          966609,
+          239281
+        ],
+        [
+          4435538,
+          12029,
+          2027,
+          5585,
+          5444093,
+          3851
+        ],
+        [
+          8795291,
+          4679473,
+          4527329,
+          1053307,
+          211267,
+          3889069
+        ]
+      ]
+    },
+    "NoPrior__g0.5": {
+      "mean_iou_percent": 54.85947218864855,
+      "confusion_matrix": [
+        [
+          132222895,
+          9145103,
+          1859063,
+          2203381,
+          4050431,
+          9133648
+        ],
+        [
+          6946342,
+          105833825,
+          1693261,
+          689837,
+          23735,
+          5366967
+        ],
+        [
+          14380120,
+          5507004,
+          63008543,
+          15477297,
+          640603,
+          6870930
+        ],
+        [
+          8533175,
+          982177,
+          4058629,
+          68501383,
+          1547861,
+          2264931
+        ],
+        [
+          1724174,
+          22599,
+          301,
+          4138,
+          8136865,
+          15046
+        ],
+        [
+          6559730,
+          5275564,
+          1642035,
+          950947,
+          319120,
+          8408340
+        ]
+      ]
+    },
+    "NoReference__g0.5": {
+      "mean_iou_percent": 55.27483719010101,
+      "confusion_matrix": [
+        [
+          131755320,
+          9223365,
+          2059882,
+          2349290,
+          4069700,
+          9156964
+        ],
+        [
+          6441637,
+          106369207,
+          1729257,
+          696414,
+          25366,
+          5292086
+        ],
+        [
+          14006927,
+          5451120,
+          63926262,
+          15831451,
+          641763,
+          6026974
+        ],
+        [
+          8221600,
+          944542,
+          4161809,
+          69132513,
+          1529084,
+          1898608
+        ],
+        [
+          1649568,
+          19528,
+          276,
+          4668,
+          8216004,
+          13079
+        ],
+        [
+          6424317,
+          5157927,
+          1814030,
+          999780,
+          327881,
+          8431801
+        ]
+      ]
+    },
+    "AbsoluteMix__g0.5": {
+      "mean_iou_percent": 54.47214620159958,
+      "confusion_matrix": [
+        [
+          133054490,
+          9495501,
+          1559969,
+          2157643,
+          3638243,
+          8708675
+        ],
+        [
+          6763881,
+          107224671,
+          1599592,
+          633070,
+          19776,
+          4312977
+        ],
+        [
+          15724533,
+          5970377,
+          59728712,
+          16289686,
+          554796,
+          7616393
+        ],
+        [
+          9393194,
+          1074924,
+          3656667,
+          67857093,
+          1503294,
+          2402984
+        ],
+        [
+          1870437,
+          22166,
+          200,
+          4448,
+          7993479,
+          12393
+        ],
+        [
+          6805451,
+          5375609,
+          1353082,
+          965914,
+          288179,
+          8367501
+        ]
+      ]
+    },
+    "Shuffled__g0.5": {
+      "mean_iou_percent": 52.05803540041508,
+      "confusion_matrix": [
+        [
+          130559732,
+          11561585,
+          1535060,
+          2064490,
+          3967556,
+          8926098
+        ],
+        [
+          8988754,
+          103205430,
+          1618156,
+          747418,
+          25327,
+          5968882
+        ],
+        [
+          15955840,
+          7552587,
+          58063630,
+          14810419,
+          615815,
+          8886206
+        ],
+        [
+          10193515,
+          1469548,
+          3808870,
+          65496084,
+          1567720,
+          3352419
+        ],
+        [
+          1953349,
+          22962,
+          366,
+          2931,
+          7897854,
+          25661
+        ],
+        [
+          7001442,
+          5640727,
+          1285235,
+          969670,
+          291453,
+          7967209
+        ]
+      ]
+    },
+    "UniformBlend__a0": {
+      "mean_iou_percent": 38.287360277954924,
+      "confusion_matrix": [
+        [
+          102026744,
+          10592020,
+          115015,
+          2079359,
+          9430299,
+          34371084
+        ],
+        [
+          1925631,
+          76258367,
+          841089,
+          634754,
+          71976,
+          40822150
+        ],
+        [
+          8045554,
+          5692235,
+          12796900,
+          12781202,
+          1457435,
+          65111171
+        ],
+        [
+          4815032,
+          1112108,
+          479531,
+          60332685,
+          2227909,
+          16920891
+        ],
+        [
+          313362,
+          31090,
+          44,
+          3648,
+          9500483,
+          54496
+        ],
+        [
+          3238137,
+          5091389,
+          185041,
+          614395,
+          524413,
+          13502361
+        ]
+      ]
+    },
+    "UniformBlend__a0.125": {
+      "mean_iou_percent": 48.81074339058868,
+      "confusion_matrix": [
+        [
+          122705788,
+          10081111,
+          637952,
+          2192833,
+          6253168,
+          16743669
+        ],
+        [
+          3875346,
+          98054359,
+          1451125,
+          696230,
+          42708,
+          16434199
+        ],
+        [
+          11889403,
+          5939383,
+          40839687,
+          16587166,
+          1033704,
+          29595154
+        ],
+        [
+          6930799,
+          1077666,
+          1831254,
+          67898323,
+          1928284,
+          6221830
+        ],
+        [
+          803744,
+          25369,
+          107,
+          3063,
+          9045537,
+          25303
+        ],
+        [
+          5098242,
+          5348698,
+          725565,
+          809088,
+          418842,
+          10755301
+        ]
+      ]
+    },
+    "UniformBlend__a0.25": {
+      "mean_iou_percent": 54.651446826923056,
+      "confusion_matrix": [
+        [
+          131928660,
+          9411833,
+          1973234,
+          2173063,
+          4149182,
+          8978549
+        ],
+        [
+          6705638,
+          106015854,
+          1677674,
+          699196,
+          24133,
+          5431472
+        ],
+        [
+          14613752,
+          5777879,
+          63115712,
+          15339842,
+          664202,
+          6373110
+        ],
+        [
+          8724789,
+          1027605,
+          4122217,
+          68379753,
+          1595941,
+          2037851
+        ],
+        [
+          1795335,
+          19437,
+          283,
+          3439,
+          8071699,
+          12930
+        ],
+        [
+          6611796,
+          5254306,
+          1719462,
+          952801,
+          313473,
+          8303898
+        ]
+      ]
+    },
+    "UniformBlend__a0.375": {
+      "mean_iou_percent": 54.975652727368654,
+      "confusion_matrix": [
+        [
+          136343268,
+          8649314,
+          3537909,
+          2007515,
+          2822451,
+          5254064
+        ],
+        [
+          8611155,
+          107007854,
+          1951901,
+          679379,
+          14988,
+          2288690
+        ],
+        [
+          15721630,
+          5311962,
+          70644733,
+          12275292,
+          424915,
+          1505965
+        ],
+        [
+          10129053,
+          961504,
+          6811791,
+          66020770,
+          1291243,
+          673795
+        ],
+        [
+          3182255,
+          15241,
+          717,
+          4129,
+          6692067,
+          8714
+        ],
+        [
+          7897290,
+          4978400,
+          3009764,
+          1007301,
+          249823,
+          6013158
+        ]
+      ]
+    },
+    "UniformBlend__a0.5": {
+      "mean_iou_percent": 53.010770668200905,
+      "confusion_matrix": [
+        [
+          138601439,
+          7906571,
+          4975628,
+          1804222,
+          2008823,
+          3317838
+        ],
+        [
+          10162984,
+          106299671,
+          2228634,
+          656459,
+          10731,
+          1195488
+        ],
+        [
+          15912527,
+          4787919,
+          74692292,
+          9817726,
+          291809,
+          382224
+        ],
+        [
+          11180224,
+          873285,
+          9816825,
+          62772339,
+          1035739,
+          209744
+        ],
+        [
+          4599757,
+          10695,
+          1969,
+          5835,
+          5280758,
+          4109
+        ],
+        [
+          8782581,
+          4662469,
+          4516200,
+          991935,
+          215523,
+          3987028
+        ]
+      ]
+    },
+    "UniformBlend__a0.75": {
+      "mean_iou_percent": 48.63135824537817,
+      "confusion_matrix": [
+        [
+          140193345,
+          6829533,
+          7257509,
+          1503336,
+          1206925,
+          1623873
+        ],
+        [
+          12358926,
+          104136216,
+          2895419,
+          597279,
+          10697,
+          555430
+        ],
+        [
+          15666848,
+          3967597,
+          79121092,
+          6897283,
+          174440,
+          57237
+        ],
+        [
+          12519904,
+          718750,
+          15364689,
+          56542365,
+          713851,
+          28597
+        ],
+        [
+          6575334,
+          8779,
+          6127,
+          6358,
+          3305163,
+          1362
+        ],
+        [
+          9714303,
+          4104854,
+          6587004,
+          864022,
+          173259,
+          1712294
+        ]
+      ]
+    },
+    "UniformBlend__a1": {
+      "mean_iou_percent": 45.724297709014365,
+      "confusion_matrix": [
+        [
+          140049058,
+          6170790,
+          9178930,
+          1328803,
+          863576,
+          1023364
+        ],
+        [
+          13830014,
+          102189774,
+          3577739,
+          543983,
+          10184,
+          402273
+        ],
+        [
+          15387683,
+          3428166,
+          81442891,
+          5475761,
+          135133,
+          14863
+        ],
+        [
+          13273768,
+          622615,
+          19745280,
+          51694559,
+          550291,
+          1643
+        ],
+        [
+          7602419,
+          7687,
+          10449,
+          5606,
+          2275893,
+          1069
+        ],
+        [
+          10097706,
+          3699395,
+          7499018,
+          749019,
+          145388,
+          965210
+        ]
+      ]
+    }
+  },
+  "wall_seconds": 262.0406530299224
+}

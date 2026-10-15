@@ -1,0 +1,1458 @@
+{
+  "status": "complete",
+  "dataset": "potsdam",
+  "reference_g0": 0.5,
+  "profile": {
+    "bank": "official_imagenet",
+    "strength": "original",
+    "coupling": 0.5,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "potsdam",
+    "family": "remote_sensing",
+    "total_images": 504,
+    "background_index": 5,
+    "vocabulary": "../vocabularies/potsdam.json",
+    "profile": {
+      "bank": "official_imagenet",
+      "strength": "original",
+      "coupling": 0.5,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.2,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "1f576476b231c722eb9b522033c51a3d6e947996aac700039b57f5868822faab",
+  "alias_counts": {
+    "retained": [
+      2,
+      1,
+      4,
+      2,
+      1,
+      1
+    ],
+    "normalized": [
+      2,
+      1,
+      4,
+      2,
+      1,
+      1
+    ]
+  },
+  "architecture": "Frozen DonorBefore + matched 24-slot head + anchored residual read + original structural writer",
+  "cells": [
+    {
+      "key": "Coordinate__g0.25",
+      "method": "Coordinate",
+      "g0": 0.25,
+      "alpha": null
+    },
+    {
+      "key": "Coordinate__g0.5",
+      "method": "Coordinate",
+      "g0": 0.5,
+      "alpha": null
+    },
+    {
+      "key": "Coordinate__g0.75",
+      "method": "Coordinate",
+      "g0": 0.75,
+      "alpha": null
+    },
+    {
+      "key": "Coordinate__g1",
+      "method": "Coordinate",
+      "g0": 1.0,
+      "alpha": null
+    },
+    {
+      "key": "Legacy__g0.25",
+      "method": "Legacy",
+      "g0": 0.25,
+      "alpha": null
+    },
+    {
+      "key": "Legacy__g0.5",
+      "method": "Legacy",
+      "g0": 0.5,
+      "alpha": null
+    },
+    {
+      "key": "Legacy__g0.75",
+      "method": "Legacy",
+      "g0": 0.75,
+      "alpha": null
+    },
+    {
+      "key": "Legacy__g1",
+      "method": "Legacy",
+      "g0": 1.0,
+      "alpha": null
+    },
+    {
+      "key": "Anchored__g0.25",
+      "method": "Anchored",
+      "g0": 0.25,
+      "alpha": null
+    },
+    {
+      "key": "Anchored__g0.5",
+      "method": "Anchored",
+      "g0": 0.5,
+      "alpha": null
+    },
+    {
+      "key": "Anchored__g0.75",
+      "method": "Anchored",
+      "g0": 0.75,
+      "alpha": null
+    },
+    {
+      "key": "Anchored__g1",
+      "method": "Anchored",
+      "g0": 1.0,
+      "alpha": null
+    },
+    {
+      "key": "NoPrior__g0.5",
+      "method": "NoPrior",
+      "g0": 0.5,
+      "alpha": null
+    },
+    {
+      "key": "NoReference__g0.5",
+      "method": "NoReference",
+      "g0": 0.5,
+      "alpha": null
+    },
+    {
+      "key": "AbsoluteMix__g0.5",
+      "method": "AbsoluteMix",
+      "g0": 0.5,
+      "alpha": null
+    },
+    {
+      "key": "Shuffled__g0.5",
+      "method": "Shuffled",
+      "g0": 0.5,
+      "alpha": null
+    },
+    {
+      "key": "UniformBlend__a0",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 0.0
+    },
+    {
+      "key": "UniformBlend__a0.125",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 0.125
+    },
+    {
+      "key": "UniformBlend__a0.25",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 0.25
+    },
+    {
+      "key": "UniformBlend__a0.375",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 0.375
+    },
+    {
+      "key": "UniformBlend__a0.5",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 0.5
+    },
+    {
+      "key": "UniformBlend__a0.75",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 0.75
+    },
+    {
+      "key": "UniformBlend__a1",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 1.0
+    }
+  ],
+  "cpu_threads": 1,
+  "adaptive_gain_enabled": false,
+  "initialization_peak_allocated_mib": 2513.171875,
+  "processed_images": 1,
+  "global_sample_count": 504,
+  "sample_keys": [
+    "top_potsdam_2_13_RGB_y00_x00.tif"
+  ],
+  "shard_index": 0,
+  "num_shards": 1,
+  "class_names": [
+    "impervious surface",
+    "building",
+    "low vegetation",
+    "tree",
+    "car",
+    "clutter"
+  ],
+  "masks_used_only_for_scoring": true,
+  "metrics": {
+    "Coordinate__g0.25": {
+      "mean_iou_percent": 46.90853274557646,
+      "confusion_matrix": [
+        [
+          122592,
+          0,
+          3,
+          6755,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          7756,
+          0,
+          598486,
+          55125,
+          13,
+          467
+        ],
+        [
+          9554,
+          0,
+          25233,
+          172684,
+          0,
+          853
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "Coordinate__g0.5": {
+      "mean_iou_percent": 59.716994491619324,
+      "confusion_matrix": [
+        [
+          126339,
+          0,
+          37,
+          2974,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6310,
+          0,
+          631974,
+          23555,
+          0,
+          8
+        ],
+        [
+          9484,
+          0,
+          50451,
+          148345,
+          0,
+          44
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "Coordinate__g0.75": {
+      "mean_iou_percent": 56.32449102698283,
+      "confusion_matrix": [
+        [
+          127819,
+          0,
+          135,
+          1396,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          5012,
+          0,
+          646849,
+          9986,
+          0,
+          0
+        ],
+        [
+          9239,
+          0,
+          88818,
+          110267,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "Coordinate__g1": {
+      "mean_iou_percent": 52.86984123031557,
+      "confusion_matrix": [
+        [
+          128293,
+          0,
+          329,
+          728,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3954,
+          0,
+          654439,
+          3454,
+          0,
+          0
+        ],
+        [
+          8990,
+          0,
+          119362,
+          79972,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "Legacy__g0.25": {
+      "mean_iou_percent": 47.280287295939175,
+      "confusion_matrix": [
+        [
+          121692,
+          0,
+          9,
+          7649,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6986,
+          0,
+          607506,
+          46956,
+          11,
+          388
+        ],
+        [
+          9128,
+          0,
+          28094,
+          170257,
+          0,
+          845
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "Legacy__g0.5": {
+      "mean_iou_percent": 58.88552492035544,
+      "confusion_matrix": [
+        [
+          125179,
+          0,
+          83,
+          4088,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4927,
+          0,
+          639495,
+          17406,
+          0,
+          19
+        ],
+        [
+          8674,
+          0,
+          62241,
+          137260,
+          0,
+          149
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "Legacy__g0.75": {
+      "mean_iou_percent": 54.19208965074019,
+      "confusion_matrix": [
+        [
+          127104,
+          0,
+          334,
+          1912,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3228,
+          0,
+          654075,
+          4544,
+          0,
+          0
+        ],
+        [
+          8032,
+          0,
+          110553,
+          89739,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "Legacy__g1": {
+      "mean_iou_percent": 49.0594699268803,
+      "confusion_matrix": [
+        [
+          127525,
+          0,
+          879,
+          946,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2048,
+          0,
+          658795,
+          1004,
+          0,
+          0
+        ],
+        [
+          7592,
+          0,
+          151134,
+          49598,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "Anchored__g0.25": {
+      "mean_iou_percent": 47.0672638818688,
+      "confusion_matrix": [
+        [
+          122416,
+          0,
+          3,
+          6931,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          7461,
+          0,
+          600698,
+          53256,
+          12,
+          420
+        ],
+        [
+          9418,
+          0,
+          25465,
+          172610,
+          0,
+          831
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "Anchored__g0.5": {
+      "mean_iou_percent": 60.04631021595932,
+      "confusion_matrix": [
+        [
+          126122,
+          0,
+          37,
+          3191,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          5786,
+          0,
+          633199,
+          22856,
+          0,
+          6
+        ],
+        [
+          9233,
+          0,
+          49353,
+          149661,
+          0,
+          77
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "Anchored__g0.75": {
+      "mean_iou_percent": 56.76753484083675,
+      "confusion_matrix": [
+        [
+          127772,
+          0,
+          159,
+          1419,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4339,
+          0,
+          648141,
+          9367,
+          0,
+          0
+        ],
+        [
+          8848,
+          0,
+          87669,
+          111807,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "Anchored__g1": {
+      "mean_iou_percent": 53.063936426336554,
+      "confusion_matrix": [
+        [
+          128274,
+          0,
+          374,
+          702,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3212,
+          0,
+          655742,
+          2893,
+          0,
+          0
+        ],
+        [
+          8462,
+          0,
+          120290,
+          79572,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "NoPrior__g0.5": {
+      "mean_iou_percent": 59.57558939795976,
+      "confusion_matrix": [
+        [
+          126366,
+          0,
+          41,
+          2943,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          5838,
+          0,
+          633379,
+          22619,
+          0,
+          11
+        ],
+        [
+          9362,
+          0,
+          53046,
+          145825,
+          0,
+          91
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "NoReference__g0.5": {
+      "mean_iou_percent": 60.5904707223308,
+      "confusion_matrix": [
+        [
+          127162,
+          0,
+          30,
+          2158,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6308,
+          0,
+          630761,
+          24769,
+          0,
+          9
+        ],
+        [
+          9680,
+          0,
+          44299,
+          154343,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "AbsoluteMix__g0.5": {
+      "mean_iou_percent": 59.22896401454377,
+      "confusion_matrix": [
+        [
+          125407,
+          0,
+          58,
+          3885,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          5122,
+          0,
+          638732,
+          17978,
+          0,
+          15
+        ],
+        [
+          8807,
+          0,
+          59246,
+          140131,
+          0,
+          140
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "Shuffled__g0.5": {
+      "mean_iou_percent": 56.624441868563515,
+      "confusion_matrix": [
+        [
+          113044,
+          0,
+          188,
+          16118,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4214,
+          0,
+          636127,
+          21499,
+          0,
+          7
+        ],
+        [
+          7614,
+          0,
+          57712,
+          142898,
+          0,
+          100
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "UniformBlend__a0": {
+      "mean_iou_percent": 38.690490983540485,
+      "confusion_matrix": [
+        [
+          117122,
+          0,
+          0,
+          11978,
+          0,
+          250
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          8228,
+          0,
+          372919,
+          89319,
+          70,
+          191311
+        ],
+        [
+          9221,
+          0,
+          9596,
+          179886,
+          0,
+          9621
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          359,
+          0,
+          0,
+          120
+        ]
+      ]
+    },
+    "UniformBlend__a0.125": {
+      "mean_iou_percent": 59.07130429700852,
+      "confusion_matrix": [
+        [
+          123587,
+          0,
+          3,
+          5760,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          7705,
+          0,
+          600139,
+          53658,
+          0,
+          345
+        ],
+        [
+          9517,
+          0,
+          25158,
+          173155,
+          0,
+          494
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "UniformBlend__a0.25": {
+      "mean_iou_percent": 60.50263164170692,
+      "confusion_matrix": [
+        [
+          127470,
+          0,
+          50,
+          1830,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6079,
+          0,
+          632897,
+          22871,
+          0,
+          0
+        ],
+        [
+          9237,
+          0,
+          48060,
+          151027,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "UniformBlend__a0.375": {
+      "mean_iou_percent": 57.38664341981169,
+      "confusion_matrix": [
+        [
+          128805,
+          0,
+          222,
+          323,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4601,
+          0,
+          647736,
+          9510,
+          0,
+          0
+        ],
+        [
+          8752,
+          0,
+          84792,
+          114780,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "UniformBlend__a0.5": {
+      "mean_iou_percent": 53.73938536992168,
+      "confusion_matrix": [
+        [
+          128666,
+          0,
+          499,
+          185,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3355,
+          0,
+          654325,
+          4167,
+          0,
+          0
+        ],
+        [
+          8440,
+          0,
+          115408,
+          84476,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "UniformBlend__a0.75": {
+      "mean_iou_percent": 48.927252036717384,
+      "confusion_matrix": [
+        [
+          127661,
+          0,
+          1530,
+          159,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1732,
+          0,
+          658812,
+          1303,
+          0,
+          0
+        ],
+        [
+          7841,
+          0,
+          152080,
+          48403,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "UniformBlend__a1": {
+      "mean_iou_percent": 46.20613585506839,
+      "confusion_matrix": [
+        [
+          126182,
+          0,
+          2961,
+          207,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          951,
+          0,
+          660494,
+          402,
+          0,
+          0
+        ],
+        [
+          7315,
+          0,
+          171365,
+          29644,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          479,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "wall_seconds": 0.8375655892305076
+}

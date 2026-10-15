@@ -1,0 +1,4057 @@
+{
+  "stage": "smoke",
+  "status": "complete",
+  "datasets": {
+    "vdd": {
+      "status": "complete",
+      "images": 1,
+      "reference_g0": 1.0,
+      "class_names": [
+        "other",
+        "wall",
+        "road",
+        "vegetation",
+        "vehicle",
+        "roof",
+        "water"
+      ],
+      "coverage_verified": true,
+      "predeclared_coverage": false,
+      "statistics_match_confusion": true,
+      "interval_unit": "image",
+      "unique_groups": 1,
+      "matched_rows": [
+        {
+          "key": "Coordinate__g1",
+          "method": "Coordinate",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 38.01686066139946,
+          "anchored_minus_arm_pp": 0.560616438632124,
+          "paired_95ci_pp": [
+            0.560616438632124,
+            0.560616438632124
+          ],
+          "image_paired_95ci_pp": [
+            0.560616438632124,
+            0.560616438632124
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "Legacy__g1",
+          "method": "Legacy",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 36.8327730930557,
+          "anchored_minus_arm_pp": 1.744704006975887,
+          "paired_95ci_pp": [
+            1.744704006975887,
+            1.744704006975887
+          ],
+          "image_paired_95ci_pp": [
+            1.744704006975887,
+            1.744704006975887
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "Anchored__g1",
+          "method": "Anchored",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 38.57747710003159,
+          "anchored_minus_arm_pp": 0.0,
+          "paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "image_paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "NoPrior__g1",
+          "method": "NoPrior",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 38.60325254828911,
+          "anchored_minus_arm_pp": -0.025775448257526534,
+          "paired_95ci_pp": [
+            -0.025775448257526534,
+            -0.025775448257526534
+          ],
+          "image_paired_95ci_pp": [
+            -0.025775448257526534,
+            -0.025775448257526534
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "NoReference__g1",
+          "method": "NoReference",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 38.796484355700336,
+          "anchored_minus_arm_pp": -0.21900725566874968,
+          "paired_95ci_pp": [
+            -0.21900725566874968,
+            -0.21900725566874968
+          ],
+          "image_paired_95ci_pp": [
+            -0.21900725566874968,
+            -0.21900725566874968
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "AbsoluteMix__g1",
+          "method": "AbsoluteMix",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 36.66772934232307,
+          "anchored_minus_arm_pp": 1.9097477577085158,
+          "paired_95ci_pp": [
+            1.9097477577085158,
+            1.9097477577085158
+          ],
+          "image_paired_95ci_pp": [
+            1.9097477577085158,
+            1.9097477577085158
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "Shuffled__g1",
+          "method": "Shuffled",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 35.596413662933955,
+          "anchored_minus_arm_pp": 2.9810634370976317,
+          "paired_95ci_pp": [
+            2.9810634370976317,
+            2.9810634370976317
+          ],
+          "image_paired_95ci_pp": [
+            2.9810634370976317,
+            2.9810634370976317
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "UniformBlend__a0.125",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.125,
+          "mean_iou_percent": 40.560935473655576,
+          "anchored_minus_arm_pp": -1.9834583736239892,
+          "paired_95ci_pp": [
+            -1.9834583736239892,
+            -1.9834583736239892
+          ],
+          "image_paired_95ci_pp": [
+            -1.9834583736239892,
+            -1.9834583736239892
+          ],
+          "interval_unit": "image"
+        }
+      ],
+      "retuned_rows": [
+        {
+          "key": "Coordinate__g0.25",
+          "method": "Coordinate",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 42.21327705069535,
+          "anchored_minus_arm_pp": 0.12936386840532066,
+          "paired_95ci_pp": [
+            0.12936386840532066,
+            0.12936386840532066
+          ],
+          "image_paired_95ci_pp": [
+            0.12936386840532066,
+            0.12936386840532066
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "Legacy__g0.25",
+          "method": "Legacy",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 42.23180657719272,
+          "anchored_minus_arm_pp": 0.11083434190795316,
+          "paired_95ci_pp": [
+            0.11083434190795316,
+            0.11083434190795316
+          ],
+          "image_paired_95ci_pp": [
+            0.11083434190795316,
+            0.11083434190795316
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "Anchored__g0.25",
+          "method": "Anchored",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 42.342640919100674,
+          "anchored_minus_arm_pp": 0.0,
+          "paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "image_paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "UniformBlend__a0.125",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.125,
+          "mean_iou_percent": 40.560935473655576,
+          "anchored_minus_arm_pp": 1.7817054454450982,
+          "paired_95ci_pp": [
+            1.7817054454450982,
+            1.7817054454450982
+          ],
+          "image_paired_95ci_pp": [
+            1.7817054454450982,
+            1.7817054454450982
+          ],
+          "interval_unit": "image"
+        }
+      ],
+      "equal_gain_search_budget_verified": true,
+      "all_rows": [
+        {
+          "dataset": "vdd",
+          "key": "Coordinate__g0.25",
+          "method": "Coordinate",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 42.21327705069535
+        },
+        {
+          "dataset": "vdd",
+          "key": "Coordinate__g0.5",
+          "method": "Coordinate",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 40.69609703257899
+        },
+        {
+          "dataset": "vdd",
+          "key": "Coordinate__g0.75",
+          "method": "Coordinate",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 38.93597936207171
+        },
+        {
+          "dataset": "vdd",
+          "key": "Coordinate__g1",
+          "method": "Coordinate",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 38.01686066139946
+        },
+        {
+          "dataset": "vdd",
+          "key": "Legacy__g0.25",
+          "method": "Legacy",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 42.23180657719272
+        },
+        {
+          "dataset": "vdd",
+          "key": "Legacy__g0.5",
+          "method": "Legacy",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 40.59417438819599
+        },
+        {
+          "dataset": "vdd",
+          "key": "Legacy__g0.75",
+          "method": "Legacy",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 38.59850582206292
+        },
+        {
+          "dataset": "vdd",
+          "key": "Legacy__g1",
+          "method": "Legacy",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 36.8327730930557
+        },
+        {
+          "dataset": "vdd",
+          "key": "Anchored__g0.25",
+          "method": "Anchored",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 42.342640919100674
+        },
+        {
+          "dataset": "vdd",
+          "key": "Anchored__g0.5",
+          "method": "Anchored",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 40.96722752449399
+        },
+        {
+          "dataset": "vdd",
+          "key": "Anchored__g0.75",
+          "method": "Anchored",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 39.43678324472775
+        },
+        {
+          "dataset": "vdd",
+          "key": "Anchored__g1",
+          "method": "Anchored",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 38.57747710003159
+        },
+        {
+          "dataset": "vdd",
+          "key": "NoPrior__g1",
+          "method": "NoPrior",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 38.60325254828911
+        },
+        {
+          "dataset": "vdd",
+          "key": "NoReference__g1",
+          "method": "NoReference",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 38.796484355700336
+        },
+        {
+          "dataset": "vdd",
+          "key": "AbsoluteMix__g1",
+          "method": "AbsoluteMix",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 36.66772934232307
+        },
+        {
+          "dataset": "vdd",
+          "key": "Shuffled__g1",
+          "method": "Shuffled",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 35.596413662933955
+        },
+        {
+          "dataset": "vdd",
+          "key": "UniformBlend__a0",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.0,
+          "mean_iou_percent": 34.08074425340313
+        },
+        {
+          "dataset": "vdd",
+          "key": "UniformBlend__a0.125",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.125,
+          "mean_iou_percent": 40.560935473655576
+        },
+        {
+          "dataset": "vdd",
+          "key": "UniformBlend__a0.25",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.25,
+          "mean_iou_percent": 39.24675879605821
+        },
+        {
+          "dataset": "vdd",
+          "key": "UniformBlend__a0.375",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.375,
+          "mean_iou_percent": 38.79595585472613
+        },
+        {
+          "dataset": "vdd",
+          "key": "UniformBlend__a0.5",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.5,
+          "mean_iou_percent": 38.16178591420016
+        },
+        {
+          "dataset": "vdd",
+          "key": "UniformBlend__a0.75",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.75,
+          "mean_iou_percent": 37.63592987046441
+        },
+        {
+          "dataset": "vdd",
+          "key": "UniformBlend__a1",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 1.0,
+          "mean_iou_percent": 37.253143480293986
+        }
+      ],
+      "cross_validated_gain": {
+        "status": "insufficient_groups",
+        "unique_groups": 1
+      },
+      "profile": {
+        "bank": "official_imagenet",
+        "strength": "original",
+        "coupling": 1.0,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 0.3,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "config": {
+        "schema": 1,
+        "dataset": "vdd",
+        "family": "remote_sensing",
+        "total_images": 80,
+        "background_index": 0,
+        "vocabulary": "../vocabularies/vdd.json",
+        "profile": {
+          "bank": "official_imagenet",
+          "strength": "original",
+          "coupling": 1.0,
+          "temperature": 0.07,
+          "tau": 1.0,
+          "tem": 0.3,
+          "wide_policy": "long448",
+          "background_rule": "retained"
+        },
+        "background_bias": 0.0,
+        "background_threshold": 0.0,
+        "geometry": {
+          "geometry_depth": 2,
+          "geometry_temperature": 0.1,
+          "spatial_sigma": 0.25,
+          "maximum_aliases_per_class": 20
+        },
+        "visual_budget": {
+          "geometry_max": 4,
+          "wide_max": 4,
+          "fine": 0
+        },
+        "upstream": {
+          "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+          "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+        },
+        "provenance": {
+          "source_trial": "kev_alias_search_20261009",
+          "labeled_development": true,
+          "full_validation_viewed": true,
+          "execution_only_update": false,
+          "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+        }
+      },
+      "cache_identity": "c650eb44930462f9a5025431afb09d1ad39787dc62255d56ca3c068a5c751bcf",
+      "alias_counts": {
+        "retained": [
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        "normalized": [
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "potsdam": {
+      "status": "complete",
+      "images": 1,
+      "reference_g0": 0.5,
+      "class_names": [
+        "impervious surface",
+        "building",
+        "low vegetation",
+        "tree",
+        "car",
+        "clutter"
+      ],
+      "coverage_verified": true,
+      "predeclared_coverage": false,
+      "statistics_match_confusion": true,
+      "interval_unit": "original aerial scene",
+      "unique_groups": 1,
+      "matched_rows": [
+        {
+          "key": "Coordinate__g0.5",
+          "method": "Coordinate",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 59.716994491619324,
+          "anchored_minus_arm_pp": 0.3293157243399989,
+          "paired_95ci_pp": [
+            0.3293157243399989,
+            0.3293157243399989
+          ],
+          "image_paired_95ci_pp": [
+            0.3293157243399989,
+            0.3293157243399989
+          ],
+          "interval_unit": "original aerial scene"
+        },
+        {
+          "key": "Legacy__g0.5",
+          "method": "Legacy",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 58.88552492035544,
+          "anchored_minus_arm_pp": 1.1607852956038869,
+          "paired_95ci_pp": [
+            1.1607852956038869,
+            1.1607852956038869
+          ],
+          "image_paired_95ci_pp": [
+            1.1607852956038869,
+            1.1607852956038869
+          ],
+          "interval_unit": "original aerial scene"
+        },
+        {
+          "key": "Anchored__g0.5",
+          "method": "Anchored",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 60.04631021595932,
+          "anchored_minus_arm_pp": 0.0,
+          "paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "image_paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "interval_unit": "original aerial scene"
+        },
+        {
+          "key": "NoPrior__g0.5",
+          "method": "NoPrior",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 59.57558939795976,
+          "anchored_minus_arm_pp": 0.4707208179995632,
+          "paired_95ci_pp": [
+            0.4707208179995632,
+            0.4707208179995632
+          ],
+          "image_paired_95ci_pp": [
+            0.4707208179995632,
+            0.4707208179995632
+          ],
+          "interval_unit": "original aerial scene"
+        },
+        {
+          "key": "NoReference__g0.5",
+          "method": "NoReference",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 60.5904707223308,
+          "anchored_minus_arm_pp": -0.5441605063714761,
+          "paired_95ci_pp": [
+            -0.5441605063714761,
+            -0.5441605063714761
+          ],
+          "image_paired_95ci_pp": [
+            -0.5441605063714761,
+            -0.5441605063714761
+          ],
+          "interval_unit": "original aerial scene"
+        },
+        {
+          "key": "AbsoluteMix__g0.5",
+          "method": "AbsoluteMix",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 59.22896401454377,
+          "anchored_minus_arm_pp": 0.8173462014155533,
+          "paired_95ci_pp": [
+            0.8173462014155533,
+            0.8173462014155533
+          ],
+          "image_paired_95ci_pp": [
+            0.8173462014155533,
+            0.8173462014155533
+          ],
+          "interval_unit": "original aerial scene"
+        },
+        {
+          "key": "Shuffled__g0.5",
+          "method": "Shuffled",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 56.624441868563515,
+          "anchored_minus_arm_pp": 3.421868347395808,
+          "paired_95ci_pp": [
+            3.421868347395808,
+            3.421868347395808
+          ],
+          "image_paired_95ci_pp": [
+            3.421868347395808,
+            3.421868347395808
+          ],
+          "interval_unit": "original aerial scene"
+        },
+        {
+          "key": "UniformBlend__a0.25",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.25,
+          "mean_iou_percent": 60.50263164170692,
+          "anchored_minus_arm_pp": -0.45632142574759627,
+          "paired_95ci_pp": [
+            -0.45632142574759627,
+            -0.45632142574759627
+          ],
+          "image_paired_95ci_pp": [
+            -0.45632142574759627,
+            -0.45632142574759627
+          ],
+          "interval_unit": "original aerial scene"
+        }
+      ],
+      "retuned_rows": [
+        {
+          "key": "Coordinate__g0.5",
+          "method": "Coordinate",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 59.716994491619324,
+          "anchored_minus_arm_pp": 0.3293157243399989,
+          "paired_95ci_pp": [
+            0.3293157243399989,
+            0.3293157243399989
+          ],
+          "image_paired_95ci_pp": [
+            0.3293157243399989,
+            0.3293157243399989
+          ],
+          "interval_unit": "original aerial scene"
+        },
+        {
+          "key": "Legacy__g0.5",
+          "method": "Legacy",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 58.88552492035544,
+          "anchored_minus_arm_pp": 1.1607852956038869,
+          "paired_95ci_pp": [
+            1.1607852956038869,
+            1.1607852956038869
+          ],
+          "image_paired_95ci_pp": [
+            1.1607852956038869,
+            1.1607852956038869
+          ],
+          "interval_unit": "original aerial scene"
+        },
+        {
+          "key": "Anchored__g0.5",
+          "method": "Anchored",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 60.04631021595932,
+          "anchored_minus_arm_pp": 0.0,
+          "paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "image_paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "interval_unit": "original aerial scene"
+        },
+        {
+          "key": "UniformBlend__a0.25",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.25,
+          "mean_iou_percent": 60.50263164170692,
+          "anchored_minus_arm_pp": -0.45632142574759627,
+          "paired_95ci_pp": [
+            -0.45632142574759627,
+            -0.45632142574759627
+          ],
+          "image_paired_95ci_pp": [
+            -0.45632142574759627,
+            -0.45632142574759627
+          ],
+          "interval_unit": "original aerial scene"
+        }
+      ],
+      "equal_gain_search_budget_verified": true,
+      "all_rows": [
+        {
+          "dataset": "potsdam",
+          "key": "Coordinate__g0.25",
+          "method": "Coordinate",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 46.90853274557646
+        },
+        {
+          "dataset": "potsdam",
+          "key": "Coordinate__g0.5",
+          "method": "Coordinate",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 59.716994491619324
+        },
+        {
+          "dataset": "potsdam",
+          "key": "Coordinate__g0.75",
+          "method": "Coordinate",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 56.32449102698283
+        },
+        {
+          "dataset": "potsdam",
+          "key": "Coordinate__g1",
+          "method": "Coordinate",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 52.86984123031557
+        },
+        {
+          "dataset": "potsdam",
+          "key": "Legacy__g0.25",
+          "method": "Legacy",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 47.280287295939175
+        },
+        {
+          "dataset": "potsdam",
+          "key": "Legacy__g0.5",
+          "method": "Legacy",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 58.88552492035544
+        },
+        {
+          "dataset": "potsdam",
+          "key": "Legacy__g0.75",
+          "method": "Legacy",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 54.19208965074019
+        },
+        {
+          "dataset": "potsdam",
+          "key": "Legacy__g1",
+          "method": "Legacy",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 49.0594699268803
+        },
+        {
+          "dataset": "potsdam",
+          "key": "Anchored__g0.25",
+          "method": "Anchored",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 47.0672638818688
+        },
+        {
+          "dataset": "potsdam",
+          "key": "Anchored__g0.5",
+          "method": "Anchored",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 60.04631021595932
+        },
+        {
+          "dataset": "potsdam",
+          "key": "Anchored__g0.75",
+          "method": "Anchored",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 56.76753484083675
+        },
+        {
+          "dataset": "potsdam",
+          "key": "Anchored__g1",
+          "method": "Anchored",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 53.063936426336554
+        },
+        {
+          "dataset": "potsdam",
+          "key": "NoPrior__g0.5",
+          "method": "NoPrior",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 59.57558939795976
+        },
+        {
+          "dataset": "potsdam",
+          "key": "NoReference__g0.5",
+          "method": "NoReference",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 60.5904707223308
+        },
+        {
+          "dataset": "potsdam",
+          "key": "AbsoluteMix__g0.5",
+          "method": "AbsoluteMix",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 59.22896401454377
+        },
+        {
+          "dataset": "potsdam",
+          "key": "Shuffled__g0.5",
+          "method": "Shuffled",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 56.624441868563515
+        },
+        {
+          "dataset": "potsdam",
+          "key": "UniformBlend__a0",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.0,
+          "mean_iou_percent": 38.690490983540485
+        },
+        {
+          "dataset": "potsdam",
+          "key": "UniformBlend__a0.125",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.125,
+          "mean_iou_percent": 59.07130429700852
+        },
+        {
+          "dataset": "potsdam",
+          "key": "UniformBlend__a0.25",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.25,
+          "mean_iou_percent": 60.50263164170692
+        },
+        {
+          "dataset": "potsdam",
+          "key": "UniformBlend__a0.375",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.375,
+          "mean_iou_percent": 57.38664341981169
+        },
+        {
+          "dataset": "potsdam",
+          "key": "UniformBlend__a0.5",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.5,
+          "mean_iou_percent": 53.73938536992168
+        },
+        {
+          "dataset": "potsdam",
+          "key": "UniformBlend__a0.75",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.75,
+          "mean_iou_percent": 48.927252036717384
+        },
+        {
+          "dataset": "potsdam",
+          "key": "UniformBlend__a1",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 1.0,
+          "mean_iou_percent": 46.20613585506839
+        }
+      ],
+      "cross_validated_gain": {
+        "status": "insufficient_groups",
+        "unique_groups": 1
+      },
+      "profile": {
+        "bank": "official_imagenet",
+        "strength": "original",
+        "coupling": 0.5,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "config": {
+        "schema": 1,
+        "dataset": "potsdam",
+        "family": "remote_sensing",
+        "total_images": 504,
+        "background_index": 5,
+        "vocabulary": "../vocabularies/potsdam.json",
+        "profile": {
+          "bank": "official_imagenet",
+          "strength": "original",
+          "coupling": 0.5,
+          "temperature": 0.07,
+          "tau": 1.0,
+          "tem": 1.0,
+          "wide_policy": "long448",
+          "background_rule": "retained"
+        },
+        "background_bias": 0.0,
+        "background_threshold": 0.2,
+        "geometry": {
+          "geometry_depth": 2,
+          "geometry_temperature": 0.1,
+          "spatial_sigma": 0.25,
+          "maximum_aliases_per_class": 20
+        },
+        "visual_budget": {
+          "geometry_max": 4,
+          "wide_max": 4,
+          "fine": 0
+        },
+        "upstream": {
+          "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+          "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+        },
+        "provenance": {
+          "source_trial": "kev_alias_search_20261009",
+          "labeled_development": true,
+          "full_validation_viewed": true,
+          "execution_only_update": false,
+          "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+        }
+      },
+      "cache_identity": "1f576476b231c722eb9b522033c51a3d6e947996aac700039b57f5868822faab",
+      "alias_counts": {
+        "retained": [
+          2,
+          1,
+          4,
+          2,
+          1,
+          1
+        ],
+        "normalized": [
+          2,
+          1,
+          4,
+          2,
+          1,
+          1
+        ]
+      }
+    },
+    "udd5": {
+      "status": "complete",
+      "images": 1,
+      "reference_g0": 0.5,
+      "class_names": [
+        "vegetation",
+        "building",
+        "road",
+        "vehicle",
+        "other"
+      ],
+      "coverage_verified": true,
+      "predeclared_coverage": false,
+      "statistics_match_confusion": true,
+      "interval_unit": "image",
+      "unique_groups": 1,
+      "matched_rows": [
+        {
+          "key": "Coordinate__g0.5",
+          "method": "Coordinate",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 64.59985798610235,
+          "anchored_minus_arm_pp": 0.10983798957755653,
+          "paired_95ci_pp": [
+            0.10983798957755653,
+            0.10983798957755653
+          ],
+          "image_paired_95ci_pp": [
+            0.10983798957755653,
+            0.10983798957755653
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "Legacy__g0.5",
+          "method": "Legacy",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 65.6840303209608,
+          "anchored_minus_arm_pp": -0.9743343452808944,
+          "paired_95ci_pp": [
+            -0.9743343452808944,
+            -0.9743343452808944
+          ],
+          "image_paired_95ci_pp": [
+            -0.9743343452808944,
+            -0.9743343452808944
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "Anchored__g0.5",
+          "method": "Anchored",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 64.7096959756799,
+          "anchored_minus_arm_pp": 0.0,
+          "paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "image_paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "NoPrior__g0.5",
+          "method": "NoPrior",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 64.67516273966129,
+          "anchored_minus_arm_pp": 0.034533236018617686,
+          "paired_95ci_pp": [
+            0.034533236018617686,
+            0.034533236018617686
+          ],
+          "image_paired_95ci_pp": [
+            0.034533236018617686,
+            0.034533236018617686
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "NoReference__g0.5",
+          "method": "NoReference",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 64.52697361250189,
+          "anchored_minus_arm_pp": 0.1827223631780157,
+          "paired_95ci_pp": [
+            0.1827223631780157,
+            0.1827223631780157
+          ],
+          "image_paired_95ci_pp": [
+            0.1827223631780157,
+            0.1827223631780157
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "AbsoluteMix__g0.5",
+          "method": "AbsoluteMix",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 65.70087741674232,
+          "anchored_minus_arm_pp": -0.9911814410624089,
+          "paired_95ci_pp": [
+            -0.9911814410624089,
+            -0.9911814410624089
+          ],
+          "image_paired_95ci_pp": [
+            -0.9911814410624089,
+            -0.9911814410624089
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "Shuffled__g0.5",
+          "method": "Shuffled",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 64.40297860227432,
+          "anchored_minus_arm_pp": 0.3067173734055899,
+          "paired_95ci_pp": [
+            0.3067173734055899,
+            0.3067173734055899
+          ],
+          "image_paired_95ci_pp": [
+            0.3067173734055899,
+            0.3067173734055899
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "UniformBlend__a0.25",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.25,
+          "mean_iou_percent": 64.00438033671854,
+          "anchored_minus_arm_pp": 0.7053156389613662,
+          "paired_95ci_pp": [
+            0.7053156389613662,
+            0.7053156389613662
+          ],
+          "image_paired_95ci_pp": [
+            0.7053156389613662,
+            0.7053156389613662
+          ],
+          "interval_unit": "image"
+        }
+      ],
+      "retuned_rows": [
+        {
+          "key": "Coordinate__g0.5",
+          "method": "Coordinate",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 64.59985798610235,
+          "anchored_minus_arm_pp": 0.10983798957755653,
+          "paired_95ci_pp": [
+            0.10983798957755653,
+            0.10983798957755653
+          ],
+          "image_paired_95ci_pp": [
+            0.10983798957755653,
+            0.10983798957755653
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "Legacy__g0.5",
+          "method": "Legacy",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 65.6840303209608,
+          "anchored_minus_arm_pp": -0.9743343452808944,
+          "paired_95ci_pp": [
+            -0.9743343452808944,
+            -0.9743343452808944
+          ],
+          "image_paired_95ci_pp": [
+            -0.9743343452808944,
+            -0.9743343452808944
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "Anchored__g0.5",
+          "method": "Anchored",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 64.7096959756799,
+          "anchored_minus_arm_pp": 0.0,
+          "paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "image_paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "UniformBlend__a0.25",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.25,
+          "mean_iou_percent": 64.00438033671854,
+          "anchored_minus_arm_pp": 0.7053156389613662,
+          "paired_95ci_pp": [
+            0.7053156389613662,
+            0.7053156389613662
+          ],
+          "image_paired_95ci_pp": [
+            0.7053156389613662,
+            0.7053156389613662
+          ],
+          "interval_unit": "image"
+        }
+      ],
+      "equal_gain_search_budget_verified": true,
+      "all_rows": [
+        {
+          "dataset": "udd5",
+          "key": "Coordinate__g0.25",
+          "method": "Coordinate",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 61.77410796651485
+        },
+        {
+          "dataset": "udd5",
+          "key": "Coordinate__g0.5",
+          "method": "Coordinate",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 64.59985798610235
+        },
+        {
+          "dataset": "udd5",
+          "key": "Coordinate__g0.75",
+          "method": "Coordinate",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 61.20766938635545
+        },
+        {
+          "dataset": "udd5",
+          "key": "Coordinate__g1",
+          "method": "Coordinate",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 47.2314709944833
+        },
+        {
+          "dataset": "udd5",
+          "key": "Legacy__g0.25",
+          "method": "Legacy",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 62.07132474249908
+        },
+        {
+          "dataset": "udd5",
+          "key": "Legacy__g0.5",
+          "method": "Legacy",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 65.6840303209608
+        },
+        {
+          "dataset": "udd5",
+          "key": "Legacy__g0.75",
+          "method": "Legacy",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 59.76009478640402
+        },
+        {
+          "dataset": "udd5",
+          "key": "Legacy__g1",
+          "method": "Legacy",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 43.79281621336387
+        },
+        {
+          "dataset": "udd5",
+          "key": "Anchored__g0.25",
+          "method": "Anchored",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 61.855448075435625
+        },
+        {
+          "dataset": "udd5",
+          "key": "Anchored__g0.5",
+          "method": "Anchored",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 64.7096959756799
+        },
+        {
+          "dataset": "udd5",
+          "key": "Anchored__g0.75",
+          "method": "Anchored",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 61.34638109004188
+        },
+        {
+          "dataset": "udd5",
+          "key": "Anchored__g1",
+          "method": "Anchored",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 47.60719275971991
+        },
+        {
+          "dataset": "udd5",
+          "key": "NoPrior__g0.5",
+          "method": "NoPrior",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 64.67516273966129
+        },
+        {
+          "dataset": "udd5",
+          "key": "NoReference__g0.5",
+          "method": "NoReference",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 64.52697361250189
+        },
+        {
+          "dataset": "udd5",
+          "key": "AbsoluteMix__g0.5",
+          "method": "AbsoluteMix",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 65.70087741674232
+        },
+        {
+          "dataset": "udd5",
+          "key": "Shuffled__g0.5",
+          "method": "Shuffled",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 64.40297860227432
+        },
+        {
+          "dataset": "udd5",
+          "key": "UniformBlend__a0",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.0,
+          "mean_iou_percent": 55.73050223268227
+        },
+        {
+          "dataset": "udd5",
+          "key": "UniformBlend__a0.125",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.125,
+          "mean_iou_percent": 61.79491624272342
+        },
+        {
+          "dataset": "udd5",
+          "key": "UniformBlend__a0.25",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.25,
+          "mean_iou_percent": 64.00438033671854
+        },
+        {
+          "dataset": "udd5",
+          "key": "UniformBlend__a0.375",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.375,
+          "mean_iou_percent": 60.9766452371342
+        },
+        {
+          "dataset": "udd5",
+          "key": "UniformBlend__a0.5",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.5,
+          "mean_iou_percent": 46.41037399647679
+        },
+        {
+          "dataset": "udd5",
+          "key": "UniformBlend__a0.75",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.75,
+          "mean_iou_percent": 29.89667905438435
+        },
+        {
+          "dataset": "udd5",
+          "key": "UniformBlend__a1",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 1.0,
+          "mean_iou_percent": 18.473138981902633
+        }
+      ],
+      "cross_validated_gain": {
+        "status": "insufficient_groups",
+        "unique_groups": 1
+      },
+      "profile": {
+        "bank": "kev60_segmentation",
+        "strength": "original",
+        "coupling": 0.5,
+        "temperature": 0.05,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "config": {
+        "schema": 1,
+        "dataset": "udd5",
+        "family": "remote_sensing",
+        "total_images": 40,
+        "background_index": 4,
+        "vocabulary": "../vocabularies/udd5.json",
+        "profile": {
+          "bank": "kev60_segmentation",
+          "strength": "original",
+          "coupling": 0.5,
+          "temperature": 0.05,
+          "tau": 1.0,
+          "tem": 1.0,
+          "wide_policy": "long448",
+          "background_rule": "retained"
+        },
+        "background_bias": -1.0,
+        "background_threshold": 0.3,
+        "geometry": {
+          "geometry_depth": 2,
+          "geometry_temperature": 0.1,
+          "spatial_sigma": 0.25,
+          "maximum_aliases_per_class": 20
+        },
+        "visual_budget": {
+          "geometry_max": 4,
+          "wide_max": 4,
+          "fine": 0
+        },
+        "upstream": {
+          "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+          "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+        },
+        "provenance": {
+          "source_trial": "kev_alias_search_20261009",
+          "labeled_development": true,
+          "full_validation_viewed": true,
+          "execution_only_update": false,
+          "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+        }
+      },
+      "cache_identity": "15e63a2df50f5b7eb8444e66f7250e35be165973a9df28ab6bceb610bf975050",
+      "alias_counts": {
+        "retained": [
+          7,
+          1,
+          2,
+          1,
+          20
+        ],
+        "normalized": [
+          7,
+          1,
+          2,
+          1,
+          20
+        ]
+      }
+    },
+    "oem": {
+      "status": "complete",
+      "images": 1,
+      "reference_g0": 0.25,
+      "class_names": [
+        "bareland",
+        "rangeland",
+        "developed space",
+        "road",
+        "tree",
+        "water",
+        "agriculture land",
+        "building"
+      ],
+      "coverage_verified": true,
+      "predeclared_coverage": false,
+      "statistics_match_confusion": true,
+      "interval_unit": "geographic region",
+      "unique_groups": 1,
+      "matched_rows": [
+        {
+          "key": "Coordinate__g0.25",
+          "method": "Coordinate",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 25.95714909465039,
+          "anchored_minus_arm_pp": 0.13291112951305806,
+          "paired_95ci_pp": [
+            0.13291112951305806,
+            0.13291112951305806
+          ],
+          "image_paired_95ci_pp": [
+            0.13291112951305806,
+            0.13291112951305806
+          ],
+          "interval_unit": "geographic region"
+        },
+        {
+          "key": "Legacy__g0.25",
+          "method": "Legacy",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 26.727111774381353,
+          "anchored_minus_arm_pp": -0.6370515502179046,
+          "paired_95ci_pp": [
+            -0.6370515502179046,
+            -0.6370515502179046
+          ],
+          "image_paired_95ci_pp": [
+            -0.6370515502179046,
+            -0.6370515502179046
+          ],
+          "interval_unit": "geographic region"
+        },
+        {
+          "key": "Anchored__g0.25",
+          "method": "Anchored",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 26.090060224163448,
+          "anchored_minus_arm_pp": 0.0,
+          "paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "image_paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "interval_unit": "geographic region"
+        },
+        {
+          "key": "NoPrior__g0.25",
+          "method": "NoPrior",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 26.023230395407836,
+          "anchored_minus_arm_pp": 0.06682982875561194,
+          "paired_95ci_pp": [
+            0.06682982875561194,
+            0.06682982875561194
+          ],
+          "image_paired_95ci_pp": [
+            0.06682982875561194,
+            0.06682982875561194
+          ],
+          "interval_unit": "geographic region"
+        },
+        {
+          "key": "NoReference__g0.25",
+          "method": "NoReference",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 25.809528211308695,
+          "anchored_minus_arm_pp": 0.2805320128547528,
+          "paired_95ci_pp": [
+            0.2805320128547528,
+            0.2805320128547528
+          ],
+          "image_paired_95ci_pp": [
+            0.2805320128547528,
+            0.2805320128547528
+          ],
+          "interval_unit": "geographic region"
+        },
+        {
+          "key": "AbsoluteMix__g0.25",
+          "method": "AbsoluteMix",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 26.707123656280523,
+          "anchored_minus_arm_pp": -0.6170634321170745,
+          "paired_95ci_pp": [
+            -0.6170634321170745,
+            -0.6170634321170745
+          ],
+          "image_paired_95ci_pp": [
+            -0.6170634321170745,
+            -0.6170634321170745
+          ],
+          "interval_unit": "geographic region"
+        },
+        {
+          "key": "Shuffled__g0.25",
+          "method": "Shuffled",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 26.40584006468266,
+          "anchored_minus_arm_pp": -0.3157798405192125,
+          "paired_95ci_pp": [
+            -0.3157798405192125,
+            -0.3157798405192125
+          ],
+          "image_paired_95ci_pp": [
+            -0.3157798405192125,
+            -0.3157798405192125
+          ],
+          "interval_unit": "geographic region"
+        },
+        {
+          "key": "UniformBlend__a0.375",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.375,
+          "mean_iou_percent": 30.90129587284776,
+          "anchored_minus_arm_pp": -4.811235648684313,
+          "paired_95ci_pp": [
+            -4.811235648684313,
+            -4.811235648684313
+          ],
+          "image_paired_95ci_pp": [
+            -4.811235648684313,
+            -4.811235648684313
+          ],
+          "interval_unit": "geographic region"
+        }
+      ],
+      "retuned_rows": [
+        {
+          "key": "Coordinate__g1",
+          "method": "Coordinate",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 30.74909177894294,
+          "anchored_minus_arm_pp": -0.048501889366328044,
+          "paired_95ci_pp": [
+            -0.048501889366328044,
+            -0.048501889366328044
+          ],
+          "image_paired_95ci_pp": [
+            -0.048501889366328044,
+            -0.048501889366328044
+          ],
+          "interval_unit": "geographic region"
+        },
+        {
+          "key": "Legacy__g0.75",
+          "method": "Legacy",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 30.610167118305736,
+          "anchored_minus_arm_pp": 0.09042277127087672,
+          "paired_95ci_pp": [
+            0.09042277127087672,
+            0.09042277127087672
+          ],
+          "image_paired_95ci_pp": [
+            0.09042277127087672,
+            0.09042277127087672
+          ],
+          "interval_unit": "geographic region"
+        },
+        {
+          "key": "Anchored__g0.75",
+          "method": "Anchored",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 30.700589889576612,
+          "anchored_minus_arm_pp": 0.0,
+          "paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "image_paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "interval_unit": "geographic region"
+        },
+        {
+          "key": "UniformBlend__a0.375",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.375,
+          "mean_iou_percent": 30.90129587284776,
+          "anchored_minus_arm_pp": -0.20070598327114908,
+          "paired_95ci_pp": [
+            -0.20070598327114908,
+            -0.20070598327114908
+          ],
+          "image_paired_95ci_pp": [
+            -0.20070598327114908,
+            -0.20070598327114908
+          ],
+          "interval_unit": "geographic region"
+        }
+      ],
+      "equal_gain_search_budget_verified": true,
+      "all_rows": [
+        {
+          "dataset": "oem",
+          "key": "Coordinate__g0.25",
+          "method": "Coordinate",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 25.95714909465039
+        },
+        {
+          "dataset": "oem",
+          "key": "Coordinate__g0.5",
+          "method": "Coordinate",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 28.721111886947536
+        },
+        {
+          "dataset": "oem",
+          "key": "Coordinate__g0.75",
+          "method": "Coordinate",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 30.48781153194671
+        },
+        {
+          "dataset": "oem",
+          "key": "Coordinate__g1",
+          "method": "Coordinate",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 30.74909177894294
+        },
+        {
+          "dataset": "oem",
+          "key": "Legacy__g0.25",
+          "method": "Legacy",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 26.727111774381353
+        },
+        {
+          "dataset": "oem",
+          "key": "Legacy__g0.5",
+          "method": "Legacy",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 29.962141524066936
+        },
+        {
+          "dataset": "oem",
+          "key": "Legacy__g0.75",
+          "method": "Legacy",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 30.610167118305736
+        },
+        {
+          "dataset": "oem",
+          "key": "Legacy__g1",
+          "method": "Legacy",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 27.591772881808634
+        },
+        {
+          "dataset": "oem",
+          "key": "Anchored__g0.25",
+          "method": "Anchored",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 26.090060224163448
+        },
+        {
+          "dataset": "oem",
+          "key": "Anchored__g0.5",
+          "method": "Anchored",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 28.95834974269883
+        },
+        {
+          "dataset": "oem",
+          "key": "Anchored__g0.75",
+          "method": "Anchored",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 30.700589889576612
+        },
+        {
+          "dataset": "oem",
+          "key": "Anchored__g1",
+          "method": "Anchored",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 30.68552940872068
+        },
+        {
+          "dataset": "oem",
+          "key": "NoPrior__g0.25",
+          "method": "NoPrior",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 26.023230395407836
+        },
+        {
+          "dataset": "oem",
+          "key": "NoReference__g0.25",
+          "method": "NoReference",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 25.809528211308695
+        },
+        {
+          "dataset": "oem",
+          "key": "AbsoluteMix__g0.25",
+          "method": "AbsoluteMix",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 26.707123656280523
+        },
+        {
+          "dataset": "oem",
+          "key": "Shuffled__g0.25",
+          "method": "Shuffled",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 26.40584006468266
+        },
+        {
+          "dataset": "oem",
+          "key": "UniformBlend__a0",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.0,
+          "mean_iou_percent": 23.381424392659262
+        },
+        {
+          "dataset": "oem",
+          "key": "UniformBlend__a0.125",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.125,
+          "mean_iou_percent": 26.09206932540415
+        },
+        {
+          "dataset": "oem",
+          "key": "UniformBlend__a0.25",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.25,
+          "mean_iou_percent": 29.10015535181619
+        },
+        {
+          "dataset": "oem",
+          "key": "UniformBlend__a0.375",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.375,
+          "mean_iou_percent": 30.90129587284776
+        },
+        {
+          "dataset": "oem",
+          "key": "UniformBlend__a0.5",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.5,
+          "mean_iou_percent": 27.414933849369337
+        },
+        {
+          "dataset": "oem",
+          "key": "UniformBlend__a0.75",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.75,
+          "mean_iou_percent": 19.244029945478633
+        },
+        {
+          "dataset": "oem",
+          "key": "UniformBlend__a1",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 1.0,
+          "mean_iou_percent": 11.222213269393603
+        }
+      ],
+      "cross_validated_gain": {
+        "status": "insufficient_groups",
+        "unique_groups": 1
+      },
+      "profile": {
+        "bank": "original",
+        "strength": "original",
+        "coupling": 0.25,
+        "temperature": 0.03,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "config": {
+        "schema": 1,
+        "dataset": "oem",
+        "family": "remote_sensing",
+        "total_images": 384,
+        "background_index": null,
+        "vocabulary": "../vocabularies/oem.json",
+        "profile": {
+          "bank": "original",
+          "strength": "original",
+          "coupling": 0.25,
+          "temperature": 0.03,
+          "tau": 1.0,
+          "tem": 1.0,
+          "wide_policy": "long448",
+          "background_rule": "retained"
+        },
+        "background_bias": 0.0,
+        "background_threshold": 0.0,
+        "geometry": {
+          "geometry_depth": 2,
+          "geometry_temperature": 0.1,
+          "spatial_sigma": 0.25,
+          "maximum_aliases_per_class": 20
+        },
+        "visual_budget": {
+          "geometry_max": 4,
+          "wide_max": 4,
+          "fine": 0
+        },
+        "upstream": {
+          "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+          "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+        },
+        "provenance": {
+          "source_trial": "kev_alias_search_20261009",
+          "labeled_development": true,
+          "full_validation_viewed": true,
+          "execution_only_update": false,
+          "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+        }
+      },
+      "cache_identity": "adacc439f1f4c6f052edbd50a305b418c33bce7662c3c9883db8e2c643d6b8a1",
+      "alias_counts": {
+        "retained": [
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ],
+        "normalized": [
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      }
+    },
+    "vaihingen": {
+      "status": "complete",
+      "images": 1,
+      "reference_g0": 0.25,
+      "class_names": [
+        "impervious surface",
+        "building",
+        "low vegetation",
+        "tree",
+        "car"
+      ],
+      "coverage_verified": true,
+      "predeclared_coverage": false,
+      "statistics_match_confusion": true,
+      "interval_unit": "original aerial scene",
+      "unique_groups": 1,
+      "matched_rows": [
+        {
+          "key": "Coordinate__g0.25",
+          "method": "Coordinate",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 52.60898582853544,
+          "anchored_minus_arm_pp": -0.44368015497546054,
+          "paired_95ci_pp": [
+            -0.44368015497546054,
+            -0.44368015497546054
+          ],
+          "image_paired_95ci_pp": [
+            -0.44368015497546054,
+            -0.44368015497546054
+          ],
+          "interval_unit": "original aerial scene"
+        },
+        {
+          "key": "Legacy__g0.25",
+          "method": "Legacy",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 51.43874308594002,
+          "anchored_minus_arm_pp": 0.7265625876199593,
+          "paired_95ci_pp": [
+            0.7265625876199593,
+            0.7265625876199593
+          ],
+          "image_paired_95ci_pp": [
+            0.7265625876199593,
+            0.7265625876199593
+          ],
+          "interval_unit": "original aerial scene"
+        },
+        {
+          "key": "Anchored__g0.25",
+          "method": "Anchored",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 52.16530567355998,
+          "anchored_minus_arm_pp": 0.0,
+          "paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "image_paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "interval_unit": "original aerial scene"
+        },
+        {
+          "key": "NoPrior__g0.25",
+          "method": "NoPrior",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 52.463682347916865,
+          "anchored_minus_arm_pp": -0.29837667435688786,
+          "paired_95ci_pp": [
+            -0.29837667435688786,
+            -0.29837667435688786
+          ],
+          "image_paired_95ci_pp": [
+            -0.29837667435688786,
+            -0.29837667435688786
+          ],
+          "interval_unit": "original aerial scene"
+        },
+        {
+          "key": "NoReference__g0.25",
+          "method": "NoReference",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 52.895234661380016,
+          "anchored_minus_arm_pp": -0.7299289878200383,
+          "paired_95ci_pp": [
+            -0.7299289878200383,
+            -0.7299289878200383
+          ],
+          "image_paired_95ci_pp": [
+            -0.7299289878200383,
+            -0.7299289878200383
+          ],
+          "interval_unit": "original aerial scene"
+        },
+        {
+          "key": "AbsoluteMix__g0.25",
+          "method": "AbsoluteMix",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 51.47545249976637,
+          "anchored_minus_arm_pp": 0.6898531737936082,
+          "paired_95ci_pp": [
+            0.6898531737936082,
+            0.6898531737936082
+          ],
+          "image_paired_95ci_pp": [
+            0.6898531737936082,
+            0.6898531737936082
+          ],
+          "interval_unit": "original aerial scene"
+        },
+        {
+          "key": "Shuffled__g0.25",
+          "method": "Shuffled",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 51.4676938532713,
+          "anchored_minus_arm_pp": 0.6976118202886781,
+          "paired_95ci_pp": [
+            0.6976118202886781,
+            0.6976118202886781
+          ],
+          "image_paired_95ci_pp": [
+            0.6976118202886781,
+            0.6976118202886781
+          ],
+          "interval_unit": "original aerial scene"
+        },
+        {
+          "key": "UniformBlend__a0.25",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.25,
+          "mean_iou_percent": 52.797780529065406,
+          "anchored_minus_arm_pp": -0.6324748555054285,
+          "paired_95ci_pp": [
+            -0.6324748555054285,
+            -0.6324748555054285
+          ],
+          "image_paired_95ci_pp": [
+            -0.6324748555054285,
+            -0.6324748555054285
+          ],
+          "interval_unit": "original aerial scene"
+        }
+      ],
+      "retuned_rows": [
+        {
+          "key": "Coordinate__g0.5",
+          "method": "Coordinate",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 52.827377706113275,
+          "anchored_minus_arm_pp": 0.10743731251961464,
+          "paired_95ci_pp": [
+            0.10743731251961464,
+            0.10743731251961464
+          ],
+          "image_paired_95ci_pp": [
+            0.10743731251961464,
+            0.10743731251961464
+          ],
+          "interval_unit": "original aerial scene"
+        },
+        {
+          "key": "Legacy__g0.75",
+          "method": "Legacy",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 52.26495859719644,
+          "anchored_minus_arm_pp": 0.6698564214364495,
+          "paired_95ci_pp": [
+            0.6698564214364495,
+            0.6698564214364495
+          ],
+          "image_paired_95ci_pp": [
+            0.6698564214364495,
+            0.6698564214364495
+          ],
+          "interval_unit": "original aerial scene"
+        },
+        {
+          "key": "Anchored__g1",
+          "method": "Anchored",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 52.93481501863289,
+          "anchored_minus_arm_pp": 0.0,
+          "paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "image_paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "interval_unit": "original aerial scene"
+        },
+        {
+          "key": "UniformBlend__a0.25",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.25,
+          "mean_iou_percent": 52.797780529065406,
+          "anchored_minus_arm_pp": 0.13703448956748332,
+          "paired_95ci_pp": [
+            0.13703448956748332,
+            0.13703448956748332
+          ],
+          "image_paired_95ci_pp": [
+            0.13703448956748332,
+            0.13703448956748332
+          ],
+          "interval_unit": "original aerial scene"
+        }
+      ],
+      "equal_gain_search_budget_verified": true,
+      "all_rows": [
+        {
+          "dataset": "vaihingen",
+          "key": "Coordinate__g0.25",
+          "method": "Coordinate",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 52.60898582853544
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "Coordinate__g0.5",
+          "method": "Coordinate",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 52.827377706113275
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "Coordinate__g0.75",
+          "method": "Coordinate",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 52.46245220128246
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "Coordinate__g1",
+          "method": "Coordinate",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 52.360054189928654
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "Legacy__g0.25",
+          "method": "Legacy",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 51.43874308594002
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "Legacy__g0.5",
+          "method": "Legacy",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 51.63698431603462
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "Legacy__g0.75",
+          "method": "Legacy",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 52.26495859719644
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "Legacy__g1",
+          "method": "Legacy",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 50.90331910893304
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "Anchored__g0.25",
+          "method": "Anchored",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 52.16530567355998
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "Anchored__g0.5",
+          "method": "Anchored",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 52.66048456910827
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "Anchored__g0.75",
+          "method": "Anchored",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 52.6641575853626
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "Anchored__g1",
+          "method": "Anchored",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 52.93481501863289
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "NoPrior__g0.25",
+          "method": "NoPrior",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 52.463682347916865
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "NoReference__g0.25",
+          "method": "NoReference",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 52.895234661380016
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "AbsoluteMix__g0.25",
+          "method": "AbsoluteMix",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 51.47545249976637
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "Shuffled__g0.25",
+          "method": "Shuffled",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 51.4676938532713
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "UniformBlend__a0",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.0,
+          "mean_iou_percent": 51.11531318798406
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "UniformBlend__a0.125",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.125,
+          "mean_iou_percent": 52.35541042372829
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "UniformBlend__a0.25",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.25,
+          "mean_iou_percent": 52.797780529065406
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "UniformBlend__a0.375",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.375,
+          "mean_iou_percent": 52.49083185579504
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "UniformBlend__a0.5",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.5,
+          "mean_iou_percent": 50.68599080887538
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "UniformBlend__a0.75",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.75,
+          "mean_iou_percent": 47.08768306229154
+        },
+        {
+          "dataset": "vaihingen",
+          "key": "UniformBlend__a1",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 1.0,
+          "mean_iou_percent": 44.96333002821365
+        }
+      ],
+      "cross_validated_gain": {
+        "status": "insufficient_groups",
+        "unique_groups": 1
+      },
+      "profile": {
+        "bank": "kev40_imagenet",
+        "strength": "original",
+        "coupling": 0.25,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "config": {
+        "schema": 1,
+        "dataset": "vaihingen",
+        "family": "remote_sensing",
+        "total_images": 113,
+        "background_index": null,
+        "vocabulary": "../vocabularies/vaihingen.json",
+        "profile": {
+          "bank": "kev40_imagenet",
+          "strength": "original",
+          "coupling": 0.25,
+          "temperature": 0.07,
+          "tau": 1.0,
+          "tem": 1.0,
+          "wide_policy": "long448",
+          "background_rule": "retained"
+        },
+        "background_bias": 0.0,
+        "background_threshold": 0.0,
+        "geometry": {
+          "geometry_depth": 2,
+          "geometry_temperature": 0.1,
+          "spatial_sigma": 0.25,
+          "maximum_aliases_per_class": 20
+        },
+        "visual_budget": {
+          "geometry_max": 4,
+          "wide_max": 4,
+          "fine": 0
+        },
+        "upstream": {
+          "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+          "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+        },
+        "provenance": {
+          "source_trial": "kev_alias_search_20261009",
+          "labeled_development": true,
+          "full_validation_viewed": true,
+          "execution_only_update": false,
+          "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+        }
+      },
+      "cache_identity": "e7be4d13aca30e7424be10c37a458e489a82ec1a1de142866a9cbda40349745a",
+      "alias_counts": {
+        "retained": [
+          16,
+          16,
+          17,
+          12,
+          8
+        ],
+        "normalized": [
+          16,
+          16,
+          17,
+          12,
+          8
+        ]
+      }
+    },
+    "ade150": {
+      "status": "complete",
+      "images": 1,
+      "reference_g0": 0.25,
+      "class_names": [
+        "wall",
+        "building",
+        "sky",
+        "floor",
+        "tree",
+        "ceiling",
+        "road",
+        "bed",
+        "windowpane",
+        "grass",
+        "cabinet",
+        "sidewalk",
+        "person",
+        "earth",
+        "door",
+        "table",
+        "mountain",
+        "plant",
+        "curtain",
+        "chair",
+        "car",
+        "water",
+        "painting",
+        "sofa",
+        "shelf",
+        "house",
+        "sea",
+        "mirror",
+        "rug",
+        "field",
+        "armchair",
+        "seat",
+        "fence",
+        "desk",
+        "rock",
+        "wardrobe",
+        "lamp",
+        "bathtub",
+        "railing",
+        "cushion",
+        "base",
+        "box",
+        "column",
+        "signboard",
+        "chest of drawers",
+        "counter",
+        "sand",
+        "sink",
+        "skyscraper",
+        "fireplace",
+        "refrigerator",
+        "grandstand",
+        "path",
+        "stairs",
+        "runway",
+        "case",
+        "pool table",
+        "pillow",
+        "screen door",
+        "stairway",
+        "river",
+        "bridge",
+        "bookcase",
+        "blind",
+        "coffee table",
+        "toilet",
+        "flower",
+        "book",
+        "hill",
+        "bench",
+        "countertop",
+        "stove",
+        "palm",
+        "kitchen island",
+        "computer",
+        "swivel chair",
+        "boat",
+        "bar",
+        "arcade machine",
+        "hovel",
+        "bus",
+        "towel",
+        "light",
+        "truck",
+        "tower",
+        "chandelier",
+        "awning",
+        "streetlight",
+        "booth",
+        "television receiver",
+        "airplane",
+        "dirt track",
+        "apparel",
+        "pole",
+        "land",
+        "bannister",
+        "escalator",
+        "ottoman",
+        "bottle",
+        "buffet",
+        "poster",
+        "stage",
+        "van",
+        "ship",
+        "fountain",
+        "conveyer belt",
+        "canopy",
+        "washer",
+        "plaything",
+        "swimming pool",
+        "stool",
+        "barrel",
+        "basket",
+        "waterfall",
+        "tent",
+        "bag",
+        "minibike",
+        "cradle",
+        "oven",
+        "ball",
+        "food",
+        "step",
+        "tank",
+        "trade name",
+        "microwave",
+        "pot",
+        "animal",
+        "bicycle",
+        "lake",
+        "dishwasher",
+        "screen",
+        "blanket",
+        "sculpture",
+        "hood",
+        "sconce",
+        "vase",
+        "traffic light",
+        "tray",
+        "ashcan",
+        "fan",
+        "pier",
+        "crt screen",
+        "plate",
+        "monitor",
+        "bulletin board",
+        "shower",
+        "radiator",
+        "glass",
+        "clock",
+        "flag"
+      ],
+      "coverage_verified": true,
+      "predeclared_coverage": false,
+      "statistics_match_confusion": true,
+      "interval_unit": "image",
+      "unique_groups": 1,
+      "matched_rows": [
+        {
+          "key": "Coordinate__g0.25",
+          "method": "Coordinate",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 23.41273036979129,
+          "anchored_minus_arm_pp": -1.348820745187492,
+          "paired_95ci_pp": [
+            -1.348820745187492,
+            -1.348820745187492
+          ],
+          "image_paired_95ci_pp": [
+            -1.348820745187492,
+            -1.348820745187492
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "Legacy__g0.25",
+          "method": "Legacy",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 23.81894856217961,
+          "anchored_minus_arm_pp": -1.7550389375758115,
+          "paired_95ci_pp": [
+            -1.7550389375758115,
+            -1.7550389375758115
+          ],
+          "image_paired_95ci_pp": [
+            -1.7550389375758115,
+            -1.7550389375758115
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "Anchored__g0.25",
+          "method": "Anchored",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 22.0639096246038,
+          "anchored_minus_arm_pp": 0.0,
+          "paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "image_paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "NoPrior__g0.25",
+          "method": "NoPrior",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 22.108393442767362,
+          "anchored_minus_arm_pp": -0.04448381816356317,
+          "paired_95ci_pp": [
+            -0.04448381816356317,
+            -0.04448381816356317
+          ],
+          "image_paired_95ci_pp": [
+            -0.04448381816356317,
+            -0.04448381816356317
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "NoReference__g0.25",
+          "method": "NoReference",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 21.92015820102365,
+          "anchored_minus_arm_pp": 0.1437514235801487,
+          "paired_95ci_pp": [
+            0.1437514235801487,
+            0.1437514235801487
+          ],
+          "image_paired_95ci_pp": [
+            0.1437514235801487,
+            0.1437514235801487
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "AbsoluteMix__g0.25",
+          "method": "AbsoluteMix",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 23.787789915102227,
+          "anchored_minus_arm_pp": -1.7238802904984283,
+          "paired_95ci_pp": [
+            -1.7238802904984283,
+            -1.7238802904984283
+          ],
+          "image_paired_95ci_pp": [
+            -1.7238802904984283,
+            -1.7238802904984283
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "Shuffled__g0.25",
+          "method": "Shuffled",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 23.0388463941568,
+          "anchored_minus_arm_pp": -0.9749367695530005,
+          "paired_95ci_pp": [
+            -0.9749367695530005,
+            -0.9749367695530005
+          ],
+          "image_paired_95ci_pp": [
+            -0.9749367695530005,
+            -0.9749367695530005
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "UniformBlend__a1",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 1.0,
+          "mean_iou_percent": 53.310185073839875,
+          "anchored_minus_arm_pp": -31.246275449236077,
+          "paired_95ci_pp": [
+            -31.246275449236077,
+            -31.246275449236077
+          ],
+          "image_paired_95ci_pp": [
+            -31.246275449236077,
+            -31.246275449236077
+          ],
+          "interval_unit": "image"
+        }
+      ],
+      "retuned_rows": [
+        {
+          "key": "Coordinate__g1",
+          "method": "Coordinate",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 54.029557585236,
+          "anchored_minus_arm_pp": -5.232947248870154,
+          "paired_95ci_pp": [
+            -5.232947248870154,
+            -5.232947248870154
+          ],
+          "image_paired_95ci_pp": [
+            -5.232947248870154,
+            -5.232947248870154
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "Legacy__g1",
+          "method": "Legacy",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 43.240839419504965,
+          "anchored_minus_arm_pp": 5.5557709168608795,
+          "paired_95ci_pp": [
+            5.5557709168608795,
+            5.5557709168608795
+          ],
+          "image_paired_95ci_pp": [
+            5.5557709168608795,
+            5.5557709168608795
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "Anchored__g1",
+          "method": "Anchored",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 48.796610336365845,
+          "anchored_minus_arm_pp": 0.0,
+          "paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "image_paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "UniformBlend__a1",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 1.0,
+          "mean_iou_percent": 53.310185073839875,
+          "anchored_minus_arm_pp": -4.5135747374740305,
+          "paired_95ci_pp": [
+            -4.5135747374740305,
+            -4.5135747374740305
+          ],
+          "image_paired_95ci_pp": [
+            -4.5135747374740305,
+            -4.5135747374740305
+          ],
+          "interval_unit": "image"
+        }
+      ],
+      "equal_gain_search_budget_verified": true,
+      "all_rows": [
+        {
+          "dataset": "ade150",
+          "key": "Coordinate__g0.25",
+          "method": "Coordinate",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 23.41273036979129
+        },
+        {
+          "dataset": "ade150",
+          "key": "Coordinate__g0.5",
+          "method": "Coordinate",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 33.48617552268402
+        },
+        {
+          "dataset": "ade150",
+          "key": "Coordinate__g0.75",
+          "method": "Coordinate",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 36.9651846304827
+        },
+        {
+          "dataset": "ade150",
+          "key": "Coordinate__g1",
+          "method": "Coordinate",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 54.029557585236
+        },
+        {
+          "dataset": "ade150",
+          "key": "Legacy__g0.25",
+          "method": "Legacy",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 23.81894856217961
+        },
+        {
+          "dataset": "ade150",
+          "key": "Legacy__g0.5",
+          "method": "Legacy",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 31.66595235877222
+        },
+        {
+          "dataset": "ade150",
+          "key": "Legacy__g0.75",
+          "method": "Legacy",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 41.30419326011664
+        },
+        {
+          "dataset": "ade150",
+          "key": "Legacy__g1",
+          "method": "Legacy",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 43.240839419504965
+        },
+        {
+          "dataset": "ade150",
+          "key": "Anchored__g0.25",
+          "method": "Anchored",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 22.0639096246038
+        },
+        {
+          "dataset": "ade150",
+          "key": "Anchored__g0.5",
+          "method": "Anchored",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 33.72922930059422
+        },
+        {
+          "dataset": "ade150",
+          "key": "Anchored__g0.75",
+          "method": "Anchored",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 34.40672914868384
+        },
+        {
+          "dataset": "ade150",
+          "key": "Anchored__g1",
+          "method": "Anchored",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 48.796610336365845
+        },
+        {
+          "dataset": "ade150",
+          "key": "NoPrior__g0.25",
+          "method": "NoPrior",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 22.108393442767362
+        },
+        {
+          "dataset": "ade150",
+          "key": "NoReference__g0.25",
+          "method": "NoReference",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 21.92015820102365
+        },
+        {
+          "dataset": "ade150",
+          "key": "AbsoluteMix__g0.25",
+          "method": "AbsoluteMix",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 23.787789915102227
+        },
+        {
+          "dataset": "ade150",
+          "key": "Shuffled__g0.25",
+          "method": "Shuffled",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 23.0388463941568
+        },
+        {
+          "dataset": "ade150",
+          "key": "UniformBlend__a0",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.0,
+          "mean_iou_percent": 9.239056240016732
+        },
+        {
+          "dataset": "ade150",
+          "key": "UniformBlend__a0.125",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.125,
+          "mean_iou_percent": 22.18614445648817
+        },
+        {
+          "dataset": "ade150",
+          "key": "UniformBlend__a0.25",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.25,
+          "mean_iou_percent": 32.565595675625744
+        },
+        {
+          "dataset": "ade150",
+          "key": "UniformBlend__a0.375",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.375,
+          "mean_iou_percent": 44.403748285218384
+        },
+        {
+          "dataset": "ade150",
+          "key": "UniformBlend__a0.5",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.5,
+          "mean_iou_percent": 44.826946628313536
+        },
+        {
+          "dataset": "ade150",
+          "key": "UniformBlend__a0.75",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.75,
+          "mean_iou_percent": 48.710596851261
+        },
+        {
+          "dataset": "ade150",
+          "key": "UniformBlend__a1",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 1.0,
+          "mean_iou_percent": 53.310185073839875
+        }
+      ],
+      "cross_validated_gain": {
+        "status": "insufficient_groups",
+        "unique_groups": 1
+      },
+      "profile": {
+        "bank": "semantic_segmentation",
+        "strength": "original",
+        "coupling": 0.25,
+        "temperature": 0.14,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "natural_short336_cap672",
+        "background_rule": "retained"
+      },
+      "config": {
+        "schema": 1,
+        "dataset": "ade150",
+        "family": "natural",
+        "total_images": 2000,
+        "background_index": null,
+        "vocabulary": "../vocabularies/ade150.json",
+        "profile": {
+          "bank": "semantic_segmentation",
+          "strength": "original",
+          "coupling": 0.25,
+          "temperature": 0.14,
+          "tau": 1.0,
+          "tem": 1.0,
+          "wide_policy": "natural_short336_cap672",
+          "background_rule": "retained"
+        },
+        "background_bias": 0.0,
+        "background_threshold": 0.0,
+        "geometry": {
+          "geometry_depth": 2,
+          "geometry_temperature": 0.1,
+          "spatial_sigma": 0.25,
+          "maximum_aliases_per_class": 20
+        },
+        "visual_budget": {
+          "geometry_max": 4,
+          "wide_max": 4,
+          "fine": 0
+        },
+        "upstream": {
+          "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+          "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+        },
+        "provenance": {
+          "source_trial": "kev_alias_search_20261009",
+          "labeled_development": true,
+          "full_validation_viewed": true,
+          "execution_only_update": false,
+          "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+        }
+      },
+      "cache_identity": "4516dd620581caf4b2fb91f600234254ce97fbf51b2f8c3ebca43a199c674ea0",
+      "alias_counts": {
+        "retained": [
+          5,
+          8,
+          9,
+          5,
+          6,
+          6,
+          4,
+          1,
+          4,
+          4,
+          4,
+          5,
+          18,
+          5,
+          5,
+          3,
+          4,
+          5,
+          4,
+          4,
+          4,
+          5,
+          3,
+          5,
+          3,
+          1,
+          4,
+          1,
+          4,
+          1,
+          3,
+          1,
+          4,
+          4,
+          4,
+          5,
+          4,
+          3,
+          3,
+          1,
+          3,
+          1,
+          3,
+          3,
+          3,
+          2,
+          4,
+          3,
+          1,
+          3,
+          3,
+          2,
+          1,
+          2,
+          1,
+          3,
+          3,
+          2,
+          2,
+          2,
+          4,
+          1,
+          1,
+          1,
+          2,
+          3,
+          1,
+          3,
+          2,
+          3,
+          1,
+          5,
+          4,
+          1,
+          4,
+          1,
+          4,
+          1,
+          1,
+          4,
+          4,
+          1,
+          2,
+          4,
+          1,
+          2,
+          3,
+          2,
+          5,
+          4,
+          4,
+          1,
+          5,
+          1,
+          1,
+          5,
+          2,
+          6,
+          4,
+          3,
+          3,
+          1,
+          1,
+          1,
+          1,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          2,
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          2,
+          4,
+          3,
+          1,
+          3,
+          1,
+          2,
+          1,
+          3,
+          1,
+          3,
+          3,
+          1,
+          9,
+          1,
+          3,
+          3,
+          2,
+          4,
+          2,
+          1,
+          1,
+          1,
+          3,
+          1
+        ],
+        "normalized": [
+          5,
+          8,
+          9,
+          5,
+          6,
+          6,
+          4,
+          1,
+          4,
+          4,
+          4,
+          5,
+          18,
+          5,
+          5,
+          3,
+          4,
+          5,
+          4,
+          4,
+          4,
+          5,
+          3,
+          5,
+          3,
+          1,
+          4,
+          1,
+          4,
+          1,
+          3,
+          1,
+          4,
+          4,
+          4,
+          5,
+          4,
+          3,
+          3,
+          1,
+          3,
+          1,
+          3,
+          3,
+          3,
+          2,
+          4,
+          3,
+          1,
+          3,
+          3,
+          2,
+          1,
+          2,
+          1,
+          3,
+          3,
+          2,
+          2,
+          2,
+          4,
+          1,
+          1,
+          1,
+          2,
+          3,
+          1,
+          3,
+          2,
+          3,
+          1,
+          5,
+          4,
+          1,
+          4,
+          1,
+          4,
+          1,
+          1,
+          4,
+          4,
+          1,
+          2,
+          4,
+          1,
+          2,
+          3,
+          2,
+          5,
+          4,
+          4,
+          1,
+          5,
+          1,
+          1,
+          5,
+          2,
+          6,
+          4,
+          3,
+          3,
+          1,
+          1,
+          1,
+          1,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          2,
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          2,
+          4,
+          3,
+          1,
+          3,
+          1,
+          2,
+          1,
+          3,
+          1,
+          3,
+          3,
+          1,
+          9,
+          1,
+          3,
+          3,
+          2,
+          4,
+          2,
+          1,
+          1,
+          1,
+          3,
+          1
+        ]
+      }
+    },
+    "voc21": {
+      "status": "complete",
+      "images": 1,
+      "reference_g0": 1.0,
+      "class_names": [
+        "background",
+        "aeroplane",
+        "bicycle",
+        "bird",
+        "boat",
+        "bottle",
+        "bus",
+        "car",
+        "cat",
+        "chair",
+        "cow",
+        "diningtable",
+        "dog",
+        "horse",
+        "motorbike",
+        "person",
+        "pottedplant",
+        "sheep",
+        "sofa",
+        "train",
+        "tvmonitor"
+      ],
+      "coverage_verified": true,
+      "predeclared_coverage": false,
+      "statistics_match_confusion": true,
+      "interval_unit": "image",
+      "unique_groups": 1,
+      "matched_rows": [
+        {
+          "key": "Coordinate__g1",
+          "method": "Coordinate",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 56.26330397316962,
+          "anchored_minus_arm_pp": 0.45309888500602113,
+          "paired_95ci_pp": [
+            0.45309888500602113,
+            0.45309888500602113
+          ],
+          "image_paired_95ci_pp": [
+            0.45309888500602113,
+            0.45309888500602113
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "Legacy__g1",
+          "method": "Legacy",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 53.05037545212748,
+          "anchored_minus_arm_pp": 3.6660274060481584,
+          "paired_95ci_pp": [
+            3.6660274060481584,
+            3.6660274060481584
+          ],
+          "image_paired_95ci_pp": [
+            3.6660274060481584,
+            3.6660274060481584
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "Anchored__g1",
+          "method": "Anchored",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 56.71640285817564,
+          "anchored_minus_arm_pp": 0.0,
+          "paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "image_paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "NoPrior__g1",
+          "method": "NoPrior",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 56.70337997893585,
+          "anchored_minus_arm_pp": 0.013022879239791507,
+          "paired_95ci_pp": [
+            0.013022879239791507,
+            0.013022879239791507
+          ],
+          "image_paired_95ci_pp": [
+            0.013022879239791507,
+            0.013022879239791507
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "NoReference__g1",
+          "method": "NoReference",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 57.072851558841755,
+          "anchored_minus_arm_pp": -0.3564487006661139,
+          "paired_95ci_pp": [
+            -0.3564487006661139,
+            -0.3564487006661139
+          ],
+          "image_paired_95ci_pp": [
+            -0.3564487006661139,
+            -0.3564487006661139
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "AbsoluteMix__g1",
+          "method": "AbsoluteMix",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 53.57361539303853,
+          "anchored_minus_arm_pp": 3.1427874651371113,
+          "paired_95ci_pp": [
+            3.1427874651371113,
+            3.1427874651371113
+          ],
+          "image_paired_95ci_pp": [
+            3.1427874651371113,
+            3.1427874651371113
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "Shuffled__g1",
+          "method": "Shuffled",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 43.476575026421415,
+          "anchored_minus_arm_pp": 13.239827831754226,
+          "paired_95ci_pp": [
+            13.239827831754226,
+            13.239827831754226
+          ],
+          "image_paired_95ci_pp": [
+            13.239827831754226,
+            13.239827831754226
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "UniformBlend__a1",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 1.0,
+          "mean_iou_percent": 63.84011056261634,
+          "anchored_minus_arm_pp": -7.123707704440697,
+          "paired_95ci_pp": [
+            -7.123707704440697,
+            -7.123707704440697
+          ],
+          "image_paired_95ci_pp": [
+            -7.123707704440697,
+            -7.123707704440697
+          ],
+          "interval_unit": "image"
+        }
+      ],
+      "retuned_rows": [
+        {
+          "key": "Coordinate__g1",
+          "method": "Coordinate",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 56.26330397316962,
+          "anchored_minus_arm_pp": 0.45309888500602113,
+          "paired_95ci_pp": [
+            0.45309888500602113,
+            0.45309888500602113
+          ],
+          "image_paired_95ci_pp": [
+            0.45309888500602113,
+            0.45309888500602113
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "Legacy__g1",
+          "method": "Legacy",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 53.05037545212748,
+          "anchored_minus_arm_pp": 3.6660274060481584,
+          "paired_95ci_pp": [
+            3.6660274060481584,
+            3.6660274060481584
+          ],
+          "image_paired_95ci_pp": [
+            3.6660274060481584,
+            3.6660274060481584
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "Anchored__g1",
+          "method": "Anchored",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 56.71640285817564,
+          "anchored_minus_arm_pp": 0.0,
+          "paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "image_paired_95ci_pp": [
+            0.0,
+            0.0
+          ],
+          "interval_unit": "image"
+        },
+        {
+          "key": "UniformBlend__a1",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 1.0,
+          "mean_iou_percent": 63.84011056261634,
+          "anchored_minus_arm_pp": -7.123707704440697,
+          "paired_95ci_pp": [
+            -7.123707704440697,
+            -7.123707704440697
+          ],
+          "image_paired_95ci_pp": [
+            -7.123707704440697,
+            -7.123707704440697
+          ],
+          "interval_unit": "image"
+        }
+      ],
+      "equal_gain_search_budget_verified": true,
+      "all_rows": [
+        {
+          "dataset": "voc21",
+          "key": "Coordinate__g0.25",
+          "method": "Coordinate",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 49.228328716778165
+        },
+        {
+          "dataset": "voc21",
+          "key": "Coordinate__g0.5",
+          "method": "Coordinate",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 48.89068176668018
+        },
+        {
+          "dataset": "voc21",
+          "key": "Coordinate__g0.75",
+          "method": "Coordinate",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 52.90493394033523
+        },
+        {
+          "dataset": "voc21",
+          "key": "Coordinate__g1",
+          "method": "Coordinate",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 56.26330397316962
+        },
+        {
+          "dataset": "voc21",
+          "key": "Legacy__g0.25",
+          "method": "Legacy",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 48.323456066714684
+        },
+        {
+          "dataset": "voc21",
+          "key": "Legacy__g0.5",
+          "method": "Legacy",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 46.603708859167604
+        },
+        {
+          "dataset": "voc21",
+          "key": "Legacy__g0.75",
+          "method": "Legacy",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 48.487437896468094
+        },
+        {
+          "dataset": "voc21",
+          "key": "Legacy__g1",
+          "method": "Legacy",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 53.05037545212748
+        },
+        {
+          "dataset": "voc21",
+          "key": "Anchored__g0.25",
+          "method": "Anchored",
+          "g0": 0.25,
+          "alpha": null,
+          "mean_iou_percent": 49.270667362606964
+        },
+        {
+          "dataset": "voc21",
+          "key": "Anchored__g0.5",
+          "method": "Anchored",
+          "g0": 0.5,
+          "alpha": null,
+          "mean_iou_percent": 48.840647291267295
+        },
+        {
+          "dataset": "voc21",
+          "key": "Anchored__g0.75",
+          "method": "Anchored",
+          "g0": 0.75,
+          "alpha": null,
+          "mean_iou_percent": 53.2918145354326
+        },
+        {
+          "dataset": "voc21",
+          "key": "Anchored__g1",
+          "method": "Anchored",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 56.71640285817564
+        },
+        {
+          "dataset": "voc21",
+          "key": "NoPrior__g1",
+          "method": "NoPrior",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 56.70337997893585
+        },
+        {
+          "dataset": "voc21",
+          "key": "NoReference__g1",
+          "method": "NoReference",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 57.072851558841755
+        },
+        {
+          "dataset": "voc21",
+          "key": "AbsoluteMix__g1",
+          "method": "AbsoluteMix",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 53.57361539303853
+        },
+        {
+          "dataset": "voc21",
+          "key": "Shuffled__g1",
+          "method": "Shuffled",
+          "g0": 1.0,
+          "alpha": null,
+          "mean_iou_percent": 43.476575026421415
+        },
+        {
+          "dataset": "voc21",
+          "key": "UniformBlend__a0",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.0,
+          "mean_iou_percent": 47.33622662522448
+        },
+        {
+          "dataset": "voc21",
+          "key": "UniformBlend__a0.125",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.125,
+          "mean_iou_percent": 49.27999937223234
+        },
+        {
+          "dataset": "voc21",
+          "key": "UniformBlend__a0.25",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.25,
+          "mean_iou_percent": 48.77561717348242
+        },
+        {
+          "dataset": "voc21",
+          "key": "UniformBlend__a0.375",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.375,
+          "mean_iou_percent": 52.09827601065514
+        },
+        {
+          "dataset": "voc21",
+          "key": "UniformBlend__a0.5",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.5,
+          "mean_iou_percent": 56.15297308903795
+        },
+        {
+          "dataset": "voc21",
+          "key": "UniformBlend__a0.75",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 0.75,
+          "mean_iou_percent": 56.1344013602362
+        },
+        {
+          "dataset": "voc21",
+          "key": "UniformBlend__a1",
+          "method": "UniformBlend",
+          "g0": null,
+          "alpha": 1.0,
+          "mean_iou_percent": 63.84011056261634
+        }
+      ],
+      "cross_validated_gain": {
+        "status": "insufficient_groups",
+        "unique_groups": 1
+      },
+      "profile": {
+        "bank": "official_segmentation",
+        "strength": "original",
+        "coupling": 1.0,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 0.3,
+        "wide_policy": "natural_short336_cap672",
+        "background_rule": "union_max"
+      },
+      "config": {
+        "schema": 1,
+        "dataset": "voc21",
+        "family": "natural",
+        "total_images": 1449,
+        "background_index": 0,
+        "vocabulary": "../vocabularies/voc21.json",
+        "profile": {
+          "bank": "official_segmentation",
+          "strength": "original",
+          "coupling": 0.75,
+          "temperature": 0.07,
+          "tau": 1.0,
+          "tem": 0.3,
+          "wide_policy": "natural_short336_cap672",
+          "background_rule": "union_max"
+        },
+        "background_bias": -0.25,
+        "background_threshold": 0.15,
+        "geometry": {
+          "geometry_depth": 2,
+          "geometry_temperature": 0.1,
+          "spatial_sigma": 0.25,
+          "maximum_aliases_per_class": 20
+        },
+        "visual_budget": {
+          "geometry_max": 4,
+          "wide_max": 4,
+          "fine": 0
+        },
+        "upstream": {
+          "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+          "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+        },
+        "provenance": {
+          "source_trial": "curated_variable_refine_natural_20261010",
+          "labeled_development": true,
+          "full_validation_viewed": true,
+          "execution_only_update": false,
+          "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+        }
+      },
+      "cache_identity": "c2f6fa149b02474cd24e8ace1ba18e0de51b6f351f691a9efc9c3fbc88d34197",
+      "alias_counts": {
+        "retained": [
+          56,
+          1,
+          1,
+          1,
+          1,
+          3,
+          3,
+          1,
+          1,
+          6,
+          4,
+          2,
+          1,
+          2,
+          2,
+          21,
+          4,
+          2,
+          3,
+          1,
+          3
+        ],
+        "normalized": [
+          56,
+          1,
+          1,
+          1,
+          1,
+          3,
+          3,
+          1,
+          1,
+          6,
+          4,
+          2,
+          1,
+          2,
+          2,
+          21,
+          4,
+          2,
+          3,
+          1,
+          3
+        ]
+      }
+    }
+  },
+  "bootstrap_replicates": 2000,
+  "seed": 20261015,
+  "completed_datasets": [
+    "vdd",
+    "potsdam",
+    "udd5",
+    "oem",
+    "vaihingen",
+    "ade150",
+    "voc21"
+  ],
+  "expected_datasets": [
+    "vdd",
+    "potsdam",
+    "udd5",
+    "oem",
+    "vaihingen",
+    "ade150",
+    "voc21"
+  ],
+  "equal_domain_effects": [
+    {
+      "method": "AbsoluteMix",
+      "datasets": [
+        "vdd",
+        "potsdam",
+        "udd5",
+        "oem",
+        "vaihingen",
+        "ade150",
+        "voc21"
+      ],
+      "anchored_minus_arm_pp": 0.46108706205383954,
+      "paired_95ci_pp": [
+        0.46108706205383954,
+        0.46108706205383954
+      ],
+      "positive_point_datasets": 4,
+      "negative_point_datasets": 3
+    },
+    {
+      "method": "Coordinate",
+      "datasets": [
+        "vdd",
+        "potsdam",
+        "udd5",
+        "oem",
+        "vaihingen",
+        "ade150",
+        "voc21"
+      ],
+      "anchored_minus_arm_pp": -0.029531533299170576,
+      "paired_95ci_pp": [
+        -0.029531533299170576,
+        -0.029531533299170576
+      ],
+      "positive_point_datasets": 5,
+      "negative_point_datasets": 2
+    },
+    {
+      "method": "Legacy",
+      "datasets": [
+        "vdd",
+        "potsdam",
+        "udd5",
+        "oem",
+        "vaihingen",
+        "ade150",
+        "voc21"
+      ],
+      "anchored_minus_arm_pp": 0.5616649233104687,
+      "paired_95ci_pp": [
+        0.5616649233104687,
+        0.5616649233104687
+      ],
+      "positive_point_datasets": 4,
+      "negative_point_datasets": 3
+    },
+    {
+      "method": "NoPrior",
+      "datasets": [
+        "vdd",
+        "potsdam",
+        "udd5",
+        "oem",
+        "vaihingen",
+        "ade150",
+        "voc21"
+      ],
+      "anchored_minus_arm_pp": 0.030924403033658114,
+      "paired_95ci_pp": [
+        0.030924403033658114,
+        0.030924403033658114
+      ],
+      "positive_point_datasets": 4,
+      "negative_point_datasets": 3
+    },
+    {
+      "method": "NoReference",
+      "datasets": [
+        "vdd",
+        "potsdam",
+        "udd5",
+        "oem",
+        "vaihingen",
+        "ade150",
+        "voc21"
+      ],
+      "anchored_minus_arm_pp": -0.17750566441620869,
+      "paired_95ci_pp": [
+        -0.17750566441620869,
+        -0.17750566441620869
+      ],
+      "positive_point_datasets": 3,
+      "negative_point_datasets": 4
+    },
+    {
+      "method": "Shuffled",
+      "datasets": [
+        "vdd",
+        "potsdam",
+        "udd5",
+        "oem",
+        "vaihingen",
+        "ade150",
+        "voc21"
+      ],
+      "anchored_minus_arm_pp": 2.7651960285528174,
+      "paired_95ci_pp": [
+        2.7651960285528174,
+        2.7651960285528174
+      ],
+      "positive_point_datasets": 5,
+      "negative_point_datasets": 2
+    },
+    {
+      "method": "UniformBlend",
+      "datasets": [
+        "vdd",
+        "potsdam",
+        "udd5",
+        "oem",
+        "vaihingen",
+        "ade150",
+        "voc21"
+      ],
+      "anchored_minus_arm_pp": -6.506879688325248,
+      "paired_95ci_pp": [
+        -6.506879688325248,
+        -6.506879688325248
+      ],
+      "positive_point_datasets": 1,
+      "negative_point_datasets": 6
+    }
+  ]
+}

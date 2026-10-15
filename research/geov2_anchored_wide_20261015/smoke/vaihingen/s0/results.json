@@ -1,0 +1,1156 @@
+{
+  "status": "complete",
+  "dataset": "vaihingen",
+  "reference_g0": 0.25,
+  "profile": {
+    "bank": "kev40_imagenet",
+    "strength": "original",
+    "coupling": 0.25,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "long448",
+    "background_rule": "retained"
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "vaihingen",
+    "family": "remote_sensing",
+    "total_images": 113,
+    "background_index": null,
+    "vocabulary": "../vocabularies/vaihingen.json",
+    "profile": {
+      "bank": "kev40_imagenet",
+      "strength": "original",
+      "coupling": 0.25,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "long448",
+      "background_rule": "retained"
+    },
+    "background_bias": 0.0,
+    "background_threshold": 0.0,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "e7be4d13aca30e7424be10c37a458e489a82ec1a1de142866a9cbda40349745a",
+  "alias_counts": {
+    "retained": [
+      16,
+      16,
+      17,
+      12,
+      8
+    ],
+    "normalized": [
+      16,
+      16,
+      17,
+      12,
+      8
+    ]
+  },
+  "architecture": "Frozen DonorBefore + matched 24-slot head + anchored residual read + original structural writer",
+  "cells": [
+    {
+      "key": "Coordinate__g0.25",
+      "method": "Coordinate",
+      "g0": 0.25,
+      "alpha": null
+    },
+    {
+      "key": "Coordinate__g0.5",
+      "method": "Coordinate",
+      "g0": 0.5,
+      "alpha": null
+    },
+    {
+      "key": "Coordinate__g0.75",
+      "method": "Coordinate",
+      "g0": 0.75,
+      "alpha": null
+    },
+    {
+      "key": "Coordinate__g1",
+      "method": "Coordinate",
+      "g0": 1.0,
+      "alpha": null
+    },
+    {
+      "key": "Legacy__g0.25",
+      "method": "Legacy",
+      "g0": 0.25,
+      "alpha": null
+    },
+    {
+      "key": "Legacy__g0.5",
+      "method": "Legacy",
+      "g0": 0.5,
+      "alpha": null
+    },
+    {
+      "key": "Legacy__g0.75",
+      "method": "Legacy",
+      "g0": 0.75,
+      "alpha": null
+    },
+    {
+      "key": "Legacy__g1",
+      "method": "Legacy",
+      "g0": 1.0,
+      "alpha": null
+    },
+    {
+      "key": "Anchored__g0.25",
+      "method": "Anchored",
+      "g0": 0.25,
+      "alpha": null
+    },
+    {
+      "key": "Anchored__g0.5",
+      "method": "Anchored",
+      "g0": 0.5,
+      "alpha": null
+    },
+    {
+      "key": "Anchored__g0.75",
+      "method": "Anchored",
+      "g0": 0.75,
+      "alpha": null
+    },
+    {
+      "key": "Anchored__g1",
+      "method": "Anchored",
+      "g0": 1.0,
+      "alpha": null
+    },
+    {
+      "key": "NoPrior__g0.25",
+      "method": "NoPrior",
+      "g0": 0.25,
+      "alpha": null
+    },
+    {
+      "key": "NoReference__g0.25",
+      "method": "NoReference",
+      "g0": 0.25,
+      "alpha": null
+    },
+    {
+      "key": "AbsoluteMix__g0.25",
+      "method": "AbsoluteMix",
+      "g0": 0.25,
+      "alpha": null
+    },
+    {
+      "key": "Shuffled__g0.25",
+      "method": "Shuffled",
+      "g0": 0.25,
+      "alpha": null
+    },
+    {
+      "key": "UniformBlend__a0",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 0.0
+    },
+    {
+      "key": "UniformBlend__a0.125",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 0.125
+    },
+    {
+      "key": "UniformBlend__a0.25",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 0.25
+    },
+    {
+      "key": "UniformBlend__a0.375",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 0.375
+    },
+    {
+      "key": "UniformBlend__a0.5",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 0.5
+    },
+    {
+      "key": "UniformBlend__a0.75",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 0.75
+    },
+    {
+      "key": "UniformBlend__a1",
+      "method": "UniformBlend",
+      "g0": null,
+      "alpha": 1.0
+    }
+  ],
+  "cpu_threads": 1,
+  "adaptive_gain_enabled": false,
+  "initialization_peak_allocated_mib": 2513.171875,
+  "processed_images": 1,
+  "global_sample_count": 113,
+  "sample_keys": [
+    "top_mosaic_09cm_area10_y00_x00.tif"
+  ],
+  "shard_index": 0,
+  "num_shards": 1,
+  "class_names": [
+    "impervious surface",
+    "building",
+    "low vegetation",
+    "tree",
+    "car"
+  ],
+  "masks_used_only_for_scoring": true,
+  "metrics": {
+    "Coordinate__g0.25": {
+      "mean_iou_percent": 52.60898582853544,
+      "confusion_matrix": [
+        [
+          215305,
+          45598,
+          792,
+          20394,
+          12770
+        ],
+        [
+          3445,
+          205073,
+          1973,
+          199,
+          0
+        ],
+        [
+          32377,
+          27693,
+          95401,
+          65196,
+          7
+        ],
+        [
+          7534,
+          4111,
+          2159,
+          257352,
+          350
+        ],
+        [
+          129,
+          0,
+          0,
+          0,
+          2142
+        ]
+      ]
+    },
+    "Coordinate__g0.5": {
+      "mean_iou_percent": 52.827377706113275,
+      "confusion_matrix": [
+        [
+          211962,
+          53816,
+          325,
+          19310,
+          9446
+        ],
+        [
+          1157,
+          209338,
+          0,
+          195,
+          0
+        ],
+        [
+          30347,
+          30953,
+          93412,
+          65956,
+          6
+        ],
+        [
+          7465,
+          5229,
+          1492,
+          257142,
+          178
+        ],
+        [
+          242,
+          0,
+          0,
+          0,
+          2029
+        ]
+      ]
+    },
+    "Coordinate__g0.75": {
+      "mean_iou_percent": 52.46245220128246,
+      "confusion_matrix": [
+        [
+          208633,
+          61849,
+          142,
+          18348,
+          5887
+        ],
+        [
+          683,
+          209817,
+          0,
+          190,
+          0
+        ],
+        [
+          29361,
+          35099,
+          89556,
+          66654,
+          4
+        ],
+        [
+          7848,
+          6120,
+          1220,
+          256261,
+          57
+        ],
+        [
+          572,
+          0,
+          0,
+          0,
+          1699
+        ]
+      ]
+    },
+    "Coordinate__g1": {
+      "mean_iou_percent": 52.360054189928654,
+      "confusion_matrix": [
+        [
+          203899,
+          70709,
+          53,
+          17463,
+          2735
+        ],
+        [
+          464,
+          210036,
+          0,
+          190,
+          0
+        ],
+        [
+          27429,
+          39746,
+          86149,
+          67350,
+          0
+        ],
+        [
+          8298,
+          7287,
+          1071,
+          254832,
+          18
+        ],
+        [
+          935,
+          24,
+          0,
+          0,
+          1312
+        ]
+      ]
+    },
+    "Legacy__g0.25": {
+      "mean_iou_percent": 51.43874308594002,
+      "confusion_matrix": [
+        [
+          215701,
+          45900,
+          599,
+          20611,
+          12048
+        ],
+        [
+          4199,
+          204170,
+          2147,
+          174,
+          0
+        ],
+        [
+          38860,
+          28272,
+          85603,
+          67932,
+          7
+        ],
+        [
+          7745,
+          3956,
+          1823,
+          257673,
+          309
+        ],
+        [
+          136,
+          0,
+          0,
+          0,
+          2135
+        ]
+      ]
+    },
+    "Legacy__g0.5": {
+      "mean_iou_percent": 51.63698431603462,
+      "confusion_matrix": [
+        [
+          212683,
+          54690,
+          188,
+          19378,
+          7920
+        ],
+        [
+          945,
+          209596,
+          0,
+          149,
+          0
+        ],
+        [
+          36712,
+          33271,
+          80200,
+          70485,
+          6
+        ],
+        [
+          7373,
+          5046,
+          1165,
+          257786,
+          136
+        ],
+        [
+          285,
+          0,
+          0,
+          0,
+          1986
+        ]
+      ]
+    },
+    "Legacy__g0.75": {
+      "mean_iou_percent": 52.26495859719644,
+      "confusion_matrix": [
+        [
+          209839,
+          63817,
+          66,
+          17906,
+          3231
+        ],
+        [
+          427,
+          210135,
+          0,
+          128,
+          0
+        ],
+        [
+          33794,
+          40409,
+          74589,
+          71882,
+          0
+        ],
+        [
+          7153,
+          6023,
+          814,
+          257464,
+          52
+        ],
+        [
+          679,
+          0,
+          0,
+          0,
+          1592
+        ]
+      ]
+    },
+    "Legacy__g1": {
+      "mean_iou_percent": 50.90331910893304,
+      "confusion_matrix": [
+        [
+          205000,
+          71852,
+          12,
+          16726,
+          1269
+        ],
+        [
+          180,
+          210398,
+          0,
+          112,
+          0
+        ],
+        [
+          29025,
+          53263,
+          67135,
+          71251,
+          0
+        ],
+        [
+          6750,
+          7540,
+          577,
+          256624,
+          15
+        ],
+        [
+          1202,
+          10,
+          0,
+          0,
+          1059
+        ]
+      ]
+    },
+    "Anchored__g0.25": {
+      "mean_iou_percent": 52.16530567355998,
+      "confusion_matrix": [
+        [
+          214634,
+          45703,
+          789,
+          20929,
+          12804
+        ],
+        [
+          3836,
+          204574,
+          2090,
+          190,
+          0
+        ],
+        [
+          34239,
+          27623,
+          92436,
+          66369,
+          7
+        ],
+        [
+          7088,
+          4028,
+          2199,
+          257877,
+          314
+        ],
+        [
+          127,
+          0,
+          0,
+          0,
+          2144
+        ]
+      ]
+    },
+    "Anchored__g0.5": {
+      "mean_iou_percent": 52.66048456910827,
+      "confusion_matrix": [
+        [
+          211380,
+          53463,
+          330,
+          20207,
+          9479
+        ],
+        [
+          1343,
+          209173,
+          0,
+          174,
+          0
+        ],
+        [
+          30436,
+          30969,
+          91717,
+          67545,
+          7
+        ],
+        [
+          6467,
+          4991,
+          1581,
+          258293,
+          174
+        ],
+        [
+          228,
+          0,
+          0,
+          0,
+          2043
+        ]
+      ]
+    },
+    "Anchored__g0.75": {
+      "mean_iou_percent": 52.6641575853626,
+      "confusion_matrix": [
+        [
+          208246,
+          61194,
+          126,
+          19443,
+          5850
+        ],
+        [
+          743,
+          209782,
+          0,
+          165,
+          0
+        ],
+        [
+          27779,
+          35301,
+          89046,
+          68543,
+          5
+        ],
+        [
+          6191,
+          5663,
+          1262,
+          258312,
+          78
+        ],
+        [
+          527,
+          0,
+          0,
+          0,
+          1744
+        ]
+      ]
+    },
+    "Anchored__g1": {
+      "mean_iou_percent": 52.93481501863289,
+      "confusion_matrix": [
+        [
+          204976,
+          68231,
+          44,
+          18830,
+          2778
+        ],
+        [
+          426,
+          210109,
+          0,
+          155,
+          0
+        ],
+        [
+          25281,
+          40606,
+          85787,
+          69000,
+          0
+        ],
+        [
+          5914,
+          6458,
+          1102,
+          258001,
+          31
+        ],
+        [
+          863,
+          28,
+          0,
+          0,
+          1380
+        ]
+      ]
+    },
+    "NoPrior__g0.25": {
+      "mean_iou_percent": 52.463682347916865,
+      "confusion_matrix": [
+        [
+          215555,
+          45449,
+          827,
+          20275,
+          12753
+        ],
+        [
+          3545,
+          204923,
+          2043,
+          179,
+          0
+        ],
+        [
+          34822,
+          27496,
+          94005,
+          64344,
+          7
+        ],
+        [
+          7426,
+          4105,
+          2187,
+          257458,
+          330
+        ],
+        [
+          129,
+          0,
+          0,
+          0,
+          2142
+        ]
+      ]
+    },
+    "NoReference__g0.25": {
+      "mean_iou_percent": 52.895234661380016,
+      "confusion_matrix": [
+        [
+          215277,
+          45374,
+          810,
+          20614,
+          12784
+        ],
+        [
+          3164,
+          205350,
+          1957,
+          219,
+          0
+        ],
+        [
+          31619,
+          27024,
+          96741,
+          65283,
+          7
+        ],
+        [
+          6842,
+          3929,
+          2196,
+          258195,
+          344
+        ],
+        [
+          129,
+          0,
+          0,
+          0,
+          2142
+        ]
+      ]
+    },
+    "AbsoluteMix__g0.25": {
+      "mean_iou_percent": 51.47545249976637,
+      "confusion_matrix": [
+        [
+          214664,
+          46586,
+          538,
+          21002,
+          12069
+        ],
+        [
+          3899,
+          204472,
+          2139,
+          180,
+          0
+        ],
+        [
+          37275,
+          28380,
+          86165,
+          68847,
+          7
+        ],
+        [
+          7301,
+          3915,
+          1785,
+          258204,
+          301
+        ],
+        [
+          136,
+          0,
+          0,
+          0,
+          2135
+        ]
+      ]
+    },
+    "Shuffled__g0.25": {
+      "mean_iou_percent": 51.4676938532713,
+      "confusion_matrix": [
+        [
+          215406,
+          46692,
+          784,
+          19547,
+          12430
+        ],
+        [
+          5552,
+          202945,
+          2093,
+          100,
+          0
+        ],
+        [
+          37190,
+          27790,
+          88680,
+          67007,
+          7
+        ],
+        [
+          7864,
+          4941,
+          2134,
+          256267,
+          300
+        ],
+        [
+          138,
+          0,
+          0,
+          0,
+          2133
+        ]
+      ]
+    },
+    "UniformBlend__a0": {
+      "mean_iou_percent": 51.11531318798406,
+      "confusion_matrix": [
+        [
+          215942,
+          38125,
+          1707,
+          21491,
+          17594
+        ],
+        [
+          10955,
+          196588,
+          2935,
+          212,
+          0
+        ],
+        [
+          39306,
+          24083,
+          93429,
+          63299,
+          557
+        ],
+        [
+          7886,
+          3150,
+          3578,
+          256418,
+          474
+        ],
+        [
+          85,
+          0,
+          0,
+          0,
+          2186
+        ]
+      ]
+    },
+    "UniformBlend__a0.125": {
+      "mean_iou_percent": 52.35541042372829,
+      "confusion_matrix": [
+        [
+          214413,
+          46236,
+          843,
+          20829,
+          12538
+        ],
+        [
+          4739,
+          203891,
+          1928,
+          132,
+          0
+        ],
+        [
+          33398,
+          27648,
+          94399,
+          65221,
+          8
+        ],
+        [
+          6601,
+          4396,
+          2264,
+          257994,
+          251
+        ],
+        [
+          138,
+          0,
+          0,
+          0,
+          2133
+        ]
+      ]
+    },
+    "UniformBlend__a0.25": {
+      "mean_iou_percent": 52.797780529065406,
+      "confusion_matrix": [
+        [
+          210762,
+          54232,
+          518,
+          20351,
+          8996
+        ],
+        [
+          1447,
+          209156,
+          0,
+          87,
+          0
+        ],
+        [
+          30108,
+          30925,
+          93608,
+          66026,
+          7
+        ],
+        [
+          6249,
+          5452,
+          1687,
+          258008,
+          110
+        ],
+        [
+          313,
+          0,
+          0,
+          0,
+          1958
+        ]
+      ]
+    },
+    "UniformBlend__a0.375": {
+      "mean_iou_percent": 52.49083185579504,
+      "confusion_matrix": [
+        [
+          207656,
+          61866,
+          194,
+          19770,
+          5373
+        ],
+        [
+          853,
+          209775,
+          0,
+          62,
+          0
+        ],
+        [
+          27655,
+          34744,
+          91499,
+          66769,
+          7
+        ],
+        [
+          6114,
+          6361,
+          1467,
+          257537,
+          27
+        ],
+        [
+          670,
+          94,
+          0,
+          0,
+          1507
+        ]
+      ]
+    },
+    "UniformBlend__a0.5": {
+      "mean_iou_percent": 50.68599080887538,
+      "confusion_matrix": [
+        [
+          205116,
+          68104,
+          88,
+          19248,
+          2303
+        ],
+        [
+          603,
+          210024,
+          0,
+          63,
+          0
+        ],
+        [
+          24636,
+          42098,
+          87699,
+          66241,
+          0
+        ],
+        [
+          5893,
+          7417,
+          1381,
+          256815,
+          0
+        ],
+        [
+          1392,
+          173,
+          0,
+          0,
+          706
+        ]
+      ]
+    },
+    "UniformBlend__a0.75": {
+      "mean_iou_percent": 47.08768306229154,
+      "confusion_matrix": [
+        [
+          198558,
+          78270,
+          76,
+          17819,
+          136
+        ],
+        [
+          282,
+          210345,
+          0,
+          63,
+          0
+        ],
+        [
+          23408,
+          49810,
+          83473,
+          63983,
+          0
+        ],
+        [
+          5604,
+          9631,
+          1448,
+          254823,
+          0
+        ],
+        [
+          1581,
+          581,
+          0,
+          0,
+          109
+        ]
+      ]
+    },
+    "UniformBlend__a1": {
+      "mean_iou_percent": 44.96333002821365,
+      "confusion_matrix": [
+        [
+          193528,
+          84782,
+          143,
+          16406,
+          0
+        ],
+        [
+          284,
+          210344,
+          0,
+          62,
+          0
+        ],
+        [
+          23314,
+          56576,
+          79042,
+          61742,
+          0
+        ],
+        [
+          5434,
+          12214,
+          1492,
+          252366,
+          0
+        ],
+        [
+          1512,
+          759,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "wall_seconds": 0.7796330167911947
+}
