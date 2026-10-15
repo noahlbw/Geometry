@@ -2,6 +2,10 @@
 
 总体状态：**complete**。
 
+本分支固定 **Anchored** 为 Geov2 终版架构。这里的“固定”指终版实现和视觉模块不再在候选之间切换；它不把历史上按协议开发得到的词表、背景规则和校准参数改写成统一无调参协议。完整的来源和允许调参边界见 [终版调参口径](../GEOV2_FINAL_MODEL_AND_TUNING_POLICY_20261016.md)。
+
+Anchored 本轮没有根据自己的 mIoU 重新选择 alias；七个协议沿用开跑前已冻结的词表快照。词表和部分校准历史上曾使用带标签开发过程，因此主结果应称为“冻结任务语言协议下的视觉模块比较”。
+
 | 阶段 | 状态 | 已完成数据集 |
 | --- | --- | --- |
 | [smoke](smoke/REPORT_ZH.md) | complete | vdd, potsdam, udd5, oem, vaihingen, ade150, voc21 |

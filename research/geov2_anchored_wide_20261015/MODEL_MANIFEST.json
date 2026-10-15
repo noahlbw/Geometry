@@ -1,5 +1,7 @@
 {
   "candidate": "spatially anchored residual slot reader",
+  "final_model": "Anchored",
+  "final_model_status": "locked_for_geov2_final_branch",
   "local_path": "Original DonorBefore unchanged",
   "global_slots": 24,
   "beta": 0.5,
@@ -18,5 +20,7 @@
   "independent_cost_arms": 21,
   "smoke_datasets": 7,
   "local_tests_passed": 17,
-  "promotion_decision": "not_promoted"
+  "promotion_decision": "not_promoted_as_default_replacement",
+  "tuning_policy": "Alias banks, templates, background rules, local score calibration and wide-view policy are frozen snapshots inherited from prior task-adapted development. The Anchored run does not jointly retune them; only the predeclared g0 grid is compared.",
+  "strict_claim_boundary": "Do not describe the historical pipeline as g0-only tuning. A clean g0-only claim requires a new protocol that freezes language and calibration choices before evaluation."
 }
