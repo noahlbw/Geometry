@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "datasets": {
+    "PEARL/isaid": {
+      "isaid": 10.8161
+    },
+    "GLA-CLIP/isaid": {
+      "isaid": 10.0159
+    },
+    "PTC/isaid": {
+      "isaid": 12.661
+    },
+    "CorrCLIP/isaid": {
+      "isaid": 10.2868
+    },
+    "SegEarth-OV/isaid": {
+      "isaid": 22.5194
+    }
+  },
+  "failures": {},
+  "protocol_images_per_method": 11644,
+  "total_protocol_images": 58220,
+  "metadata_note": "Per-method merged outputs are 11,644 official tiles; previous 45,200 was a multi-dataset hard-coded total."
+}

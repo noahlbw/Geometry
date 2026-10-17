@@ -1,0 +1,242 @@
+{
+  "implementation": "pinned-native-training-free-baseline-isaid-v1-20261017",
+  "datasets": {
+    "isaid": {
+      "family": "remote_sensing",
+      "background_index": 0,
+      "total_images": 11644,
+      "data_root": "/data-cache/isaid_official_tiles_20261017",
+      "class_names": [
+        "background",
+        "ship",
+        "storage tank",
+        "baseball diamond",
+        "tennis court",
+        "basketball court",
+        "ground track field",
+        "bridge",
+        "large vehicle",
+        "small vehicle",
+        "helicopter",
+        "swimming pool",
+        "roundabout",
+        "soccer ball field",
+        "airplane",
+        "harbor"
+      ]
+    }
+  },
+  "methods": {
+    "PEARL": {
+      "repository": "https://github.com/PGSmall/PEARL",
+      "commit": "c26062b5062b73f712cbe10846fb3a51e313a6fa",
+      "source_subdirectory": "PEARL",
+      "configs": {
+        "isaid": {
+          "method": "PEARL",
+          "module": "pearl_ovss",
+          "class": "PEARL",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PEARL",
+          "model": {
+            "type": "PEARL",
+            "clip_path": "ViT-B/16",
+            "prob_thd": 0.0,
+            "use_prop": "on"
+          },
+          "word_file": "words/PEARL/isaid.txt",
+          "word_sha256": "ccf9a9eb72ae3634235a68a2b27c7003b1c2fb9e9d8bb0f4e33a00f2642208ca",
+          "word_origin": "official iSAID taxonomy; one canonical name per line; frozen before evaluation",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        }
+      }
+    },
+    "GLA-CLIP": {
+      "repository": "https://github.com/2btlFe/GLA-CLIP",
+      "commit": "63d674626cb1ddc566e3177b9cb5b2dc7a212158",
+      "source_subdirectory": "GLA-CLIP",
+      "configs": {
+        "isaid": {
+          "method": "GLA-CLIP",
+          "module": "gla_clip_segmentor",
+          "class": "GLA_CLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/GLA-CLIP",
+          "model": {
+            "type": "GLA_CLIPSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "prob_thd": 0.0
+          },
+          "word_file": "words/GLA-CLIP/isaid.txt",
+          "word_sha256": "ccf9a9eb72ae3634235a68a2b27c7003b1c2fb9e9d8bb0f4e33a00f2642208ca",
+          "word_origin": "official iSAID taxonomy; one canonical name per line; frozen before evaluation",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {
+            "CLIP_type": "ProxyCLIP",
+            "token_norm": true,
+            "KV_token_extension": true,
+            "proxy_sim": true,
+            "mini_iters": 2,
+            "initial_crit_pos": 0.6,
+            "dynamic_beta": true,
+            "beta_alpha": 0.3,
+            "dynamic_gamma": true,
+            "gamma_alpha": 30.0
+          },
+          "prediction_map": null
+        }
+      }
+    },
+    "PTC": {
+      "repository": "https://github.com/Valeria-MaW/PTC",
+      "commit": "8656ec33760dc786902e324321de5565df4710b8",
+      "source_subdirectory": "PTC",
+      "configs": {
+        "isaid": {
+          "method": "PTC",
+          "module": "ptc_segmentor",
+          "class": "PTCSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC",
+          "model": {
+            "type": "PTCSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "ptc_enable": true,
+            "ptc_proto_mode": "auto",
+            "ptc_proto_crop": 224,
+            "prob_thd": 0.0
+          },
+          "word_file": "words/PTC/isaid.txt",
+          "word_sha256": "ccf9a9eb72ae3634235a68a2b27c7003b1c2fb9e9d8bb0f4e33a00f2642208ca",
+          "word_origin": "official iSAID taxonomy; one canonical name per line; frozen before evaluation",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        }
+      }
+    },
+    "CorrCLIP": {
+      "repository": "https://github.com/zdk258/CorrCLIP",
+      "commit": "103bc18213e6d906e55a21b8491bc7b04cbf106b",
+      "source_subdirectory": "CorrCLIP/CorrCLIPv1",
+      "configs": {
+        "isaid": {
+          "method": "CorrCLIP",
+          "module": "corrclip_segmentor",
+          "class": "CorrCLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1",
+          "model": {
+            "type": "CorrCLIPSegmentation",
+            "clip_type": "metaclip_fullcc",
+            "model_type": "ViT-B-16-quickgelu",
+            "dino_type": "dino_vitb8",
+            "mask_generator": "sam2",
+            "prob_thd": 0.0
+          },
+          "word_file": "words/CorrCLIP/isaid.txt",
+          "word_sha256": "ccf9a9eb72ae3634235a68a2b27c7003b1c2fb9e9d8bb0f4e33a00f2642208ca",
+          "word_origin": "official iSAID taxonomy; one canonical name per line; frozen before evaluation",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": false,
+          "config_origin": "fixed transfer",
+          "parser": "semicolon-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "mask_note": "Native online SAM2 HieraLarge generation, 8 points/side, IoU/stability .4; included in inference cost. Official precomputed-mask scores are a separate resource setting."
+        }
+      }
+    },
+    "SegEarth-OV": {
+      "repository": "https://github.com/likyoo/SegEarth-OV",
+      "commit": "3e22a969b32c6d751bdbba64a88a0b670e630f55",
+      "source_subdirectory": "SegEarth-OV",
+      "configs": {
+        "isaid": {
+          "method": "SegEarth-OV",
+          "module": "segearth_segmentor",
+          "class": "SegEarthSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/SegEarth-OV",
+          "model": {
+            "type": "SegEarthSegmentation",
+            "clip_type": "CLIP",
+            "vit_type": "ViT-B/16",
+            "model_type": "SegEarth",
+            "ignore_residual": true,
+            "feature_up": true,
+            "feature_up_cfg": {
+              "model_name": "jbu_one",
+              "model_path": "simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt"
+            },
+            "cls_token_lambda": -0.3,
+            "prob_thd": 0.3
+          },
+          "word_file": "words/SegEarth-OV/isaid.txt",
+          "word_sha256": "ccf9a9eb72ae3634235a68a2b27c7003b1c2fb9e9d8bb0f4e33a00f2642208ca",
+          "word_origin": "official iSAID taxonomy; one canonical name per line; frozen before evaluation",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "SegEarth-OV\\configs\\cfg_vdd.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        }
+      }
+    }
+  },
+  "method_order": [
+    "PEARL",
+    "GLA-CLIP",
+    "PTC",
+    "CorrCLIP",
+    "SegEarth-OV"
+  ],
+  "dataset_order": [
+    "isaid"
+  ],
+  "expected_protocol_images": 45200,
+  "provenance": "Authors native official config where provided; fixed untuned transfer elsewhere. Matched existing images/targets. Different pretrained backbones and external resources remain part of each full method; this is not an operator ablation. Geometry references used prior labeled development optimization."
+}

@@ -1,0 +1,50 @@
+{
+  "dataset": "iSAID val",
+  "protocol": "official 896x896 tiles, overlap 384, 11,644 tiles; 16 classes including background; ignore=255",
+  "results": [
+    {
+      "method": "VIP official",
+      "miou_percent": 26.1325,
+      "median_ms": 127.3356,
+      "peak_allocated_mib": 1816.7642
+    },
+    {
+      "method": "Geov2 Anchored",
+      "miou_percent": 27.0134,
+      "median_ms": 167.5024,
+      "peak_allocated_mib": 1702.1851
+    },
+    {
+      "method": "SegEarth-OV",
+      "miou_percent": 22.5194,
+      "median_ms": 292.2624,
+      "peak_allocated_mib": 1155.0
+    },
+    {
+      "method": "PTC",
+      "miou_percent": 12.661,
+      "median_ms": 248.601,
+      "peak_allocated_mib": 716.1
+    },
+    {
+      "method": "PEARL",
+      "miou_percent": 10.8161,
+      "median_ms": 65.2957,
+      "peak_allocated_mib": 476.6
+    },
+    {
+      "method": "CorrCLIP",
+      "miou_percent": 10.2868,
+      "median_ms": 308.7874,
+      "peak_allocated_mib": 2609.1
+    },
+    {
+      "method": "GLA-CLIP",
+      "miou_percent": 10.0159,
+      "median_ms": 56.9502,
+      "peak_allocated_mib": 1033.9
+    }
+  ],
+  "geov2_full_wall_seconds": 2370.2862,
+  "old_foreground_only_results_invalid": true
+}

@@ -29,7 +29,9 @@ def main():
     require(state['status']==suite['status']=='complete','Suite is incomplete')
     require(not state['active'] and not state['pending'] and not state['failures'],'Unresolved jobs')
     expected=len(protocol['methods'])*len(protocol['datasets'])
-    require(len(state['merged'])==len(suite['datasets'])==expected==75,'Missing merged protocols')
+    expected_images = sum(int(entry['total_images']) for entry in protocol['datasets'].values())
+    expected_costs = expected
+    require(len(state['merged'])==len(suite['datasets'])==expected,'Missing merged protocols')
     methods={}; shard_count=0; cost_count=0
     for method, source in protocol['methods'].items():
         images=0
@@ -74,13 +76,13 @@ def main():
                 np.isfinite(r['milliseconds']).all() and min(r['milliseconds'])>0 for r in cost['images']),
                 'Cost samples incomplete: '+key)
             images+=len(keys);cost_count+=1
-        require(images==45200,'Incomplete method protocol images: '+method)
+        require(images==expected_images,'Incomplete method protocol images: '+method)
         methods[method]=dict(complete_protocols=len(protocol['datasets']),protocol_images=images,
             standalone_costs=len(protocol['datasets']))
-    require(cost_count==75 and sum(r['protocol_images'] for r in methods.values())==226000,
+    require(cost_count==expected_costs and sum(r['protocol_images'] for r in methods.values())==expected_images*len(protocol['methods']),
         'Incomplete suite totals')
     result=dict(status='complete',complete_protocols=expected,standalone_costs=cost_count,
-        per_image_confusion_shards_verified=shard_count,total_protocol_images=226000,methods=methods,
+        per_image_confusion_shards_verified=shard_count,total_protocol_images=expected_images*len(protocol['methods']),methods=methods,
         unique_ordered_coverage_verified=True,per_image_confusion_sums_verified=True,
         vip_scored_target_counts_match=True,frozen_source_config_query_checkpoint_runtime_identities_verified=True,
         cost_7_images_by_7_repeats_verified=True,model_weights_frozen=True,

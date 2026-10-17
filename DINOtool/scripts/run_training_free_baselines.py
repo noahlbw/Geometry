@@ -183,8 +183,12 @@ def main(args):
     expected=len(protocol['methods'])*len(protocol['datasets'])
     state['status']='complete' if len(state['merged'])==expected and not state['failures'] else 'finished_with_failures'
     save(state_path,state)
+    # Count the actual manifest entries.  The historical multi-dataset suite
+    # used a hard-coded 45,200 protocol-image total; that value is wrong for
+    # isolated datasets such as iSAID official tiles.
+    protocol_images = sum(int(protocol['datasets'][d]['total_images']) for d in protocol['dataset_order'])
     save(root/'suite_results.json',dict(status=state['status'],datasets=state['merged'],failures=state['failures'],
-        protocol_images_per_method=45200,total_protocol_images=45200*len(protocol['methods'])))
+        protocol_images_per_method=protocol_images,total_protocol_images=protocol_images*len(protocol['methods'])))
 
 
 def key(job):
