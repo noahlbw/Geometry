@@ -1,0 +1,71 @@
+{
+  "status": "failed",
+  "phase": "selection",
+  "active": [],
+  "pending": [],
+  "smoke_completed": [
+    "flair1",
+    "landcoverai",
+    "loveda",
+    "oem",
+    "potsdam",
+    "udd5",
+    "vaihingen",
+    "vdd"
+  ],
+  "selection_completed": [
+    [
+      "flair1",
+      0
+    ],
+    [
+      "flair1",
+      1
+    ],
+    [
+      "landcoverai",
+      0
+    ],
+    [
+      "loveda",
+      0
+    ],
+    [
+      "loveda",
+      1
+    ],
+    [
+      "oem",
+      0
+    ],
+    [
+      "potsdam",
+      0
+    ],
+    [
+      "udd5",
+      0
+    ],
+    [
+      "vaihingen",
+      0
+    ],
+    [
+      "vdd",
+      0
+    ]
+  ],
+  "evaluation_completed": [
+    [
+      "landcoverai",
+      0
+    ]
+  ],
+  "failures": {
+    "q20vip_selection_loveda_s1": {
+      "error": "coverage differs: loveda",
+      "log": "phase\": \"selection\", \"processed\": 310, \"total\": 834, \"wall_seconds\": 156.37182159675285}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 320, \"total\": 834, \"wall_seconds\": 161.31010214891285}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 330, \"total\": 834, \"wall_seconds\": 166.4127591876313}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 340, \"total\": 834, \"wall_seconds\": 171.4325356609188}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 350, \"total\": 834, \"wall_seconds\": 176.45921735279262}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 360, \"total\": 834, \"wall_seconds\": 181.56439712597057}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 370, \"total\": 834, \"wall_seconds\": 186.55712471855804}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 380, \"total\": 834, \"wall_seconds\": 191.58368844771758}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 390, \"total\": 834, \"wall_seconds\": 196.60244869673625}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 400, \"total\": 834, \"wall_seconds\": 201.5520951799117}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 410, \"total\": 834, \"wall_seconds\": 206.56919202767313}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 420, \"total\": 834, \"wall_seconds\": 211.56471162568778}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 430, \"total\": 834, \"wall_seconds\": 216.6111050718464}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 440, \"total\": 834, \"wall_seconds\": 221.6992398276925}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 450, \"total\": 834, \"wall_seconds\": 226.71029601292685}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 460, \"total\": 834, \"wall_seconds\": 231.75688924081624}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 470, \"total\": 834, \"wall_seconds\": 236.7733430149965}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 480, \"total\": 834, \"wall_seconds\": 241.81089090183377}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 490, \"total\": 834, \"wall_seconds\": 246.77337165456265}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 500, \"total\": 834, \"wall_seconds\": 251.76257479656488}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 510, \"total\": 834, \"wall_seconds\": 256.75727545656264}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 520, \"total\": 834, \"wall_seconds\": 261.79836795898154}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 530, \"total\": 834, \"wall_seconds\": 266.7205255315639}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 540, \"total\": 834, \"wall_seconds\": 271.75418688263744}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 550, \"total\": 834, \"wall_seconds\": 276.79158915765584}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 560, \"total\": 834, \"wall_seconds\": 281.8929787906818}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 570, \"total\": 834, \"wall_seconds\": 286.9413928166032}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 580, \"total\": 834, \"wall_seconds\": 291.9180067628622}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 590, \"total\": 834, \"wall_seconds\": 296.94291166588664}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 600, \"total\": 834, \"wall_seconds\": 301.8764112116769}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 610, \"total\": 834, \"wall_seconds\": 306.83436183584854}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 620, \"total\": 834, \"wall_seconds\": 311.7113776267506}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 630, \"total\": 834, \"wall_seconds\": 316.79697960987687}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 640, \"total\": 834, \"wall_seconds\": 321.7723126029596}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 650, \"total\": 834, \"wall_seconds\": 326.736955113709}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 660, \"total\": 834, \"wall_seconds\": 331.74769318383187}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 670, \"total\": 834, \"wall_seconds\": 336.7591989869252}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 680, \"total\": 834, \"wall_seconds\": 341.8598147640005}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 690, \"total\": 834, \"wall_seconds\": 346.7983283926733}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 700, \"total\": 834, \"wall_seconds\": 351.86121754394844}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 710, \"total\": 834, \"wall_seconds\": 356.8550046165474}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 720, \"total\": 834, \"wall_seconds\": 361.8041574819945}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 730, \"total\": 834, \"wall_seconds\": 366.79333348572254}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 740, \"total\": 834, \"wall_seconds\": 371.85118075972423}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 750, \"total\": 834, \"wall_seconds\": 376.7883895887062}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 760, \"total\": 834, \"wall_seconds\": 381.88079041056335}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 770, \"total\": 834, \"wall_seconds\": 387.00609765574336}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 780, \"total\": 834, \"wall_seconds\": 392.00378808984533}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 790, \"total\": 834, \"wall_seconds\": 397.0233177896589}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 800, \"total\": 834, \"wall_seconds\": 402.15857630362734}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 810, \"total\": 834, \"wall_seconds\": 407.1541534406133}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 820, \"total\": 834, \"wall_seconds\": 412.0980041786097}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 830, \"total\": 834, \"wall_seconds\": 417.1312294797972}\n{\"dataset\": \"loveda\", \"phase\": \"selection\", \"processed\": 834, \"total\": 834, \"wall_seconds\": 419.19291448872536}\n"
+    }
+  },
+  "elapsed_seconds": 2403.490707874298
+}

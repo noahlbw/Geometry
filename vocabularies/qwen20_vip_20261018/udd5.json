@@ -1,0 +1,131 @@
+{
+  "protocol": "Qwen20 candidate bank for VIP paper-rule distillation",
+  "source_generation": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/qwen20_vip_candidates_20261018/generation.json",
+  "classes": [
+    {
+      "name": "vegetation",
+      "synonyms": [
+        "vegetation",
+        "tree canopy",
+        "grass field",
+        "forest area",
+        "shrubbery",
+        "bushes",
+        "vineyard",
+        "crop field",
+        "meadow",
+        "undergrowth",
+        "woodland",
+        "hedge row",
+        "orchard",
+        "palm grove",
+        "reeds",
+        "ferns",
+        "alpine meadow",
+        "marsh vegetation",
+        "aquatic plants",
+        "tropical jungle"
+      ]
+    },
+    {
+      "name": "building",
+      "synonyms": [
+        "building",
+        "skyscraper",
+        "apartment building",
+        "house",
+        "church",
+        "factory",
+        "museum",
+        "office building",
+        "residential complex",
+        "concrete structure",
+        "tower block",
+        "public building",
+        "industrial plant",
+        "government building",
+        "hotel",
+        "library",
+        "school",
+        "retail center",
+        "shopping mall",
+        "airport terminal"
+      ]
+    },
+    {
+      "name": "road",
+      "synonyms": [
+        "road",
+        "highway lane",
+        "street intersection",
+        "paved path",
+        "freeway ramp",
+        "sidewalk border",
+        "driveway entrance",
+        "road sign",
+        "bridge roadway",
+        "tarmac surface",
+        "road divider",
+        "cul-de-sac end",
+        "road tunnel exit",
+        "roadside marker",
+        "road curve bend",
+        "road shoulder",
+        "road overpass",
+        "road construction",
+        "road traffic light",
+        "road bridge support"
+      ]
+    },
+    {
+      "name": "vehicle",
+      "synonyms": [
+        "vehicle",
+        "car on road",
+        "bus in station",
+        "truck on highway",
+        "motorcycle on street",
+        "bike in park",
+        "suv in parking lot",
+        "ambulance on emergency",
+        "taxi on city street",
+        "van in driveway",
+        "boat in harbor",
+        "train on tracks",
+        "helicopter in sky",
+        "airplane on runway",
+        "bus in school",
+        "truck in warehouse",
+        "motorcycle in garage",
+        "bike in workshop",
+        "suv in forest",
+        "ambulance in hospital"
+      ]
+    },
+    {
+      "name": "other",
+      "synonyms": [
+        "other",
+        "streetlight pole",
+        "utility box",
+        "parking meter",
+        "signpost",
+        "trash can",
+        "sidewalk",
+        "bench",
+        "fence",
+        "tree stump",
+        "bush",
+        "dirt patch",
+        "grass clump",
+        "water fountain",
+        "fire hydrant",
+        "street sign",
+        "street lamp",
+        "streetlight",
+        "sidewalk crack",
+        "curb"
+      ]
+    }
+  ]
+}

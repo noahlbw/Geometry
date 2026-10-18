@@ -1,0 +1,57 @@
+{
+  "implementation": "qwen20-vip-paper-distillation-v1-20261018",
+  "candidate_generation": "Qwen canonical plus 19 text-only proposals; no VIP official query file",
+  "datasets": [
+    "vdd",
+    "potsdam",
+    "udd5",
+    "oem",
+    "loveda",
+    "vaihingen",
+    "landcoverai",
+    "flair1"
+  ],
+  "shards": {
+    "vdd": 1,
+    "potsdam": 1,
+    "udd5": 1,
+    "oem": 1,
+    "loveda": 2,
+    "vaihingen": 1,
+    "landcoverai": 1,
+    "flair1": 4
+  },
+  "totals": {
+    "vdd": 80,
+    "potsdam": 504,
+    "udd5": 40,
+    "oem": 384,
+    "loveda": 1669,
+    "vaihingen": 113,
+    "landcoverai": 1602,
+    "flair1": 15700
+  },
+  "candidate_count": 20,
+  "fixed_vip_readout": true,
+  "target_label_tuning": false,
+  "use_all_unlabeled_evaluation_images": true,
+  "custom_candidate": true,
+  "config": {
+    "affinity_power": 2.0,
+    "random_walk_steps": 2,
+    "activation_threshold": 0.4,
+    "text_cosine_threshold": 0.7,
+    "alias_chunk": 32
+  },
+  "conventions": {
+    "attention": "Mean over heads then all backbone layers; full-token softmax sliced to patch-patch.",
+    "padding": "Keep patch centers within real crop; exclude padded random-walk keys and scoring positions.",
+    "image_pooling": "Sum high-region intersection/union/entropy/count across pinned sliding crops; then equal-image averaging, skipping absent aliases.",
+    "cosine_prefilter": "Cosine of normalized means of the pinned 80 ImageNet-template patch-text features; fixed threshold0.7.",
+    "alias_maps": "VIP template-mean similarity times pinned logit_scale40; replace one parent canonical, softmax across canonical classes.",
+    "protocol": "Pinned repository long-edge448/crop336/stride112 retained. Paper appendix shorter-edge336/crop224 is not substituted.",
+    "code_provenance": "Paper-rule distillation reimplementation; public pinned VIP has no distillation implementation.",
+    "numeric_repair": "Fixed self-Value fallback ONLY on all-masked proxy rows; otherwise pinned VIP equations unchanged. Historical raw VIP could yield NaN."
+  },
+  "vocabulary_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/qwen20_vip_candidates_20261018"
+}

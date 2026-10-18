@@ -1,5 +1,7 @@
 # Geometry: frozen structure-guided open-vocabulary segmentation
 
+2026-10-18更新：新增 **Qwen20→VIP paper-rule** 的 8 个遥感协议全量筛词与验证。每类使用 canonical＋19 个 Qwen 文本候选，VDD、Potsdam、Vaihingen 也不回退到 VIP 官方词表；VG/SC 在全部无标签评测图像上冻结后，再报告 `VIP_All20` 与 `VIP_Distilled`。结果、逐类保留数、成本和 transductive 边界见 [Qwen20→VIP报告](research/qwen20_vip_paper_20261018/REPORT_ZH.md)，对比词表见 [qwen20_vip_20261018](vocabularies/qwen20_vip_20261018/README.md)。
+
 2026-10-14更新：完成 **COCO-Object81全量5,000张、99配置的最佳g0与部件消融**，见[完整报告、全步长表及逐图证据](research/geov2_coco81_bestg_ablation_20261014/REPORT_ZH.md)。扫描8档后Full最佳g0=0.5，mIoU=49.6209%；同g0下QuerySlot净差+0.1448pp、DonorBefore +0.0167pp、前景扩词+0.8407pp。允许各对照重选g0后，不能声称所有主部件均优于替代方案。全部三份已完成0.5消融的事后等域汇总中，四项平均差的区间均高于0，单域不确定性仍保留。Full为153.40ms／2722.19MiB allocated。g0使用已查看验证标签选择，属于开发分析。
 
 2026-10-14更新：完成 **VOC21全量1,449张、固定g0=0.5的QuerySlot复核及13项部件消融**，见[完整报告与逐图证据](research/geov2_voc21_fixed05_ablation_20261014/REPORT_ZH.md)。Full为72.1656%，关闭query路由为71.0325%，净收益+1.1331pp，配对95%区间[+0.8550,+1.4184]；DonorBefore贡献+0.1958pp，保留背景不变的前景扩词+4.0839pp。Full为142.47ms／2247.24MiB allocated。同观测等权融合74.8935%高于固定0.5结构写回，UDD5路由净差也仍保留；不宣称各部件在所有域都获益。词表、背景校准及g0在本轮均未搜索。

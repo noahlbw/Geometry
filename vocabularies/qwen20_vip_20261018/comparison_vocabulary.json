@@ -1,0 +1,2076 @@
+{
+  "implementation": "qwen20-vip-paper-distillation-v1-20261018",
+  "candidate_rule": "canonical + 19 Qwen proposals",
+  "datasets": {
+    "vdd": {
+      "candidate_file": "vdd.json",
+      "candidate_sha256": "e43b2f380eb8fbc47803624c3b5300751d4fda9700c861645ef997debca65c47",
+      "selected_file": "selected/vdd.json",
+      "selected_sha256": "7747a419a16be971b7c9c7c8605973fb3ec930774b57715f8ef8dc5a75a3d8a2",
+      "classes": [
+        {
+          "name": "other",
+          "synonyms": [
+            "other",
+            "streetlight pole",
+            "sidewalk debris",
+            "trash can",
+            "parking meter",
+            "street sign",
+            "utility box",
+            "fire hydrant",
+            "streetlight fixture",
+            "sidewalk crack",
+            "parking lot",
+            "streetlight base",
+            "sidewalk repair",
+            "streetlight cover",
+            "sidewalk patch",
+            "streetlight post",
+            "sidewalk debris pile",
+            "streetlight casing",
+            "sidewalk repair patch",
+            "streetlight base plate"
+          ]
+        },
+        {
+          "name": "wall",
+          "synonyms": [
+            "wall",
+            "brick wall",
+            "concrete wall",
+            "stone wall",
+            "plaster wall",
+            "tile wall",
+            "drywall wall",
+            "wooden wall",
+            "metal wall",
+            "glass wall",
+            "partition wall",
+            "fence wall",
+            "cliff wall",
+            "mountain wall",
+            "building wall",
+            "house wall",
+            "cave wall",
+            "ruin wall",
+            "fortress wall",
+            "castle wall"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road",
+            "highway lane",
+            "street intersection",
+            "paved path",
+            "freeway divider",
+            "sidewalk border",
+            "driveway entrance",
+            "cement roadbed",
+            "asphalt surface",
+            "tarmac road",
+            "concrete roadway",
+            "blacktop pavement",
+            "roadside curb",
+            "interstate highway",
+            "country road",
+            "urban street",
+            "motorway section",
+            "rural lane",
+            "expressway ramp",
+            "pedestrian walkway"
+          ]
+        },
+        {
+          "name": "vegetation",
+          "synonyms": [
+            "vegetation",
+            "grass",
+            "trees",
+            "bushes",
+            "plants",
+            "foliage",
+            "leaves",
+            "shrubbery",
+            "undergrowth",
+            "grassland",
+            "forest",
+            "vegetation patch",
+            "tall grass",
+            "tree canopy",
+            "woodland",
+            "grass tuft",
+            "leaf litter",
+            "bush cluster",
+            "plant bed",
+            "tree line"
+          ]
+        },
+        {
+          "name": "vehicle",
+          "synonyms": [
+            "vehicle",
+            "car on road",
+            "bus in station",
+            "truck on highway",
+            "motorcycle on street",
+            "bike in parking",
+            "suv near house",
+            "ambulance on emergency",
+            "train in tunnel",
+            "helicopter in sky",
+            "boat on water",
+            "airplane in airport",
+            "trolley on track",
+            "taxi on sidewalk",
+            "bus stop sign",
+            "car in garage",
+            "bike rack outside",
+            "truck bed empty",
+            "motorcycle helmet",
+            "bike lock on pole"
+          ]
+        },
+        {
+          "name": "roof",
+          "synonyms": [
+            "roof",
+            "shingle roof",
+            "tile roof",
+            "flat roof",
+            "gabled roof",
+            "tilted roof",
+            "pitched roof",
+            "sloped roof",
+            "slanted roof",
+            "overhang roof",
+            "roof peak",
+            "roof ridge",
+            "roof gutter",
+            "roof vent",
+            "roof skylight",
+            "roof dormer",
+            "roof truss",
+            "roof beam",
+            "roof shingle",
+            "roof tile"
+          ]
+        },
+        {
+          "name": "water",
+          "synonyms": [
+            "water",
+            "ocean water",
+            "river water",
+            "lake water",
+            "pond water",
+            "stream water",
+            "spring water",
+            "sea water",
+            "bath water",
+            "swim water",
+            "fountain water",
+            "rain water",
+            "cloud water",
+            "ice water",
+            "drain water",
+            "pool water",
+            "shower water",
+            "tub water",
+            "sink water",
+            "bottle water"
+          ]
+        }
+      ],
+      "selected_alias_groups": {
+        "vdd": [
+          [
+            "other",
+            "trash can"
+          ],
+          [
+            "wall",
+            "brick wall",
+            "concrete wall",
+            "stone wall",
+            "plaster wall",
+            "tile wall",
+            "metal wall",
+            "glass wall",
+            "fence wall",
+            "mountain wall",
+            "building wall",
+            "house wall",
+            "ruin wall",
+            "fortress wall",
+            "castle wall"
+          ],
+          [
+            "road",
+            "tarmac road",
+            "interstate highway"
+          ],
+          [
+            "vegetation",
+            "trees",
+            "bushes",
+            "shrubbery",
+            "forest",
+            "vegetation patch",
+            "tree canopy",
+            "plant bed",
+            "tree line"
+          ],
+          [
+            "vehicle",
+            "truck on highway",
+            "bike in parking"
+          ],
+          [
+            "roof",
+            "flat roof"
+          ],
+          [
+            "water",
+            "lake water",
+            "pond water"
+          ]
+        ]
+      },
+      "selected_counts": {
+        "vdd": [
+          2,
+          15,
+          3,
+          9,
+          3,
+          2,
+          3
+        ]
+      }
+    },
+    "potsdam": {
+      "candidate_file": "potsdam.json",
+      "candidate_sha256": "bcdc7968a8f97fa72cb96a1d494d5258ec373dd506d0ce191e8294ec4c363922",
+      "selected_file": "selected/potsdam.json",
+      "selected_sha256": "c5a05ea49ec4b53fa4cd6e9bbab959c274b33e0dc79d67d73dc6a816144e8820",
+      "classes": [
+        {
+          "name": "impervious surface",
+          "synonyms": [
+            "impervious surface",
+            "asphalt road",
+            "concrete sidewalk",
+            "roof top",
+            "pavement area",
+            "concrete parking lot",
+            "asphalt driveway",
+            "concrete patio",
+            "concrete parking garage",
+            "asphalt tennis court",
+            "concrete basketball court",
+            "asphalt parking space",
+            "concrete driveway",
+            "asphalt parking lot",
+            "hardtop surface",
+            "asphalt roadway",
+            "concrete yard",
+            "impervious pavement",
+            "tarred path",
+            "asphalt parking"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building",
+            "skyscraper",
+            "residential building",
+            "office tower",
+            "factory structure",
+            "church spire",
+            "apartment complex",
+            "mansion facade",
+            "library building",
+            "school campus",
+            "hotel exterior",
+            "convenience store",
+            "airport terminal",
+            "bank branch",
+            "government building",
+            "retail mall",
+            "industrial plant",
+            "civic center",
+            "community center",
+            "shopping plaza"
+          ]
+        },
+        {
+          "name": "low vegetation",
+          "synonyms": [
+            "low vegetation",
+            "grass",
+            "bushes",
+            "weeds",
+            "herb",
+            "foliage",
+            "undergrowth",
+            "shrubbery",
+            "lawn",
+            "vegetation",
+            "grassland",
+            "bush",
+            "herbaceous",
+            "foliate",
+            "understorey",
+            "grass tuft",
+            "bush clump",
+            "herb patch",
+            "foliage mass",
+            "undergrowth patch"
+          ]
+        },
+        {
+          "name": "tree",
+          "synonyms": [
+            "tree",
+            "forest canopy",
+            "oak tree",
+            "pine tree",
+            "deciduous tree",
+            "coniferous tree",
+            "shade tree",
+            "leafy tree",
+            "broadleaf tree",
+            "evergreen tree",
+            "tree trunk",
+            "tree branch",
+            "tree bark",
+            "tree stump",
+            "tree root",
+            "tree crown",
+            "tree foliage",
+            "tree canopy",
+            "tree trunk base",
+            "tree trunk top"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car",
+            "automobile",
+            "motor vehicle",
+            "sedan",
+            "sports car",
+            "pickup truck",
+            "convertible",
+            "van",
+            "bus",
+            "truck",
+            "suv",
+            "crossover",
+            "minivan",
+            "compact car",
+            "electric car",
+            "hybrid car",
+            "sports utility vehicle",
+            "station wagon",
+            "cargo van",
+            "city car"
+          ]
+        },
+        {
+          "name": "clutter",
+          "synonyms": [
+            "clutter",
+            "junk pile",
+            "scattered items",
+            "cluttered area",
+            "cluttered space",
+            "cluttered room",
+            "cluttered desk",
+            "cluttered floor",
+            "cluttered shelf",
+            "cluttered closet",
+            "cluttered yard",
+            "cluttered garage",
+            "cluttered attic",
+            "cluttered basement",
+            "cluttered hallway",
+            "cluttered corridor",
+            "cluttered office",
+            "cluttered kitchen",
+            "cluttered living room",
+            "cluttered dining room"
+          ]
+        }
+      ],
+      "selected_alias_groups": {
+        "potsdam": [
+          [
+            "impervious surface",
+            "asphalt road",
+            "concrete sidewalk",
+            "pavement area",
+            "asphalt driveway",
+            "asphalt parking space",
+            "asphalt parking lot",
+            "asphalt roadway",
+            "concrete yard",
+            "impervious pavement",
+            "tarred path",
+            "asphalt parking"
+          ],
+          [
+            "building"
+          ],
+          [
+            "low vegetation",
+            "grass",
+            "bushes",
+            "shrubbery",
+            "lawn",
+            "grassland",
+            "bush",
+            "herbaceous",
+            "herb patch",
+            "undergrowth patch"
+          ],
+          [
+            "tree",
+            "pine tree",
+            "coniferous tree",
+            "evergreen tree"
+          ],
+          [
+            "car",
+            "automobile",
+            "minivan",
+            "city car"
+          ],
+          [
+            "clutter",
+            "cluttered area",
+            "cluttered space",
+            "cluttered room",
+            "cluttered floor",
+            "cluttered yard"
+          ]
+        ]
+      },
+      "selected_counts": {
+        "potsdam": [
+          12,
+          1,
+          10,
+          4,
+          4,
+          6
+        ]
+      }
+    },
+    "udd5": {
+      "candidate_file": "udd5.json",
+      "candidate_sha256": "f182a45e8bf993c6693184d0c1382e5ad88f5f69963f1c6a4c94a26fb090059d",
+      "selected_file": "selected/udd5.json",
+      "selected_sha256": "10bde448a3cdf26ddaee6253b5713800b6f713e34f14ba82fe7c23ecf14adc99",
+      "classes": [
+        {
+          "name": "vegetation",
+          "synonyms": [
+            "vegetation",
+            "tree canopy",
+            "grass field",
+            "forest area",
+            "shrubbery",
+            "bushes",
+            "vineyard",
+            "crop field",
+            "meadow",
+            "undergrowth",
+            "woodland",
+            "hedge row",
+            "orchard",
+            "palm grove",
+            "reeds",
+            "ferns",
+            "alpine meadow",
+            "marsh vegetation",
+            "aquatic plants",
+            "tropical jungle"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building",
+            "skyscraper",
+            "apartment building",
+            "house",
+            "church",
+            "factory",
+            "museum",
+            "office building",
+            "residential complex",
+            "concrete structure",
+            "tower block",
+            "public building",
+            "industrial plant",
+            "government building",
+            "hotel",
+            "library",
+            "school",
+            "retail center",
+            "shopping mall",
+            "airport terminal"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road",
+            "highway lane",
+            "street intersection",
+            "paved path",
+            "freeway ramp",
+            "sidewalk border",
+            "driveway entrance",
+            "road sign",
+            "bridge roadway",
+            "tarmac surface",
+            "road divider",
+            "cul-de-sac end",
+            "road tunnel exit",
+            "roadside marker",
+            "road curve bend",
+            "road shoulder",
+            "road overpass",
+            "road construction",
+            "road traffic light",
+            "road bridge support"
+          ]
+        },
+        {
+          "name": "vehicle",
+          "synonyms": [
+            "vehicle",
+            "car on road",
+            "bus in station",
+            "truck on highway",
+            "motorcycle on street",
+            "bike in park",
+            "suv in parking lot",
+            "ambulance on emergency",
+            "taxi on city street",
+            "van in driveway",
+            "boat in harbor",
+            "train on tracks",
+            "helicopter in sky",
+            "airplane on runway",
+            "bus in school",
+            "truck in warehouse",
+            "motorcycle in garage",
+            "bike in workshop",
+            "suv in forest",
+            "ambulance in hospital"
+          ]
+        },
+        {
+          "name": "other",
+          "synonyms": [
+            "other",
+            "streetlight pole",
+            "utility box",
+            "parking meter",
+            "signpost",
+            "trash can",
+            "sidewalk",
+            "bench",
+            "fence",
+            "tree stump",
+            "bush",
+            "dirt patch",
+            "grass clump",
+            "water fountain",
+            "fire hydrant",
+            "street sign",
+            "street lamp",
+            "streetlight",
+            "sidewalk crack",
+            "curb"
+          ]
+        }
+      ],
+      "selected_alias_groups": {
+        "udd5": [
+          [
+            "vegetation",
+            "tree canopy",
+            "grass field",
+            "forest area",
+            "shrubbery",
+            "bushes",
+            "meadow",
+            "hedge row",
+            "orchard",
+            "marsh vegetation",
+            "aquatic plants"
+          ],
+          [
+            "building"
+          ],
+          [
+            "road",
+            "street intersection",
+            "paved path",
+            "driveway entrance",
+            "tarmac surface",
+            "cul-de-sac end",
+            "road curve bend"
+          ],
+          [
+            "vehicle",
+            "bus in station",
+            "truck on highway",
+            "suv in parking lot",
+            "ambulance on emergency",
+            "van in driveway",
+            "train on tracks",
+            "bus in school",
+            "truck in warehouse"
+          ],
+          [
+            "other",
+            "utility box",
+            "signpost",
+            "sidewalk",
+            "dirt patch",
+            "water fountain",
+            "street sign",
+            "street lamp",
+            "streetlight"
+          ]
+        ]
+      },
+      "selected_counts": {
+        "udd5": [
+          11,
+          1,
+          7,
+          9,
+          9
+        ]
+      }
+    },
+    "oem": {
+      "candidate_file": "oem.json",
+      "candidate_sha256": "13d86beb1d7fca1135c5d6571fd7461cabcf238588a7f3d697c961c232a77705",
+      "selected_file": "selected/oem.json",
+      "selected_sha256": "be6a2e4fe6231efd1ef7c391a8501a2d3028768f31fd58e7cb28207a3d965354",
+      "classes": [
+        {
+          "name": "bareland",
+          "synonyms": [
+            "bareland",
+            "desert landscape",
+            "arid terrain",
+            "open plain",
+            "drought land",
+            "barren field",
+            "unvegetated area",
+            "dry pasture",
+            "sparse vegetation",
+            "wasteland expanse",
+            "bare earth",
+            "uninhabited region",
+            "dry grassland",
+            "scattered shrubs",
+            "bare soil",
+            "unpopulated area",
+            "dry savanna",
+            "barren plateau",
+            "unvegetated desert",
+            "dry pastureland"
+          ]
+        },
+        {
+          "name": "rangeland",
+          "synonyms": [
+            "rangeland",
+            "grassland pasture",
+            "open grazing area",
+            "wildlife habitat",
+            "dry grass field",
+            "herbivore range",
+            "unimproved land",
+            "prairie landscape",
+            "sheep grazing land",
+            "deer hunting ground",
+            "cow ranch pasture",
+            "deer park reserve",
+            "wild animal preserve",
+            "bison roaming area",
+            "deer hunting zone",
+            "sheep farming land",
+            "wildlife sanctuary",
+            "pastoral open land",
+            "wild animal grazing area",
+            "deer range landscape"
+          ]
+        },
+        {
+          "name": "developed space",
+          "synonyms": [
+            "developed space",
+            "urban area",
+            "city block",
+            "suburb development",
+            "residential district",
+            "high-rise complex",
+            "commercial zone",
+            "industrial park",
+            "parking lot",
+            "shopping mall",
+            "office building",
+            "apartment complex",
+            "condominium tower",
+            "retail center",
+            "resort hotel",
+            "residential neighborhood",
+            "mixed-use development",
+            "residential complex",
+            "urban sprawl",
+            "residential tract"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road",
+            "highway",
+            "freeway",
+            "sidewalk",
+            "driveway",
+            "pavement",
+            "street",
+            "alley",
+            "lane",
+            "turnpike",
+            "expressway",
+            "service road",
+            "service lane",
+            "service drive",
+            "service street",
+            "service alley",
+            "road intersection",
+            "road bridge",
+            "road curve",
+            "road junction"
+          ]
+        },
+        {
+          "name": "tree",
+          "synonyms": [
+            "tree",
+            "forest canopy",
+            "leafy foliage",
+            "tall trunk",
+            "branch network",
+            "canopy layer",
+            "woodland area",
+            "shade cover",
+            "greenery mass",
+            "tree line",
+            "wooded area",
+            "shrubbery border",
+            "woodland edge",
+            "tree cluster",
+            "leafy crown",
+            "wooded grove",
+            "tree ring",
+            "wooded patch",
+            "tree trunk",
+            "wooded clearing"
+          ]
+        },
+        {
+          "name": "water",
+          "synonyms": [
+            "water",
+            "ocean water",
+            "river water",
+            "lake water",
+            "pond water",
+            "stream water",
+            "spring water",
+            "sea water",
+            "fountain water",
+            "swimming pool water",
+            "rain water",
+            "cloud water",
+            "snow water",
+            "ice water",
+            "waterfall water",
+            "water source",
+            "water body",
+            "water surface",
+            "water flow",
+            "water vapor"
+          ]
+        },
+        {
+          "name": "agriculture land",
+          "synonyms": [
+            "agriculture land",
+            "farmland",
+            "crop field",
+            "pasture land",
+            "agricultural plot",
+            "farm land",
+            "agricultural area",
+            "cultivated field",
+            "agricultural zone",
+            "agricultural region",
+            "agricultural landscape",
+            "agricultural terrain",
+            "agricultural site",
+            "agricultural patch",
+            "agricultural space",
+            "agricultural field",
+            "agricultural pasture",
+            "agricultural crop",
+            "agricultural soil",
+            "agricultural crop field"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building",
+            "skyscraper",
+            "apartment building",
+            "house",
+            "factory",
+            "office building",
+            "church",
+            "museum",
+            "residential complex",
+            "concrete structure",
+            "tower block",
+            "industrial plant",
+            "public building",
+            "retail center",
+            "hotel",
+            "library",
+            "school",
+            "government building",
+            "hospital",
+            "airport terminal"
+          ]
+        }
+      ],
+      "selected_alias_groups": {
+        "oem": [
+          [
+            "bareland",
+            "barren field",
+            "unvegetated area",
+            "wasteland expanse",
+            "bare earth",
+            "uninhabited region",
+            "unpopulated area",
+            "unvegetated desert"
+          ],
+          [
+            "rangeland",
+            "grassland pasture",
+            "open grazing area",
+            "dry grass field",
+            "unimproved land",
+            "prairie landscape",
+            "sheep grazing land",
+            "sheep farming land",
+            "pastoral open land",
+            "wild animal grazing area",
+            "deer range landscape"
+          ],
+          [
+            "developed space",
+            "urban area",
+            "city block",
+            "suburb development",
+            "residential district",
+            "high-rise complex",
+            "commercial zone",
+            "industrial park",
+            "parking lot",
+            "apartment complex",
+            "residential neighborhood",
+            "mixed-use development",
+            "residential complex",
+            "urban sprawl",
+            "residential tract"
+          ],
+          [
+            "road",
+            "service road",
+            "road intersection",
+            "road junction"
+          ],
+          [
+            "tree",
+            "forest canopy",
+            "branch network",
+            "woodland area",
+            "greenery mass",
+            "tree line",
+            "tree cluster"
+          ],
+          [
+            "water",
+            "river water",
+            "lake water",
+            "pond water",
+            "swimming pool water",
+            "water body"
+          ],
+          [
+            "agriculture land",
+            "crop field",
+            "cultivated field",
+            "agricultural landscape",
+            "agricultural field",
+            "agricultural crop field"
+          ],
+          [
+            "building",
+            "factory",
+            "office building",
+            "church",
+            "residential complex",
+            "tower block",
+            "industrial plant",
+            "public building",
+            "hotel",
+            "hospital"
+          ]
+        ]
+      },
+      "selected_counts": {
+        "oem": [
+          8,
+          11,
+          15,
+          4,
+          7,
+          6,
+          6,
+          10
+        ]
+      }
+    },
+    "loveda": {
+      "candidate_file": "loveda.json",
+      "candidate_sha256": "ef79e15efae65eb3d41e004028b6e9242e0c759d9081c78cec1dc8626d0ce9d3",
+      "selected_file": "selected/loveda.json",
+      "selected_sha256": "a022570e7351aba8bea7caf9a7a88fc29587ee3b67d877f75f4d056a2a398ca1",
+      "classes": [
+        {
+          "name": "background",
+          "synonyms": [
+            "background",
+            "sky backdrop",
+            "horizon view",
+            "empty space",
+            "cloudy expanse",
+            "open field",
+            "desert landscape",
+            "mountain range",
+            "ocean horizon",
+            "forest silhouette",
+            "city skyline",
+            "urban sprawl",
+            "field of grass",
+            "tree line",
+            "roadside scenery",
+            "water surface",
+            "barren land",
+            "farm field",
+            "building facade",
+            "road sign"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building",
+            "skyscraper",
+            "residential building",
+            "office tower",
+            "factory structure",
+            "church spire",
+            "apartment block",
+            "mansion facade",
+            "library building",
+            "school campus",
+            "hospital complex",
+            "hotel exterior",
+            "concrete fortress",
+            "towering edifice",
+            "industrial plant",
+            "government building",
+            "village church",
+            "urban skyline",
+            "retail center",
+            "civic center"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road",
+            "highway lane",
+            "pavement strip",
+            "street surface",
+            "roadway path",
+            "freeway corridor",
+            "sidewalk border",
+            "driveway entrance",
+            "alleys network",
+            "interstate highway",
+            "country road",
+            "urban street",
+            "motorway stretch",
+            "expressway section",
+            "rural lane",
+            "city avenue",
+            "service road",
+            "parking lot access",
+            "residential street",
+            "motorcycle track"
+          ]
+        },
+        {
+          "name": "water",
+          "synonyms": [
+            "water",
+            "ocean water",
+            "river water",
+            "lake water",
+            "sea water",
+            "pond water",
+            "stream water",
+            "spring water",
+            "fountain water",
+            "swimming pool water",
+            "rain water",
+            "cloud water",
+            "ice water",
+            "snow water",
+            "raindrop water",
+            "wave water",
+            "tide water",
+            "bath water",
+            "shower water",
+            "drain water"
+          ]
+        },
+        {
+          "name": "barren",
+          "synonyms": [
+            "barren",
+            "bare land",
+            "deserted area",
+            "dry terrain",
+            "uninhabited place",
+            "wasteland",
+            "arid landscape",
+            "barren field",
+            "empty pasture",
+            "scant vegetation",
+            "bare soil",
+            "drought-stricken area",
+            "barren hillside",
+            "sparse vegetation",
+            "barren wasteland",
+            "dry desert",
+            "barren plain",
+            "barren mountain",
+            "barren valley",
+            "barren plateau"
+          ]
+        },
+        {
+          "name": "tree",
+          "synonyms": [
+            "tree",
+            "forest canopy",
+            "oak tree",
+            "pine tree",
+            "deciduous tree",
+            "coniferous tree",
+            "leafy tree",
+            "shade tree",
+            "broadleaf tree",
+            "evergreen tree",
+            "tree trunk",
+            "tree branch",
+            "tree bark",
+            "tree stump",
+            "tree ring",
+            "tree shadow",
+            "tree silhouette",
+            "tree foliage",
+            "tree crown",
+            "tree canopy"
+          ]
+        },
+        {
+          "name": "farm",
+          "synonyms": [
+            "farm",
+            "farm field",
+            "farm animal",
+            "farm equipment",
+            "farmhouse",
+            "farming plot",
+            "agricultural land",
+            "farmland",
+            "farm market",
+            "farm building",
+            "farm machinery",
+            "farm produce",
+            "farmstead",
+            "farm crop",
+            "farm gate",
+            "farm shed",
+            "farm pond",
+            "farm road",
+            "farm fence",
+            "farm barn"
+          ]
+        }
+      ],
+      "selected_alias_groups": {
+        "P": [
+          [
+            "building",
+            "skyscraper",
+            "residential building",
+            "factory structure",
+            "apartment block",
+            "hospital complex",
+            "urban skyline"
+          ],
+          [
+            "road",
+            "service road"
+          ],
+          [
+            "water",
+            "lake water",
+            "pond water"
+          ],
+          [
+            "barren",
+            "bare land",
+            "dry terrain",
+            "uninhabited place",
+            "wasteland",
+            "barren field",
+            "bare soil",
+            "barren wasteland",
+            "barren plain"
+          ],
+          [
+            "tree",
+            "leafy tree",
+            "shade tree",
+            "tree shadow",
+            "tree canopy"
+          ],
+          [
+            "farm",
+            "farm field",
+            "farming plot",
+            "agricultural land",
+            "farmland",
+            "farm crop"
+          ]
+        ],
+        "D": [
+          [
+            "background",
+            "horizon view",
+            "empty space",
+            "open field",
+            "city skyline",
+            "urban sprawl",
+            "field of grass",
+            "tree line",
+            "barren land",
+            "farm field",
+            "building facade",
+            "road sign"
+          ],
+          [
+            "building",
+            "skyscraper",
+            "residential building",
+            "factory structure",
+            "apartment block",
+            "hospital complex",
+            "urban skyline"
+          ],
+          [
+            "road",
+            "service road"
+          ],
+          [
+            "water",
+            "lake water",
+            "pond water"
+          ],
+          [
+            "barren",
+            "bare land",
+            "deserted area",
+            "dry terrain",
+            "uninhabited place",
+            "wasteland",
+            "barren field",
+            "bare soil",
+            "barren wasteland",
+            "barren plain"
+          ],
+          [
+            "tree",
+            "leafy tree",
+            "shade tree",
+            "tree canopy"
+          ],
+          [
+            "farm",
+            "farm field",
+            "farming plot",
+            "agricultural land",
+            "farmland",
+            "farm crop"
+          ]
+        ]
+      },
+      "selected_counts": {
+        "P": [
+          7,
+          2,
+          3,
+          9,
+          5,
+          6
+        ],
+        "D": [
+          12,
+          7,
+          2,
+          3,
+          10,
+          4,
+          6
+        ]
+      }
+    },
+    "vaihingen": {
+      "candidate_file": "vaihingen.json",
+      "candidate_sha256": "d9dcabb1233e4d62ba079430637ea5e8bf87d0dcfa559183c71d66c7781d0d87",
+      "selected_file": "selected/vaihingen.json",
+      "selected_sha256": "8054b6bcd57c1bec8d658d35e6cffc241cd9e5e0aae43472e607805cf56c0f28",
+      "classes": [
+        {
+          "name": "impervious surface",
+          "synonyms": [
+            "impervious surface",
+            "concrete sidewalk",
+            "asphalt parking lot",
+            "roof top",
+            "concrete driveway",
+            "paved road",
+            "concrete patio",
+            "asphalt street",
+            "concrete floor",
+            "asphalt roof",
+            "concrete wall",
+            "asphalt driveway",
+            "concrete pavement",
+            "asphalt sidewalk",
+            "concrete parking lot",
+            "asphalt roof top",
+            "concrete roof",
+            "concrete street",
+            "concrete roof top",
+            "asphalt surface"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building",
+            "skyscraper",
+            "residential building",
+            "office tower",
+            "factory structure",
+            "church spire",
+            "apartment complex",
+            "mansion facade",
+            "library building",
+            "school campus",
+            "hotel exterior",
+            "concrete block",
+            "brick wall",
+            "metal roof",
+            "glass facade",
+            "wooden frame",
+            "towering spire",
+            "industrial plant",
+            "government building",
+            "retail store"
+          ]
+        },
+        {
+          "name": "low vegetation",
+          "synonyms": [
+            "low vegetation",
+            "grass",
+            "bushes",
+            "weeds",
+            "herbs",
+            "foliage",
+            "undergrowth",
+            "shrubbery",
+            "grassland",
+            "vegetation",
+            "grass tufts",
+            "leafy growth",
+            "ground cover",
+            "greenery",
+            "foliage patches",
+            "brushes",
+            "understory plants",
+            "grass clumps",
+            "leaf litter",
+            "ground cover plants"
+          ]
+        },
+        {
+          "name": "tree",
+          "synonyms": [
+            "tree",
+            "forest canopy",
+            "leafy foliage",
+            "woodland tree",
+            "shade-giving tree",
+            "tall deciduous tree",
+            "evergreen conifer",
+            "branching structure",
+            "canopy layer",
+            "tree trunk",
+            "root system",
+            "tree bark",
+            "tree stump",
+            "tree branch",
+            "tree trunk base",
+            "tree crown",
+            "tree leaf",
+            "tree trunk knot",
+            "tree trunk split",
+            "tree trunk hollow"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car",
+            "automobile",
+            "motor vehicle",
+            "sedan",
+            "sports car",
+            "pickup truck",
+            "convertible",
+            "van",
+            "bus",
+            "truck",
+            "suv",
+            "crossover",
+            "minivan",
+            "compact car",
+            "electric car",
+            "hybrid car",
+            "sports utility vehicle",
+            "station wagon",
+            "cargo van",
+            "city car"
+          ]
+        }
+      ],
+      "selected_alias_groups": {
+        "vaihingen": [
+          [
+            "impervious surface",
+            "asphalt parking lot",
+            "paved road",
+            "asphalt street",
+            "asphalt roof",
+            "asphalt driveway",
+            "concrete pavement",
+            "asphalt sidewalk",
+            "concrete roof",
+            "concrete street",
+            "asphalt surface"
+          ],
+          [
+            "building",
+            "residential building",
+            "apartment complex",
+            "metal roof"
+          ],
+          [
+            "low vegetation",
+            "grass",
+            "bushes",
+            "shrubbery",
+            "grassland",
+            "vegetation",
+            "ground cover",
+            "foliage patches"
+          ],
+          [
+            "tree"
+          ],
+          [
+            "car",
+            "automobile",
+            "van",
+            "minivan"
+          ]
+        ]
+      },
+      "selected_counts": {
+        "vaihingen": [
+          11,
+          4,
+          8,
+          1,
+          4
+        ]
+      }
+    },
+    "landcoverai": {
+      "candidate_file": "landcoverai.json",
+      "candidate_sha256": "e7c1a0f4803d90800650d82e3378c28982b8334d795f727ac80d09af60e0b39d",
+      "selected_file": "selected/landcoverai.json",
+      "selected_sha256": "b9702578bffeb890ecf1edb8a348fca0ad96c474c2a02d5981f65c598aba00f8",
+      "classes": [
+        {
+          "name": "background",
+          "synonyms": [
+            "background",
+            "sky backdrop",
+            "clouds behind",
+            "horizon view",
+            "tree silhouette",
+            "grass field",
+            "mountain range",
+            "ocean waves",
+            "city skyline",
+            "forest canopy",
+            "desert dunes",
+            "urban skyline",
+            "field horizon",
+            "mountain peak",
+            "ocean surface",
+            "cityscape view",
+            "field edge",
+            "desert landscape",
+            "forest clearing",
+            "ocean shore"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building",
+            "skyscraper",
+            "residential building",
+            "office tower",
+            "factory structure",
+            "church spire",
+            "museum facade",
+            "apartment complex",
+            "library building",
+            "school campus",
+            "hotel exterior",
+            "concrete block",
+            "brick wall",
+            "glass facade",
+            "metal roof",
+            "towering spire",
+            "domed roof",
+            "architectural landmark",
+            "modern skyscraper",
+            "historic church"
+          ]
+        },
+        {
+          "name": "woodland",
+          "synonyms": [
+            "woodland",
+            "forest trees",
+            "dense woods",
+            "woodsy area",
+            "tree canopy",
+            "woodland path",
+            "shrubbery growth",
+            "woodland clearing",
+            "leafy forest",
+            "wooded landscape",
+            "bushy terrain",
+            "woodland edge",
+            "woodsy environment",
+            "woodland floor",
+            "woodland wildlife",
+            "woodland shadows",
+            "woodland creatures",
+            "woodland plants",
+            "woodland animals",
+            "woodland scenery"
+          ]
+        },
+        {
+          "name": "water",
+          "synonyms": [
+            "water",
+            "ocean waves",
+            "river stream",
+            "pond water",
+            "lake surface",
+            "sea foam",
+            "raindrops falling",
+            "fountain spray",
+            "swimming pool",
+            "waterfall cascade",
+            "bath tub water",
+            "shower head spray",
+            "water droplets",
+            "water droplet",
+            "stream flow",
+            "pool water",
+            "wave crest",
+            "cloud reflection",
+            "seaweed float",
+            "pond ripple"
+          ]
+        },
+        {
+          "name": "road",
+          "synonyms": [
+            "road",
+            "highway lane",
+            "pavement strip",
+            "street surface",
+            "roadway path",
+            "freeway corridor",
+            "sidewalk border",
+            "driveway entrance",
+            "alleys network",
+            "interstate highway",
+            "motorway stretch",
+            "country road",
+            "urban street",
+            "expressway section",
+            "rural lane",
+            "service road",
+            "overpass bridge",
+            "toll road",
+            "residential street",
+            "freeway exit"
+          ]
+        }
+      ],
+      "selected_alias_groups": {
+        "landcoverai": [
+          [
+            "background",
+            "horizon view",
+            "grass field",
+            "field horizon",
+            "field edge",
+            "forest clearing"
+          ],
+          [
+            "building",
+            "residential building",
+            "factory structure",
+            "apartment complex",
+            "metal roof"
+          ],
+          [
+            "woodland",
+            "tree canopy",
+            "leafy forest",
+            "wooded landscape",
+            "bushy terrain"
+          ],
+          [
+            "water"
+          ],
+          [
+            "road",
+            "country road",
+            "service road"
+          ]
+        ]
+      },
+      "selected_counts": {
+        "landcoverai": [
+          6,
+          5,
+          5,
+          1,
+          3
+        ]
+      }
+    },
+    "flair1": {
+      "candidate_file": "flair1.json",
+      "candidate_sha256": "88889ffe5ac4e5893fbbf59597cb59a7378edb304cd4901004acff66abb83f48",
+      "selected_file": "selected/flair1.json",
+      "selected_sha256": "a828cbd755e008607eac7960ceb719ffec9a062232233d2c661742251a7812bf",
+      "classes": [
+        {
+          "name": "building",
+          "synonyms": [
+            "building",
+            "skyscraper",
+            "residential building",
+            "office tower",
+            "factory structure",
+            "church spire",
+            "apartment complex",
+            "mansion facade",
+            "library building",
+            "school campus",
+            "hospital wing",
+            "hotel tower",
+            "airport terminal",
+            "bank headquarters",
+            "museum exhibit",
+            "concert hall",
+            "theater stage",
+            "library branch",
+            "community center",
+            "church steeple"
+          ]
+        },
+        {
+          "name": "pervious surface",
+          "synonyms": [
+            "pervious surface",
+            "porous ground",
+            "permeable soil",
+            "drainage area",
+            "rainwater absorption",
+            "soil infiltration",
+            "subsurface water",
+            "groundwater recharge",
+            "wetland surface",
+            "marshy terrain",
+            "swampy area",
+            "floodplain surface",
+            "riverbank vegetation",
+            "streamside soil",
+            "ponded water",
+            "wet meadow",
+            "marshy field",
+            "wetland habitat",
+            "swampy landscape",
+            "wetland ecosystem"
+          ]
+        },
+        {
+          "name": "impervious surface",
+          "synonyms": [
+            "impervious surface",
+            "asphalt road",
+            "concrete parking lot",
+            "rooftop solar panel",
+            "concrete sidewalk",
+            "asphalt driveway",
+            "concrete slab",
+            "asphalt roof",
+            "concrete bridge",
+            "asphalt tarmac",
+            "concrete pavement",
+            "asphalt parking garage",
+            "concrete wall",
+            "asphalt tennis court",
+            "concrete floor",
+            "asphalt highway",
+            "concrete foundation",
+            "asphalt parking lot",
+            "concrete driveway",
+            "asphalt surface"
+          ]
+        },
+        {
+          "name": "bare soil",
+          "synonyms": [
+            "bare soil",
+            "bare earth",
+            "dirt ground",
+            "uncovered soil",
+            "naked earth",
+            "ground cover",
+            "loose dirt",
+            "bare ground",
+            "soil layer",
+            "unvegetated soil",
+            "bare earthy area",
+            "uncovered terrain",
+            "bare earthy surface",
+            "naked ground",
+            "bare earthy patch",
+            "uncovered soil patch",
+            "bare earthy spot",
+            "naked ground spot",
+            "uncovered soil area",
+            "bare earthy region"
+          ]
+        },
+        {
+          "name": "water",
+          "synonyms": [
+            "water",
+            "ocean water",
+            "river water",
+            "lake water",
+            "pond water",
+            "stream water",
+            "spring water",
+            "seawater",
+            "rainwater",
+            "groundwater",
+            "swimming pool water",
+            "fountain water",
+            "irrigation water",
+            "drinking water",
+            "stormwater",
+            "wastewater",
+            "sea water",
+            "well water",
+            "riverine water",
+            "tidal water"
+          ]
+        },
+        {
+          "name": "coniferous",
+          "synonyms": [
+            "coniferous",
+            "pine tree",
+            "spruce forest",
+            "cedar grove",
+            "fir plantation",
+            "larch stand",
+            "Douglas fir",
+            "redwood grove",
+            "lodgepole pine",
+            "white spruce",
+            "hemlock thicket",
+            "larch trees",
+            "redwood forest",
+            "Douglas fir trees",
+            "lodgepole pines",
+            "white spruces",
+            "hemlock grove",
+            "larch forest",
+            "redwoods",
+            "Douglas firs"
+          ]
+        },
+        {
+          "name": "deciduous",
+          "synonyms": [
+            "deciduous",
+            "deciduous tree",
+            "deciduous forest",
+            "fall foliage",
+            "autumn leaves",
+            "leaf shedding",
+            "spring buds",
+            "winter bare",
+            "summer green",
+            "fall colors",
+            "leaf litter",
+            "fallen leaves",
+            "deciduous shrub",
+            "deciduous grove",
+            "fall foliage display",
+            "autumn leaf peeping",
+            "deciduous woodland",
+            "fallen leaf carpet",
+            "deciduous canopy",
+            "fall foliage season"
+          ]
+        },
+        {
+          "name": "brushwood",
+          "synonyms": [
+            "brushwood",
+            "thicket of brushwood",
+            "dense brushwood",
+            "brushy area",
+            "brushwood patch",
+            "thicketed brushwood",
+            "brushwood grove",
+            "brushy forest edge",
+            "brushwood thicket",
+            "brushwood clearing",
+            "brushwood stand",
+            "brushwood fringe",
+            "brushwood border",
+            "brushwood cluster",
+            "brushwood mass",
+            "brushwood island",
+            "shrub thickets",
+            "thick shrub growth",
+            "thick shrubbery",
+            "thorny bushes"
+          ]
+        },
+        {
+          "name": "vineyard",
+          "synonyms": [
+            "vineyard",
+            "grape vines",
+            "wine grapes",
+            "vinyard rows",
+            "vineyard plot",
+            "vineyard vines",
+            "vineyard fields",
+            "vineyard landscape",
+            "vineyard vinescape",
+            "vineyard rowscape",
+            "vineyard vineyard",
+            "vineyard grapevines",
+            "vineyard grape vines",
+            "vineyard wine grapes",
+            "vineyard grape vinescape",
+            "grapevines in rows",
+            "rows of grape vines",
+            "vineyard plots",
+            "vineyard field",
+            "vineyard vinescape view"
+          ]
+        },
+        {
+          "name": "herbaceous vegetation",
+          "synonyms": [
+            "herbaceous vegetation",
+            "grassland",
+            "wildflowers",
+            "weeds",
+            "forbs",
+            "lawn",
+            "pasture",
+            "meadow",
+            "prairie",
+            "bushes",
+            "shrubbery",
+            "vegetation",
+            "grass",
+            "herb leaves",
+            "perennial plants",
+            "grass stems",
+            "flower petals",
+            "weed roots",
+            "moss patches",
+            "bunch grass"
+          ]
+        },
+        {
+          "name": "agricultural land",
+          "synonyms": [
+            "agricultural land",
+            "farmland",
+            "crop field",
+            "pasture land",
+            "arable land",
+            "farm plot",
+            "agriculture area",
+            "cultivated ground",
+            "agricultural zone",
+            "agricultural field",
+            "agricultural site",
+            "agricultural region",
+            "agricultural patch",
+            "agricultural plot",
+            "agricultural area",
+            "agricultural space",
+            "farmland pasture",
+            "arable crop field",
+            "farmable area",
+            "agricultural crop"
+          ]
+        },
+        {
+          "name": "plowed land",
+          "synonyms": [
+            "plowed land",
+            "farmland plowed",
+            "fertile field plowed",
+            "cultivated soil",
+            "arable land plowed",
+            "crop field plowed",
+            "agricultural ground plowed",
+            "land under cultivation",
+            "soil tilled",
+            "cropland plowed",
+            "land under tillage",
+            "cultivated pasture",
+            "field with tilled soil",
+            "tillage plot",
+            "farm plot plowed",
+            "land under plow",
+            "tillage area",
+            "farming ground plowed",
+            "arable field plowed",
+            "agricultural area plowed"
+          ]
+        }
+      ],
+      "selected_alias_groups": {
+        "flair1": [
+          [
+            "building",
+            "residential building",
+            "factory structure",
+            "apartment complex",
+            "hospital wing"
+          ],
+          [
+            "pervious surface"
+          ],
+          [
+            "impervious surface",
+            "asphalt road",
+            "asphalt driveway",
+            "concrete slab",
+            "asphalt roof",
+            "asphalt tarmac",
+            "concrete pavement",
+            "asphalt highway",
+            "concrete foundation",
+            "asphalt parking lot",
+            "asphalt surface"
+          ],
+          [
+            "bare soil",
+            "bare earth",
+            "dirt ground"
+          ],
+          [
+            "water",
+            "lake water",
+            "swimming pool water"
+          ],
+          [
+            "coniferous",
+            "pine tree",
+            "fir plantation",
+            "Douglas fir",
+            "white spruce"
+          ],
+          [
+            "deciduous",
+            "deciduous tree",
+            "deciduous forest",
+            "fall foliage",
+            "fall colors",
+            "deciduous grove",
+            "fall foliage display",
+            "autumn leaf peeping",
+            "deciduous woodland",
+            "deciduous canopy",
+            "fall foliage season"
+          ],
+          [
+            "brushwood",
+            "brushwood patch",
+            "brushwood island",
+            "shrub thickets",
+            "thorny bushes"
+          ],
+          [
+            "vineyard",
+            "vineyard fields",
+            "vineyard landscape",
+            "vineyard vineyard",
+            "vineyard field"
+          ],
+          [
+            "herbaceous vegetation",
+            "grassland",
+            "wildflowers",
+            "lawn",
+            "pasture",
+            "meadow",
+            "prairie",
+            "bushes",
+            "shrubbery",
+            "vegetation",
+            "grass",
+            "perennial plants",
+            "grass stems",
+            "flower petals",
+            "moss patches"
+          ],
+          [
+            "agricultural land",
+            "agricultural field"
+          ],
+          [
+            "plowed land",
+            "farmland plowed",
+            "fertile field plowed",
+            "cultivated soil",
+            "crop field plowed",
+            "agricultural ground plowed",
+            "cropland plowed",
+            "land under tillage",
+            "field with tilled soil",
+            "tillage plot",
+            "arable field plowed",
+            "agricultural area plowed"
+          ]
+        ]
+      },
+      "selected_counts": {
+        "flair1": [
+          5,
+          1,
+          11,
+          3,
+          3,
+          5,
+          11,
+          5,
+          5,
+          15,
+          2,
+          12
+        ]
+      }
+    }
+  }
+}

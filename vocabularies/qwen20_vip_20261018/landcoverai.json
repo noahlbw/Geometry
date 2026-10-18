@@ -1,0 +1,131 @@
+{
+  "protocol": "Qwen20 candidate bank for VIP paper-rule distillation",
+  "source_generation": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/qwen20_vip_candidates_20261018/generation.json",
+  "classes": [
+    {
+      "name": "background",
+      "synonyms": [
+        "background",
+        "sky backdrop",
+        "clouds behind",
+        "horizon view",
+        "tree silhouette",
+        "grass field",
+        "mountain range",
+        "ocean waves",
+        "city skyline",
+        "forest canopy",
+        "desert dunes",
+        "urban skyline",
+        "field horizon",
+        "mountain peak",
+        "ocean surface",
+        "cityscape view",
+        "field edge",
+        "desert landscape",
+        "forest clearing",
+        "ocean shore"
+      ]
+    },
+    {
+      "name": "building",
+      "synonyms": [
+        "building",
+        "skyscraper",
+        "residential building",
+        "office tower",
+        "factory structure",
+        "church spire",
+        "museum facade",
+        "apartment complex",
+        "library building",
+        "school campus",
+        "hotel exterior",
+        "concrete block",
+        "brick wall",
+        "glass facade",
+        "metal roof",
+        "towering spire",
+        "domed roof",
+        "architectural landmark",
+        "modern skyscraper",
+        "historic church"
+      ]
+    },
+    {
+      "name": "woodland",
+      "synonyms": [
+        "woodland",
+        "forest trees",
+        "dense woods",
+        "woodsy area",
+        "tree canopy",
+        "woodland path",
+        "shrubbery growth",
+        "woodland clearing",
+        "leafy forest",
+        "wooded landscape",
+        "bushy terrain",
+        "woodland edge",
+        "woodsy environment",
+        "woodland floor",
+        "woodland wildlife",
+        "woodland shadows",
+        "woodland creatures",
+        "woodland plants",
+        "woodland animals",
+        "woodland scenery"
+      ]
+    },
+    {
+      "name": "water",
+      "synonyms": [
+        "water",
+        "ocean waves",
+        "river stream",
+        "pond water",
+        "lake surface",
+        "sea foam",
+        "raindrops falling",
+        "fountain spray",
+        "swimming pool",
+        "waterfall cascade",
+        "bath tub water",
+        "shower head spray",
+        "water droplets",
+        "water droplet",
+        "stream flow",
+        "pool water",
+        "wave crest",
+        "cloud reflection",
+        "seaweed float",
+        "pond ripple"
+      ]
+    },
+    {
+      "name": "road",
+      "synonyms": [
+        "road",
+        "highway lane",
+        "pavement strip",
+        "street surface",
+        "roadway path",
+        "freeway corridor",
+        "sidewalk border",
+        "driveway entrance",
+        "alleys network",
+        "interstate highway",
+        "motorway stretch",
+        "country road",
+        "urban street",
+        "expressway section",
+        "rural lane",
+        "service road",
+        "overpass bridge",
+        "toll road",
+        "residential street",
+        "freeway exit"
+      ]
+    }
+  ]
+}

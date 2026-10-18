@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "datasets": [
+    "vdd",
+    "potsdam",
+    "udd5",
+    "oem",
+    "loveda",
+    "vaihingen",
+    "landcoverai",
+    "flair1"
+  ],
+  "completed": [
+    "flair1",
+    "landcoverai",
+    "loveda",
+    "oem",
+    "potsdam",
+    "udd5",
+    "vaihingen",
+    "vdd"
+  ],
+  "failures": {},
+  "repaired_from_selection_cache": true
+}

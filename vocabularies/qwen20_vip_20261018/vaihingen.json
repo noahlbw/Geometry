@@ -1,0 +1,131 @@
+{
+  "protocol": "Qwen20 candidate bank for VIP paper-rule distillation",
+  "source_generation": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/qwen20_vip_candidates_20261018/generation.json",
+  "classes": [
+    {
+      "name": "impervious surface",
+      "synonyms": [
+        "impervious surface",
+        "concrete sidewalk",
+        "asphalt parking lot",
+        "roof top",
+        "concrete driveway",
+        "paved road",
+        "concrete patio",
+        "asphalt street",
+        "concrete floor",
+        "asphalt roof",
+        "concrete wall",
+        "asphalt driveway",
+        "concrete pavement",
+        "asphalt sidewalk",
+        "concrete parking lot",
+        "asphalt roof top",
+        "concrete roof",
+        "concrete street",
+        "concrete roof top",
+        "asphalt surface"
+      ]
+    },
+    {
+      "name": "building",
+      "synonyms": [
+        "building",
+        "skyscraper",
+        "residential building",
+        "office tower",
+        "factory structure",
+        "church spire",
+        "apartment complex",
+        "mansion facade",
+        "library building",
+        "school campus",
+        "hotel exterior",
+        "concrete block",
+        "brick wall",
+        "metal roof",
+        "glass facade",
+        "wooden frame",
+        "towering spire",
+        "industrial plant",
+        "government building",
+        "retail store"
+      ]
+    },
+    {
+      "name": "low vegetation",
+      "synonyms": [
+        "low vegetation",
+        "grass",
+        "bushes",
+        "weeds",
+        "herbs",
+        "foliage",
+        "undergrowth",
+        "shrubbery",
+        "grassland",
+        "vegetation",
+        "grass tufts",
+        "leafy growth",
+        "ground cover",
+        "greenery",
+        "foliage patches",
+        "brushes",
+        "understory plants",
+        "grass clumps",
+        "leaf litter",
+        "ground cover plants"
+      ]
+    },
+    {
+      "name": "tree",
+      "synonyms": [
+        "tree",
+        "forest canopy",
+        "leafy foliage",
+        "woodland tree",
+        "shade-giving tree",
+        "tall deciduous tree",
+        "evergreen conifer",
+        "branching structure",
+        "canopy layer",
+        "tree trunk",
+        "root system",
+        "tree bark",
+        "tree stump",
+        "tree branch",
+        "tree trunk base",
+        "tree crown",
+        "tree leaf",
+        "tree trunk knot",
+        "tree trunk split",
+        "tree trunk hollow"
+      ]
+    },
+    {
+      "name": "car",
+      "synonyms": [
+        "car",
+        "automobile",
+        "motor vehicle",
+        "sedan",
+        "sports car",
+        "pickup truck",
+        "convertible",
+        "van",
+        "bus",
+        "truck",
+        "suv",
+        "crossover",
+        "minivan",
+        "compact car",
+        "electric car",
+        "hybrid car",
+        "sports utility vehicle",
+        "station wagon",
+        "cargo van",
+        "city car"
+      ]
+    }
+  ]
+}

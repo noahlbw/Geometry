@@ -49,13 +49,15 @@ def save(path, row):
 def arguments():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--phase', choices=('smoke', 'diagnostic', 'selection', 'evaluation'), required=True)
-    parser.add_argument('--dataset', choices=(*DATASETS, 'vdd', 'potsdam'), required=True)
+    parser.add_argument('--dataset', choices=(*DATASETS, 'vdd', 'potsdam', 'vaihingen'), required=True)
     for name in ('dinov3-repo', 'checkpoint-dir', 'upstream-root', 'data-root', 'vocabulary-config', 'output-dir', 'reference-json'):
         parser.add_argument('--' + name, required=True)
     parser.add_argument('--source-dir', default='')
     parser.add_argument('--selection-json', default='')
     parser.add_argument('--candidate-reference-json', default='',
                         help='Verified full20-bank result when the VIP reference uses official short queries.')
+    parser.add_argument('--custom-candidate', action='store_true',
+                        help='Allow an explicitly supplied JSON candidate bank whose vocabulary hash differs from the historical reference.')
     parser.add_argument('--vocabulary-source', default='json')
     parser.add_argument('--sample-seed', type=int, default=20260923)
     parser.add_argument('--num-shards', type=int, default=1)
@@ -76,12 +78,18 @@ def sample_protocol(args):
     return all_samples, scored, load_image, load_mask, ref
 
 
-def verify_references(ref, manifest, vocab_sha, settings, commit, groups, names, candidate_ref=None):
+def verify_references(ref, manifest, vocab_sha, settings, commit, groups, names, candidate_ref=None,
+                      custom_candidate=False):
     old = ref['signature']
     if (manifest != old['checkpoint_manifest'] or asdict(settings) != old['settings']
             or commit != old['upstream_commit']):
         raise RuntimeError('Checkpoint/settings differ from reference VIP.')
     if candidate_ref is None:
+        if custom_candidate:
+            # Keep the historical reference as the source of image order,
+            # checkpoints and VIP settings, while explicitly allowing a new
+            # candidate vocabulary for this experiment.
+            return
         if vocab_sha != old['vocabulary_sha256']:
             raise RuntimeError('Vocabulary differs from reference VIP.')
         return
@@ -112,7 +120,8 @@ def make_model(args, scored, ref):
     vocab_sha = hashlib.sha256(path.read_bytes()).hexdigest()
     reference_path = getattr(args, 'candidate_reference_json', '')
     candidate_ref = json.loads(Path(reference_path).read_text()) if reference_path else None
-    verify_references(ref, manifest, vocab_sha, settings, commit, groups, names, candidate_ref)
+    verify_references(ref, manifest, vocab_sha, settings, commit, groups, names, candidate_ref,
+                      custom_candidate=args.custom_candidate)
     model = FiniteVIPObserver(DINOTextSegmenter(config, device=args.device, amp=True), Path(args.upstream_root))
     banks = {p: model.encode_queries(names[p], groups[p]) for p in scored}
     metadata = {}
@@ -126,7 +135,8 @@ def make_model(args, scored, ref):
         conventions=CONVENTIONS, upstream_commit=commit, settings=asdict(settings), vocabulary_sha256=vocab_sha,
         checkpoint_manifest=manifest, query_metadata=metadata, scored_classes=scored, template_count=len(model.templates),
         data_root=str(Path(args.data_root).resolve()), num_shards=args.num_shards,
-        shard_index=args.shard_index, target_label_tuning=False, transductive_all_evaluation_images=True)
+        shard_index=args.shard_index, target_label_tuning=False, transductive_all_evaluation_images=True,
+        custom_candidate=bool(args.custom_candidate), candidate_source=source)
     if candidate_ref is not None:
         signature['candidate_reference'] = dict(implementation=candidate_ref['signature']['implementation'],
             vocabulary_sha256=vocab_sha, sample_keys_sha256=candidate_ref['signature']['sample_keys_sha256'])
