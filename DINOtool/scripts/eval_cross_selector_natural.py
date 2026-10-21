@@ -176,7 +176,7 @@ def make_geov2(args, bank_path, g0):
         dinov3_repo=args.dinov3_repo, upstream_root=args.upstream_root,
         text_cache=cache, device=args.device, compact=True, efficient=True,
         wide_branch='query_slot', query_slot_capacity=24,
-        wide_alias_aggregation='logmeanexp')
+        wide_alias_aggregation=args.wide_alias_aggregation)
     return model
 
 
@@ -287,7 +287,8 @@ def run_geov2_batch(args, bank_paths, phase, g0):
     model = FrozenGeometry(config_path, checkpoint_dir=args.checkpoint_dir,
         dinov3_repo=args.dinov3_repo, upstream_root=args.upstream_root,
         text_cache=cache, device=args.device, compact=True, efficient=True,
-        wide_branch='query_slot', query_slot_capacity=24, wide_alias_aggregation='logmeanexp')
+        wide_branch='query_slot', query_slot_capacity=24,
+        wide_alias_aggregation=args.wide_alias_aggregation)
     from dinotool.query_slot_memory import query_slot_wide_observations
     from dinotool.efficient_deployment import reconstruction, write_dense, restore_and_finalize, GroupedLocalScorer
     from dinotool.natural_static_search import StaticReader
@@ -349,6 +350,10 @@ def main():
     p.add_argument('--dev-keys', default='')
     p.add_argument('--phase', choices=('dev','full'), required=True)
     p.add_argument('--g0', type=float, default=.5)
+    p.add_argument('--wide-alias-aggregation', choices=('logmeanexp', 'logsumexp'),
+                   default='logmeanexp',
+                   help='Alias reduction in the Geov2 QuerySlot wide branch. '
+                        'Use the same bank/configuration when comparing reductions.')
     p.add_argument('--work-root', required=True)
     p.add_argument('--output', required=True)
     p.add_argument('--dinov3-repo', required=True)
