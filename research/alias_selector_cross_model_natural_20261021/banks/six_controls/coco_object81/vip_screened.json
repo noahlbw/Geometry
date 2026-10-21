@@ -1,0 +1,765 @@
+{
+  "dataset": "coco_object81",
+  "classes": [
+    {
+      "name": "background",
+      "synonyms": [
+        "sky",
+        "cloudy sky",
+        "blue sky",
+        "the sky above",
+        "clear sky",
+        "skyline",
+        "atmosphere",
+        "wall",
+        "tree",
+        "wood",
+        "grass",
+        "road",
+        "sea",
+        "river",
+        "mountain",
+        "sands",
+        "desk",
+        "bed",
+        "building",
+        "cloud",
+        "lamp",
+        "door",
+        "window",
+        "wardrobe",
+        "ceiling",
+        "shelf",
+        "curtain",
+        "stair",
+        "floor",
+        "hill",
+        "rail",
+        "fence"
+      ]
+    },
+    {
+      "name": "person",
+      "synonyms": [
+        "person"
+      ]
+    },
+    {
+      "name": "bicycle",
+      "synonyms": [
+        "bicycle"
+      ]
+    },
+    {
+      "name": "car",
+      "synonyms": [
+        "car"
+      ]
+    },
+    {
+      "name": "motorcycle",
+      "synonyms": [
+        "motorcycle",
+        "a motorcycle",
+        "the motorcycle",
+        "motorcycle in a scene",
+        "motorbike in a scene"
+      ]
+    },
+    {
+      "name": "airplane",
+      "synonyms": [
+        "airplane"
+      ]
+    },
+    {
+      "name": "bus",
+      "synonyms": [
+        "bus"
+      ]
+    },
+    {
+      "name": "train",
+      "synonyms": [
+        "train"
+      ]
+    },
+    {
+      "name": "truck",
+      "synonyms": [
+        "truck",
+        "cargo truck",
+        "a truck",
+        "the cargo truck"
+      ]
+    },
+    {
+      "name": "boat",
+      "synonyms": [
+        "boat",
+        "watercraft",
+        "small boat",
+        "sailing boat",
+        "a watercraft",
+        "a small boat",
+        "the watercraft",
+        "visible boat",
+        "visible watercraft",
+        "watercraft in a scene"
+      ]
+    },
+    {
+      "name": "traffic light",
+      "synonyms": [
+        "traffic light"
+      ]
+    },
+    {
+      "name": "fire hydrant",
+      "synonyms": [
+        "fire hydrant",
+        "street fire hydrant",
+        "a street fire hydrant",
+        "the fire hydrant",
+        "the street fire hydrant",
+        "fire hydrant in a scene",
+        "street fire hydrant in a scene"
+      ]
+    },
+    {
+      "name": "stop sign",
+      "synonyms": [
+        "stop sign"
+      ]
+    },
+    {
+      "name": "parking meter",
+      "synonyms": [
+        "parking meter",
+        "street parking meter",
+        "a parking meter",
+        "a street parking meter",
+        "the parking meter",
+        "the street parking meter",
+        "visible parking meter",
+        "visible street parking meter",
+        "visible parking payment meter",
+        "parking meter in view"
+      ]
+    },
+    {
+      "name": "bench",
+      "synonyms": [
+        "bench",
+        "long bench",
+        "a bench",
+        "a long bench",
+        "the seating bench",
+        "bench in the scene",
+        "seating bench in the scene"
+      ]
+    },
+    {
+      "name": "bird",
+      "synonyms": [
+        "bird",
+        "the bird",
+        "bird in a scene",
+        "avian animal in a scene",
+        "feathered bird in a scene",
+        "bird in the scene",
+        "avian animal in the scene",
+        "feathered bird in the scene"
+      ]
+    },
+    {
+      "name": "cat",
+      "synonyms": [
+        "cat"
+      ]
+    },
+    {
+      "name": "dog",
+      "synonyms": [
+        "dog"
+      ]
+    },
+    {
+      "name": "horse",
+      "synonyms": [
+        "horse",
+        "the horse"
+      ]
+    },
+    {
+      "name": "sheep",
+      "synonyms": [
+        "sheep"
+      ]
+    },
+    {
+      "name": "cow",
+      "synonyms": [
+        "cow"
+      ]
+    },
+    {
+      "name": "elephant",
+      "synonyms": [
+        "elephant",
+        "elephant animal",
+        "large elephant",
+        "a elephant animal",
+        "a large elephant",
+        "the elephant",
+        "the elephant animal",
+        "the large elephant",
+        "visible large elephant",
+        "elephant in a scene",
+        "elephant animal in a scene",
+        "large elephant in a scene",
+        "elephant in the scene",
+        "elephant animal in the scene",
+        "large elephant in the scene"
+      ]
+    },
+    {
+      "name": "bear",
+      "synonyms": [
+        "bear"
+      ]
+    },
+    {
+      "name": "zebra",
+      "synonyms": [
+        "zebra",
+        "striped zebra",
+        "zebra animal",
+        "a striped zebra",
+        "a zebra animal",
+        "the striped zebra",
+        "the zebra animal",
+        "visible zebra",
+        "visible striped zebra",
+        "visible zebra animal",
+        "zebra in a scene",
+        "striped zebra in a scene",
+        "zebra animal in a scene",
+        "zebra in the scene",
+        "striped zebra in the scene",
+        "zebra animal in the scene",
+        "striped zebra in view"
+      ]
+    },
+    {
+      "name": "giraffe",
+      "synonyms": [
+        "giraffe"
+      ]
+    },
+    {
+      "name": "backpack",
+      "synonyms": [
+        "backpack"
+      ]
+    },
+    {
+      "name": "umbrella",
+      "synonyms": [
+        "umbrella",
+        "the umbrella",
+        "umbrella in view"
+      ]
+    },
+    {
+      "name": "handbag",
+      "synonyms": [
+        "handbag",
+        "carried handbag",
+        "a handbag",
+        "a purse",
+        "a hand bag",
+        "a carried handbag",
+        "the purse",
+        "the carried handbag",
+        "visible handbag",
+        "handbag in a scene",
+        "purse in a scene",
+        "hand bag in a scene",
+        "carried handbag in a scene"
+      ]
+    },
+    {
+      "name": "tie",
+      "synonyms": [
+        "tie",
+        "a tie"
+      ]
+    },
+    {
+      "name": "suitcase",
+      "synonyms": [
+        "suitcase",
+        "travel suitcase",
+        "luggage case",
+        "a travel suitcase",
+        "the suitcase",
+        "the travel suitcase",
+        "the luggage case",
+        "visible suitcase",
+        "visible travel suitcase",
+        "visible luggage case",
+        "suitcase in a scene",
+        "travel suitcase in a scene",
+        "luggage case in a scene",
+        "suitcase in the scene",
+        "travel suitcase in the scene",
+        "luggage case in the scene",
+        "travel suitcase in view"
+      ]
+    },
+    {
+      "name": "frisbee",
+      "synonyms": [
+        "frisbee",
+        "the frisbee",
+        "frisbee in a scene",
+        "throwing disc in a scene"
+      ]
+    },
+    {
+      "name": "skis",
+      "synonyms": [
+        "skis"
+      ]
+    },
+    {
+      "name": "snowboard",
+      "synonyms": [
+        "snowboard"
+      ]
+    },
+    {
+      "name": "sports ball",
+      "synonyms": [
+        "sports ball"
+      ]
+    },
+    {
+      "name": "kite",
+      "synonyms": [
+        "kite"
+      ]
+    },
+    {
+      "name": "baseball bat",
+      "synonyms": [
+        "baseball bat"
+      ]
+    },
+    {
+      "name": "baseball glove",
+      "synonyms": [
+        "baseball glove"
+      ]
+    },
+    {
+      "name": "skateboard",
+      "synonyms": [
+        "skateboard",
+        "the skateboard"
+      ]
+    },
+    {
+      "name": "surfboard",
+      "synonyms": [
+        "surfboard",
+        "surf board",
+        "a surf board",
+        "surfboard in a scene",
+        "surf board in the scene"
+      ]
+    },
+    {
+      "name": "tennis racket",
+      "synonyms": [
+        "tennis racket"
+      ]
+    },
+    {
+      "name": "bottle",
+      "synonyms": [
+        "bottle",
+        "drink bottle",
+        "a bottle",
+        "a drink bottle",
+        "the bottle",
+        "the drink bottle",
+        "visible bottle",
+        "visible drink bottle",
+        "bottle in a scene",
+        "drink bottle in a scene",
+        "plastic bottle in a scene"
+      ]
+    },
+    {
+      "name": "wine glass",
+      "synonyms": [
+        "wine glass"
+      ]
+    },
+    {
+      "name": "cup",
+      "synonyms": [
+        "cup"
+      ]
+    },
+    {
+      "name": "fork",
+      "synonyms": [
+        "fork",
+        "eating fork",
+        "a fork",
+        "a eating fork",
+        "the eating fork",
+        "visible eating fork",
+        "eating fork in a scene"
+      ]
+    },
+    {
+      "name": "knife",
+      "synonyms": [
+        "knife"
+      ]
+    },
+    {
+      "name": "spoon",
+      "synonyms": [
+        "spoon"
+      ]
+    },
+    {
+      "name": "bowl",
+      "synonyms": [
+        "bowl"
+      ]
+    },
+    {
+      "name": "banana",
+      "synonyms": [
+        "banana"
+      ]
+    },
+    {
+      "name": "apple",
+      "synonyms": [
+        "apple"
+      ]
+    },
+    {
+      "name": "sandwich",
+      "synonyms": [
+        "sandwich"
+      ]
+    },
+    {
+      "name": "orange",
+      "synonyms": [
+        "orange",
+        "citrus orange",
+        "the orange",
+        "the citrus orange",
+        "orange in the scene",
+        "citrus orange in the scene"
+      ]
+    },
+    {
+      "name": "broccoli",
+      "synonyms": [
+        "broccoli",
+        "a broccoli",
+        "the broccoli",
+        "visible broccoli",
+        "visible broccoli vegetable",
+        "visible broccoli florets",
+        "broccoli florets in the scene",
+        "broccoli in view"
+      ]
+    },
+    {
+      "name": "carrot",
+      "synonyms": [
+        "carrot"
+      ]
+    },
+    {
+      "name": "hot dog",
+      "synonyms": [
+        "hot dog"
+      ]
+    },
+    {
+      "name": "pizza",
+      "synonyms": [
+        "pizza"
+      ]
+    },
+    {
+      "name": "donut",
+      "synonyms": [
+        "donut"
+      ]
+    },
+    {
+      "name": "cake",
+      "synonyms": [
+        "cake"
+      ]
+    },
+    {
+      "name": "chair",
+      "synonyms": [
+        "chair",
+        "seating chair",
+        "individual chair",
+        "a chair",
+        "a seating chair",
+        "a individual chair",
+        "the individual chair",
+        "chair in a scene",
+        "seat chair in a scene",
+        "seating chair in a scene"
+      ]
+    },
+    {
+      "name": "couch",
+      "synonyms": [
+        "couch",
+        "a couch",
+        "the couch",
+        "visible couch"
+      ]
+    },
+    {
+      "name": "potted plant",
+      "synonyms": [
+        "potted plant",
+        "plant in a pot",
+        "pot plant",
+        "a potted plant",
+        "a plant in a pot",
+        "a pot plant",
+        "the potted plant",
+        "the plant in a pot",
+        "the pot plant",
+        "potted plant in a scene",
+        "plant in a pot in a scene",
+        "pot plant in a scene",
+        "potted plant in the scene",
+        "plant in a pot in the scene",
+        "pot plant in the scene",
+        "potted plant in view",
+        "plant in a pot in view"
+      ]
+    },
+    {
+      "name": "bed",
+      "synonyms": [
+        "bed",
+        "sleeping bed",
+        "a sleeping bed",
+        "the sleeping bed",
+        "visible sleeping bed",
+        "bed furniture in a scene"
+      ]
+    },
+    {
+      "name": "dining table",
+      "synonyms": [
+        "dining table",
+        "meal table",
+        "dinner table",
+        "a dining table",
+        "a meal table",
+        "a dinner table",
+        "the dining table",
+        "the meal table",
+        "the dinner table",
+        "visible meal table",
+        "visible dinner table",
+        "dining table in a scene",
+        "meal table in a scene",
+        "dinner table in a scene",
+        "dining table in the scene",
+        "meal table in the scene",
+        "dinner table in the scene",
+        "meal table in view"
+      ]
+    },
+    {
+      "name": "toilet",
+      "synonyms": [
+        "toilet",
+        "the toilet",
+        "visible toilet",
+        "toilet in a scene",
+        "toilet in the scene"
+      ]
+    },
+    {
+      "name": "tv",
+      "synonyms": [
+        "tv",
+        "television",
+        "the television set",
+        "television set in a scene"
+      ]
+    },
+    {
+      "name": "laptop",
+      "synonyms": [
+        "laptop",
+        "laptop computer",
+        "notebook computer",
+        "a laptop",
+        "a laptop computer",
+        "a notebook computer",
+        "the laptop",
+        "the laptop computer",
+        "visible laptop computer",
+        "visible notebook computer",
+        "laptop in a scene",
+        "laptop computer in a scene",
+        "notebook computer in a scene",
+        "laptop in the scene",
+        "laptop computer in the scene",
+        "notebook computer in the scene",
+        "laptop computer in view"
+      ]
+    },
+    {
+      "name": "mouse",
+      "synonyms": [
+        "mouse"
+      ]
+    },
+    {
+      "name": "remote",
+      "synonyms": [
+        "remote"
+      ]
+    },
+    {
+      "name": "keyboard",
+      "synonyms": [
+        "keyboard"
+      ]
+    },
+    {
+      "name": "cell phone",
+      "synonyms": [
+        "cell phone"
+      ]
+    },
+    {
+      "name": "microwave",
+      "synonyms": [
+        "microwave"
+      ]
+    },
+    {
+      "name": "oven",
+      "synonyms": [
+        "oven"
+      ]
+    },
+    {
+      "name": "toaster",
+      "synonyms": [
+        "toaster"
+      ]
+    },
+    {
+      "name": "sink",
+      "synonyms": [
+        "sink",
+        "wash basin",
+        "a sink",
+        "a wash basin",
+        "the wash basin",
+        "visible wash basin",
+        "wash basin in a scene",
+        "wash basin in the scene",
+        "wash basin in view"
+      ]
+    },
+    {
+      "name": "refrigerator",
+      "synonyms": [
+        "refrigerator"
+      ]
+    },
+    {
+      "name": "book",
+      "synonyms": [
+        "book"
+      ]
+    },
+    {
+      "name": "clock",
+      "synonyms": [
+        "clock",
+        "time clock",
+        "a time clock",
+        "the clock",
+        "the time clock",
+        "clock in a scene",
+        "time clock in a scene",
+        "clock in the scene",
+        "time clock in the scene"
+      ]
+    },
+    {
+      "name": "vase",
+      "synonyms": [
+        "vase"
+      ]
+    },
+    {
+      "name": "scissors",
+      "synonyms": [
+        "scissors",
+        "the scissors",
+        "visible scissors",
+        "cutting scissors in the scene",
+        "scissors in view"
+      ]
+    },
+    {
+      "name": "teddy bear",
+      "synonyms": [
+        "teddy bear"
+      ]
+    },
+    {
+      "name": "hair drier",
+      "synonyms": [
+        "hair drier"
+      ]
+    },
+    {
+      "name": "toothbrush",
+      "synonyms": [
+        "toothbrush"
+      ]
+    }
+  ],
+  "template": "ImageNet80",
+  "background_rule": "fixed_official_background",
+  "selector_family": "vip_screened",
+  "description": "Frozen VIP VG/SC screened bank from the shared Qwen20 pool. Background standardized to official for VOC/COCO.",
+  "sources": [
+    "C:\\Users\\AH\\Documents\\ChatGPT\\OVSS\\artifacts\\geometry_github\\research\\alias_selector_cross_model_natural_20261021\\vip\\coco_object81\\vip_bank.json",
+    "C:\\Users\\AH\\Documents\\ChatGPT\\OVSS\\artifacts\\geometry_github\\research\\alias_selector_cross_model_natural_20261021\\candidate_pools\\coco_object81.json"
+  ]
+}

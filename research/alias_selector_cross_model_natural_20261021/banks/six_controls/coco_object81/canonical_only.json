@@ -1,0 +1,498 @@
+{
+  "dataset": "coco_object81",
+  "classes": [
+    {
+      "name": "background",
+      "synonyms": [
+        "background"
+      ]
+    },
+    {
+      "name": "person",
+      "synonyms": [
+        "person"
+      ]
+    },
+    {
+      "name": "bicycle",
+      "synonyms": [
+        "bicycle"
+      ]
+    },
+    {
+      "name": "car",
+      "synonyms": [
+        "car"
+      ]
+    },
+    {
+      "name": "motorcycle",
+      "synonyms": [
+        "motorcycle"
+      ]
+    },
+    {
+      "name": "airplane",
+      "synonyms": [
+        "airplane"
+      ]
+    },
+    {
+      "name": "bus",
+      "synonyms": [
+        "bus"
+      ]
+    },
+    {
+      "name": "train",
+      "synonyms": [
+        "train"
+      ]
+    },
+    {
+      "name": "truck",
+      "synonyms": [
+        "truck"
+      ]
+    },
+    {
+      "name": "boat",
+      "synonyms": [
+        "boat"
+      ]
+    },
+    {
+      "name": "traffic light",
+      "synonyms": [
+        "traffic light"
+      ]
+    },
+    {
+      "name": "fire hydrant",
+      "synonyms": [
+        "fire hydrant"
+      ]
+    },
+    {
+      "name": "stop sign",
+      "synonyms": [
+        "stop sign"
+      ]
+    },
+    {
+      "name": "parking meter",
+      "synonyms": [
+        "parking meter"
+      ]
+    },
+    {
+      "name": "bench",
+      "synonyms": [
+        "bench"
+      ]
+    },
+    {
+      "name": "bird",
+      "synonyms": [
+        "bird"
+      ]
+    },
+    {
+      "name": "cat",
+      "synonyms": [
+        "cat"
+      ]
+    },
+    {
+      "name": "dog",
+      "synonyms": [
+        "dog"
+      ]
+    },
+    {
+      "name": "horse",
+      "synonyms": [
+        "horse"
+      ]
+    },
+    {
+      "name": "sheep",
+      "synonyms": [
+        "sheep"
+      ]
+    },
+    {
+      "name": "cow",
+      "synonyms": [
+        "cow"
+      ]
+    },
+    {
+      "name": "elephant",
+      "synonyms": [
+        "elephant"
+      ]
+    },
+    {
+      "name": "bear",
+      "synonyms": [
+        "bear"
+      ]
+    },
+    {
+      "name": "zebra",
+      "synonyms": [
+        "zebra"
+      ]
+    },
+    {
+      "name": "giraffe",
+      "synonyms": [
+        "giraffe"
+      ]
+    },
+    {
+      "name": "backpack",
+      "synonyms": [
+        "backpack"
+      ]
+    },
+    {
+      "name": "umbrella",
+      "synonyms": [
+        "umbrella"
+      ]
+    },
+    {
+      "name": "handbag",
+      "synonyms": [
+        "handbag"
+      ]
+    },
+    {
+      "name": "tie",
+      "synonyms": [
+        "tie"
+      ]
+    },
+    {
+      "name": "suitcase",
+      "synonyms": [
+        "suitcase"
+      ]
+    },
+    {
+      "name": "frisbee",
+      "synonyms": [
+        "frisbee"
+      ]
+    },
+    {
+      "name": "skis",
+      "synonyms": [
+        "skis"
+      ]
+    },
+    {
+      "name": "snowboard",
+      "synonyms": [
+        "snowboard"
+      ]
+    },
+    {
+      "name": "sports ball",
+      "synonyms": [
+        "sports ball"
+      ]
+    },
+    {
+      "name": "kite",
+      "synonyms": [
+        "kite"
+      ]
+    },
+    {
+      "name": "baseball bat",
+      "synonyms": [
+        "baseball bat"
+      ]
+    },
+    {
+      "name": "baseball glove",
+      "synonyms": [
+        "baseball glove"
+      ]
+    },
+    {
+      "name": "skateboard",
+      "synonyms": [
+        "skateboard"
+      ]
+    },
+    {
+      "name": "surfboard",
+      "synonyms": [
+        "surfboard"
+      ]
+    },
+    {
+      "name": "tennis racket",
+      "synonyms": [
+        "tennis racket"
+      ]
+    },
+    {
+      "name": "bottle",
+      "synonyms": [
+        "bottle"
+      ]
+    },
+    {
+      "name": "wine glass",
+      "synonyms": [
+        "wine glass"
+      ]
+    },
+    {
+      "name": "cup",
+      "synonyms": [
+        "cup"
+      ]
+    },
+    {
+      "name": "fork",
+      "synonyms": [
+        "fork"
+      ]
+    },
+    {
+      "name": "knife",
+      "synonyms": [
+        "knife"
+      ]
+    },
+    {
+      "name": "spoon",
+      "synonyms": [
+        "spoon"
+      ]
+    },
+    {
+      "name": "bowl",
+      "synonyms": [
+        "bowl"
+      ]
+    },
+    {
+      "name": "banana",
+      "synonyms": [
+        "banana"
+      ]
+    },
+    {
+      "name": "apple",
+      "synonyms": [
+        "apple"
+      ]
+    },
+    {
+      "name": "sandwich",
+      "synonyms": [
+        "sandwich"
+      ]
+    },
+    {
+      "name": "orange",
+      "synonyms": [
+        "orange"
+      ]
+    },
+    {
+      "name": "broccoli",
+      "synonyms": [
+        "broccoli"
+      ]
+    },
+    {
+      "name": "carrot",
+      "synonyms": [
+        "carrot"
+      ]
+    },
+    {
+      "name": "hot dog",
+      "synonyms": [
+        "hot dog"
+      ]
+    },
+    {
+      "name": "pizza",
+      "synonyms": [
+        "pizza"
+      ]
+    },
+    {
+      "name": "donut",
+      "synonyms": [
+        "donut"
+      ]
+    },
+    {
+      "name": "cake",
+      "synonyms": [
+        "cake"
+      ]
+    },
+    {
+      "name": "chair",
+      "synonyms": [
+        "chair"
+      ]
+    },
+    {
+      "name": "couch",
+      "synonyms": [
+        "couch"
+      ]
+    },
+    {
+      "name": "potted plant",
+      "synonyms": [
+        "potted plant"
+      ]
+    },
+    {
+      "name": "bed",
+      "synonyms": [
+        "bed"
+      ]
+    },
+    {
+      "name": "dining table",
+      "synonyms": [
+        "dining table"
+      ]
+    },
+    {
+      "name": "toilet",
+      "synonyms": [
+        "toilet"
+      ]
+    },
+    {
+      "name": "tv",
+      "synonyms": [
+        "tv"
+      ]
+    },
+    {
+      "name": "laptop",
+      "synonyms": [
+        "laptop"
+      ]
+    },
+    {
+      "name": "mouse",
+      "synonyms": [
+        "mouse"
+      ]
+    },
+    {
+      "name": "remote",
+      "synonyms": [
+        "remote"
+      ]
+    },
+    {
+      "name": "keyboard",
+      "synonyms": [
+        "keyboard"
+      ]
+    },
+    {
+      "name": "cell phone",
+      "synonyms": [
+        "cell phone"
+      ]
+    },
+    {
+      "name": "microwave",
+      "synonyms": [
+        "microwave"
+      ]
+    },
+    {
+      "name": "oven",
+      "synonyms": [
+        "oven"
+      ]
+    },
+    {
+      "name": "toaster",
+      "synonyms": [
+        "toaster"
+      ]
+    },
+    {
+      "name": "sink",
+      "synonyms": [
+        "sink"
+      ]
+    },
+    {
+      "name": "refrigerator",
+      "synonyms": [
+        "refrigerator"
+      ]
+    },
+    {
+      "name": "book",
+      "synonyms": [
+        "book"
+      ]
+    },
+    {
+      "name": "clock",
+      "synonyms": [
+        "clock"
+      ]
+    },
+    {
+      "name": "vase",
+      "synonyms": [
+        "vase"
+      ]
+    },
+    {
+      "name": "scissors",
+      "synonyms": [
+        "scissors"
+      ]
+    },
+    {
+      "name": "teddy bear",
+      "synonyms": [
+        "teddy bear"
+      ]
+    },
+    {
+      "name": "hair drier",
+      "synonyms": [
+        "hair drier"
+      ]
+    },
+    {
+      "name": "toothbrush",
+      "synonyms": [
+        "toothbrush"
+      ]
+    }
+  ],
+  "template": "ImageNet80",
+  "background_rule": "canonical_only",
+  "selector_family": "canonical_only",
+  "description": "One candidate-pool canonical expression per class; strict 1-expression control.",
+  "sources": [
+    "C:\\Users\\AH\\Documents\\ChatGPT\\OVSS\\artifacts\\geometry_github\\research\\alias_selector_cross_model_natural_20261021\\candidate_pools\\coco_object81.json"
+  ]
+}

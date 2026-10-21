@@ -1,0 +1,588 @@
+{
+  "dataset": "coco_object81",
+  "classes": [
+    {
+      "name": "background",
+      "synonyms": [
+        "sky",
+        "cloudy sky",
+        "blue sky",
+        "the sky above",
+        "clear sky",
+        "skyline",
+        "atmosphere",
+        "wall",
+        "tree",
+        "wood",
+        "grass",
+        "road",
+        "sea",
+        "river",
+        "mountain",
+        "sands",
+        "desk",
+        "bed",
+        "building",
+        "cloud",
+        "lamp",
+        "door",
+        "window",
+        "wardrobe",
+        "ceiling",
+        "shelf",
+        "curtain",
+        "stair",
+        "floor",
+        "hill",
+        "rail",
+        "fence"
+      ]
+    },
+    {
+      "name": "person",
+      "synonyms": [
+        "person",
+        "people",
+        "human"
+      ]
+    },
+    {
+      "name": "bicycle",
+      "synonyms": [
+        "bicycle",
+        "pedal bicycle",
+        "bike"
+      ]
+    },
+    {
+      "name": "car",
+      "synonyms": [
+        "car",
+        "visible automobile",
+        "a passenger car"
+      ]
+    },
+    {
+      "name": "motorcycle",
+      "synonyms": [
+        "motorcycle",
+        "motorbike in view",
+        "motorized bike"
+      ]
+    },
+    {
+      "name": "airplane",
+      "synonyms": [
+        "airplane"
+      ]
+    },
+    {
+      "name": "bus",
+      "synonyms": [
+        "bus",
+        "passenger bus",
+        "the bus"
+      ]
+    },
+    {
+      "name": "train",
+      "synonyms": [
+        "train"
+      ]
+    },
+    {
+      "name": "truck",
+      "synonyms": [
+        "truck"
+      ]
+    },
+    {
+      "name": "boat",
+      "synonyms": [
+        "boat"
+      ]
+    },
+    {
+      "name": "traffic light",
+      "synonyms": [
+        "traffic light",
+        "visible traffic light",
+        "traffic signal in a scene"
+      ]
+    },
+    {
+      "name": "fire hydrant",
+      "synonyms": [
+        "fire hydrant",
+        "the fire hydrant",
+        "hydrant"
+      ]
+    },
+    {
+      "name": "stop sign",
+      "synonyms": [
+        "stop sign"
+      ]
+    },
+    {
+      "name": "parking meter",
+      "synonyms": [
+        "parking meter"
+      ]
+    },
+    {
+      "name": "bench",
+      "synonyms": [
+        "bench"
+      ]
+    },
+    {
+      "name": "bird",
+      "synonyms": [
+        "bird"
+      ]
+    },
+    {
+      "name": "cat",
+      "synonyms": [
+        "cat",
+        "feline",
+        "a feline"
+      ]
+    },
+    {
+      "name": "dog",
+      "synonyms": [
+        "dog",
+        "a canine",
+        "domestic dog"
+      ]
+    },
+    {
+      "name": "horse",
+      "synonyms": [
+        "horse"
+      ]
+    },
+    {
+      "name": "sheep",
+      "synonyms": [
+        "sheep"
+      ]
+    },
+    {
+      "name": "cow",
+      "synonyms": [
+        "cow"
+      ]
+    },
+    {
+      "name": "elephant",
+      "synonyms": [
+        "elephant"
+      ]
+    },
+    {
+      "name": "bear",
+      "synonyms": [
+        "bear"
+      ]
+    },
+    {
+      "name": "zebra",
+      "synonyms": [
+        "zebra"
+      ]
+    },
+    {
+      "name": "giraffe",
+      "synonyms": [
+        "giraffe"
+      ]
+    },
+    {
+      "name": "backpack",
+      "synonyms": [
+        "backpack",
+        "knapsack",
+        "the backpack"
+      ]
+    },
+    {
+      "name": "umbrella",
+      "synonyms": [
+        "umbrella"
+      ]
+    },
+    {
+      "name": "handbag",
+      "synonyms": [
+        "handbag"
+      ]
+    },
+    {
+      "name": "tie",
+      "synonyms": [
+        "tie"
+      ]
+    },
+    {
+      "name": "suitcase",
+      "synonyms": [
+        "suitcase"
+      ]
+    },
+    {
+      "name": "frisbee",
+      "synonyms": [
+        "frisbee",
+        "frisbee in the scene",
+        "flying disc"
+      ]
+    },
+    {
+      "name": "skis",
+      "synonyms": [
+        "skis"
+      ]
+    },
+    {
+      "name": "snowboard",
+      "synonyms": [
+        "snowboard",
+        "snowboarding board"
+      ]
+    },
+    {
+      "name": "sports ball",
+      "synonyms": [
+        "sports ball"
+      ]
+    },
+    {
+      "name": "kite",
+      "synonyms": [
+        "kite"
+      ]
+    },
+    {
+      "name": "baseball bat",
+      "synonyms": [
+        "baseball bat",
+        "baseball hitting bat in a scene",
+        "baseball bat in view"
+      ]
+    },
+    {
+      "name": "baseball glove",
+      "synonyms": [
+        "baseball glove",
+        "a baseball mitt",
+        "visible baseball mitt"
+      ]
+    },
+    {
+      "name": "skateboard",
+      "synonyms": [
+        "skateboard"
+      ]
+    },
+    {
+      "name": "surfboard",
+      "synonyms": [
+        "surfboard"
+      ]
+    },
+    {
+      "name": "tennis racket",
+      "synonyms": [
+        "tennis racket",
+        "a racket for tennis",
+        "tennis racquet"
+      ]
+    },
+    {
+      "name": "bottle",
+      "synonyms": [
+        "bottle"
+      ]
+    },
+    {
+      "name": "wine glass",
+      "synonyms": [
+        "wine glass",
+        "wine glass in the scene",
+        "wineglass"
+      ]
+    },
+    {
+      "name": "cup",
+      "synonyms": [
+        "cup",
+        "a drinking cup",
+        "drinking cup in the scene"
+      ]
+    },
+    {
+      "name": "fork",
+      "synonyms": [
+        "fork"
+      ]
+    },
+    {
+      "name": "knife",
+      "synonyms": [
+        "knife"
+      ]
+    },
+    {
+      "name": "spoon",
+      "synonyms": [
+        "spoon"
+      ]
+    },
+    {
+      "name": "bowl",
+      "synonyms": [
+        "bowl"
+      ]
+    },
+    {
+      "name": "banana",
+      "synonyms": [
+        "banana"
+      ]
+    },
+    {
+      "name": "apple",
+      "synonyms": [
+        "apple"
+      ]
+    },
+    {
+      "name": "sandwich",
+      "synonyms": [
+        "sandwich"
+      ]
+    },
+    {
+      "name": "orange",
+      "synonyms": [
+        "orange"
+      ]
+    },
+    {
+      "name": "broccoli",
+      "synonyms": [
+        "broccoli"
+      ]
+    },
+    {
+      "name": "carrot",
+      "synonyms": [
+        "carrot"
+      ]
+    },
+    {
+      "name": "hot dog",
+      "synonyms": [
+        "hot dog"
+      ]
+    },
+    {
+      "name": "pizza",
+      "synonyms": [
+        "pizza"
+      ]
+    },
+    {
+      "name": "donut",
+      "synonyms": [
+        "donut"
+      ]
+    },
+    {
+      "name": "cake",
+      "synonyms": [
+        "cake"
+      ]
+    },
+    {
+      "name": "chair",
+      "synonyms": [
+        "chair"
+      ]
+    },
+    {
+      "name": "couch",
+      "synonyms": [
+        "couch",
+        "upholstered couch",
+        "a couch"
+      ]
+    },
+    {
+      "name": "potted plant",
+      "synonyms": [
+        "potted plant",
+        "potted plant in a scene",
+        "pot plant in the scene"
+      ]
+    },
+    {
+      "name": "bed",
+      "synonyms": [
+        "bed"
+      ]
+    },
+    {
+      "name": "dining table",
+      "synonyms": [
+        "dining table",
+        "a dinner table"
+      ]
+    },
+    {
+      "name": "toilet",
+      "synonyms": [
+        "toilet"
+      ]
+    },
+    {
+      "name": "tv",
+      "synonyms": [
+        "tv",
+        "tv in a scene",
+        "television set"
+      ]
+    },
+    {
+      "name": "laptop",
+      "synonyms": [
+        "laptop",
+        "a notebook computer",
+        "notebook computer in a scene"
+      ]
+    },
+    {
+      "name": "mouse",
+      "synonyms": [
+        "mouse"
+      ]
+    },
+    {
+      "name": "remote",
+      "synonyms": [
+        "remote",
+        "a remote",
+        "handheld remote control"
+      ]
+    },
+    {
+      "name": "keyboard",
+      "synonyms": [
+        "keyboard",
+        "typing keyboard in the scene"
+      ]
+    },
+    {
+      "name": "cell phone",
+      "synonyms": [
+        "cell phone",
+        "the smartphone",
+        "a cellphone"
+      ]
+    },
+    {
+      "name": "microwave",
+      "synonyms": [
+        "microwave",
+        "kitchen microwave",
+        "a microwave"
+      ]
+    },
+    {
+      "name": "oven",
+      "synonyms": [
+        "oven",
+        "a cooking oven"
+      ]
+    },
+    {
+      "name": "toaster",
+      "synonyms": [
+        "toaster",
+        "a bread toaster",
+        "visible bread toaster"
+      ]
+    },
+    {
+      "name": "sink",
+      "synonyms": [
+        "sink",
+        "the sink basin",
+        "wash basin"
+      ]
+    },
+    {
+      "name": "refrigerator",
+      "synonyms": [
+        "refrigerator",
+        "fridge in a scene",
+        "the fridge"
+      ]
+    },
+    {
+      "name": "book",
+      "synonyms": [
+        "book"
+      ]
+    },
+    {
+      "name": "clock",
+      "synonyms": [
+        "clock"
+      ]
+    },
+    {
+      "name": "vase",
+      "synonyms": [
+        "vase"
+      ]
+    },
+    {
+      "name": "scissors",
+      "synonyms": [
+        "scissors"
+      ]
+    },
+    {
+      "name": "teddy bear",
+      "synonyms": [
+        "teddy bear"
+      ]
+    },
+    {
+      "name": "hair drier",
+      "synonyms": [
+        "hair drier",
+        "hair dryer in a scene",
+        "blow dryer in the scene"
+      ]
+    },
+    {
+      "name": "toothbrush",
+      "synonyms": [
+        "toothbrush"
+      ]
+    }
+  ],
+  "template": "ImageNet80",
+  "background_rule": "fixed_official_background",
+  "selector_family": "jev_screened",
+  "description": "Frozen JEV semantic screened bank from the shared Qwen20 pool. Background standardized to official for VOC/COCO.",
+  "sources": [
+    "C:\\Users\\AH\\Documents\\ChatGPT\\OVSS\\artifacts\\geometry_github\\research\\alias_selector_cross_model_natural_20261021\\jev\\coco_object81\\jev_bank.json",
+    "C:\\Users\\AH\\Documents\\ChatGPT\\OVSS\\artifacts\\geometry_github\\research\\alias_selector_cross_model_natural_20261021\\candidate_pools\\coco_object81.json"
+  ]
+}

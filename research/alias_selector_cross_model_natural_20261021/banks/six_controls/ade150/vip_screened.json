@@ -1,0 +1,1108 @@
+{
+  "dataset": "ade150",
+  "classes": [
+    {
+      "name": "wall",
+      "synonyms": [
+        "wall"
+      ]
+    },
+    {
+      "name": "building",
+      "synonyms": [
+        "building"
+      ]
+    },
+    {
+      "name": "sky",
+      "synonyms": [
+        "sky",
+        "a sky above",
+        "the sky",
+        "the sky above",
+        "sky in a scene"
+      ]
+    },
+    {
+      "name": "floor",
+      "synonyms": [
+        "floor",
+        "indoor floor",
+        "a indoor floor",
+        "the indoor floor",
+        "visible indoor floor",
+        "floor in a scene",
+        "indoor floor in a scene",
+        "room floor in a scene"
+      ]
+    },
+    {
+      "name": "tree",
+      "synonyms": [
+        "tree"
+      ]
+    },
+    {
+      "name": "ceiling",
+      "synonyms": [
+        "ceiling"
+      ]
+    },
+    {
+      "name": "road",
+      "synonyms": [
+        "road"
+      ]
+    },
+    {
+      "name": "bed",
+      "synonyms": [
+        "bed",
+        "the bed",
+        "visible bed",
+        "bed in a scene",
+        "bed in the scene",
+        "bed in the image",
+        "bed in a picture",
+        "bed seen in a scene",
+        "bed as seen in an image",
+        "bed visible in the image",
+        "bed visible in the scene",
+        "bed appearing in the scene",
+        "bed in a natural image",
+        "bed seen in the image",
+        "bed present in the scene"
+      ]
+    },
+    {
+      "name": "windowpane",
+      "synonyms": [
+        "windowpane"
+      ]
+    },
+    {
+      "name": "grass",
+      "synonyms": [
+        "grass"
+      ]
+    },
+    {
+      "name": "cabinet",
+      "synonyms": [
+        "cabinet"
+      ]
+    },
+    {
+      "name": "sidewalk",
+      "synonyms": [
+        "sidewalk"
+      ]
+    },
+    {
+      "name": "person",
+      "synonyms": [
+        "person"
+      ]
+    },
+    {
+      "name": "earth",
+      "synonyms": [
+        "earth"
+      ]
+    },
+    {
+      "name": "door",
+      "synonyms": [
+        "door",
+        "the entry door",
+        "entry door in a scene"
+      ]
+    },
+    {
+      "name": "table",
+      "synonyms": [
+        "table",
+        "table furniture",
+        "a table",
+        "a table furniture",
+        "the table furniture",
+        "table furniture in a scene",
+        "table furniture in the scene",
+        "table furniture in view"
+      ]
+    },
+    {
+      "name": "mountain",
+      "synonyms": [
+        "mountain"
+      ]
+    },
+    {
+      "name": "plant",
+      "synonyms": [
+        "plant"
+      ]
+    },
+    {
+      "name": "curtain",
+      "synonyms": [
+        "curtain",
+        "window curtain",
+        "hanging curtain",
+        "drapery",
+        "a curtain",
+        "a window curtain",
+        "a hanging curtain",
+        "a drapery",
+        "the curtain",
+        "the hanging curtain",
+        "visible curtain",
+        "visible hanging curtain",
+        "visible drapery",
+        "curtain in a scene",
+        "window curtain in a scene",
+        "hanging curtain in a scene",
+        "drapery in a scene"
+      ]
+    },
+    {
+      "name": "chair",
+      "synonyms": [
+        "chair"
+      ]
+    },
+    {
+      "name": "car",
+      "synonyms": [
+        "car"
+      ]
+    },
+    {
+      "name": "water",
+      "synonyms": [
+        "water"
+      ]
+    },
+    {
+      "name": "painting",
+      "synonyms": [
+        "painting"
+      ]
+    },
+    {
+      "name": "sofa",
+      "synonyms": [
+        "sofa",
+        "couch",
+        "the couch"
+      ]
+    },
+    {
+      "name": "shelf",
+      "synonyms": [
+        "shelf"
+      ]
+    },
+    {
+      "name": "house",
+      "synonyms": [
+        "house"
+      ]
+    },
+    {
+      "name": "sea",
+      "synonyms": [
+        "sea"
+      ]
+    },
+    {
+      "name": "mirror",
+      "synonyms": [
+        "mirror",
+        "mirror in a scene",
+        "mirror in the scene",
+        "mirror in view",
+        "mirror in the image",
+        "mirror in a picture",
+        "mirror seen in a scene",
+        "mirror as seen in an image",
+        "mirror visible in the scene",
+        "mirror within a scene",
+        "mirror seen in the image",
+        "mirror present in the scene"
+      ]
+    },
+    {
+      "name": "rug",
+      "synonyms": [
+        "rug",
+        "a rug",
+        "the rug",
+        "rug in a scene",
+        "floor rug in a scene"
+      ]
+    },
+    {
+      "name": "field",
+      "synonyms": [
+        "field"
+      ]
+    },
+    {
+      "name": "armchair",
+      "synonyms": [
+        "armchair"
+      ]
+    },
+    {
+      "name": "seat",
+      "synonyms": [
+        "seat"
+      ]
+    },
+    {
+      "name": "fence",
+      "synonyms": [
+        "fence"
+      ]
+    },
+    {
+      "name": "desk",
+      "synonyms": [
+        "desk"
+      ]
+    },
+    {
+      "name": "rock",
+      "synonyms": [
+        "rock"
+      ]
+    },
+    {
+      "name": "wardrobe",
+      "synonyms": [
+        "wardrobe",
+        "the wardrobe",
+        "the clothing cabinet",
+        "clothes wardrobe in a scene",
+        "wardrobe in the scene",
+        "clothes wardrobe in the scene"
+      ]
+    },
+    {
+      "name": "lamp",
+      "synonyms": [
+        "lamp"
+      ]
+    },
+    {
+      "name": "bathtub",
+      "synonyms": [
+        "bathtub"
+      ]
+    },
+    {
+      "name": "railing",
+      "synonyms": [
+        "railing",
+        "a railing",
+        "railing in a scene",
+        "railing in view",
+        "railing in the image",
+        "railing in a picture",
+        "railing as seen in an image",
+        "railing in a natural image",
+        "railing seen in the image"
+      ]
+    },
+    {
+      "name": "cushion",
+      "synonyms": [
+        "cushion",
+        "cushion in the scene",
+        "cushion appearing in the scene",
+        "cushion in a natural image",
+        "cushion present in the scene"
+      ]
+    },
+    {
+      "name": "base",
+      "synonyms": [
+        "base"
+      ]
+    },
+    {
+      "name": "box",
+      "synonyms": [
+        "box"
+      ]
+    },
+    {
+      "name": "column",
+      "synonyms": [
+        "column"
+      ]
+    },
+    {
+      "name": "signboard",
+      "synonyms": [
+        "signboard",
+        "signboard in view",
+        "signboard seen in the image"
+      ]
+    },
+    {
+      "name": "chest of drawers",
+      "synonyms": [
+        "chest of drawers",
+        "a chest of drawers",
+        "chest of drawers in a scene",
+        "chest of drawers in the scene",
+        "chest of drawers present in the scene"
+      ]
+    },
+    {
+      "name": "counter",
+      "synonyms": [
+        "counter"
+      ]
+    },
+    {
+      "name": "sand",
+      "synonyms": [
+        "sand"
+      ]
+    },
+    {
+      "name": "sink",
+      "synonyms": [
+        "sink"
+      ]
+    },
+    {
+      "name": "skyscraper",
+      "synonyms": [
+        "skyscraper"
+      ]
+    },
+    {
+      "name": "fireplace",
+      "synonyms": [
+        "fireplace",
+        "fireplace in the scene",
+        "fireplace in the image",
+        "fireplace in a picture",
+        "the visible fireplace",
+        "fireplace as seen in an image",
+        "fireplace visible in the image",
+        "fireplace in a natural image",
+        "fireplace seen in the image",
+        "fireplace present in the scene"
+      ]
+    },
+    {
+      "name": "refrigerator",
+      "synonyms": [
+        "refrigerator",
+        "kitchen refrigerator",
+        "the refrigerator",
+        "the kitchen refrigerator",
+        "refrigerator in the scene",
+        "fridge in view"
+      ]
+    },
+    {
+      "name": "grandstand",
+      "synonyms": [
+        "grandstand"
+      ]
+    },
+    {
+      "name": "path",
+      "synonyms": [
+        "path"
+      ]
+    },
+    {
+      "name": "stairs",
+      "synonyms": [
+        "stairs"
+      ]
+    },
+    {
+      "name": "runway",
+      "synonyms": [
+        "runway"
+      ]
+    },
+    {
+      "name": "case",
+      "synonyms": [
+        "case"
+      ]
+    },
+    {
+      "name": "pool table",
+      "synonyms": [
+        "pool table"
+      ]
+    },
+    {
+      "name": "pillow",
+      "synonyms": [
+        "pillow"
+      ]
+    },
+    {
+      "name": "screen door",
+      "synonyms": [
+        "screen door"
+      ]
+    },
+    {
+      "name": "stairway",
+      "synonyms": [
+        "stairway"
+      ]
+    },
+    {
+      "name": "river",
+      "synonyms": [
+        "river"
+      ]
+    },
+    {
+      "name": "bridge",
+      "synonyms": [
+        "bridge"
+      ]
+    },
+    {
+      "name": "bookcase",
+      "synonyms": [
+        "bookcase"
+      ]
+    },
+    {
+      "name": "blind",
+      "synonyms": [
+        "blind"
+      ]
+    },
+    {
+      "name": "coffee table",
+      "synonyms": [
+        "coffee table",
+        "a coffee table",
+        "the coffee table",
+        "coffee table in a scene",
+        "coffee table in the scene",
+        "coffee table in the image",
+        "coffee table in a picture",
+        "coffee table seen in a scene",
+        "coffee table as seen in an image",
+        "coffee table visible in the image",
+        "coffee table within a scene",
+        "coffee table seen in the image",
+        "coffee table present in the scene"
+      ]
+    },
+    {
+      "name": "toilet",
+      "synonyms": [
+        "toilet"
+      ]
+    },
+    {
+      "name": "flower",
+      "synonyms": [
+        "flower"
+      ]
+    },
+    {
+      "name": "book",
+      "synonyms": [
+        "book"
+      ]
+    },
+    {
+      "name": "hill",
+      "synonyms": [
+        "hill"
+      ]
+    },
+    {
+      "name": "bench",
+      "synonyms": [
+        "bench"
+      ]
+    },
+    {
+      "name": "countertop",
+      "synonyms": [
+        "countertop",
+        "countertop in a scene",
+        "countertop in the image",
+        "countertop as seen in an image"
+      ]
+    },
+    {
+      "name": "stove",
+      "synonyms": [
+        "stove"
+      ]
+    },
+    {
+      "name": "palm",
+      "synonyms": [
+        "palm"
+      ]
+    },
+    {
+      "name": "kitchen island",
+      "synonyms": [
+        "kitchen island",
+        "a kitchen island",
+        "visible kitchen island",
+        "kitchen island in the image",
+        "a visible kitchen island",
+        "the visible kitchen island",
+        "kitchen island as seen in an image",
+        "kitchen island within a scene"
+      ]
+    },
+    {
+      "name": "computer",
+      "synonyms": [
+        "computer"
+      ]
+    },
+    {
+      "name": "swivel chair",
+      "synonyms": [
+        "swivel chair"
+      ]
+    },
+    {
+      "name": "boat",
+      "synonyms": [
+        "boat"
+      ]
+    },
+    {
+      "name": "bar",
+      "synonyms": [
+        "bar"
+      ]
+    },
+    {
+      "name": "arcade machine",
+      "synonyms": [
+        "arcade machine"
+      ]
+    },
+    {
+      "name": "hovel",
+      "synonyms": [
+        "hovel"
+      ]
+    },
+    {
+      "name": "bus",
+      "synonyms": [
+        "bus"
+      ]
+    },
+    {
+      "name": "towel",
+      "synonyms": [
+        "towel",
+        "a towel",
+        "visible towel",
+        "towel in a scene",
+        "towel in the scene",
+        "towel in view",
+        "towel in the image",
+        "towel in a picture",
+        "towel seen in a scene",
+        "a visible towel",
+        "the visible towel",
+        "towel as seen in an image",
+        "towel visible in the image",
+        "towel visible in the scene",
+        "towel within a scene",
+        "towel appearing in the scene",
+        "towel seen in the image",
+        "towel present in the scene"
+      ]
+    },
+    {
+      "name": "light",
+      "synonyms": [
+        "light"
+      ]
+    },
+    {
+      "name": "truck",
+      "synonyms": [
+        "truck"
+      ]
+    },
+    {
+      "name": "tower",
+      "synonyms": [
+        "tower"
+      ]
+    },
+    {
+      "name": "chandelier",
+      "synonyms": [
+        "chandelier",
+        "chandelier as seen in an image",
+        "chandelier visible in the scene",
+        "chandelier in a natural image"
+      ]
+    },
+    {
+      "name": "awning",
+      "synonyms": [
+        "awning"
+      ]
+    },
+    {
+      "name": "streetlight",
+      "synonyms": [
+        "streetlight"
+      ]
+    },
+    {
+      "name": "booth",
+      "synonyms": [
+        "booth"
+      ]
+    },
+    {
+      "name": "television receiver",
+      "synonyms": [
+        "television receiver"
+      ]
+    },
+    {
+      "name": "airplane",
+      "synonyms": [
+        "airplane"
+      ]
+    },
+    {
+      "name": "dirt track",
+      "synonyms": [
+        "dirt track"
+      ]
+    },
+    {
+      "name": "apparel",
+      "synonyms": [
+        "apparel"
+      ]
+    },
+    {
+      "name": "pole",
+      "synonyms": [
+        "pole"
+      ]
+    },
+    {
+      "name": "land",
+      "synonyms": [
+        "land"
+      ]
+    },
+    {
+      "name": "bannister",
+      "synonyms": [
+        "bannister",
+        "the bannister",
+        "bannister in view",
+        "bannister in a picture",
+        "bannister within a scene"
+      ]
+    },
+    {
+      "name": "escalator",
+      "synonyms": [
+        "escalator"
+      ]
+    },
+    {
+      "name": "ottoman",
+      "synonyms": [
+        "ottoman"
+      ]
+    },
+    {
+      "name": "bottle",
+      "synonyms": [
+        "bottle"
+      ]
+    },
+    {
+      "name": "buffet",
+      "synonyms": [
+        "buffet"
+      ]
+    },
+    {
+      "name": "poster",
+      "synonyms": [
+        "poster"
+      ]
+    },
+    {
+      "name": "stage",
+      "synonyms": [
+        "stage"
+      ]
+    },
+    {
+      "name": "van",
+      "synonyms": [
+        "van"
+      ]
+    },
+    {
+      "name": "ship",
+      "synonyms": [
+        "ship"
+      ]
+    },
+    {
+      "name": "fountain",
+      "synonyms": [
+        "fountain"
+      ]
+    },
+    {
+      "name": "conveyer belt",
+      "synonyms": [
+        "conveyer belt"
+      ]
+    },
+    {
+      "name": "canopy",
+      "synonyms": [
+        "canopy"
+      ]
+    },
+    {
+      "name": "washer",
+      "synonyms": [
+        "washer"
+      ]
+    },
+    {
+      "name": "plaything",
+      "synonyms": [
+        "plaything"
+      ]
+    },
+    {
+      "name": "swimming pool",
+      "synonyms": [
+        "swimming pool"
+      ]
+    },
+    {
+      "name": "stool",
+      "synonyms": [
+        "stool"
+      ]
+    },
+    {
+      "name": "barrel",
+      "synonyms": [
+        "barrel"
+      ]
+    },
+    {
+      "name": "basket",
+      "synonyms": [
+        "basket",
+        "a basket",
+        "the basket",
+        "basket in a scene",
+        "basket in the scene",
+        "basket in a picture",
+        "basket seen in a scene",
+        "basket as seen in an image",
+        "basket within a scene",
+        "basket appearing in the scene",
+        "basket present in the scene"
+      ]
+    },
+    {
+      "name": "waterfall",
+      "synonyms": [
+        "waterfall"
+      ]
+    },
+    {
+      "name": "tent",
+      "synonyms": [
+        "tent"
+      ]
+    },
+    {
+      "name": "bag",
+      "synonyms": [
+        "bag"
+      ]
+    },
+    {
+      "name": "minibike",
+      "synonyms": [
+        "minibike"
+      ]
+    },
+    {
+      "name": "cradle",
+      "synonyms": [
+        "cradle"
+      ]
+    },
+    {
+      "name": "oven",
+      "synonyms": [
+        "oven"
+      ]
+    },
+    {
+      "name": "ball",
+      "synonyms": [
+        "ball"
+      ]
+    },
+    {
+      "name": "food",
+      "synonyms": [
+        "food"
+      ]
+    },
+    {
+      "name": "step",
+      "synonyms": [
+        "step"
+      ]
+    },
+    {
+      "name": "tank",
+      "synonyms": [
+        "tank"
+      ]
+    },
+    {
+      "name": "trade name",
+      "synonyms": [
+        "trade name"
+      ]
+    },
+    {
+      "name": "microwave",
+      "synonyms": [
+        "microwave"
+      ]
+    },
+    {
+      "name": "pot",
+      "synonyms": [
+        "pot"
+      ]
+    },
+    {
+      "name": "animal",
+      "synonyms": [
+        "animal"
+      ]
+    },
+    {
+      "name": "bicycle",
+      "synonyms": [
+        "bicycle"
+      ]
+    },
+    {
+      "name": "lake",
+      "synonyms": [
+        "lake"
+      ]
+    },
+    {
+      "name": "dishwasher",
+      "synonyms": [
+        "dishwasher"
+      ]
+    },
+    {
+      "name": "screen",
+      "synonyms": [
+        "screen"
+      ]
+    },
+    {
+      "name": "blanket",
+      "synonyms": [
+        "blanket"
+      ]
+    },
+    {
+      "name": "sculpture",
+      "synonyms": [
+        "sculpture"
+      ]
+    },
+    {
+      "name": "hood",
+      "synonyms": [
+        "hood"
+      ]
+    },
+    {
+      "name": "sconce",
+      "synonyms": [
+        "sconce"
+      ]
+    },
+    {
+      "name": "vase",
+      "synonyms": [
+        "vase",
+        "decorative vase",
+        "a decorative vase",
+        "the decorative vase",
+        "visible decorative vase",
+        "vase in a scene",
+        "flower vase in a scene",
+        "decorative vase in a scene",
+        "vase in the scene",
+        "flower vase in the scene",
+        "decorative vase in the scene",
+        "flower vase in view"
+      ]
+    },
+    {
+      "name": "traffic light",
+      "synonyms": [
+        "traffic light",
+        "traffic signal",
+        "the traffic light",
+        "the traffic signal",
+        "visible traffic signal",
+        "traffic light in a scene",
+        "traffic signal in a scene",
+        "traffic light in the scene",
+        "traffic signal in the scene",
+        "road traffic light in the scene",
+        "traffic signal in view"
+      ]
+    },
+    {
+      "name": "tray",
+      "synonyms": [
+        "tray"
+      ]
+    },
+    {
+      "name": "ashcan",
+      "synonyms": [
+        "ashcan"
+      ]
+    },
+    {
+      "name": "fan",
+      "synonyms": [
+        "fan"
+      ]
+    },
+    {
+      "name": "pier",
+      "synonyms": [
+        "pier"
+      ]
+    },
+    {
+      "name": "crt screen",
+      "synonyms": [
+        "crt screen"
+      ]
+    },
+    {
+      "name": "plate",
+      "synonyms": [
+        "plate",
+        "a plate",
+        "the plate",
+        "plate in a scene",
+        "plate in the image",
+        "plate in a picture",
+        "plate seen in a scene",
+        "plate as seen in an image",
+        "plate within a scene",
+        "plate appearing in the scene",
+        "plate seen in the image"
+      ]
+    },
+    {
+      "name": "monitor",
+      "synonyms": [
+        "monitor"
+      ]
+    },
+    {
+      "name": "bulletin board",
+      "synonyms": [
+        "bulletin board"
+      ]
+    },
+    {
+      "name": "shower",
+      "synonyms": [
+        "shower",
+        "a visible shower",
+        "shower visible in the image",
+        "shower visible in the scene",
+        "shower seen in the image"
+      ]
+    },
+    {
+      "name": "radiator",
+      "synonyms": [
+        "radiator"
+      ]
+    },
+    {
+      "name": "glass",
+      "synonyms": [
+        "glass"
+      ]
+    },
+    {
+      "name": "clock",
+      "synonyms": [
+        "clock"
+      ]
+    },
+    {
+      "name": "flag",
+      "synonyms": [
+        "flag"
+      ]
+    }
+  ],
+  "template": "seg_template",
+  "background_rule": "retained",
+  "selector_family": "vip_screened",
+  "description": "Frozen VIP VG/SC screened bank from the shared Qwen20 pool. Background standardized to official for VOC/COCO.",
+  "sources": [
+    "C:\\Users\\AH\\Documents\\ChatGPT\\OVSS\\artifacts\\geometry_github\\research\\alias_selector_cross_model_natural_20261021\\vip\\ade150\\vip_bank.json",
+    "C:\\Users\\AH\\Documents\\ChatGPT\\OVSS\\artifacts\\geometry_github\\research\\alias_selector_cross_model_natural_20261021\\candidate_pools\\ade150.json"
+  ]
+}

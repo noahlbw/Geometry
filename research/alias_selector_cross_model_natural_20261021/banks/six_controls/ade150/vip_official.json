@@ -1,0 +1,996 @@
+{
+  "dataset": "ade150",
+  "classes": [
+    {
+      "name": "wall",
+      "synonyms": [
+        "wall",
+        "stone wall"
+      ]
+    },
+    {
+      "name": "building",
+      "synonyms": [
+        "facade",
+        "frontage",
+        "frontal"
+      ]
+    },
+    {
+      "name": "sky",
+      "synonyms": [
+        "sky",
+        "cloudy sky",
+        "blue sky",
+        "the sky above",
+        "clear sky",
+        "skyline",
+        "atmosphere"
+      ]
+    },
+    {
+      "name": "floor",
+      "synonyms": [
+        "floor"
+      ]
+    },
+    {
+      "name": "tree",
+      "synonyms": [
+        "tree",
+        "trees",
+        "forest"
+      ]
+    },
+    {
+      "name": "ceiling",
+      "synonyms": [
+        "ceiling",
+        "indoor ceiling",
+        "plain ceiling",
+        "smooth ceiling"
+      ]
+    },
+    {
+      "name": "road",
+      "synonyms": [
+        "road",
+        "roadway"
+      ]
+    },
+    {
+      "name": "bed",
+      "synonyms": [
+        "bed"
+      ]
+    },
+    {
+      "name": "windowpane",
+      "synonyms": [
+        "windowpane"
+      ]
+    },
+    {
+      "name": "grass",
+      "synonyms": [
+        "grass"
+      ]
+    },
+    {
+      "name": "cabinet",
+      "synonyms": [
+        "cabinet"
+      ]
+    },
+    {
+      "name": "sidewalk",
+      "synonyms": [
+        "sidewalk",
+        "pavement"
+      ]
+    },
+    {
+      "name": "person",
+      "synonyms": [
+        "person",
+        "people",
+        "people in shirt",
+        "people in jeans",
+        "people in dress",
+        "people in sweater",
+        "people in skirt",
+        "people in jacket",
+        "people in hat",
+        "human in hat",
+        "human in jeans",
+        "human in dress",
+        "human in sweater",
+        "human in skirt",
+        "human in jacket",
+        "human",
+        "crowd",
+        "child",
+        "boy",
+        "girl",
+        "man",
+        "women"
+      ]
+    },
+    {
+      "name": "earth",
+      "synonyms": [
+        "ground",
+        "earth"
+      ]
+    },
+    {
+      "name": "door",
+      "synonyms": [
+        "interior door"
+      ]
+    },
+    {
+      "name": "table",
+      "synonyms": [
+        "table"
+      ]
+    },
+    {
+      "name": "mountain",
+      "synonyms": [
+        "mountain"
+      ]
+    },
+    {
+      "name": "plant",
+      "synonyms": [
+        "bush"
+      ]
+    },
+    {
+      "name": "curtain",
+      "synonyms": [
+        "curtain"
+      ]
+    },
+    {
+      "name": "chair",
+      "synonyms": [
+        "chair"
+      ]
+    },
+    {
+      "name": "car",
+      "synonyms": [
+        "car"
+      ]
+    },
+    {
+      "name": "water",
+      "synonyms": [
+        "water",
+        "water surface",
+        "puddle of water"
+      ]
+    },
+    {
+      "name": "painting",
+      "synonyms": [
+        "painting"
+      ]
+    },
+    {
+      "name": "sofa",
+      "synonyms": [
+        "sofa",
+        "couch",
+        "lounge"
+      ]
+    },
+    {
+      "name": "shelf",
+      "synonyms": [
+        "shelf"
+      ]
+    },
+    {
+      "name": "house",
+      "synonyms": [
+        "house"
+      ]
+    },
+    {
+      "name": "sea",
+      "synonyms": [
+        "sea"
+      ]
+    },
+    {
+      "name": "mirror",
+      "synonyms": [
+        "mirror"
+      ]
+    },
+    {
+      "name": "rug",
+      "synonyms": [
+        "rug"
+      ]
+    },
+    {
+      "name": "field",
+      "synonyms": [
+        "field"
+      ]
+    },
+    {
+      "name": "armchair",
+      "synonyms": [
+        "armchair"
+      ]
+    },
+    {
+      "name": "seat",
+      "synonyms": [
+        "seat"
+      ]
+    },
+    {
+      "name": "fence",
+      "synonyms": [
+        "fence"
+      ]
+    },
+    {
+      "name": "desk",
+      "synonyms": [
+        "desk"
+      ]
+    },
+    {
+      "name": "rock",
+      "synonyms": [
+        "rock"
+      ]
+    },
+    {
+      "name": "wardrobe",
+      "synonyms": [
+        "wardrobe"
+      ]
+    },
+    {
+      "name": "lamp",
+      "synonyms": [
+        "lamp"
+      ]
+    },
+    {
+      "name": "bathtub",
+      "synonyms": [
+        "bathtub"
+      ]
+    },
+    {
+      "name": "railing",
+      "synonyms": [
+        "railing"
+      ]
+    },
+    {
+      "name": "cushion",
+      "synonyms": [
+        "pillow"
+      ]
+    },
+    {
+      "name": "base",
+      "synonyms": [
+        "stall",
+        "stand",
+        "sales booth"
+      ]
+    },
+    {
+      "name": "box",
+      "synonyms": [
+        "box"
+      ]
+    },
+    {
+      "name": "column",
+      "synonyms": [
+        "column"
+      ]
+    },
+    {
+      "name": "signboard",
+      "synonyms": [
+        "signboard"
+      ]
+    },
+    {
+      "name": "chest of drawers",
+      "synonyms": [
+        "chest of drawers"
+      ]
+    },
+    {
+      "name": "counter",
+      "synonyms": [
+        "reception desk"
+      ]
+    },
+    {
+      "name": "sand",
+      "synonyms": [
+        "sand"
+      ]
+    },
+    {
+      "name": "sink",
+      "synonyms": [
+        "sink"
+      ]
+    },
+    {
+      "name": "skyscraper",
+      "synonyms": [
+        "skyscraper"
+      ]
+    },
+    {
+      "name": "fireplace",
+      "synonyms": [
+        "fireplace",
+        "hearth",
+        "open fireplace"
+      ]
+    },
+    {
+      "name": "refrigerator",
+      "synonyms": [
+        "refrigerator"
+      ]
+    },
+    {
+      "name": "grandstand",
+      "synonyms": [
+        "grandstand"
+      ]
+    },
+    {
+      "name": "path",
+      "synonyms": [
+        "path"
+      ]
+    },
+    {
+      "name": "stairs",
+      "synonyms": [
+        "stairs"
+      ]
+    },
+    {
+      "name": "runway",
+      "synonyms": [
+        "runway"
+      ]
+    },
+    {
+      "name": "case",
+      "synonyms": [
+        "case",
+        "display case",
+        "showcase",
+        "vitrine"
+      ]
+    },
+    {
+      "name": "pool table",
+      "synonyms": [
+        "pool table"
+      ]
+    },
+    {
+      "name": "pillow",
+      "synonyms": [
+        "pillow sham"
+      ]
+    },
+    {
+      "name": "screen door",
+      "synonyms": [
+        "shower"
+      ]
+    },
+    {
+      "name": "stairway",
+      "synonyms": [
+        "stairway"
+      ]
+    },
+    {
+      "name": "river",
+      "synonyms": [
+        "river"
+      ]
+    },
+    {
+      "name": "bridge",
+      "synonyms": [
+        "bridge"
+      ]
+    },
+    {
+      "name": "bookcase",
+      "synonyms": [
+        "bookcase"
+      ]
+    },
+    {
+      "name": "blind",
+      "synonyms": [
+        "blind"
+      ]
+    },
+    {
+      "name": "coffee table",
+      "synonyms": [
+        "coffee table"
+      ]
+    },
+    {
+      "name": "toilet",
+      "synonyms": [
+        "toilet"
+      ]
+    },
+    {
+      "name": "flower",
+      "synonyms": [
+        "flower"
+      ]
+    },
+    {
+      "name": "book",
+      "synonyms": [
+        "book"
+      ]
+    },
+    {
+      "name": "hill",
+      "synonyms": [
+        "hillside"
+      ]
+    },
+    {
+      "name": "bench",
+      "synonyms": [
+        "bench"
+      ]
+    },
+    {
+      "name": "countertop",
+      "synonyms": [
+        "countertop"
+      ]
+    },
+    {
+      "name": "stove",
+      "synonyms": [
+        "stove",
+        "kitchen stove",
+        "range",
+        "kitchen range",
+        "cooking stove"
+      ]
+    },
+    {
+      "name": "palm",
+      "synonyms": [
+        "cabbage palm",
+        "cabbage tree",
+        "Livistona australis"
+      ]
+    },
+    {
+      "name": "kitchen island",
+      "synonyms": [
+        "kitchen island"
+      ]
+    },
+    {
+      "name": "computer",
+      "synonyms": [
+        "desktop computer"
+      ]
+    },
+    {
+      "name": "swivel chair",
+      "synonyms": [
+        "swivel chair"
+      ]
+    },
+    {
+      "name": "boat",
+      "synonyms": [
+        "boat"
+      ]
+    },
+    {
+      "name": "bar",
+      "synonyms": [
+        "bar"
+      ]
+    },
+    {
+      "name": "arcade machine",
+      "synonyms": [
+        "arcade machine"
+      ]
+    },
+    {
+      "name": "hovel",
+      "synonyms": [
+        "hovel"
+      ]
+    },
+    {
+      "name": "bus",
+      "synonyms": [
+        "bus"
+      ]
+    },
+    {
+      "name": "towel",
+      "synonyms": [
+        "towel"
+      ]
+    },
+    {
+      "name": "light",
+      "synonyms": [
+        "skylight",
+        "fanlight"
+      ]
+    },
+    {
+      "name": "truck",
+      "synonyms": [
+        "truck"
+      ]
+    },
+    {
+      "name": "tower",
+      "synonyms": [
+        "tower"
+      ]
+    },
+    {
+      "name": "chandelier",
+      "synonyms": [
+        "chandelier"
+      ]
+    },
+    {
+      "name": "awning",
+      "synonyms": [
+        "awning"
+      ]
+    },
+    {
+      "name": "streetlight",
+      "synonyms": [
+        "streetlight"
+      ]
+    },
+    {
+      "name": "booth",
+      "synonyms": [
+        "newsstand"
+      ]
+    },
+    {
+      "name": "television receiver",
+      "synonyms": [
+        "television receiver"
+      ]
+    },
+    {
+      "name": "airplane",
+      "synonyms": [
+        "airplane"
+      ]
+    },
+    {
+      "name": "dirt track",
+      "synonyms": [
+        "dirt track"
+      ]
+    },
+    {
+      "name": "apparel",
+      "synonyms": [
+        "clothes closet",
+        "clothespress"
+      ]
+    },
+    {
+      "name": "pole",
+      "synonyms": [
+        "pole"
+      ]
+    },
+    {
+      "name": "land",
+      "synonyms": [
+        "land"
+      ]
+    },
+    {
+      "name": "bannister",
+      "synonyms": [
+        "bannister",
+        "banister",
+        "balustrade",
+        "balusters",
+        "handrail"
+      ]
+    },
+    {
+      "name": "escalator",
+      "synonyms": [
+        "escalator"
+      ]
+    },
+    {
+      "name": "ottoman",
+      "synonyms": [
+        "footstool",
+        "footrest",
+        "ottoman",
+        "tuffet"
+      ]
+    },
+    {
+      "name": "bottle",
+      "synonyms": [
+        "bottle"
+      ]
+    },
+    {
+      "name": "buffet",
+      "synonyms": [
+        "china cabinet",
+        "china closet"
+      ]
+    },
+    {
+      "name": "poster",
+      "synonyms": [
+        "poster"
+      ]
+    },
+    {
+      "name": "stage",
+      "synonyms": [
+        "stage"
+      ]
+    },
+    {
+      "name": "van",
+      "synonyms": [
+        "van"
+      ]
+    },
+    {
+      "name": "ship",
+      "synonyms": [
+        "ship"
+      ]
+    },
+    {
+      "name": "fountain",
+      "synonyms": [
+        "fountain"
+      ]
+    },
+    {
+      "name": "conveyer belt",
+      "synonyms": [
+        "conveyer belt"
+      ]
+    },
+    {
+      "name": "canopy",
+      "synonyms": [
+        "baldachin"
+      ]
+    },
+    {
+      "name": "washer",
+      "synonyms": [
+        "washer"
+      ]
+    },
+    {
+      "name": "plaything",
+      "synonyms": [
+        "plaything"
+      ]
+    },
+    {
+      "name": "swimming pool",
+      "synonyms": [
+        "swimming pool"
+      ]
+    },
+    {
+      "name": "stool",
+      "synonyms": [
+        "stool"
+      ]
+    },
+    {
+      "name": "barrel",
+      "synonyms": [
+        "barrel"
+      ]
+    },
+    {
+      "name": "basket",
+      "synonyms": [
+        "basket"
+      ]
+    },
+    {
+      "name": "waterfall",
+      "synonyms": [
+        "waterfall"
+      ]
+    },
+    {
+      "name": "tent",
+      "synonyms": [
+        "tent"
+      ]
+    },
+    {
+      "name": "bag",
+      "synonyms": [
+        "bag"
+      ]
+    },
+    {
+      "name": "minibike",
+      "synonyms": [
+        "motorcycle",
+        "motorbike"
+      ]
+    },
+    {
+      "name": "cradle",
+      "synonyms": [
+        "baby bed",
+        "baby’s bed"
+      ]
+    },
+    {
+      "name": "oven",
+      "synonyms": [
+        "oven"
+      ]
+    },
+    {
+      "name": "ball",
+      "synonyms": [
+        "ball"
+      ]
+    },
+    {
+      "name": "food",
+      "synonyms": [
+        "food"
+      ]
+    },
+    {
+      "name": "step",
+      "synonyms": [
+        "pedestal",
+        "plinth",
+        "footstall"
+      ]
+    },
+    {
+      "name": "tank",
+      "synonyms": [
+        "tank"
+      ]
+    },
+    {
+      "name": "trade name",
+      "synonyms": [
+        "trade name"
+      ]
+    },
+    {
+      "name": "microwave",
+      "synonyms": [
+        "microwave"
+      ]
+    },
+    {
+      "name": "pot",
+      "synonyms": [
+        "pot"
+      ]
+    },
+    {
+      "name": "animal",
+      "synonyms": [
+        "animal",
+        "dog",
+        "cat",
+        "horse"
+      ]
+    },
+    {
+      "name": "bicycle",
+      "synonyms": [
+        "bicycle",
+        "bike"
+      ]
+    },
+    {
+      "name": "lake",
+      "synonyms": [
+        "lake"
+      ]
+    },
+    {
+      "name": "dishwasher",
+      "synonyms": [
+        "dishwasher"
+      ]
+    },
+    {
+      "name": "screen",
+      "synonyms": [
+        "screen"
+      ]
+    },
+    {
+      "name": "blanket",
+      "synonyms": [
+        "blanket"
+      ]
+    },
+    {
+      "name": "sculpture",
+      "synonyms": [
+        "sculpture"
+      ]
+    },
+    {
+      "name": "hood",
+      "synonyms": [
+        "range hood"
+      ]
+    },
+    {
+      "name": "sconce",
+      "synonyms": [
+        "sconce"
+      ]
+    },
+    {
+      "name": "vase",
+      "synonyms": [
+        "vase"
+      ]
+    },
+    {
+      "name": "traffic light",
+      "synonyms": [
+        "traffic light"
+      ]
+    },
+    {
+      "name": "tray",
+      "synonyms": [
+        "tray"
+      ]
+    },
+    {
+      "name": "ashcan",
+      "synonyms": [
+        "ashcan",
+        "trash can",
+        "garbage can",
+        "wastebin",
+        "ash bin",
+        "ash-bin",
+        "ashbin",
+        "dustbin",
+        "trash barrel",
+        "trash bin"
+      ]
+    },
+    {
+      "name": "fan",
+      "synonyms": [
+        "fan"
+      ]
+    },
+    {
+      "name": "pier",
+      "synonyms": [
+        "pier"
+      ]
+    },
+    {
+      "name": "crt screen",
+      "synonyms": [
+        "crtscreen"
+      ]
+    },
+    {
+      "name": "plate",
+      "synonyms": [
+        "plate",
+        "collection plate"
+      ]
+    },
+    {
+      "name": "monitor",
+      "synonyms": [
+        "computer screen",
+        "computer display"
+      ]
+    },
+    {
+      "name": "bulletin board",
+      "synonyms": [
+        "bulletin board"
+      ]
+    },
+    {
+      "name": "shower",
+      "synonyms": [
+        "shower"
+      ]
+    },
+    {
+      "name": "radiator",
+      "synonyms": [
+        "radiator"
+      ]
+    },
+    {
+      "name": "glass",
+      "synonyms": [
+        "glass"
+      ]
+    },
+    {
+      "name": "clock",
+      "synonyms": [
+        "clock"
+      ]
+    },
+    {
+      "name": "flag",
+      "synonyms": [
+        "flag"
+      ]
+    }
+  ],
+  "template": "seg_template",
+  "background_rule": "retained",
+  "selector_family": "vip_official",
+  "description": "Complete official VIP class groups, including its official background group.",
+  "sources": [
+    "C:\\Users\\AH\\Documents\\ChatGPT\\OVSS\\artifacts\\geometry_github\\research\\alias_selector_cross_model_natural_20261021\\sources\\vip_configs\\cls_ade20k.txt"
+  ]
+}

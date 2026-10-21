@@ -1,0 +1,194 @@
+{
+  "dataset": "voc21",
+  "classes": [
+    {
+      "name": "background",
+      "synonyms": [
+        "sky",
+        "cloudy sky",
+        "blue sky",
+        "the sky above",
+        "clear sky",
+        "skyline",
+        "atmosphere",
+        "wall",
+        "brick wall",
+        "stone wall",
+        "trees",
+        "tree",
+        "forest",
+        "wood",
+        "wooden",
+        "lumber",
+        "timber",
+        "wooden plank",
+        "grass",
+        "field",
+        "soil",
+        "meadow",
+        "lawn",
+        "road",
+        "roadway",
+        "water",
+        "body of water",
+        "river",
+        "lake",
+        "pond",
+        "ocean",
+        "sea",
+        "green water",
+        "blue water",
+        "mountain",
+        "sands",
+        "desk",
+        "bed",
+        "building",
+        "buildings",
+        "facade",
+        "frontage",
+        "cloud",
+        "lamp",
+        "door",
+        "window",
+        "wardrobe",
+        "ceiling",
+        "shelf",
+        "shelves",
+        "curtain",
+        "stair",
+        "floor",
+        "hill",
+        "rail",
+        "fence"
+      ]
+    },
+    {
+      "name": "aeroplane",
+      "synonyms": [
+        "aeroplane"
+      ]
+    },
+    {
+      "name": "bicycle",
+      "synonyms": [
+        "bicycle"
+      ]
+    },
+    {
+      "name": "bird",
+      "synonyms": [
+        "bird"
+      ]
+    },
+    {
+      "name": "boat",
+      "synonyms": [
+        "boat"
+      ]
+    },
+    {
+      "name": "bottle",
+      "synonyms": [
+        "bottle"
+      ]
+    },
+    {
+      "name": "bus",
+      "synonyms": [
+        "bus"
+      ]
+    },
+    {
+      "name": "car",
+      "synonyms": [
+        "car"
+      ]
+    },
+    {
+      "name": "cat",
+      "synonyms": [
+        "cat"
+      ]
+    },
+    {
+      "name": "chair",
+      "synonyms": [
+        "chair"
+      ]
+    },
+    {
+      "name": "cow",
+      "synonyms": [
+        "cow"
+      ]
+    },
+    {
+      "name": "diningtable",
+      "synonyms": [
+        "diningtable"
+      ]
+    },
+    {
+      "name": "dog",
+      "synonyms": [
+        "dog"
+      ]
+    },
+    {
+      "name": "horse",
+      "synonyms": [
+        "horse"
+      ]
+    },
+    {
+      "name": "motorbike",
+      "synonyms": [
+        "motorbike"
+      ]
+    },
+    {
+      "name": "person",
+      "synonyms": [
+        "person"
+      ]
+    },
+    {
+      "name": "pottedplant",
+      "synonyms": [
+        "pottedplant"
+      ]
+    },
+    {
+      "name": "sheep",
+      "synonyms": [
+        "sheep"
+      ]
+    },
+    {
+      "name": "sofa",
+      "synonyms": [
+        "sofa"
+      ]
+    },
+    {
+      "name": "train",
+      "synonyms": [
+        "train"
+      ]
+    },
+    {
+      "name": "tvmonitor",
+      "synonyms": [
+        "tvmonitor"
+      ]
+    }
+  ],
+  "template": "seg_template",
+  "background_rule": "fixed_official_background",
+  "selector_family": "class_fixed_background",
+  "description": "One candidate-pool canonical per foreground class plus the official fixed background group.",
+  "sources": [
+    "C:\\Users\\AH\\Documents\\ChatGPT\\OVSS\\artifacts\\geometry_github\\research\\alias_selector_cross_model_natural_20261021\\candidate_pools\\voc21.json",
+    "C:\\Users\\AH\\Documents\\ChatGPT\\OVSS\\artifacts\\geometry_github\\research\\alias_selector_cross_model_natural_20261021\\sources\\vip_configs\\cls_voc21.txt"
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "dataset": "voc21",
+  "classes": [
+    {
+      "name": "background",
+      "synonyms": [
+        "background"
+      ]
+    },
+    {
+      "name": "aeroplane",
+      "synonyms": [
+        "aeroplane"
+      ]
+    },
+    {
+      "name": "bicycle",
+      "synonyms": [
+        "bicycle"
+      ]
+    },
+    {
+      "name": "bird",
+      "synonyms": [
+        "bird"
+      ]
+    },
+    {
+      "name": "boat",
+      "synonyms": [
+        "boat"
+      ]
+    },
+    {
+      "name": "bottle",
+      "synonyms": [
+        "bottle"
+      ]
+    },
+    {
+      "name": "bus",
+      "synonyms": [
+        "bus"
+      ]
+    },
+    {
+      "name": "car",
+      "synonyms": [
+        "car"
+      ]
+    },
+    {
+      "name": "cat",
+      "synonyms": [
+        "cat"
+      ]
+    },
+    {
+      "name": "chair",
+      "synonyms": [
+        "chair"
+      ]
+    },
+    {
+      "name": "cow",
+      "synonyms": [
+        "cow"
+      ]
+    },
+    {
+      "name": "diningtable",
+      "synonyms": [
+        "diningtable"
+      ]
+    },
+    {
+      "name": "dog",
+      "synonyms": [
+        "dog"
+      ]
+    },
+    {
+      "name": "horse",
+      "synonyms": [
+        "horse"
+      ]
+    },
+    {
+      "name": "motorbike",
+      "synonyms": [
+        "motorbike"
+      ]
+    },
+    {
+      "name": "person",
+      "synonyms": [
+        "person"
+      ]
+    },
+    {
+      "name": "pottedplant",
+      "synonyms": [
+        "pottedplant"
+      ]
+    },
+    {
+      "name": "sheep",
+      "synonyms": [
+        "sheep"
+      ]
+    },
+    {
+      "name": "sofa",
+      "synonyms": [
+        "sofa"
+      ]
+    },
+    {
+      "name": "train",
+      "synonyms": [
+        "train"
+      ]
+    },
+    {
+      "name": "tvmonitor",
+      "synonyms": [
+        "tvmonitor"
+      ]
+    }
+  ],
+  "template": "seg_template",
+  "background_rule": "canonical_only",
+  "selector_family": "canonical_only",
+  "description": "One candidate-pool canonical expression per class; strict 1-expression control.",
+  "sources": [
+    "C:\\Users\\AH\\Documents\\ChatGPT\\OVSS\\artifacts\\geometry_github\\research\\alias_selector_cross_model_natural_20261021\\candidate_pools\\voc21.json"
+  ]
+}
