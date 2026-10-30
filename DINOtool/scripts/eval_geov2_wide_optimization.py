@@ -13,6 +13,7 @@ from dinotool.frozen_deployment import FrozenGeometry
 from dinotool.geov2_wide_optimized import (
     OptimizedWideReadout, WideReadoutConfig, factor_reconstruction, factor_correction,
 )
+from dinotool.anchored_infra import configure_fast_math, cast_shared_visual_weights
 from eval_alias_finalization import load_samples
 from eval_development_readout import confusion
 from eval_geov2_g0_sweep import metric, write
@@ -26,12 +27,50 @@ VARIANTS = {
     'shared_native': WideReadoutConfig(head='native'),
     'shared_regression': WideReadoutConfig(head='regression'),
     'shared_short336': WideReadoutConfig(wide_long_edge=336),
+    # Resolution and execution-only controls are combined here to isolate
+    # the VDD latency bottleneck.  DonorBefore/local geometry is untouched.
+    'shared_short336_fast': WideReadoutConfig(
+        wide_long_edge=336, fast_assignment=True, solve_dtype='float32'),
+    'shared_short224_fast': WideReadoutConfig(
+        wide_long_edge=224, fast_assignment=True, solve_dtype='float32'),
+    'shared_batch2': WideReadoutConfig(
+        fast_assignment=True, solve_dtype='float32', local_batch_size=2),
+    'shared_batch2_short336': WideReadoutConfig(
+        wide_long_edge=336, fast_assignment=True, solve_dtype='float32',
+        local_batch_size=2),
+    'shared_batch4': WideReadoutConfig(
+        fast_assignment=True, solve_dtype='float32', local_batch_size=4),
+    'shared_batch2_tf32': WideReadoutConfig(
+        fast_assignment=True, solve_dtype='float32', local_batch_size=2),
+    'shared_batch2_compile': WideReadoutConfig(
+        fast_assignment=True, solve_dtype='float32', local_batch_size=2),
+    'shared_batch4_compile': WideReadoutConfig(
+        fast_assignment=True, solve_dtype='float32', local_batch_size=4),
+    'shared_batch4_compile_all': WideReadoutConfig(
+        fast_assignment=True, solve_dtype='float32', local_batch_size=4),
+    'shared_native_batch4_compile': WideReadoutConfig(
+        head='native', fast_assignment=True, solve_dtype='float32', local_batch_size=4),
+    'shared_regression_batch4_compile': WideReadoutConfig(
+        head='regression', fast_assignment=True, solve_dtype='float32', local_batch_size=4),
+    'shared_local_memory_batch4_compile': WideReadoutConfig(
+        fast_assignment=True, solve_dtype='float32', local_batch_size=4,
+        local_memory=True),
     'shared_fp32': WideReadoutConfig(solve_dtype='float32'),
     'shared_slots48': WideReadoutConfig(capacity=48, solve_dtype='float32'),
     'shared_visual': WideReadoutConfig(shared_visual=True, solve_dtype='float32'),
     'optimized48': WideReadoutConfig(capacity=48, shared_visual=True, fast_assignment=True),
     'optimized24': WideReadoutConfig(capacity=24, shared_visual=True, fast_assignment=True),
     'shared_visual_canvas': WideReadoutConfig(shared_visual=True, direct=False),
+    # Frozen Anchored deployment: 24 slots, independent wide head, shared
+    # backbone storage, fast assignment, and factorized FP32 H action.
+    'anchored_infra': WideReadoutConfig(
+        shared_backbone=True, shared_visual=False, direct=True,
+        capacity=24, fast_assignment=True, solve_dtype='float32',
+        readout='anchored'),
+    'anchored_infra_shared_visual': WideReadoutConfig(
+        shared_backbone=True, shared_visual=True, direct=True,
+        capacity=24, fast_assignment=True, solve_dtype='float32',
+        readout='anchored'),
     'ridge01': WideReadoutConfig(head='regression', regression_ridge=.1, shared_visual=True, fast_assignment=True),
     'ridge03': WideReadoutConfig(head='regression', regression_ridge=.3, shared_visual=True, fast_assignment=True),
     'ridge1': WideReadoutConfig(head='regression', regression_ridge=1., shared_visual=True, fast_assignment=True),
@@ -66,11 +105,29 @@ def main(args):
     tokenizer.get_tokenizer = lambda *_a,**_k: tokenizer.Tokenizer(
         vocab_path=str(Path(protocol['checkpoint_dir'])/'bpe_simple_vocab_16e6.txt.gz'))
     config=VARIANTS[args.variant]
+    if args.variant.endswith('_tf32'):
+        configure_fast_math(True)
     torch.cuda.reset_peak_memory_stats()
     m = FrozenGeometry(record['config_path'], checkpoint_dir=protocol['checkpoint_dir'],
         dinov3_repo=protocol['dinov3_repo'],upstream_root=protocol['upstream_root'],
         text_cache=record['text_cache'],efficient=True,wide_branch='query_slot',query_slot_capacity=24,
-        shared_visual=config is not None and config.shared_visual)
+        shared_visual=config is not None and config.shared_visual,
+        wide_alias_aggregation=args.wide_alias_aggregation)
+    if args.variant.endswith('_compile') or args.variant.endswith('_compile_all'):
+        # Compile only the frozen visual feature extractor. Geometry relation,
+        # DonorBefore, slot routing and writeback remain eager and unchanged.
+        for branch in (m.geometry.backbone, m.vip.backbone):
+            visual = branch.model.visual_model
+            visual.get_backbone_features = torch.compile(
+                visual.get_backbone_features, mode='reduce-overhead',
+                fullgraph=False, dynamic=False)
+    if args.variant.endswith('_compile_all'):
+        # The projection head is also shape-static for the locked 512 crop.
+        # Compile it separately; all tensor equations and the local path stay
+        # identical, while Python/module dispatch is removed from each tile.
+        m.compact_geometry.project = torch.compile(
+            m.compact_geometry.project, mode='max-autotune-no-cudagraphs',
+            fullgraph=False, dynamic=False)
     initialization_peak_mib=torch.cuda.max_memory_allocated()/1048576
     if m.strengths != ('original',):
         raise ValueError('Local DonorBefore must stay active.')
@@ -150,6 +207,7 @@ def main(args):
         del prepared,prepared_after,rgb,old_local,after,relation,operator,factors,difference
     forward=m.predict if optimized is None else optimized.predict
     common=dict(dataset=args.dataset,variant=args.variant,wide_config=None if config is None else asdict(config),
+                wide_alias_aggregation=args.wide_alias_aggregation,
                 gain=record['gain'],profile=m.profile.record(),config=m.config,cache_identity=m.cache_identity,
                 local_path_unchanged=True,invariants=invariant,cpu_threads=torch.get_num_threads(),
                 initialization_peak_allocated_mib=initialization_peak_mib,shared_visual_storage=m.shared_visual)
@@ -217,4 +275,6 @@ if __name__=='__main__':
     p.add_argument('--cpu-threads',type=int,default=1)
     p.add_argument('--output-root')
     p.add_argument('--gain',type=float)
+    p.add_argument('--wide-alias-aggregation',choices=('logsumexp','logmeanexp'),default='logsumexp',
+        help='Alias reduction in the QuerySlot wide branch; logmeanexp removes alias-count bias.')
     main(p.parse_args())

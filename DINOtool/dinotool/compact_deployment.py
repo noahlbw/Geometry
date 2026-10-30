@@ -62,7 +62,8 @@ class CompactGeometry:
 
 
 @torch.inference_mode()
-def _iter_local_observations(resized, image_size, geometry, strengths, *, reconstruction=None, include_raw=False):
+def _iter_local_observations(resized, image_size, geometry, strengths, *, reconstruction=None,
+                             include_raw=False, batch_size=1, reconstruction_batch=None):
     """Yield local rows one at a time for readers that consume raw queries online."""
     from .bounded_physical_coupling import geometry_windows
     from .gear_ov import _crop_at
@@ -70,21 +71,56 @@ def _iter_local_observations(resized, image_size, geometry, strengths, *, recons
     from eval_rival_fine_full import tile_coordinates
     solve = reconstruction_operator if reconstruction is None else reconstruction
     h, w = image_size
-    for top, left in geometry_windows(h, w):
-        prepared = geometry.prepare_image(_crop_at(resized, top, left, 512).to(geometry.device))
-        coordinates = tile_coordinates(top, left, geometry.device)
-        valid = (coordinates[:, 0] < h) & (coordinates[:, 1] < w)
-        operator, _ = solve(prepared.geometry_patch_conditional[0], valid)
-        with geometry.backbone._autocast():
-            features = {s: geometry.project(prepared, s)[0] for s in dict.fromkeys(strengths)}
-        row = dict(top=top, left=left, features=features, operator=operator)
-        if include_raw:
-            # Preserve the patch-token query used by optional whole-image
-            # memory routers.  The default deployment keeps this disabled so
-            # the existing source footprint and arithmetic are unchanged.
-            row['raw'] = prepared.backbone_tokens[:, prepared.prefix_tokens:].detach()
-        yield row
-        del prepared
+    locations = tuple(geometry_windows(h, w))
+    if batch_size < 1:
+        raise ValueError('batch_size must be positive')
+    # The batch path is deliberately kept here, after geometry window
+    # construction, so every crop uses exactly the same coordinates,
+    # padding, relation solve and DonorBefore projection as the frozen path.
+    for start in range(0, len(locations), int(batch_size)):
+        group = locations[start:start + int(batch_size)]
+        crops = torch.cat([_crop_at(resized, top, left, 512)
+                           for top, left in group], dim=0).to(geometry.device)
+        prepared = geometry.prepare_image(crops)
+        rows = []
+        valids = []
+        for index, (top, left) in enumerate(group):
+            coordinates = tile_coordinates(top, left, geometry.device)
+            valid = (coordinates[:, 0] < h) & (coordinates[:, 1] < w)
+            relation = prepared.geometry_patch_conditional[index:index + 1]
+            valids.append(valid)
+        if reconstruction_batch is not None and len(group) > 1:
+            batched_operator = reconstruction_batch(
+                prepared.geometry_patch_conditional, torch.stack(valids))
+        else:
+            batched_operator = None
+        for index, (top, left) in enumerate(group):
+            valid = valids[index]
+            relation = prepared.geometry_patch_conditional[index:index + 1]
+            # Keep the exact solve/projection order of the single-crop path;
+            # only the visual forward above is micro-batched.
+            if batched_operator is None:
+                operator, _ = solve(relation[0], valid)
+            else:
+                batched_value, _ = batched_operator
+                factors, factor_valid = batched_value
+                operator = (factors[index], factor_valid[index])
+            one = type(prepared)(
+                backbone_tokens=prepared.backbone_tokens[index:index + 1],
+                geometry_patch_conditional=relation,
+                prefix_tokens=prepared.prefix_tokens,
+                block_index=prepared.block_index)
+            with geometry.backbone._autocast():
+                features = {s: geometry.project(one, s)[0] for s in dict.fromkeys(strengths)}
+            row = dict(top=top, left=left, features=features, operator=operator)
+            if include_raw:
+                # Preserve the patch-token query used by optional whole-image
+                # memory routers. The default deployment keeps this disabled.
+                row['raw'] = one.backbone_tokens[:, one.prefix_tokens:].detach()
+            rows.append(row)
+        for row in rows:
+            yield row
+        del rows, prepared, crops
 
 
 @torch.inference_mode()

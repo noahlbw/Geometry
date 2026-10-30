@@ -1,0 +1,23 @@
+{
+  "dataset": "voc21",
+  "images": [
+    {
+      "key": "2007_000033",
+      "changed_pixels": 423,
+      "total_pixels": 183000,
+      "reference_miou": 0.9050874316939891,
+      "optimized_miou": 0.9035027322404372
+    },
+    {
+      "key": "2007_007498",
+      "changed_pixels": 397,
+      "total_pixels": 188000,
+      "reference_miou": 0.5927287234042553,
+      "optimized_miou": 0.5940904255319149
+    }
+  ],
+  "changed_pixels": 820,
+  "total_pixels": 371000,
+  "model": "Anchored FP64 compatibility vs anchored_infra",
+  "masks_used_only_for_scoring": true
+}

@@ -29,12 +29,16 @@ class FrozenGeometry:
     """
     @torch.inference_mode()
     def __init__(self,config_path,*,checkpoint_dir,dinov3_repo,upstream_root,text_cache,device='cuda',compact=True,efficient=False,
-                 wide_branch='vip', query_slot_capacity=24, writeback='coupled', shared_visual=False):
+                 wide_branch='vip', query_slot_capacity=24, writeback='coupled', shared_visual=False,
+                 wide_alias_aggregation='logsumexp'):
         config_path=Path(config_path)
         self.config=yaml.safe_load(config_path.read_text(encoding='utf-8'))
         self.vocabulary=json.loads((config_path.parent/self.config['vocabulary']).read_text(encoding='utf-8'))
         c=self.config; self.compact=compact; self.efficient=efficient
         self.shared_visual=bool(shared_visual)
+        if wide_alias_aggregation not in ('logsumexp', 'logmeanexp'):
+            raise ValueError("wide_alias_aggregation must be 'logsumexp' or 'logmeanexp'.")
+        self.wide_alias_aggregation=wide_alias_aggregation
         if self.shared_visual and (wide_branch!='query_slot' or not compact or not Path(text_cache).exists()):
             raise ValueError('Shared visual storage requires compact query_slot and an existing frozen text cache.')
         if writeback not in ('coupled', 'adaptive', 'equal_mean', 'local', 'wide', 'fixed_g2'):
@@ -147,10 +151,11 @@ class FrozenGeometry:
         if hasattr(self,'context_memory'):
             from .context_memory_observer import CompactContextScorer
             from .view_disjoint_deployment import ViewDisjointScorer
-            self.wide_scorer=ViewDisjointScorer() if getattr(self,'context_memory_donors','all')=='outside' else CompactContextScorer()
+            kwargs={'aggregation':self.wide_alias_aggregation}
+            self.wide_scorer=ViewDisjointScorer(**kwargs) if getattr(self,'context_memory_donors','all')=='outside' else CompactContextScorer(**kwargs)
         elif hasattr(self, 'query_slot_observer'):
             from .context_memory_observer import CompactContextScorer
-            self.wide_scorer=CompactContextScorer()
+            self.wide_scorer=CompactContextScorer(aggregation=self.wide_alias_aggregation)
 
     def enable_context_memory(self, config=None, *, donor_view='all', context_depth='both', context_mode='memory'):
         """Select raw32 whole-image memory, optionally excluding own-view donors.
@@ -176,7 +181,8 @@ class FrozenGeometry:
         self.wide_branch='raw32'
         self.local_branch='geometry'
         from .view_disjoint_deployment import ViewDisjointScorer
-        self.wide_scorer = ViewDisjointScorer() if donor_view=='outside' else CompactContextScorer()
+        kwargs={'aggregation':self.wide_alias_aggregation}
+        self.wide_scorer = ViewDisjointScorer(**kwargs) if donor_view=='outside' else CompactContextScorer(**kwargs)
         return self
 
     def enable_query_slot(self, config=None, *, beta=.5, temperature=.1, capacity=24):
@@ -207,7 +213,7 @@ class FrozenGeometry:
         self.query_slot_beta = float(beta)
         self.query_slot_temperature = float(temperature)
         self.compact_geometry = (EfficientResponseGeometry if self.efficient else ResponseGeometry)(self.geometry)
-        self.wide_scorer = CompactContextScorer()
+        self.wide_scorer = CompactContextScorer(aggregation=self.wide_alias_aggregation)
         self.wide_branch='query_slot'
         self.local_branch='donor_before'
         return self

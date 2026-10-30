@@ -18,14 +18,21 @@ def main(args):
         torch.set_num_threads(args.cpu_threads)
         import cv2
         cv2.setNumThreads(args.cpu_threads)
+    # The pinned VIP checkout exposes a zero-argument tokenizer helper whose
+    # default path is empty. Bind it to the frozen DINO BPE file before any
+    # DINO text model is constructed. This is part of the reproducible
+    # evaluator contract and does not alter model weights or text prompts.
+    from dinov3.eval.text import tokenizer as dino_tokenizer
+    dino_tokenizer.get_tokenizer = lambda *_a, **_k: dino_tokenizer.Tokenizer(
+        vocab_path=str(Path(args.checkpoint_dir) / 'bpe_simple_vocab_16e6.txt.gz'))
     optimized=args.wide_readout=='optimized48'
-    candidate=args.wide_readout in ('shared_canvas','optimized48')
+    candidate=args.wide_readout in ('shared_canvas','anchored_infra','anchored_infra_shared_visual','optimized48')
     output=Path(args.output)
     if output.exists():raise RuntimeError('Use a new output file.')
     model=FrozenGeometry(args.config,checkpoint_dir=args.checkpoint_dir,dinov3_repo=args.dinov3_repo,
         upstream_root=args.upstream_root,text_cache=args.text_cache,compact=not args.reference,device=args.device,efficient=args.efficient,
         wide_branch=args.wide_branch,query_slot_capacity=48 if optimized else args.query_slot_capacity,writeback=args.writeback,
-        shared_visual=optimized)
+        shared_visual=optimized,wide_alias_aggregation=args.wide_alias_aggregation)
     forward=model.predict
     if candidate:
         if model.config['dataset']=='loveda':
@@ -54,6 +61,7 @@ def main(args):
         config=config,text_cache_identity=model.cache_identity,compact=not args.reference,efficient=args.efficient,
         wide_branch=model.wide_branch,local_branch=model.local_branch,
         query_slot_capacity=getattr(model, 'query_slot_capacity', None),writeback=model.writeback,
+        wide_alias_aggregation=model.wide_alias_aggregation,
         wide_readout=args.wide_readout,shared_visual_storage=model.shared_visual,
         shared_backbone_storage=candidate,
         context_memory=model.wide_branch=='raw32',
@@ -72,8 +80,10 @@ if __name__=='__main__':
         help='Frozen wide donor branch. Defaults to the incumbent VIP reader; raw32/query_slot are explicit experiments.')
     p.add_argument('--query-slot-capacity',type=int,default=24,
         help='QuerySlot codebook size (screened default: 24); supports compact or efficient execution.')
-    p.add_argument('--wide-readout',choices=('incumbent','shared_canvas','optimized48'),default='incumbent',
-        help='incumbent keeps the frozen path; shared_canvas shares backbone storage; optimized48 adds direct 48-slot readout.')
+    p.add_argument('--wide-alias-aggregation',choices=('logsumexp','logmeanexp'),default='logsumexp',
+        help='Alias reduction in the QuerySlot/Raw32 wide branch; logmeanexp removes alias-count bias.')
+    p.add_argument('--wide-readout',choices=('incumbent','shared_canvas','anchored_infra','anchored_infra_shared_visual','optimized48'),default='incumbent',
+        help='incumbent keeps the frozen path; shared_canvas shares backbone storage; anchored_infra is the execution-only 24-slot Anchored path; anchored_infra_shared_visual additionally shares the frozen visual head; optimized48 is a 48-slot memory candidate.')
     p.add_argument('--cpu-threads',type=int)
     p.add_argument('--writeback',choices=('coupled','adaptive','equal_mean','local','wide','fixed_g2'),default='coupled',
         help='Explicit writer selection; preserves coupled as the frozen default.')
@@ -87,8 +97,8 @@ if __name__=='__main__':
     p.add_argument('--num-shards',type=int,default=1);p.add_argument('--shard-index',type=int,default=0)
     p.add_argument('--sample-seed',type=int,default=20260923);p.add_argument('--vdd-ontology',default='official')
     args=p.parse_args()
-    if args.wide_readout in ('shared_canvas','optimized48') and (args.wide_branch!='query_slot' or not args.efficient or args.reference or args.writeback!='coupled'):
-        p.error('--wide-readout shared_canvas/optimized48 requires --wide-branch query_slot --efficient and coupled writeback.')
+    if args.wide_readout in ('shared_canvas','anchored_infra','anchored_infra_shared_visual','optimized48') and (args.wide_branch!='query_slot' or not args.efficient or args.reference or args.writeback!='coupled'):
+        p.error('--wide-readout shared_canvas/anchored_infra/anchored_infra_shared_visual/optimized48 requires --wide-branch query_slot --efficient and coupled writeback.')
     if args.context_memory:
         if args.wide_branch is not None:
             p.error('--context-memory cannot be combined with an explicit --wide-branch.')

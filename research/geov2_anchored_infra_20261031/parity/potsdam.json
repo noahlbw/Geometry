@@ -1,0 +1,23 @@
+{
+  "dataset": "potsdam",
+  "images": [
+    {
+      "key": "top_potsdam_2_13_RGB_y00_x00.tif",
+      "changed_pixels": 1701,
+      "total_pixels": 1000000,
+      "reference_miou": 0.908954,
+      "optimized_miou": 0.909397
+    },
+    {
+      "key": "top_potsdam_3_13_RGB_y01_x05.tif",
+      "changed_pixels": 3053,
+      "total_pixels": 1000000,
+      "reference_miou": 0.801214,
+      "optimized_miou": 0.799777
+    }
+  ],
+  "changed_pixels": 4754,
+  "total_pixels": 2000000,
+  "model": "Anchored FP64 compatibility vs anchored_infra",
+  "masks_used_only_for_scoring": true
+}

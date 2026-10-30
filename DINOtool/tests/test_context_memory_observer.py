@@ -72,6 +72,32 @@ class ContextMemoryTests(unittest.TestCase):
         torch.testing.assert_close(CompactContextScorer(salience=True)(source,query,.7,.3),
                                    reference,atol=1e-4,rtol=1e-5)
 
+    def test_logmeanexp_is_alias_duplicate_invariant(self):
+        torch.manual_seed(151)
+        features = torch.randn(1, 4, 5)
+        text = torch.randn(3, 2, 5)
+        query = SimpleNamespace(features=text, parents=torch.tensor([0, 0, 1]),
+                                class_names=('a', 'b'))
+        source = dict(wide_size=(2, 2), wide=[dict(top=0, left=0, ah=2, aw=2,
+            grid_hw=(2, 2), output_hw=(2, 2), features=features)])
+        scorer = CompactContextScorer(aggregation='logmeanexp')
+        base = scorer(source, query, .7)
+
+        # Duplicate the complete alias bank.  Log-sum-exp changes every class
+        # by log(2)/tau, whereas log-mean-exp is invariant.
+        duplicated = SimpleNamespace(
+            features=text.repeat_interleave(2, dim=0),
+            parents=torch.tensor([0, 0, 0, 0, 1, 1]),
+            class_names=('a', 'b'),
+        )
+        duplicated_result = CompactContextScorer(aggregation='logmeanexp')(
+            source, duplicated, .7)
+        torch.testing.assert_close(base, duplicated_result, atol=1e-5, rtol=1e-5)
+
+    def test_invalid_compact_aggregation_is_rejected(self):
+        with self.assertRaises(ValueError):
+            CompactContextScorer(aggregation='sum')
+
     def test_factorized_read_matches_explicit_relation_and_conserves_mass(self):
         torch.manual_seed(106)
         p = torch.randn(1, 11, 4).softmax(-1)

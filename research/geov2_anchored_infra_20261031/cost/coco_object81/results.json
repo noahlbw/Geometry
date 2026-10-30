@@ -1,0 +1,188 @@
+{
+  "status": "complete",
+  "dataset": "coco_object81",
+  "variant": "anchored_infra",
+  "wide_config": {
+    "shared_backbone": true,
+    "head": "slots",
+    "beta": 0.5,
+    "query_mode": "raw",
+    "direct": true,
+    "solve_dtype": "float32",
+    "wide_long_edge": 0,
+    "capacity": 24,
+    "shared_visual": false,
+    "fast_assignment": true,
+    "regression_ridge": 0.01,
+    "local_batch_size": 1,
+    "batch_wide": false,
+    "readout": "anchored",
+    "batch_anchored": false
+  },
+  "wide_alias_aggregation": "logsumexp",
+  "gain": 0.5,
+  "profile": {
+    "bank": "official_imagenet",
+    "strength": "original",
+    "coupling": 0.5,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "natural_short336_cap672",
+    "background_rule": "retained"
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "coco_object81",
+    "family": "natural",
+    "total_images": 5000,
+    "background_index": 0,
+    "vocabulary": "../vocabularies/coco_object81.json",
+    "profile": {
+      "bank": "official_imagenet",
+      "strength": "original",
+      "coupling": 0.5,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "natural_short336_cap672",
+      "background_rule": "retained"
+    },
+    "background_bias": -4.0,
+    "background_threshold": 0.05,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "6a90ffd1b6a13475e7f2f7fe1a97a770f4387919f3b689f3816af73ca2c7bd3c",
+  "local_path_unchanged": true,
+  "invariants": {},
+  "cpu_threads": 1,
+  "initialization_peak_allocated_mib": 2513.171875,
+  "shared_visual_storage": false,
+  "images": [
+    {
+      "key": "000000000139",
+      "milliseconds": [
+        167.81568061560392,
+        166.57675569877028,
+        167.03535802662373,
+        169.37459213659167,
+        170.1248101890087,
+        166.17933614179492,
+        166.95595812052488
+      ],
+      "peak_allocated_mib": 1848.71728515625,
+      "peak_reserved_mib": 2274.0
+    },
+    {
+      "key": "000000097994",
+      "milliseconds": [
+        169.03026215732098,
+        167.9803216829896,
+        167.43796598166227,
+        165.9252569079399,
+        166.98641097173095,
+        164.81679817661643,
+        167.21833776682615
+      ],
+      "peak_allocated_mib": 1848.71728515625,
+      "peak_reserved_mib": 2274.0
+    },
+    {
+      "key": "000000190140",
+      "milliseconds": [
+        166.8565571308136,
+        167.44593624025583,
+        168.52463502436876,
+        168.80360478535295,
+        166.91616969183087,
+        167.59865125641227,
+        167.99320885911584
+      ],
+      "peak_allocated_mib": 1848.71728515625,
+      "peak_reserved_mib": 2274.0
+    },
+    {
+      "key": "000000289586",
+      "milliseconds": [
+        166.71162378042936,
+        166.7060679756105,
+        166.31408594548702,
+        165.05370009690523,
+        165.69732502102852,
+        165.36750085651875,
+        165.95062194392085
+      ],
+      "peak_allocated_mib": 1848.71728515625,
+      "peak_reserved_mib": 2274.0
+    },
+    {
+      "key": "000000384527",
+      "milliseconds": [
+        167.21891006454825,
+        168.50522998720407,
+        168.63746801391244,
+        169.56518124789,
+        168.06232929229736,
+        167.59277880191803,
+        167.51910792663693
+      ],
+      "peak_allocated_mib": 1895.06591796875,
+      "peak_reserved_mib": 2650.0
+    },
+    {
+      "key": "000000480985",
+      "milliseconds": [
+        167.18694800511003,
+        164.45293417200446,
+        164.49569165706635,
+        165.21170316264033,
+        165.0512940250337,
+        164.78271409869194,
+        165.60124792158604
+      ],
+      "peak_allocated_mib": 1868.1201171875,
+      "peak_reserved_mib": 2650.0
+    },
+    {
+      "key": "000000581781",
+      "milliseconds": [
+        167.1814676374197,
+        169.15727499872446,
+        169.1675279289484,
+        169.37585035338998,
+        166.22372390702367,
+        165.40705086663365,
+        165.41706398129463
+      ],
+      "peak_allocated_mib": 1893.17431640625,
+      "peak_reserved_mib": 2650.0
+    }
+  ],
+  "median_ms": 167.03535802662373,
+  "peak_allocated_mib": 1895.06591796875,
+  "peak_reserved_mib": 2650.0,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "target_masks_loaded": false,
+  "boundary": "CPU RGB to original-size CPU uint8 labels; excludes decode/init/text. Seven fixed images, two warmups, seven synchronized repeats. Fresh process for each variant."
+}

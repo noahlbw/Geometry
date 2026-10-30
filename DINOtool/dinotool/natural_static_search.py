@@ -103,7 +103,13 @@ class StaticReader:
         bank = self.banks[profile.bank]
         wkey = ('wide', profile.bank, profile.tau, profile.tem)
         if wkey not in cache:
-            cache[wkey] = (base.wide_scores if wide_scorer is None else wide_scorer)(source, self.queries[profile.bank], profile.tau, profile.tem)
+            # Anchored infra may have already reduced the wide feature tiles
+            # to the exact class canvas.  Reusing it avoids retaining the
+            # high-dimensional wide features while preserving scorer output.
+            if '_precomputed_wide' in source:
+                cache[wkey] = source['_precomputed_wide']
+            else:
+                cache[wkey] = (base.wide_scores if wide_scorer is None else wide_scorer)(source, self.queries[profile.bank], profile.tau, profile.tem)
         original_broad = cache[wkey]
         broad = original_broad
         if profile.background_rule.startswith('residual_'):
@@ -122,10 +128,13 @@ class StaticReader:
             for i, tile in enumerate(source['local']):
                 key = ('local', profile.bank, profile.strength, profile.background_rule, i)
                 if key not in cache:
-                    alias = tile['features'][profile.strength].float() @ self.text[profile.bank].T
-                    local = (self.scorers if local_scorers is None else local_scorers)[profile.bank].uniform_reference(alias)
-                    if profile.background_rule == 'union_max' and self.background is not None:
-                        local[:, self.background] = alias[:, self.members[profile.bank]].amax(-1)
+                    if 'local_logits' in tile:
+                        local = tile['local_logits']
+                    else:
+                        alias = tile['features'][profile.strength].float() @ self.text[profile.bank].T
+                        local = (self.scorers if local_scorers is None else local_scorers)[profile.bank].uniform_reference(alias)
+                        if profile.background_rule == 'union_max' and self.background is not None:
+                            local[:, self.background] = alias[:, self.members[profile.bank]].amax(-1)
                     if profile.background_rule == 'residual_max':
                         local[:, self.background] = (tile['features'][profile.strength].float() @ self.residual_text.T).amax(-1)
                     cache[key] = local
@@ -133,9 +142,24 @@ class StaticReader:
                 top, left = tile['top'], tile['left']
                 tile_broad = broad[top,left] if isinstance(broad,dict) else broad
                 wide = (tile_broad if tile_broad.ndim==2 else sample_broad(tile_broad, top, left, h, w)).reshape_as(local)
+                difference = wide.double() - local.double()
+                operator = tile['operator']
+                if isinstance(operator, tuple):
+                    # The Cholesky representation is an execution-only form
+                    # of the same H action.  Keep the declared writer
+                    # Z=L+g0 H(W-L) and return to FP64 for the surrounding
+                    # logits, matching the historical tensor contract.
+                    from .geov2_wide_optimized import factor_correction
+                    correction = factor_correction(operator, difference).double()
+                else:
+                    correction = operator.double() @ difference
                 if profile.background_rule == 'residual_protected':
                     previous = sample_broad(original_broad, top, left, h, w).reshape_as(local)
-                    foreground = local.double() + profile.coupling * (tile['operator'].double() @ (previous.double() - local.double()))
+                    previous_difference = previous.double() - local.double()
+                    if isinstance(operator, tuple):
+                        foreground = local.double() + profile.coupling * factor_correction(operator, previous_difference).double()
+                    else:
+                        foreground = local.double() + profile.coupling * (operator.double() @ previous_difference)
                     foreground[:, self.background] = -torch.inf
                     cosine = tile['features'][profile.strength].float() @ self.residual_text.T
                     local = local.clone()
@@ -147,7 +171,7 @@ class StaticReader:
                 elif fusion == 'equal_mean':
                     logits = .5 * (local.double() + wide.double())
                 else:
-                    target = local.double() + profile.coupling * (tile['operator'].double() @ (wide.double() - local.double()))
+                    target = local.double() + profile.coupling * correction
                     if fusion == 'target' or fusion == 'coupled':
                         logits = target
                     elif fusion == 'fixed_g2':

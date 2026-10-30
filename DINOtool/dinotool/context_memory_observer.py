@@ -41,23 +41,30 @@ def context_assignments(raw, config=ContextMemoryConfig(), return_logits=False):
         data = F.normalize(data, dim=-1)
         n, width = data.shape
         k = min(config.capacity, n)
+        # Keep the deterministic farthest-point rule, but use explicit
+        # gather/scatter for the selected token.  CUDA scalar indexing creates
+        # a host synchronization in this hot path; index_select/scatter keep
+        # the index on device and produce the same tie-breaking order.
         chosen = torch.zeros(n, device=data.device, dtype=torch.bool)
         distance = torch.full((n,), torch.inf, device=data.device)
         indices = []
         next_index = data.norm(dim=-1).argmax()
         for _ in range(k):
+            index = next_index.reshape(1)
             indices.append(next_index)
-            chosen[next_index] = True
-            distance = torch.minimum(distance, (1-data @ data[next_index]).clamp_min(0))
+            chosen.scatter_(0, index, True)
+            point = data.index_select(0, index)[0]
+            distance = torch.minimum(distance, (1-data @ point).clamp_min(0))
             next_index = distance.masked_fill(chosen, -1).argmax()
-        centers = data[torch.stack(indices)]
+        centers = data.index_select(0, torch.stack(indices))
         for _ in range(config.iterations):
             owner = (data @ centers.T).argmax(-1)
             total = torch.zeros((k, width), device=data.device)
             total.index_add_(0, owner, data)
-            count = torch.bincount(owner, minlength=k)
+            occupied = torch.zeros(k, device=data.device, dtype=torch.bool)
+            occupied.scatter_(0, owner, True)
             proposed = F.normalize(total, dim=-1)
-            centers = torch.where((count > 0)[:, None], proposed, centers)
+            centers = torch.where(occupied[:, None], proposed, centers)
         similarity = data @ centers.T
         if config.hard:
             assignment = F.one_hot(similarity.argmax(-1), k).float()
@@ -205,14 +212,21 @@ class ContextMemoryObserver:
 
 
 class CompactContextScorer:
-    """Template-mean dot products and vectorized class LSE, without salience.
+    """Template-mean dot products and vectorized class LSE/LME, without salience.
 
     Template averaging commutes with cosine dot products in real arithmetic;
     mixed-precision rounding differs from a template-level implementation.
-    The inherited 40*cosine scale, tau and alias-count offsets are retained.
+    The inherited 40*cosine scale and tau are retained.  ``logsumexp`` keeps
+    the historical alias-count offset.  ``logmeanexp`` subtracts the log of
+    each class' alias count, so duplicating a complete alias group cannot
+    change that class' wide score.  The latter is an aggregation choice only;
+    it does not alter
+    the QuerySlot assignments or the feature transport.
     """
-    def __init__(self, salience=False):
-        self.cache, self.salience = {}, salience
+    def __init__(self, salience=False, aggregation='logsumexp'):
+        if aggregation not in ('logsumexp', 'logmeanexp'):
+            raise ValueError("aggregation must be 'logsumexp' or 'logmeanexp'.")
+        self.cache, self.salience, self.aggregation = {}, salience, aggregation
 
     @torch.inference_mode()
     def __call__(self, source, query, tau=1., tem=None):
@@ -252,7 +266,14 @@ class CompactContextScorer:
             maxima.scatter_reduce_(1, indices, aliases, reduce='amax', include_self=True)
             mass = torch.zeros_like(maxima)
             mass.scatter_add_(1, indices, (aliases-maxima.gather(1, indices)).exp())
-            logits = (maxima+mass.log())/tau
+            logits = maxima+mass.log()
+            if self.aggregation == 'logmeanexp':
+                # The reduction is log(mean(exp(tau * alias_score))).
+                # Keep the offset in the same dtype/device as the logits so
+                # this path is identical on CPU and CUDA mixed precision.
+                counts = alias_counts.to(device=logits.device, dtype=logits.dtype)
+                logits = logits-counts.log()[None, :]
+            logits = logits/tau
             grid = crop.get('grid_hw', (21, 21))
             size = crop.get('output_hw', (grid[0]*16, grid[1]*16))
             dense = F.interpolate(logits.T.reshape(1, classes, *grid), size,

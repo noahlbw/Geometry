@@ -16,9 +16,12 @@ def memory_rgb(image, *, wide_policy='long448'):
         array = (image.permute(1, 2, 0).cpu().numpy()*255).round().clip(0, 255).astype(np.uint8)
         rgb = torch.from_numpy(np.ascontiguousarray(cv2.resize(array, (w, h), interpolation=cv2.INTER_LINEAR)))
         rgb = rgb.permute(2, 0, 1).float()/255
-    elif wide_policy == 'long448':
+    elif wide_policy == 'long448' or (wide_policy.startswith('long') and wide_policy[4:].isdigit()):
         from eval_matched_head_fov import resize_rgb
-        rgb = resize_rgb(image, 448)
+        edge = 448 if wide_policy == 'long448' else int(wide_policy[4:])
+        if edge < 16:
+            raise ValueError('Wide long edge must be at least one patch.')
+        rgb = resize_rgb(image, edge)
         h, w = rgb.shape[-2:]
     else:
         raise ValueError('Unknown frozen wide policy.')

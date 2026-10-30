@@ -1,0 +1,23 @@
+{
+  "dataset": "vdd",
+  "images": [
+    {
+      "key": "DJI_0007.JPG",
+      "changed_pixels": 18770,
+      "total_pixels": 12000000,
+      "reference_miou": 0.7467110833333334,
+      "optimized_miou": 0.7472550833333333
+    },
+    {
+      "key": "DJI_0390.JPG",
+      "changed_pixels": 23716,
+      "total_pixels": 12000000,
+      "reference_miou": 0.8277668333333333,
+      "optimized_miou": 0.8280199166666666
+    }
+  ],
+  "changed_pixels": 42486,
+  "total_pixels": 24000000,
+  "model": "Anchored FP64 compatibility vs anchored_infra",
+  "masks_used_only_for_scoring": true
+}

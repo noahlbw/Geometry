@@ -11,6 +11,11 @@ import torch
 
 from dinotool.anchored_slot_memory import anchored_slot_wide_observations
 from dinotool.efficient_deployment import reconstruction
+from dinotool.geov2_wide_optimized import factor_correction
+from dinotool.anchored_infra import (
+    AnchoredInfraConfig, cast_shared_visual_weights, configure_fast_math,
+    describe_config, factor_solver, prepare_streamed_source,
+)
 from eval_alias_finalization import load_samples
 from eval_development_readout import confusion
 from eval_geov2_g0_sweep import metric, write
@@ -23,17 +28,35 @@ MODES = dict(Coordinate='coordinate', Legacy='legacy', Anchored='anchored',
 
 
 class AnchoredExperiment(SharedExperiment):
-    def __init__(self, protocol):
+    def __init__(self, protocol, infra=None):
         super().__init__(protocol, ['Full'])
+        self.infra = infra or AnchoredInfraConfig()
+        self.infra.validate()
+        self.infra_previous = configure_fast_math(self.infra.fast_math)
+        self.weight_stats = cast_shared_visual_weights(
+            self.model.geometry.backbone, self.infra.weight_dtype)
         self.initialization_peak_allocated_mib = torch.cuda.max_memory_allocated()/1048576
 
     def sources(self, image, methods, *, solve=True, audit=False):
         m = self.model
         modes = list(dict.fromkeys(MODES[method] for method in methods))
-        solver = reconstruction if solve else lambda _a, _v:(None, None)
-        return anchored_slot_wide_observations(image, m.compact_geometry, m.query_slot_observer,
-            m.strengths, wide_policy=m.profile.wide_policy, temperature=.1, beta=.5,
+        solver = (factor_solver(self.infra.solver_dtype)
+                  if solve and self.infra.solver_dtype != 'float64' else reconstruction) if solve else lambda _a, _v:(None, None)
+        wide_policy = self.infra.wide_policy or m.profile.wide_policy
+        sources = anchored_slot_wide_observations(
+            image, m.compact_geometry, m.query_slot_observer, m.strengths,
+            wide_policy=wide_policy, temperature=.1, beta=.5,
             reconstruction=solver, modes=modes, audit=audit)
+        if self.infra.stream_logits and len(modes) == 1:
+            mode = modes[0]
+            source = sources[mode]
+            bank = m.profile.bank
+            source = prepare_streamed_source(
+                source, reader=m.reader, profile=m.profile, bank_name=bank,
+                wide_scorer=m.wide_scorer,
+                local_scorer=m.efficient_local_scorers[bank])
+            sources[mode] = source
+        return sources
 
     def render(self, source, cell, cache, *, implicit_uniform=False):
         m = self.model
@@ -83,7 +106,14 @@ def main(args):
     if out.exists():
         raise RuntimeError('Preserve existing output: '+str(out))
     out.mkdir(parents=True)
-    exp = AnchoredExperiment(p)
+    infra = AnchoredInfraConfig(
+        solver_dtype=args.solver_dtype,
+        stream_logits=not args.no_stream_logits,
+        fast_math=not args.no_fast_math,
+        weight_dtype=args.weight_dtype,
+        wide_policy=args.wide_policy,
+    )
+    exp = AnchoredExperiment(p, infra)
     m = exp.model
     loader_args = argparse.Namespace(dataset=args.dataset, data_root=record['data_root'],
         sample_seed=20260923, vdd_ontology='official', mode='full', num_shards=1, shard_index=0)
@@ -98,7 +128,8 @@ def main(args):
         config=m.config, cache_identity=m.cache_identity, alias_counts=exp.alias_counts,
         architecture='Frozen DonorBefore + matched 24-slot head + anchored residual read + original structural writer',
         cells=cells, cpu_threads=1, adaptive_gain_enabled=False,
-        initialization_peak_allocated_mib=exp.initialization_peak_allocated_mib)
+        initialization_peak_allocated_mib=exp.initialization_peak_allocated_mib,
+        anchored_infra=describe_config(exp.infra), weight_storage=exp.weight_stats)
     lookup = {s.key:s for s in validation}
     if args.mode == 'cost':
         gc.collect()
@@ -202,6 +233,15 @@ if __name__ == '__main__':
     parser.add_argument('--dataset', required=True)
     parser.add_argument('--mode', choices=('smoke', 'screen', 'full', 'cost'), required=True)
     parser.add_argument('--cell', default='Anchored__g0.5')
+    parser.add_argument('--solver-dtype', choices=('float32', 'float64'), default='float32',
+        help='Cholesky factor dtype for the H action; float64 is compatibility mode.')
+    parser.add_argument('--no-stream-logits', action='store_true',
+        help='Keep the historical high-dimensional feature lists.')
+    parser.add_argument('--weight-dtype', choices=('none', 'bfloat16'), default='none',
+        help='Optional BF16 storage for frozen visual Linear/Conv weights.')
+    parser.add_argument('--wide-policy', default=None,
+        help='Optional long-edge override such as long384; unset uses the frozen YAML.')
+    parser.add_argument('--no-fast-math', action='store_true')
     parser.add_argument('--num-shards', type=int, default=1)
     parser.add_argument('--shard-index', type=int, default=0)
     main(parser.parse_args())

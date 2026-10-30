@@ -5,6 +5,8 @@ import torch
 from dinotool.context_memory_observer import ContextMemoryConfig, context_assignments
 from dinotool.geov2_wide_optimized import (
     WIDE_READOUT_CHOICES,
+    _sample_global,
+    _sample_global_batch,
     factor_correction,
     factor_reconstruction,
     wide_assignments,
@@ -40,9 +42,26 @@ class WideOptimizationTests(unittest.TestCase):
                 self.assertEqual(torch.count_nonzero(actual[~valid]), 0)
 
     def test_readout_menu_keeps_incumbent_explicit(self):
-        self.assertEqual(WIDE_READOUT_CHOICES, ('incumbent', 'shared_canvas', 'optimized48'))
+        self.assertEqual(WIDE_READOUT_CHOICES, ('incumbent', 'shared_canvas', 'anchored_infra', 'anchored_infra_shared_visual', 'optimized48'))
         self.assertIsNone(wide_readout_config('incumbent'))
         self.assertFalse(wide_readout_config('shared_canvas').direct)
+        infra = wide_readout_config('anchored_infra')
+        self.assertTrue(infra.capacity == 24 and infra.direct and infra.fast_assignment)
+        self.assertFalse(infra.shared_visual)
+        self.assertEqual(infra.solve_dtype, 'float32')
+        shared = wide_readout_config('anchored_infra_shared_visual')
+        self.assertTrue(shared.shared_visual and shared.readout == 'anchored')
+
+    def test_batched_anchor_sampling_matches_per_tile_sampling(self):
+        torch.manual_seed(23)
+        features = torch.randn(1, 16, 5)
+        positions = torch.tensor([[0., 0.], [16., 8.]])
+        batched = _sample_global_batch(features, (4, 4), (64, 64), positions)
+        individual = torch.cat([
+            _sample_global(features, (4, 4), (64, 64), int(top), int(left))
+            for top, left in positions
+        ], dim=0)
+        torch.testing.assert_close(batched, individual, atol=1e-6, rtol=1e-6)
         optimized = wide_readout_config('optimized48')
         self.assertTrue(optimized.capacity == 48 and optimized.shared_visual and optimized.fast_assignment)
 
