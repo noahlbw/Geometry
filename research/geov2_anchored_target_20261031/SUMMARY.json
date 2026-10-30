@@ -1,0 +1,36 @@
+{
+  "implementation": "anchored_infra_fast_bf16",
+  "constraints": {
+    "local_path": "DonorBefore",
+    "wide_readout": "Anchored QuerySlot",
+    "slots": 24,
+    "shared_canvas": false,
+    "formula": "F^W=Y0+beta(Pi_hat-Pi)C_sem; Z=L+g0 H(W-L)"
+  },
+  "cost": {
+    "metric": "torch.cuda.max_memory_allocated",
+    "vdd": {"ms": 232.5968, "allocated_mib": 1360.6812, "reserved_mib": 1636.0},
+    "potsdam": {"ms": 95.4961, "allocated_mib": 896.5806, "reserved_mib": 1316.0},
+    "voc20": {"ms": 86.99, "allocated_mib": 951.16, "reserved_mib": 1326.0},
+    "voc21": {"ms": 88.18, "allocated_mib": 938.55, "reserved_mib": 1318.0}
+  },
+  "full_miou_percent": {
+    "vdd": 60.55748335157007,
+    "potsdam": 54.999073833537096,
+    "voc20": 93.2877,
+    "voc21": 74.8200
+  },
+  "screen_miou_percent": {
+    "vdd": 61.35249510122881,
+    "potsdam": 51.7519,
+    "voc20": 83.8204,
+    "voc21": 75.0961
+  },
+  "smoke": {
+    "assignment_argmax_mismatch_fraction": 0.0,
+    "max_factor_action_abs_fp64": 1.34e-14,
+    "max_factor_action_abs_fp32": 1.23e-4,
+    "min_local_mean_cosine": 0.9999203681945801,
+    "max_local_abs": 0.01207604818046093
+  }
+}

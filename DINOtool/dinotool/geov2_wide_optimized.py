@@ -315,16 +315,29 @@ class OptimizedWideReadout:
             for visual in visuals:
                 if id(visual) in seen or getattr(visual, '_geov2_visual_compiled', False):
                     continue
-                visual.get_backbone_features = compiler(
-                    visual.get_backbone_features, mode='reduce-overhead',
-                    fullgraph=False, dynamic=False)
+                # Compile the tensor-only transformer core.  Compiling the
+                # wrapper that unpacks nested class/patch/register tuples can
+                # make TorchDynamo pass tuple objects into DINO's list-aware
+                # blocks on some PyTorch 2.6 builds.
+                backbone = visual.backbone
+                bound = backbone._get_intermediate_layers_not_chunked
+                function = getattr(bound, '__func__', bound)
+                compiled = compiler(function, mode='max-autotune-no-cudagraphs',
+                                    fullgraph=False, dynamic=False)
+                import types
+                backbone._get_intermediate_layers_not_chunked = types.MethodType(
+                    compiled, backbone)
                 visual._geov2_visual_compiled = True
                 seen.add(id(visual))
         if self.config.compile_project:
             project = getattr(model, 'compact_geometry', None)
             if project is not None and not getattr(project, '_geov2_project_compiled', False):
-                project.project = compiler(project.project, mode='reduce-overhead',
-                                           fullgraph=False, dynamic=False)
+                bound = project.project
+                function = getattr(bound, '__func__', bound)
+                compiled = compiler(function, mode='max-autotune-no-cudagraphs',
+                                    fullgraph=False, dynamic=False)
+                import types
+                project.project = types.MethodType(compiled, project)
                 project._geov2_project_compiled = True
 
     @torch.inference_mode()

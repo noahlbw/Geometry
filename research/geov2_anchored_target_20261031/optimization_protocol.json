@@ -1,0 +1,536 @@
+{
+  "implementation": "geov2-anchored-target-screen-20261031",
+  "datasets": {
+    "vdd": {
+      "loader": {
+        "dataset": "vdd",
+        "data_root": "/data/test/datasets/VDD Release Version/VDD",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/kev_alias_search_20261009",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/vdd.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "official_imagenet",
+        "strength": "original",
+        "coupling": 1.0,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 0.3,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "sample_keys": [
+        "DJI_0018.JPG",
+        "DJI_0325.JPG",
+        "DJI_0360.JPG",
+        "DJI_0445.JPG",
+        "DJI_0467.JPG",
+        "DJI_0552.JPG",
+        "DJI_0744.JPG",
+        "DJI_0798.JPG",
+        "DJI_0916.JPG",
+        "DJI_10024.JPG",
+        "DJI_10054.JPG",
+        "DJI_10233.JPG",
+        "DJI_10345.JPG",
+        "DJI_10596.JPG",
+        "DJI_10624.JPG",
+        "DJI_10697.JPG"
+      ],
+      "background_bias": 0.0,
+      "background_threshold": 0.0,
+      "reference_config": "artifacts\\geometry_github\\configs\\frozen_20261010\\vdd.yaml",
+      "excluded_screen_keys": [
+        "DJI_0007.JPG",
+        "DJI_0365.JPG",
+        "DJI_0519.JPG",
+        "DJI_0763.JPG",
+        "DJI_10018.JPG",
+        "DJI_10176.JPG",
+        "DJI_10553.JPG",
+        "DJI_10708.JPG"
+      ],
+      "total_images": 80,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/vdd.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/vdd.pt",
+      "gain": 1.0,
+      "cost_keys": [
+        "DJI_0007.JPG",
+        "DJI_0390.JPG",
+        "DJI_0552.JPG",
+        "DJI_0819.JPG",
+        "DJI_10054.JPG",
+        "DJI_10397.JPG",
+        "DJI_10708.JPG"
+      ]
+    },
+    "potsdam": {
+      "loader": {
+        "dataset": "potsdam",
+        "data_root": "/data/test/datasets/Potsdam/preprocessed_RGB",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/kev_alias_search_20261009",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/potsdam.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "official_imagenet",
+        "strength": "original",
+        "coupling": 0.5,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "sample_keys": [
+        "top_potsdam_2_13_RGB_y00_x01.tif",
+        "top_potsdam_2_13_RGB_y05_x02.tif",
+        "top_potsdam_2_14_RGB_y04_x03.tif",
+        "top_potsdam_3_13_RGB_y04_x03.tif",
+        "top_potsdam_3_14_RGB_y03_x04.tif",
+        "top_potsdam_4_13_RGB_y03_x04.tif",
+        "top_potsdam_4_14_RGB_y02_x05.tif",
+        "top_potsdam_4_15_RGB_y02_x05.tif",
+        "top_potsdam_5_13_RGB_y02_x01.tif",
+        "top_potsdam_5_14_RGB_y02_x01.tif",
+        "top_potsdam_5_15_RGB_y01_x02.tif",
+        "top_potsdam_6_13_RGB_y01_x02.tif",
+        "top_potsdam_6_14_RGB_y00_x03.tif",
+        "top_potsdam_6_15_RGB_y00_x03.tif",
+        "top_potsdam_6_15_RGB_y05_x04.tif",
+        "top_potsdam_7_13_RGB_y05_x04.tif"
+      ],
+      "background_bias": 0.0,
+      "background_threshold": 0.2,
+      "reference_config": "artifacts\\geometry_github\\configs\\frozen_20261010\\potsdam.yaml",
+      "excluded_screen_keys": [
+        "top_potsdam_2_13_RGB_y00_x00.tif",
+        "top_potsdam_2_14_RGB_y05_x05.tif",
+        "top_potsdam_3_14_RGB_y05_x05.tif",
+        "top_potsdam_4_14_RGB_y05_x05.tif",
+        "top_potsdam_5_13_RGB_y05_x05.tif",
+        "top_potsdam_5_15_RGB_y05_x05.tif",
+        "top_potsdam_6_14_RGB_y05_x05.tif",
+        "top_potsdam_7_13_RGB_y05_x05.tif"
+      ],
+      "total_images": 504,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/potsdam.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/potsdam.pt",
+      "gain": 0.5,
+      "cost_keys": [
+        "top_potsdam_2_13_RGB_y00_x00.tif",
+        "top_potsdam_3_13_RGB_y01_x05.tif",
+        "top_potsdam_4_13_RGB_y03_x05.tif",
+        "top_potsdam_4_15_RGB_y05_x05.tif",
+        "top_potsdam_5_15_RGB_y01_x05.tif",
+        "top_potsdam_6_14_RGB_y03_x05.tif",
+        "top_potsdam_7_13_RGB_y05_x05.tif"
+      ]
+    },
+    "ade150": {
+      "loader": {
+        "dataset": "ade150",
+        "data_root": "/data/test/datasets/VIP_natural/ADEChallengeData2016",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/kev_alias_search_20261009",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/ade150.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "semantic_segmentation",
+        "strength": "original",
+        "coupling": 0.25,
+        "temperature": 0.14,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "natural_short336_cap672",
+        "background_rule": "retained"
+      },
+      "sample_keys": [
+        "ADE_val_00000002",
+        "ADE_val_00000127",
+        "ADE_val_00000252",
+        "ADE_val_00000394",
+        "ADE_val_00000520",
+        "ADE_val_00000662",
+        "ADE_val_00000787",
+        "ADE_val_00000929",
+        "ADE_val_00001055",
+        "ADE_val_00001197",
+        "ADE_val_00001322",
+        "ADE_val_00001464",
+        "ADE_val_00001590",
+        "ADE_val_00001732",
+        "ADE_val_00001857",
+        "ADE_val_00001999"
+      ],
+      "background_bias": 0.0,
+      "background_threshold": 0.0,
+      "reference_config": "artifacts\\geometry_github\\configs\\frozen_20261010\\ade150.yaml",
+      "excluded_screen_keys": [
+        "ADE_val_00000001",
+        "ADE_val_00000286",
+        "ADE_val_00000572",
+        "ADE_val_00000857",
+        "ADE_val_00001143",
+        "ADE_val_00001428",
+        "ADE_val_00001714",
+        "ADE_val_00002000"
+      ],
+      "total_images": 2000,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/ade150.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/ade150.pt",
+      "gain": 0.25,
+      "cost_keys": [
+        "ADE_val_00000001",
+        "ADE_val_00000334",
+        "ADE_val_00000667",
+        "ADE_val_00001000",
+        "ADE_val_00001333",
+        "ADE_val_00001666",
+        "ADE_val_00002000"
+      ]
+    },
+    "voc20": {
+      "loader": {
+        "dataset": "voc20",
+        "data_root": "/data/test/datasets/VIP_natural/VOCdevkit/VOC2012",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/kev_alias_search_20261009",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/voc20.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "semantic_imagenet",
+        "strength": "original",
+        "coupling": 1.0,
+        "temperature": 0.1,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "natural_short336_cap672",
+        "background_rule": "retained"
+      },
+      "sample_keys": [
+        "2007_000042",
+        "2007_002824",
+        "2007_005689",
+        "2007_009084",
+        "2008_001040",
+        "2008_003782",
+        "2008_006341",
+        "2009_000619",
+        "2009_002317",
+        "2009_003938",
+        "2010_000335",
+        "2010_002232",
+        "2010_004165",
+        "2011_000054",
+        "2011_001546",
+        "2011_003256"
+      ],
+      "background_bias": 0.0,
+      "background_threshold": 0.0,
+      "reference_config": "artifacts\\geometry_github\\configs\\frozen_20261010\\voc20.yaml",
+      "excluded_screen_keys": [
+        "2007_000033",
+        "2007_006364",
+        "2008_001992",
+        "2008_008268",
+        "2009_003378",
+        "2010_001752",
+        "2010_005871",
+        "2011_003271"
+      ],
+      "total_images": 1449,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/voc20.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/voc20.pt",
+      "gain": 1.0,
+      "cost_keys": [
+        "2007_000033",
+        "2007_007498",
+        "2008_003856",
+        "2009_001644",
+        "2010_000552",
+        "2010_005180",
+        "2011_003271"
+      ]
+    },
+    "voc21": {
+      "loader": {
+        "dataset": "voc21",
+        "data_root": "/data/test/datasets/VIP_natural/VOCdevkit/VOC2012",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "screen_images": 64,
+      "profile": {
+        "bank": "official_segmentation",
+        "strength": "original",
+        "coupling": 0.75,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 0.3,
+        "wide_policy": "natural_short336_cap672",
+        "background_rule": "union_max"
+      },
+      "total_images": 1449,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/voc21.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/voc21.pt",
+      "gain": 0.75,
+      "cost_keys": [
+        "2007_000033",
+        "2007_007498",
+        "2008_003856",
+        "2009_001644",
+        "2010_000552",
+        "2010_005180",
+        "2011_003271"
+      ]
+    },
+    "coco_object81": {
+      "loader": {
+        "dataset": "coco_object81",
+        "data_root": "/data/test/datasets/VIP_natural/COCOObject",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "screen_images": 64,
+      "profile": {
+        "bank": "official_imagenet",
+        "strength": "original",
+        "coupling": 0.5,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "natural_short336_cap672",
+        "background_rule": "retained"
+      },
+      "total_images": 5000,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/coco_object81.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/coco_object81.pt",
+      "gain": 0.5,
+      "cost_keys": [
+        "000000000139",
+        "000000097994",
+        "000000190140",
+        "000000289586",
+        "000000384527",
+        "000000480985",
+        "000000581781"
+      ]
+    }
+  },
+  "configurations": {
+    "Memory32": {
+      "capacity": 32,
+      "temperature": 0.1,
+      "iterations": 5,
+      "center": true,
+      "hard": false
+    },
+    "Memory64": {
+      "capacity": 64,
+      "temperature": 0.1,
+      "iterations": 5,
+      "center": true,
+      "hard": false
+    },
+    "Memory32_Raw": {
+      "capacity": 32,
+      "temperature": 0.1,
+      "iterations": 5,
+      "center": false,
+      "hard": false
+    },
+    "Memory32_Hard": {
+      "capacity": 32,
+      "temperature": 0.1,
+      "iterations": 5,
+      "center": true,
+      "hard": true
+    }
+  },
+  "primary": "RawWide_ResponseLocal",
+  "hypothesis": "Hold the new whole-image raw32 wide branch fixed and replace only local Geometry with frozen DonorBefore: project native attention increments, transport patch increments through original Geometry relation, then run MLP. H/g and vocabulary stay unchanged.",
+  "controls": [
+    "VIP_Coupled",
+    "SelfWhole",
+    "SelfWhole_FastScore",
+    "Memory64",
+    "Memory32_Raw",
+    "Memory32_Hard",
+    "VIPWhole_NoSalience",
+    "VIPWhole_VIPScoring"
+  ],
+  "scoring": "Template-average dot products before GEMM and vectorized class LSE at40*cosine, frozen tau and count offsets; SelfWhole retains template-level scoring to isolate numerical changes.",
+  "criterion": {
+    "mean_delta_vs_vip_floor_pp": -1.0,
+    "worst_delta_vs_vip_floor_pp": -3.0,
+    "mean_delta_vs_raw32_floor_pp": -0.5
+  },
+  "provenance": "Fixed64 additional-development images,16 evenly spaced per four domains; no untouched-test claim. Candidate originates as a documented local control in fixed96 response-order study, now tested with raw32 wide output. Local response transport is applied only to normalized original Geometry strength; numeric strength profiles retain the incumbent local operator.",
+  "benchmark": "Three prespecified images per dataset, three warmups and12 repeats; exclusive physical GPU; wide encoder+reader+scorer; local model/text towers removed; report total and incremental allocated memory.",
+  "methods": [
+    "VIP_Coupled",
+    "Memory32_Raw",
+    "RawWide_ResponseLocal"
+  ],
+  "regression": "Secondary hypothesis fixed before additional predictions: mean + T(T^T T + lambda I)^-1 T^T V, T=P-mean(P), lambda=.01*trace(T^T T)/32; minimum1e-8 numerical floor.",
+  "shuffled_control": "Same P column masses and relation spectrum, with deterministic row permutation before both gathering and distribution; seed20261013+zero-basedimageindex.",
+  "salience_control": "Attributed incumbent image-conditioned alias weights, isolated from the new memory/overlap-regression operator. No relation, capacity, temperature, ridge or dataset-specific gain search.",
+  "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+  "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+  "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+  "screen_images": 16,
+  "cost_keys": {
+    "vdd": [
+      "DJI_0007.JPG",
+      "DJI_0390.JPG",
+      "DJI_0552.JPG",
+      "DJI_0819.JPG",
+      "DJI_10054.JPG",
+      "DJI_10397.JPG",
+      "DJI_10708.JPG"
+    ],
+    "potsdam": [
+      "top_potsdam_2_13_RGB_y00_x00.tif",
+      "top_potsdam_3_13_RGB_y01_x05.tif",
+      "top_potsdam_4_13_RGB_y03_x05.tif",
+      "top_potsdam_4_15_RGB_y05_x05.tif",
+      "top_potsdam_5_15_RGB_y01_x05.tif",
+      "top_potsdam_6_14_RGB_y03_x05.tif",
+      "top_potsdam_7_13_RGB_y05_x05.tif"
+    ],
+    "voc20": [
+      "2007_000033",
+      "2007_007498",
+      "2008_003856",
+      "2009_001644",
+      "2010_000552",
+      "2010_005180",
+      "2011_003271"
+    ],
+    "voc21": [
+      "2007_000033",
+      "2007_007498",
+      "2008_003856",
+      "2009_001644",
+      "2010_000552",
+      "2010_005180",
+      "2011_003271"
+    ],
+    "ade150": [
+      "ADE_val_00000001",
+      "ADE_val_00000334",
+      "ADE_val_00000667",
+      "ADE_val_00001000",
+      "ADE_val_00001333",
+      "ADE_val_00001666",
+      "ADE_val_00002000"
+    ],
+    "context60": [
+      "2008_000002",
+      "2008_003295",
+      "2008_006665",
+      "2009_001279",
+      "2009_004601",
+      "2010_002691",
+      "2010_006086"
+    ],
+    "udd5": [
+      "000061.JPG",
+      "001461.JPG",
+      "DJI_00528.JPG",
+      "DJI_0373_heda.JPG",
+      "DJI_0451.JPG",
+      "DJI_0511.JPG",
+      "DJI_0707.JPG"
+    ],
+    "oem": [
+      "aachen/images/aachen_11.tif",
+      "chiclayo/images/chiclayo_49.tif",
+      "duesseldorf/images/duesseldorf_35.tif",
+      "lubuskie/images/lubuskie_8.tif",
+      "piura/images/piura_48.tif",
+      "tokyo/images/tokyo_12.tif",
+      "zanzibar/images/zanzibar_99.tif"
+    ],
+    "vaihingen": [
+      "top_mosaic_09cm_area10_y00_x00.tif",
+      "top_mosaic_09cm_area16_y00_x00.tif",
+      "top_mosaic_09cm_area24_y00_x01.tif",
+      "top_mosaic_09cm_area2_y00_x00.tif",
+      "top_mosaic_09cm_area33_y01_x01.tif",
+      "top_mosaic_09cm_area38_y02_x02.tif",
+      "top_mosaic_09cm_area8_y02_x01.tif"
+    ],
+    "landcoverai": [
+      "M-33-20-D-c-4-2_101",
+      "M-33-7-A-d-3-2_259",
+      "M-34-56-A-b-1-4_14",
+      "M-34-68-B-a-1-3_239",
+      "N-33-139-C-d-2-2_185",
+      "N-34-140-A-b-4-2_1",
+      "N-34-97-D-c-2-4_75"
+    ],
+    "loveda": [
+      "2909.png",
+      "3039.png",
+      "3538.png",
+      "3887.png",
+      "3699.png",
+      "3200.png",
+      "3229.png"
+    ],
+    "context59": [
+      "2008_000002",
+      "2008_003295",
+      "2008_006665",
+      "2009_001279",
+      "2009_004601",
+      "2010_002691",
+      "2010_006086"
+    ],
+    "coco_object81": [
+      "000000000139",
+      "000000097994",
+      "000000190140",
+      "000000289586",
+      "000000384527",
+      "000000480985",
+      "000000581781"
+    ],
+    "coco_stuff171": [
+      "000000000139",
+      "000000097994",
+      "000000190140",
+      "000000289586",
+      "000000384527",
+      "000000480985",
+      "000000581781"
+    ],
+    "flair1": [
+      "D012_2019/Z10_UU/img/IMG_062613.tif",
+      "D026_2020/Z13_UU/img/IMG_065054.tif",
+      "D064_2021/Z30_NU/img/IMG_067471.tif",
+      "D071_2020/Z12_UA/img/IMG_070462.tif",
+      "D076_2019/Z15_UU/img/IMG_072654.tif",
+      "D083_2020/Z5_AU/img/IMG_074795.tif",
+      "D085_2019/Z9_NF/img/IMG_076387.tif"
+    ]
+  }
+}
