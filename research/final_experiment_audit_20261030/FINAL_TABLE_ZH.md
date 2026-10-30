@@ -1,31 +1,31 @@
 # Geov2 最终实验表（统一审计口径，2026-10-30）
 
-这张表把四种容易混淆的数字分开：`Efficient old` 是旧版 Efficient Geometry；`Geov2 best†` 是 Anchored（QuerySlot+DonorBefore）在已归档最佳 alias bank/g0 下的最高记录；`Geov2 formal` 是开发集冻结 bank/g0 后的正式复现值。baseline 列优先使用 pinned native suite 的实际复现值；有专用上游配置时使用该配置，没有专用配置时使用冻结的 fixed-transfer 结果。带 `†` 的 Geov2 数值中，Potsdam、VOC20、VOC21、Context60、COCO-Object81、COCO-Stuff171 和 iSAID 使用过标签选择或全量诊断，只能称为标签选择上界，不能写成无标签预先冻结结果。
+这张表把四种容易混淆的数字分开：`Efficient old` 是旧版 Efficient Geometry；`Geov2 best†` 是 Anchored（QuerySlot+DonorBefore）在已归档最佳 alias bank/g0 下的最高记录；`Geov2 formal` 是开发集冻结 bank/g0 后的正式复现值。VIP 主列使用官方论文报告值；其他 baseline 优先使用 pinned native suite 的实际复现值，有专用上游配置时使用该配置，没有专用配置时使用冻结的 fixed-transfer 结果。带 `†` 的 Geov2 数值中，Potsdam、VOC20、VOC21、Context60、COCO-Object81、COCO-Stuff171 和 iSAID 使用过标签选择或全量诊断，只能称为标签选择上界，不能写成无标签预先冻结结果。
 
 ## 最终单表（mIoU，%）
 
-| 协议 | Efficient old | Geov2 best† | Geov2 formal | 最佳 bank | g0 | VIP | CorrCLIP | PEARL | GLA-CLIP | PTC | SegEarth-OV |
+| 协议 | Efficient old | Geov2 best† | Geov2 formal | 最佳 bank | g0 | VIP 官方论文 | CorrCLIP pinned/论文 | PEARL pinned/论文 | GLA-CLIP pinned/论文 | PTC pinned/论文 | SegEarth-OV pinned/论文 |
 |---|---:|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
-| VDD | 60.4352 | **59.9810** | 59.9810 | `official_imagenet` | 1.00 | 52.0647 | 37.1270 | 37.9121 | 37.8462 | 41.1191 | 44.8106 |
-| Potsdam | 56.1934 | **55.4424**† | 54.4390 | `official_imagenet` | 0.75 | 44.8995 | 32.2386 | 31.5545 | 34.8473 | 33.6962 | 48.1943 |
+| VDD | 60.4352 | **59.9810** | 59.9810 | `official_imagenet` | 1.00 | 54.3 | 37.1270 | 37.9121 | 37.8462 | 41.1191 | 44.8106 |
+| Potsdam | 56.1934 | **55.4424**† | 54.4390 | `official_imagenet` | 0.75 | 49.8 | 32.2386 | 31.5545 | 34.8473 | 33.6962 | 48.1943 |
 | UDD5 | 55.8266 | **55.2575** | 55.2575 | `kev60_segmentation` | 0.50 | 44.9713 | 40.0991 | 43.3762 | 47.7428 | 39.8159 | 50.5568 |
 | OEM | 45.1052 | **44.7355** | 44.7355 | `original` | 0.25 | 35.0388 | 24.4936 | 27.7070 | 30.7688 | 29.4806 | 35.6405 |
-| Vaihingen | 58.8562 | **58.8021** | 58.8021 | `kev40_imagenet` | 0.25 | 47.3620 | 25.0724 | 26.1222 | 28.5356 | 25.8137 | 29.2379 |
-| LandCover.ai | 65.5400 | **68.9235** | 68.9235 | `original_imagenet` | 0.50 | 54.9420 | 30.8354 | 30.9757 | 31.8306 | 33.0437 | 32.7043 |
+| Vaihingen | 58.8562 | **58.8021** | 58.8021 | `kev40_imagenet` | 0.25 | 47.0 | 25.0724 | 26.1222 | 28.5356 | 25.8137 | 29.2379 |
+| LandCover.ai | 65.5400 | **68.9235** | 68.9235 | `original_imagenet` | 0.50 | — | 30.8354 | 30.9757 | 31.8306 | 33.0437 | 32.7043 |
 | LoveDA-P | 69.6117 | **70.0386** | 70.0386 | `original` | 0.25 | 56.3110 | 43.7985 | 47.5212 | 50.6544 | 50.6271 | 53.4885 |
 | LoveDA-D | 45.3171 | **45.8370** | 45.8370 | `original` | 0.25 | 36.1457 | 26.6162 | 29.6031 | 31.0830 | 31.1501 | 36.8928 |
 | FLAIR1 | 43.6579 | **44.1187** | 44.1187 | `original` | 0.25 | 36.6074 | 20.3994 | 19.3884 | 19.4995 | 20.7257 | 18.2782 |
-| VOC20 | 92.7936 | **93.2805**† | 93.2804 | `semantic_imagenet` | 1.00 | 92.5051 | 87.5405 | 86.9143 | 84.2087 | 82.7334 | 73.0056 |
-| VOC21 | 75.8586 | **75.2094**† | 74.6882 | `official_segmentation` | 1.00 | 73.2591 | 73.9381 | 64.0821 | 66.2608 | 67.1752 | 57.1139 |
-| ADE150 | 31.3398 | **31.4852** | 31.4852 | `semantic_segmentation` | 0.25 | 29.1387 | 26.4301 | 19.3537 | 20.0191 | 20.9090 | 17.8261 |
-| Context60 | 44.7613 | **44.5929**† | 44.5927 | `mix_f6f525631e7f743d226c` | 0.75 | 42.5987 | 45.1164 | 36.5263 | 37.6621 | 37.7346 | 32.6773 |
+| VOC20 | 92.7936 | **93.2805**† | 93.2804 | `semantic_imagenet` | 1.00 | 92.5 | 87.5405 | 86.9143 | 84.2087 | 82.7334 | 73.0056 |
+| VOC21 | 75.8586 | **75.2094**† | 74.6882 | `official_segmentation` | 1.00 | 73.2 | 73.9381 | 64.0821 | 66.2608 | 67.1752 | 57.1139 |
+| ADE150 | 31.3398 | **31.4852** | 31.4852 | `semantic_segmentation` | 0.25 | 29.1 | 26.4301 | 19.3537 | 20.0191 | 20.9090 | 17.8261 |
+| Context60 | 44.7613 | **44.5929**† | 44.5927 | `mix_f6f525631e7f743d226c` | 0.75 | 42.6 | 45.1164 | 36.5263 | 37.6621 | 37.7346 | 32.6773 |
 | Context59 | 46.3075 | **46.7853** | 46.7853 | `official_segmentation` | 0.75 | — | 47.7036 | 38.7213 | 40.0670 | 40.5982 | 35.5333 |
-| COCO-Object81 | 50.3999 | **49.6209**† | 49.6209 | `official_imagenet` | 0.50 | 48.9955 | 44.6265 | 38.6592 | 39.0724 | 39.6947 | 31.2886 |
-| COCO-Stuff171 | 33.7661 | **33.7882**† | 33.4209 | `official_segmentation` | 0.75 | 33.4867 | 31.8365 | 26.3142 | 26.9368 | 27.4517 | 23.3325 |
-| Cityscapes (500 val) | — | **57.2676** | 57.2676 | `city_dev_label_selected_alias_bank` | 0.75 | 58.7766* | 46.9745* | 37.7867* | 41.2743* | 40.1996* | 34.1768* |
-| iSAID (11,644 tiles) | — | **28.9181**† | 27.0134 | `refine_four_segmentation` / `kev60_segmentation` | 0.50 | 26.1325 | 16.9** | 10.8161 | 10.0159 | 12.6610 | 23.4801* |
+| COCO-Object81 | 50.3999 | **49.6209**† | 49.6209 | `official_imagenet` | 0.50 | 47.4 | 44.6265 | 38.6592 | 39.0724 | 39.6947 | 31.2886 |
+| COCO-Stuff171 | 33.7661 | **33.7882**† | 33.4209 | `official_segmentation` | 0.75 | 33.3 | 31.8365 | 26.3142 | 26.9368 | 27.4517 | 23.3325 |
+| Cityscapes (500 val) | — | **57.2676** | 57.2676 | `city_dev_label_selected_alias_bank` | 0.75 | 55.7 | 46.9745* | 37.7867* | 41.2743* | 40.1996* | 34.1768* |
+| iSAID (11,644 tiles) | — | **28.9181**† | 27.0134 | `refine_four_segmentation` / `kev60_segmentation` | 0.50 | 26.1 | 16.9** | 10.8161 | 10.0159 | 12.6610 | 23.4801* |
 
-`†` 表示 Geov2 的 bank/g0 选择使用了开发标签或全量诊断；`*` 表示官方 released/config 的本地复现；`**` 表示论文报告值（CorrCLIP 的 iSAID 官方配置本地复现尚未完成）。iSAID SegEarth 的 `23.4801` 来自 pinned `cfg_iSAID.py`、`prob_thd=0.4`，并与 VIP/Geov2 使用同一 11,644-tile 协议。其它 baseline 列来自 pinned native suite 的完整结果；没有专用上游配置时使用冻结 fixed-transfer，不再用新的标签搜索替 baseline 提升。
+`†` 表示 Geov2 的 bank/g0 选择使用了开发标签或全量诊断；`*` 表示官方 released/config 的本地复现；`**` 表示论文报告值（CorrCLIP 的 iSAID 官方配置本地复现尚未完成）。VIP 主列是官方论文值；其 released-code 本地值（例如 Cityscapes 58.7766、iSAID 26.1325）只保留在附录。iSAID SegEarth 的 `23.4801` 来自 pinned `cfg_iSAID.py`、`prob_thd=0.4`，并与 VIP/Geov2 使用同一 11,644-tile 协议。其它 baseline 列来自 pinned native suite 的完整结果；没有专用上游配置时使用冻结 fixed-transfer，不再用新的标签搜索替 baseline 提升。
 
 ## Alias bank 文件位置
 
