@@ -13,4 +13,4 @@
 | CorrCLIP | 10.2868 | 308.79 | 2607.4 | summary.json | native/CorrCLIP_cost.json |
 | GLA-CLIP | 10.0159 | 56.95 | 1033.9 | summary.json | native/GLA-CLIP_cost.json |
 
-成本边界：native baseline 为固定 7 tile×7 repeats，含 BGR/resize/preprocess；Geov2 成本记录为 Anchored runner；VIP 为全 11,644 tile 聚合记录。†best alias bank 精度沿用 Anchored runner 成本，未单独记录 best-bank cost；效率排序只能在同一成本边界内解释。旧 SegEarth 22.5194 使用 cfg_vdd(prob=.3)，已作废。
+成本边界：native baseline 为固定 7 tile×7 repeats，含 BGR/resize/preprocess；Geov2 成本记录为 Anchored runner；VIP full-tile shared official cfg 的严格 7-tile 成本为 119.05 ms/tile、758.66 MiB allocated（`isaid_baselines_segearth04_20261030/vip_cost_tiles7_shared.json`）。†best alias bank 精度沿用 Anchored runner 成本，未单独记录 best-bank cost；效率排序只能在同一成本边界内解释。旧 SegEarth 22.5194 使用 cfg_vdd(prob=.3)，已作废。

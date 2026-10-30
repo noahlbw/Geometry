@@ -218,5 +218,13 @@
       "geov2_peak_reserved_mib": null,
       "best_selection_uses_full_labels": true
     }
-  ]
+  ],
+  "iSAID_cost_audit": {
+    "vip_tile_median_ms": 119.0544,
+    "vip_tile_peak_allocated_mib": 758.664,
+    "geov2_tile_median_ms": 167.5024,
+    "geov2_tile_peak_allocated_mib": 1702.1851,
+    "vip_full_original_miou": 20.2096,
+    "protocol_note": "main comparison uses VIP paper 26.1 and Geov2 tile best 28.9181 as requested; full original rerun is diagnostic"
+  }
 }

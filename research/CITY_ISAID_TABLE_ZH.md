@@ -30,11 +30,11 @@ Geov2 精度：`research/cityscapes_20261028/artifacts/anchored_strict_tau08/ful
 | **Geov2 Anchored (best alias bank)** | **28.9181** | 167.50† | 1702.19† | `isaid_alias_g0_screen_20261017/refine_four_full.json` |
 | Geov2 Anchored (formal frozen) | 27.0134 | 167.50 | 1702.19 | `isaid_baselines_tiles16_20261017/` |
 | VIP official（论文 reported） | 26.1 | — | — | VIP paper iSAID table |
-| VIP official（full tile local） | **26.1325** | **127.34** | **1816.76** | `vip_official_isaid_tiles16_20261017/official_tiles_r3.json` |
+| VIP official（full tile local） | **26.1325** | **119.05†** | **758.66†** | `isaid_baselines_segearth04_20261030/vip_cost_tiles7_shared.json` |
 | SegEarth-OV（official cfg_iSAID） | **18.9291** | **295.53** | **2596.45** | official prob_thd=0.4; 3042 MiB reserved |
 | PTC | 12.6610 | 248.60 | 716.22 | fixed transfer local |
 | PEARL | 10.8161 | 65.30 | 476.60 | fixed transfer local |
 | CorrCLIP | 10.2868 | 308.79 | 2609.10 | fixed transfer local |
 | GLA-CLIP | 10.0159 | 56.95 | 1033.90 | fixed transfer local |
 
-Geov2 最佳 alias bank 是 `refine_four_segmentation`，`g0=0.5`，全量 mIoU 为 28.9181%；formal 冻结 bank `kev60_segmentation` 为 27.0134%。†成本沿用同一 Anchored runner；best bank 只改变文本 bank，单独成本未另存。SegEarth 正式值为 18.9291%，来自 458 张原始 validation 图和官方 `cfg_iSAID.py`（`prob_thd=0.4`）；旧值 22.5194% 使用 VDD 配置，已作废。
+Geov2 最佳 alias bank 是 `refine_four_segmentation`，`g0=0.5`，tile mIoU 为 28.9181%；formal 冻结 bank `kev60_segmentation` 为 27.0134%。†VIP 与 Geov2 成本均为固定 7 tile shared runner；best bank 只改变文本 bank，单独成本未另存。SegEarth 正式值为 18.9291%，来自 458 张原始 validation 图和官方 `cfg_iSAID.py`（`prob_thd=0.4`）；旧值 22.5194% 使用 VDD 配置，已作废。

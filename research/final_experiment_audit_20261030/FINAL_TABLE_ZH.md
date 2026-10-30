@@ -71,7 +71,7 @@
 | Cityscapes | 133.69 | 1574.68 | 1838 | `research/cityscapes_baselines_20261030/geov2_shared_visual_cost_tau08_exact.json` |
 | iSAID | 167.50 | 1702.19 | — | `research/isaid_baselines_tiles16_20261017/geov2/anchored_tiles_cost_20261017.json` |
 
-Cityscapes 成本为固定 7 图；iSAID Geov2/VIP 的 26–28% 结果采用 11,644-tile runner，而 SegEarth 官方 cfg_iSAID 的 18.9291% 采用 458 张原始验证图，协议不同，不能直接做严格 head-to-head。两者与 15 个协议的 query_slot cost 边界也不同。iSAID best alias bank 的精度来自 `research/isaid_alias_g0_screen_20261017/refine_four_full.json`；该 bank 的单独成本未另存，因此成本表列 Anchored 正式 runner 成本并明确标注。
+Cityscapes 成本为固定 7 图；iSAID 的 Geov2/VIP 26–28% 结果采用同一 11,644-tile runner，VIP shared official cfg 为 119.05 ms/tile、758.66 MiB allocated，Geov2 为 167.50 ms/tile、1702.19 MiB allocated。SegEarth 官方 cfg_iSAID 的 18.9291% 采用 458 张原始验证图，协议不同，不能与 tile runner 做严格 head-to-head。iSAID best alias bank 的精度来自 `research/isaid_alias_g0_screen_20261017/refine_four_full.json`；该 bank 的单独成本未另存，因此成本表列正式 Anchored runner 成本并明确标注。
 
 ## 本地复现值（附录，不替代 VIP 官方 paper）
 
@@ -94,9 +94,10 @@ Cityscapes 成本为固定 7 图；iSAID Geov2/VIP 的 26–28% 结果采用 11,
 | COCO-Object81 | 48.9955 | 44.6265 | 38.6592 | 39.0724 | 39.6947 | 31.2886 |
 | COCO-Stuff171 | 33.4940 | 31.8365 | 26.3142 | 26.9368 | 27.4517 | 23.3325 |
 | Cityscapes | 58.7766 | 46.9745 | 37.7867 | 41.2743 | 40.1996 | 34.1768 |
-| iSAID | 26.1325 | 10.2868 | 10.8161 | 10.0159 | 12.6610 | **18.9291** |
+| iSAID（tile local） | 26.1325 | 10.2868 | 10.8161 | 10.0159 | 12.6610 | — |
+| iSAID（458 full local） | 20.2096 | — | — | — | — | **18.9291** |
 
-Cityscapes VIP local 是 released code 默认配置（336/112），不用于 VIP 官方 paper 主比较。iSAID SegEarth local=18.9291 使用官方 `cfg_iSAID.py` 的 `prob_thd=0.4`；旧的 22.5194 使用 VDD 配置，已作废。外部 local 具体成本见 [TRAINING_FREE_BASELINES_FULL_20261011.md](../TRAINING_FREE_BASELINES_FULL_20261011.md)。
+Cityscapes VIP local 是 released code 默认配置（336/112），不用于 VIP 官方 paper 主比较。iSAID tile local 的成本来自 `research/isaid_baselines_segearth04_20261030/vip_cost_tiles7_shared.json`；458 full local 的 20.2096 使用原始图协议且 text tower lifecycle 不同。SegEarth local=18.9291 使用官方 `cfg_iSAID.py` 的 `prob_thd=0.4`；旧的 22.5194 使用 VDD 配置，已作废。外部 local 具体成本见 [TRAINING_FREE_BASELINES_FULL_20261011.md](../TRAINING_FREE_BASELINES_FULL_20261011.md)。
 
 ## 解释边界
 
