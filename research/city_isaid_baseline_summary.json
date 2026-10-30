@@ -111,10 +111,13 @@
     },
     {
       "method": "SegEarth-OV",
-      "miou_percent": 18.9291,
-      "median_ms": 292.2624,
-      "peak_allocated_mib": 1155.0,
-      "source": "isaid_baselines_segearth04_20261030/merged.json",
+      "miou_percent": 23.4801,
+      "median_ms": 290.3425,
+      "peak_allocated_mib": 1154.76,
+      "peak_reserved_mib": 1242.0,
+      "source": "isaid_baselines_tiles16_segearth04_20261030/merged.json",
+      "config": "official cfg_iSAID.py prob_thd=0.4; same 11,644 tile protocol",
+      "full_image_sanity_miou_percent": 18.9291,
       "previous_invalid_miou_percent": 22.5194,
       "previous_invalid_config": "cfg_vdd.py prob_thd=0.3"
     },

@@ -1,0 +1,82 @@
+{
+  "implementation": "pinned-native-training-free-baseline-isaid-tiles-segearth04-v1-20261030",
+  "datasets": {
+    "isaid": {
+      "family": "remote_sensing",
+      "background_index": 0,
+      "total_images": 11644,
+      "data_root": "/data-cache/isaid_official_tiles_20261017",
+      "class_names": [
+        "background",
+        "ship",
+        "storage tank",
+        "baseball diamond",
+        "tennis court",
+        "basketball court",
+        "ground track field",
+        "bridge",
+        "large vehicle",
+        "small vehicle",
+        "helicopter",
+        "swimming pool",
+        "roundabout",
+        "soccer ball field",
+        "airplane",
+        "harbor"
+      ]
+    }
+  },
+  "methods": {
+    "SegEarth-OV": {
+      "repository": "https://github.com/likyoo/SegEarth-OV",
+      "commit": "3e22a969b32c6d751bdbba64a88a0b670e630f55",
+      "source_subdirectory": "SegEarth-OV",
+      "configs": {
+        "isaid": {
+          "method": "SegEarth-OV",
+          "module": "segearth_segmentor",
+          "class": "SegEarthSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/SegEarth-OV",
+          "model": {
+            "type": "SegEarthSegmentation",
+            "clip_type": "CLIP",
+            "vit_type": "ViT-B/16",
+            "model_type": "SegEarth",
+            "ignore_residual": true,
+            "feature_up": true,
+            "feature_up_cfg": {
+              "model_name": "jbu_one",
+              "model_path": "simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt"
+            },
+            "cls_token_lambda": -0.3,
+            "prob_thd": 0.4
+          },
+          "word_file": "words/SegEarth-OV/isaid.txt",
+          "word_sha256": "ccf9a9eb72ae3634235a68a2b27c7003b1c2fb9e9d8bb0f4e33a00f2642208ca",
+          "word_origin": "official iSAID taxonomy; one canonical name per line; frozen before evaluation",
+          "resize": {
+            "scale": [
+              448,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "SegEarth-OV\\configs\\cfg_iSAID.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "official_config_override": "prob_thd 0.4 from pinned upstream iSAID config"
+        }
+      }
+    }
+  },
+  "method_order": [
+    "SegEarth-OV"
+  ],
+  "dataset_order": [
+    "isaid"
+  ],
+  "expected_protocol_images": 45200,
+  "provenance": "Authors native official config where provided; fixed untuned transfer elsewhere. Matched existing images/targets. Different pretrained backbones and external resources remain part of each full method; this is not an operator ablation. Geometry references used prior labeled development optimization."
+}

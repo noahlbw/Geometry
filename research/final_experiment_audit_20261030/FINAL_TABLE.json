@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-30",
-  "status": "best_comparison_with_formal",
+  "status": "final_single_table_audited",
   "rows": [
     {
       "protocol": "VDD",
@@ -13,7 +13,9 @@
       "geov2_peak_allocated_mib": 2643.89,
       "geov2_peak_reserved_mib": 3254.0,
       "best_selection_uses_full_labels": false,
-      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/vdd.json"
+      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/vdd.json",
+      "efficient_old_miou": 60.4352,
+      "geov2_variant": "Anchored QuerySlot+DonorBefore"
     },
     {
       "protocol": "Potsdam",
@@ -26,7 +28,9 @@
       "geov2_peak_allocated_mib": 2143.3,
       "geov2_peak_reserved_mib": 2750.0,
       "best_selection_uses_full_labels": true,
-      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/potsdam.json"
+      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/potsdam.json",
+      "efficient_old_miou": 56.1934,
+      "geov2_variant": "Anchored QuerySlot+DonorBefore"
     },
     {
       "protocol": "UDD5",
@@ -39,7 +43,9 @@
       "geov2_peak_allocated_mib": 2276.79,
       "geov2_peak_reserved_mib": 3150.0,
       "best_selection_uses_full_labels": false,
-      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/udd5.json"
+      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/udd5.json",
+      "efficient_old_miou": 55.8266,
+      "geov2_variant": "Anchored QuerySlot+DonorBefore"
     },
     {
       "protocol": "OEM",
@@ -52,7 +58,9 @@
       "geov2_peak_allocated_mib": 2170.24,
       "geov2_peak_reserved_mib": 2780.0,
       "best_selection_uses_full_labels": false,
-      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/oem.json"
+      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/oem.json",
+      "efficient_old_miou": 45.1052,
+      "geov2_variant": "Anchored QuerySlot+DonorBefore"
     },
     {
       "protocol": "Vaihingen",
@@ -65,7 +73,9 @@
       "geov2_peak_allocated_mib": 2153.6,
       "geov2_peak_reserved_mib": 2750.0,
       "best_selection_uses_full_labels": false,
-      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/vaihingen.json"
+      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/vaihingen.json",
+      "efficient_old_miou": 58.8562,
+      "geov2_variant": "Anchored QuerySlot+DonorBefore"
     },
     {
       "protocol": "LandCover.ai",
@@ -78,7 +88,9 @@
       "geov2_peak_allocated_mib": 2159.3,
       "geov2_peak_reserved_mib": 2752.0,
       "best_selection_uses_full_labels": false,
-      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/landcoverai.json"
+      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/landcoverai.json",
+      "efficient_old_miou": 65.54,
+      "geov2_variant": "Anchored QuerySlot+DonorBefore"
     },
     {
       "protocol": "LoveDA-P",
@@ -91,7 +103,9 @@
       "geov2_peak_allocated_mib": 2187.57,
       "geov2_peak_reserved_mib": 2778.0,
       "best_selection_uses_full_labels": false,
-      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/loveda.json"
+      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/loveda.json",
+      "efficient_old_miou": 69.6117,
+      "geov2_variant": "Anchored QuerySlot+DonorBefore"
     },
     {
       "protocol": "LoveDA-D",
@@ -104,7 +118,9 @@
       "geov2_peak_allocated_mib": 2187.57,
       "geov2_peak_reserved_mib": 2778.0,
       "best_selection_uses_full_labels": false,
-      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/loveda.json"
+      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/loveda.json",
+      "efficient_old_miou": 45.3171,
+      "geov2_variant": "Anchored QuerySlot+DonorBefore"
     },
     {
       "protocol": "FLAIR1",
@@ -117,7 +133,9 @@
       "geov2_peak_allocated_mib": 2183.5,
       "geov2_peak_reserved_mib": 2868.0,
       "best_selection_uses_full_labels": false,
-      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/flair1.json"
+      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/flair1.json",
+      "efficient_old_miou": 43.6579,
+      "geov2_variant": "Anchored QuerySlot+DonorBefore"
     },
     {
       "protocol": "VOC20",
@@ -130,7 +148,9 @@
       "geov2_peak_allocated_mib": 2253.26,
       "geov2_peak_reserved_mib": 2998.0,
       "best_selection_uses_full_labels": true,
-      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/voc20.json"
+      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/voc20.json",
+      "efficient_old_miou": 92.7936,
+      "geov2_variant": "Anchored QuerySlot+DonorBefore"
     },
     {
       "protocol": "VOC21",
@@ -143,7 +163,9 @@
       "geov2_peak_allocated_mib": 2247.24,
       "geov2_peak_reserved_mib": 2958.0,
       "best_selection_uses_full_labels": true,
-      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/voc21.json"
+      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/voc21.json",
+      "efficient_old_miou": 75.8586,
+      "geov2_variant": "Anchored QuerySlot+DonorBefore"
     },
     {
       "protocol": "ADE150",
@@ -156,7 +178,9 @@
       "geov2_peak_allocated_mib": 3448.46,
       "geov2_peak_reserved_mib": 6876.0,
       "best_selection_uses_full_labels": false,
-      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/ade150.json"
+      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/ade150.json",
+      "efficient_old_miou": 31.3398,
+      "geov2_variant": "Anchored QuerySlot+DonorBefore"
     },
     {
       "protocol": "Context60",
@@ -169,7 +193,9 @@
       "geov2_peak_allocated_mib": 2622.49,
       "geov2_peak_reserved_mib": 3422.0,
       "best_selection_uses_full_labels": true,
-      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/context60.json"
+      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/context60.json",
+      "efficient_old_miou": 44.7613,
+      "geov2_variant": "Anchored QuerySlot+DonorBefore"
     },
     {
       "protocol": "Context59",
@@ -182,7 +208,9 @@
       "geov2_peak_allocated_mib": 2440.32,
       "geov2_peak_reserved_mib": 3280.0,
       "best_selection_uses_full_labels": false,
-      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/context59.json"
+      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/context59.json",
+      "efficient_old_miou": 46.3075,
+      "geov2_variant": "Anchored QuerySlot+DonorBefore"
     },
     {
       "protocol": "COCO-Object81",
@@ -195,7 +223,9 @@
       "geov2_peak_allocated_mib": 2722.19,
       "geov2_peak_reserved_mib": 4168.0,
       "best_selection_uses_full_labels": false,
-      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/coco_object81.json"
+      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/coco_object81.json",
+      "efficient_old_miou": 50.3999,
+      "geov2_variant": "Anchored QuerySlot+DonorBefore"
     },
     {
       "protocol": "COCO-Stuff171",
@@ -208,7 +238,9 @@
       "geov2_peak_allocated_mib": 3324.08,
       "geov2_peak_reserved_mib": 6728.0,
       "best_selection_uses_full_labels": true,
-      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/coco_stuff171.json"
+      "alias_bank_file": "research/query_slot_best_alias_20261013/vocabularies/coco_stuff171.json",
+      "efficient_old_miou": 33.7661,
+      "geov2_variant": "Anchored QuerySlot+DonorBefore"
     },
     {
       "protocol": "Cityscapes",
@@ -221,7 +253,11 @@
       "geov2_peak_allocated_mib": 1574.68,
       "geov2_peak_reserved_mib": 1838.0,
       "best_selection_uses_full_labels": false,
-      "alias_bank_file": "research/cityscapes_20261028/artifacts/city_dev_label_selected_alias_bank.json"
+      "alias_bank_file": "research/cityscapes_20261028/artifacts/city_dev_label_selected_alias_bank.json",
+      "efficient_old_miou": null,
+      "geov2_variant": "Anchored QuerySlot+DonorBefore",
+      "segearth_main_miou": 34.1768,
+      "segearth_main_source": "official City transfer config local rerun"
     },
     {
       "protocol": "iSAID",
@@ -234,7 +270,17 @@
       "geov2_peak_allocated_mib": 1702.19,
       "geov2_peak_reserved_mib": null,
       "best_selection_uses_full_labels": true,
-      "alias_bank_file": "research/isaid_alias_g0_screen_20261017/hybrid_refine/isaid_vocabulary_refine.json"
+      "alias_bank_file": "research/isaid_alias_g0_screen_20261017/hybrid_refine/isaid_vocabulary_refine.json",
+      "segearth_tile_miou": 23.4801,
+      "segearth_tile_median_ms": 290.3425,
+      "segearth_tile_peak_allocated_mib": 1154.76,
+      "efficient_old_miou": null,
+      "geov2_variant": "Anchored QuerySlot+DonorBefore",
+      "segearth_main_miou": 23.4801,
+      "segearth_main_source": "official cfg_iSAID.py prob_thd=0.4; same tile protocol",
+      "segearth_paper_miou": 21.7,
+      "corrclip_local_miou": 10.2868,
+      "corrclip_local_source": "fixed-transfer native tile reproduction"
     }
   ],
   "iSAID_cost_audit": {
@@ -243,6 +289,19 @@
     "geov2_tile_median_ms": 167.5024,
     "geov2_tile_peak_allocated_mib": 1702.1851,
     "vip_full_original_miou": 20.2096,
-    "protocol_note": "main comparison uses VIP paper 26.1 and Geov2 tile best 28.9181 as requested; full original rerun is diagnostic"
+    "protocol_note": "main comparison uses VIP paper 26.1 and Geov2 tile best 28.9181 as requested; full original rerun is diagnostic",
+    "segearth_tile_miou": 23.4801,
+    "segearth_tile_median_ms": 290.3425,
+    "segearth_tile_peak_allocated_mib": 1154.76,
+    "segearth_tile_peak_reserved_mib": 1242.0,
+    "segearth_config": "official cfg_iSAID.py prob_thd=0.4"
+  },
+  "comparison_policy": {
+    "geov2_best": "best archived alias bank/g0; rows marked by best_selection_uses_full_labels are label-selected upper bounds",
+    "geov2_formal": "development-frozen alias bank/g0 then full validation inference",
+    "efficient_old": "historical pre-Anchored Efficient Geometry baseline_miou, not Geov2 Anchored",
+    "vip": "official paper values in primary comparison; local released-code values remain appendix only",
+    "corrclip_isaid": "paper 16.9 primary; 10.2868 local fixed-transfer tile reproduction is appendix only",
+    "isaid": "primary tile protocol: 11,644 tiles, 896x896, overlap=384, 16 classes including background"
   }
 }
