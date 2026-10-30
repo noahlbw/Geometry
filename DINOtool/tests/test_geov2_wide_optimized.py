@@ -42,13 +42,16 @@ class WideOptimizationTests(unittest.TestCase):
                 self.assertEqual(torch.count_nonzero(actual[~valid]), 0)
 
     def test_readout_menu_keeps_incumbent_explicit(self):
-        self.assertEqual(WIDE_READOUT_CHOICES, ('incumbent', 'shared_canvas', 'anchored_infra', 'anchored_infra_shared_visual', 'optimized48'))
+        self.assertEqual(WIDE_READOUT_CHOICES, ('incumbent', 'shared_canvas', 'anchored_infra', 'anchored_infra_fast', 'anchored_infra_shared_visual', 'optimized48'))
         self.assertIsNone(wide_readout_config('incumbent'))
         self.assertFalse(wide_readout_config('shared_canvas').direct)
         infra = wide_readout_config('anchored_infra')
         self.assertTrue(infra.capacity == 24 and infra.direct and infra.fast_assignment)
         self.assertFalse(infra.shared_visual)
         self.assertEqual(infra.solve_dtype, 'float32')
+        fast = wide_readout_config('anchored_infra_fast')
+        self.assertEqual(fast.local_batch_size, 4)
+        self.assertTrue(fast.batch_anchored and fast.compile_visual and fast.compile_project)
         shared = wide_readout_config('anchored_infra_shared_visual')
         self.assertTrue(shared.shared_visual and shared.readout == 'anchored')
 

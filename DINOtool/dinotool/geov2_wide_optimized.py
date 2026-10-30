@@ -22,7 +22,8 @@ from .anchored_slot_memory import anchored_slot_features
 
 
 WIDE_READOUT_CHOICES = ('incumbent', 'shared_canvas', 'anchored_infra',
-                        'anchored_infra_shared_visual', 'optimized48')
+                        'anchored_infra_fast', 'anchored_infra_shared_visual',
+                        'optimized48')
 
 
 @dataclass(frozen=True)
@@ -47,6 +48,8 @@ class WideReadoutConfig:
     readout: str = 'legacy'
     batch_anchored: bool = False
     local_memory: bool = False
+    compile_visual: bool = False
+    compile_project: bool = False
 
 
 def wide_readout_config(name):
@@ -72,6 +75,16 @@ def wide_readout_config(name):
             shared_backbone=True, shared_visual=False, direct=True,
             capacity=24, fast_assignment=True, solve_dtype='float32',
             batch_wide=False, readout='anchored', batch_anchored=True)
+    if name == 'anchored_infra_fast':
+        # Execution-only candidate.  The local DonorBefore equations and the
+        # Anchored residual read are unchanged; only independent fixed-size
+        # crops are scheduled as a micro-batch and static visual kernels are
+        # compiled after model construction.
+        return WideReadoutConfig(
+            shared_backbone=True, shared_visual=False, direct=True,
+            capacity=24, fast_assignment=True, solve_dtype='float32',
+            batch_wide=False, readout='anchored', batch_anchored=True,
+            local_batch_size=4, compile_visual=True, compile_project=True)
     if name == 'anchored_infra_shared_visual':
         return WideReadoutConfig(
             shared_backbone=True, shared_visual=True, direct=True,
@@ -256,6 +269,40 @@ class OptimizedWideReadout:
                 if model.geometry.device.type == 'cuda':
                     torch.cuda.empty_cache()
         self.scorer = PatchClassScorer(model.queries[model.profile.bank], model.profile.tau)
+        if config.compile_visual or config.compile_project:
+            self._compile_static_kernels()
+
+    def _compile_static_kernels(self):
+        """Compile only shape-static inference kernels for the fast candidate.
+
+        Compilation is deliberately opt-in and happens after the shared
+        backbone wiring.  It does not change a module's weights or any
+        Geov2 equation; it removes Python/module dispatch from repeated
+        fixed-size crop calls.  The first compiled call is paid during the
+        existing warm-up in the benchmark protocol.
+        """
+        compiler = getattr(torch, 'compile', None)
+        if compiler is None:
+            raise RuntimeError('anchored_infra_fast requires torch.compile support')
+        model = self.model
+        if self.config.compile_visual:
+            visuals = [model.geometry.backbone.model.visual_model,
+                       model.vip.backbone.model.visual_model]
+            seen = set()
+            for visual in visuals:
+                if id(visual) in seen or getattr(visual, '_geov2_visual_compiled', False):
+                    continue
+                visual.get_backbone_features = compiler(
+                    visual.get_backbone_features, mode='reduce-overhead',
+                    fullgraph=False, dynamic=False)
+                visual._geov2_visual_compiled = True
+                seen.add(id(visual))
+        if self.config.compile_project:
+            project = getattr(model, 'compact_geometry', None)
+            if project is not None and not getattr(project, '_geov2_project_compiled', False):
+                project.project = compiler(project.project, mode='reduce-overhead',
+                                           fullgraph=False, dynamic=False)
+                project._geov2_project_compiled = True
 
     @torch.inference_mode()
     def wide_memory(self, image):
