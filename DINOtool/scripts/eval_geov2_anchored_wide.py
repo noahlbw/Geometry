@@ -13,7 +13,7 @@ from dinotool.anchored_slot_memory import anchored_slot_wide_observations
 from dinotool.efficient_deployment import reconstruction
 from dinotool.geov2_wide_optimized import factor_correction
 from dinotool.anchored_infra import (
-    AnchoredInfraConfig, cast_shared_visual_weights, configure_fast_math,
+    AnchoredInfraConfig, cast_anchored_visual_weights, configure_fast_math,
     describe_config, factor_solver, prepare_streamed_source,
 )
 from eval_alias_finalization import load_samples
@@ -33,8 +33,12 @@ class AnchoredExperiment(SharedExperiment):
         self.infra = infra or AnchoredInfraConfig()
         self.infra.validate()
         self.infra_previous = configure_fast_math(self.infra.fast_math)
-        self.weight_stats = cast_shared_visual_weights(
-            self.model.geometry.backbone, self.infra.weight_dtype)
+        # Cast both frozen visual heads after they are constructed.  The
+        # backbone can be shared later by an execution wrapper; the helper
+        # deduplicates shared parameters and leaves LayerNorm/RoPE/relations
+        # in their original dtype.
+        self.weight_stats = cast_anchored_visual_weights(
+            self.model, self.infra.weight_dtype)
         self.initialization_peak_allocated_mib = torch.cuda.max_memory_allocated()/1048576
 
     def sources(self, image, methods, *, solve=True, audit=False):
