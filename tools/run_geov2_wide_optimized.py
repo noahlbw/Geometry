@@ -13,7 +13,7 @@ REMOTE_ROOT = REMOTE+'/results/geov2_wide_optimized_20261015'
 SOURCE = WORKSPACE/'research/response_local_wide_20261013_v3/protocol.json'
 DATASETS=('vdd','potsdam','ade150','voc20')
 GPUS=(1,2,3,4,5,6,7)
-VARIANTS=('baseline','shared_canvas','dual_direct','shared_direct','shared_native','shared_regression','shared_short336','shared_fp32','shared_slots48','shared_visual','shared_visual_canvas','optimized48','optimized24','ridge01','ridge03','ridge1')
+VARIANTS=('baseline','shared_canvas','dual_direct','shared_direct','shared_native','shared_regression','shared_short336','shared_fp32','shared_slots48','shared_visual','shared_visual_canvas','optimized48','optimized24','anchored_infra','anchored_infra_bf16','anchored_infra_fast','ridge01','ridge03','ridge1')
 
 
 def retry():
@@ -62,7 +62,8 @@ def prepare():
             # Upload the opt-in module and evaluator into the remote checkout
             # used by PYTHONPATH.  The experiment directory stores only the
             # protocol and outputs, so it stays resumable and self-contained.
-            for rel in ('dinotool/frozen_deployment.py','dinotool/geov2_wide_optimized.py','scripts/eval_geov2_wide_optimization.py'):
+            for rel in ('dinotool/frozen_deployment.py','dinotool/anchored_infra.py',
+                        'dinotool/geov2_wide_optimized.py','scripts/eval_geov2_wide_optimization.py'):
                 s.put(str(WORKSPACE/'DINOtool'/rel),REMOTE+'/'+rel)
     finally:c.close()
     print('Prepared',LOCAL)
