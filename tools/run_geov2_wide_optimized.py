@@ -13,7 +13,7 @@ REMOTE_ROOT = REMOTE+'/results/geov2_wide_optimized_20261015'
 SOURCE = WORKSPACE/'research/response_local_wide_20261013_v3/protocol.json'
 DATASETS=('vdd','potsdam','ade150','voc20')
 GPUS=(1,2,3,4,5,6,7)
-VARIANTS=('baseline','shared_canvas','dual_direct','shared_direct','shared_native','shared_regression','shared_short336','shared_fp32','shared_slots48','shared_visual','shared_visual_canvas','optimized48','optimized24','anchored_infra','anchored_infra_bf16','anchored_infra_fast','ridge01','ridge03','ridge1')
+VARIANTS=('baseline','shared_canvas','dual_direct','shared_direct','shared_native','shared_regression','shared_short336','shared_fp32','shared_slots48','shared_visual','shared_visual_canvas','optimized48','optimized24','anchored_infra','anchored_infra_bf16','anchored_infra_bf16_compile','anchored_infra_fast','ridge01','ridge03','ridge1')
 
 
 def retry():

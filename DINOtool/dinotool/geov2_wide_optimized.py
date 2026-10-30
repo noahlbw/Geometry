@@ -23,6 +23,7 @@ from .anchored_slot_memory import anchored_slot_features
 
 WIDE_READOUT_CHOICES = ('incumbent', 'shared_canvas', 'anchored_infra',
                         'anchored_infra_fast', 'anchored_infra_bf16',
+                        'anchored_infra_bf16_compile',
                         'anchored_infra_shared_visual',
                         'optimized48')
 
@@ -95,6 +96,13 @@ def wide_readout_config(name):
             shared_backbone=True, shared_visual=False, direct=True,
             capacity=24, fast_assignment=True, solve_dtype='float32',
             batch_wide=False, readout='anchored', batch_anchored=True,
+            weight_dtype='bfloat16')
+    if name == 'anchored_infra_bf16_compile':
+        return WideReadoutConfig(
+            shared_backbone=True, shared_visual=False, direct=True,
+            capacity=24, fast_assignment=True, solve_dtype='float32',
+            batch_wide=False, readout='anchored', batch_anchored=True,
+            local_batch_size=1, compile_visual=True, compile_project=True,
             weight_dtype='bfloat16')
     if name == 'anchored_infra_shared_visual':
         return WideReadoutConfig(
@@ -379,11 +387,22 @@ class OptimizedWideReadout:
         count = torch.zeros((1, gh, gw, 1), device=raw_grid.device, dtype=torch.float32)
         for tile in tiles:
             top, left = tile['top'] // 16, tile['left'] // 16
-            raw = tile['raw'].float().reshape(1, 32, 32, channels)
-            sem = tile['features']['original'].float().reshape(1, 32, 32, channels)
-            raw_grid[:, top:top+32, left:left+32] += raw
-            sem_grid[:, top:top+32, left:left+32] += sem
-            count[:, top:top+32, left:left+32] += 1.
+            # Edge crops are padded to a 512px input for the local backbone,
+            # but only a smaller portion belongs to the resized image.  Keep
+            # the valid token rectangle when folding tiles into the compact
+            # global memory; otherwise VOC/COCO edge sizes can overrun the
+            # canvas (and would incorrectly count padded tokens as evidence).
+            side = int(tile['raw'].shape[1] ** .5)
+            if side * side != tile['raw'].shape[1]:
+                raise ValueError('Local-memory tile must have a square token grid.')
+            raw = tile['raw'].float().reshape(1, side, side, channels)
+            sem = tile['features']['original'].float().reshape(1, side, side, channels)
+            th, tw = min(side, gh-top), min(side, gw-left)
+            if th <= 0 or tw <= 0:
+                continue
+            raw_grid[:, top:top+th, left:left+tw] += raw[:, :th, :tw]
+            sem_grid[:, top:top+th, left:left+tw] += sem[:, :th, :tw]
+            count[:, top:top+th, left:left+tw] += 1.
         raw = F.normalize((raw_grid / count.clamp_min(1.)).reshape(1, gh*gw, channels), dim=-1)
         semantic = F.normalize((sem_grid / count.clamp_min(1.)).reshape(1, gh*gw, channels), dim=-1)
         observer = self.model.query_slot_observer
