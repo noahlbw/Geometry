@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "datasets": {
+    "SegEarth-OV/isaid": {
+      "isaid": 18.9291
+    }
+  },
+  "failures": {},
+  "protocol_images_per_method": 45200,
+  "total_protocol_images": 45200
+}

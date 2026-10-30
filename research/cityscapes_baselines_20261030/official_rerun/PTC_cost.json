@@ -1,0 +1,425 @@
+{
+  "status": "complete",
+  "signature": {
+    "implementation": "cityscapes official-config baseline suite 20261030; native official code; target labels loaded after prediction",
+    "method": "PTC",
+    "dataset": "cityscapes19",
+    "config": {
+      "method": "PTC",
+      "module": "ptc_segmentor",
+      "class": "PTCSegmentation",
+      "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC",
+      "model": {
+        "type": "PTCSegmentation",
+        "clip_type": "openai",
+        "model_type": "ViT-B/16",
+        "vfm_model": "dino",
+        "checkpoint": null,
+        "ptc_enable": true,
+        "ptc_proto_mode": "auto",
+        "ptc_proto_crop": 224,
+        "prob_thd": 0.0,
+        "ptc_min_seeds": 2,
+        "ptc_mu": 0.35,
+        "ptc_border": 1,
+        "slide_stride": 112,
+        "slide_crop": 224
+      },
+      "word_file": "words_city/PTC.txt",
+      "word_sha256": "48cab81b30ea4ee4f3b07ee136cb7e52c71de093d7bf834211ce29269ddfb196",
+      "word_origin": "fixed Cityscapes-19 canonical names; no alias tuning",
+      "resize": {
+        "scale": [
+          2048,
+          448
+        ],
+        "keep_ratio": true
+      },
+      "native_protocol_config": true,
+      "config_origin": "upstream configs/cfg_city_scapes.py",
+      "parser": "native comma-space",
+      "full_flags": {},
+      "prediction_map": null
+    },
+    "source_commit": "8656ec33760dc786902e324321de5565df4710b8",
+    "checkpoint_manifest": {
+      "weights": {
+        "ViT-B-16.pt": {
+          "url": "https://openaipublic.azureedge.net/clip/models/5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f/ViT-B-16.pt",
+          "sha256": "5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f",
+          "bytes": 350837078
+        },
+        "dino_vitbase8_pretrain.pth": {
+          "url": "https://dl.fbaipublicfiles.com/dino/dino_vitbase8_pretrain/dino_vitbase8_pretrain.pth",
+          "sha256": "575f0efc4838938314afa09897a62ed2b87919928b5edcd133abb907328995eb",
+          "bytes": 343279349
+        },
+        "b16_fullcc2.5b.pt": {
+          "url": "https://dl.fbaipublicfiles.com/MMPT/metaclip/b16_fullcc2.5b.pt",
+          "sha256": "512ea0fb9f2cf88d027e96e4674247a1a91a96af18abc2e2fcdb8008c551e04b",
+          "bytes": 1795798327
+        },
+        "sam2_hiera_large.pt": {
+          "url": "https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt",
+          "sha256": "7442e4e9b732a508f80e141e7c2913437a3610ee0c77381a66658c3a445df87b",
+          "bytes": 897952466
+        },
+        "xclip_jbu_one_million_aid.ckpt": {
+          "url": "https://raw.githubusercontent.com/likyoo/SegEarth-OV/3e22a969b32c6d751bdbba64a88a0b670e630f55/simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt",
+          "sha256": "cabc594d0042535f3413ac89d5f0b8b3173aecf18e2e469fb91b015ea4de49d8",
+          "bytes": 5690776
+        }
+      },
+      "dependencies": {
+        "dino": {
+          "url": "https://github.com/facebookresearch/dino.git",
+          "commit": "7c446df5b9f45747937fb0d72314eb9f7b66930a",
+          "archive_sha256": "3c65181860269457eed8367f313a5a6d695951dd985750a940722de2175a05ff"
+        },
+        "sam2": {
+          "url": "https://github.com/facebookresearch/sam2.git",
+          "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+          "archive_sha256": "fe93082a71a885a427894b1eab76341768781b6b58a298a0717e03862097d137"
+        },
+        "SimFeatUp": {
+          "url": "https://github.com/likyoo/SimFeatUp.git",
+          "commit": "78a0ba70b1d6ea7283684a88c98ce338af4593ca",
+          "archive_sha256": "4aec32fbc5140c048042545726a74a049c80590a57eeba74d64fd81b1d20665a"
+        }
+      }
+    },
+    "runtime": {
+      "packages": {
+        "torch": "2.4.0",
+        "torchvision": "0.19.0",
+        "mmcv": "2.2.0",
+        "mmengine": "0.10.7",
+        "mmsegmentation": "1.2.2",
+        "numpy": "1.26.4",
+        "transformers": "4.44.2",
+        "timm": "1.0.9"
+      },
+      "compatibility": {
+        "operation": "MMCV version-guard upper bound 2.2.0 -> 2.2.1 only",
+        "before_sha256": "6800b7c849b11fbfac8e0ef481601659e2621d9a2d7ed335c24c18d6453d0ba9",
+        "after_sha256": "b03255d861c75871be63ae4488720b8d6c0f373bbaa497a09cc168f853ef5048"
+      }
+    },
+    "sample_manifest_sha256": "9e85f1e65cf6030bacb9336142ddae80c28f66b89526cce603a272f32ac35af6"
+  },
+  "execution_repairs": {
+    "id": "ptc-empty-row-self-value-and-rectangular-grid-v1",
+    "source_relative": "sources_repaired/PTC_empty_rows_rectangular_v1",
+    "files": {
+      "ptc_segmentor.py": {
+        "original_sha256": "c08cd23d7ba90dd707bfb8cbbfb89b9aad0bc9aa5f61320177b1cb1a239472b0",
+        "repaired_sha256": "6eb1e12e546bd498e5c904723b2488b5cb2454bb62b76258c52ace9f4e768d1a",
+        "diff": "--- upstream/ptc_segmentor.py\n+++ repaired/ptc_segmentor.py\n@@ -176,7 +176,7 @@\n             v = v.transpose(1, 2).reshape(nb_im, nb_tokens, -1)[:, 1:, :]\n \n             patch_size = self.vfm.patch_embed.patch_size\n-            I, J = imgs_norm[0].shape[-2] // patch_size, imgs_norm[0].shape[-2] // patch_size\n+            I, J = imgs_norm[0].shape[-2] // patch_size, imgs_norm[0].shape[-1] // patch_size\n \n             ex_feats = feat[:, 1:, :].reshape(nb_im, I, J, -1).permute(0, 3, 1, 2)\n \n"
+      },
+      "open_clip/transformer.py": {
+        "original_sha256": "40e0ddadb7d1ad19152dc0cdced85dd75769b87231db4dba1db039dec0a3168d",
+        "repaired_sha256": "a7b1e0915d2231b87d63d5f78bcf50d40b529e3afe83f2903c60251315533340",
+        "diff": "--- upstream/open_clip/transformer.py\n+++ repaired/open_clip/transformer.py\n@@ -575,6 +575,11 @@\n \n         mask = similarity.to(q.dtype).unsqueeze(1).repeat(1, num_heads, 1, 1)\n         mask = mask.reshape(bsz * num_heads, mask.shape[2], mask.shape[3])\n+        # Numerical repair: self-Value only for rows with no finite source.\n+        empty_rows = torch.isneginf(mask).all(dim=-1)\n+        if empty_rows.any():\n+            batch, row = empty_rows.nonzero(as_tuple=True)\n+            mask[batch, row, row] = 0.0\n         attn_weights = F.softmax(mask, dim=-1)\n \n         v = v[:, 1:, :].reshape(bsz*num_heads, token_size[0], token_size[1], head_dim).permute(0, 3, 1, 2)\n"
+      }
+    },
+    "diagnosis": {
+      "target_masks_loaded": false,
+      "outcomes": [
+        {
+          "key": "2909.png",
+          "status": "finite",
+          "prediction_sha256": "4a0aeb1ccefd9f34e3c90ea1add6f06a13a67ccf899898e28c2d94c0bc253122",
+          "events": []
+        },
+        {
+          "key": "3868.png",
+          "status": "failed",
+          "error": "FloatingPointError('Non-finite native output: 3868.png')",
+          "events": [
+            {
+              "operator": "softmax",
+              "shape": [
+                12,
+                784,
+                784
+              ],
+              "dtype": "torch.float16",
+              "all_negative_infinity_rows": 9408,
+              "input_nan": 0,
+              "input_positive_infinity": 0,
+              "output_nan": 7375872
+            },
+            {
+              "operator": "softmax",
+              "shape": [
+                12,
+                784,
+                784
+              ],
+              "dtype": "torch.float16",
+              "all_negative_infinity_rows": 9408,
+              "input_nan": 0,
+              "input_positive_infinity": 0,
+              "output_nan": 7375872
+            },
+            {
+              "operator": "softmax",
+              "shape": [
+                12,
+                784,
+                784
+              ],
+              "dtype": "torch.float16",
+              "all_negative_infinity_rows": 9408,
+              "input_nan": 0,
+              "input_positive_infinity": 0,
+              "output_nan": 7375872
+            }
+          ]
+        },
+        {
+          "key": "3785.png",
+          "status": "failed",
+          "error": "FloatingPointError('Non-finite native output: 3785.png')",
+          "events": [
+            {
+              "operator": "softmax",
+              "shape": [
+                12,
+                784,
+                784
+              ],
+              "dtype": "torch.float16",
+              "all_negative_infinity_rows": 9408,
+              "input_nan": 0,
+              "input_positive_infinity": 0,
+              "output_nan": 7375872
+            },
+            {
+              "operator": "softmax",
+              "shape": [
+                12,
+                784,
+                784
+              ],
+              "dtype": "torch.float16",
+              "all_negative_infinity_rows": 9408,
+              "input_nan": 0,
+              "input_positive_infinity": 0,
+              "output_nan": 7375872
+            }
+          ]
+        },
+        {
+          "key": "3479.png",
+          "status": "failed",
+          "error": "FloatingPointError('Non-finite native output: 3479.png')",
+          "events": [
+            {
+              "operator": "softmax",
+              "shape": [
+                12,
+                784,
+                784
+              ],
+              "dtype": "torch.float16",
+              "all_negative_infinity_rows": 9408,
+              "input_nan": 0,
+              "input_positive_infinity": 0,
+              "output_nan": 7375872
+            },
+            {
+              "operator": "softmax",
+              "shape": [
+                12,
+                784,
+                784
+              ],
+              "dtype": "torch.float16",
+              "all_negative_infinity_rows": 9408,
+              "input_nan": 0,
+              "input_positive_infinity": 0,
+              "output_nan": 7375872
+            }
+          ]
+        }
+      ]
+    },
+    "status": "validated",
+    "note": "Original finite attention rows unchanged; no parameter, vocabulary or threshold change.",
+    "validation": {
+      "target_masks_loaded": false,
+      "outcomes": [
+        {
+          "key": "2909.png",
+          "status": "finite",
+          "prediction_sha256": "4a0aeb1ccefd9f34e3c90ea1add6f06a13a67ccf899898e28c2d94c0bc253122",
+          "events": []
+        },
+        {
+          "key": "3868.png",
+          "status": "finite",
+          "prediction_sha256": "e12ae3ccf6a2d8e54c94480824fae2ee4f531df5869fa7c7184a4279d8c4a905",
+          "events": []
+        },
+        {
+          "key": "3785.png",
+          "status": "finite",
+          "prediction_sha256": "5fc60152548e6dfa13dd6ea5b6da3f616649d580e1b654a5dbb60e4a4f96b920",
+          "events": []
+        },
+        {
+          "key": "3479.png",
+          "status": "finite",
+          "prediction_sha256": "ec9926752484e09d7a90c54b9e9552b9bf493f333c10f150c722b254e736ecdc",
+          "events": []
+        },
+        {
+          "key": "udd5/000061.JPG",
+          "status": "finite",
+          "rectangular_grid_verified": true
+        }
+      ]
+    },
+    "finite_prediction_replay_exact": true,
+    "finite_replay_images": 1
+  },
+  "images": [
+    {
+      "key": "frankfurt_000000_000294",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "milliseconds": [
+        554.0804918855429,
+        549.563555046916,
+        549.8520429246128,
+        547.560356091708,
+        543.5192459262908,
+        550.1463729888201,
+        553.8736479356885
+      ],
+      "median_ms": 549.8520429246128,
+      "peak_allocated_bytes": 1028191232,
+      "peak_reserved_bytes": 1132462080
+    },
+    {
+      "key": "frankfurt_000000_000576",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "milliseconds": [
+        537.7546749077737,
+        530.8456253260374,
+        531.1626656912267,
+        538.9191792346537,
+        540.6239358708262,
+        528.5790129564703,
+        532.586395740509
+      ],
+      "median_ms": 532.586395740509,
+      "peak_allocated_bytes": 1028191232,
+      "peak_reserved_bytes": 1132462080
+    },
+    {
+      "key": "frankfurt_000000_001016",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "milliseconds": [
+        539.2080009914935,
+        541.5007281117141,
+        542.0485096983612,
+        540.908008813858,
+        544.1621304489672,
+        544.3665632046759,
+        545.2610431239009
+      ],
+      "median_ms": 542.0485096983612,
+      "peak_allocated_bytes": 1028191232,
+      "peak_reserved_bytes": 1132462080
+    },
+    {
+      "key": "frankfurt_000000_001236",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "milliseconds": [
+        562.5383551232517,
+        569.4261901080608,
+        569.5041790604591,
+        564.2875698395073,
+        595.987306907773,
+        641.0012552514672,
+        556.2547310255468
+      ],
+      "median_ms": 569.4261901080608,
+      "peak_allocated_bytes": 1028191232,
+      "peak_reserved_bytes": 1132462080
+    },
+    {
+      "key": "frankfurt_000000_001751",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "milliseconds": [
+        559.0373231098056,
+        547.0040142536163,
+        542.055806145072,
+        544.2168097943068,
+        541.0281736403704,
+        545.3863507136703,
+        546.8169520609081
+      ],
+      "median_ms": 545.3863507136703,
+      "peak_allocated_bytes": 1028191232,
+      "peak_reserved_bytes": 1132462080
+    },
+    {
+      "key": "frankfurt_000000_002196",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "milliseconds": [
+        553.0135142616928,
+        546.6878148727119,
+        534.900888800621,
+        542.6570600830019,
+        538.497141096741,
+        537.1743789874017,
+        535.8711290173233
+      ],
+      "median_ms": 538.497141096741,
+      "peak_allocated_bytes": 1028191232,
+      "peak_reserved_bytes": 1132462080
+    },
+    {
+      "key": "frankfurt_000000_002963",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "milliseconds": [
+        543.4552300721407,
+        544.3462789990008,
+        552.6394387707114,
+        550.8159026503563,
+        552.589715924114,
+        543.001517187804,
+        539.5355420187116
+      ],
+      "median_ms": 544.3462789990008,
+      "peak_allocated_bytes": 1028191232,
+      "peak_reserved_bytes": 1132462080
+    }
+  ],
+  "median_ms": 544.3462789990008,
+  "includes": "BGR conversion/official resize/preprocess/native inference/postprocess; CorrCLIP includes online SAM2",
+  "excludes": "disk decode, model/text initialization, metric/target loading"
+}

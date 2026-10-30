@@ -1,0 +1,262 @@
+{
+  "implementation": "cityscapes official-config baseline suite 20261030; native official code; target labels loaded after prediction",
+  "datasets": {
+    "cityscapes19": {
+      "family": "natural_cityscapes",
+      "background_index": null,
+      "total_images": 500,
+      "data_root": "/data/test/datasets/Cityscapes",
+      "class_names": [
+        "road",
+        "sidewalk",
+        "building",
+        "wall",
+        "fence",
+        "pole",
+        "traffic light",
+        "traffic sign",
+        "vegetation",
+        "terrain",
+        "sky",
+        "person",
+        "rider",
+        "car",
+        "truck",
+        "bus",
+        "train",
+        "motorcycle",
+        "bicycle"
+      ]
+    }
+  },
+  "methods": {
+    "PEARL": {
+      "repository": "https://github.com/PGSmall/PEARL",
+      "commit": "c26062b5062b73f712cbe10846fb3a51e313a6fa",
+      "source_subdirectory": "PEARL",
+      "configs": {
+        "cityscapes19": {
+          "method": "PEARL",
+          "module": "pearl_ovss",
+          "class": "PEARL",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PEARL",
+          "model": {
+            "type": "PEARL",
+            "clip_path": "ViT-B/16",
+            "use_prop": "on",
+            "alpha_kk": 0.3,
+            "grid": 224
+          },
+          "word_file": "words_city/PEARL.txt",
+          "word_sha256": "48cab81b30ea4ee4f3b07ee136cb7e52c71de093d7bf834211ce29269ddfb196",
+          "word_origin": "fixed Cityscapes-19 canonical names; no alias tuning",
+          "resize": {
+            "scale": [
+              2048,
+              560
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "upstream configs/cfg_city_scapes.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        }
+      }
+    },
+    "GLA-CLIP": {
+      "repository": "https://github.com/2btlFe/GLA-CLIP",
+      "commit": "63d674626cb1ddc566e3177b9cb5b2dc7a212158",
+      "source_subdirectory": "GLA-CLIP",
+      "configs": {
+        "cityscapes19": {
+          "method": "GLA-CLIP",
+          "module": "gla_clip_segmentor",
+          "class": "GLA_CLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/GLA-CLIP",
+          "model": {
+            "type": "GLA_CLIPSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "prob_thd": 0.0,
+            "slide_crop": 224,
+            "scale": 560,
+            "slide_stride": 112
+          },
+          "word_file": "words_city/GLA-CLIP.txt",
+          "word_sha256": "48cab81b30ea4ee4f3b07ee136cb7e52c71de093d7bf834211ce29269ddfb196",
+          "word_origin": "fixed Cityscapes-19 canonical names; no alias tuning",
+          "resize": {
+            "scale": [
+              2048,
+              560
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "upstream configs/cfg_city_scapes.py",
+          "parser": "native comma-space",
+          "full_flags": {
+            "CLIP_type": "ProxyCLIP",
+            "token_norm": true,
+            "KV_token_extension": true,
+            "proxy_sim": true,
+            "mini_iters": 2,
+            "initial_crit_pos": 0.6,
+            "dynamic_beta": true,
+            "beta_alpha": 0.3,
+            "dynamic_gamma": true,
+            "gamma_alpha": 30.0
+          },
+          "prediction_map": null
+        }
+      }
+    },
+    "PTC": {
+      "repository": "https://github.com/Valeria-MaW/PTC",
+      "commit": "8656ec33760dc786902e324321de5565df4710b8",
+      "source_subdirectory": "PTC",
+      "configs": {
+        "cityscapes19": {
+          "method": "PTC",
+          "module": "ptc_segmentor",
+          "class": "PTCSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/PTC",
+          "model": {
+            "type": "PTCSegmentation",
+            "clip_type": "openai",
+            "model_type": "ViT-B/16",
+            "vfm_model": "dino",
+            "checkpoint": null,
+            "ptc_enable": true,
+            "ptc_proto_mode": "auto",
+            "ptc_proto_crop": 224,
+            "prob_thd": 0.0,
+            "ptc_min_seeds": 2,
+            "ptc_mu": 0.35,
+            "ptc_border": 1,
+            "slide_stride": 112,
+            "slide_crop": 224
+          },
+          "word_file": "words_city/PTC.txt",
+          "word_sha256": "48cab81b30ea4ee4f3b07ee136cb7e52c71de093d7bf834211ce29269ddfb196",
+          "word_origin": "fixed Cityscapes-19 canonical names; no alias tuning",
+          "resize": {
+            "scale": [
+              2048,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "upstream configs/cfg_city_scapes.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        }
+      }
+    },
+    "CorrCLIP": {
+      "repository": "https://github.com/zdk258/CorrCLIP",
+      "commit": "103bc18213e6d906e55a21b8491bc7b04cbf106b",
+      "source_subdirectory": "CorrCLIP/CorrCLIPv1",
+      "configs": {
+        "cityscapes19": {
+          "method": "CorrCLIP",
+          "module": "corrclip_segmentor",
+          "class": "CorrCLIPSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/CorrCLIP/CorrCLIPv1",
+          "model": {
+            "type": "CorrCLIPSegmentation",
+            "clip_type": "metaclip_fullcc",
+            "model_type": "ViT-B-16-quickgelu",
+            "dino_type": "dino_vitb8",
+            "mask_generator": "sam2",
+            "prob_thd": 0.0,
+            "slide_stride": 112,
+            "slide_crop": 224
+          },
+          "word_file": "words_city/CorrCLIP.txt",
+          "word_sha256": "48cab81b30ea4ee4f3b07ee136cb7e52c71de093d7bf834211ce29269ddfb196",
+          "word_origin": "fixed Cityscapes-19 canonical names; no alias tuning",
+          "resize": {
+            "scale": [
+              2048,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "upstream configs/cfg_city_scapes.py",
+          "parser": "semicolon-space",
+          "full_flags": {},
+          "prediction_map": null,
+          "mask_note": "Native online SAM2 HieraLarge generation on Cityscapes, included in inference cost."
+        }
+      }
+    },
+    "SegEarth-OV": {
+      "repository": "https://github.com/likyoo/SegEarth-OV",
+      "commit": "3e22a969b32c6d751bdbba64a88a0b670e630f55",
+      "source_subdirectory": "SegEarth-OV",
+      "configs": {
+        "cityscapes19": {
+          "method": "SegEarth-OV",
+          "module": "segearth_segmentor",
+          "class": "SegEarthSegmentation",
+          "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/SegEarth-OV",
+          "model": {
+            "type": "SegEarthSegmentation",
+            "clip_type": "CLIP",
+            "vit_type": "ViT-B/16",
+            "model_type": "SegEarth",
+            "ignore_residual": true,
+            "feature_up": true,
+            "feature_up_cfg": {
+              "model_name": "jbu_one",
+              "model_path": "simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt"
+            },
+            "cls_token_lambda": -0.3,
+            "prob_thd": 0.0
+          },
+          "word_file": "words_city/SegEarth-OV.txt",
+          "word_sha256": "48cab81b30ea4ee4f3b07ee136cb7e52c71de093d7bf834211ce29269ddfb196",
+          "word_origin": "fixed Cityscapes-19 canonical names; no alias tuning",
+          "resize": {
+            "scale": [
+              2048,
+              448
+            ],
+            "keep_ratio": true
+          },
+          "native_protocol_config": true,
+          "config_origin": "upstream configs/cfg_city_scapes.py",
+          "parser": "native comma-space",
+          "full_flags": {},
+          "prediction_map": null
+        }
+      }
+    }
+  },
+  "method_order": [
+    "PEARL",
+    "GLA-CLIP",
+    "PTC",
+    "CorrCLIP",
+    "SegEarth-OV"
+  ],
+  "dataset_order": [
+    "cityscapes19"
+  ],
+  "expected_protocol_images": 2500,
+  "provenance": {
+    "source_suite": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011",
+    "input": "leftImg8bit/val",
+    "target": "gtFine/val/*_gtFine_labelIds.png",
+    "label_note": "labelIds decoded to trainIds 0..18; all other IDs ignored as 255",
+    "configuration_note": "PEARL/GLA-CLIP/PTC/CorrCLIP use upstream Cityscapes cfg_city_scapes.py; SegEarth-OV fixed 448 City transfer; canonical-only words; CorrCLIP online SAM2."
+  }
+}

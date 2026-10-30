@@ -1,0 +1,226 @@
+{
+  "banks": {
+    "refine_four_segmentation": {
+      "classes": [
+        {
+          "name": "background",
+          "synonyms": [
+            "background",
+            "unlabeled area",
+            "other"
+          ]
+        },
+        {
+          "name": "ship",
+          "synonyms": [
+            "ship"
+          ]
+        },
+        {
+          "name": "storage tank",
+          "synonyms": [
+            "storage tank"
+          ]
+        },
+        {
+          "name": "baseball diamond",
+          "synonyms": [
+            "baseball diamond",
+            "baseball field",
+            "diamond"
+          ]
+        },
+        {
+          "name": "tennis court",
+          "synonyms": [
+            "tennis court"
+          ]
+        },
+        {
+          "name": "basketball court",
+          "synonyms": [
+            "basketball court"
+          ]
+        },
+        {
+          "name": "ground track field",
+          "synonyms": [
+            "ground track field"
+          ]
+        },
+        {
+          "name": "bridge",
+          "synonyms": [
+            "bridge"
+          ]
+        },
+        {
+          "name": "large vehicle",
+          "synonyms": [
+            "large vehicle",
+            "bus",
+            "lorry"
+          ]
+        },
+        {
+          "name": "small vehicle",
+          "synonyms": [
+            "small vehicle",
+            "car",
+            "motorcycle"
+          ]
+        },
+        {
+          "name": "helicopter",
+          "synonyms": [
+            "helicopter"
+          ]
+        },
+        {
+          "name": "swimming pool",
+          "synonyms": [
+            "swimming pool"
+          ]
+        },
+        {
+          "name": "roundabout",
+          "synonyms": [
+            "roundabout"
+          ]
+        },
+        {
+          "name": "soccer ball field",
+          "synonyms": [
+            "soccer ball field",
+            "football pitch",
+            "soccer field"
+          ]
+        },
+        {
+          "name": "airplane",
+          "synonyms": [
+            "airplane"
+          ]
+        },
+        {
+          "name": "harbor",
+          "synonyms": [
+            "harbor"
+          ]
+        }
+      ],
+      "template": "seg_template"
+    },
+    "refine_baseball_soccer_vehicle_segmentation": {
+      "classes": [
+        {
+          "name": "background",
+          "synonyms": [
+            "background",
+            "unlabeled area",
+            "other"
+          ]
+        },
+        {
+          "name": "ship",
+          "synonyms": [
+            "ship"
+          ]
+        },
+        {
+          "name": "storage tank",
+          "synonyms": [
+            "storage tank"
+          ]
+        },
+        {
+          "name": "baseball diamond",
+          "synonyms": [
+            "baseball diamond",
+            "baseball field",
+            "diamond"
+          ]
+        },
+        {
+          "name": "tennis court",
+          "synonyms": [
+            "tennis court"
+          ]
+        },
+        {
+          "name": "basketball court",
+          "synonyms": [
+            "basketball court"
+          ]
+        },
+        {
+          "name": "ground track field",
+          "synonyms": [
+            "ground track field"
+          ]
+        },
+        {
+          "name": "bridge",
+          "synonyms": [
+            "bridge"
+          ]
+        },
+        {
+          "name": "large vehicle",
+          "synonyms": [
+            "large vehicle",
+            "bus",
+            "lorry"
+          ]
+        },
+        {
+          "name": "small vehicle",
+          "synonyms": [
+            "small vehicle",
+            "car",
+            "motorcycle"
+          ]
+        },
+        {
+          "name": "helicopter",
+          "synonyms": [
+            "helicopter"
+          ]
+        },
+        {
+          "name": "swimming pool",
+          "synonyms": [
+            "swimming pool"
+          ]
+        },
+        {
+          "name": "roundabout",
+          "synonyms": [
+            "roundabout"
+          ]
+        },
+        {
+          "name": "soccer ball field",
+          "synonyms": [
+            "soccer ball field",
+            "football pitch",
+            "soccer field"
+          ]
+        },
+        {
+          "name": "airplane",
+          "synonyms": [
+            "airplane"
+          ]
+        },
+        {
+          "name": "harbor",
+          "synonyms": [
+            "harbor"
+          ]
+        }
+      ],
+      "template": "seg_template"
+    }
+  }
+}

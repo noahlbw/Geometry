@@ -1,0 +1,103 @@
+{
+  "status": "complete",
+  "dataset": "Cityscapes",
+  "protocol": "val500, 19 classes, ignore=255; external methods use upstream Cityscapes configs",
+  "rows": [
+    {
+      "method": "Geov2 Anchored",
+      "status": "complete",
+      "processed_images": 500,
+      "total_images": 500,
+      "miou_percent": 57.2676,
+      "median_ms": 133.6895,
+      "peak_allocated_mib": 1574.6807,
+      "peak_reserved_mib": 1838.0,
+      "source": "geov2_shared_visual_cost_tau08_exact.json + strict full500",
+      "cost_source": null,
+      "config": "coord_combo_both_plus, tau=0.8, g0=0.75, shared_visual=True"
+    },
+    {
+      "method": "VIP official",
+      "status": "complete",
+      "processed_images": 500,
+      "total_images": 500,
+      "miou_percent": 58.7766,
+      "median_ms": 734.0172,
+      "peak_allocated_mib": 2348.4673,
+      "peak_reserved_mib": null,
+      "source": "vip_official_cfg_city.json + vip_official_city_cost_full.json",
+      "cost_source": null,
+      "config": "released official code, default 336x336 crop / stride112"
+    },
+    {
+      "method": "PEARL",
+      "status": "complete",
+      "processed_images": 500,
+      "total_images": 500,
+      "miou_percent": 37.7867,
+      "median_ms": 218.29020511358976,
+      "peak_allocated_mib": 736.958984375,
+      "peak_reserved_mib": 886.0,
+      "source": "official_rerun/PEARL_evaluate.json",
+      "cost_source": "official_rerun/PEARL_cost.json",
+      "config": null
+    },
+    {
+      "method": "GLA-CLIP",
+      "status": "complete",
+      "processed_images": 500,
+      "total_images": 500,
+      "miou_percent": 41.2743,
+      "median_ms": 263.4765109978616,
+      "peak_allocated_mib": 7124.572265625,
+      "peak_reserved_mib": 7980.0,
+      "source": "official_rerun/GLA_CLIP_evaluate.json",
+      "cost_source": "official_rerun/GLA_CLIP_cost.json",
+      "config": null
+    },
+    {
+      "method": "PTC",
+      "status": "complete",
+      "processed_images": 500,
+      "total_images": 500,
+      "miou_percent": 40.1996,
+      "median_ms": 544.3462789990008,
+      "peak_allocated_mib": 980.5595703125,
+      "peak_reserved_mib": 1080.0,
+      "source": "official_rerun/PTC_evaluate.json",
+      "cost_source": "official_rerun/PTC_cost.json",
+      "config": null
+    },
+    {
+      "method": "CorrCLIP",
+      "status": "complete",
+      "processed_images": 500,
+      "total_images": 500,
+      "miou_percent": 46.9745,
+      "median_ms": 785.8114056289196,
+      "peak_allocated_mib": 2611.27978515625,
+      "peak_reserved_mib": 4632.0,
+      "source": "official_rerun/CorrCLIP_evaluate.json",
+      "cost_source": "official_rerun/CorrCLIP_cost.json",
+      "config": null
+    },
+    {
+      "method": "SegEarth-OV",
+      "status": "complete",
+      "processed_images": 500,
+      "total_images": 500,
+      "miou_percent": 34.1768,
+      "median_ms": 676.9219166599214,
+      "peak_allocated_mib": 1166.56689453125,
+      "peak_reserved_mib": 1264.0,
+      "source": "official_rerun/SegEarth_OV_evaluate.json",
+      "cost_source": "official_rerun/SegEarth_OV_cost.json",
+      "config": null
+    }
+  ],
+  "legacy_invalid_results": "raw/ used VOC21 transfer settings and is retained only for audit; not used in final table",
+  "notes": [
+    "Geov2 cost corrected to exact shared-visual Anchored runner: 133.6895 ms, 1574.6807 MiB allocated, 1838 MiB reserved.",
+    "VIP paper reported 55.7 is kept separate from released-code local 58.7766."
+  ]
+}

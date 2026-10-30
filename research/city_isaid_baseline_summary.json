@@ -1,0 +1,156 @@
+{
+  "generated": "2026-10-30",
+  "status": "complete",
+  "protocols": {
+    "Cityscapes": "val500, 19 trainIds, ignore=255",
+    "iSAID": "official val, 11,644 896x896 tiles, overlap384, 16 classes including background, ignore=255"
+  },
+  "cityscapes": [
+    {
+      "method": "Geov2 Anchored",
+      "miou_percent": 57.2676,
+      "median_ms": 175.9067,
+      "peak_allocated_mib": 1574.6807,
+      "peak_reserved_mib": 1838.0,
+      "source": "cityscapes_baselines_20261030/geov2_shared_visual_cost.json + prior full500 evaluation",
+      "config": "coord_coord_combo_both_plus, tau=1.0, g0=0.5, QuerySlot K=24, shared_visual=True"
+    },
+    {
+      "method": "VIP official (paper reported)",
+      "miou_percent": 55.7,
+      "median_ms": null,
+      "peak_allocated_mib": null,
+      "peak_reserved_mib": null,
+      "source": "VIP paper Cityscapes table",
+      "config": "paper reported value; not a local cost measurement"
+    },
+    {
+      "method": "VIP official (local pinned 224-crop rerun)",
+      "miou_percent": 52.4697,
+      "median_ms": 990.2599,
+      "peak_allocated_mib": 2344.1479,
+      "peak_reserved_mib": null,
+      "source": "cityscapes_baselines_20261030/vip_official_paper224_local_rerun.json",
+      "config": "short edge 560, crop224, stride112, tau2, tem10, prob_thd0.15"
+    },
+    {
+      "method": "PEARL",
+      "miou_percent": 37.7867,
+      "median_ms": 218.2902,
+      "peak_allocated_mib": 736.959,
+      "peak_reserved_mib": 886.0,
+      "source": "official_rerun/PEARL_evaluate.json",
+      "cost_source": "official_rerun/PEARL_cost.json"
+    },
+    {
+      "method": "GLA-CLIP",
+      "miou_percent": 41.2743,
+      "median_ms": 263.4765,
+      "peak_allocated_mib": 7124.5723,
+      "peak_reserved_mib": 7980.0,
+      "source": "official_rerun/GLA_CLIP_evaluate.json",
+      "cost_source": "official_rerun/GLA_CLIP_cost.json"
+    },
+    {
+      "method": "PTC",
+      "miou_percent": 40.1996,
+      "median_ms": 544.3463,
+      "peak_allocated_mib": 980.5596,
+      "peak_reserved_mib": 1080.0,
+      "source": "official_rerun/PTC_evaluate.json",
+      "cost_source": "official_rerun/PTC_cost.json"
+    },
+    {
+      "method": "CorrCLIP (paper reported)",
+      "miou_percent": 49.4,
+      "median_ms": null,
+      "peak_allocated_mib": null,
+      "peak_reserved_mib": null,
+      "source": "CorrCLIP paper Cityscapes table",
+      "config": "paper reported value; not a local cost measurement"
+    },
+    {
+      "method": "CorrCLIP (local native City config rerun)",
+      "miou_percent": 46.9745,
+      "median_ms": 785.8114,
+      "peak_allocated_mib": 2611.2798,
+      "peak_reserved_mib": 4632.0,
+      "source": "official_rerun/CorrCLIP_evaluate.json",
+      "cost_source": "official_rerun/CorrCLIP_cost.json",
+      "config": "2048x448, crop224, stride112, prob_thd0.0"
+    },
+    {
+      "method": "SegEarth-OV",
+      "miou_percent": 34.1768,
+      "median_ms": 676.9219,
+      "peak_allocated_mib": 1166.5669,
+      "peak_reserved_mib": 1264.0,
+      "source": "official_rerun/SegEarth_OV_evaluate.json",
+      "cost_source": "official_rerun/SegEarth_OV_cost.json"
+    }
+  ],
+  "isaid": [
+    {
+      "method": "VIP official",
+      "miou_percent": 26.1325,
+      "median_ms": 127.3356,
+      "peak_allocated_mib": 1816.7642,
+      "source": "../isaid_baselines_tiles16_20261017/summary.json"
+    },
+    {
+      "method": "Geov2 Anchored",
+      "miou_percent": 27.0134,
+      "median_ms": 167.5024,
+      "peak_allocated_mib": 1702.1851,
+      "source": "../isaid_baselines_tiles16_20261017/summary.json",
+      "formal_miou_percent": 27.0134,
+      "best_miou_percent": 28.9181,
+      "best_alias_bank": "refine_four_segmentation",
+      "best_result_source": "isaid_alias_g0_screen_20261017/refine_four_full.json",
+      "note": "best is full-label selected alias/g0 upper bound; formal remains 27.0134"
+    },
+    {
+      "method": "SegEarth-OV",
+      "miou_percent": 18.9291,
+      "median_ms": 292.2624,
+      "peak_allocated_mib": 1155.0,
+      "source": "isaid_baselines_segearth04_20261030/merged.json",
+      "previous_invalid_miou_percent": 22.5194,
+      "previous_invalid_config": "cfg_vdd.py prob_thd=0.3"
+    },
+    {
+      "method": "PTC",
+      "miou_percent": 12.661,
+      "median_ms": 248.601,
+      "peak_allocated_mib": 716.1,
+      "source": "../isaid_baselines_tiles16_20261017/summary.json"
+    },
+    {
+      "method": "PEARL",
+      "miou_percent": 10.8161,
+      "median_ms": 65.2957,
+      "peak_allocated_mib": 476.6,
+      "source": "../isaid_baselines_tiles16_20261017/summary.json"
+    },
+    {
+      "method": "CorrCLIP",
+      "miou_percent": 10.2868,
+      "median_ms": 308.7874,
+      "peak_allocated_mib": 2609.1,
+      "source": "../isaid_baselines_tiles16_20261017/summary.json"
+    },
+    {
+      "method": "GLA-CLIP",
+      "miou_percent": 10.0159,
+      "median_ms": 56.9502,
+      "peak_allocated_mib": 1033.9,
+      "source": "../isaid_baselines_tiles16_20261017/summary.json"
+    }
+  ],
+  "notes": [
+    "Cityscapes external baselines were rerun with pinned upstream Cityscapes configs; old VOC21-transfer City rows are archived and excluded.",
+    "mIoU is full validation. Cost is 7 fixed samples x 2 warmups + 7 synchronized repeats, excluding disk decode, model initialization and target loading.",
+    "iSAID historical costs use its recorded standard protocol; native baselines include preprocessing while Geov2/VIP exclude RGB decode, and VIP cost was recorded over all tiles rather than 7x7 repeats.",
+    "User-requested best comparison uses Geov2 iSAID refine_four_segmentation 28.9181 upper bound; formal frozen value 27.0134 is retained separately."
+  ]
+}

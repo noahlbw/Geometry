@@ -1,0 +1,248 @@
+{
+  "status": "complete",
+  "signature": {
+    "implementation": "pinned-native-training-free-baseline-isaid-v1-20261017",
+    "method": "SegEarth-OV",
+    "dataset": "isaid",
+    "config": {
+      "method": "SegEarth-OV",
+      "module": "segearth_segmentor",
+      "class": "SegEarthSegmentation",
+      "source_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/training_free_baselines_full_20261011/sources/SegEarth-OV",
+      "model": {
+        "type": "SegEarthSegmentation",
+        "clip_type": "CLIP",
+        "vit_type": "ViT-B/16",
+        "model_type": "SegEarth",
+        "ignore_residual": true,
+        "feature_up": true,
+        "feature_up_cfg": {
+          "model_name": "jbu_one",
+          "model_path": "simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt"
+        },
+        "cls_token_lambda": -0.3,
+        "prob_thd": 0.4
+      },
+      "word_file": "words/SegEarth-OV/isaid.txt",
+      "word_sha256": "ccf9a9eb72ae3634235a68a2b27c7003b1c2fb9e9d8bb0f4e33a00f2642208ca",
+      "word_origin": "official iSAID taxonomy; one canonical name per line; frozen before evaluation",
+      "resize": {
+        "scale": [
+          448,
+          448
+        ],
+        "keep_ratio": true
+      },
+      "native_protocol_config": true,
+      "config_origin": "SegEarth-OV\\configs\\cfg_iSAID.py",
+      "parser": "native comma-space",
+      "full_flags": {},
+      "prediction_map": null,
+      "official_config_override": "prob_thd 0.4 from pinned upstream iSAID config; all other fields inherited from native config"
+    },
+    "source_commit": "3e22a969b32c6d751bdbba64a88a0b670e630f55",
+    "checkpoint_manifest": {
+      "weights": {
+        "ViT-B-16.pt": {
+          "url": "https://openaipublic.azureedge.net/clip/models/5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f/ViT-B-16.pt",
+          "sha256": "5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f",
+          "bytes": 350837078
+        },
+        "dino_vitbase8_pretrain.pth": {
+          "url": "https://dl.fbaipublicfiles.com/dino/dino_vitbase8_pretrain/dino_vitbase8_pretrain.pth",
+          "sha256": "575f0efc4838938314afa09897a62ed2b87919928b5edcd133abb907328995eb",
+          "bytes": 343279349
+        },
+        "b16_fullcc2.5b.pt": {
+          "url": "https://dl.fbaipublicfiles.com/MMPT/metaclip/b16_fullcc2.5b.pt",
+          "sha256": "512ea0fb9f2cf88d027e96e4674247a1a91a96af18abc2e2fcdb8008c551e04b",
+          "bytes": 1795798327
+        },
+        "sam2_hiera_large.pt": {
+          "url": "https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt",
+          "sha256": "7442e4e9b732a508f80e141e7c2913437a3610ee0c77381a66658c3a445df87b",
+          "bytes": 897952466
+        },
+        "xclip_jbu_one_million_aid.ckpt": {
+          "url": "https://raw.githubusercontent.com/likyoo/SegEarth-OV/3e22a969b32c6d751bdbba64a88a0b670e630f55/simfeatup_dev/weights/xclip_jbu_one_million_aid.ckpt",
+          "sha256": "cabc594d0042535f3413ac89d5f0b8b3173aecf18e2e469fb91b015ea4de49d8",
+          "bytes": 5690776
+        }
+      },
+      "dependencies": {
+        "dino": {
+          "url": "https://github.com/facebookresearch/dino.git",
+          "commit": "7c446df5b9f45747937fb0d72314eb9f7b66930a",
+          "archive_sha256": "3c65181860269457eed8367f313a5a6d695951dd985750a940722de2175a05ff"
+        },
+        "sam2": {
+          "url": "https://github.com/facebookresearch/sam2.git",
+          "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+          "archive_sha256": "fe93082a71a885a427894b1eab76341768781b6b58a298a0717e03862097d137"
+        },
+        "SimFeatUp": {
+          "url": "https://github.com/likyoo/SimFeatUp.git",
+          "commit": "78a0ba70b1d6ea7283684a88c98ce338af4593ca",
+          "archive_sha256": "4aec32fbc5140c048042545726a74a049c80590a57eeba74d64fd81b1d20665a"
+        }
+      }
+    },
+    "runtime": {
+      "packages": {
+        "torch": "2.4.0",
+        "torchvision": "0.19.0",
+        "mmcv": "2.2.0",
+        "mmengine": "0.10.7",
+        "mmsegmentation": "1.2.2",
+        "numpy": "1.26.4",
+        "transformers": "4.44.2",
+        "timm": "1.0.9"
+      },
+      "compatibility": {
+        "operation": "MMCV version-guard upper bound 2.2.0 -> 2.2.1 only",
+        "before_sha256": "6800b7c849b11fbfac8e0ef481601659e2621d9a2d7ed335c24c18d6453d0ba9",
+        "after_sha256": "b03255d861c75871be63ae4488720b8d6c0f373bbaa497a09cc168f853ef5048"
+      }
+    },
+    "sample_manifest_sha256": "5b97f43989c2ab1daebe418b3df1293469f55a18b0ae8c7c51736f5a526d3401"
+  },
+  "execution_repairs": null,
+  "images": [
+    {
+      "key": "P0003",
+      "original_shape": [
+        1023,
+        1147
+      ],
+      "milliseconds": [
+        295.2027269639075,
+        295.69970024749637,
+        295.2439901418984,
+        295.5316137522459,
+        295.5600400455296,
+        295.1722010038793,
+        296.09284782782197
+      ],
+      "median_ms": 295.5316137522459,
+      "peak_allocated_bytes": 1210121728,
+      "peak_reserved_bytes": 1302331392
+    },
+    {
+      "key": "P0402",
+      "original_shape": [
+        853,
+        623
+      ],
+      "milliseconds": [
+        195.9639056585729,
+        195.91013435274363,
+        195.87633293122053,
+        195.3175850212574,
+        195.08724100887775,
+        195.83897618576884,
+        195.3944843262434
+      ],
+      "median_ms": 195.83897618576884,
+      "peak_allocated_bytes": 1206972928,
+      "peak_reserved_bytes": 1302331392
+    },
+    {
+      "key": "P0815",
+      "original_shape": [
+        834,
+        1168
+      ],
+      "milliseconds": [
+        199.22065595164895,
+        198.40031769126654,
+        199.44433774799109,
+        199.54933691769838,
+        199.77456983178854,
+        200.20787231624126,
+        199.37620777636766
+      ],
+      "median_ms": 199.44433774799109,
+      "peak_allocated_bytes": 1206846976,
+      "peak_reserved_bytes": 1302331392
+    },
+    {
+      "key": "P1178",
+      "original_shape": [
+        4538,
+        4321
+      ],
+      "milliseconds": [
+        484.911120031029,
+        488.9658452011645,
+        485.1191113702953,
+        486.0010170377791,
+        486.8502011522651,
+        484.1547850519419,
+        484.9632936529815
+      ],
+      "median_ms": 485.1191113702953,
+      "peak_allocated_bytes": 2722575872,
+      "peak_reserved_bytes": 3189768192
+    },
+    {
+      "key": "P1561",
+      "original_shape": [
+        4000,
+        4294
+      ],
+      "milliseconds": [
+        461.16915764287114,
+        457.9740702174604,
+        457.51786790788174,
+        458.15276307985187,
+        459.9216319620609,
+        462.488847784698,
+        458.46219500526786
+      ],
+      "median_ms": 458.46219500526786,
+      "peak_allocated_bytes": 2430597632,
+      "peak_reserved_bytes": 3189768192
+    },
+    {
+      "key": "P1960",
+      "original_shape": [
+        1602,
+        1484
+      ],
+      "milliseconds": [
+        309.07687032595277,
+        308.1994871608913,
+        308.03607404232025,
+        307.9595151357353,
+        308.35938919335604,
+        308.8489002548158,
+        308.70332894846797
+      ],
+      "median_ms": 308.35938919335604,
+      "peak_allocated_bytes": 1210350592,
+      "peak_reserved_bytes": 3189768192
+    },
+    {
+      "key": "P2375",
+      "original_shape": [
+        2194,
+        1565
+      ],
+      "milliseconds": [
+        222.68704138696194,
+        222.72876324132085,
+        222.82621823251247,
+        222.67025290057063,
+        222.09101915359497,
+        223.18635787814856,
+        222.8919700719416
+      ],
+      "median_ms": 222.72876324132085,
+      "peak_allocated_bytes": 1206846976,
+      "peak_reserved_bytes": 3189768192
+    }
+  ],
+  "median_ms": 295.5316137522459,
+  "includes": "BGR conversion/official resize/preprocess/native inference/postprocess; CorrCLIP includes online SAM2",
+  "excludes": "disk decode, model/text initialization, metric/target loading"
+}

@@ -1,0 +1,343 @@
+{
+  "dataset": "cityscapes19",
+  "banks": {
+    "cityscapes19": {
+      "template": "city_template",
+      "source": "independent non-VIP semantic candidate coordinate search",
+      "classes": [
+        {
+          "name": "road",
+          "synonyms": [
+            "road",
+            "roadway"
+          ]
+        },
+        {
+          "name": "sidewalk",
+          "synonyms": [
+            "sidewalk"
+          ]
+        },
+        {
+          "name": "building",
+          "synonyms": [
+            "building",
+            "buildings",
+            "facade",
+            "frontage",
+            "frontal"
+          ]
+        },
+        {
+          "name": "wall",
+          "synonyms": [
+            "wall",
+            "brick wall",
+            "stone wall",
+            "concrete wall"
+          ]
+        },
+        {
+          "name": "fence",
+          "synonyms": [
+            "fence",
+            "wire fence",
+            "metal fence",
+            "wooden fence",
+            "chain-link fence"
+          ]
+        },
+        {
+          "name": "pole",
+          "synonyms": [
+            "pole",
+            "utility pole",
+            "lamppost"
+          ]
+        },
+        {
+          "name": "traffic light",
+          "synonyms": [
+            "traffic light"
+          ]
+        },
+        {
+          "name": "traffic sign",
+          "synonyms": [
+            "traffic sign",
+            "road sign"
+          ]
+        },
+        {
+          "name": "vegetation",
+          "synonyms": [
+            "vegetation",
+            "trees",
+            "bushes",
+            "plants",
+            "greenery"
+          ]
+        },
+        {
+          "name": "terrain",
+          "synonyms": [
+            "terrain",
+            "grass",
+            "dirt ground",
+            "field",
+            "soil",
+            "meadow",
+            "lawn"
+          ]
+        },
+        {
+          "name": "sky",
+          "synonyms": [
+            "sky",
+            "cloudy sky",
+            "blue sky",
+            "the sky above",
+            "clear sky",
+            "skyline",
+            "atmosphere"
+          ]
+        },
+        {
+          "name": "person",
+          "synonyms": [
+            "person",
+            "people",
+            "human",
+            "child",
+            "women",
+            "man",
+            "crowd",
+            "girl",
+            "boy",
+            "lady",
+            "gentleman"
+          ]
+        },
+        {
+          "name": "rider",
+          "synonyms": [
+            "biker",
+            "cyclist",
+            "bicyclist",
+            "motorcyclist",
+            "person riding a bike",
+            "person riding a motorcycle"
+          ]
+        },
+        {
+          "name": "car",
+          "synonyms": [
+            "car",
+            "automobile",
+            "vehicle"
+          ]
+        },
+        {
+          "name": "truck",
+          "synonyms": [
+            "truck"
+          ]
+        },
+        {
+          "name": "bus",
+          "synonyms": [
+            "bus"
+          ]
+        },
+        {
+          "name": "train",
+          "synonyms": [
+            "train",
+            "locomotive"
+          ]
+        },
+        {
+          "name": "motorcycle",
+          "synonyms": [
+            "motorcycle",
+            "motorbike"
+          ]
+        },
+        {
+          "name": "bicycle",
+          "synonyms": [
+            "bicycle",
+            "bike"
+          ]
+        }
+      ]
+    }
+  },
+  "classes": [
+    {
+      "name": "road",
+      "synonyms": [
+        "road",
+        "roadway"
+      ]
+    },
+    {
+      "name": "sidewalk",
+      "synonyms": [
+        "sidewalk"
+      ]
+    },
+    {
+      "name": "building",
+      "synonyms": [
+        "building",
+        "buildings",
+        "facade",
+        "frontage",
+        "frontal"
+      ]
+    },
+    {
+      "name": "wall",
+      "synonyms": [
+        "wall",
+        "brick wall",
+        "stone wall",
+        "concrete wall"
+      ]
+    },
+    {
+      "name": "fence",
+      "synonyms": [
+        "fence",
+        "wire fence",
+        "metal fence",
+        "wooden fence",
+        "chain-link fence"
+      ]
+    },
+    {
+      "name": "pole",
+      "synonyms": [
+        "pole",
+        "utility pole",
+        "lamppost"
+      ]
+    },
+    {
+      "name": "traffic light",
+      "synonyms": [
+        "traffic light"
+      ]
+    },
+    {
+      "name": "traffic sign",
+      "synonyms": [
+        "traffic sign",
+        "road sign"
+      ]
+    },
+    {
+      "name": "vegetation",
+      "synonyms": [
+        "vegetation",
+        "trees",
+        "bushes",
+        "plants",
+        "greenery"
+      ]
+    },
+    {
+      "name": "terrain",
+      "synonyms": [
+        "terrain",
+        "grass",
+        "dirt ground",
+        "field",
+        "soil",
+        "meadow",
+        "lawn"
+      ]
+    },
+    {
+      "name": "sky",
+      "synonyms": [
+        "sky",
+        "cloudy sky",
+        "blue sky",
+        "the sky above",
+        "clear sky",
+        "skyline",
+        "atmosphere"
+      ]
+    },
+    {
+      "name": "person",
+      "synonyms": [
+        "person",
+        "people",
+        "human",
+        "child",
+        "women",
+        "man",
+        "crowd",
+        "girl",
+        "boy",
+        "lady",
+        "gentleman"
+      ]
+    },
+    {
+      "name": "rider",
+      "synonyms": [
+        "biker",
+        "cyclist",
+        "bicyclist",
+        "motorcyclist",
+        "person riding a bike",
+        "person riding a motorcycle"
+      ]
+    },
+    {
+      "name": "car",
+      "synonyms": [
+        "car",
+        "automobile",
+        "vehicle"
+      ]
+    },
+    {
+      "name": "truck",
+      "synonyms": [
+        "truck"
+      ]
+    },
+    {
+      "name": "bus",
+      "synonyms": [
+        "bus"
+      ]
+    },
+    {
+      "name": "train",
+      "synonyms": [
+        "train",
+        "locomotive"
+      ]
+    },
+    {
+      "name": "motorcycle",
+      "synonyms": [
+        "motorcycle",
+        "motorbike"
+      ]
+    },
+    {
+      "name": "bicycle",
+      "synonyms": [
+        "bicycle",
+        "bike"
+      ]
+    }
+  ]
+}
