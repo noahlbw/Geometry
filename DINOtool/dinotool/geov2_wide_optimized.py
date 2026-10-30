@@ -22,7 +22,8 @@ from .anchored_slot_memory import anchored_slot_features
 
 
 WIDE_READOUT_CHOICES = ('incumbent', 'shared_canvas', 'anchored_infra',
-                        'anchored_infra_fast', 'anchored_infra_shared_visual',
+                        'anchored_infra_fast', 'anchored_infra_bf16',
+                        'anchored_infra_shared_visual',
                         'optimized48')
 
 
@@ -50,6 +51,7 @@ class WideReadoutConfig:
     local_memory: bool = False
     compile_visual: bool = False
     compile_project: bool = False
+    weight_dtype: str = 'none'
 
 
 def wide_readout_config(name):
@@ -85,6 +87,15 @@ def wide_readout_config(name):
             capacity=24, fast_assignment=True, solve_dtype='float32',
             batch_wide=False, readout='anchored', batch_anchored=True,
             local_batch_size=4, compile_visual=True, compile_project=True)
+    if name == 'anchored_infra_bf16':
+        # Inference-only storage reduction.  It retains the independent wide
+        # head and all Anchored/DonorBefore equations; only frozen Linear/Conv
+        # parameter storage is converted after the backbone is wired.
+        return WideReadoutConfig(
+            shared_backbone=True, shared_visual=False, direct=True,
+            capacity=24, fast_assignment=True, solve_dtype='float32',
+            batch_wide=False, readout='anchored', batch_anchored=True,
+            weight_dtype='bfloat16')
     if name == 'anchored_infra_shared_visual':
         return WideReadoutConfig(
             shared_backbone=True, shared_visual=True, direct=True,
@@ -250,6 +261,8 @@ class OptimizedWideReadout:
             raise ValueError('Unknown wide readout.')
         if config.solve_dtype not in ('float32', 'float64'):
             raise ValueError('Unknown factor precision.')
+        if config.weight_dtype not in ('none', 'bfloat16'):
+            raise ValueError('Unknown visual weight precision.')
         self.model, self.config = model, config
         if config.shared_visual:
             model.vip.backbone.model.visual_model = model.geometry.backbone.model.visual_model
@@ -269,6 +282,8 @@ class OptimizedWideReadout:
                 if model.geometry.device.type == 'cuda':
                     torch.cuda.empty_cache()
         self.scorer = PatchClassScorer(model.queries[model.profile.bank], model.profile.tau)
+        from .anchored_infra import cast_anchored_visual_weights
+        self.weight_storage = cast_anchored_visual_weights(model, config.weight_dtype)
         if config.compile_visual or config.compile_project:
             self._compile_static_kernels()
 

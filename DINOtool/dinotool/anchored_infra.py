@@ -102,6 +102,65 @@ def cast_shared_visual_weights(segmenter, weight_dtype: str = "none") -> dict[st
     return stats
 
 
+def cast_anchored_visual_weights(model, weight_dtype: str = "none") -> dict[str, object]:
+    """Cast the frozen visual modules used by both Anchored views.
+
+    ``FrozenGeometry`` keeps a Geometry visual head and an independent wide
+    QuerySlot head.  The two heads must remain separate, while their frozen
+    backbone may already be shared by :class:`OptimizedWideReadout`.  This
+    helper therefore walks both visual modules, deduplicates shared
+    parameters, and casts only Linear/Conv storage.  LayerNorm, RoPE and all
+    relation/slot tensors stay in their original dtype.  It is an opt-in
+    storage/precision path; the default ``weight_dtype='none'`` is a no-op.
+    """
+    if weight_dtype not in ("none", "bfloat16"):
+        raise ValueError("weight_dtype must be none or bfloat16")
+    if weight_dtype == "none":
+        return {
+            "weight_dtype": "none",
+            "visual_modules": 0,
+            "parameters": 0,
+            "bytes_before": 0,
+            "bytes_after": 0,
+        }
+    modules = []
+    for branch in (getattr(model, "geometry", None), getattr(model, "vip", None)):
+        backbone = getattr(branch, "backbone", None)
+        visual = getattr(getattr(backbone, "model", None), "visual_model", None)
+        if visual is not None and all(id(visual) != id(previous) for previous in modules):
+            modules.append(visual)
+    if not modules:
+        raise ValueError("Anchored model has no visual modules to cast.")
+    total = {"weight_dtype": "bfloat16", "visual_modules": len(modules),
+             "parameters": 0, "bytes_before": 0, "bytes_after": 0}
+    seen: set[int] = set()
+    for visual in modules:
+        stats = _cast_linear_storage_unique(visual, torch.bfloat16, seen)
+        for key in ("parameters", "bytes_before", "bytes_after"):
+            total[key] += stats[key]
+    return total
+
+
+def _cast_linear_storage_unique(module: nn.Module, dtype: torch.dtype,
+                                seen: set[int]) -> dict[str, int]:
+    """Shared-parameter variant of :func:`_cast_linear_storage`."""
+    changed = {"parameters": 0, "bytes_before": 0, "bytes_after": 0}
+    for submodule in module.modules():
+        if not isinstance(submodule, (nn.Linear, nn.Conv1d, nn.Conv2d, nn.Conv3d)):
+            continue
+        for parameter in (submodule.weight, submodule.bias):
+            if parameter is None or id(parameter) in seen or not parameter.is_floating_point():
+                continue
+            seen.add(id(parameter))
+            before = parameter.numel() * parameter.element_size()
+            if parameter.dtype != dtype:
+                parameter.data = parameter.data.to(dtype=dtype)
+                changed["parameters"] += 1
+            changed["bytes_before"] += before
+            changed["bytes_after"] += parameter.numel() * parameter.element_size()
+    return changed
+
+
 def factor_solver(dtype: str = "float32"):
     """Return the factorized reconstruction closure used by Anchored.
 

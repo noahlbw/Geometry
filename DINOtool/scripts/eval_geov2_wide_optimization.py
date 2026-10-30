@@ -67,6 +67,22 @@ VARIANTS = {
         shared_backbone=True, shared_visual=False, direct=True,
         capacity=24, fast_assignment=True, solve_dtype='float32',
         readout='anchored'),
+    # Opt-in BF16 frozen-weight storage.  The default Anchored infra arm
+    # remains unchanged; this candidate is screened for memory/latency and
+    # must pass the smoke numerical tolerance before full evaluation.
+    'anchored_infra_bf16': WideReadoutConfig(
+        shared_backbone=True, shared_visual=False, direct=True,
+        capacity=24, fast_assignment=True, solve_dtype='float32',
+        readout='anchored', batch_anchored=True, weight_dtype='bfloat16'),
+    # Execution-only candidate: same Anchored/DonorBefore equations as the
+    # frozen deployment, but batch the fixed 512px local crops and compile
+    # the shape-static visual/project kernels.  This is intentionally a
+    # separate variant so its cost and parity can be audited independently.
+    'anchored_infra_fast': WideReadoutConfig(
+        shared_backbone=True, shared_visual=False, direct=True,
+        capacity=24, fast_assignment=True, solve_dtype='float32',
+        readout='anchored', batch_anchored=True, local_batch_size=4,
+        compile_visual=True, compile_project=True),
     'anchored_infra_shared_visual': WideReadoutConfig(
         shared_backbone=True, shared_visual=True, direct=True,
         capacity=24, fast_assignment=True, solve_dtype='float32',
@@ -105,7 +121,7 @@ def main(args):
     tokenizer.get_tokenizer = lambda *_a,**_k: tokenizer.Tokenizer(
         vocab_path=str(Path(protocol['checkpoint_dir'])/'bpe_simple_vocab_16e6.txt.gz'))
     config=VARIANTS[args.variant]
-    if args.variant.endswith('_tf32'):
+    if args.variant.endswith('_tf32') or config.weight_dtype == 'bfloat16':
         configure_fast_math(True)
     torch.cuda.reset_peak_memory_stats()
     m = FrozenGeometry(record['config_path'], checkpoint_dir=protocol['checkpoint_dir'],
@@ -202,15 +218,48 @@ def main(args):
         with m.geometry.backbone._autocast():
             after=m.compact_geometry.project(prepared_after,'original')
         invariant['local_features_equal']=torch.equal(old_local,after)
-        if not invariant['local_features_equal']:
-            raise RuntimeError('Local DonorBefore changed.')
+        # Compiled kernels can reassociate floating point reductions while
+        # preserving the same DonorBefore computation.  Keep the strict
+        # bitwise gate for eager/default arms, and use a bounded numerical
+        # parity gate for the opt-in compiled arm.
+        if config is None or (config.weight_dtype == 'none' and
+                              not (config.compile_visual or config.compile_project)):
+            if not invariant['local_features_equal']:
+                raise RuntimeError('Local DonorBefore changed.')
+        elif config.weight_dtype == 'none':
+            delta=(old_local.float()-after.float()).abs()
+            old_norm=old_local.float().norm(dim=-1).clamp_min(1e-12)
+            cosine=(old_local.float()*after.float()).sum(-1)/(old_norm*after.float().norm(dim=-1).clamp_min(1e-12))
+            invariant['local_features_max_abs']=float(delta.max())
+            invariant['local_features_mean_cosine']=float(cosine.mean())
+            invariant['local_features_close']=bool(
+                torch.isfinite(delta).all() and torch.isfinite(cosine).all()
+                and delta.max() <= 2e-4 and cosine.mean() >= .9999)
+            if not invariant['local_features_close']:
+                raise RuntimeError('Compiled local DonorBefore deviation exceeds smoke tolerance: '
+                                   +str(invariant['local_features_max_abs']))
+        else:
+            # BF16 is an explicitly approximate storage arm.  Check that the
+            # local path remains finite and close to the FP32 reference while
+            # keeping the exact equality gate for the default arm.
+            delta=(old_local.float()-after.float()).abs()
+            old_norm=old_local.float().norm(dim=-1).clamp_min(1e-12)
+            cosine=(old_local.float()*after.float()).sum(-1)/(old_norm*after.float().norm(dim=-1).clamp_min(1e-12))
+            invariant['local_features_max_abs']=float(delta.max())
+            invariant['local_features_mean_cosine']=float(cosine.mean())
+            invariant['local_features_close']=bool(
+                torch.isfinite(delta).all() and torch.isfinite(cosine).all()
+                and delta.max() <= 5e-2 and cosine.mean() >= .995)
+            if not invariant['local_features_close']:
+                raise RuntimeError('BF16 local DonorBefore deviation exceeds smoke tolerance.')
         del prepared,prepared_after,rgb,old_local,after,relation,operator,factors,difference
     forward=m.predict if optimized is None else optimized.predict
     common=dict(dataset=args.dataset,variant=args.variant,wide_config=None if config is None else asdict(config),
                 wide_alias_aggregation=args.wide_alias_aggregation,
                 gain=record['gain'],profile=m.profile.record(),config=m.config,cache_identity=m.cache_identity,
                 local_path_unchanged=True,invariants=invariant,cpu_threads=torch.get_num_threads(),
-                initialization_peak_allocated_mib=initialization_peak_mib,shared_visual_storage=m.shared_visual)
+                initialization_peak_allocated_mib=initialization_peak_mib,shared_visual_storage=m.shared_visual,
+                weight_storage=None if optimized is None else optimized.weight_storage)
     if args.mode=='cost':
         gc.collect()
         torch.cuda.empty_cache()
