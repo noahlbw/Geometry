@@ -1,30 +1,30 @@
 [
   {
     "dataset": "vdd",
-    "variant": "anchored_infra_fast_bf16",
+    "variant": "anchored_infra",
     "gpu": 1,
-    "session": "geov2_target_cost_anchored_infra_fast_bf16_vdd",
-    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_target_20261031/cost/anchored_infra_fast_bf16/vdd"
+    "session": "geov2_target_cost_anchored_infra_vdd",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_target_20261031/cost/anchored_infra/vdd"
   },
   {
     "dataset": "potsdam",
-    "variant": "anchored_infra_fast_bf16",
+    "variant": "anchored_infra",
     "gpu": 2,
-    "session": "geov2_target_cost_anchored_infra_fast_bf16_potsdam",
-    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_target_20261031/cost/anchored_infra_fast_bf16/potsdam"
+    "session": "geov2_target_cost_anchored_infra_potsdam",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_target_20261031/cost/anchored_infra/potsdam"
   },
   {
     "dataset": "voc20",
-    "variant": "anchored_infra_fast_bf16",
+    "variant": "anchored_infra",
     "gpu": 3,
-    "session": "geov2_target_cost_anchored_infra_fast_bf16_voc20",
-    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_target_20261031/cost/anchored_infra_fast_bf16/voc20"
+    "session": "geov2_target_cost_anchored_infra_voc20",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_target_20261031/cost/anchored_infra/voc20"
   },
   {
     "dataset": "voc21",
-    "variant": "anchored_infra_fast_bf16",
+    "variant": "anchored_infra",
     "gpu": 4,
-    "session": "geov2_target_cost_anchored_infra_fast_bf16_voc21",
-    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_target_20261031/cost/anchored_infra_fast_bf16/voc21"
+    "session": "geov2_target_cost_anchored_infra_voc21",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov2_anchored_target_20261031/cost/anchored_infra/voc21"
   }
 ]

@@ -14,6 +14,12 @@
     "voc20": {"ms": 86.99, "allocated_mib": 951.16, "reserved_mib": 1326.0},
     "voc21": {"ms": 88.18, "allocated_mib": 938.55, "reserved_mib": 1318.0}
   },
+  "matched_anchored_infra_cost": {
+    "vdd": {"ms": 308.3058, "allocated_mib": 1988.8813, "reserved_mib": 2198.0},
+    "potsdam": {"ms": 177.0351, "allocated_mib": 1569.9517, "reserved_mib": 1682.0},
+    "voc20": {"ms": 166.2673, "allocated_mib": 1625.0439, "reserved_mib": 1738.0},
+    "voc21": {"ms": 161.3525, "allocated_mib": 1613.5024, "reserved_mib": 1732.0}
+  },
   "full_miou_percent": {
     "vdd": 60.55748335157007,
     "potsdam": 54.999073833537096,

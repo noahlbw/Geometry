@@ -11,6 +11,8 @@
 
 表中 `anchored_infra_fast_bf16` 的显存采用与 VIP/Geov2 成本表一致的独立进程 `torch.cuda.max_memory_allocated`。CUDA allocator 的 `reserved` 峰值另行记录在 [REPORT_ZH.md](REPORT_ZH.md)；它不是本表的主比较指标。
 
+此外，使用同一 runner、同一固定图像和同一 A800 协议重新测得的 `anchored_infra` 基线为：VDD `308.31 ms / 1988.88 MiB`、Potsdam `177.04 / 1569.95`、VOC20 `166.27 / 1625.04`、VOC21 `161.35 / 1613.50`。相对于这个严格配对基线，Fast-BF16 的速度降幅为 `24.56% / 46.06% / 47.68% / 45.35%`，allocated 显存降幅为 `31.59% / 42.89% / 41.47% / 41.83%`。
+
 ## 设计方案
 
 ### 保持的模型语义
