@@ -1,0 +1,103 @@
+{
+  "implementation": "geov3-full-20261031",
+  "datasets": {
+    "vdd": {
+      "status": "complete",
+      "processed_images": 80,
+      "global_sample_count": 80,
+      "miou_percent": 61.23638704249809,
+      "wall_seconds": 63.50021982891485
+    },
+    "potsdam": {
+      "status": "complete",
+      "processed_images": 504,
+      "global_sample_count": 504,
+      "miou_percent": 55.668350474522974,
+      "wall_seconds": 79.76655462104827
+    },
+    "voc20": {
+      "status": "complete",
+      "processed_images": 1449,
+      "global_sample_count": 1449,
+      "miou_percent": 93.40709992248655,
+      "wall_seconds": 173.29320242395625
+    },
+    "voc21": {
+      "status": "complete",
+      "processed_images": 1449,
+      "global_sample_count": 1449,
+      "miou_percent": 75.44815204292425,
+      "wall_seconds": 175.62948727374896
+    },
+    "ade150": {
+      "status": "complete",
+      "processed_images": 2000,
+      "global_sample_count": 2000,
+      "miou_percent": 31.674146507770928,
+      "wall_seconds": 255.36637399625033
+    },
+    "context60": {
+      "status": "complete",
+      "processed_images": 5105,
+      "global_sample_count": 5105,
+      "miou_percent": 44.81982978778356,
+      "wall_seconds": 453.5524282772094
+    },
+    "udd5": {
+      "status": "complete",
+      "processed_images": 40,
+      "global_sample_count": 40,
+      "miou_percent": 56.056915339432834,
+      "wall_seconds": 65.29310753336176
+    },
+    "oem": {
+      "status": "complete",
+      "processed_images": 384,
+      "global_sample_count": 384,
+      "miou_percent": 44.84349732949406,
+      "wall_seconds": 63.79788982775062
+    },
+    "vaihingen": {
+      "status": "complete",
+      "processed_images": 113,
+      "global_sample_count": 113,
+      "miou_percent": 59.29318284923494,
+      "wall_seconds": 32.868581532966346
+    },
+    "landcoverai": {
+      "status": "complete",
+      "processed_images": 1602,
+      "global_sample_count": 1602,
+      "miou_percent": 68.15813765452583,
+      "wall_seconds": 124.06980651803315
+    },
+    "context59": {
+      "status": "complete",
+      "processed_images": 5105,
+      "global_sample_count": 5105,
+      "miou_percent": 47.386647080078944,
+      "wall_seconds": 462.96982552902773
+    },
+    "coco_object81": {
+      "status": "complete",
+      "processed_images": 5000,
+      "global_sample_count": 5000,
+      "miou_percent": 49.71915520024877,
+      "wall_seconds": 522.7264886633493
+    },
+    "coco_stuff171": {
+      "status": "complete",
+      "processed_images": 5000,
+      "global_sample_count": 5000,
+      "miou_percent": 33.306370622626766,
+      "wall_seconds": 583.1960580940358
+    },
+    "flair1": {
+      "status": "complete",
+      "processed_images": 15700,
+      "global_sample_count": 15700,
+      "miou_percent": 44.19136073356512,
+      "wall_seconds": 1224.0429176660255
+    }
+  }
+}

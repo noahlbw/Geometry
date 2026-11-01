@@ -1,0 +1,628 @@
+{
+  "implementation": "geov3-full-20261031",
+  "model": {
+    "name": "Geov3",
+    "variant": "geov3_final",
+    "local_branch": "DonorBefore",
+    "wide_branch": "QuerySlot",
+    "query_slot_capacity": 24,
+    "wide_readout": "Anchored",
+    "wide_beta": 1.0,
+    "weight_dtype": "bfloat16",
+    "local_batch_size": 8,
+    "fast_assignment": true,
+    "compile_visual": true,
+    "compile_project": true,
+    "alias_aggregation": "logsumexp"
+  },
+  "datasets": {
+    "vdd": {
+      "loader": {
+        "dataset": "vdd",
+        "data_root": "/data/test/datasets/VDD Release Version/VDD",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/vdd.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "official_imagenet",
+        "strength": "original",
+        "coupling": 1.0,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 0.3,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "total_images": 80,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/vdd.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/vdd.pt",
+      "gain": 1.0,
+      "beta": 1.0,
+      "wide_long_edge": 400,
+      "cost_keys": [
+        "DJI_0007.JPG",
+        "DJI_0390.JPG",
+        "DJI_0552.JPG",
+        "DJI_0819.JPG",
+        "DJI_10054.JPG",
+        "DJI_10397.JPG",
+        "DJI_10708.JPG"
+      ],
+      "screen_images": 16,
+      "source_protocol": "query_slot_best_alias_20261013"
+    },
+    "potsdam": {
+      "loader": {
+        "dataset": "potsdam",
+        "data_root": "/data/test/datasets/Potsdam/preprocessed_RGB",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/potsdam.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "official_imagenet",
+        "strength": 3.0,
+        "coupling": 0.75,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "total_images": 504,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/potsdam.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/potsdam.pt",
+      "gain": 0.75,
+      "beta": 1.0,
+      "wide_long_edge": 0,
+      "cost_keys": [
+        "top_potsdam_2_13_RGB_y00_x00.tif",
+        "top_potsdam_3_13_RGB_y01_x05.tif",
+        "top_potsdam_4_13_RGB_y03_x05.tif",
+        "top_potsdam_4_15_RGB_y05_x05.tif",
+        "top_potsdam_5_15_RGB_y01_x05.tif",
+        "top_potsdam_6_14_RGB_y03_x05.tif",
+        "top_potsdam_7_13_RGB_y05_x05.tif"
+      ],
+      "screen_images": 16,
+      "source_protocol": "query_slot_best_alias_20261013"
+    },
+    "voc20": {
+      "loader": {
+        "dataset": "voc20",
+        "data_root": "/data/test/datasets/VIP_natural/VOCdevkit/VOC2012",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/voc20.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "semantic_imagenet",
+        "strength": 2.0,
+        "coupling": 1.0,
+        "temperature": 0.1,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "natural_short336_cap672",
+        "background_rule": "retained"
+      },
+      "total_images": 1449,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/voc20.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/voc20.pt",
+      "gain": 1.0,
+      "beta": 1.0,
+      "wide_long_edge": 0,
+      "cost_keys": [
+        "2007_000033",
+        "2007_007498",
+        "2008_003856",
+        "2009_001644",
+        "2010_000552",
+        "2010_005180",
+        "2011_003271"
+      ],
+      "screen_images": 16,
+      "source_protocol": "query_slot_best_alias_20261013"
+    },
+    "voc21": {
+      "loader": {
+        "dataset": "voc21",
+        "data_root": "/data/test/datasets/VIP_natural/VOCdevkit/VOC2012",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/voc21.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "official_segmentation",
+        "strength": 1.0,
+        "coupling": 1.0,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 0.3,
+        "wide_policy": "natural_short336_cap672",
+        "background_rule": "union_max"
+      },
+      "total_images": 1449,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/voc21.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/voc21.pt",
+      "gain": 1.0,
+      "beta": 1.0,
+      "wide_long_edge": 0,
+      "cost_keys": [
+        "2007_000033",
+        "2007_007498",
+        "2008_003856",
+        "2009_001644",
+        "2010_000552",
+        "2010_005180",
+        "2011_003271"
+      ],
+      "screen_images": 16,
+      "source_protocol": "query_slot_best_alias_20261013"
+    },
+    "ade150": {
+      "loader": {
+        "dataset": "ade150",
+        "data_root": "/data/test/datasets/VIP_natural/ADEChallengeData2016",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/ade150.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "semantic_segmentation",
+        "strength": "original",
+        "coupling": 0.25,
+        "temperature": 0.14,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "natural_short336_cap672",
+        "background_rule": "retained"
+      },
+      "total_images": 2000,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/ade150.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/ade150.pt",
+      "gain": 0.25,
+      "beta": 1.0,
+      "wide_long_edge": 0,
+      "cost_keys": [
+        "ADE_val_00000001",
+        "ADE_val_00000334",
+        "ADE_val_00000667",
+        "ADE_val_00001000",
+        "ADE_val_00001333",
+        "ADE_val_00001666",
+        "ADE_val_00002000"
+      ],
+      "screen_images": 16,
+      "source_protocol": "query_slot_best_alias_20261013"
+    },
+    "context60": {
+      "loader": {
+        "dataset": "context60",
+        "data_root": "/data/test/datasets/VIP_natural/VOCdevkit/VOC2010",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/context60.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "mix_f6f525631e7f743d226c",
+        "strength": 2.0,
+        "coupling": 0.75,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "natural_short336_cap672",
+        "background_rule": "residual_max"
+      },
+      "total_images": 5105,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/context60.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/context60.pt",
+      "gain": 0.75,
+      "beta": 1.0,
+      "wide_long_edge": 0,
+      "cost_keys": [
+        "2008_000002",
+        "2008_003295",
+        "2008_006665",
+        "2009_001279",
+        "2009_004601",
+        "2010_002691",
+        "2010_006086"
+      ],
+      "screen_images": 16,
+      "source_protocol": "query_slot_best_alias_20261013"
+    },
+    "udd5": {
+      "loader": {
+        "dataset": "udd5",
+        "data_root": "/data/test/datasets/UDD5/extracted/UDD/UDD5",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/udd5.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "kev60_segmentation",
+        "strength": "original",
+        "coupling": 0.5,
+        "temperature": 0.05,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "total_images": 40,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/udd5.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/udd5.pt",
+      "gain": 0.5,
+      "beta": 1.0,
+      "wide_long_edge": 0,
+      "cost_keys": [
+        "000061.JPG",
+        "001461.JPG",
+        "DJI_00528.JPG",
+        "DJI_0373_heda.JPG",
+        "DJI_0451.JPG",
+        "DJI_0511.JPG",
+        "DJI_0707.JPG"
+      ],
+      "screen_images": 16,
+      "source_protocol": "query_slot_best_alias_20261013"
+    },
+    "oem": {
+      "loader": {
+        "dataset": "oem",
+        "data_root": "/data/test/datasets/OpenEarthMap_wo_xBD",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/oem.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "original",
+        "strength": 1.0,
+        "coupling": 0.25,
+        "temperature": 0.03,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "total_images": 384,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/oem.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/oem.pt",
+      "gain": 0.25,
+      "beta": 1.0,
+      "wide_long_edge": 0,
+      "cost_keys": [
+        "aachen/images/aachen_11.tif",
+        "chiclayo/images/chiclayo_49.tif",
+        "duesseldorf/images/duesseldorf_35.tif",
+        "lubuskie/images/lubuskie_8.tif",
+        "piura/images/piura_48.tif",
+        "tokyo/images/tokyo_12.tif",
+        "zanzibar/images/zanzibar_99.tif"
+      ],
+      "screen_images": 16,
+      "source_protocol": "query_slot_best_alias_20261013"
+    },
+    "vaihingen": {
+      "loader": {
+        "dataset": "vaihingen",
+        "data_root": "/data/test/datasets/Vaihingen/preprocessed_corrected_20261001",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/vaihingen.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "kev40_imagenet",
+        "strength": "original",
+        "coupling": 0.25,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "total_images": 113,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/vaihingen.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/vaihingen.pt",
+      "gain": 0.25,
+      "beta": 1.0,
+      "wide_long_edge": 0,
+      "cost_keys": [
+        "top_mosaic_09cm_area10_y00_x00.tif",
+        "top_mosaic_09cm_area16_y00_x00.tif",
+        "top_mosaic_09cm_area24_y00_x01.tif",
+        "top_mosaic_09cm_area2_y00_x00.tif",
+        "top_mosaic_09cm_area33_y01_x01.tif",
+        "top_mosaic_09cm_area38_y02_x02.tif",
+        "top_mosaic_09cm_area8_y02_x01.tif"
+      ],
+      "screen_images": 16,
+      "source_protocol": "query_slot_best_alias_20261013"
+    },
+    "landcoverai": {
+      "loader": {
+        "dataset": "landcoverai",
+        "data_root": "/data/test/datasets/LandCoverAI_v1_target_20260922/preprocessed_official512_gear29",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/landcoverai.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "original_imagenet",
+        "strength": 2.0,
+        "coupling": 0.5,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "total_images": 1602,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/landcoverai.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/landcoverai.pt",
+      "gain": 0.5,
+      "beta": 1.0,
+      "wide_long_edge": 0,
+      "cost_keys": [
+        "M-33-20-D-c-4-2_101",
+        "M-33-7-A-d-3-2_259",
+        "M-34-56-A-b-1-4_14",
+        "M-34-68-B-a-1-3_239",
+        "N-33-139-C-d-2-2_185",
+        "N-34-140-A-b-4-2_1",
+        "N-34-97-D-c-2-4_75"
+      ],
+      "screen_images": 16,
+      "source_protocol": "query_slot_best_alias_20261013"
+    },
+    "loveda": {
+      "loader": {
+        "dataset": "loveda",
+        "data_root": "/data/test/cafe-efa/data/processed/loveda/val",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/loveda.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "original",
+        "strength": "original",
+        "coupling": 0.25,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "total_images": 1669,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/loveda.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/loveda.pt",
+      "gain": 0.25,
+      "beta": 1.0,
+      "wide_long_edge": 0,
+      "cost_keys": [
+        "2909.png",
+        "3039.png",
+        "3538.png",
+        "3887.png",
+        "3699.png",
+        "3200.png",
+        "3229.png"
+      ],
+      "screen_images": 16,
+      "source_protocol": "query_slot_best_alias_20261013"
+    },
+    "context59": {
+      "loader": {
+        "dataset": "context59",
+        "data_root": "/data/test/datasets/VIP_natural/VOCdevkit/VOC2010",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/context59.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "official_segmentation",
+        "strength": 3.0,
+        "coupling": 0.75,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 10.0,
+        "wide_policy": "natural_short336_cap672",
+        "background_rule": "retained"
+      },
+      "total_images": 5105,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/context59.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/context59.pt",
+      "gain": 0.75,
+      "beta": 1.0,
+      "wide_long_edge": 0,
+      "cost_keys": [
+        "2008_000002",
+        "2008_003295",
+        "2008_006665",
+        "2009_001279",
+        "2009_004601",
+        "2010_002691",
+        "2010_006086"
+      ],
+      "screen_images": 16,
+      "source_protocol": "query_slot_best_alias_20261013"
+    },
+    "coco_object81": {
+      "loader": {
+        "dataset": "coco_object81",
+        "data_root": "/data/test/datasets/VIP_natural/COCOObject",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/coco_object81.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "official_imagenet",
+        "strength": 1.0,
+        "coupling": 0.5,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "natural_short336_cap672",
+        "background_rule": "retained"
+      },
+      "total_images": 5000,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/coco_object81.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/coco_object81.pt",
+      "gain": 0.5,
+      "beta": 1.0,
+      "wide_long_edge": 0,
+      "cost_keys": [
+        "000000000139",
+        "000000097994",
+        "000000190140",
+        "000000289586",
+        "000000384527",
+        "000000480985",
+        "000000581781"
+      ],
+      "screen_images": 16,
+      "source_protocol": "query_slot_best_alias_20261013"
+    },
+    "coco_stuff171": {
+      "loader": {
+        "dataset": "coco_stuff171",
+        "data_root": "/data/test/datasets/VIP_natural/COCOStuff164k",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/coco_stuff171.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "official_segmentation",
+        "strength": 1.0,
+        "coupling": 0.5,
+        "temperature": 0.05,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "natural_short336_cap672",
+        "background_rule": "retained"
+      },
+      "total_images": 5000,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/coco_stuff171.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/coco_stuff171.pt",
+      "gain": 0.5,
+      "beta": 1.0,
+      "wide_long_edge": 0,
+      "cost_keys": [
+        "000000000139",
+        "000000097994",
+        "000000190140",
+        "000000289586",
+        "000000384527",
+        "000000480985",
+        "000000581781"
+      ],
+      "screen_images": 16,
+      "source_protocol": "query_slot_best_alias_20261013"
+    },
+    "flair1": {
+      "loader": {
+        "dataset": "flair1",
+        "data_root": "/data/test/datasets/FLAIR1_target_20260922",
+        "suite_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013",
+        "original_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/curated20_patchonly2_full_20261006/text_cache/flair1.pt",
+        "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+        "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+        "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "original",
+        "strength": "original",
+        "coupling": 0.25,
+        "temperature": 0.07,
+        "tau": 1.0,
+        "tem": 1.0,
+        "wide_policy": "long448",
+        "background_rule": "retained"
+      },
+      "total_images": 15700,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/configs/flair1.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/query_slot_best_alias_20261013/text_cache/flair1.pt",
+      "gain": 0.25,
+      "beta": 1.0,
+      "wide_long_edge": 0,
+      "cost_keys": [
+        "D012_2019/Z10_UU/img/IMG_062613.tif",
+        "D026_2020/Z13_UU/img/IMG_065054.tif",
+        "D064_2021/Z30_NU/img/IMG_067471.tif",
+        "D071_2020/Z12_UA/img/IMG_070462.tif",
+        "D076_2019/Z15_UU/img/IMG_072654.tif",
+        "D083_2020/Z5_AU/img/IMG_074795.tif",
+        "D085_2019/Z9_NF/img/IMG_076387.tif"
+      ],
+      "screen_images": 16,
+      "source_protocol": "query_slot_best_alias_20261013"
+    }
+  },
+  "protocol_images": 45200,
+  "rules": "One frozen config/bank per dataset; full validation only. Development labels are not loaded by the evaluator. All Geov3 runs use the same QuerySlot/DonorBefore/Anchored endpoint; only frozen record g0 and FOV are dataset-specific.",
+  "gpu_policy": "one fresh process per dataset; synchronized cost is separate",
+  "base_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926",
+  "python": "/data/miniconda3/envs/pfu/bin/python",
+  "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+  "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+  "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee"
+}

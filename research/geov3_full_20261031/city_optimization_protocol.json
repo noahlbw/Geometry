@@ -1,0 +1,63 @@
+{
+  "implementation": "geov3-full-20261031",
+  "model": {
+    "name": "Geov3",
+    "variant": "geov3_final",
+    "local_branch": "DonorBefore",
+    "wide_branch": "QuerySlot",
+    "query_slot_capacity": 24,
+    "wide_readout": "Anchored",
+    "wide_beta": 1.0,
+    "weight_dtype": "bfloat16",
+    "local_batch_size": 8,
+    "fast_assignment": true,
+    "compile_visual": true,
+    "compile_project": true,
+    "alias_aggregation": "logsumexp"
+  },
+  "datasets": {
+    "cityscapes19": {
+      "loader": {
+        "dataset": "cityscapes19",
+        "data_root": "/data/test/datasets/Cityscapes",
+        "sample_seed": 20260923,
+        "vdd_ontology": "official"
+      },
+      "profile": {
+        "bank": "cityscapes19",
+        "strength": "original",
+        "coupling": 0.75,
+        "temperature": 0.07,
+        "tau": 0.8,
+        "tem": 0.3,
+        "wide_policy": "city_short672",
+        "background_rule": "retained"
+      },
+      "total_images": 500,
+      "config_path": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/cityscapes_20261029/configs/geov3_city.yaml",
+      "text_cache": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/cityscapes_20261029/text_cache/coord_coord_combo_both_plus.pt",
+      "gain": 0.75,
+      "beta": 1.0,
+      "wide_long_edge": 0,
+      "cost_keys": [
+        "frankfurt/frankfurt_000000_000294",
+        "frankfurt/frankfurt_000000_000576",
+        "frankfurt/frankfurt_000000_001016",
+        "frankfurt/frankfurt_000000_001236",
+        "frankfurt/frankfurt_000000_001751",
+        "frankfurt/frankfurt_000000_002196",
+        "frankfurt/frankfurt_000000_002963"
+      ],
+      "screen_images": 50,
+      "source_protocol": "city_dev_label_selected_protocol_20261029"
+    }
+  },
+  "protocol_images": 500,
+  "rules": "One frozen config/bank per dataset; full validation only. Development labels are not loaded by the evaluator. All Geov3 runs use the same QuerySlot/DonorBefore/Anchored endpoint; only frozen record g0 and FOV are dataset-specific.",
+  "gpu_policy": "one fresh process per dataset; synchronized cost is separate",
+  "base_root": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926",
+  "python": "/data/miniconda3/envs/pfu/bin/python",
+  "checkpoint_dir": "/data/test/code/ovss_cafe_ped_v2_20260919/ckpt/DINO",
+  "dinov3_repo": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/dinov3_hub",
+  "upstream_root": "/data/test/code/ovss_cafe_ped_v2_20260919/third_party/VIP_official_5bd25ee"
+}

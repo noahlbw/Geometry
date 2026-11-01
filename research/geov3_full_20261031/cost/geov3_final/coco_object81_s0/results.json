@@ -1,0 +1,199 @@
+{
+  "status": "complete",
+  "dataset": "coco_object81",
+  "variant": "geov3_final",
+  "wide_config": {
+    "shared_backbone": true,
+    "head": "slots",
+    "beta": 1.0,
+    "query_mode": "raw",
+    "direct": true,
+    "solve_dtype": "float32",
+    "wide_long_edge": 0,
+    "capacity": 24,
+    "shared_visual": false,
+    "fast_assignment": true,
+    "regression_ridge": 0.01,
+    "local_batch_size": 8,
+    "batch_wide": false,
+    "readout": "anchored",
+    "batch_anchored": true,
+    "local_memory": false,
+    "compile_visual": true,
+    "compile_project": true,
+    "weight_dtype": "bfloat16"
+  },
+  "wide_alias_aggregation": "logsumexp",
+  "gain": 0.5,
+  "profile": {
+    "bank": "official_imagenet",
+    "strength": "original",
+    "coupling": 0.5,
+    "temperature": 0.07,
+    "tau": 1.0,
+    "tem": 1.0,
+    "wide_policy": "natural_short336_cap672",
+    "background_rule": "retained"
+  },
+  "config": {
+    "schema": 1,
+    "dataset": "coco_object81",
+    "family": "natural",
+    "total_images": 5000,
+    "background_index": 0,
+    "vocabulary": "../vocabularies/coco_object81.json",
+    "profile": {
+      "bank": "official_imagenet",
+      "strength": "original",
+      "coupling": 0.5,
+      "temperature": 0.07,
+      "tau": 1.0,
+      "tem": 1.0,
+      "wide_policy": "natural_short336_cap672",
+      "background_rule": "retained"
+    },
+    "background_bias": -4.0,
+    "background_threshold": 0.05,
+    "geometry": {
+      "geometry_depth": 2,
+      "geometry_temperature": 0.1,
+      "spatial_sigma": 0.25,
+      "maximum_aliases_per_class": 20
+    },
+    "visual_budget": {
+      "geometry_max": 4,
+      "wide_max": 4,
+      "fine": 0
+    },
+    "upstream": {
+      "vip_commit": "5bd25ee03ec25c1538622cf7da661e8c0461e769",
+      "dinov3_commit": "f6704c1b76137543328567c8f8b49a2dc318824c"
+    },
+    "provenance": {
+      "source_trial": "kev_alias_search_20261009",
+      "labeled_development": true,
+      "full_validation_viewed": true,
+      "execution_only_update": false,
+      "experiment": "QuerySlot + DonorBefore, both active; numeric strength replaced by original"
+    }
+  },
+  "cache_identity": "6a90ffd1b6a13475e7f2f7fe1a97a770f4387919f3b689f3816af73ca2c7bd3c",
+  "local_path_unchanged": true,
+  "invariants": {},
+  "cpu_threads": 16,
+  "initialization_peak_allocated_mib": 2513.171875,
+  "shared_visual_storage": false,
+  "weight_storage": {
+    "weight_dtype": "bfloat16",
+    "visual_modules": 2,
+    "parameters": 230,
+    "bytes_before": 1363866112,
+    "bytes_after": 707245056
+  },
+  "images": [
+    {
+      "key": "000000000139",
+      "milliseconds": [
+        73.51810671389103,
+        72.00934877619147,
+        71.76627684384584,
+        72.56358908489347,
+        74.44557594135404,
+        77.94310478493571,
+        82.8891871497035
+      ],
+      "peak_allocated_mib": 1221.21533203125,
+      "peak_reserved_mib": 1446.0
+    },
+    {
+      "key": "000000097994",
+      "milliseconds": [
+        73.42054089531302,
+        73.55313701555133,
+        73.94598005339503,
+        72.51587696373463,
+        72.21720879897475,
+        76.52958808466792,
+        75.57353423908353
+      ],
+      "peak_allocated_mib": 1221.22216796875,
+      "peak_reserved_mib": 1446.0
+    },
+    {
+      "key": "000000190140",
+      "milliseconds": [
+        74.45142092183232,
+        79.50010756030679,
+        78.10038840398192,
+        82.72495167329907,
+        82.07667199894786,
+        83.20735907182097,
+        81.50408416986465
+      ],
+      "peak_allocated_mib": 1221.2255859375,
+      "peak_reserved_mib": 1446.0
+    },
+    {
+      "key": "000000289586",
+      "milliseconds": [
+        77.18892907723784,
+        78.0294518917799,
+        78.19241099059582,
+        77.82936422154307,
+        79.45839501917362,
+        79.9552770331502,
+        77.25782971829176
+      ],
+      "peak_allocated_mib": 1222.21533203125,
+      "peak_reserved_mib": 1600.0
+    },
+    {
+      "key": "000000384527",
+      "milliseconds": [
+        70.26128377765417,
+        69.9244593270123,
+        70.93845587223768,
+        70.20941469818354,
+        70.1529560610652,
+        69.70836967229843,
+        77.72317668423057
+      ],
+      "peak_allocated_mib": 1270.47216796875,
+      "peak_reserved_mib": 1652.0
+    },
+    {
+      "key": "000000480985",
+      "milliseconds": [
+        69.02523105964065,
+        68.11316218227148,
+        70.20476507022977,
+        67.31358682736754,
+        69.0543600358069,
+        77.18338910490274,
+        78.29771190881729
+      ],
+      "peak_allocated_mib": 1241.8583984375,
+      "peak_reserved_mib": 1652.0
+    },
+    {
+      "key": "000000581781",
+      "milliseconds": [
+        66.94114301353693,
+        67.21176207065582,
+        67.600860260427,
+        67.16200243681669,
+        67.76613742113113,
+        68.82603000849485,
+        77.86285225301981
+      ],
+      "peak_allocated_mib": 1270.1376953125,
+      "peak_reserved_mib": 1640.0
+    }
+  ],
+  "median_ms": 73.55313701555133,
+  "peak_allocated_mib": 1270.47216796875,
+  "peak_reserved_mib": 1652.0,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "target_masks_loaded": false,
+  "boundary": "CPU RGB to original-size CPU uint8 labels; excludes decode/init/text. Seven fixed images, two warmups, seven synchronized repeats. Fresh process for each variant."
+}

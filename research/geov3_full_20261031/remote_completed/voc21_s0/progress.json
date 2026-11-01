@@ -1,0 +1,7 @@
+{
+  "dataset": "voc21",
+  "variant": "geov3_final",
+  "processed": 1449,
+  "total": 1449,
+  "wall_seconds": 175.61239024205133
+}

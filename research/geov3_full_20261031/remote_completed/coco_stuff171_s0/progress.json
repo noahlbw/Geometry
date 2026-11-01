@@ -1,0 +1,7 @@
+{
+  "dataset": "coco_stuff171",
+  "variant": "geov3_final",
+  "processed": 5000,
+  "total": 5000,
+  "wall_seconds": 582.9645869191736
+}

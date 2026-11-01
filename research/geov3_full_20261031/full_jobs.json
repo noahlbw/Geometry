@@ -1,0 +1,26 @@
+[
+  {
+    "dataset": "context59",
+    "gpu": 1,
+    "session": "geov3_full_context59",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov3_full_20261031/full/geov3_final/context59_s0"
+  },
+  {
+    "dataset": "coco_object81",
+    "gpu": 2,
+    "session": "geov3_full_coco_object81",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov3_full_20261031/full/geov3_final/coco_object81_s0"
+  },
+  {
+    "dataset": "coco_stuff171",
+    "gpu": 3,
+    "session": "geov3_full_coco_stuff171",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov3_full_20261031/full/geov3_final/coco_stuff171_s0"
+  },
+  {
+    "dataset": "flair1",
+    "gpu": 4,
+    "session": "geov3_full_flair1",
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov3_full_20261031/full/geov3_final/flair1_s0"
+  }
+]

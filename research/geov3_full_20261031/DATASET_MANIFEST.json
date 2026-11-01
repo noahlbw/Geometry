@@ -1,0 +1,107 @@
+{
+  "vdd": {
+    "total_images": 80,
+    "bank": "official_imagenet",
+    "g0": 1.0,
+    "wide_long_edge": 400,
+    "background_rule": "retained"
+  },
+  "potsdam": {
+    "total_images": 504,
+    "bank": "official_imagenet",
+    "g0": 0.75,
+    "wide_long_edge": 0,
+    "background_rule": "retained"
+  },
+  "voc20": {
+    "total_images": 1449,
+    "bank": "semantic_imagenet",
+    "g0": 1.0,
+    "wide_long_edge": 0,
+    "background_rule": "retained"
+  },
+  "voc21": {
+    "total_images": 1449,
+    "bank": "official_segmentation",
+    "g0": 1.0,
+    "wide_long_edge": 0,
+    "background_rule": "union_max"
+  },
+  "ade150": {
+    "total_images": 2000,
+    "bank": "semantic_segmentation",
+    "g0": 0.25,
+    "wide_long_edge": 0,
+    "background_rule": "retained"
+  },
+  "context60": {
+    "total_images": 5105,
+    "bank": "mix_f6f525631e7f743d226c",
+    "g0": 0.75,
+    "wide_long_edge": 0,
+    "background_rule": "residual_max"
+  },
+  "udd5": {
+    "total_images": 40,
+    "bank": "kev60_segmentation",
+    "g0": 0.5,
+    "wide_long_edge": 0,
+    "background_rule": "retained"
+  },
+  "oem": {
+    "total_images": 384,
+    "bank": "original",
+    "g0": 0.25,
+    "wide_long_edge": 0,
+    "background_rule": "retained"
+  },
+  "vaihingen": {
+    "total_images": 113,
+    "bank": "kev40_imagenet",
+    "g0": 0.25,
+    "wide_long_edge": 0,
+    "background_rule": "retained"
+  },
+  "landcoverai": {
+    "total_images": 1602,
+    "bank": "original_imagenet",
+    "g0": 0.5,
+    "wide_long_edge": 0,
+    "background_rule": "retained"
+  },
+  "loveda": {
+    "total_images": 1669,
+    "bank": "original",
+    "g0": 0.25,
+    "wide_long_edge": 0,
+    "background_rule": "retained"
+  },
+  "context59": {
+    "total_images": 5105,
+    "bank": "official_segmentation",
+    "g0": 0.75,
+    "wide_long_edge": 0,
+    "background_rule": "retained"
+  },
+  "coco_object81": {
+    "total_images": 5000,
+    "bank": "official_imagenet",
+    "g0": 0.5,
+    "wide_long_edge": 0,
+    "background_rule": "retained"
+  },
+  "coco_stuff171": {
+    "total_images": 5000,
+    "bank": "official_segmentation",
+    "g0": 0.5,
+    "wide_long_edge": 0,
+    "background_rule": "retained"
+  },
+  "flair1": {
+    "total_images": 15700,
+    "bank": "original",
+    "g0": 0.25,
+    "wide_long_edge": 0,
+    "background_rule": "retained"
+  }
+}

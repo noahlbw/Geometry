@@ -1,0 +1,7 @@
+{
+  "dataset": "ade150",
+  "variant": "geov3_final",
+  "processed": 2000,
+  "total": 2000,
+  "wall_seconds": 255.2866835501045
+}

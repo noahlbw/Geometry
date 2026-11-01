@@ -1,0 +1,72 @@
+[
+  {
+    "dataset": "vdd",
+    "gpu": 1,
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov3_full_20261031/smoke/geov3_final/vdd_s0"
+  },
+  {
+    "dataset": "potsdam",
+    "gpu": 2,
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov3_full_20261031/smoke/geov3_final/potsdam_s0"
+  },
+  {
+    "dataset": "voc20",
+    "gpu": 3,
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov3_full_20261031/smoke/geov3_final/voc20_s0"
+  },
+  {
+    "dataset": "voc21",
+    "gpu": 4,
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov3_full_20261031/smoke/geov3_final/voc21_s0"
+  },
+  {
+    "dataset": "ade150",
+    "gpu": 5,
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov3_full_20261031/smoke/geov3_final/ade150_s0"
+  },
+  {
+    "dataset": "context60",
+    "gpu": 6,
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov3_full_20261031/smoke/geov3_final/context60_s0"
+  },
+  {
+    "dataset": "udd5",
+    "gpu": 7,
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov3_full_20261031/smoke/geov3_final/udd5_s0"
+  },
+  {
+    "dataset": "oem",
+    "gpu": 0,
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov3_full_20261031/smoke/geov3_final/oem_s0"
+  },
+  {
+    "dataset": "vaihingen",
+    "gpu": 1,
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov3_full_20261031/smoke/geov3_final/vaihingen_s0"
+  },
+  {
+    "dataset": "landcoverai",
+    "gpu": 2,
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov3_full_20261031/smoke/geov3_final/landcoverai_s0"
+  },
+  {
+    "dataset": "context59",
+    "gpu": 3,
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov3_full_20261031/smoke/geov3_final/context59_s0"
+  },
+  {
+    "dataset": "coco_object81",
+    "gpu": 4,
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov3_full_20261031/smoke/geov3_final/coco_object81_s0"
+  },
+  {
+    "dataset": "coco_stuff171",
+    "gpu": 5,
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov3_full_20261031/smoke/geov3_final/coco_stuff171_s0"
+  },
+  {
+    "dataset": "flair1",
+    "gpu": 6,
+    "output": "/data/test/code/ovss_cafe_ped_v2_20260919/DINOtool_hero_external_20260926/results/geov3_full_20261031/smoke/geov3_final/flair1_s0"
+  }
+]
