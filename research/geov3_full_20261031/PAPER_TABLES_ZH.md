@@ -218,6 +218,7 @@ iSAID 最佳 bank 结果见 `geov3_full_20261031/isaid_bestbank_corrected_full.j
 | Local/Wide/Fusion/Geov3 | VDD/Potsdam/ADE150/VOC21 全量完成，见 Table 4f |
 | Cityscapes | 真实 leftImg8bit val 全量完成，56.5384% |
 | 统一速度/显存（14 个主协议） | 已完成；使用独立 cost runner，见 Table 2c |
+| JEV alias 筛词对照 | 已有 Geov2 冻结六 bank 报告；本轮未混入 Geov3 主表，避免模型版本混用 |
 
 
 审计限制：当前结果是本轮所用 bank/g0 的完整复跑，还没有证明每行达到所有历史 bank 与参数的最佳值。速度与显存已按同一终版配置独立复测并列入 Table 2c；不复用旧 Geov2 效率表。
